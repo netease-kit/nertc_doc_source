@@ -160,10 +160,10 @@ Find documentation for specific features across different platforms:
 
 ## Support
 
-- **FAQs** - Check platform-specific FAQ sections in each guide
-- **Troubleshooting** - Common issues and solutions in troubleshooting sections
-- **Sample Code** - Reference implementations available for all platforms
+- **Official Website** - [NetEase CommsEase](https://yunxin.163.com/)
+- **Console** - [Management Console](https://app.yunxin.163.com/)
+- **Technical Support** - Visit official website for support
 
 ## License
 
-Copyright © NetEase Cloud CommsEase
+Please refer to NetEase CommsEase Service Agreement for SDK usage.
