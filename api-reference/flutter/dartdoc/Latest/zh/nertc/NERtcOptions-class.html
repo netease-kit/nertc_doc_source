@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the NERtcOptions class from the nertc library, for the Dart programming language.">
+  <title>NERtcOptions class - nertc library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">nertc_core</a></li>
+    <li><a href="../nertc/nertc-library.html">nertc_core.dart</a></li>
+    <li class="self-crumb">NERtcOptions class</li>
+  </ol>
+  <div class="self-name">NERtcOptions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="nertc&#47;nertc-library-sidebar.html"
+      data-below-sidebar="nertc&#47;NERtcOptions-class-sidebar.html">
+      <div>
+<h1><span class="kind-class">NERtcOptions</span> class 
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>音视频通话相关的参数设置</p>
+</section>
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="NERtcOptions" class="callable">
+          <span class="name"><a href="../nertc/NERtcOptions/NERtcOptions.html">NERtcOptions</a></span><span class="signature">(<span class="parameter" id="-param-logDir">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">logDir</span>, </span><span class="parameter" id="-param-logLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">logLevel</span>, </span><span class="parameter" id="-param-serverAddresses"><span class="type-annotation"><a href="../nertc/NERtcServerAddresses-class.html">NERtcServerAddresses</a>?</span> <span class="parameter-name">serverAddresses</span>, </span><span class="parameter" id="-param-audioAutoSubscribe"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">audioAutoSubscribe</span>, </span><span class="parameter" id="-param-videoAutoSubscribe"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">videoAutoSubscribe</span>, </span><span class="parameter" id="-param-disableFirstJoinUserCreateChannel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">disableFirstJoinUserCreateChannel</span>, </span><span class="parameter" id="-param-audioDisableOverrideSpeakerOnReceiver"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">audioDisableOverrideSpeakerOnReceiver</span>, </span><span class="parameter" id="-param-audioDisableSWAECOnHeadset"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">audioDisableSWAECOnHeadset</span>, </span><span class="parameter" id="-param-audioAINSEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">audioAINSEnabled</span>, </span><span class="parameter" id="-param-serverRecordAudio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">serverRecordAudio</span>, </span><span class="parameter" id="-param-serverRecordVideo"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">serverRecordVideo</span>, </span><span class="parameter" id="-param-serverRecordMode"><span class="type-annotation"><a href="../nertc/NERtcServerRecordMode.html">NERtcServerRecordMode</a>?</span> <span class="parameter-name">serverRecordMode</span>, </span><span class="parameter" id="-param-serverRecordSpeaker"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">serverRecordSpeaker</span>, </span><span class="parameter" id="-param-publishSelfStream"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">publishSelfStream</span>, </span><span class="parameter" id="-param-videoEncodeMode"><span class="type-annotation"><a href="../nertc/NERtcMediaCodecMode.html">NERtcMediaCodecMode</a>?</span> <span class="parameter-name">videoEncodeMode</span>, </span><span class="parameter" id="-param-videoDecodeMode"><span class="type-annotation"><a href="../nertc/NERtcMediaCodecMode.html">NERtcMediaCodecMode</a>?</span> <span class="parameter-name">videoDecodeMode</span>, </span><span class="parameter" id="-param-videoCaptureObserverEnabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">videoCaptureObserverEnabled</span>, </span><span class="parameter" id="-param-videoSendMode"><span class="type-annotation"><a href="../nertc/NERtcVideoSendMode.html">NERtcVideoSendMode</a>?</span> <span class="parameter-name">videoSendMode</span>, </span><span class="parameter" id="-param-videoH265Enabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">videoH265Enabled</span>, </span><span class="parameter" id="-param-mode1v1Enabled"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> <span class="parameter-name">mode1v1Enabled</span>}</span>)</span>
+        </dt>
+        <dd>
+          
+            <div class="constructor-modifier features">const</div>
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="audioAINSEnabled" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/audioAINSEnabled.html">audioAINSEnabled</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  设置是否开启AI降噪，开启AI降噪，在嘈杂环境下，让对方更清晰听到您的声音
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="audioAutoSubscribe" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/audioAutoSubscribe.html">audioAutoSubscribe</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否自动订阅音频（默认订阅）
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="audioDisableOverrideSpeakerOnReceiver" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/audioDisableOverrideSpeakerOnReceiver.html">audioDisableOverrideSpeakerOnReceiver</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  系统切换听筒事件时，禁用切换到扬声器.
+仅在iOS平台有效.
+默认值 false, 如设置 true 则禁止SDK在系统切换到听筒时做切换扬声器操作，需要用户自己处理切换听筒事件
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="audioDisableSWAECOnHeadset" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/audioDisableSWAECOnHeadset.html">audioDisableSWAECOnHeadset</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  设置耳机时不使用软件回声消除功能
+仅在iOS平台有效.
+默认值 false,如设置true 则SDK在耳机模式下不使用软件回声消除功能，会对某些机型下 耳机的音质效果有影响
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="disableFirstJoinUserCreateChannel" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/disableFirstJoinUserCreateChannel.html">disableFirstJoinUserCreateChannel</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  加入房间时禁止创建房间（暂时不支持该功能）
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="logDir" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/logDir.html">logDir</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  日志路径
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="logLevel" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/logLevel.html">logLevel</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  日志等级
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="mode1v1Enabled" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/mode1v1Enabled.html">mode1v1Enabled</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否开启频道1V1模式，joinChannel 前设置生效
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="publishSelfStream" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/publishSelfStream.html">publishSelfStream</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否允许在房间推流时推送自身的视频流 （该参数已废弃）
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="serverAddresses" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/serverAddresses.html">serverAddresses</a></span>
+  <span class="signature">&#8594; <a href="../nertc/NERtcServerAddresses-class.html">NERtcServerAddresses</a>?</span> 
+
+</dt>
+<dd>
+  自定义服务器地址，用于私有化部署
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="serverRecordAudio" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/serverRecordAudio.html">serverRecordAudio</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否开启服务器录制语音
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="serverRecordMode" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/serverRecordMode.html">serverRecordMode</a></span>
+  <span class="signature">&#8594; <a href="../nertc/NERtcServerRecordMode.html">NERtcServerRecordMode</a>?</span> 
+
+</dt>
+<dd>
+  服务器录制模式
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="serverRecordSpeaker" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/serverRecordSpeaker.html">serverRecordSpeaker</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否服务器录制主讲人
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="serverRecordVideo" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/serverRecordVideo.html">serverRecordVideo</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否开启服务器录制视频
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="videoAutoSubscribe" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/videoAutoSubscribe.html">videoAutoSubscribe</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否自动订阅视频（默认不订阅）
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="videoCaptureObserverEnabled" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/videoCaptureObserverEnabled.html">videoCaptureObserverEnabled</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否允许视频帧回调.
+仅在iOS平台有效.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="videoDecodeMode" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/videoDecodeMode.html">videoDecodeMode</a></span>
+  <span class="signature">&#8594; <a href="../nertc/NERtcMediaCodecMode.html">NERtcMediaCodecMode</a>?</span> 
+
+</dt>
+<dd>
+  视频解码模式.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="videoEncodeMode" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/videoEncodeMode.html">videoEncodeMode</a></span>
+  <span class="signature">&#8594; <a href="../nertc/NERtcMediaCodecMode.html">NERtcMediaCodecMode</a>?</span> 
+
+</dt>
+<dd>
+  视频编码模式
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="videoH265Enabled" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/videoH265Enabled.html">videoH265Enabled</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a>?</span> 
+
+</dt>
+<dd>
+  是否开启H265
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="videoSendMode" class="property">
+  <span class="name"><a href="../nertc/NERtcOptions/videoSendMode.html">videoSendMode</a></span>
+  <span class="signature">&#8594; <a href="../nertc/NERtcVideoSendMode.html">NERtcVideoSendMode</a>?</span> 
+
+</dt>
+<dd>
+  视频发布模式
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable">
+  <span class="name"><a href="../nertc/NERtcOptions/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  A string representation of this object.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">nertc_core</a></li>
+    <li><a href="../nertc/nertc-library.html">nertc</a></li>
+    <li class="self-crumb">NERtcOptions class</li>
+</ol>
+
+
+    <h5>nertc library</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

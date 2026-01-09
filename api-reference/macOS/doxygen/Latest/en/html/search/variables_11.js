@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['sample_5frate_0',['sample_rate',['../structnertc_1_1_n_e_rtc_audio_frame_request_format.html#a987d27feb495638fd9487432a542ba60',1,'nertc::NERtcAudioFrameRequestFormat::sample_rate()'],['../structnertc_1_1_n_e_rtc_audio_format.html#abc0a6071a4c71c453d77b7bf08188590',1,'nertc::NERtcAudioFormat::sample_rate()']]],
+  ['samplerate_1',['sampleRate',['../structnertc_1_1_n_e_rtc_live_config.html#a3bc4d2f29e87aed0b05c1e8136e7d28a',1,'nertc::NERtcLiveConfig']]],
+  ['samples_5fper_5fchannel_2',['samples_per_channel',['../structnertc_1_1_n_e_rtc_audio_format.html#a6e94d91361aef6c5de73939deb213866',1,'nertc::NERtcAudioFormat']]],
+  ['scaling_5fmode_3',['scaling_mode',['../structnertc_1_1_n_e_rtc_video_canvas.html#ad9063ff3bf1a7443c7f90761f3b43e19',1,'nertc::NERtcVideoCanvas']]],
+  ['send_5fenabled_4',['send_enabled',['../structnertc_1_1_n_e_rtc_create_audio_mixing_option.html#a22c695e005edc258a6ecebbd380831ab',1,'nertc::NERtcCreateAudioMixingOption::send_enabled()'],['../structnertc_1_1_n_e_rtc_create_audio_effect_option.html#a694c728bb78c6a4f3633c42d0d9f2bdb',1,'nertc::NERtcCreateAudioEffectOption::send_enabled()']]],
+  ['send_5fvolume_5',['send_volume',['../structnertc_1_1_n_e_rtc_create_audio_mixing_option.html#a4b5ad72660f27336ddd60f31b85bfbec',1,'nertc::NERtcCreateAudioMixingOption::send_volume()'],['../structnertc_1_1_n_e_rtc_create_audio_effect_option.html#a06c48fd5e38503c5d631f6cb74de2b74',1,'nertc::NERtcCreateAudioEffectOption::send_volume()']]],
+  ['send_5fwith_5faudio_5ftype_6',['send_with_audio_type',['../structnertc_1_1_n_e_rtc_create_audio_mixing_option.html#aaeea3009181e54e691b7632fc36e2157',1,'nertc::NERtcCreateAudioMixingOption']]],
+  ['sent_5fbitrate_7',['sent_bitrate',['../structnertc_1_1_n_e_rtc_video_layer_send_stats.html#a4214fcc19dec1931acb8a9b7e2644328',1,'nertc::NERtcVideoLayerSendStats::sent_bitrate()'],['../structnertc_1_1_n_e_rtc_audio_layer_send_stats.html#a7c176ef0c6d864cdd075b5de7f8d8bf0',1,'nertc::NERtcAudioLayerSendStats::sent_bitrate()']]],
+  ['sent_5fframe_5frate_8',['sent_frame_rate',['../structnertc_1_1_n_e_rtc_video_layer_send_stats.html#a7bef36d946c12c1567fc2e7fa69f540d',1,'nertc::NERtcVideoLayerSendStats']]],
+  ['sent_5fsample_5frate_9',['sent_sample_rate',['../structnertc_1_1_n_e_rtc_audio_layer_send_stats.html#ad904328b11c71be655dd8dd53eab6918',1,'nertc::NERtcAudioLayerSendStats']]],
+  ['server_5fconfig_10',['server_config',['../structnertc_1_1_n_e_rtc_engine_context.html#a00e13092be2dc59284e790640b2becac',1,'nertc::NERtcEngineContext']]],
+  ['server_5frecord_5fenabled_11',['server_record_enabled',['../structnertc_1_1_n_e_rtc_live_stream_task_option.html#a1ad658d5813cbc8c88f2ed1057964507',1,'nertc::NERtcLiveStreamTaskOption::server_record_enabled()'],['../structnertc_1_1_n_e_rtc_live_stream_task_info.html#affcff075cfedbac42b5e12da6b86604f',1,'nertc::NERtcLiveStreamTaskInfo::server_record_enabled()']]],
+  ['single_5fvideo_5fpassthrough_12',['single_video_passthrough',['../structnertc_1_1_n_e_rtc_live_config.html#a3d7ebd05cae63718b719011c1c466855',1,'nertc::NERtcLiveConfig']]],
+  ['source_13',['source',['../structnertc_1_1_virtual_background_source.html#accdbc2d58eafb7356eb0346190a9d029',1,'nertc::VirtualBackgroundSource']]],
+  ['src_5finfos_14',['src_infos',['../structnertc_1_1_n_e_rtc_channel_media_relay_configuration.html#af0a166a4301701b0096feeddc0c3d09a',1,'nertc::NERtcChannelMediaRelayConfiguration']]],
+  ['start_5ftimestamp_15',['start_timestamp',['../structnertc_1_1_n_e_rtc_create_audio_mixing_option.html#a1ffa34c01840d976fa3f8a2036fe5a62',1,'nertc::NERtcCreateAudioMixingOption']]],
+  ['state_16',['state',['../structnertc_1_1_n_e_rtc_lastmile_probe_result.html#a631db9025d578da60ba3c1b0449b4742',1,'nertc::NERtcLastmileProbeResult']]],
+  ['statistics_5fserver_17',['statistics_server',['../structnertc_1_1_n_e_rtc_server_addresses.html#a465c08e1d47a99b64100f878c5cbae38',1,'nertc::NERtcServerAddresses']]],
+  ['stream_5ftype_18',['stream_type',['../structnertc_1_1_n_e_rtc_audio_layer_send_stats.html#a1015cac2dc6c2680520e5ffb08083c83',1,'nertc::NERtcAudioLayerSendStats::stream_type()'],['../structnertc_1_1_n_e_rtc_audio_layer_recv_stats.html#ac3afe958754fec0adf2e1cd9a2733330',1,'nertc::NERtcAudioLayerRecvStats::stream_type()']]],
+  ['stream_5furl_19',['stream_url',['../structnertc_1_1_n_e_rtc_live_stream_task_option.html#afa0d6f714191d0cb2547abf1fab7fdf3',1,'nertc::NERtcLiveStreamTaskOption::stream_url()'],['../structnertc_1_1_n_e_rtc_live_stream_task_info.html#a9c715df2e0f882f27ec4f748d22ee5c6',1,'nertc::NERtcLiveStreamTaskInfo::stream_url()']]],
+  ['suspected_5funavailable_20',['suspected_unavailable',['../structnertc_1_1_n_e_rtc_device_info.html#a12e5e6d4d6c75adcd05cd914abe5ba60',1,'nertc::NERtcDeviceInfo']]],
+  ['sync_5ftimestamp_21',['sync_timestamp',['../structnertc_1_1_n_e_rtc_audio_frame.html#a84e6f5f785c7521df35fe4b819349819',1,'nertc::NERtcAudioFrame']]],
+  ['system_5fdefault_5fdevice_22',['system_default_device',['../structnertc_1_1_n_e_rtc_device_info.html#ae594f1163da575f5dc25313945eb902e',1,'nertc::NERtcDeviceInfo']]]
+];

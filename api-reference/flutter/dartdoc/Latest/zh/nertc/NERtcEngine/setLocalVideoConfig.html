@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the setLocalVideoConfig method from the NERtcEngine class, for the Dart programming language.">
+  <title>setLocalVideoConfig method - NERtcEngine class - nertc library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc_core.dart</a></li>
+    <li><a href="../../nertc/NERtcEngine-class.html">NERtcEngine</a></li>
+    <li class="self-crumb">setLocalVideoConfig abstract method</li>
+  </ol>
+  <div class="self-name">setLocalVideoConfig</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="nertc&#47;NERtcEngine-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">setLocalVideoConfig</span> abstract method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span>
+<span class="name ">setLocalVideoConfig</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="setLocalVideoConfig-param-videoConfig"><span class="type-annotation"><a href="../../nertc/NERtcVideoConfig-class.html">NERtcVideoConfig</a></span> <span class="parameter-name">videoConfig</span>, </span></li>
+<li><span class="parameter" id="setLocalVideoConfig-param-streamType">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">streamType</span> = <span class="default-value">NERtcVideoStreamType.main</span>}</span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>设置视频编码属性。通过此接口可以设置视频主流或辅流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数。</p>
+<p><strong>调用时机</strong></p>
+<p>请在初始化后调用该方法，且该方法在加入房间前后均可调用。</p>
+<p><strong>说明</strong></p>
+<ul>
+<li>
+<p>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。</p>
+</li>
+<li>
+<p>设置成功后，下一次开启本端视频时生效。</p>
+</li>
+<li>
+<p>每个属性对应一套视频参数，例如分辨率、帧率、码率等。所有设置的参数均为理想情况下的最大值。当视频引擎因网络环境等原因无法达到设置的分辨率、帧率或码率的最大值时，会取最接近最大值的那个值。</p>
+</li>
+<li>
+<p>此接口为全量参数配置接口，重复调用此接口时，SDK 会刷新此前的所有参数配置，以最新的传参为准。所以每次修改配置时都需要设置所有参数，未设置的参数将取默认值。</p>
+</li>
+</ul>
+<p><strong>参数说明</strong></p>
+<p><code>config</code> 视频编码属性配置 ，详细信息请参考 <a href="../../nertc/NERtcVideoConfig-class.html">NERtcVideoConfig</a>。</p>
+<p><code>streamType</code>视频通道类型：
+    * main（0）：主流。
+    * sub（1）：辅流。</p>
+<p><strong>返回值</strong></p>
+<ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。
+<ul>
+<li>30003（invalidParam)：参数错误，比如 videoConfig 设置为空。</li>
+<li>30005（invalidState)：状态错误，比如引擎尚未初始化。</li>
+<li>30004（notSupported）：不支持的操作，比如当前使用的是纯音频 SDK。</li>
+</ul>
+</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;int&gt; setLocalVideoConfig(NERtcVideoConfig videoConfig,
+    {int streamType = NERtcVideoStreamType.main});</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc</a></li>
+    <li><a href="../../nertc/NERtcEngine-class.html">NERtcEngine</a></li>
+    <li class="self-crumb">setLocalVideoConfig abstract method</li>
+</ol>
+
+
+    <h5>NERtcEngine class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['mainpictureaccountid_0',['mainPictureAccountId',['../structnertc_1_1_rtc_live_stream_task_option.html#ad57421c9409160505c2bfa0f1067b337',1,'nertc::RtcLiveStreamTaskOption']]],
+  ['mainstream_1',['mainStream',['../structnertc_1_1_rtc_predecode_frame_info.html#a284c7799d5605f289788451e4ccdfaa2',1,'nertc::RtcPredecodeFrameInfo']]],
+  ['marshalextension_2ecs_2',['MarshalExtension.cs',['../_marshal_extension_8cs.html',1,'']]],
+  ['material_3',['material',['../structnertc_1_1_rtc_spatializer_room_property.html#ad0fc99f1582e1f056d21400b3030bc1e',1,'nertc::RtcSpatializerRoomProperty']]],
+  ['maxcamerazoomscale_4',['MaxCameraZoomScale',['../classnertc_1_1_i_rtc_engine.html#a1cfb1161f57ebb447b97f51e81aacb28',1,'nertc::IRtcEngine']]],
+  ['maxprofile_5',['maxProfile',['../structnertc_1_1_rtc_video_config.html#a968c9b9379ddfd18367745cc3a08caed',1,'nertc::RtcVideoConfig']]],
+  ['mediaproxyserver_6',['mediaProxyServer',['../structnertc_1_1_rtc_server_addresses.html#a76fc28ba88269756b4678567055f2f4d',1,'nertc::RtcServerAddresses']]],
+  ['mediastatsobserver_2ecs_7',['MediaStatsObserver.cs',['../_media_stats_observer_8cs.html',1,'']]],
+  ['mediatype_8',['mediaType',['../structnertc_1_1_rtc_predecode_frame_info.html#a8add93aacc953b2b579aecd2b860979b',1,'nertc::RtcPredecodeFrameInfo']]],
+  ['memoryappkbytes_9',['memoryAppKbytes',['../structnertc_1_1_rtc_stats.html#afe56a99642f4b1111d0fd2eb8b1800ec',1,'nertc::RtcStats']]],
+  ['memoryappusage_10',['memoryAppUsage',['../structnertc_1_1_rtc_stats.html#aa9a959246db9ebeb0ed0537c693e0dd0',1,'nertc::RtcStats']]],
+  ['memorytotalusage_11',['memoryTotalUsage',['../structnertc_1_1_rtc_stats.html#a6cea70e2c8720b79db8bdcc7403bd93c',1,'nertc::RtcStats']]],
+  ['minbitrate_12',['minBitrate',['../structnertc_1_1_rtc_video_config.html#a7b80331509a3b36f48972ca6ab4ab0e6',1,'nertc::RtcVideoConfig']]],
+  ['minframerate_13',['minFramerate',['../structnertc_1_1_rtc_video_config.html#a4d8642211db6cb2d401ba8152ef4b85a',1,'nertc::RtcVideoConfig']]],
+  ['mirrormode_14',['mirrorMode',['../structnertc_1_1_rtc_video_config.html#a5da77a1fafa76de2dc6880848d173118',1,'nertc::RtcVideoConfig']]],
+  ['mode_15',['mode',['../structnertc_1_1_rtc_audio_frame_request_format.html#a22f2fbd385c4c3a9b216b933e8073fa5',1,'nertc.RtcAudioFrameRequestFormat.mode'],['../structnertc_1_1_rtc_encryption_config.html#ad34265d12cabed79f16c624c951ef5fd',1,'nertc.RtcEncryptionConfig.mode'],['../structnertc_1_1_rtc_join_channel_options.html#aef9617fc1f9ddb068bb54ee92ce0181b',1,'nertc.RtcJoinChannelOptions.mode']]],
+  ['mutelocalaudiostream_16',['MuteLocalAudioStream',['../classnertc_1_1_i_rtc_channel.html#aa4e5a4e54610ef16d486be5321aef81f',1,'nertc.IRtcChannel.MuteLocalAudioStream()'],['../classnertc_1_1_i_rtc_engine.html#aaf4c883f3c49590cbe83373024a036d0',1,'nertc.IRtcEngine.MuteLocalAudioStream()']]],
+  ['mutelocalvideostream_17',['MuteLocalVideoStream',['../classnertc_1_1_i_rtc_channel.html#addb8a9e2989ad570e5d80216f96487f4',1,'nertc.IRtcChannel.MuteLocalVideoStream()'],['../classnertc_1_1_i_rtc_engine.html#a52603e940c234c32a426eb67075e920e',1,'nertc.IRtcEngine.MuteLocalVideoStream()']]]
+];

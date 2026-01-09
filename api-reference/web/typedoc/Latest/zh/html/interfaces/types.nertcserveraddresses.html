@@ -1,0 +1,324 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NeRtcServerAddresses | NERTC V5.8.30</title>
+	<meta name="description" content="Documentation for NERTC V5.8.30">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">NERTC V5.8.30</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">NERTC V5.8.30</a>
+				</li>
+				<li>
+					<a href="../modules/types.html">types</a>
+				</li>
+				<li>
+					<a href="types.nertcserveraddresses.html">NeRtcServerAddresses</a>
+				</li>
+			</ul>
+			<h1>Interface NeRtcServerAddresses</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>私有化服务器相关配置参数。</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><pre><code class="language-Javascript"><span style="color: #008000">// 加入房间</span>
+<span style="color: #001080">client</span><span style="color: #000000">.</span><span style="color: #795E26">join</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">channelName:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;channel163&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">uid:</span><span style="color: #000000"> </span><span style="color: #098658">123</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">token:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;&lt;您的token&gt;&#039;</span><span style="color: #000000">, </span><span style="color: #008000">// 如关闭了安全模式，则不需要该参数。</span>
+<span style="color: #000000">  </span><span style="color: #001080">neRtcServerAddresses:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">channelServer:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">statisticsServer:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">statisticsWebSocketServer:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;</span><span style="color: #CD3131">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">roomServer</span><span style="color: #000000">: </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  },</span>
+<span style="color: #000000">});</span>
+</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">NeRtcServerAddresses</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#channelserver" class="tsd-kind-icon">channel<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#cloudproxyserver" class="tsd-kind-icon">cloud<wbr>Proxy<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#lbsserver" class="tsd-kind-icon">lbs<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#mediaproxyserver" class="tsd-kind-icon">media<wbr>Proxy<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#mediaserver" class="tsd-kind-icon">media<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#roomserver" class="tsd-kind-icon">room<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#statisticsserver" class="tsd-kind-icon">statistics<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#statisticswebsocketserver" class="tsd-kind-icon">statistics<wbr>Web<wbr>Socket<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="types.nertcserveraddresses.html#websocketproxyserver" class="tsd-kind-icon">web<wbr>Socket<wbr>Proxy<wbr>Server</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="channelserver" class="tsd-anchor"></a>
+					<h3>channel<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">channel<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>房间信息服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="cloudproxyserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cloud<wbr>Proxy<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">cloud<wbr>Proxy<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>云代理服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lbsserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> lbs<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">lbs<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>LBS调度服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="mediaproxyserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> media<wbr>Proxy<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">media<wbr>Proxy<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>云代理媒体服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="mediaserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> media<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">media<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>mediaServer服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="roomserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> room<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">room<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>roomServer服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="statisticsserver" class="tsd-anchor"></a>
+					<h3>statistics<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">statistics<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>统计上报服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="statisticswebsocketserver" class="tsd-anchor"></a>
+					<h3>statistics<wbr>Web<wbr>Socket<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">statistics<wbr>Web<wbr>Socket<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>日志上报服务器地址。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="websocketproxyserver" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> web<wbr>Socket<wbr>Proxy<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">web<wbr>Socket<wbr>Proxy<wbr>Server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>云代理信令服务器地址。</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/browser.html">browser</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/client.html">client</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/nertc.html">nertc</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/stream.html">stream</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/types.html">types</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="types.nertcserveraddresses.html" class="tsd-kind-icon">Ne<wbr>Rtc<wbr>Server<wbr>Addresses</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#channelserver" class="tsd-kind-icon">channel<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#cloudproxyserver" class="tsd-kind-icon">cloud<wbr>Proxy<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#lbsserver" class="tsd-kind-icon">lbs<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#mediaproxyserver" class="tsd-kind-icon">media<wbr>Proxy<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#mediaserver" class="tsd-kind-icon">media<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#roomserver" class="tsd-kind-icon">room<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#statisticsserver" class="tsd-kind-icon">statistics<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#statisticswebsocketserver" class="tsd-kind-icon">statistics<wbr>Web<wbr>Socket<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="types.nertcserveraddresses.html#websocketproxyserver" class="tsd-kind-icon">web<wbr>Socket<wbr>Proxy<wbr>Server</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

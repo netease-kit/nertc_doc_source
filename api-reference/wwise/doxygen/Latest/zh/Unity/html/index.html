@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: SDK 介绍</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">SDK 介绍 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>网易云信 NERTC SDK 基于 Audiokinetic Wwise 提供了适配 Unreal 游戏开发平台的完善的音视频通话开发插件。SDK 提供了基于网络的点对点视频通话和语音通话功能，还提供多人视频和音频会议功能，支持通话中音视频设备控制和实时音视频模式切换，支持视频采集数据回调以实现美颜等自定义功能。</p>
+<ul>
+<li><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html">IRtcEngine</a> 接口类包含应用程序调用的主要方法。</li>
+<li><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">IRtcCallback</a> 接口类用于向应用程序发送回调通知。</li>
+<li><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">IVoiceEngine</a> 接口类包含语音消息调用的主要方法。</li>
+<li><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager.html">IAudioDeviceManager</a> 接口类提供用于管理音频设备的相关接口。</li>
+<li><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a> 接口类获取设备相关的信息。</li>
+</ul>
+<h2>错误码</h2>
+<p>在调用 SDK API 的过程中，SDK 可能会返回错误码或状态码。根据打印的日志，您可以判断当前 SDK 或任务的状态。如果遇到未知的错误码，请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师排查。</p>
+<p>当前 SDK API 的错误码如下：</p><ul>
+<li>日志等级：<code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a6d5c78cfc8509fbad6ba8aa9228e9cfd">nertc::wwiseplugin::RtcLogLevel</a></code></li>
+<li>错误码：<code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">nertc::wwiseplugin::RtcErrorCode</a></code></li>
+</ul>
+<h2 id="房间管理">房间管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#af9478b61a842ca5e8539033513597940">Release</a> </td><td>销毁 IRtcEngine 对象。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#ad193a05a00b95270afe6ec36ec2d0eab">GetVersion</a> </td><td>查询 SDK 版本号。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a9d85ef0f792932863907c2a710112276">SetParameters</a> </td><td>设置音视频通话的相关参数。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2>房间事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine_native.html#a15f58eb0c9c40f4f17a41dfcfaf5626e">onClientRoleChanged</a> </td><td>用户角色已切换回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ad9909bd353cc0cef520037ffae5db5f4">OnJoinChannel</a> </td><td>加入房间回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a0ff53fc869fb59f96ebfe4857fe52f91">OnRejoinChannel</a> </td><td>重新加入房间回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a85fe3b3bc883ddf7828fee2d044eff37">OnLeaveChannel</a> </td><td>离开房间回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a5dd1d3d8ea25c87e310bfe65f28ddc45">OnUserJoined</a> </td><td>远端用户加入当前房间回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1fea9987dc15bd3248310020e107a1b8">OnUserLeft</a> </td><td>远端用户离开当前房间回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a34ff4a4d45b4655e4fcd53c987f4d9ca">OnDisconnect</a> </td><td>服务器连接断开回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#adc07c14ef0697bb7a34ca709666d7067">OnReconnectingStart</a> </td><td>开始重连回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a8b3a12e4f1b4b334a041544a59fdcac9">OnConnectionStateChanged</a> </td><td>房间连接状态已改变回调。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2>音频管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#acf71bbb241d84d850c273880321915a8">SetPublishAudioAllowList</a>  </td><td>设置音频流只能被指定的用户订阅。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a98bde2c071daa1fee189c2b986fee89a">SetSubscribeAudioAllowList</a>  </td><td>设置指定订阅的音频流。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2>语音消息</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aa8118bad34bde9b520b125db11500f87">setEvents</a> </td><td>为 nertc_voice_engine 对象指定一个或多个事件处理函数。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a55ca1fdfd30aacf1e982e68baaa8a690">setAuth</a> </td><td>语音模块鉴权。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a17239fc9be7c973a304dd92e318bb089">setMaxMessageLength</a> </td><td>设置语音消息最大长度。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a53af7f6c2286dd495ad4f65985e1db6f">startRecording</a> </td><td>开始录制语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ae239b5f28ab6a844308982d5254d8cd2">stopRecording</a> </td><td>停止录制语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ad593f6f8b8581d986d7663aea2a43d30">pauseRecording</a> </td><td>暂停录制语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a8254208b8f21b0d55cec15d6b50ddc54">resumeRecording</a> </td><td>恢复录制语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ac33234a25398dea84eb6450af20cf45d">cancelRecording</a>  </td><td>取消制语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a81863f6e46c52341f49864fb51207cfe">uploadRecordedFile</a>  </td><td>上传录制的语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a356cf322425b2ffc577ea29a4d2639ef">downloadRecordedFile</a>  </td><td>下载录制的语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a1183c0c361b3eac15c08ab901d4f993c">stopPlayFile</a>  </td><td>停止播放录制的语音消息。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a729b70de9a1839859c7669d335eb6c11">speechToText</a>  </td><td>语音转文字。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a588738d9bb899a5e799ef09a264085bc">getFileSize</a>  </td><td>获取文件大小。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a490e19ad4fcf95ef38dd777b48d99dd5">getVoiceFileDuration</a>  </td><td>获取语音消息时长。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aa5060e9b5f0bb8589c51df1fd10a0e6c">setMicVolume</a>  </td><td>设置麦克风录制音量。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aa4fdd7bf43658aa14e450ee7b742233f">getMicVolume</a>  </td><td>获取麦克风录制音量。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aaadc57c74962aab1f4992c9b46ac9932">setSpeakerVolume</a>  </td><td>设置语音播放音量。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a5539b00ab356094ede307c9f16fc83f8">getSpeakerVolume</a>  </td><td>获取语音播放音量。 </td><td>V5.4.127  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae053212abdd47387407c4649396cd087">OnAuth</a> </td><td>语音消息鉴权回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aa5957435587496daff330f9ea2a7466d">OnRecordCompleted</a> </td><td>语音消息录制完毕回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a0471caddca35f871d9722b9194b6eb7d">OnPlayCompleted</a> </td><td>语音消息播放完毕回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aab6a88b53c69dffc09cc63d844e839dd">OnUploadCompleted</a> </td><td>语音消息上传完毕回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a59d7221bac5c93eafab8cc33b77311fe">OnDownloadCompleted</a> </td><td>语音消息下载完毕回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae8a352868fce21501da61a86d1a91e7a">OnSpeechToTextCompleted</a> </td><td>语音消息转文字完毕回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a2f3788bba08795dc238ea1f3c4c1bcad">OnRecordingVolume</a> </td><td>设置录制音量回调。 </td><td>V5.4.127  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a6ff5f073931dd077f95aca4af10f76f3">OnPlayingVolume</a> </td><td>设置播放音量回调。 </td><td>V5.4.127  </td></tr>
+</table>
+<h2 id="本地媒体事件">本地媒体事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a8e974643e740f769b7394d58bd06b75d">OnFirstAudioDataReceived</a> </td><td>已接收到远端音频首帧回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a19c9681f55ae284066332bf48e18f2e6">OnFirstAudioFrameDecoded</a> </td><td>已解码远端音频首帧的回调。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2 id="远端媒体事件">远端媒体事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ae671ae57f74d91df2ad0c9dbed8abda8">OnUserAudioStart</a> </td><td>远端用户开启音频主流回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a51e00555b59128699a9b3aab32434382">OnUserAudioStop</a> </td><td>远端用户停用音频主流回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ad34ef611a74d6371155637166076edfe">OnUserAudioMute</a> </td><td>远端用户是否静音主流回调。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2 id="音量提示">音量提示</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a8ac9674a3373a4924368583079525c3d">EnableAudioVolumeIndication</a> </td><td>启用说话者音量提示。 </td><td>V5.4.109  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a98af907d004ebf508e8710a72cc0fcc3">OnRemoteAudioVolumeIndication</a> </td><td>提示房间内谁正在说话及说话者音量的回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#af40f5600f63192b155bb6e490712a9d4">OnLocalAudioVolumeIndication</a> </td><td>提示房间内本地用户瞬时音量的回调。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2 id="音频设备管理">音频设备管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#a535bf858ca38a90d4132885ced58c211">enumerateRecordDevices</a> </td><td>枚举音频采集设备。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#a87263eb8d77937239dfd6692d92423d7">setRecordDevice</a> </td><td>设置当前音频采集设备。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#a253302b3e4affc9e4978098d7e008502">getRecordDevice</a> </td><td>获取当前音频采集设备。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#a303c9a0679064eab4075ac8bf496af54">setRecordDeviceVolume</a> </td><td>设置当前音频采集设备音量。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#ad918cd5106d3d7636893627bdd25b270">getRecordDeviceVolume</a> </td><td>获取当前音频采集设备音量。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#ab5f0e1d62c8528e1f5acef80ec577558">setRecordDeviceMute</a> </td><td>设置当前采集设备静音状态。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#ae8226dee4d560359254914c27a1d9e3a">getRecordDeviceMute</a> </td><td>获取当前采集设备静音状态。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#abb1bd8d78bca98725f9dae25102ba83f">startRecordDeviceTest</a> </td><td>开始测试音频采集设备。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#ad4573c898d96226a8c5c60ed36a38c80">stopRecordDeviceTest</a> </td><td>停止测试音频采集设备。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#af8a87530299c741e5ca57a40c284ef81">GetEnableLoopbackWithGameObjectID</a> </td><td>开启或关闭 loopback。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a36a6a927e11fb01f81a1fcca1d8fac0f">GetEnableLoopbackWithGameObjectID</a> </td><td>查询是否开启或关闭 loopback。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#ae8feb4a9805ae14db8d2c8e4683d1603">startAudioDeviceLoopbackTest</a> </td><td>开始音频采集播放设备回路测试。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html#a75993c131c4351801a51ff7f8626b08b">stopAudioDeviceLoopbackTest</a> </td><td>停止音频采集播放设备回路测试。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2 id="设备管理事件">设备管理事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a453dd9acd32e303ae71da2c5170e5422">OnAudioDeviceStateChanged</a> </td><td>音频设备状态更改回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a993de1a86fc7ec4403e4cd3d85e3352a">OnAudioDefaultDeviceChanged</a> </td><td>音频默认设备更改回调。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2 id="设备管理">空间音效（3D 音效）</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#ab12b16e4a15b9b3543d634eeb709670d">SetAudioRecvRange</a> </td><td>设置空间音效的距离衰减属性和语音范围。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#af1a2db0b2b3cbf781d03d2e0a37ba214">UpdateSelfPosition</a> </td><td>设置说话者和接收者的位置信息。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#ab5bf349dde162798a0e2f87457bc9ed9">SetRangeAudioMode</a> </td><td>设置渲染模式。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#ae6c1c21dd37b6ab3e6c9f7b52e6c9490">SetRangeAudioTeamID</a> </td><td>设置范围语音小队 ID。 </td><td>V5.4.109  </td></tr>
+</table>
+<h2 id="故障排查">故障排查</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a8d0971ca6006daaf09234d2cd3da5f0a">StartAudioDump</a> </td><td>开始记录音频 dump。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#ae14e54b1fe7b237fdc4bb6e3db40e754">StopAudioDump</a> </td><td>结束记录音频 dump </td><td>V5.4.109  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a11b668d7f97c974754087d953706183b">OnError</a> </td><td>发生错误回调。 </td><td>V5.4.109  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a76e89149d3fcff74675abc07b2801ccc">OnWarning</a> </td><td>发生警告回调。 </td><td>V5.4.109  </td></tr>
+</table>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

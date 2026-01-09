@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcChannelMediaRelayConfiguration类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">实例方法</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_rtc_channel_media_relay_configuration-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcChannelMediaRelayConfiguration类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcChannelMediaRelayConfiguration 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_channel_media_relay_configuration.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+实例方法</h2></td></tr>
+<tr class="memitem:ac35f1421ac3b090c15dacb5771986171" id="r_ac35f1421ac3b090c15dacb5771986171"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac35f1421ac3b090c15dacb5771986171">setDestinationInfo:forChannelName:</a></td></tr>
+<tr class="memdesc:ac35f1421ac3b090c15dacb5771986171"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置跨房间媒体流转发的目标房间信息。 <br  />
+如果您需要将媒体流转发到多个房间，可以多次调用该方法，设置多个房间的 NERtcChannelMediaRelayInfo。该方法支持最多设置 4 个目标房间。  <br /></td></tr>
+<tr class="separator:ac35f1421ac3b090c15dacb5771986171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e266c044a0275873e5687570171e9f0" id="r_a1e266c044a0275873e5687570171e9f0"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a1e266c044a0275873e5687570171e9f0">removeDestinationInfoForChannelName:</a></td></tr>
+<tr class="memdesc:a1e266c044a0275873e5687570171e9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除跨房间媒体流转发的房间信息。  <br /></td></tr>
+<tr class="separator:a1e266c044a0275873e5687570171e9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a74023015b8fee37ab3b7b64254d3130a" id="r_a74023015b8fee37ab3b7b64254d3130a"><td class="memItemLeft" align="right" valign="top">NSDictionary&lt; NSString *, <a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a> * &gt; *_Nullable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74023015b8fee37ab3b7b64254d3130a">destinationInfos</a></td></tr>
+<tr class="memdesc:a74023015b8fee37ab3b7b64254d3130a"><td class="mdescLeft">&#160;</td><td class="mdescRight">转发媒体流的目标房间配置信息。详细信息请参考 <code><a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a></code>。  <br /></td></tr>
+<tr class="separator:a74023015b8fee37ab3b7b64254d3130a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5963412bfeaec4e4ac1bea932fcfc1b9" id="r_a5963412bfeaec4e4ac1bea932fcfc1b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5963412bfeaec4e4ac1bea932fcfc1b9">sourceInfo</a></td></tr>
+<tr class="memdesc:a5963412bfeaec4e4ac1bea932fcfc1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">源房间的信息。详细信息请参考 <code><a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a></code>。  <br /></td></tr>
+<tr class="separator:a5963412bfeaec4e4ac1bea932fcfc1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数文档</h2>
+<a id="a1e266c044a0275873e5687570171e9f0" name="a1e266c044a0275873e5687570171e9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e266c044a0275873e5687570171e9f0">&#9670;&#160;</a></span>removeDestinationInfoForChannelName:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) removeDestinationInfoForChannelName: </td>
+          <td></td>
+          <td class="paramtype">(NSString *_Nonnull)</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除跨房间媒体流转发的房间信息。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>需要取消转发媒体流的目标房间名称。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回 YES，失败返回 NO。  </dd></dl>
+
+</div>
+</div>
+<a id="ac35f1421ac3b090c15dacb5771986171" name="ac35f1421ac3b090c15dacb5771986171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35f1421ac3b090c15dacb5771986171">&#9670;&#160;</a></span>setDestinationInfo:forChannelName:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) setDestinationInfo: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a> *_Nonnull)</td>          <td class="paramname"><span class="paramname"><em>destinationInfo</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">forChannelName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *_Nonnull)</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置跨房间媒体流转发的目标房间信息。 <br  />
+如果您需要将媒体流转发到多个房间，可以多次调用该方法，设置多个房间的 NERtcChannelMediaRelayInfo。该方法支持最多设置 4 个目标房间。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destinationInfo</td><td>目标房间信息。详细信息请参考 <code><a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a></code>。 </td></tr>
+    <tr><td class="paramname">channelName</td><td>目标房间名称。该参数必填，且需与该方法 destinationInfo 参数中的 channelName 一致。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>成功返回 YES，失败返回 NO。  </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a74023015b8fee37ab3b7b64254d3130a" name="a74023015b8fee37ab3b7b64254d3130a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74023015b8fee37ab3b7b64254d3130a">&#9670;&#160;</a></span>destinationInfos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSDictionary&lt;NSString *, <a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a> *&gt;* _Nullable) destinationInfos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>转发媒体流的目标房间配置信息。详细信息请参考 <code><a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a></code>。 </p>
+<ul>
+<li>channelName：目标房间的房间名。</li>
+<li>token：可以加入目标房间的 token。</li>
+<li>uid：标识目标房间中的转发媒体流的 UID。请确保不要将该参数设为目标房间的主播的 UID，并与目标房间中的 所有 UID 都不同。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a5963412bfeaec4e4ac1bea932fcfc1b9" name="a5963412bfeaec4e4ac1bea932fcfc1b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5963412bfeaec4e4ac1bea932fcfc1b9">&#9670;&#160;</a></span>sourceInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a>*) sourceInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>源房间的信息。详细信息请参考 <code><a class="el" href="interface_n_e_rtc_channel_media_relay_info.html">NERtcChannelMediaRelayInfo</a></code>。 </p>
+<ul>
+<li>channelName：源房间名。</li>
+<li>token：能加入源房间的 token。</li>
+<li>uid：标识源房间中的转发媒体流的 UID。  </li>
+</ul>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

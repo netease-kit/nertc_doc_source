@@ -1,0 +1,1194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: &lt;NERtcEngineDelegate&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">实例方法</a> &#124;
+<a href="protocol_n_e_rtc_engine_delegate-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;NERtcEngineDelegate&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 常用回调   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_delegate_8h_source.html">NERtcEngineDelegate.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;NERtcEngineDelegate&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_n_e_rtc_engine_delegate-p.png" usemap="#_3CNERtcEngineDelegate_3E_map" alt=""/>
+  <map id="_3CNERtcEngineDelegate_3E_map" name="_3CNERtcEngineDelegate_3E_map">
+<area href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。" alt="&lt;NERtcEngineDelegateEx&gt;" shape="rect" coords="0,112,164,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+实例方法</h2></td></tr>
+<tr class="memitem:a8708cb1666d31aa9538d47b3f10b7ff9" id="r_a8708cb1666d31aa9538d47b3f10b7ff9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a8708cb1666d31aa9538d47b3f10b7ff9">onNERtcEngineDidError:</a></td></tr>
+<tr class="memdesc:a8708cb1666d31aa9538d47b3f10b7ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">发生错误回调。 该回调方法表示 SDK 运行时出现了网络或媒体相关的错误。 通常情况下，SDK 上报的错误意味着 SDK 无法自动恢复，需要 App 干预或提示用户。  <br /></td></tr>
+<tr class="separator:a8708cb1666d31aa9538d47b3f10b7ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf3be2c8e89de94f5318bdde653b07e" id="r_aebf3be2c8e89de94f5318bdde653b07e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aebf3be2c8e89de94f5318bdde653b07e">onNERtcEngineDidWarning:msg:</a></td></tr>
+<tr class="memdesc:aebf3be2c8e89de94f5318bdde653b07e"><td class="mdescLeft">&#160;</td><td class="mdescRight">发生警告回调。 该回调方法表示 SDK 运行时出现了网络或媒体相关的警告。 通常情况下，SDK 上报的警告意味着 SDK 无法自动适配，需要 App 干预或提示用户。  <br /></td></tr>
+<tr class="separator:aebf3be2c8e89de94f5318bdde653b07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f5a0b21a0570ccf952a806166a0f48" id="r_a74f5a0b21a0570ccf952a806166a0f48"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a74f5a0b21a0570ccf952a806166a0f48">onNERtcEngineApiDidExecuted:errCode:msg:</a></td></tr>
+<tr class="separator:a74f5a0b21a0570ccf952a806166a0f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec9bad19bbc5109c7cf1f161d246907" id="r_afec9bad19bbc5109c7cf1f161d246907"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#afec9bad19bbc5109c7cf1f161d246907">onNERtcEngineConnectionStateChangeWithState:reason:</a></td></tr>
+<tr class="memdesc:afec9bad19bbc5109c7cf1f161d246907"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDK 和服务端的连接状态已改变回调。 该回调在 SDK 和服务端的连接状态发生改变时触发，并告知用户当前的连接状态和引起状态改变的原因。  <br /></td></tr>
+<tr class="separator:afec9bad19bbc5109c7cf1f161d246907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba9968da680d14f496b2b16a78c6ad8" id="r_a1ba9968da680d14f496b2b16a78c6ad8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a1ba9968da680d14f496b2b16a78c6ad8">onNERtcEngineDidLeaveChannelWithResult:</a></td></tr>
+<tr class="memdesc:a1ba9968da680d14f496b2b16a78c6ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">退出房间回调。 App 调用 leaveChannel 方法后，SDK 提示 App 退出房间是否成功。  <br /></td></tr>
+<tr class="separator:a1ba9968da680d14f496b2b16a78c6ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a3d63904a172a1675e01cbdd1f4399" id="r_aa1a3d63904a172a1675e01cbdd1f4399"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aa1a3d63904a172a1675e01cbdd1f4399">onNERtcEngineDidDisconnectWithReason:</a></td></tr>
+<tr class="memdesc:aa1a3d63904a172a1675e01cbdd1f4399"><td class="mdescLeft">&#160;</td><td class="mdescRight">与服务器连接中断，可能原因包括：网络连接失败、服务器关闭该房间、用户被踢出房间等。  <br /></td></tr>
+<tr class="separator:aa1a3d63904a172a1675e01cbdd1f4399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba0634b622ba4f1c67eee50d97ebcb1" id="r_afba0634b622ba4f1c67eee50d97ebcb1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#afba0634b622ba4f1c67eee50d97ebcb1">onNERtcEngineRejoinChannel:</a></td></tr>
+<tr class="memdesc:afba0634b622ba4f1c67eee50d97ebcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">重新加入房间回调。 在弱网环境下，若客户端和服务器失去连接，SDK 会自动重连。自动重连成功后触发此回调方法。  <br /></td></tr>
+<tr class="separator:afba0634b622ba4f1c67eee50d97ebcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e47ea04b33f9dc7746ede6a0d53a6eb" id="r_a7e47ea04b33f9dc7746ede6a0d53a6eb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a7e47ea04b33f9dc7746ede6a0d53a6eb">onNERtcEngineUserDidJoinWithUserID:userName:</a></td></tr>
+<tr class="memdesc:a7e47ea04b33f9dc7746ede6a0d53a6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户加入当前房间回调。 该回调提示有远端用户加入了房间，并返回新加入用户的 ID；如果加入之前，已经有其他用户在房间中了，新加入的用户也会收到这些已有用户加入房间的回调。  <br /></td></tr>
+<tr class="separator:a7e47ea04b33f9dc7746ede6a0d53a6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0c4d9ea21cf94bd7219de1077b6136" id="r_a0c0c4d9ea21cf94bd7219de1077b6136"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a0c0c4d9ea21cf94bd7219de1077b6136">onNERtcEngineUserDidJoinWithUserID:userName:joinExtraInfo:</a></td></tr>
+<tr class="memdesc:a0c0c4d9ea21cf94bd7219de1077b6136"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户加入房间事件回调。  <br /></td></tr>
+<tr class="separator:a0c0c4d9ea21cf94bd7219de1077b6136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e39aeff7071b061b28034b840cefbf5" id="r_a1e39aeff7071b061b28034b840cefbf5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a1e39aeff7071b061b28034b840cefbf5">onNERtcEngineUserDidLeaveWithUserID:reason:</a></td></tr>
+<tr class="memdesc:a1e39aeff7071b061b28034b840cefbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户离开当前房间回调。 提示有远端用户离开了房间（或掉线）。用户离开房间有两个原因，即正常离开和超时掉线：  <br /></td></tr>
+<tr class="separator:a1e39aeff7071b061b28034b840cefbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c893749e3260953119d084cbea80cb6" id="r_a7c893749e3260953119d084cbea80cb6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a7c893749e3260953119d084cbea80cb6">onNERtcEngineUserDidLeaveWithUserID:reason:leaveExtraInfo:</a></td></tr>
+<tr class="memdesc:a7c893749e3260953119d084cbea80cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户离开房间事件回调。  <br /></td></tr>
+<tr class="separator:a7c893749e3260953119d084cbea80cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6511d58efa3d67e9c2901149e0b3e60" id="r_ae6511d58efa3d67e9c2901149e0b3e60"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ae6511d58efa3d67e9c2901149e0b3e60">onNERtcEngineDidClientRoleChanged:newRole:</a></td></tr>
+<tr class="memdesc:ae6511d58efa3d67e9c2901149e0b3e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">直播场景下用户角色已切换回调。 <br  />
+用户加入房间后，通过 <code><a class="el" href="protocol_i_n_e_rtc_engine-p.html#a7fcc34bb7200daa27c7d2adc4c624fc0">INERtcEngine#setClientRole:</a></code> 切换用户角色后会触发此回调。例如从主播切换为观众、从观众切换为主播。  <br /></td></tr>
+<tr class="separator:ae6511d58efa3d67e9c2901149e0b3e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac697688a2f672977a0cb324e3a6c9b7c" id="r_ac697688a2f672977a0cb324e3a6c9b7c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac697688a2f672977a0cb324e3a6c9b7c">onNERtcEngineReconnectingStart</a></td></tr>
+<tr class="memdesc:ac697688a2f672977a0cb324e3a6c9b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">重连开始回调。 客户端和服务器断开连接时，SDK 会进行重连，重连开始时触发此回调。重连结果请参考 onNERtcEngineRejoinChannel 、onNERtcEngineDidDisconnectWithReason。   <br /></td></tr>
+<tr class="separator:ac697688a2f672977a0cb324e3a6c9b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade328996bde998b68b5d202d66b2b5f7" id="r_ade328996bde998b68b5d202d66b2b5f7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ade328996bde998b68b5d202d66b2b5f7">onNERtcEngineUserAudioDidStart:</a></td></tr>
+<tr class="memdesc:ade328996bde998b68b5d202d66b2b5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户开启音频回调。  <br /></td></tr>
+<tr class="separator:ade328996bde998b68b5d202d66b2b5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c42c61f74cf977b558d6ac5f9228eaf" id="r_a6c42c61f74cf977b558d6ac5f9228eaf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a6c42c61f74cf977b558d6ac5f9228eaf">onNERtcEngineUserAudioDidStop:</a></td></tr>
+<tr class="memdesc:a6c42c61f74cf977b558d6ac5f9228eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户停用音频回调。  <br /></td></tr>
+<tr class="separator:a6c42c61f74cf977b558d6ac5f9228eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c2cb5c852c8890728389b98d1f0f3e" id="r_af6c2cb5c852c8890728389b98d1f0f3e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#af6c2cb5c852c8890728389b98d1f0f3e">onNERtcEngineUserVideoDidStartWithUserID:videoProfile:</a></td></tr>
+<tr class="memdesc:af6c2cb5c852c8890728389b98d1f0f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户开启视频回调。 <br  />
+ 启用后，用户可以进行视频通话或直播。  <br /></td></tr>
+<tr class="separator:af6c2cb5c852c8890728389b98d1f0f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cd7800ed2f5b57944dedaa296dbed8" id="r_af5cd7800ed2f5b57944dedaa296dbed8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#af5cd7800ed2f5b57944dedaa296dbed8">onNERtcEngineUserVideoDidStop:</a></td></tr>
+<tr class="memdesc:af5cd7800ed2f5b57944dedaa296dbed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户停用视频回调。 <br  />
+ 关闭后，用户只能进行语音通话或者直播。  <br /></td></tr>
+<tr class="separator:af5cd7800ed2f5b57944dedaa296dbed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9cad3c1f480fd1a8ecc1f8b8e0c15b" id="r_a9f9cad3c1f480fd1a8ecc1f8b8e0c15b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a9f9cad3c1f480fd1a8ecc1f8b8e0c15b">onNERtcEngineUserSubStreamDidStartWithUserID:subStreamProfile:</a></td></tr>
+<tr class="memdesc:a9f9cad3c1f480fd1a8ecc1f8b8e0c15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户开启屏幕共享辅流通道的回调。  <br /></td></tr>
+<tr class="separator:a9f9cad3c1f480fd1a8ecc1f8b8e0c15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b685fd642468972c5b5434141ceec74" id="r_a7b685fd642468972c5b5434141ceec74"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a7b685fd642468972c5b5434141ceec74">onNERtcEngineUserVideoStreamDidStart:streamType:streamProfile:</a></td></tr>
+<tr class="memdesc:a7b685fd642468972c5b5434141ceec74"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户开启视频回调。 <br  />
+ 启用后，用户可以进行视频通话或直播。  <br /></td></tr>
+<tr class="separator:a7b685fd642468972c5b5434141ceec74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018018e141d7ccd070752ce9d872e6a3" id="r_a018018e141d7ccd070752ce9d872e6a3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a018018e141d7ccd070752ce9d872e6a3">onNERtcEngineUserSubStreamDidStop:</a></td></tr>
+<tr class="memdesc:a018018e141d7ccd070752ce9d872e6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户停止屏幕共享辅流通道的回调。  <br /></td></tr>
+<tr class="separator:a018018e141d7ccd070752ce9d872e6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f246c7db2f5c791d3f7395f7d7d59a0" id="r_a0f246c7db2f5c791d3f7395f7d7d59a0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a0f246c7db2f5c791d3f7395f7d7d59a0">onNERtcEngineUserVideoStreamDidStop:streamType:</a></td></tr>
+<tr class="memdesc:a0f246c7db2f5c791d3f7395f7d7d59a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户停止视频流通道的回调。  <br /></td></tr>
+<tr class="separator:a0f246c7db2f5c791d3f7395f7d7d59a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac237378d19cb52939d0a894a37186b5a" id="r_ac237378d19cb52939d0a894a37186b5a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac237378d19cb52939d0a894a37186b5a">onNERtcEngineMediaRightChangeWithAudio:video:</a></td></tr>
+<tr class="memdesc:ac237378d19cb52939d0a894a37186b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">服务端禁言音视频权限变化回调。  <br /></td></tr>
+<tr class="separator:ac237378d19cb52939d0a894a37186b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bba2b15ac3a40507adae5a828e9269" id="r_a93bba2b15ac3a40507adae5a828e9269"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a93bba2b15ac3a40507adae5a828e9269">onNERtcEngineUserSubStreamAudioDidStart:</a></td></tr>
+<tr class="memdesc:a93bba2b15ac3a40507adae5a828e9269"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户开启音频辅流回调。  <br /></td></tr>
+<tr class="separator:a93bba2b15ac3a40507adae5a828e9269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b02d2d612737de435875990f0f83194" id="r_a4b02d2d612737de435875990f0f83194"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a4b02d2d612737de435875990f0f83194">onNERtcEngineUserSubStreamAudioDidStop:</a></td></tr>
+<tr class="memdesc:a4b02d2d612737de435875990f0f83194"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户停用音频辅流回调。  <br /></td></tr>
+<tr class="separator:a4b02d2d612737de435875990f0f83194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c3ace5036d0c42f1c46fa5e00bb114" id="r_a08c3ace5036d0c42f1c46fa5e00bb114"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a08c3ace5036d0c42f1c46fa5e00bb114">onNERtcEngineUser:subStreamAudioMuted:</a></td></tr>
+<tr class="memdesc:a08c3ace5036d0c42f1c46fa5e00bb114"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端用户暂停或恢复发送音频辅流的回调。  <br /></td></tr>
+<tr class="separator:a08c3ace5036d0c42f1c46fa5e00bb114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 常用回调  </p>
+</div><h2 class="groupheader">成员函数文档</h2>
+<a id="a74f5a0b21a0570ccf952a806166a0f48" name="a74f5a0b21a0570ccf952a806166a0f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f5a0b21a0570ccf952a806166a0f48">&#9670;&#160;</a></span>onNERtcEngineApiDidExecuted:errCode:msg:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineApiDidExecuted: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>apiName</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">errCode:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)</td>          <td class="paramname"><span class="paramname"><em>errCode</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">msg:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afec9bad19bbc5109c7cf1f161d246907" name="afec9bad19bbc5109c7cf1f161d246907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec9bad19bbc5109c7cf1f161d246907">&#9670;&#160;</a></span>onNERtcEngineConnectionStateChangeWithState:reason:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineConnectionStateChangeWithState: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a>)</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">reason:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#adb687cd6be30f5bc2b52747ac0e029ab">NERtcReasonConnectionChangedType</a>)</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SDK 和服务端的连接状态已改变回调。 该回调在 SDK 和服务端的连接状态发生改变时触发，并告知用户当前的连接状态和引起状态改变的原因。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>当前的连接状态。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a></code>。 </td></tr>
+    <tr><td class="paramname">reason</td><td>引起当前连接状态改变的原因。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#adb687cd6be30f5bc2b52747ac0e029ab">NERtcReasonConnectionChangedType</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6511d58efa3d67e9c2901149e0b3e60" name="ae6511d58efa3d67e9c2901149e0b3e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6511d58efa3d67e9c2901149e0b3e60">&#9670;&#160;</a></span>onNERtcEngineDidClientRoleChanged:newRole:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineDidClientRoleChanged: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a>)</td>          <td class="paramname"><span class="paramname"><em>oldRole</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">newRole:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a>)</td>          <td class="paramname"><span class="paramname"><em>newRole</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直播场景下用户角色已切换回调。 <br  />
+用户加入房间后，通过 <code><a class="el" href="protocol_i_n_e_rtc_engine-p.html#a7fcc34bb7200daa27c7d2adc4c624fc0">INERtcEngine#setClientRole:</a></code> 切换用户角色后会触发此回调。例如从主播切换为观众、从观众切换为主播。 </p>
+<dl class="section note"><dt>注解</dt><dd>直播场景下，如果您在加入房间后调用该方法切换用户角色，调用成功后，会触发以下回调：<ul>
+<li>主播切观众，本端触发 onNERtcEngineDidClientRoleChanged 回调，远端触发 <code><a class="el" href="#a1e39aeff7071b061b28034b840cefbf5">NERtcEngineDelegate#onNERtcEngineUserDidLeaveWithUserID:reason:</a></code> 回调。</li>
+<li>观众切主播，本端触发 onNERtcEngineDidClientRoleChanged 回调，远端触发 <code><a class="el" href="#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldRole</td><td>切换前的角色。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a></code>。 </td></tr>
+    <tr><td class="paramname">newRole</td><td>切换后的角色。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1a3d63904a172a1675e01cbdd1f4399" name="aa1a3d63904a172a1675e01cbdd1f4399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a3d63904a172a1675e01cbdd1f4399">&#9670;&#160;</a></span>onNERtcEngineDidDisconnectWithReason:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineDidDisconnectWithReason: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)</td>          <td class="paramname"><span class="paramname"><em>reason</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>与服务器连接中断，可能原因包括：网络连接失败、服务器关闭该房间、用户被踢出房间等。 </p>
+<dl class="section note"><dt>注解</dt><dd>SDK 在调用 joinChannel 加入房间成功后，如果和服务器失去连接，就会触发该回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>网络连接中断原因。详细信息请查看 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8708cb1666d31aa9538d47b3f10b7ff9" name="a8708cb1666d31aa9538d47b3f10b7ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8708cb1666d31aa9538d47b3f10b7ff9">&#9670;&#160;</a></span>onNERtcEngineDidError:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineDidError: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)</td>          <td class="paramname"><span class="paramname"><em>errCode</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发生错误回调。 该回调方法表示 SDK 运行时出现了网络或媒体相关的错误。 通常情况下，SDK 上报的错误意味着 SDK 无法自动恢复，需要 App 干预或提示用户。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errCode</td><td>错误码。详细信息请参考 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ba9968da680d14f496b2b16a78c6ad8" name="a1ba9968da680d14f496b2b16a78c6ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba9968da680d14f496b2b16a78c6ad8">&#9670;&#160;</a></span>onNERtcEngineDidLeaveChannelWithResult:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineDidLeaveChannelWithResult: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)</td>          <td class="paramname"><span class="paramname"><em>result</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>退出房间回调。 App 调用 leaveChannel 方法后，SDK 提示 App 退出房间是否成功。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>退出房间结果。详细信息请参考 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError</a></code>。在快速切换房间时 code 为 kNERtcErrChannelLeaveBySwitchAction。</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebf3be2c8e89de94f5318bdde653b07e" name="aebf3be2c8e89de94f5318bdde653b07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf3be2c8e89de94f5318bdde653b07e">&#9670;&#160;</a></span>onNERtcEngineDidWarning:msg:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineDidWarning: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#ae131893c2d363a3b9c507966fa56ee2b">NERtcWarning</a>)</td>          <td class="paramname"><span class="paramname"><em>warnCode</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">msg:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发生警告回调。 该回调方法表示 SDK 运行时出现了网络或媒体相关的警告。 通常情况下，SDK 上报的警告意味着 SDK 无法自动适配，需要 App 干预或提示用户。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.3.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">warnCode</td><td>错误码。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_error_code_8h.html#ae131893c2d363a3b9c507966fa56ee2b">NERtcWarning</a></code>。 </td></tr>
+    <tr><td class="paramname">msg</td><td>警告描述。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac237378d19cb52939d0a894a37186b5a" name="ac237378d19cb52939d0a894a37186b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac237378d19cb52939d0a894a37186b5a">&#9670;&#160;</a></span>onNERtcEngineMediaRightChangeWithAudio:video:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineMediaRightChangeWithAudio: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>isAudioBannedByServer</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">video:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>isVideoBannedByServer</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>服务端禁言音视频权限变化回调。 </p>
+<dl class="section since"><dt>自从</dt><dd>v4.6.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isAudioBannedByServer</td><td>是否禁用音频。<ul>
+<li>true：禁用音频。</li>
+<li>false：取消禁用音频。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">isVideoBannedByServer</td><td>是否禁用视频。<ul>
+<li>true：禁用视频。</li>
+<li>false：取消禁用视频。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac697688a2f672977a0cb324e3a6c9b7c" name="ac697688a2f672977a0cb324e3a6c9b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac697688a2f672977a0cb324e3a6c9b7c">&#9670;&#160;</a></span>onNERtcEngineReconnectingStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineReconnectingStart </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重连开始回调。 客户端和服务器断开连接时，SDK 会进行重连，重连开始时触发此回调。重连结果请参考 onNERtcEngineRejoinChannel 、onNERtcEngineDidDisconnectWithReason。  </p>
+
+</div>
+</div>
+<a id="afba0634b622ba4f1c67eee50d97ebcb1" name="afba0634b622ba4f1c67eee50d97ebcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba0634b622ba4f1c67eee50d97ebcb1">&#9670;&#160;</a></span>onNERtcEngineRejoinChannel:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineRejoinChannel: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)</td>          <td class="paramname"><span class="paramname"><em>result</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重新加入房间回调。 在弱网环境下，若客户端和服务器失去连接，SDK 会自动重连。自动重连成功后触发此回调方法。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>重连结果。详细信息请参考 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08c3ace5036d0c42f1c46fa5e00bb114" name="a08c3ace5036d0c42f1c46fa5e00bb114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c3ace5036d0c42f1c46fa5e00bb114">&#9670;&#160;</a></span>onNERtcEngineUser:subStreamAudioMuted:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUser: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">subStreamAudioMuted:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>muted</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户暂停或恢复发送音频辅流的回调。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID，提示是哪个用户的音频辅流。 </td></tr>
+    <tr><td class="paramname">muted</td><td>是否停止发送音频辅流。<ul>
+<li>YES：该用户已暂停发送音频辅流。</li>
+<li>NO：该用户已恢复发送音频辅流。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ade328996bde998b68b5d202d66b2b5f7" name="ade328996bde998b68b5d202d66b2b5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade328996bde998b68b5d202d66b2b5f7">&#9670;&#160;</a></span>onNERtcEngineUserAudioDidStart:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserAudioDidStart: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户开启音频回调。 </p>
+<dl class="section note"><dt>注解</dt><dd>该回调由远端用户调用 enableLocalAudio 方法开启音频采集和发送触发。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c42c61f74cf977b558d6ac5f9228eaf" name="a6c42c61f74cf977b558d6ac5f9228eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c42c61f74cf977b558d6ac5f9228eaf">&#9670;&#160;</a></span>onNERtcEngineUserAudioDidStop:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserAudioDidStop: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户停用音频回调。 </p>
+<dl class="section note"><dt>注解</dt><dd>该回调由远端用户调用 enableLocalAudio 方法关闭音频采集和发送触发。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7e47ea04b33f9dc7746ede6a0d53a6eb" name="a7e47ea04b33f9dc7746ede6a0d53a6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e47ea04b33f9dc7746ede6a0d53a6eb">&#9670;&#160;</a></span>onNERtcEngineUserDidJoinWithUserID:userName:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserDidJoinWithUserID: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">userName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>userName</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户加入当前房间回调。 该回调提示有远端用户加入了房间，并返回新加入用户的 ID；如果加入之前，已经有其他用户在房间中了，新加入的用户也会收到这些已有用户加入房间的回调。 </p>
+<p>该回调在如下情况下会被触发：</p><ul>
+<li>远端用户调用 joinChannelWithToken 方法加入房间。</li>
+<li>远端用户网络中断后重新加入房间。 <dl class="section note"><dt>注解</dt><dd>直播场景下：<ul>
+<li>主播间能相互收到新主播加入频道的回调，并能获得该主播的用户 ID。</li>
+<li>观众也能收到新主播加入频道的回调，并能获得该主播的用户 ID。</li>
+<li>当 Web 端加入直播频道时，只要 Web 端有推流，SDK 会默认该 Web 端为主播，并触发该回调。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID。 </td></tr>
+    <tr><td class="paramname">userName</td><td>新加入房间的远端用户名。废弃字段，无需关注。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a0c0c4d9ea21cf94bd7219de1077b6136" name="a0c0c4d9ea21cf94bd7219de1077b6136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0c4d9ea21cf94bd7219de1077b6136">&#9670;&#160;</a></span>onNERtcEngineUserDidJoinWithUserID:userName:joinExtraInfo:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserDidJoinWithUserID: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">userName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>userName</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">joinExtraInfo:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="interface_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a> *)</td>          <td class="paramname"><span class="paramname"><em>joinExtraInfo</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户加入房间事件回调。 </p>
+<ul>
+<li>远端用户加入房间或断网重连后，SDK 会触发该回调，可以通过返回的用户 ID 订阅对应用户发布的音、视频流。<ul>
+<li>通信场景下，该回调通知有远端用户加入了房间，并返回新加入用户的 ID；若该用户加入之前，已有其他用户在房间中，该新加入的用户也会收到这些已有用户加入房间的回调。</li>
+<li>直播场景下，该回调通知有主播加入了房间，并返回该主播的用户 ID；若该用户加入之前，已经有主播在频道中了，新加入的用户也会收到已有主播加入房间的回调。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在 <a class="el" href="protocol_n_e_rtc_engine_delegate-p.html" title="NERtcEngine 常用回调">NERtcEngineDelegate</a> 接口类中通过 <code><a class="el" href="protocol_i_n_e_rtc_engine-p.html#aa0b59418e236407489b3a5cb7abdd9e1">INERtcEngine#setupEngineWithContext:</a></code> 接口设置回调监听。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+</li>
+</ul>
+</li>
+<li>同类型事件发生后，<code><a class="el" href="#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调可能会与该回调同时触发，建议您仅注册此回调，不能同时处理两个回调。</li>
+<li>当 Web 端用户加入直播场景的房间中，只要该用户发布了媒体流，SDK 会默认该用户为主播，并触发此回调。 <dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>userID </td><td>uint64_t </td><td>新加入房间的远端用户 ID。  </td></tr>
+<tr>
+<td>joinExtraInfo </td><td><a class="el" href="interface_n_e_rtc_user_join_extra_info.html" title="onUserJoined 回调时的一些可选信息">NERtcUserJoinExtraInfo</a> * </td><td>该远端用户加入的额外信息。  </td></tr>
+</table>
+</dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a1e39aeff7071b061b28034b840cefbf5" name="a1e39aeff7071b061b28034b840cefbf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e39aeff7071b061b28034b840cefbf5">&#9670;&#160;</a></span>onNERtcEngineUserDidLeaveWithUserID:reason:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserDidLeaveWithUserID: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">reason:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553d">NERtcSessionLeaveReason</a>)</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户离开当前房间回调。 提示有远端用户离开了房间（或掉线）。用户离开房间有两个原因，即正常离开和超时掉线： </p>
+<ul>
+<li>正常离开的时候，远端用户会收到相关消息消息，判断用户离开房间。</li>
+<li>超时掉线的依据是，在一定时间内（40~50s），用户没有收到对方的任何数据包，则判定为对方掉线。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>离开房间的远端用户 ID。 </td></tr>
+    <tr><td class="paramname">reason</td><td>远端用户离开的原因。</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553da82feb3cf00602473313244edbf890353" title="正常离开。">kNERtcSessionLeaveNormal(0)</a>：正常离开。</li>
+<li><a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553dae69661b91871ab296da5531c1e613b83" title="用户断线导致离开房间。">kNERtcSessionLeaveForFailOver(1)</a>：用户断线导致离开房间。</li>
+<li><a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553daf7dc16c8b03d100da9357057dc6699c7" title="用户因 Failover 导致离开房间，仅 SDK 内部使用。">kNERTCSessionLeaveForUpdate(2)</a>：用户因 Failover 导致离开房间，仅 SDK 内部使用。</li>
+<li><a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553da85823f0a385287e4fbece53939adf0ad" title="用户被踢导致离开房间。">kNERtcSessionLeaveForKick(3)</a>：用户被踢导致离开房间。</li>
+<li><a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553dace1f40627edd0d08b0b43fecf8fbb898" title="用户超时退出房间。">kNERtcSessionLeaveTimeout(4)</a>：用户超时退出房间。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a7c893749e3260953119d084cbea80cb6" name="a7c893749e3260953119d084cbea80cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c893749e3260953119d084cbea80cb6">&#9670;&#160;</a></span>onNERtcEngineUserDidLeaveWithUserID:reason:leaveExtraInfo:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserDidLeaveWithUserID: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">reason:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553d">NERtcSessionLeaveReason</a>)</td>          <td class="paramname"><span class="paramname"><em>reason</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">leaveExtraInfo:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="interface_n_e_rtc_user_leave_extra_info.html">NERtcUserLeaveExtraInfo</a> *)</td>          <td class="paramname"><span class="paramname"><em>leaveExtraInfo</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户离开房间事件回调。 </p>
+<ul>
+<li>远端用户离开房间或掉线（在 40 ~ 50 秒内本端用户未收到远端用户的任何数据包）后，SDK 会触发该回调。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在 <a class="el" href="protocol_n_e_rtc_engine_delegate-p.html" title="NERtcEngine 常用回调">NERtcEngineDelegate</a> 接口类中通过 <code><a class="el" href="protocol_i_n_e_rtc_engine-p.html#aa0b59418e236407489b3a5cb7abdd9e1">INERtcEngine#setupEngineWithContext:</a></code> 接口设置回调监听。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>同类型事件发生后，<code><a class="el" href="#a1e39aeff7071b061b28034b840cefbf5">NERtcEngineDelegate#onNERtcEngineUserDidLeaveWithUserID:reason:</a></code> 回调可能会与该回调同时触发，建议您仅注册此回调，不能同时处理两个回调。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>uid </td><td>long </td><td>离开房间的远端用户 ID。  </td></tr>
+<tr>
+<td>reason </td><td>int </td><td>该远端用户离开的原因，更多请参考 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError</a></code>。<ul>
+<li>
+kNERtcSessionLeaveNormal（0）：正常离开。</li>
+<li>
+kNERtcSessionLeaveForFailOver（1）：用户断线导致离开房间。</li>
+<li>
+kNERTCSessionLeaveForUpdate（2）：用户因 Failover 导致离开房间，仅 SDK 内部使用。</li>
+<li>
+kNERtcSessionLeaveForKick（3）：用户被踢导致离开房间。</li>
+<li>
+kNERtcSessionLeaveTimeout（4）：用户超时退出房间。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>leaveExtraInfo </td><td><a class="el" href="interface_n_e_rtc_user_leave_extra_info.html" title="onUserLeave 回调时的一些可选信息">NERtcUserLeaveExtraInfo</a> * </td><td>该远端用户离开的额外信息。  </td></tr>
+</table>
+</dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a93bba2b15ac3a40507adae5a828e9269" name="a93bba2b15ac3a40507adae5a828e9269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bba2b15ac3a40507adae5a828e9269">&#9670;&#160;</a></span>onNERtcEngineUserSubStreamAudioDidStart:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserSubStreamAudioDidStart: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户开启音频辅流回调。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b02d2d612737de435875990f0f83194" name="a4b02d2d612737de435875990f0f83194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b02d2d612737de435875990f0f83194">&#9670;&#160;</a></span>onNERtcEngineUserSubStreamAudioDidStop:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserSubStreamAudioDidStop: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户停用音频辅流回调。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f9cad3c1f480fd1a8ecc1f8b8e0c15b" name="a9f9cad3c1f480fd1a8ecc1f8b8e0c15b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9cad3c1f480fd1a8ecc1f8b8e0c15b">&#9670;&#160;</a></span>onNERtcEngineUserSubStreamDidStartWithUserID:subStreamProfile:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserSubStreamDidStartWithUserID: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">subStreamProfile:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)</td>          <td class="paramname"><span class="paramname"><em>profile</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户开启屏幕共享辅流通道的回调。 </p>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">profile</td><td>远端视频分辨率等级。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a018018e141d7ccd070752ce9d872e6a3" name="a018018e141d7ccd070752ce9d872e6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018018e141d7ccd070752ce9d872e6a3">&#9670;&#160;</a></span>onNERtcEngineUserSubStreamDidStop:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserSubStreamDidStop: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户停止屏幕共享辅流通道的回调。 </p>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af6c2cb5c852c8890728389b98d1f0f3e" name="af6c2cb5c852c8890728389b98d1f0f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c2cb5c852c8890728389b98d1f0f3e">&#9670;&#160;</a></span>onNERtcEngineUserVideoDidStartWithUserID:videoProfile:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserVideoDidStartWithUserID: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">videoProfile:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)</td>          <td class="paramname"><span class="paramname"><em>profile</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户开启视频回调。 <br  />
+ 启用后，用户可以进行视频通话或直播。 </p>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID，提示是哪个用户的视频流。 </td></tr>
+    <tr><td class="paramname">profile</td><td>远端用户的视频 profile 档位。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5cd7800ed2f5b57944dedaa296dbed8" name="af5cd7800ed2f5b57944dedaa296dbed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cd7800ed2f5b57944dedaa296dbed8">&#9670;&#160;</a></span>onNERtcEngineUserVideoDidStop:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserVideoDidStop: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户停用视频回调。 <br  />
+ 关闭后，用户只能进行语音通话或者直播。 </p>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b685fd642468972c5b5434141ceec74" name="a7b685fd642468972c5b5434141ceec74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b685fd642468972c5b5434141ceec74">&#9670;&#160;</a></span>onNERtcEngineUserVideoStreamDidStart:streamType:streamProfile:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserVideoStreamDidStart: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">streamType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">streamProfile:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)</td>          <td class="paramname"><span class="paramname"><em>profile</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户开启视频回调。 <br  />
+ 启用后，用户可以进行视频通话或直播。 </p>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID，提示是哪个用户的视频流。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>视频流类型。 </td></tr>
+    <tr><td class="paramname">profile</td><td>远端用户的视频 profile 档位。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f246c7db2f5c791d3f7395f7d7d59a0" name="a0f246c7db2f5c791d3f7395f7d7d59a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f246c7db2f5c791d3f7395f7d7d59a0">&#9670;&#160;</a></span>onNERtcEngineUserVideoStreamDidStop:streamType:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEngineUserVideoStreamDidStop: </td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">streamType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>远端用户停止视频流通道的回调。 </p>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>视频流类型。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_delegate_8h_source.html">NERtcEngineDelegate.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

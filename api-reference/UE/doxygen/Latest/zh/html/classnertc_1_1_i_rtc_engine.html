@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Unreal Engine SDK: nertc::IRtcEngine类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Unreal Engine SDK<span id="projectnumber">&#160;V5.4.128</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="classnertc_1_1_i_rtc_engine.html">IRtcEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1_i_rtc_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc::IRtcEngine类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_i_nertc_engine_8h_source.html">INertcEngine.h</a>&gt;</code></p>
+<div class="dynheader">
+类 nertc::IRtcEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1_i_rtc_engine.png" usemap="#nertc::IRtcEngine_map" alt=""/>
+  <map id="nertc::IRtcEngine_map" name="nertc::IRtcEngine_map">
+<area href="classnertc_1_1_i_rtc_engine_ex.html" alt="nertc::IRtcEngineEx" shape="rect" coords="0,56,121,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a489064bbaa2067c4210b056cbbb68317" id="r_a489064bbaa2067c4210b056cbbb68317"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a489064bbaa2067c4210b056cbbb68317">~IRtcEngine</a> ()</td></tr>
+<tr class="separator:a489064bbaa2067c4210b056cbbb68317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e816fd56f1cc6953a263f6798d0f1d4" id="r_a1e816fd56f1cc6953a263f6798d0f1d4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e816fd56f1cc6953a263f6798d0f1d4">initialize</a> (const <a class="el" href="structnertc_1_1_n_e_rtc_engine_context.html">NERtcEngineContext</a> &amp;context)=0</td></tr>
+<tr class="separator:a1e816fd56f1cc6953a263f6798d0f1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0255f44d601ad7ae039d189845b07503" id="r_a0255f44d601ad7ae039d189845b07503"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0255f44d601ad7ae039d189845b07503">release</a> (bool sync=false)=0</td></tr>
+<tr class="separator:a0255f44d601ad7ae039d189845b07503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58ed7e0e0e4383939fc16a6a77d2570" id="r_ae58ed7e0e0e4383939fc16a6a77d2570"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae58ed7e0e0e4383939fc16a6a77d2570">setClientRole</a> (<a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a> role)=0</td></tr>
+<tr class="separator:ae58ed7e0e0e4383939fc16a6a77d2570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6195db00acf739ca2cb183015abffd5b" id="r_a6195db00acf739ca2cb183015abffd5b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6195db00acf739ca2cb183015abffd5b">setChannelProfile</a> (<a class="el" href="namespacenertc.html#ac30f4b7ce13da5d664df0d2a6986e940">NERtcChannelProfileType</a> profile)=0</td></tr>
+<tr class="separator:a6195db00acf739ca2cb183015abffd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2743157544274a0264cdf8f132161039" id="r_a2743157544274a0264cdf8f132161039"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2743157544274a0264cdf8f132161039">joinChannel</a> (const char *token, const char *channel_name, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, const <a class="el" href="structnertc_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> &amp;channel_options)=0</td></tr>
+<tr class="separator:a2743157544274a0264cdf8f132161039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39edde1d9b83621274f93b560ca9d839" id="r_a39edde1d9b83621274f93b560ca9d839"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39edde1d9b83621274f93b560ca9d839">switchChannel</a> (const char *token, const char *channel_name, const <a class="el" href="structnertc_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> &amp;channel_options)=0</td></tr>
+<tr class="separator:a39edde1d9b83621274f93b560ca9d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9df7d1382d3f74f349913d36e992e9f" id="r_ad9df7d1382d3f74f349913d36e992e9f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9df7d1382d3f74f349913d36e992e9f">switchChannelEx</a> (const char *token, const char *channel_name, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, const <a class="el" href="structnertc_1_1_n_e_rtc_join_channel_options_ex.html">NERtcJoinChannelOptionsEx</a> &amp;channel_options)=0</td></tr>
+<tr class="separator:ad9df7d1382d3f74f349913d36e992e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbc54a71986a4a4a1c9c24d2c29e884" id="r_a6fbc54a71986a4a4a1c9c24d2c29e884"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fbc54a71986a4a4a1c9c24d2c29e884">leaveChannel</a> ()=0</td></tr>
+<tr class="separator:a6fbc54a71986a4a4a1c9c24d2c29e884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0e1e225e0fe8fc7ad1e9138d62caea" id="r_a2f0e1e225e0fe8fc7ad1e9138d62caea"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0e1e225e0fe8fc7ad1e9138d62caea">queryInterface</a> (<a class="el" href="namespacenertc.html#a13dd8adcb4f73bd24e37726272084a7d">NERtcInterfaceIdType</a> iid, void **inter)=0</td></tr>
+<tr class="separator:a2f0e1e225e0fe8fc7ad1e9138d62caea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad59ec2e1bb9983860d175b2a5dae0a6" id="r_aad59ec2e1bb9983860d175b2a5dae0a6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad59ec2e1bb9983860d175b2a5dae0a6">enableLocalAudio</a> (<a class="el" href="namespacenertc.html#a80f28ee70a6ad8a9cb24981313b0059b">NERtcAudioStreamType</a> type, bool enabled)=0</td></tr>
+<tr class="separator:aad59ec2e1bb9983860d175b2a5dae0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a489064bbaa2067c4210b056cbbb68317" name="a489064bbaa2067c4210b056cbbb68317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489064bbaa2067c4210b056cbbb68317">&#9670;&#160;</a></span>~IRtcEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nertc::IRtcEngine::~IRtcEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aad59ec2e1bb9983860d175b2a5dae0a6" name="aad59ec2e1bb9983860d175b2a5dae0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad59ec2e1bb9983860d175b2a5dae0a6">&#9670;&#160;</a></span>enableLocalAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::enableLocalAudio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a80f28ee70a6ad8a9cb24981313b0059b">NERtcAudioStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启/关闭本地音频采集 <br  />
+该方法可以重新开启本地语音功能，重新开始本地音频采集及处理。 <br  />
+该方法不影响接收或播放远端音频流。 </p><dl class="section note"><dt>注解</dt><dd>该方法与 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ae5a9a1261702039d9d636997706de7e8">muteLocalAudioStream</a> 的区别在于:<ul>
+<li><a class="el" href="#aad59ec2e1bb9983860d175b2a5dae0a6">enableLocalAudio</a>: 开启本地语音采集及处理</li>
+<li><a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ae5a9a1261702039d9d636997706de7e8">muteLocalAudioStream</a>: 停止或继续发送本地音频流 </li>
+</ul>
+</dd>
+<dd>
+该方法设置内部引擎为启用状态，在 <a class="el" href="#a6fbc54a71986a4a4a1c9c24d2c29e884">leaveChannel</a> 后仍然有效。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>音频流类型: </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td><ul>
+<li>true: 重新开启本地语音功能，即开启本地语音采集或处理（默认）</li>
+<li>false: 关闭本地语音功能，即停止本地语音采集或处理 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a1e816fd56f1cc6953a263f6798d0f1d4" name="a1e816fd56f1cc6953a263f6798d0f1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e816fd56f1cc6953a263f6798d0f1d4">&#9670;&#160;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::initialize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structnertc_1_1_n_e_rtc_engine_context.html">NERtcEngineContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>初始化 NERTC SDK 服务。 <br  />
+在调用 <a class="el" href="namespacenertc.html#a7ffdbb4873087948e93c1970bf6e20c3">createNERtcEngine()</a> 方法创建 <a class="el" href="classnertc_1_1_i_rtc_engine.html">IRtcEngine</a> 对象后，必须先调用该方法进行初始化，才能使用其他方法。初始化成功后，默认处于音视频通话模式。 </p><dl class="section warning"><dt>警告</dt><dd><ul>
+<li>必须使用同一个 App Key 才能进行通话。</li>
+<li>一个 <a class="el" href="classnertc_1_1_i_rtc_engine.html">IRtcEngine</a> 实例对象只能使用一个 App Key。如需更换 App Key，必须先调用 <a class="el" href="#a0255f44d601ad7ae039d189845b07503">release</a> 方法销毁当前实例，再调用本方法重新创建实例。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>传入的RTC engine context对象: <a class="el" href="structnertc_1_1_n_e_rtc_engine_context.html">NERtcEngineContext</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2743157544274a0264cdf8f132161039" name="a2743157544274a0264cdf8f132161039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2743157544274a0264cdf8f132161039">&#9670;&#160;</a></span>joinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::joinChannel </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structnertc_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>channel_options</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>加入音视频房间。 <br  />
+加入音视频房间时，如果指定房间尚未创建，云信服务器内部会自动创建一个同名房间。</p><ul>
+<li>SDK 加入房间后，同一个房间内的用户可以互相通话，多个用户加入同一个房间，可以群聊。使用不同 App Key 的 App 之间不能互通。</li>
+<li>成功调用该方加入房间后，本地会触发onJoinChannel回调，远端会触发onUserJoined回调。</li>
+<li>用户成功加入房间后，默认订阅房间内所有其他用户的音频流，可能会因此产生用量并影响计费。如果想取消自动订阅，可以在通话前通过调用setParameters方法实现。</li>
+<li>直播场景中的观众角色可以通过 switchChannel 快速切换房间。 <dl class="section note"><dt>注解</dt><dd>房间内每个用户的用户 ID 必须是唯一的。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>安全认证签名（NERTC Token）。可设置为：<ul>
+<li>null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>已获取的NERTC Token。安全模式下必须设置为获取到的 Token 。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel_name</td><td>房间名称，设置相同房间名称的用户会进入同一个通话房间。字符串格式，长度为1~ 64 字节。支持以下89个字符：a-z, A-Z, 0-9, space, !#$%&amp;()+-:;≤.,&gt;? @[]^_{|}~” </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>用户的唯一标识 id，房间内每个用户的 uid 必须是唯一的。 <br  />
+uid 可选，默认为 0。如果不指定（即设为 0），SDK 会自动分配一个随机 uid，并在 onJoinChannel 回调方法中返回，App 层必须记住该返回值并维护，SDK 不对该返回值进行维护。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+</li>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a6fbc54a71986a4a4a1c9c24d2c29e884" name="a6fbc54a71986a4a4a1c9c24d2c29e884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbc54a71986a4a4a1c9c24d2c29e884">&#9670;&#160;</a></span>leaveChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::leaveChannel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>离开房间。 <br  />
+离开房间，即挂断或退出通话。 <br  />
+结束通话时，必须调用leaveChannel结束通话，否则无法开始下一次通话。 <br  />
+成功调用该方法离开房间后，本地会触发onLeaveChannel回调，远端会触发onUserLeave回调。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法是异步操作，调用返回时并没有真正退出房间。在真正退出房间后，SDK 会触发onLeaveChannel回调。</li>
+<li>如果您调用了leaveChannel后立即调用release，SDK 将无法触发onLeaveChannel回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2f0e1e225e0fe8fc7ad1e9138d62caea" name="a2f0e1e225e0fe8fc7ad1e9138d62caea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0e1e225e0fe8fc7ad1e9138d62caea">&#9670;&#160;</a></span>queryInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::queryInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a13dd8adcb4f73bd24e37726272084a7d">NERtcInterfaceIdType</a></td>          <td class="paramname"><span class="paramname"><em>iid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>inter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取设备管理员对象的指针。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iid</td><td>想要获取的接口的iid. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inter</td><td>指向 DeviceManager 对象的指针。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a0255f44d601ad7ae039d189845b07503" name="a0255f44d601ad7ae039d189845b07503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0255f44d601ad7ae039d189845b07503">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcEngine::release </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>sync</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>销毁 NERtc 实例，释放资源。 <br  />
+该方法释放 NERTC SDK 使用的所有资源。有些 App 只在用户需要时才进行实时音视频通信，不需要时则将资源释放出来用于其他操作，该方法适用于此类情况。 <br  />
+调用 release 方法后，您将无法再使用 SDK 的其它方法和回调。如需再次使用实时音视频通话功能，您必须重新创建一个新的 NERtc 实例。 </p><dl class="section note"><dt>注解</dt><dd>如果需要重新使用IRtcEngine，release 后不能再 initialize，需要 destroyNERtcEngine 后重新 createNERtcEngine。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>默认为 true 且只能设置为 true，表示同步调用，等待 <a class="el" href="classnertc_1_1_i_rtc_engine.html">IRtcEngine</a> 对象资源释放后再返回。<br  />
+App 不应该在 SDK 产生的回调中调用该接口，否则由于 SDK 要等待回调返回才能回收相关的对象资源，会造成死锁。SDK 会自动检测这种死锁并转为异步调用，但是检测本身会消耗额外的时间。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6195db00acf739ca2cb183015abffd5b" name="a6195db00acf739ca2cb183015abffd5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6195db00acf739ca2cb183015abffd5b">&#9670;&#160;</a></span>setChannelProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::setChannelProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#ac30f4b7ce13da5d664df0d2a6986e940">NERtcChannelProfileType</a></td>          <td class="paramname"><span class="paramname"><em>profile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置房间场景。 <br  />
+房间场景可设置为通话或直播场景，不同的场景中 QoS 策略不同。 </p><dl class="section note"><dt>注解</dt><dd>必须在加入通话前设置，开始通话后设置无效，结束通话后保留之前的设置。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">profile</td><td>设置房间场景。详细信息请参考 NERtcChannelProfileType。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ae58ed7e0e0e4383939fc16a6a77d2570" name="ae58ed7e0e0e4383939fc16a6a77d2570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58ed7e0e0e4383939fc16a6a77d2570">&#9670;&#160;</a></span>setClientRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::setClientRole </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a></td>          <td class="paramname"><span class="paramname"><em>role</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>在直播场景中设置用户角色。 <br  />
+用户角色支持设置为主播或观众，主播和观众的权限不同。</p><ul>
+<li>主播：可以开关摄像头等设备、可以发布流、可以操作互动直播推流相关接口、上下线对其他房间内用户可见。</li>
+<li>观众：不可以开关摄像头等设备、不可以发布流、不可以操作互动直播推流相关接口、上下线对其他房间内用户不可见。 <dl class="section note"><dt>注解</dt><dd></dd></dl>
+</li>
+<li>默认情况下用户以主播角色加入房间。</li>
+<li>在加入房间前，用户可以调用本接口切换本端角色为观众。在加入房间后，用户也可以通过本接口切换用户角色。</li>
+<li>用户切换为观众角色时，SDK 会自动关闭音视频设备。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">role</td><td>用户角色。 NERtcClientRole </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+</li>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a39edde1d9b83621274f93b560ca9d839" name="a39edde1d9b83621274f93b560ca9d839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39edde1d9b83621274f93b560ca9d839">&#9670;&#160;</a></span>switchChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::switchChannel </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structnertc_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>channel_options</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>快速切换音视频房间。 <br  />
+房间场景为直播场景时，房间中角色为观众的成员可以调用该方法从当前房间快速切换至另一个房间。 <br  />
+成功调用该方切换房间后，本端会先收到离开房间的回调 onLeaveChannel，再收到成功加入新房间的回调 onJoinChannel。远端用户会收到 onUserLeave 和 onUserJoined 的回调。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>房间成员成功切换房间后，默认订阅房间内所有其他成员的音频流，因此产生用量并影响计费。如果想取消订阅，可以通过调用相应的 subscribeRemoteAudio 方法传入 false 实现。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>安全认证签名（NERTC Token）。可设置为：<ul>
+<li>null。调试模式下可设置为 null。建议在产品正式上线前在云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>已获取的NERTC Token。安全模式下必须设置为获取到的 Token 。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel_name</td><td>期望切换到的目标房间名称。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-0: 方法调用成功 -其他：方法调用失败  </dd></dl>
+
+</div>
+</div>
+<a id="ad9df7d1382d3f74f349913d36e992e9f" name="ad9df7d1382d3f74f349913d36e992e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9df7d1382d3f74f349913d36e992e9f">&#9670;&#160;</a></span>switchChannelEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::IRtcEngine::switchChannelEx </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structnertc_1_1_n_e_rtc_join_channel_options_ex.html">NERtcJoinChannelOptionsEx</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>channel_options</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>快速切换音视频房间。 <br  />
+调用该方法从当前房间leave，然后加入至另一个房间。 <br  />
+成功调用该方切换房间后，本端会先收到离开房间的回调 onLeaveChannel，再收到成功加入新房间的回调 onJoinChannel。远端用户会收到 onUserLeave 和 onUserJoined 的回调。</p><ul>
+<li>房间成员成功切换房间后，默认订阅房间内所有其他成员的音频流，因此产生用量并影响计费。如果想取消订阅，可以通过调用相应的 subscribeRemoteAudio 方法传入 false 实现。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>安全认证签名（NERTC Token）。可设置为：<ul>
+<li>null。调试模式下可设置为 null。建议在产品正式上线前在云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>已获取的NERTC Token。安全模式下必须设置为获取到的 Token 。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel_name</td><td>期望切换到的目标房间名称。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>用户ID。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>-0: 方法调用成功 -其他：方法调用失败  </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/unreal-sdk/Plugins/NertcPlugin/Source/NertcPlugin/Public/<a class="el" href="_i_nertc_engine_8h_source.html">INertcEngine.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

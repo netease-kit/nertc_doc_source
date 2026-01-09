@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC Android SDK: com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC Android SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>netease</b></li><li class="navelem"><b>lava</b></li><li class="navelem"><b>nertc</b></li><li class="navelem"><a class="el" href="namespacecom_1_1netease_1_1lava_1_1nertc_1_1sdk.html">sdk</a></li><li class="navelem"><a class="el" href="namespacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video.html">video</a></li><li class="navelem"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a67fa3fdaeeeb25ca10b59f5dc6b639f4" id="r_a67fa3fdaeeeb25ca10b59f5dc6b639f4"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67fa3fdaeeeb25ca10b59f5dc6b639f4">getEglContext</a> ()</td></tr>
+<tr class="separator:a67fa3fdaeeeb25ca10b59f5dc6b639f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf486e9240e3742e61b69bf6a8bb293" id="r_a0cf486e9240e3742e61b69bf6a8bb293"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cf486e9240e3742e61b69bf6a8bb293">isEGL14Supported</a> ()</td></tr>
+<tr class="separator:a0cf486e9240e3742e61b69bf6a8bb293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af764a7cba912339fd1d761274cf97f6f" id="r_af764a7cba912339fd1d761274cf97f6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af764a7cba912339fd1d761274cf97f6f">createSurface</a> (Surface surface)</td></tr>
+<tr class="separator:af764a7cba912339fd1d761274cf97f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cdc900f2ba635899cdb492ac3950f6" id="r_a27cdc900f2ba635899cdb492ac3950f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27cdc900f2ba635899cdb492ac3950f6">createSurface</a> (SurfaceTexture surfaceTexture)</td></tr>
+<tr class="separator:a27cdc900f2ba635899cdb492ac3950f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38af21c6acdc1473ef71f3bffc344b46" id="r_a38af21c6acdc1473ef71f3bffc344b46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38af21c6acdc1473ef71f3bffc344b46">createDummyPbufferSurface</a> ()</td></tr>
+<tr class="separator:a38af21c6acdc1473ef71f3bffc344b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edb12788089c11e24aab857708e7c5e" id="r_a5edb12788089c11e24aab857708e7c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5edb12788089c11e24aab857708e7c5e">createPbufferSurface</a> (int width, int height)</td></tr>
+<tr class="separator:a5edb12788089c11e24aab857708e7c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028e5b3acc2a45075fd82a7b72b640ca" id="r_a028e5b3acc2a45075fd82a7b72b640ca"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a028e5b3acc2a45075fd82a7b72b640ca">hasSurface</a> ()</td></tr>
+<tr class="separator:a028e5b3acc2a45075fd82a7b72b640ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92d3318ba6206837b294ed35f58645f" id="r_af92d3318ba6206837b294ed35f58645f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af92d3318ba6206837b294ed35f58645f">surfaceWidth</a> ()</td></tr>
+<tr class="separator:af92d3318ba6206837b294ed35f58645f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f61a90dc4b6f3441b9a6332c64a1f9" id="r_a73f61a90dc4b6f3441b9a6332c64a1f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73f61a90dc4b6f3441b9a6332c64a1f9">surfaceHeight</a> ()</td></tr>
+<tr class="separator:a73f61a90dc4b6f3441b9a6332c64a1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab80db856f12bef4367297c128862338c" id="r_ab80db856f12bef4367297c128862338c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab80db856f12bef4367297c128862338c">releaseSurface</a> ()</td></tr>
+<tr class="separator:ab80db856f12bef4367297c128862338c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b091c920f229dd450efadf49623f72d" id="r_a7b091c920f229dd450efadf49623f72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b091c920f229dd450efadf49623f72d">makeCurrent</a> ()</td></tr>
+<tr class="separator:a7b091c920f229dd450efadf49623f72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d79aa2e2248fed113c76e35878d191" id="r_ad3d79aa2e2248fed113c76e35878d191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3d79aa2e2248fed113c76e35878d191">detachCurrent</a> ()</td></tr>
+<tr class="separator:ad3d79aa2e2248fed113c76e35878d191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d5608f22c8f8842b31ebda231555ac" id="r_a48d5608f22c8f8842b31ebda231555ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d5608f22c8f8842b31ebda231555ac">swapBuffers</a> ()</td></tr>
+<tr class="separator:a48d5608f22c8f8842b31ebda231555ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd76f653de340436840164b18022a77" id="r_aebd76f653de340436840164b18022a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebd76f653de340436840164b18022a77">swapBuffers</a> (long presentationTimeStampNs)</td></tr>
+<tr class="separator:aebd76f653de340436840164b18022a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b1cd53f47197a98093486c525a8c6c" id="r_a40b1cd53f47197a98093486c525a8c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40b1cd53f47197a98093486c525a8c6c">release</a> ()</td></tr>
+<tr class="separator:a40b1cd53f47197a98093486c525a8c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ab80ccad97b4a4f47a3f2e738e1df2255" id="r_ab80ccad97b4a4f47a3f2e738e1df2255"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab80ccad97b4a4f47a3f2e738e1df2255">createEglContext</a> ()</td></tr>
+<tr class="separator:ab80ccad97b4a4f47a3f2e738e1df2255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f8b5892b540c8a90f76d745279ba60" id="r_ae4f8b5892b540c8a90f76d745279ba60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4f8b5892b540c8a90f76d745279ba60">createEgl10Context</a> ()</td></tr>
+<tr class="separator:ae4f8b5892b540c8a90f76d745279ba60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0beba44101a625f79907d4429cad41d" id="r_aa0beba44101a625f79907d4429cad41d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0beba44101a625f79907d4429cad41d">createEgl14Context</a> ()</td></tr>
+<tr class="separator:aa0beba44101a625f79907d4429cad41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af856531b1daee3c17ad8fdf3d1ec64c9" id="r_af856531b1daee3c17ad8fdf3d1ec64c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af856531b1daee3c17ad8fdf3d1ec64c9">createEgl10Context</a> (int[] configAttributes)</td></tr>
+<tr class="separator:af856531b1daee3c17ad8fdf3d1ec64c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609a71bf061c1b43d29cd887f171a97a" id="r_a609a71bf061c1b43d29cd887f171a97a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a609a71bf061c1b43d29cd887f171a97a">createEgl14Context</a> (int[] configAttributes)</td></tr>
+<tr class="separator:a609a71bf061c1b43d29cd887f171a97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>egl 帮助类  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a38af21c6acdc1473ef71f3bffc344b46" name="a38af21c6acdc1473ef71f3bffc344b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38af21c6acdc1473ef71f3bffc344b46">&#9670;&#160;</a></span>createDummyPbufferSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createDummyPbufferSurface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create dummy 1x1 pixel buffer surface so the context can be made current. </p>
+
+</div>
+</div>
+<a id="ae4f8b5892b540c8a90f76d745279ba60" name="ae4f8b5892b540c8a90f76d745279ba60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f8b5892b540c8a90f76d745279ba60">&#9670;&#160;</a></span>createEgl10Context() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a> com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createEgl10Context </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="af856531b1daee3c17ad8fdf3d1ec64c9" name="af856531b1daee3c17ad8fdf3d1ec64c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af856531b1daee3c17ad8fdf3d1ec64c9">&#9670;&#160;</a></span>createEgl10Context() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a> com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createEgl10Context </td>
+          <td>(</td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>configAttributes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="aa0beba44101a625f79907d4429cad41d" name="aa0beba44101a625f79907d4429cad41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0beba44101a625f79907d4429cad41d">&#9670;&#160;</a></span>createEgl14Context() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a> com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createEgl14Context </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a609a71bf061c1b43d29cd887f171a97a" name="a609a71bf061c1b43d29cd887f171a97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609a71bf061c1b43d29cd887f171a97a">&#9670;&#160;</a></span>createEgl14Context() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a> com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createEgl14Context </td>
+          <td>(</td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>configAttributes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="ab80ccad97b4a4f47a3f2e738e1df2255" name="ab80ccad97b4a4f47a3f2e738e1df2255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80ccad97b4a4f47a3f2e738e1df2255">&#9670;&#160;</a></span>createEglContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_egl_context_wrapper.html">NERtcEglContextWrapper</a> com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createEglContext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a5edb12788089c11e24aab857708e7c5e" name="a5edb12788089c11e24aab857708e7c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edb12788089c11e24aab857708e7c5e">&#9670;&#160;</a></span>createPbufferSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createPbufferSurface </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="af764a7cba912339fd1d761274cf97f6f" name="af764a7cba912339fd1d761274cf97f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af764a7cba912339fd1d761274cf97f6f">&#9670;&#160;</a></span>createSurface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createSurface </td>
+          <td>(</td>
+          <td class="paramtype">Surface</td>          <td class="paramname"><span class="paramname"><em>surface</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a27cdc900f2ba635899cdb492ac3950f6" name="a27cdc900f2ba635899cdb492ac3950f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27cdc900f2ba635899cdb492ac3950f6">&#9670;&#160;</a></span>createSurface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.createSurface </td>
+          <td>(</td>
+          <td class="paramtype">SurfaceTexture</td>          <td class="paramname"><span class="paramname"><em>surfaceTexture</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create EGLSurface from the Android SurfaceTexture. </p>
+
+</div>
+</div>
+<a id="ad3d79aa2e2248fed113c76e35878d191" name="ad3d79aa2e2248fed113c76e35878d191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d79aa2e2248fed113c76e35878d191">&#9670;&#160;</a></span>detachCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.detachCurrent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current EGL context, so that it can be made current on another thread. </p>
+
+</div>
+</div>
+<a id="a67fa3fdaeeeb25ca10b59f5dc6b639f4" name="a67fa3fdaeeeb25ca10b59f5dc6b639f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67fa3fdaeeeb25ca10b59f5dc6b639f4">&#9670;&#160;</a></span>getEglContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Object com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.getEglContext </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a028e5b3acc2a45075fd82a7b72b640ca" name="a028e5b3acc2a45075fd82a7b72b640ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028e5b3acc2a45075fd82a7b72b640ca">&#9670;&#160;</a></span>hasSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.hasSurface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a0cf486e9240e3742e61b69bf6a8bb293" name="a0cf486e9240e3742e61b69bf6a8bb293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf486e9240e3742e61b69bf6a8bb293">&#9670;&#160;</a></span>isEGL14Supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.isEGL14Supported </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a7b091c920f229dd450efadf49623f72d" name="a7b091c920f229dd450efadf49623f72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b091c920f229dd450efadf49623f72d">&#9670;&#160;</a></span>makeCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.makeCurrent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a40b1cd53f47197a98093486c525a8c6c" name="a40b1cd53f47197a98093486c525a8c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b1cd53f47197a98093486c525a8c6c">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current EGL context, so that it can be made current on another thread. </p>
+
+</div>
+</div>
+<a id="ab80db856f12bef4367297c128862338c" name="ab80db856f12bef4367297c128862338c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab80db856f12bef4367297c128862338c">&#9670;&#160;</a></span>releaseSurface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.releaseSurface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a73f61a90dc4b6f3441b9a6332c64a1f9" name="a73f61a90dc4b6f3441b9a6332c64a1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f61a90dc4b6f3441b9a6332c64a1f9">&#9670;&#160;</a></span>surfaceHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.surfaceHeight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="af92d3318ba6206837b294ed35f58645f" name="af92d3318ba6206837b294ed35f58645f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92d3318ba6206837b294ed35f58645f">&#9670;&#160;</a></span>surfaceWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.surfaceWidth </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to be added </p>
+
+</div>
+</div>
+<a id="a48d5608f22c8f8842b31ebda231555ac" name="a48d5608f22c8f8842b31ebda231555ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d5608f22c8f8842b31ebda231555ac">&#9670;&#160;</a></span>swapBuffers() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.swapBuffers </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current EGL context, so that it can be made current on another thread. </p>
+
+</div>
+</div>
+<a id="aebd76f653de340436840164b18022a77" name="aebd76f653de340436840164b18022a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd76f653de340436840164b18022a77">&#9670;&#160;</a></span>swapBuffers() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.video.NERtcEglContextWrapper.swapBuffers </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>presentationTimeStampNs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Detach the current EGL context, so that it can be made current on another thread. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>video/<b>NERtcEglContextWrapper.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

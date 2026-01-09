@@ -1,0 +1,1063 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IRtcCallback类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">IRtcCallback</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IRtcCallback类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a11b668d7f97c974754087d953706183b" id="r_a11b668d7f97c974754087d953706183b"><td class="memItemLeft" align="right" valign="top">. virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11b668d7f97c974754087d953706183b">OnError</a> (string channelName, int errorCode, string msg)</td></tr>
+<tr class="separator:a11b668d7f97c974754087d953706183b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e89149d3fcff74675abc07b2801ccc" id="r_a76e89149d3fcff74675abc07b2801ccc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76e89149d3fcff74675abc07b2801ccc">OnWarning</a> (string channelName, int warnCode, string msg)</td></tr>
+<tr class="separator:a76e89149d3fcff74675abc07b2801ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9909bd353cc0cef520037ffae5db5f4" id="r_ad9909bd353cc0cef520037ffae5db5f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9909bd353cc0cef520037ffae5db5f4">OnJoinChannel</a> (string channelName, ulong cid, ulong uid, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> result, ulong elapsed)</td></tr>
+<tr class="separator:ad9909bd353cc0cef520037ffae5db5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fe3b3bc883ddf7828fee2d044eff37" id="r_a85fe3b3bc883ddf7828fee2d044eff37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85fe3b3bc883ddf7828fee2d044eff37">OnLeaveChannel</a> (string channelName, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> result, ulong uid)</td></tr>
+<tr class="separator:a85fe3b3bc883ddf7828fee2d044eff37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36a9f75fb7f7e27ccce8f3791e1c59b" id="r_ae36a9f75fb7f7e27ccce8f3791e1c59b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae36a9f75fb7f7e27ccce8f3791e1c59b">OnNetworkTypeChanged</a> (int newType)</td></tr>
+<tr class="separator:ae36a9f75fb7f7e27ccce8f3791e1c59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc07c14ef0697bb7a34ca709666d7067" id="r_adc07c14ef0697bb7a34ca709666d7067"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc07c14ef0697bb7a34ca709666d7067">OnReconnectingStart</a> (string channelName, ulong cid, ulong uid)</td></tr>
+<tr class="separator:adc07c14ef0697bb7a34ca709666d7067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff53fc869fb59f96ebfe4857fe52f91" id="r_a0ff53fc869fb59f96ebfe4857fe52f91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ff53fc869fb59f96ebfe4857fe52f91">OnRejoinChannel</a> (string channelName, ulong cid, ulong uid, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> result, ulong elapsed)</td></tr>
+<tr class="separator:a0ff53fc869fb59f96ebfe4857fe52f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3a12e4f1b4b334a041544a59fdcac9" id="r_a8b3a12e4f1b4b334a041544a59fdcac9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b3a12e4f1b4b334a041544a59fdcac9">OnConnectionStateChanged</a> (string channelName, int state, int reason)</td></tr>
+<tr class="separator:a8b3a12e4f1b4b334a041544a59fdcac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ff4a4d45b4655e4fcd53c987f4d9ca" id="r_a34ff4a4d45b4655e4fcd53c987f4d9ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34ff4a4d45b4655e4fcd53c987f4d9ca">OnDisconnect</a> (string channelName, int reason)</td></tr>
+<tr class="separator:a34ff4a4d45b4655e4fcd53c987f4d9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd1d3d8ea25c87e310bfe65f28ddc45" id="r_a5dd1d3d8ea25c87e310bfe65f28ddc45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dd1d3d8ea25c87e310bfe65f28ddc45">OnUserJoined</a> (string channelName, ulong uid, string userName)</td></tr>
+<tr class="separator:a5dd1d3d8ea25c87e310bfe65f28ddc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fea9987dc15bd3248310020e107a1b8" id="r_a1fea9987dc15bd3248310020e107a1b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fea9987dc15bd3248310020e107a1b8">OnUserLeft</a> (string channelName, ulong uid, int reason)</td></tr>
+<tr class="separator:a1fea9987dc15bd3248310020e107a1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae671ae57f74d91df2ad0c9dbed8abda8" id="r_ae671ae57f74d91df2ad0c9dbed8abda8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae671ae57f74d91df2ad0c9dbed8abda8">OnUserAudioStart</a> (string channelName, int streamType, ulong uid)</td></tr>
+<tr class="separator:ae671ae57f74d91df2ad0c9dbed8abda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e00555b59128699a9b3aab32434382" id="r_a51e00555b59128699a9b3aab32434382"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51e00555b59128699a9b3aab32434382">OnUserAudioStop</a> (string channelName, int streamType, ulong uid)</td></tr>
+<tr class="separator:a51e00555b59128699a9b3aab32434382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34ef611a74d6371155637166076edfe" id="r_ad34ef611a74d6371155637166076edfe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34ef611a74d6371155637166076edfe">OnUserAudioMute</a> (string channelName, int streamType, ulong uid, bool mute)</td></tr>
+<tr class="separator:ad34ef611a74d6371155637166076edfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ef939f3df5695a7c1c1a3b5912e7c1" id="r_a24ef939f3df5695a7c1c1a3b5912e7c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24ef939f3df5695a7c1c1a3b5912e7c1">OnAudioDeviceRoutingDidChange</a> (int routing)</td></tr>
+<tr class="separator:a24ef939f3df5695a7c1c1a3b5912e7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453dd9acd32e303ae71da2c5170e5422" id="r_a453dd9acd32e303ae71da2c5170e5422"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a453dd9acd32e303ae71da2c5170e5422">OnAudioDeviceStateChanged</a> (string deviceID, int deviceType, int deviceState)</td></tr>
+<tr class="separator:a453dd9acd32e303ae71da2c5170e5422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993de1a86fc7ec4403e4cd3d85e3352a" id="r_a993de1a86fc7ec4403e4cd3d85e3352a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a993de1a86fc7ec4403e4cd3d85e3352a">OnAudioDefaultDeviceChanged</a> (string deviceID, int deviceType)</td></tr>
+<tr class="separator:a993de1a86fc7ec4403e4cd3d85e3352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e974643e740f769b7394d58bd06b75d" id="r_a8e974643e740f769b7394d58bd06b75d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e974643e740f769b7394d58bd06b75d">OnFirstAudioDataReceived</a> (string channelName, int streamType, ulong uid)</td></tr>
+<tr class="separator:a8e974643e740f769b7394d58bd06b75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c9681f55ae284066332bf48e18f2e6" id="r_a19c9681f55ae284066332bf48e18f2e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c9681f55ae284066332bf48e18f2e6">OnFirstAudioFrameDecoded</a> (string channelName, int streamType, ulong uid)</td></tr>
+<tr class="separator:a19c9681f55ae284066332bf48e18f2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40f5600f63192b155bb6e490712a9d4" id="r_af40f5600f63192b155bb6e490712a9d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af40f5600f63192b155bb6e490712a9d4">OnLocalAudioVolumeIndication</a> (string channelName, int volume, bool enableVad)</td></tr>
+<tr class="separator:af40f5600f63192b155bb6e490712a9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98af907d004ebf508e8710a72cc0fcc3" id="r_a98af907d004ebf508e8710a72cc0fcc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98af907d004ebf508e8710a72cc0fcc3">OnRemoteAudioVolumeIndication</a> (string channelName, <a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_audio_volume_info.html">RtcAudioVolumeInfo</a>[] speakers, int totalVolume)</td></tr>
+<tr class="separator:a98af907d004ebf508e8710a72cc0fcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a993de1a86fc7ec4403e4cd3d85e3352a" name="a993de1a86fc7ec4403e4cd3d85e3352a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993de1a86fc7ec4403e4cd3d85e3352a">&#9670;&#160;</a></span>OnAudioDefaultDeviceChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnAudioDefaultDeviceChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>deviceID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>deviceType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>音频默认设备更改的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceID</td><td>设备ID。 </td></tr>
+    <tr><td class="paramname">deviceType</td><td>音频设备类型。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24ef939f3df5695a7c1c1a3b5912e7c1" name="a24ef939f3df5695a7c1c1a3b5912e7c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ef939f3df5695a7c1c1a3b5912e7c1">&#9670;&#160;</a></span>OnAudioDeviceRoutingDidChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnAudioDeviceRoutingDidChange </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>routing</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>音频路由变化回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">routing</td><td>当前音频输出路由。详细查看<code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a4ec949c291e017aaf33150caf788cab7">RtcAudioOutputRouting</a></code>  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a453dd9acd32e303ae71da2c5170e5422" name="a453dd9acd32e303ae71da2c5170e5422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453dd9acd32e303ae71da2c5170e5422">&#9670;&#160;</a></span>OnAudioDeviceStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnAudioDeviceStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>deviceID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>deviceType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>deviceState</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>音频设备状态更改的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceID</td><td>设备ID。 </td></tr>
+    <tr><td class="paramname">deviceType</td><td>音频设备类型。详细信息请参考 nertc_audio_device_type_t。 </td></tr>
+    <tr><td class="paramname">deviceState</td><td>音频设备状态。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8b3a12e4f1b4b334a041544a59fdcac9" name="a8b3a12e4f1b4b334a041544a59fdcac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3a12e4f1b4b334a041544a59fdcac9">&#9670;&#160;</a></span>OnConnectionStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnConnectionStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>state</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>网络连接状态已改变回调。 <br  />
+该回调在网络连接状态发生改变的时候触发，并告知用户当前的网络连接状态和引起网络状态改变的原因。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">state</td><td>当前的网络连接状态。 </td></tr>
+    <tr><td class="paramname">reason</td><td>引起当前网络连接状态发生改变的原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a34ff4a4d45b4655e4fcd53c987f4d9ca" name="a34ff4a4d45b4655e4fcd53c987f4d9ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ff4a4d45b4655e4fcd53c987f4d9ca">&#9670;&#160;</a></span>OnDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>网络连接中断 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>SDK 在调用 joinChannel 加入房间成功后，如果和服务器失去连接且连续 3 次重连失败，就会触发该回调。</li>
+<li>由于非网络原因，客户端可能会和服务器失去连接，此时SDK无需自动重连，直接触发此回调方法。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">reason</td><td>网络连接中断原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a11b668d7f97c974754087d953706183b" name="a11b668d7f97c974754087d953706183b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b668d7f97c974754087d953706183b">&#9670;&#160;</a></span>OnError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">. virtual void nertc.wwiseplugin.IRtcCallback.OnError </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>发生错误回调。 <br  />
+该回调方法表示 SDK 运行时出现了（网络或媒体相关的）错误。通常情况下，SDK上报的错误意味着SDK无法自动恢复，需要 App 干预或提示用户。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 WWISEPLUGINDMErrorCode </td></tr>
+    <tr><td class="paramname">msg</td><td>错误描述。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e974643e740f769b7394d58bd06b75d" name="a8e974643e740f769b7394d58bd06b75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e974643e740f769b7394d58bd06b75d">&#9670;&#160;</a></span>OnFirstAudioDataReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnFirstAudioDataReceived </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已接收到远端音频首帧的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>音频流类型。 </td></tr>
+    <tr><td class="paramname">uid</td><td>远端用户 ID，指定是哪个用户的音频流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a19c9681f55ae284066332bf48e18f2e6" name="a19c9681f55ae284066332bf48e18f2e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c9681f55ae284066332bf48e18f2e6">&#9670;&#160;</a></span>OnFirstAudioFrameDecoded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnFirstAudioFrameDecoded </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已解码远端音频首帧的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>音频流类型。 </td></tr>
+    <tr><td class="paramname">uid</td><td>远端用户 ID，指定是哪个用户的音频流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad9909bd353cc0cef520037ffae5db5f4" name="ad9909bd353cc0cef520037ffae5db5f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9909bd353cc0cef520037ffae5db5f4">&#9670;&#160;</a></span>OnJoinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnJoinChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>加入房间回调，表示客户端已经登入服务器。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">cid</td><td>客户端加入的房间 ID。 </td></tr>
+    <tr><td class="paramname">uid</td><td>用户 ID。 如果在 joinChannel 方法中指定了 uid，此处会返回指定的 ID; 如果未指定 uid，此处将返回云信服务器自动分配的 ID。 </td></tr>
+    <tr><td class="paramname">result</td><td>返回结果。 </td></tr>
+    <tr><td class="paramname">elapsed</td><td>从 joinChannel 开始到发生此事件过去的时间，单位为毫秒。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85fe3b3bc883ddf7828fee2d044eff37" name="a85fe3b3bc883ddf7828fee2d044eff37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fe3b3bc883ddf7828fee2d044eff37">&#9670;&#160;</a></span>OnLeaveChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnLeaveChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>退出房间回调。 <br  />
+App 调用 leaveChannel 方法后，SDK 提示 App 退出房间是否成功。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">result</td><td>返回结果。 </td></tr>
+    <tr><td class="paramname">uid</td><td>离开的channel的ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af40f5600f63192b155bb6e490712a9d4" name="af40f5600f63192b155bb6e490712a9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af40f5600f63192b155bb6e490712a9d4">&#9670;&#160;</a></span>OnLocalAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnLocalAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enableVad</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>提示房间内本地用户瞬时音量的回调。</p><ul>
+<li>该回调默认禁用。可以通过 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a8ac9674a3373a4924368583079525c3d">EnableAudioVolumeIndication</a> 方法开启。</li>
+<li>开启后，本地用户说话，SDK 会按 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a8ac9674a3373a4924368583079525c3d">EnableAudioVolumeIndication</a> 方法中设置的时间间隔触发该回调。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">volume</td><td>（混音后的）音量，取值范围为 [0,100]。 </td></tr>
+    <tr><td class="paramname">enableVad</td><td>是否检测到人声。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ae36a9f75fb7f7e27ccce8f3791e1c59b" name="ae36a9f75fb7f7e27ccce8f3791e1c59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36a9f75fb7f7e27ccce8f3791e1c59b">&#9670;&#160;</a></span>OnNetworkTypeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnNetworkTypeChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newType</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>网络类型已经改变的回调。 <br  />
+该回调在网络发生改变的时候触发，并告知用户当前的网络类型。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newType</td><td>当前的网络类型。详细查看 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a4eb6ed6d7039b79bc2a1cb5100a7607c">RtcNetworkType</a></code>  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc07c14ef0697bb7a34ca709666d7067" name="adc07c14ef0697bb7a34ca709666d7067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc07c14ef0697bb7a34ca709666d7067">&#9670;&#160;</a></span>OnReconnectingStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnReconnectingStart </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>触发重连。 <br  />
+有时候由于网络原因，客户端可能会和服务器失去连接，SDK会进行自动重连，开始自动重连后触发此回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">cid</td><td>房间 ID。 </td></tr>
+    <tr><td class="paramname">uid</td><td>用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ff53fc869fb59f96ebfe4857fe52f91" name="a0ff53fc869fb59f96ebfe4857fe52f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff53fc869fb59f96ebfe4857fe52f91">&#9670;&#160;</a></span>OnRejoinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnRejoinChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>重新加入房间回调。 <br  />
+在弱网环境下，若客户端和服务器失去连接，SDK会自动重连。自动重连成功后触发此回调方法。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">cid</td><td>客户端加入的房间 ID。 </td></tr>
+    <tr><td class="paramname">uid</td><td>用户 ID。 </td></tr>
+    <tr><td class="paramname">result</td><td>返回结果。 </td></tr>
+    <tr><td class="paramname">elapsed</td><td>从开始重连到发生此事件过去的时间，单位为毫秒。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98af907d004ebf508e8710a72cc0fcc3" name="a98af907d004ebf508e8710a72cc0fcc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98af907d004ebf508e8710a72cc0fcc3">&#9670;&#160;</a></span>OnRemoteAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnRemoteAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_audio_volume_info.html">RtcAudioVolumeInfo</a>[]</td>          <td class="paramname"><span class="paramname"><em>speakers</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>totalVolume</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>提示房间内谁正在说话及说话者瞬时音量的回调。 <br  />
+该回调默认为关闭状态。可以通过 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a8ac9674a3373a4924368583079525c3d">EnableAudioVolumeIndication</a> 方法开启。开启后，无论房间内是否有人说话，SDK 都会按 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html#a8ac9674a3373a4924368583079525c3d">EnableAudioVolumeIndication</a> 方法中设置的时间间隔触发该回调。 <br  />
+在返回的 speakers 数组中:</p><ul>
+<li>如果有 uid 出现在上次返回的数组中，但不在本次返回的数组中，则默认该 uid 对应的远端用户没有说话。</li>
+<li>如果volume 为 0，表示该用户没有说话。<ul>
+<li>如果speakers 数组为空，则表示此时远端没有人说话。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">speakers</td><td>每个说话者的用户 ID 和音量信息的数组: <code><a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_audio_volume_info.html">RtcAudioVolumeInfo</a></code> </td></tr>
+    <tr><td class="paramname">totalVolume</td><td>（混音后的）总音量，取值范围为 [0,100]。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ad34ef611a74d6371155637166076edfe" name="ad34ef611a74d6371155637166076edfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34ef611a74d6371155637166076edfe">&#9670;&#160;</a></span>OnUserAudioMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnUserAudioMute </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户是否静音的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>音频流类型。 </td></tr>
+    <tr><td class="paramname">uid</td><td>远端用户ID。 </td></tr>
+    <tr><td class="paramname">mute</td><td>是否静音。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae671ae57f74d91df2ad0c9dbed8abda8" name="ae671ae57f74d91df2ad0c9dbed8abda8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae671ae57f74d91df2ad0c9dbed8abda8">&#9670;&#160;</a></span>OnUserAudioStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnUserAudioStart </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户开启音频的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>远端用户流类型。 </td></tr>
+    <tr><td class="paramname">uid</td><td>远端用户ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51e00555b59128699a9b3aab32434382" name="a51e00555b59128699a9b3aab32434382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e00555b59128699a9b3aab32434382">&#9670;&#160;</a></span>OnUserAudioStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnUserAudioStop </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户停用音频的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">streamType</td><td>远端用户流类型。 </td></tr>
+    <tr><td class="paramname">uid</td><td>远端用户ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dd1d3d8ea25c87e310bfe65f28ddc45" name="a5dd1d3d8ea25c87e310bfe65f28ddc45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd1d3d8ea25c87e310bfe65f28ddc45">&#9670;&#160;</a></span>OnUserJoined()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnUserJoined </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户加入当前房间回调。 <br  />
+该回调提示有远端用户加入了房间，并返回新加入用户的 ID；如果加入之前，已经有其他用户在房间中了，新加入的用户也会收到这些已有用户加入房间的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">uid</td><td>新加入房间的远端用户 ID。 </td></tr>
+    <tr><td class="paramname">userName</td><td>新加入房间的远端用户名。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1fea9987dc15bd3248310020e107a1b8" name="a1fea9987dc15bd3248310020e107a1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fea9987dc15bd3248310020e107a1b8">&#9670;&#160;</a></span>OnUserLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnUserLeft </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户离开当前房间的回调。 <br  />
+提示有远端用户离开了房间（或掉线）。通常情况下，用户离开房间有两个原因，即正常离开和超时掉线：</p><ul>
+<li>正常离开的时候，远端用户会收到正常离开房间的回调提醒，判断用户离开房间。</li>
+<li>超时掉线的依据是，在一定时间内（40~50s），用户没有收到对方的任何数据包，则判定为对方掉线。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">uid</td><td>离开房间的远端用户 ID。 </td></tr>
+    <tr><td class="paramname">reason</td><td>远端用户离开原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a76e89149d3fcff74675abc07b2801ccc" name="a76e89149d3fcff74675abc07b2801ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e89149d3fcff74675abc07b2801ccc">&#9670;&#160;</a></span>OnWarning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc.wwiseplugin.IRtcCallback.OnWarning </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>warnCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>发生警告回调。 <br  />
+该回调方法表示 SDK 运行时出现了（网络或媒体相关的）警告。通常情况下，SDK 上报的警告信息 App 可以忽略，SDK 会自动恢复。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channelName</td><td>房间号。如果为空，则为主房间。 </td></tr>
+    <tr><td class="paramname">warnCode</td><td>警告码。 </td></tr>
+    <tr><td class="paramname">msg</td><td>警告描述。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/<a class="el" href="_rtc_callback_8cs.html">RtcCallback.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

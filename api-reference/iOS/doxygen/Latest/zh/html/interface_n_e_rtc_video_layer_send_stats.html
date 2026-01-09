@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcVideoLayerSendStats类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_rtc_video_layer_send_stats-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcVideoLayerSendStats类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>本地视频单条流统计信息   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_statistics_8h_source.html">NERtcEngineStatistics.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcVideoLayerSendStats 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_video_layer_send_stats.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a8004c35c6dbfdc88ee7317cf498db00d" id="r_a8004c35c6dbfdc88ee7317cf498db00d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8004c35c6dbfdc88ee7317cf498db00d">layerType</a></td></tr>
+<tr class="memdesc:a8004c35c6dbfdc88ee7317cf498db00d"><td class="mdescLeft">&#160;</td><td class="mdescRight">流类型： 主流（1）， 辅流（2），第三流（3）， 第四流（3）   <br /></td></tr>
+<tr class="separator:a8004c35c6dbfdc88ee7317cf498db00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ef06c85886179ae6302f09cc5ed8bf" id="r_ae4ef06c85886179ae6302f09cc5ed8bf"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4ef06c85886179ae6302f09cc5ed8bf">width</a></td></tr>
+<tr class="memdesc:ae4ef06c85886179ae6302f09cc5ed8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频流宽   <br /></td></tr>
+<tr class="separator:ae4ef06c85886179ae6302f09cc5ed8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ee848a1bff927f6a3b856e7060efe4" id="r_ad3ee848a1bff927f6a3b856e7060efe4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ee848a1bff927f6a3b856e7060efe4">height</a></td></tr>
+<tr class="memdesc:ad3ee848a1bff927f6a3b856e7060efe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频流高   <br /></td></tr>
+<tr class="separator:ad3ee848a1bff927f6a3b856e7060efe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef2ec48f5f6d3191372e166726647eb" id="r_a3ef2ec48f5f6d3191372e166726647eb"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef2ec48f5f6d3191372e166726647eb">captureWidth</a></td></tr>
+<tr class="memdesc:a3ef2ec48f5f6d3191372e166726647eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地采集的视频宽度 (px)。   <br /></td></tr>
+<tr class="separator:a3ef2ec48f5f6d3191372e166726647eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1679d1728b890f6a63fafc7c0ba4b32a" id="r_a1679d1728b890f6a63fafc7c0ba4b32a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1679d1728b890f6a63fafc7c0ba4b32a">captureHeight</a></td></tr>
+<tr class="memdesc:a1679d1728b890f6a63fafc7c0ba4b32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地采集的视频高度 (px)。   <br /></td></tr>
+<tr class="separator:a1679d1728b890f6a63fafc7c0ba4b32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab98035167b51cb3bb40af30e9d77981" id="r_aab98035167b51cb3bb40af30e9d77981"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab98035167b51cb3bb40af30e9d77981">sendBitrate</a></td></tr>
+<tr class="memdesc:aab98035167b51cb3bb40af30e9d77981"><td class="mdescLeft">&#160;</td><td class="mdescRight">（上次统计后）发送码率(Kbps)   <br /></td></tr>
+<tr class="separator:aab98035167b51cb3bb40af30e9d77981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef217de5f3dd1368f7b0c6e8d0bff4a" id="r_acef217de5f3dd1368f7b0c6e8d0bff4a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acef217de5f3dd1368f7b0c6e8d0bff4a">encoderOutputFrameRate</a></td></tr>
+<tr class="memdesc:acef217de5f3dd1368f7b0c6e8d0bff4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">（上次统计后）发送帧率(fps)   <br /></td></tr>
+<tr class="separator:acef217de5f3dd1368f7b0c6e8d0bff4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d73929b67d27de1bbb2108d041fa0d" id="r_af5d73929b67d27de1bbb2108d041fa0d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5d73929b67d27de1bbb2108d041fa0d">captureFrameRate</a></td></tr>
+<tr class="memdesc:af5d73929b67d27de1bbb2108d041fa0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频采集帧率   <br /></td></tr>
+<tr class="separator:af5d73929b67d27de1bbb2108d041fa0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46e04cbb39b3d7bd4f6101ce131dcb3" id="r_af46e04cbb39b3d7bd4f6101ce131dcb3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af46e04cbb39b3d7bd4f6101ce131dcb3">targetBitrate</a></td></tr>
+<tr class="memdesc:af46e04cbb39b3d7bd4f6101ce131dcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">编码器的目标码率(kbps)   <br /></td></tr>
+<tr class="separator:af46e04cbb39b3d7bd4f6101ce131dcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d601202547e888eddd2ac93509696fd" id="r_a0d601202547e888eddd2ac93509696fd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d601202547e888eddd2ac93509696fd">encoderBitrate</a></td></tr>
+<tr class="memdesc:a0d601202547e888eddd2ac93509696fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">编码器的实际编码码率(kbps)   <br /></td></tr>
+<tr class="separator:a0d601202547e888eddd2ac93509696fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbb7ad0eb8212497ce80d83799a74af" id="r_a6cbb7ad0eb8212497ce80d83799a74af"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cbb7ad0eb8212497ce80d83799a74af">sentFrameRate</a></td></tr>
+<tr class="memdesc:a6cbb7ad0eb8212497ce80d83799a74af"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频发送帧率   <br /></td></tr>
+<tr class="separator:a6cbb7ad0eb8212497ce80d83799a74af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f48aa0b265c9aa3a7d274effdcf0d6a" id="r_a2f48aa0b265c9aa3a7d274effdcf0d6a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f48aa0b265c9aa3a7d274effdcf0d6a">renderFrameRate</a></td></tr>
+<tr class="memdesc:a2f48aa0b265c9aa3a7d274effdcf0d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频渲染帧率   <br /></td></tr>
+<tr class="separator:a2f48aa0b265c9aa3a7d274effdcf0d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7811e8c602d62161402d5cb885ec38c" id="r_af7811e8c602d62161402d5cb885ec38c"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7811e8c602d62161402d5cb885ec38c">encoderName</a></td></tr>
+<tr class="memdesc:af7811e8c602d62161402d5cb885ec38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">编码器名字   <br /></td></tr>
+<tr class="separator:af7811e8c602d62161402d5cb885ec38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746106ffc6b67e22bdbe5fb4ce0e38e8" id="r_a746106ffc6b67e22bdbe5fb4ce0e38e8"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a746106ffc6b67e22bdbe5fb4ce0e38e8">dropBwStrategyEnabled</a></td></tr>
+<tr class="memdesc:a746106ffc6b67e22bdbe5fb4ce0e38e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">超分降带宽策略是否开启   <br /></td></tr>
+<tr class="separator:a746106ffc6b67e22bdbe5fb4ce0e38e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>本地视频单条流统计信息  </p>
+</div><h2 class="groupheader">属性说明</h2>
+<a id="af5d73929b67d27de1bbb2108d041fa0d" name="af5d73929b67d27de1bbb2108d041fa0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d73929b67d27de1bbb2108d041fa0d">&#9670;&#160;</a></span>captureFrameRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) captureFrameRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频采集帧率  </p>
+
+</div>
+</div>
+<a id="a1679d1728b890f6a63fafc7c0ba4b32a" name="a1679d1728b890f6a63fafc7c0ba4b32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1679d1728b890f6a63fafc7c0ba4b32a">&#9670;&#160;</a></span>captureHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) captureHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地采集的视频高度 (px)。  </p>
+
+</div>
+</div>
+<a id="a3ef2ec48f5f6d3191372e166726647eb" name="a3ef2ec48f5f6d3191372e166726647eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef2ec48f5f6d3191372e166726647eb">&#9670;&#160;</a></span>captureWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) captureWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地采集的视频宽度 (px)。  </p>
+
+</div>
+</div>
+<a id="a746106ffc6b67e22bdbe5fb4ce0e38e8" name="a746106ffc6b67e22bdbe5fb4ce0e38e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a746106ffc6b67e22bdbe5fb4ce0e38e8">&#9670;&#160;</a></span>dropBwStrategyEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) dropBwStrategyEnabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>超分降带宽策略是否开启  </p>
+
+</div>
+</div>
+<a id="a0d601202547e888eddd2ac93509696fd" name="a0d601202547e888eddd2ac93509696fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d601202547e888eddd2ac93509696fd">&#9670;&#160;</a></span>encoderBitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) encoderBitrate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>编码器的实际编码码率(kbps)  </p>
+
+</div>
+</div>
+<a id="af7811e8c602d62161402d5cb885ec38c" name="af7811e8c602d62161402d5cb885ec38c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7811e8c602d62161402d5cb885ec38c">&#9670;&#160;</a></span>encoderName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) encoderName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">copy</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>编码器名字  </p>
+
+</div>
+</div>
+<a id="acef217de5f3dd1368f7b0c6e8d0bff4a" name="acef217de5f3dd1368f7b0c6e8d0bff4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef217de5f3dd1368f7b0c6e8d0bff4a">&#9670;&#160;</a></span>encoderOutputFrameRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) encoderOutputFrameRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>（上次统计后）发送帧率(fps)  </p>
+
+</div>
+</div>
+<a id="ad3ee848a1bff927f6a3b856e7060efe4" name="ad3ee848a1bff927f6a3b856e7060efe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ee848a1bff927f6a3b856e7060efe4">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频流高  </p>
+
+</div>
+</div>
+<a id="a8004c35c6dbfdc88ee7317cf498db00d" name="a8004c35c6dbfdc88ee7317cf498db00d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8004c35c6dbfdc88ee7317cf498db00d">&#9670;&#160;</a></span>layerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) layerType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>流类型： 主流（1）， 辅流（2），第三流（3）， 第四流（3）  </p>
+
+</div>
+</div>
+<a id="a2f48aa0b265c9aa3a7d274effdcf0d6a" name="a2f48aa0b265c9aa3a7d274effdcf0d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f48aa0b265c9aa3a7d274effdcf0d6a">&#9670;&#160;</a></span>renderFrameRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) renderFrameRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频渲染帧率  </p>
+
+</div>
+</div>
+<a id="aab98035167b51cb3bb40af30e9d77981" name="aab98035167b51cb3bb40af30e9d77981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab98035167b51cb3bb40af30e9d77981">&#9670;&#160;</a></span>sendBitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int64_t) sendBitrate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>（上次统计后）发送码率(Kbps)  </p>
+
+</div>
+</div>
+<a id="a6cbb7ad0eb8212497ce80d83799a74af" name="a6cbb7ad0eb8212497ce80d83799a74af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbb7ad0eb8212497ce80d83799a74af">&#9670;&#160;</a></span>sentFrameRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) sentFrameRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频发送帧率  </p>
+
+</div>
+</div>
+<a id="af46e04cbb39b3d7bd4f6101ce131dcb3" name="af46e04cbb39b3d7bd4f6101ce131dcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46e04cbb39b3d7bd4f6101ce131dcb3">&#9670;&#160;</a></span>targetBitrate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) targetBitrate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>编码器的目标码率(kbps)  </p>
+
+</div>
+</div>
+<a id="ae4ef06c85886179ae6302f09cc5ed8bf" name="ae4ef06c85886179ae6302f09cc5ed8bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ef06c85886179ae6302f09cc5ed8bf">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频流宽  </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_statistics_8h_source.html">NERtcEngineStatistics.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

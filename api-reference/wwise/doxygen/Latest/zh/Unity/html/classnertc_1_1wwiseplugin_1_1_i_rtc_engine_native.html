@@ -1,0 +1,1974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IRtcEngineNative类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine_native.html">IRtcEngineNative</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine_native-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IRtcEngineNative类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 nertc.wwiseplugin.IRtcEngineNative 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1wwiseplugin_1_1_i_rtc_engine_native.png" usemap="#nertc.wwiseplugin.IRtcEngineNative_map" alt=""/>
+  <map id="nertc.wwiseplugin.IRtcEngineNative_map" name="nertc.wwiseplugin.IRtcEngineNative_map">
+<area href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html" alt="nertc.wwiseplugin.IRtcEngine" shape="rect" coords="0,56,213,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1wwiseplugin_1_1_i_rtc_engine_native_1_1_native_engine_context.html">NativeEngineContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1wwiseplugin_1_1_i_rtc_engine_native_1_1_native_engine_event.html">NativeEngineEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a199a40fea2fa41279732fc03c3bce82d" id="r_a199a40fea2fa41279732fc03c3bce82d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a199a40fea2fa41279732fc03c3bce82d">onError</a> (string channel_name, int error_code, string msg)</td></tr>
+<tr class="separator:a199a40fea2fa41279732fc03c3bce82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae004743b648c7eb70765c09e4600447e" id="r_ae004743b648c7eb70765c09e4600447e"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae004743b648c7eb70765c09e4600447e">onWarning</a> (string channel_name, int warn_code, string msg)</td></tr>
+<tr class="separator:ae004743b648c7eb70765c09e4600447e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ad2fe0fd8d07488875b4c4b15a16f4" id="r_aa8ad2fe0fd8d07488875b4c4b15a16f4"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8ad2fe0fd8d07488875b4c4b15a16f4">onJoinChannel</a> (string channel_name, ulong cid, ulong uid, int result, ulong elapsed)</td></tr>
+<tr class="separator:aa8ad2fe0fd8d07488875b4c4b15a16f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a456c44b2f16fa73e29f2747605124" id="r_a83a456c44b2f16fa73e29f2747605124"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83a456c44b2f16fa73e29f2747605124">onReconnectingStart</a> (string channel_name, ulong cid, ulong uid)</td></tr>
+<tr class="separator:a83a456c44b2f16fa73e29f2747605124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675b62efb2cf257097447c7385240668" id="r_a675b62efb2cf257097447c7385240668"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a675b62efb2cf257097447c7385240668">onConnectionStateChanged</a> (string channel_name, int state, int reason)</td></tr>
+<tr class="separator:a675b62efb2cf257097447c7385240668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305d975f56257604b8de528655f60e20" id="r_a305d975f56257604b8de528655f60e20"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a305d975f56257604b8de528655f60e20">onNetworkTypeChanged</a> (int new_type)</td></tr>
+<tr class="separator:a305d975f56257604b8de528655f60e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4aef9ac4855d5355c765db34499273" id="r_a2d4aef9ac4855d5355c765db34499273"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d4aef9ac4855d5355c765db34499273">onRejoinChannel</a> (string channel_name, ulong cid, ulong uid, int result, ulong elapsed)</td></tr>
+<tr class="separator:a2d4aef9ac4855d5355c765db34499273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d97c2288099d94b47d2b519eaa08d9" id="r_a15d97c2288099d94b47d2b519eaa08d9"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15d97c2288099d94b47d2b519eaa08d9">onLeaveChannel</a> (string channel_name, int result, ulong uid)</td></tr>
+<tr class="separator:a15d97c2288099d94b47d2b519eaa08d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3b4c78b4c34b112cf12cea055bb446" id="r_a6f3b4c78b4c34b112cf12cea055bb446"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f3b4c78b4c34b112cf12cea055bb446">onDisconnect</a> (string channel_name, int reason)</td></tr>
+<tr class="separator:a6f3b4c78b4c34b112cf12cea055bb446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f58eb0c9c40f4f17a41dfcfaf5626e" id="r_a15f58eb0c9c40f4f17a41dfcfaf5626e"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15f58eb0c9c40f4f17a41dfcfaf5626e">onClientRoleChanged</a> (string channel_name, int oldRole, int newRole)</td></tr>
+<tr class="separator:a15f58eb0c9c40f4f17a41dfcfaf5626e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988e8e242a3b1941fcecaf88f74af23a" id="r_a988e8e242a3b1941fcecaf88f74af23a"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a988e8e242a3b1941fcecaf88f74af23a">onUserJoined</a> (string channel_name, ulong uid, string user_name)</td></tr>
+<tr class="separator:a988e8e242a3b1941fcecaf88f74af23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8aca8a01109ea8c2c6cbe11dc7412b0" id="r_af8aca8a01109ea8c2c6cbe11dc7412b0"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8aca8a01109ea8c2c6cbe11dc7412b0">onUserLeft</a> (string channel_name, ulong uid, int reason)</td></tr>
+<tr class="separator:af8aca8a01109ea8c2c6cbe11dc7412b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a58e6ae9f182c06c6cd394f8731afe" id="r_af7a58e6ae9f182c06c6cd394f8731afe"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7a58e6ae9f182c06c6cd394f8731afe">onUserAudioStart</a> (string channel_name, int stream_type, ulong uid)</td></tr>
+<tr class="separator:af7a58e6ae9f182c06c6cd394f8731afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb77dd09c3597e5ea2bcbea4108cbe1" id="r_a9eb77dd09c3597e5ea2bcbea4108cbe1"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eb77dd09c3597e5ea2bcbea4108cbe1">onUserAudioStop</a> (string channel_name, int stream_type, ulong uid)</td></tr>
+<tr class="separator:a9eb77dd09c3597e5ea2bcbea4108cbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13129a17f0eeceac9496978427ea974d" id="r_a13129a17f0eeceac9496978427ea974d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13129a17f0eeceac9496978427ea974d">onUserAudioMute</a> (string channel_name, int stream_type, ulong uid, [MarshalAs(UnmanagedType.I1)]bool mute)</td></tr>
+<tr class="separator:a13129a17f0eeceac9496978427ea974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8e67cf3bd186b95351857b165ee635" id="r_a2b8e67cf3bd186b95351857b165ee635"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b8e67cf3bd186b95351857b165ee635">onAudioDeviceRoutingDidChange</a> (int routing)</td></tr>
+<tr class="separator:a2b8e67cf3bd186b95351857b165ee635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50cf9061dc535693bd7cd1c638eb001" id="r_ab50cf9061dc535693bd7cd1c638eb001"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab50cf9061dc535693bd7cd1c638eb001">onAudioDeviceStateChanged</a> (string device_id, int device_type, int device_state)</td></tr>
+<tr class="separator:ab50cf9061dc535693bd7cd1c638eb001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1005f821ab196b12d869f09796622994" id="r_a1005f821ab196b12d869f09796622994"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1005f821ab196b12d869f09796622994">onAudioDefaultDeviceChanged</a> (string device_id, int device_type)</td></tr>
+<tr class="separator:a1005f821ab196b12d869f09796622994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa484c0147e2744b785630d62a923b843" id="r_aa484c0147e2744b785630d62a923b843"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa484c0147e2744b785630d62a923b843">onFirstAudioDataReceived</a> (string channel_name, int stream_type, ulong uid)</td></tr>
+<tr class="separator:aa484c0147e2744b785630d62a923b843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea2cf4ba43dfda932a7c71dc16813eb" id="r_a4ea2cf4ba43dfda932a7c71dc16813eb"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ea2cf4ba43dfda932a7c71dc16813eb">onFirstAudioFrameDecoded</a> (string channel_name, int stream_type, ulong uid)</td></tr>
+<tr class="separator:a4ea2cf4ba43dfda932a7c71dc16813eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324647e98552ee9d3d678733c17ca1f5" id="r_a324647e98552ee9d3d678733c17ca1f5"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a324647e98552ee9d3d678733c17ca1f5">onLocalAudioVolumeIndication</a> (string channel_name, int volume, [MarshalAs(UnmanagedType.I1)]bool enable_vad)</td></tr>
+<tr class="separator:a324647e98552ee9d3d678733c17ca1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432e63e886562451924063f39719cd20" id="r_a432e63e886562451924063f39719cd20"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a432e63e886562451924063f39719cd20">onRemoteAudioVolumeIndication</a> (string channel_name, IntPtr speakers, uint speaker_number, int total_volume)</td></tr>
+<tr class="separator:a432e63e886562451924063f39719cd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3bbd4dda48a76e94c6394689bb12e8" id="r_a3b3bbd4dda48a76e94c6394689bb12e8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b3bbd4dda48a76e94c6394689bb12e8">initEngine</a> (ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_i_rtc_engine_native_1_1_native_engine_context.html">NativeEngineContext</a> param)</td></tr>
+<tr class="separator:a3b3bbd4dda48a76e94c6394689bb12e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c381b05d5c3c0e1728594b738406c3" id="r_a00c381b05d5c3c0e1728594b738406c3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00c381b05d5c3c0e1728594b738406c3">setToken</a> (string token)</td></tr>
+<tr class="separator:a00c381b05d5c3c0e1728594b738406c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa0bfec82f0f5c51a6ca517a3ef6bac" id="r_a2fa0bfec82f0f5c51a6ca517a3ef6bac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa0bfec82f0f5c51a6ca517a3ef6bac">setChannelName</a> (string channelName)</td></tr>
+<tr class="separator:a2fa0bfec82f0f5c51a6ca517a3ef6bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d1a7634a460cb52ddf1702ce6fa1fd" id="r_a17d1a7634a460cb52ddf1702ce6fa1fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17d1a7634a460cb52ddf1702ce6fa1fd">setUserID</a> (ulong userID)</td></tr>
+<tr class="separator:a17d1a7634a460cb52ddf1702ce6fa1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c00b4e9a18030178f6385b2fd2538ca" id="r_a8c00b4e9a18030178f6385b2fd2538ca"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c00b4e9a18030178f6385b2fd2538ca">setParameters</a> (string parameters)</td></tr>
+<tr class="separator:a8c00b4e9a18030178f6385b2fd2538ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f63325ac29bb6d2d5c43d32fef43d3" id="r_a77f63325ac29bb6d2d5c43d32fef43d3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77f63325ac29bb6d2d5c43d32fef43d3">checkMicphonePermission</a> (ref bool enabled)</td></tr>
+<tr class="separator:a77f63325ac29bb6d2d5c43d32fef43d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c260a0fcb5d446fa879b134f0e7b25" id="r_ad0c260a0fcb5d446fa879b134f0e7b25"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c260a0fcb5d446fa879b134f0e7b25">setSendAuthInfoWithGameObjectID</a> (ulong gameObjectID, string channel_name, string token)</td></tr>
+<tr class="separator:ad0c260a0fcb5d446fa879b134f0e7b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1b85403ecbbdf27051e0eee331d80b" id="r_a5e1b85403ecbbdf27051e0eee331d80b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e1b85403ecbbdf27051e0eee331d80b">setReceiveAuthInfoWithGameObjectID</a> (ulong gameObjectID, string channel_name, string token)</td></tr>
+<tr class="separator:a5e1b85403ecbbdf27051e0eee331d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21db6be37bfcda43c5ea44b7e735634a" id="r_a21db6be37bfcda43c5ea44b7e735634a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21db6be37bfcda43c5ea44b7e735634a">setReceiveUserIDWithGameObjectID</a> (ulong gameObjectID, ulong useID)</td></tr>
+<tr class="separator:a21db6be37bfcda43c5ea44b7e735634a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e98537bbbaa2f2a97edd90e69c8b4c" id="r_a84e98537bbbaa2f2a97edd90e69c8b4c"><td class="memItemLeft" align="right" valign="top">static ulong&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84e98537bbbaa2f2a97edd90e69c8b4c">getReceiveUserIDWithGameObjectID</a> (ulong gameObjectID)</td></tr>
+<tr class="separator:a84e98537bbbaa2f2a97edd90e69c8b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261300cbf7fd24a329863d95a4ce24f4" id="r_a261300cbf7fd24a329863d95a4ce24f4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a261300cbf7fd24a329863d95a4ce24f4">enableLoopbackWithGameObjectID</a> (ulong gameObjectID, bool enableLoopback)</td></tr>
+<tr class="separator:a261300cbf7fd24a329863d95a4ce24f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef82320594dc155ff67a5db6894ae7c9" id="r_aef82320594dc155ff67a5db6894ae7c9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef82320594dc155ff67a5db6894ae7c9">getEnableLoopbackWithGameObjectID</a> (ulong gameObjectID)</td></tr>
+<tr class="separator:aef82320594dc155ff67a5db6894ae7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9ec7429195b9d555b6c5a06432a430" id="r_a6b9ec7429195b9d555b6c5a06432a430"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b9ec7429195b9d555b6c5a06432a430">enableBluetoothMic</a> (bool enable)</td></tr>
+<tr class="separator:a6b9ec7429195b9d555b6c5a06432a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a5b2850616f921acb9a6b4a37a0a68" id="r_a80a5b2850616f921acb9a6b4a37a0a68"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80a5b2850616f921acb9a6b4a37a0a68">setAudioProfile</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a330911a245eaa2eb86c82ddd60f35b23">RtcAudioProfileType</a> profile, <a class="el" href="namespacenertc_1_1wwiseplugin.html#aec63a181ea3adaada1d93405da5039cb">RtcAudioScenarioType</a> scenario)</td></tr>
+<tr class="separator:a80a5b2850616f921acb9a6b4a37a0a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ceef5df59f5c7d7111b364f5930b6b2" id="r_a4ceef5df59f5c7d7111b364f5930b6b2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ceef5df59f5c7d7111b364f5930b6b2">setRangeAudioMode</a> (string channel_name, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a8151f46109a83ecc683e647cdce36a87">RtcRangeAudioMode</a> mode)</td></tr>
+<tr class="separator:a4ceef5df59f5c7d7111b364f5930b6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8397591e71f8868bcab43f9ec23667b" id="r_ab8397591e71f8868bcab43f9ec23667b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8397591e71f8868bcab43f9ec23667b">setRangeAudioTeamID</a> (string channel_name, int teamID)</td></tr>
+<tr class="separator:ab8397591e71f8868bcab43f9ec23667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a436d7b443410063475ce1161d6a51" id="r_a94a436d7b443410063475ce1161d6a51"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94a436d7b443410063475ce1161d6a51">setAudioRecvRange</a> (string channel_name, int range)</td></tr>
+<tr class="separator:a94a436d7b443410063475ce1161d6a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc29c054ad2432b568aa56e61fb0f69" id="r_a9dc29c054ad2432b568aa56e61fb0f69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dc29c054ad2432b568aa56e61fb0f69">updateSelfPosition</a> (string channel_name, float positionX, float positionY, float positionZ)</td></tr>
+<tr class="separator:a9dc29c054ad2432b568aa56e61fb0f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b5149e7c484b6eadd0e7a96d44275e" id="r_ae6b5149e7c484b6eadd0e7a96d44275e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b5149e7c484b6eadd0e7a96d44275e">enableAudioVolumeIndication</a> (string channel_name, bool enable, ulong interval, bool enableVad)</td></tr>
+<tr class="separator:ae6b5149e7c484b6eadd0e7a96d44275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add500dd4b584d9f6da356c5498614322" id="r_add500dd4b584d9f6da356c5498614322"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add500dd4b584d9f6da356c5498614322">setPublishAudioAllowList</a> (string channel_name, ulong[] uids, uint size)</td></tr>
+<tr class="separator:add500dd4b584d9f6da356c5498614322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b9db6b511c861368fe38f8d1830576" id="r_a68b9db6b511c861368fe38f8d1830576"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68b9db6b511c861368fe38f8d1830576">setSubscribeAudioAllowList</a> (string channel_name, ulong[] uids, uint size)</td></tr>
+<tr class="separator:a68b9db6b511c861368fe38f8d1830576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f61fa009c482ecfc86e3919d6fc7e89" id="r_a3f61fa009c482ecfc86e3919d6fc7e89"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f61fa009c482ecfc86e3919d6fc7e89">setSubscribeAudioBlockList</a> (string channel_name, ulong[] uids, uint size)</td></tr>
+<tr class="separator:a3f61fa009c482ecfc86e3919d6fc7e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78166ecd45c42ae48b89f43874d46452" id="r_a78166ecd45c42ae48b89f43874d46452"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78166ecd45c42ae48b89f43874d46452">inChannel</a> (string channel_name)</td></tr>
+<tr class="separator:a78166ecd45c42ae48b89f43874d46452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111f08aecda6ca1b54cd4c4416cedc69" id="r_a111f08aecda6ca1b54cd4c4416cedc69"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a111f08aecda6ca1b54cd4c4416cedc69">pauseAudio</a> ()</td></tr>
+<tr class="separator:a111f08aecda6ca1b54cd4c4416cedc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af184b2bc91f7ecfafcbed0283fd8007d" id="r_af184b2bc91f7ecfafcbed0283fd8007d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af184b2bc91f7ecfafcbed0283fd8007d">resumeAudio</a> ()</td></tr>
+<tr class="separator:af184b2bc91f7ecfafcbed0283fd8007d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add726dd93f6936483482973343155674" id="r_add726dd93f6936483482973343155674"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add726dd93f6936483482973343155674">startRecording</a> (string speechLanguage)</td></tr>
+<tr class="separator:add726dd93f6936483482973343155674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548af1d7ae2f6aed5f2b3434cc89f60a" id="r_a548af1d7ae2f6aed5f2b3434cc89f60a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a548af1d7ae2f6aed5f2b3434cc89f60a">stopRecording</a> ()</td></tr>
+<tr class="separator:a548af1d7ae2f6aed5f2b3434cc89f60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae1b00c2525acc81f342f1a87deefe2" id="r_a0ae1b00c2525acc81f342f1a87deefe2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ae1b00c2525acc81f342f1a87deefe2">playRecordFile</a> (string fileid)</td></tr>
+<tr class="separator:a0ae1b00c2525acc81f342f1a87deefe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b691eb970d17e3f5219553a16b0958" id="r_a09b691eb970d17e3f5219553a16b0958"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09b691eb970d17e3f5219553a16b0958">stopPlayFile</a> ()</td></tr>
+<tr class="separator:a09b691eb970d17e3f5219553a16b0958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd84d086a65ffc6f59708903f40d667" id="r_a5cd84d086a65ffc6f59708903f40d667"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd84d086a65ffc6f59708903f40d667">speechToText</a> (string fileid, string speechLanguage, string translateLanguage)</td></tr>
+<tr class="separator:a5cd84d086a65ffc6f59708903f40d667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81ed5116393e2ecfa5367a366bf2033" id="r_af81ed5116393e2ecfa5367a366bf2033"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af81ed5116393e2ecfa5367a366bf2033">getVoiceFileDuration</a> (string fileid)</td></tr>
+<tr class="separator:af81ed5116393e2ecfa5367a366bf2033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcb0d78c81b64ea9631333c719a8d28" id="r_affcb0d78c81b64ea9631333c719a8d28"><td class="memItemLeft" align="right" valign="top">static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affcb0d78c81b64ea9631333c719a8d28">getVersion</a> ()</td></tr>
+<tr class="separator:affcb0d78c81b64ea9631333c719a8d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d79914c645b174e52a100cf48db69c" id="r_a48d79914c645b174e52a100cf48db69c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48d79914c645b174e52a100cf48db69c">startAudioDump</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#aba8e8d35b60c33e7f6d26ab5f2c51250">RtcAudioDumpType</a> type)</td></tr>
+<tr class="separator:a48d79914c645b174e52a100cf48db69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a3e12e62a0e700f32c89c2086cd05f" id="r_a43a3e12e62a0e700f32c89c2086cd05f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43a3e12e62a0e700f32c89c2086cd05f">stopAudioDump</a> ()</td></tr>
+<tr class="separator:a43a3e12e62a0e700f32c89c2086cd05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c3c0a1515a8ca052d4c202f69857ce" id="r_a91c3c0a1515a8ca052d4c202f69857ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c3c0a1515a8ca052d4c202f69857ce">release</a> ()</td></tr>
+<tr class="separator:a91c3c0a1515a8ca052d4c202f69857ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a77f63325ac29bb6d2d5c43d32fef43d3" name="a77f63325ac29bb6d2d5c43d32fef43d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f63325ac29bb6d2d5c43d32fef43d3">&#9670;&#160;</a></span>checkMicphonePermission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.checkMicphonePermission </td>
+          <td>(</td>
+          <td class="paramtype">ref bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6b5149e7c484b6eadd0e7a96d44275e" name="ae6b5149e7c484b6eadd0e7a96d44275e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b5149e7c484b6eadd0e7a96d44275e">&#9670;&#160;</a></span>enableAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.enableAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>interval</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enableVad</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b9ec7429195b9d555b6c5a06432a430" name="a6b9ec7429195b9d555b6c5a06432a430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9ec7429195b9d555b6c5a06432a430">&#9670;&#160;</a></span>enableBluetoothMic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.enableBluetoothMic </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a261300cbf7fd24a329863d95a4ce24f4" name="a261300cbf7fd24a329863d95a4ce24f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261300cbf7fd24a329863d95a4ce24f4">&#9670;&#160;</a></span>enableLoopbackWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.enableLoopbackWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enableLoopback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef82320594dc155ff67a5db6894ae7c9" name="aef82320594dc155ff67a5db6894ae7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef82320594dc155ff67a5db6894ae7c9">&#9670;&#160;</a></span>getEnableLoopbackWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool nertc.wwiseplugin.IRtcEngineNative.getEnableLoopbackWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84e98537bbbaa2f2a97edd90e69c8b4c" name="a84e98537bbbaa2f2a97edd90e69c8b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e98537bbbaa2f2a97edd90e69c8b4c">&#9670;&#160;</a></span>getReceiveUserIDWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ulong nertc.wwiseplugin.IRtcEngineNative.getReceiveUserIDWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affcb0d78c81b64ea9631333c719a8d28" name="affcb0d78c81b64ea9631333c719a8d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affcb0d78c81b64ea9631333c719a8d28">&#9670;&#160;</a></span>getVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IntPtr nertc.wwiseplugin.IRtcEngineNative.getVersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af81ed5116393e2ecfa5367a366bf2033" name="af81ed5116393e2ecfa5367a366bf2033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81ed5116393e2ecfa5367a366bf2033">&#9670;&#160;</a></span>getVoiceFileDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.getVoiceFileDuration </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78166ecd45c42ae48b89f43874d46452" name="a78166ecd45c42ae48b89f43874d46452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78166ecd45c42ae48b89f43874d46452">&#9670;&#160;</a></span>inChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.inChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b3bbd4dda48a76e94c6394689bb12e8" name="a3b3bbd4dda48a76e94c6394689bb12e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3bbd4dda48a76e94c6394689bb12e8">&#9670;&#160;</a></span>initEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.initEngine </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_i_rtc_engine_native_1_1_native_engine_context.html">NativeEngineContext</a></td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1005f821ab196b12d869f09796622994" name="a1005f821ab196b12d869f09796622994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1005f821ab196b12d869f09796622994">&#9670;&#160;</a></span>onAudioDefaultDeviceChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onAudioDefaultDeviceChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>device_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>device_type</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b8e67cf3bd186b95351857b165ee635" name="a2b8e67cf3bd186b95351857b165ee635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8e67cf3bd186b95351857b165ee635">&#9670;&#160;</a></span>onAudioDeviceRoutingDidChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onAudioDeviceRoutingDidChange </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>routing</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab50cf9061dc535693bd7cd1c638eb001" name="ab50cf9061dc535693bd7cd1c638eb001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab50cf9061dc535693bd7cd1c638eb001">&#9670;&#160;</a></span>onAudioDeviceStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onAudioDeviceStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>device_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>device_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>device_state</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15f58eb0c9c40f4f17a41dfcfaf5626e" name="a15f58eb0c9c40f4f17a41dfcfaf5626e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f58eb0c9c40f4f17a41dfcfaf5626e">&#9670;&#160;</a></span>onClientRoleChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onClientRoleChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>oldRole</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newRole</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a675b62efb2cf257097447c7385240668" name="a675b62efb2cf257097447c7385240668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675b62efb2cf257097447c7385240668">&#9670;&#160;</a></span>onConnectionStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onConnectionStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>state</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f3b4c78b4c34b112cf12cea055bb446" name="a6f3b4c78b4c34b112cf12cea055bb446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3b4c78b4c34b112cf12cea055bb446">&#9670;&#160;</a></span>onDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onDisconnect </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a199a40fea2fa41279732fc03c3bce82d" name="a199a40fea2fa41279732fc03c3bce82d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199a40fea2fa41279732fc03c3bce82d">&#9670;&#160;</a></span>onError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onError </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa484c0147e2744b785630d62a923b843" name="aa484c0147e2744b785630d62a923b843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa484c0147e2744b785630d62a923b843">&#9670;&#160;</a></span>onFirstAudioDataReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onFirstAudioDataReceived </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ea2cf4ba43dfda932a7c71dc16813eb" name="a4ea2cf4ba43dfda932a7c71dc16813eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea2cf4ba43dfda932a7c71dc16813eb">&#9670;&#160;</a></span>onFirstAudioFrameDecoded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onFirstAudioFrameDecoded </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8ad2fe0fd8d07488875b4c4b15a16f4" name="aa8ad2fe0fd8d07488875b4c4b15a16f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8ad2fe0fd8d07488875b4c4b15a16f4">&#9670;&#160;</a></span>onJoinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onJoinChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d97c2288099d94b47d2b519eaa08d9" name="a15d97c2288099d94b47d2b519eaa08d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d97c2288099d94b47d2b519eaa08d9">&#9670;&#160;</a></span>onLeaveChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onLeaveChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a324647e98552ee9d3d678733c17ca1f5" name="a324647e98552ee9d3d678733c17ca1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324647e98552ee9d3d678733c17ca1f5">&#9670;&#160;</a></span>onLocalAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onLocalAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[MarshalAs(UnmanagedType.I1)] bool</td>          <td class="paramname"><span class="paramname"><em>enable_vad</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a305d975f56257604b8de528655f60e20" name="a305d975f56257604b8de528655f60e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305d975f56257604b8de528655f60e20">&#9670;&#160;</a></span>onNetworkTypeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onNetworkTypeChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>new_type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83a456c44b2f16fa73e29f2747605124" name="a83a456c44b2f16fa73e29f2747605124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a456c44b2f16fa73e29f2747605124">&#9670;&#160;</a></span>onReconnectingStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onReconnectingStart </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d4aef9ac4855d5355c765db34499273" name="a2d4aef9ac4855d5355c765db34499273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4aef9ac4855d5355c765db34499273">&#9670;&#160;</a></span>onRejoinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onRejoinChannel </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a432e63e886562451924063f39719cd20" name="a432e63e886562451924063f39719cd20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432e63e886562451924063f39719cd20">&#9670;&#160;</a></span>onRemoteAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onRemoteAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IntPtr</td>          <td class="paramname"><span class="paramname"><em>speakers</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>speaker_number</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>total_volume</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13129a17f0eeceac9496978427ea974d" name="a13129a17f0eeceac9496978427ea974d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13129a17f0eeceac9496978427ea974d">&#9670;&#160;</a></span>onUserAudioMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onUserAudioMute </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[MarshalAs(UnmanagedType.I1)] bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7a58e6ae9f182c06c6cd394f8731afe" name="af7a58e6ae9f182c06c6cd394f8731afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a58e6ae9f182c06c6cd394f8731afe">&#9670;&#160;</a></span>onUserAudioStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onUserAudioStart </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9eb77dd09c3597e5ea2bcbea4108cbe1" name="a9eb77dd09c3597e5ea2bcbea4108cbe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb77dd09c3597e5ea2bcbea4108cbe1">&#9670;&#160;</a></span>onUserAudioStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onUserAudioStop </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a988e8e242a3b1941fcecaf88f74af23a" name="a988e8e242a3b1941fcecaf88f74af23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988e8e242a3b1941fcecaf88f74af23a">&#9670;&#160;</a></span>onUserJoined()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onUserJoined </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>user_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8aca8a01109ea8c2c6cbe11dc7412b0" name="af8aca8a01109ea8c2c6cbe11dc7412b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8aca8a01109ea8c2c6cbe11dc7412b0">&#9670;&#160;</a></span>onUserLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onUserLeft </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae004743b648c7eb70765c09e4600447e" name="ae004743b648c7eb70765c09e4600447e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae004743b648c7eb70765c09e4600447e">&#9670;&#160;</a></span>onWarning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IRtcEngineNative.onWarning </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>warn_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a111f08aecda6ca1b54cd4c4416cedc69" name="a111f08aecda6ca1b54cd4c4416cedc69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111f08aecda6ca1b54cd4c4416cedc69">&#9670;&#160;</a></span>pauseAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.pauseAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ae1b00c2525acc81f342f1a87deefe2" name="a0ae1b00c2525acc81f342f1a87deefe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae1b00c2525acc81f342f1a87deefe2">&#9670;&#160;</a></span>playRecordFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.playRecordFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91c3c0a1515a8ca052d4c202f69857ce" name="a91c3c0a1515a8ca052d4c202f69857ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c3c0a1515a8ca052d4c202f69857ce">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af184b2bc91f7ecfafcbed0283fd8007d" name="af184b2bc91f7ecfafcbed0283fd8007d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af184b2bc91f7ecfafcbed0283fd8007d">&#9670;&#160;</a></span>resumeAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.resumeAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80a5b2850616f921acb9a6b4a37a0a68" name="a80a5b2850616f921acb9a6b4a37a0a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a5b2850616f921acb9a6b4a37a0a68">&#9670;&#160;</a></span>setAudioProfile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setAudioProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a330911a245eaa2eb86c82ddd60f35b23">RtcAudioProfileType</a></td>          <td class="paramname"><span class="paramname"><em>profile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#aec63a181ea3adaada1d93405da5039cb">RtcAudioScenarioType</a></td>          <td class="paramname"><span class="paramname"><em>scenario</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94a436d7b443410063475ce1161d6a51" name="a94a436d7b443410063475ce1161d6a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a436d7b443410063475ce1161d6a51">&#9670;&#160;</a></span>setAudioRecvRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setAudioRecvRange </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fa0bfec82f0f5c51a6ca517a3ef6bac" name="a2fa0bfec82f0f5c51a6ca517a3ef6bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa0bfec82f0f5c51a6ca517a3ef6bac">&#9670;&#160;</a></span>setChannelName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.setChannelName </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c00b4e9a18030178f6385b2fd2538ca" name="a8c00b4e9a18030178f6385b2fd2538ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c00b4e9a18030178f6385b2fd2538ca">&#9670;&#160;</a></span>setParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setParameters </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add500dd4b584d9f6da356c5498614322" name="add500dd4b584d9f6da356c5498614322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add500dd4b584d9f6da356c5498614322">&#9670;&#160;</a></span>setPublishAudioAllowList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setPublishAudioAllowList </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong[]</td>          <td class="paramname"><span class="paramname"><em>uids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ceef5df59f5c7d7111b364f5930b6b2" name="a4ceef5df59f5c7d7111b364f5930b6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ceef5df59f5c7d7111b364f5930b6b2">&#9670;&#160;</a></span>setRangeAudioMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setRangeAudioMode </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8151f46109a83ecc683e647cdce36a87">RtcRangeAudioMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8397591e71f8868bcab43f9ec23667b" name="ab8397591e71f8868bcab43f9ec23667b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8397591e71f8868bcab43f9ec23667b">&#9670;&#160;</a></span>setRangeAudioTeamID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setRangeAudioTeamID </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>teamID</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e1b85403ecbbdf27051e0eee331d80b" name="a5e1b85403ecbbdf27051e0eee331d80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1b85403ecbbdf27051e0eee331d80b">&#9670;&#160;</a></span>setReceiveAuthInfoWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.setReceiveAuthInfoWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21db6be37bfcda43c5ea44b7e735634a" name="a21db6be37bfcda43c5ea44b7e735634a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21db6be37bfcda43c5ea44b7e735634a">&#9670;&#160;</a></span>setReceiveUserIDWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.setReceiveUserIDWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>useID</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0c260a0fcb5d446fa879b134f0e7b25" name="ad0c260a0fcb5d446fa879b134f0e7b25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c260a0fcb5d446fa879b134f0e7b25">&#9670;&#160;</a></span>setSendAuthInfoWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.setSendAuthInfoWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68b9db6b511c861368fe38f8d1830576" name="a68b9db6b511c861368fe38f8d1830576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b9db6b511c861368fe38f8d1830576">&#9670;&#160;</a></span>setSubscribeAudioAllowList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setSubscribeAudioAllowList </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong[]</td>          <td class="paramname"><span class="paramname"><em>uids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f61fa009c482ecfc86e3919d6fc7e89" name="a3f61fa009c482ecfc86e3919d6fc7e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f61fa009c482ecfc86e3919d6fc7e89">&#9670;&#160;</a></span>setSubscribeAudioBlockList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.setSubscribeAudioBlockList </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ulong[]</td>          <td class="paramname"><span class="paramname"><em>uids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00c381b05d5c3c0e1728594b738406c3" name="a00c381b05d5c3c0e1728594b738406c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c381b05d5c3c0e1728594b738406c3">&#9670;&#160;</a></span>setToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.setToken </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17d1a7634a460cb52ddf1702ce6fa1fd" name="a17d1a7634a460cb52ddf1702ce6fa1fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d1a7634a460cb52ddf1702ce6fa1fd">&#9670;&#160;</a></span>setUserID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.setUserID </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cd84d086a65ffc6f59708903f40d667" name="a5cd84d086a65ffc6f59708903f40d667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd84d086a65ffc6f59708903f40d667">&#9670;&#160;</a></span>speechToText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.speechToText </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>speechLanguage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>translateLanguage</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48d79914c645b174e52a100cf48db69c" name="a48d79914c645b174e52a100cf48db69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d79914c645b174e52a100cf48db69c">&#9670;&#160;</a></span>startAudioDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.startAudioDump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#aba8e8d35b60c33e7f6d26ab5f2c51250">RtcAudioDumpType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add726dd93f6936483482973343155674" name="add726dd93f6936483482973343155674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add726dd93f6936483482973343155674">&#9670;&#160;</a></span>startRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.startRecording </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>speechLanguage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43a3e12e62a0e700f32c89c2086cd05f" name="a43a3e12e62a0e700f32c89c2086cd05f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a3e12e62a0e700f32c89c2086cd05f">&#9670;&#160;</a></span>stopAudioDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.stopAudioDump </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09b691eb970d17e3f5219553a16b0958" name="a09b691eb970d17e3f5219553a16b0958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b691eb970d17e3f5219553a16b0958">&#9670;&#160;</a></span>stopPlayFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.stopPlayFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a548af1d7ae2f6aed5f2b3434cc89f60a" name="a548af1d7ae2f6aed5f2b3434cc89f60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548af1d7ae2f6aed5f2b3434cc89f60a">&#9670;&#160;</a></span>stopRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IRtcEngineNative.stopRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dc29c054ad2432b568aa56e61fb0f69" name="a9dc29c054ad2432b568aa56e61fb0f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc29c054ad2432b568aa56e61fb0f69">&#9670;&#160;</a></span>updateSelfPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IRtcEngineNative.updateSelfPosition </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>positionX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>positionY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>positionZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/native/<a class="el" href="_rtc_engine_native_8cs.html">RtcEngineNative.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

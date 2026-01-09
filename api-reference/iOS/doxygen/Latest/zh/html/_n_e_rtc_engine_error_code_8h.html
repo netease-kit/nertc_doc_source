@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: include/NERtcEngineErrorCode.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">NERtcEngineErrorCode.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>import &lt;Foundation/Foundation.h&gt;</code><br />
+</div>
+<p><a href="_n_e_rtc_engine_error_code_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a6acba2a38effd359f11bf09a703aad15" id="r_a6acba2a38effd359f11bf09a703aad15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6acba2a38effd359f11bf09a703aad15">NERtcError</a> { <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf">kNERtcNoError</a> = 0
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15acf77e6d544d629b39e22ce73e25b4200">KNERtcErrChannelReservePermissionDenied</a> = 403
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a20121d84f3202e25587543294ffc10af">kNERtcErrChannelReserveTimeOut</a> = 408
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a383bc27973ef82d80c6f0b8551d1daaa">kNERtcErrChannelReserveErrorParam</a> = 414
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1d48d840c33dbf58fa527834d5a03c71">kNERtcErrChannelReserveErrorAppKey</a> = 417
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a960dfb21ba09133cbdb082478d634b55">kNERtcErrChannelReserveUnknownError</a> = 500
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a61432121cca0ceb8f027f609242a1036">kNERtcErrChannelReserveMoreThanTwoUser</a> = 600
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ab7fb39da4d5d87e7811311c4bf2e6fd2">kNERtcErrChannelPermissionKeyError</a> = 901
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15af921bbc6bfb4cf92279957099978d52c">kNERtcErrChannelPermissionKeyTimeout</a> = 902
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ac1f1d3667e6f2ea3e474705ad3711d8f">kNERtcErrLiveStreamInvaildRequest</a> = 1301
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a361ce2e16bffd76fcf9bc45a866e617a">kNERtcErrLiveStreamInvaildParameters</a> = 1400
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15aff040d4ebc32bf546f9961c9c3c38b49">kNERtcErrLiveStreamRoomHasExited</a> = 1401
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15ad12da8d2c75a95f68cb625bf8b544a24">kNERtcErrLiveStreamExceedLimit</a> = 1402
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a3fa348070480b346ec452e53c7500664">kNERtcErrLiveStreamDuplicateId</a> = 1403
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a775db4d60378a51be9fb52de64912094">kNERtcErrLiveStreamNotFound</a> = 1404
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a5ab394c26ebdc9098901ede866d46a49">kNERtcErrLiveStreamRequestFailed</a> = 1417
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a2281359c28b68c5ab1c3b70f23ad9f83">kNERtcErrLiveStreamInvalidLayout</a> = 1501
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a626479447837d34543a1ce3814b4100b">kNERtcErrLiveStreamUserPictureError</a> = 1502
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ae8907f0c4613190ad61de53917f65c5b">kNERtcErrChannelNoPublishPermission</a> = 1620
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1ef44284f9f2d24ad0a632b589771ac7">kNERtcErrChannelNoSubscribePermission</a> = 2803
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1e34893272f8f39af4719c0a4de8cef7">kNERtcErrServerBroadcasterReachedTheLimit</a> = 4001
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a37f13397181581129ca0e403e9e2f745">kNERtcErrServerPersonsInRoomReachedTheLimit</a> = 4003
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a406d8f471594a90a79c1b62a86f1e10c">kNERtcErrFatal</a> = 30001
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15abcdc17999ac727db84ab261a79819ee8">kNERtcErrOutOfMemory</a> = 30002
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a6e1334758d0e26b63cf90285ec99ceac">kNERtcErrInvalidParam</a> = 30003
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a531aa6730510fab1bc7ad4713ffe6b01">kNERtcErrNotSupported</a> = 30004
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a364736264f4101622bd7246eb4dc4b29">kNERtcErrInvalidState</a> = 30005
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15aa0fab00daa7f5de0873dc761f3df2af1">kNERtcErrLackOfResource</a> = 30006
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15ae1cdaf2325cab0a20be30b9a7339aa11">kNERtcErrInvalidIndex</a> = 30007
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1a045eaadf2e65c99936a2c82eb900a2">kNERtcErrDeviceNotFound</a> = 30008
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a5c5467780d560cd00876a2be57fc2505">kNERtcErrInvalidDeviceSourceID</a> = 30009
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a7dfc33de2d6a7c940c44652d867efc23">kNERtcErrInvalidVideoProfile</a> = 30010
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a4d064e4b0e1b38dffa54fe7bd83cae8a">kNERtcErrCreateDeviceSourceFail</a> = 30011
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a34f87b6d386dbce528c950e43c1e9a7a">kNERtcErrInvalidRender</a> = 30012
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a7e0524a93f5858a01831671772790b55">kNERtcErrDevicePreviewAlreadyStarted</a> = 30013
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a4b978e19d3161ed66a2b39357a3858ca">kNERtcErrTransmitPendding</a> = 30014
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a2a6b96b65acae74dc086393658873642">kNERtcErrConnectFail</a> = 30015
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ad6d7f8483cd55256dfa9cf7a4906d392">kNERtcErrCreateDumpFileFail</a> = 30016
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a4cbea83e5aaab99933fcf512684042bb">kNERtcErrStartDumpFail</a> = 30017
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a43dd1ad568430de076a8eead987fffab">kNERtcErrDesktopCaptureInvalidState</a> = 30020
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15af3c73806128e95be3f93a090f345489a">kNERtcErrDesktopCaptureInvalidParam</a> = 30021
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ab5c1b389a30211fdbbf959162668fd66">kNERtcErrDesktopCaptureNotReady</a> = 30022
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a2127ef3dedbb5fee97dc0fdfa99f34cb">kNERtcErrDeviceOccupied</a> = 30027
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a7b8ac2352d85361b429ecf21959a67a7">kNERtcErrJoinInterruptedDueToLeaveAction</a> = 30028
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a4842e9ec337f7de5bf69e217832f9268">kNERtcErrJoinInterruptedDueToDestroyAction</a> = 30029
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a5b6e35a7ad176045f67949a170ac7fe5">kNERtcErrJoinInterruptedDueToAppTermination</a> = 30030
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1161892a76f1084194aad128776f9208">kNERtcErrFeatureSupportedHardwareLimit</a> = 30031
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a916f7d108ebd10f6a7d70d0a5051c4e1">kNERtcErrChannelAlreadyJoined</a> = 30100
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1ff513e6a2570eba0037adf929e9191d">kNERtcErrChannelNotJoined</a> = 30101
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ae4c7cf56b090f661e017c06cc6f1863e">kNERtcErrChannelRepleatedlyLeave</a> = 30102
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a5adc6196d8105439ae9203a411f81ecf">kNERtcErrRequestJoinChannelFail</a> = 30103
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15aa89403da44721969aa30abec52846202">kNERtcErrSessionNotFound</a> = 30104
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15aa29580c9d794c36099794d740606a770">kNERtcErrUserNotFound</a> = 30105
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a21a59b01f03d55846d7858f3d3af2e99">kNERtcErrInvalidUserID</a> = 30106
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ae8697b3eefa1581878916bfc57fce1eb">kNERtcErrMediaNotStarted</a> = 30107
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a9ad100ab57b8ed63f60dea400a8a7b7b">kNERtcErrSourceNotFound</a> = 30108
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a89e6971d9f05329c95564699cdbc01b2">kNERtcErrSwitchChannelInvalidState</a> = 30109
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1b11c57f52581a159f0b1fce2e37a38a">kNERtcErrChannelMediaRelayInvalidState</a> = 30110
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15af08442352ae34c1c77fce6a787b55731">kNERtcErrChannelMediaRelayPermissionDenied</a> = 30111
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ab24af96a18635082ed4269b5c6da4e78">kNERtcErrChannelMediaRelayStopFailed</a> = 30112
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a58f5219939db67e52df084fec281f27b">kNERtcErrEncryptNotSuitable</a> = 30113
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a5d1b22a8bc7599ae9c58c9d6e59fce3d">kNERtcErrPlayLowLatencyStreamFailed</a> = 30114
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a185a4987a8f7c1edf4a9e8d8de3615f4">kNERtcErrPlayLowLatencyStreamTimeout</a> = 30115
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15adcec0b568fae766dc36e6d08709e186b">kNERtcErrUserPermKeyAuthFailed</a> = 30121
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15aab411671843523dbc6c2e7e08e321ca9">kNERtcErrSEIExceedMaxDataLimit</a> = 30122
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a6fdcab41204f3e5d62af460a58d45f17">kNERtcErrDataChannelExceedMaxDataLimit</a> = 30123
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15aa3faafb4417e62c8e53b0cd8353e3cc1">kNERtcErrConnectionNotFound</a> = 30200
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a71cf54d2cf17400c09c2a2761530512d">kNERtcErrStreamNotFound</a> = 30201
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15ac50321065ae86d4f49f06510cce0e6c5">kNERtcErrAddTrackFail</a> = 30202
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ad894640f3ebd4215159fdba5b8fd7c84">kNERtcErrTrackNotFound</a> = 30203
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1f55b8825277ac5c9278dc93d3df7907">kNERtcErrMediaConnectionDisconnected</a> = 30204
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a78e648d61f3896b081835bea60e0aeb7">kNERtcErrSignalDisconnected</a> = 30205
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a00b12eb376ac70ab134afd5ae1d4ddbf">kNERtcErrServerKicked</a> = 30206
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15af0eb4828717ea9caab2723e8e4774767">kNERtcErrChannelBeClosed</a> = 30207
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a640fa1078e35f951d17f8ff9b44c896d">kNERtcErrChannelLeaveBySwitchAction</a> = 30208
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a4a56a0c5bd578cf48d5f8557bac78597">kNERtcErrChannelLeaveByDuplicateUidLogin</a> = 30209
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a9ae8af5d6afd4ce363249f448336d85b">kNERtcErrOSAuthorize</a> = 30300
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ab2f585b086f8c556587142a343760586">kNERtcRuntimeErrADMNoAuthorize</a> = 40000
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a8182e68ca5fa4bb348d948f228124154">kNERtcRuntimeErrADMInitRecording</a> = 40001
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a1613f29df93f76083faaa372a0394a0e">kNERtcRuntimeErrADMStartRecording</a> = 40002
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15ae29aab4d31d8bf4eb3990b9c8a792ead">kNERtcRuntimeErrADMStopRecording</a> = 40003
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ae5f3bdb26af5602a14555b0cf32f432b">kNERtcRuntimeErrADMInitPlayout</a> = 40004
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a9a1b6e7d2e5847d70067111090ce41c0">kNERtcRuntimeErrADMStartPlayout</a> = 40005
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a2d91959cd2b8e7d2b377bb4e98384ce0">kNERtcRuntimeErrADMStopPlayout</a> = 40006
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15af49a42ef6d5bb907a09b10901478d27b">kNERtcRuntimeErrADMRecordingFailed</a> = 40007
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15ac7703e255b347db7161757377fd79f9c">kNERtcRuntimeErrADMPlayoutFailed</a> = 40008
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a8c0c2d2bfaaf0529fe19826cde8916cf">kNERtcRuntimeErrADMAuthorizeNotDetermined</a> = 40009
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a8b911d5472fdc93948a0c64c54985f58">kNERtcRuntimeErrVDMNoAuthorize</a> = 50000
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15ad89faec6aa90e58a697be82d8fe194d5">kNERtcRuntimeErrVDMNotScreenUseSubStream</a> = 50001
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a01373a8c47f74141ac994da3732cfa96">kNERtcRuntimeErrVDMCameraDisconnect</a> = 50303
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a55ae4ed7531515cc344cbaf7cf124459">kNERtcRuntimeErrVDMCameraFreezed</a> = 50304
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a2b517e102355c47efd5f84db62ba98e7">kNERtcRuntimeErrVDMCameraUnknownError</a> = 50305
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15afa675f226df2d7f8ad04e95dfd97afc0">kNERtcRuntimeErrVDMCameraNoFrame</a> = 50306
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a7d7cf07524436745a09d9b62b31f845e">kNERtcRuntimeErrVDMCameraCreateFail</a> = 50307
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15acd4243fbd00f37acbf796aa812be53d5">kNERtcRuntimeErrVDMScreenCaptureNoAuthorize</a> = 50400
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a5b21593ae132ed860f121e2678b309ed">kNERtcRuntimeErrVDMScreenSourceTypeError</a> = 50401
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15aba8dee36d9db68e1475784b7a0b4db9a">kNERtcRuntimeErrScreenAudienceState</a> = 50402
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a4c384c36080313fb9111a6658a903c9d">kNERtcRuntimeErrVDMCameraDueToSystemPressure</a> = 51005
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a46e13ab1788a7adda6672c42e37f9b8b">kNERtcLivePlayStreamIdConflict</a> = 70000
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a91f34c3a0ab65406ff7490e9bfc7f43b">kNERtcLivePlayStreamIdNotFound</a> = 70001
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a71ce0d80f83c27d9ae9ea2115b405f72">kNERtcLivePlayConnectFailed</a> = 70002
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a59d98019a13bb9d50c74fe926df73ac1">kNERtcLivePlayReconnectFailed</a> = 70003
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a9b1d49b18ad39283e4f3d8571777648a">kNERtcLivePlayInvalidAddress</a> = 70004
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a50a95cff26a257ab11c8da86c7183810">kNERtcLivePlayCoreSourceLost</a> = 70005
+, <br />
+&#160;&#160;<a class="el" href="#a6acba2a38effd359f11bf09a703aad15a6d0bf1167ff83e209fb3c20c9dbd425d">kNERtcLivePlayAudioStartFailed</a> = 70006
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a39a60269a9287a5797962b2bb558b047">kNERtcLivePlayVideoStartFailed</a> = 70007
+, <a class="el" href="#a6acba2a38effd359f11bf09a703aad15a0bd1cfe7fac53efa43d08054e5db9cfb">kNERtcLivePlayNotInPlayStreaming</a> = 70008
+<br />
+ }</td></tr>
+<tr class="memdesc:a6acba2a38effd359f11bf09a703aad15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Engine Error Code。   <a href="#a6acba2a38effd359f11bf09a703aad15">更多...</a><br /></td></tr>
+<tr class="separator:a6acba2a38effd359f11bf09a703aad15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae131893c2d363a3b9c507966fa56ee2b" id="r_ae131893c2d363a3b9c507966fa56ee2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae131893c2d363a3b9c507966fa56ee2b">NERtcWarning</a> { <a class="el" href="#ae131893c2d363a3b9c507966fa56ee2baedc5d0c8a27d09924e19c9dccbba79c8">kNERtcNoWarning</a> = 0
+, <a class="el" href="#ae131893c2d363a3b9c507966fa56ee2baccea6998c0d3634cc58ce74f0ad8dd9b">KNERtcWarningChannelAbilityNotMatch</a> = 406
+, <a class="el" href="#ae131893c2d363a3b9c507966fa56ee2ba9c0953430489b743cf8ee85755d08001">kNERtcWarningASLFallback</a> = 407
+ }</td></tr>
+<tr class="separator:ae131893c2d363a3b9c507966fa56ee2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6248a12ea68e068ca62ea149eea2eacd" id="r_a6248a12ea68e068ca62ea149eea2eacd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6248a12ea68e068ca62ea149eea2eacd">kNERtcLiveStreamError</a> { <br />
+&#160;&#160;<a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda1b1360bb3f47946986afaba023878714">kNERtcLiveStreamErrorRequestIsInvaild</a> = 1301
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacdabd493ef264c56539492f003ec5d8a58f">kNERtcLiveStreamErrorIsInvaild</a> = 1400
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda7da3afe348312594e645895abe8df920">kNERtcLiveStreamErrorRoomExited</a> = 1401
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda990bce03f668da7dbaa8810d3de37c28">kNERtcLiveStreamErrorNumLimit</a> = 1402
+, <br />
+&#160;&#160;<a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda64e5f4907ea040116f46d532d9ffed54">kNERtcLiveStreamErrorDuplicateId</a> = 1403
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda28c18a5334216e25fb442bbd51b020af">kNERtcLiveStreamErrorNotFound</a> = 1404
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacdae2514edbd4b34cc5c49294b20fbed1e1">kNERtcLiveStreamErrorRequestErr</a> = 1417
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda9ca80ef3908976d38b51df429fc9eda6">kNERtcLiveStreamErrorInternalServerErr</a> = 1500
+, <br />
+&#160;&#160;<a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda235b595153796547278af5e8de7ca333">kNERtcErrLsTaskInvalidLayout</a> = 1501
+, <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacda57f7d3f7b9a1c3e01cc59d8e139bf21b">kNERtcErrLsTaskUserPicErr</a> = 1512
+<br />
+ }</td></tr>
+<tr class="memdesc:a6248a12ea68e068ca62ea149eea2eacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">LiveStream Error Code。 Will be deprecated, please use NERtcError instead  <a href="#a6248a12ea68e068ca62ea149eea2eacd">更多...</a><br /></td></tr>
+<tr class="separator:a6248a12ea68e068ca62ea149eea2eacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1cce4ad1683f914ba0963e44ca975b7f" id="r_a1cce4ad1683f914ba0963e44ca975b7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cce4ad1683f914ba0963e44ca975b7f">__attribute__</a> ((visibility(&quot;default&quot;))) NSString *NERtcErrorDescription(int errorCode)</td></tr>
+<tr class="memdesc:a1cce4ad1683f914ba0963e44ca975b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取错误码描述。  <br /></td></tr>
+<tr class="separator:a1cce4ad1683f914ba0963e44ca975b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a6248a12ea68e068ca62ea149eea2eacd" name="a6248a12ea68e068ca62ea149eea2eacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6248a12ea68e068ca62ea149eea2eacd">&#9670;&#160;</a></span>kNERtcLiveStreamError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6248a12ea68e068ca62ea149eea2eacd">kNERtcLiveStreamError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LiveStream Error Code。 Will be deprecated, please use NERtcError instead </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda1b1360bb3f47946986afaba023878714" name="a6248a12ea68e068ca62ea149eea2eacda1b1360bb3f47946986afaba023878714"></a>kNERtcLiveStreamErrorRequestIsInvaild&#160;</td><td class="fielddoc"><p>task 请求无效，被后续操作覆盖。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacdabd493ef264c56539492f003ec5d8a58f" name="a6248a12ea68e068ca62ea149eea2eacdabd493ef264c56539492f003ec5d8a58f"></a>kNERtcLiveStreamErrorIsInvaild&#160;</td><td class="fielddoc"><p>task 参数格式错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda7da3afe348312594e645895abe8df920" name="a6248a12ea68e068ca62ea149eea2eacda7da3afe348312594e645895abe8df920"></a>kNERtcLiveStreamErrorRoomExited&#160;</td><td class="fielddoc"><p>房间已经退出。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda990bce03f668da7dbaa8810d3de37c28" name="a6248a12ea68e068ca62ea149eea2eacda990bce03f668da7dbaa8810d3de37c28"></a>kNERtcLiveStreamErrorNumLimit&#160;</td><td class="fielddoc"><p>推流任务超出上限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda64e5f4907ea040116f46d532d9ffed54" name="a6248a12ea68e068ca62ea149eea2eacda64e5f4907ea040116f46d532d9ffed54"></a>kNERtcLiveStreamErrorDuplicateId&#160;</td><td class="fielddoc"><p>推流 ID 重复。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda28c18a5334216e25fb442bbd51b020af" name="a6248a12ea68e068ca62ea149eea2eacda28c18a5334216e25fb442bbd51b020af"></a>kNERtcLiveStreamErrorNotFound&#160;</td><td class="fielddoc"><p>taskId 任务不存在，或房间不存在。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacdae2514edbd4b34cc5c49294b20fbed1e1" name="a6248a12ea68e068ca62ea149eea2eacdae2514edbd4b34cc5c49294b20fbed1e1"></a>kNERtcLiveStreamErrorRequestErr&#160;</td><td class="fielddoc"><p>请求失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda9ca80ef3908976d38b51df429fc9eda6" name="a6248a12ea68e068ca62ea149eea2eacda9ca80ef3908976d38b51df429fc9eda6"></a>kNERtcLiveStreamErrorInternalServerErr&#160;</td><td class="fielddoc"><p>服务器内部错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda235b595153796547278af5e8de7ca333" name="a6248a12ea68e068ca62ea149eea2eacda235b595153796547278af5e8de7ca333"></a>kNERtcErrLsTaskInvalidLayout&#160;</td><td class="fielddoc"><p>布局参数错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6248a12ea68e068ca62ea149eea2eacda57f7d3f7b9a1c3e01cc59d8e139bf21b" name="a6248a12ea68e068ca62ea149eea2eacda57f7d3f7b9a1c3e01cc59d8e139bf21b"></a>kNERtcErrLsTaskUserPicErr&#160;</td><td class="fielddoc"><p>用户图片错误。  </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6acba2a38effd359f11bf09a703aad15" name="a6acba2a38effd359f11bf09a703aad15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acba2a38effd359f11bf09a703aad15">&#9670;&#160;</a></span>NERtcError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6acba2a38effd359f11bf09a703aad15">NERtcError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Engine Error Code。  </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf" name="a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf"></a>kNERtcNoError&#160;</td><td class="fielddoc"><p>没有错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15acf77e6d544d629b39e22ce73e25b4200" name="a6acba2a38effd359f11bf09a703aad15acf77e6d544d629b39e22ce73e25b4200"></a>KNERtcErrChannelReservePermissionDenied&#160;</td><td class="fielddoc"><p>权限不足。原因包括：。 </p>
+<ul>
+<li>未开通音视频通话 2.0 服务，或试用期已过、未及时续费等。</li>
+<li>安全模式下加入房间时未设置 Token。</li>
+<li>其他权限问题。  </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a20121d84f3202e25587543294ffc10af" name="a6acba2a38effd359f11bf09a703aad15a20121d84f3202e25587543294ffc10af"></a>kNERtcErrChannelReserveTimeOut&#160;</td><td class="fielddoc"><p>请求超时。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a383bc27973ef82d80c6f0b8551d1daaa" name="a6acba2a38effd359f11bf09a703aad15a383bc27973ef82d80c6f0b8551d1daaa"></a>kNERtcErrChannelReserveErrorParam&#160;</td><td class="fielddoc"><p>服务器请求参数错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1d48d840c33dbf58fa527834d5a03c71" name="a6acba2a38effd359f11bf09a703aad15a1d48d840c33dbf58fa527834d5a03c71"></a>kNERtcErrChannelReserveErrorAppKey&#160;</td><td class="fielddoc"><p>非法的 APP KEY。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a960dfb21ba09133cbdb082478d634b55" name="a6acba2a38effd359f11bf09a703aad15a960dfb21ba09133cbdb082478d634b55"></a>kNERtcErrChannelReserveUnknownError&#160;</td><td class="fielddoc"><p>分配房间的服务器未知错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a61432121cca0ceb8f027f609242a1036" name="a6acba2a38effd359f11bf09a703aad15a61432121cca0ceb8f027f609242a1036"></a>kNERtcErrChannelReserveMoreThanTwoUser&#160;</td><td class="fielddoc"><p>登录房间的用户数超过限制的两人。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ab7fb39da4d5d87e7811311c4bf2e6fd2" name="a6acba2a38effd359f11bf09a703aad15ab7fb39da4d5d87e7811311c4bf2e6fd2"></a>kNERtcErrChannelPermissionKeyError&#160;</td><td class="fielddoc"><p>登录房间时权限密钥错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15af921bbc6bfb4cf92279957099978d52c" name="a6acba2a38effd359f11bf09a703aad15af921bbc6bfb4cf92279957099978d52c"></a>kNERtcErrChannelPermissionKeyTimeout&#160;</td><td class="fielddoc"><p>登录房间时权限密钥过期。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ac1f1d3667e6f2ea3e474705ad3711d8f" name="a6acba2a38effd359f11bf09a703aad15ac1f1d3667e6f2ea3e474705ad3711d8f"></a>kNERtcErrLiveStreamInvaildRequest&#160;</td><td class="fielddoc"><p>task 请求无效，被后续操作覆盖。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a361ce2e16bffd76fcf9bc45a866e617a" name="a6acba2a38effd359f11bf09a703aad15a361ce2e16bffd76fcf9bc45a866e617a"></a>kNERtcErrLiveStreamInvaildParameters&#160;</td><td class="fielddoc"><p>task 参数格式错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aff040d4ebc32bf546f9961c9c3c38b49" name="a6acba2a38effd359f11bf09a703aad15aff040d4ebc32bf546f9961c9c3c38b49"></a>kNERtcErrLiveStreamRoomHasExited&#160;</td><td class="fielddoc"><p>房间已经退出。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ad12da8d2c75a95f68cb625bf8b544a24" name="a6acba2a38effd359f11bf09a703aad15ad12da8d2c75a95f68cb625bf8b544a24"></a>kNERtcErrLiveStreamExceedLimit&#160;</td><td class="fielddoc"><p>推流任务超出上限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a3fa348070480b346ec452e53c7500664" name="a6acba2a38effd359f11bf09a703aad15a3fa348070480b346ec452e53c7500664"></a>kNERtcErrLiveStreamDuplicateId&#160;</td><td class="fielddoc"><p>推流 ID 重复。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a775db4d60378a51be9fb52de64912094" name="a6acba2a38effd359f11bf09a703aad15a775db4d60378a51be9fb52de64912094"></a>kNERtcErrLiveStreamNotFound&#160;</td><td class="fielddoc"><p>taskId 任务不存在，或房间不存在。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a5ab394c26ebdc9098901ede866d46a49" name="a6acba2a38effd359f11bf09a703aad15a5ab394c26ebdc9098901ede866d46a49"></a>kNERtcErrLiveStreamRequestFailed&#160;</td><td class="fielddoc"><p>请求失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a2281359c28b68c5ab1c3b70f23ad9f83" name="a6acba2a38effd359f11bf09a703aad15a2281359c28b68c5ab1c3b70f23ad9f83"></a>kNERtcErrLiveStreamInvalidLayout&#160;</td><td class="fielddoc"><p>布局参数错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a626479447837d34543a1ce3814b4100b" name="a6acba2a38effd359f11bf09a703aad15a626479447837d34543a1ce3814b4100b"></a>kNERtcErrLiveStreamUserPictureError&#160;</td><td class="fielddoc"><p>布局的图片错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ae8907f0c4613190ad61de53917f65c5b" name="a6acba2a38effd359f11bf09a703aad15ae8907f0c4613190ad61de53917f65c5b"></a>kNERtcErrChannelNoPublishPermission&#160;</td><td class="fielddoc"><p>用户无发流权限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1ef44284f9f2d24ad0a632b589771ac7" name="a6acba2a38effd359f11bf09a703aad15a1ef44284f9f2d24ad0a632b589771ac7"></a>kNERtcErrChannelNoSubscribePermission&#160;</td><td class="fielddoc"><p>用户无订阅权限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1e34893272f8f39af4719c0a4de8cef7" name="a6acba2a38effd359f11bf09a703aad15a1e34893272f8f39af4719c0a4de8cef7"></a>kNERtcErrServerBroadcasterReachedTheLimit&#160;</td><td class="fielddoc"><p>主播人数达到限制  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a37f13397181581129ca0e403e9e2f745" name="a6acba2a38effd359f11bf09a703aad15a37f13397181581129ca0e403e9e2f745"></a>kNERtcErrServerPersonsInRoomReachedTheLimit&#160;</td><td class="fielddoc"><p>加入房间的人数达到限制  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a406d8f471594a90a79c1b62a86f1e10c" name="a6acba2a38effd359f11bf09a703aad15a406d8f471594a90a79c1b62a86f1e10c"></a>kNERtcErrFatal&#160;</td><td class="fielddoc"><p>通用错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15abcdc17999ac727db84ab261a79819ee8" name="a6acba2a38effd359f11bf09a703aad15abcdc17999ac727db84ab261a79819ee8"></a>kNERtcErrOutOfMemory&#160;</td><td class="fielddoc"><p>内存耗尽。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a6e1334758d0e26b63cf90285ec99ceac" name="a6acba2a38effd359f11bf09a703aad15a6e1334758d0e26b63cf90285ec99ceac"></a>kNERtcErrInvalidParam&#160;</td><td class="fielddoc"><p>参数错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a531aa6730510fab1bc7ad4713ffe6b01" name="a6acba2a38effd359f11bf09a703aad15a531aa6730510fab1bc7ad4713ffe6b01"></a>kNERtcErrNotSupported&#160;</td><td class="fielddoc"><p>不支持的操作。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a364736264f4101622bd7246eb4dc4b29" name="a6acba2a38effd359f11bf09a703aad15a364736264f4101622bd7246eb4dc4b29"></a>kNERtcErrInvalidState&#160;</td><td class="fielddoc"><p>状态错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aa0fab00daa7f5de0873dc761f3df2af1" name="a6acba2a38effd359f11bf09a703aad15aa0fab00daa7f5de0873dc761f3df2af1"></a>kNERtcErrLackOfResource&#160;</td><td class="fielddoc"><p>缺乏资源。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ae1cdaf2325cab0a20be30b9a7339aa11" name="a6acba2a38effd359f11bf09a703aad15ae1cdaf2325cab0a20be30b9a7339aa11"></a>kNERtcErrInvalidIndex&#160;</td><td class="fielddoc"><p>index 序号非法。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1a045eaadf2e65c99936a2c82eb900a2" name="a6acba2a38effd359f11bf09a703aad15a1a045eaadf2e65c99936a2c82eb900a2"></a>kNERtcErrDeviceNotFound&#160;</td><td class="fielddoc"><p>设备未找到。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a5c5467780d560cd00876a2be57fc2505" name="a6acba2a38effd359f11bf09a703aad15a5c5467780d560cd00876a2be57fc2505"></a>kNERtcErrInvalidDeviceSourceID&#160;</td><td class="fielddoc"><p>设备 ID 不存在。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a7dfc33de2d6a7c940c44652d867efc23" name="a6acba2a38effd359f11bf09a703aad15a7dfc33de2d6a7c940c44652d867efc23"></a>kNERtcErrInvalidVideoProfile&#160;</td><td class="fielddoc"><p>视频能力 profile type 不符合要求。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a4d064e4b0e1b38dffa54fe7bd83cae8a" name="a6acba2a38effd359f11bf09a703aad15a4d064e4b0e1b38dffa54fe7bd83cae8a"></a>kNERtcErrCreateDeviceSourceFail&#160;</td><td class="fielddoc"><p>创建设备失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a34f87b6d386dbce528c950e43c1e9a7a" name="a6acba2a38effd359f11bf09a703aad15a34f87b6d386dbce528c950e43c1e9a7a"></a>kNERtcErrInvalidRender&#160;</td><td class="fielddoc"><p>画布非法。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a7e0524a93f5858a01831671772790b55" name="a6acba2a38effd359f11bf09a703aad15a7e0524a93f5858a01831671772790b55"></a>kNERtcErrDevicePreviewAlreadyStarted&#160;</td><td class="fielddoc"><p>本地视频预览已打开。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a4b978e19d3161ed66a2b39357a3858ca" name="a6acba2a38effd359f11bf09a703aad15a4b978e19d3161ed66a2b39357a3858ca"></a>kNERtcErrTransmitPendding&#160;</td><td class="fielddoc"><p>传输错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a2a6b96b65acae74dc086393658873642" name="a6acba2a38effd359f11bf09a703aad15a2a6b96b65acae74dc086393658873642"></a>kNERtcErrConnectFail&#160;</td><td class="fielddoc"><p>连接服务器失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ad6d7f8483cd55256dfa9cf7a4906d392" name="a6acba2a38effd359f11bf09a703aad15ad6d7f8483cd55256dfa9cf7a4906d392"></a>kNERtcErrCreateDumpFileFail&#160;</td><td class="fielddoc"><p>创建 Audio dump 文件失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a4cbea83e5aaab99933fcf512684042bb" name="a6acba2a38effd359f11bf09a703aad15a4cbea83e5aaab99933fcf512684042bb"></a>kNERtcErrStartDumpFail&#160;</td><td class="fielddoc"><p>开启 Audio dump 失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a43dd1ad568430de076a8eead987fffab" name="a6acba2a38effd359f11bf09a703aad15a43dd1ad568430de076a8eead987fffab"></a>kNERtcErrDesktopCaptureInvalidState&#160;</td><td class="fielddoc"><p>启动桌面录屏失败，不能与摄像头同时启动。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15af3c73806128e95be3f93a090f345489a" name="a6acba2a38effd359f11bf09a703aad15af3c73806128e95be3f93a090f345489a"></a>kNERtcErrDesktopCaptureInvalidParam&#160;</td><td class="fielddoc"><p>桌面录屏传入参数无效。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ab5c1b389a30211fdbbf959162668fd66" name="a6acba2a38effd359f11bf09a703aad15ab5c1b389a30211fdbbf959162668fd66"></a>kNERtcErrDesktopCaptureNotReady&#160;</td><td class="fielddoc"><p>桌面录屏未就绪。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a2127ef3dedbb5fee97dc0fdfa99f34cb" name="a6acba2a38effd359f11bf09a703aad15a2127ef3dedbb5fee97dc0fdfa99f34cb"></a>kNERtcErrDeviceOccupied&#160;</td><td class="fielddoc"><p>所选设备已被占用。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a7b8ac2352d85361b429ecf21959a67a7" name="a6acba2a38effd359f11bf09a703aad15a7b8ac2352d85361b429ecf21959a67a7"></a>kNERtcErrJoinInterruptedDueToLeaveAction&#160;</td><td class="fielddoc"><p>Join 流程因外部调用 leave API 而中断  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a4842e9ec337f7de5bf69e217832f9268" name="a6acba2a38effd359f11bf09a703aad15a4842e9ec337f7de5bf69e217832f9268"></a>kNERtcErrJoinInterruptedDueToDestroyAction&#160;</td><td class="fielddoc"><p>Join 流程因外部调用 destroy API 而中断  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a5b6e35a7ad176045f67949a170ac7fe5" name="a6acba2a38effd359f11bf09a703aad15a5b6e35a7ad176045f67949a170ac7fe5"></a>kNERtcErrJoinInterruptedDueToAppTermination&#160;</td><td class="fielddoc"><p>Join 流程因 App 进程退出而中断  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1161892a76f1084194aad128776f9208" name="a6acba2a38effd359f11bf09a703aad15a1161892a76f1084194aad128776f9208"></a>kNERtcErrFeatureSupportedHardwareLimit&#160;</td><td class="fielddoc"><p>该功能设备不支持  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a916f7d108ebd10f6a7d70d0a5051c4e1" name="a6acba2a38effd359f11bf09a703aad15a916f7d108ebd10f6a7d70d0a5051c4e1"></a>kNERtcErrChannelAlreadyJoined&#160;</td><td class="fielddoc"><p>重复加入房间。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1ff513e6a2570eba0037adf929e9191d" name="a6acba2a38effd359f11bf09a703aad15a1ff513e6a2570eba0037adf929e9191d"></a>kNERtcErrChannelNotJoined&#160;</td><td class="fielddoc"><p>用户未加入房间。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ae4c7cf56b090f661e017c06cc6f1863e" name="a6acba2a38effd359f11bf09a703aad15ae4c7cf56b090f661e017c06cc6f1863e"></a>kNERtcErrChannelRepleatedlyLeave&#160;</td><td class="fielddoc"><p>重复离开房间。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a5adc6196d8105439ae9203a411f81ecf" name="a6acba2a38effd359f11bf09a703aad15a5adc6196d8105439ae9203a411f81ecf"></a>kNERtcErrRequestJoinChannelFail&#160;</td><td class="fielddoc"><p>请求加入房间失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aa89403da44721969aa30abec52846202" name="a6acba2a38effd359f11bf09a703aad15aa89403da44721969aa30abec52846202"></a>kNERtcErrSessionNotFound&#160;</td><td class="fielddoc"><p>会话未找到。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aa29580c9d794c36099794d740606a770" name="a6acba2a38effd359f11bf09a703aad15aa29580c9d794c36099794d740606a770"></a>kNERtcErrUserNotFound&#160;</td><td class="fielddoc"><p>用户不存在。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a21a59b01f03d55846d7858f3d3af2e99" name="a6acba2a38effd359f11bf09a703aad15a21a59b01f03d55846d7858f3d3af2e99"></a>kNERtcErrInvalidUserID&#160;</td><td class="fielddoc"><p>非法用户。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ae8697b3eefa1581878916bfc57fce1eb" name="a6acba2a38effd359f11bf09a703aad15ae8697b3eefa1581878916bfc57fce1eb"></a>kNERtcErrMediaNotStarted&#160;</td><td class="fielddoc"><p>用户多媒体数据未连接。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a9ad100ab57b8ed63f60dea400a8a7b7b" name="a6acba2a38effd359f11bf09a703aad15a9ad100ab57b8ed63f60dea400a8a7b7b"></a>kNERtcErrSourceNotFound&#160;</td><td class="fielddoc"><p>媒体源未找到。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a89e6971d9f05329c95564699cdbc01b2" name="a6acba2a38effd359f11bf09a703aad15a89e6971d9f05329c95564699cdbc01b2"></a>kNERtcErrSwitchChannelInvalidState&#160;</td><td class="fielddoc"><p>切换房间时不在会议中。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1b11c57f52581a159f0b1fce2e37a38a" name="a6acba2a38effd359f11bf09a703aad15a1b11c57f52581a159f0b1fce2e37a38a"></a>kNERtcErrChannelMediaRelayInvalidState&#160;</td><td class="fielddoc"><p>媒体流转发状态无效。 <br  />
+原因通常为重复调用 startChannelMediaRelay。成功调用 startChannelMediaRelay 后，必须先调用 stopChannelMediaRelay 方法退出当前的转发状态，才能再次调用该方法。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15af08442352ae34c1c77fce6a787b55731" name="a6acba2a38effd359f11bf09a703aad15af08442352ae34c1c77fce6a787b55731"></a>kNERtcErrChannelMediaRelayPermissionDenied&#160;</td><td class="fielddoc"><p>没有权限转发媒体流。 <br  />
+原因通常包括： </p>
+<ul>
+<li>源房间的房间类型为双人房间（1V1 模式）。此时无法转发媒体流。</li>
+<li>调用 startChannelMediaRelay 开启媒体流转发的成员角色为观众角色，仅主播角色可以转发媒体流。  </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ab24af96a18635082ed4269b5c6da4e78" name="a6acba2a38effd359f11bf09a703aad15ab24af96a18635082ed4269b5c6da4e78"></a>kNERtcErrChannelMediaRelayStopFailed&#160;</td><td class="fielddoc"><p>停止媒体流转发操作失败。 原因通常为未开启媒体流转发。请确认调用 stopChannelMediaRelay 前，是否已成功调用 startChannelMediaRelay 开启媒体流转发。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a58f5219939db67e52df084fec281f27b" name="a6acba2a38effd359f11bf09a703aad15a58f5219939db67e52df084fec281f27b"></a>kNERtcErrEncryptNotSuitable&#160;</td><td class="fielddoc"><p>设置的媒体流加密密钥与房间中其他成员不一致，加入房间失败。 请通过 enableEncryption 重新设置加密密钥。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a5d1b22a8bc7599ae9c58c9d6e59fce3d" name="a6acba2a38effd359f11bf09a703aad15a5d1b22a8bc7599ae9c58c9d6e59fce3d"></a>kNERtcErrPlayLowLatencyStreamFailed&#160;</td><td class="fielddoc"><p>播放低延时直播流失败 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a185a4987a8f7c1edf4a9e8d8de3615f4" name="a6acba2a38effd359f11bf09a703aad15a185a4987a8f7c1edf4a9e8d8de3615f4"></a>kNERtcErrPlayLowLatencyStreamTimeout&#160;</td><td class="fielddoc"><p>播放低延时直播流超时 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15adcec0b568fae766dc36e6d08709e186b" name="a6acba2a38effd359f11bf09a703aad15adcec0b568fae766dc36e6d08709e186b"></a>kNERtcErrUserPermKeyAuthFailed&#160;</td><td class="fielddoc"><p>高级 Token 鉴权失败，用户权限验证错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aab411671843523dbc6c2e7e08e321ca9" name="a6acba2a38effd359f11bf09a703aad15aab411671843523dbc6c2e7e08e321ca9"></a>kNERtcErrSEIExceedMaxDataLimit&#160;</td><td class="fielddoc"><p>SEI 超过最大数据限制。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a6fdcab41204f3e5d62af460a58d45f17" name="a6acba2a38effd359f11bf09a703aad15a6fdcab41204f3e5d62af460a58d45f17"></a>kNERtcErrDataChannelExceedMaxDataLimit&#160;</td><td class="fielddoc"><p>数据通道发送大小超过最大限制。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aa3faafb4417e62c8e53b0cd8353e3cc1" name="a6acba2a38effd359f11bf09a703aad15aa3faafb4417e62c8e53b0cd8353e3cc1"></a>kNERtcErrConnectionNotFound&#160;</td><td class="fielddoc"><p>连接未找到。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a71cf54d2cf17400c09c2a2761530512d" name="a6acba2a38effd359f11bf09a703aad15a71cf54d2cf17400c09c2a2761530512d"></a>kNERtcErrStreamNotFound&#160;</td><td class="fielddoc"><p>媒体流未找到。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ac50321065ae86d4f49f06510cce0e6c5" name="a6acba2a38effd359f11bf09a703aad15ac50321065ae86d4f49f06510cce0e6c5"></a>kNERtcErrAddTrackFail&#160;</td><td class="fielddoc"><p>添加媒体播放器音轨失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ad894640f3ebd4215159fdba5b8fd7c84" name="a6acba2a38effd359f11bf09a703aad15ad894640f3ebd4215159fdba5b8fd7c84"></a>kNERtcErrTrackNotFound&#160;</td><td class="fielddoc"><p>媒体播放器音轨未找到。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1f55b8825277ac5c9278dc93d3df7907" name="a6acba2a38effd359f11bf09a703aad15a1f55b8825277ac5c9278dc93d3df7907"></a>kNERtcErrMediaConnectionDisconnected&#160;</td><td class="fielddoc"><p>媒体连接已断开。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a78e648d61f3896b081835bea60e0aeb7" name="a6acba2a38effd359f11bf09a703aad15a78e648d61f3896b081835bea60e0aeb7"></a>kNERtcErrSignalDisconnected&#160;</td><td class="fielddoc"><p>信令断开。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a00b12eb376ac70ab134afd5ae1d4ddbf" name="a6acba2a38effd359f11bf09a703aad15a00b12eb376ac70ab134afd5ae1d4ddbf"></a>kNERtcErrServerKicked&#160;</td><td class="fielddoc"><p>用户被管理员移出房间。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15af0eb4828717ea9caab2723e8e4774767" name="a6acba2a38effd359f11bf09a703aad15af0eb4828717ea9caab2723e8e4774767"></a>kNERtcErrChannelBeClosed&#160;</td><td class="fielddoc"><p>房间已被关闭。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a640fa1078e35f951d17f8ff9b44c896d" name="a6acba2a38effd359f11bf09a703aad15a640fa1078e35f951d17f8ff9b44c896d"></a>kNERtcErrChannelLeaveBySwitchAction&#160;</td><td class="fielddoc"><p>因为切换房间而离开房间。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a4a56a0c5bd578cf48d5f8557bac78597" name="a6acba2a38effd359f11bf09a703aad15a4a56a0c5bd578cf48d5f8557bac78597"></a>kNERtcErrChannelLeaveByDuplicateUidLogin&#160;</td><td class="fielddoc"><p>因为重复 UID 登录而离开房间。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a9ae8af5d6afd4ce363249f448336d85b" name="a6acba2a38effd359f11bf09a703aad15a9ae8af5d6afd4ce363249f448336d85b"></a>kNERtcErrOSAuthorize&#160;</td><td class="fielddoc"><p>操作系统权限问题。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ab2f585b086f8c556587142a343760586" name="a6acba2a38effd359f11bf09a703aad15ab2f585b086f8c556587142a343760586"></a>kNERtcRuntimeErrADMNoAuthorize&#160;</td><td class="fielddoc"><p>没有音频设备权限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a8182e68ca5fa4bb348d948f228124154" name="a6acba2a38effd359f11bf09a703aad15a8182e68ca5fa4bb348d948f228124154"></a>kNERtcRuntimeErrADMInitRecording&#160;</td><td class="fielddoc"><p>初始化音频采集设备（麦克风）失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a1613f29df93f76083faaa372a0394a0e" name="a6acba2a38effd359f11bf09a703aad15a1613f29df93f76083faaa372a0394a0e"></a>kNERtcRuntimeErrADMStartRecording&#160;</td><td class="fielddoc"><p>启动音频采集设备（麦克风）失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ae29aab4d31d8bf4eb3990b9c8a792ead" name="a6acba2a38effd359f11bf09a703aad15ae29aab4d31d8bf4eb3990b9c8a792ead"></a>kNERtcRuntimeErrADMStopRecording&#160;</td><td class="fielddoc"><p>停止音频采集设备（麦克风）失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ae5f3bdb26af5602a14555b0cf32f432b" name="a6acba2a38effd359f11bf09a703aad15ae5f3bdb26af5602a14555b0cf32f432b"></a>kNERtcRuntimeErrADMInitPlayout&#160;</td><td class="fielddoc"><p>音频播放设备初始化失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a9a1b6e7d2e5847d70067111090ce41c0" name="a6acba2a38effd359f11bf09a703aad15a9a1b6e7d2e5847d70067111090ce41c0"></a>kNERtcRuntimeErrADMStartPlayout&#160;</td><td class="fielddoc"><p>音频播放设备启动失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a2d91959cd2b8e7d2b377bb4e98384ce0" name="a6acba2a38effd359f11bf09a703aad15a2d91959cd2b8e7d2b377bb4e98384ce0"></a>kNERtcRuntimeErrADMStopPlayout&#160;</td><td class="fielddoc"><p>音频播放设备停止失败  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15af49a42ef6d5bb907a09b10901478d27b" name="a6acba2a38effd359f11bf09a703aad15af49a42ef6d5bb907a09b10901478d27b"></a>kNERtcRuntimeErrADMRecordingFailed&#160;</td><td class="fielddoc"><p>音频采集设备运行异常。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ac7703e255b347db7161757377fd79f9c" name="a6acba2a38effd359f11bf09a703aad15ac7703e255b347db7161757377fd79f9c"></a>kNERtcRuntimeErrADMPlayoutFailed&#160;</td><td class="fielddoc"><p>音频播放设备运行异常。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a8c0c2d2bfaaf0529fe19826cde8916cf" name="a6acba2a38effd359f11bf09a703aad15a8c0c2d2bfaaf0529fe19826cde8916cf"></a>kNERtcRuntimeErrADMAuthorizeNotDetermined&#160;</td><td class="fielddoc"><p>音频设备权限未确定。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a8b911d5472fdc93948a0c64c54985f58" name="a6acba2a38effd359f11bf09a703aad15a8b911d5472fdc93948a0c64c54985f58"></a>kNERtcRuntimeErrVDMNoAuthorize&#160;</td><td class="fielddoc"><p>没有视频设备权限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15ad89faec6aa90e58a697be82d8fe194d5" name="a6acba2a38effd359f11bf09a703aad15ad89faec6aa90e58a697be82d8fe194d5"></a>kNERtcRuntimeErrVDMNotScreenUseSubStream&#160;</td><td class="fielddoc"><p>非屏幕共享使用辅流。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a01373a8c47f74141ac994da3732cfa96" name="a6acba2a38effd359f11bf09a703aad15a01373a8c47f74141ac994da3732cfa96"></a>kNERtcRuntimeErrVDMCameraDisconnect&#160;</td><td class="fielddoc"><p>摄像头断开。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a55ae4ed7531515cc344cbaf7cf124459" name="a6acba2a38effd359f11bf09a703aad15a55ae4ed7531515cc344cbaf7cf124459"></a>kNERtcRuntimeErrVDMCameraFreezed&#160;</td><td class="fielddoc"><p>摄像头死机, 已废弃。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a2b517e102355c47efd5f84db62ba98e7" name="a6acba2a38effd359f11bf09a703aad15a2b517e102355c47efd5f84db62ba98e7"></a>kNERtcRuntimeErrVDMCameraUnknownError&#160;</td><td class="fielddoc"><p>未知摄像头错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15afa675f226df2d7f8ad04e95dfd97afc0" name="a6acba2a38effd359f11bf09a703aad15afa675f226df2d7f8ad04e95dfd97afc0"></a>kNERtcRuntimeErrVDMCameraNoFrame&#160;</td><td class="fielddoc"><p>摄像头无数据帧。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a7d7cf07524436745a09d9b62b31f845e" name="a6acba2a38effd359f11bf09a703aad15a7d7cf07524436745a09d9b62b31f845e"></a>kNERtcRuntimeErrVDMCameraCreateFail&#160;</td><td class="fielddoc"><p>摄像头启动失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15acd4243fbd00f37acbf796aa812be53d5" name="a6acba2a38effd359f11bf09a703aad15acd4243fbd00f37acbf796aa812be53d5"></a>kNERtcRuntimeErrVDMScreenCaptureNoAuthorize&#160;</td><td class="fielddoc"><p>没有录制视频权限。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a5b21593ae132ed860f121e2678b309ed" name="a6acba2a38effd359f11bf09a703aad15a5b21593ae132ed860f121e2678b309ed"></a>kNERtcRuntimeErrVDMScreenSourceTypeError&#160;</td><td class="fielddoc"><p>屏幕分享设置的采集源类型错误。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15aba8dee36d9db68e1475784b7a0b4db9a" name="a6acba2a38effd359f11bf09a703aad15aba8dee36d9db68e1475784b7a0b4db9a"></a>kNERtcRuntimeErrScreenAudienceState&#160;</td><td class="fielddoc"><p>屏幕分享由于角色为观众而导致开启失。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a4c384c36080313fb9111a6658a903c9d" name="a6acba2a38effd359f11bf09a703aad15a4c384c36080313fb9111a6658a903c9d"></a>kNERtcRuntimeErrVDMCameraDueToSystemPressure&#160;</td><td class="fielddoc"><p>视频采集中断。由于系统压力（如资源过载、温度过高等）导致视频设备不可用。 这种中断通常发生在系统资源紧张的情况下，例如当设备正在执行多个高资源消耗的任务时，系统可能会限制摄像头的使用，以保护设备不被过热或过度消耗电池等。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a46e13ab1788a7adda6672c42e37f9b8b" name="a6acba2a38effd359f11bf09a703aad15a46e13ab1788a7adda6672c42e37f9b8b"></a>kNERtcLivePlayStreamIdConflict&#160;</td><td class="fielddoc"><p>直播拉流流ID冲突。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a91f34c3a0ab65406ff7490e9bfc7f43b" name="a6acba2a38effd359f11bf09a703aad15a91f34c3a0ab65406ff7490e9bfc7f43b"></a>kNERtcLivePlayStreamIdNotFound&#160;</td><td class="fielddoc"><p>stream id冲突 </p>
+<p>直播拉流流ID未发现。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a71ce0d80f83c27d9ae9ea2115b405f72" name="a6acba2a38effd359f11bf09a703aad15a71ce0d80f83c27d9ae9ea2115b405f72"></a>kNERtcLivePlayConnectFailed&#160;</td><td class="fielddoc"><p>stream id未发现 </p>
+<p>直播拉流连接失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a59d98019a13bb9d50c74fe926df73ac1" name="a6acba2a38effd359f11bf09a703aad15a59d98019a13bb9d50c74fe926df73ac1"></a>kNERtcLivePlayReconnectFailed&#160;</td><td class="fielddoc"><p>直播拉流连接失败 </p>
+<p>直播拉流重连失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a9b1d49b18ad39283e4f3d8571777648a" name="a6acba2a38effd359f11bf09a703aad15a9b1d49b18ad39283e4f3d8571777648a"></a>kNERtcLivePlayInvalidAddress&#160;</td><td class="fielddoc"><p>直播拉流重连失败 </p>
+<p>直播拉流无效地址。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a50a95cff26a257ab11c8da86c7183810" name="a6acba2a38effd359f11bf09a703aad15a50a95cff26a257ab11c8da86c7183810"></a>kNERtcLivePlayCoreSourceLost&#160;</td><td class="fielddoc"><p>直播拉流无效地址 </p>
+<p>直播拉流引擎资源缺失。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a6d0bf1167ff83e209fb3c20c9dbd425d" name="a6acba2a38effd359f11bf09a703aad15a6d0bf1167ff83e209fb3c20c9dbd425d"></a>kNERtcLivePlayAudioStartFailed&#160;</td><td class="fielddoc"><p>直播拉流引擎资源缺失 </p>
+<p>直播拉流音频启动失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a39a60269a9287a5797962b2bb558b047" name="a6acba2a38effd359f11bf09a703aad15a39a60269a9287a5797962b2bb558b047"></a>kNERtcLivePlayVideoStartFailed&#160;</td><td class="fielddoc"><p>直播拉流音频启动失败 </p>
+<p>直播拉流视频启动失败。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6acba2a38effd359f11bf09a703aad15a0bd1cfe7fac53efa43d08054e5db9cfb" name="a6acba2a38effd359f11bf09a703aad15a0bd1cfe7fac53efa43d08054e5db9cfb"></a>kNERtcLivePlayNotInPlayStreaming&#160;</td><td class="fielddoc"><p>直播拉流视频启动失败 </p>
+<p>不在直播拉流状态。  </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae131893c2d363a3b9c507966fa56ee2b" name="ae131893c2d363a3b9c507966fa56ee2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae131893c2d363a3b9c507966fa56ee2b">&#9670;&#160;</a></span>NERtcWarning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae131893c2d363a3b9c507966fa56ee2b">NERtcWarning</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ae131893c2d363a3b9c507966fa56ee2baedc5d0c8a27d09924e19c9dccbba79c8" name="ae131893c2d363a3b9c507966fa56ee2baedc5d0c8a27d09924e19c9dccbba79c8"></a>kNERtcNoWarning&#160;</td><td class="fielddoc"><p>没有错误  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae131893c2d363a3b9c507966fa56ee2baccea6998c0d3634cc58ce74f0ad8dd9b" name="ae131893c2d363a3b9c507966fa56ee2baccea6998c0d3634cc58ce74f0ad8dd9b"></a>KNERtcWarningChannelAbilityNotMatch&#160;</td><td class="fielddoc"><p>当前客户端设备视频编解码能力与房间不匹配，例如设备不支持 VP8 等编码类型。在此房间中可能无法成功进行视频编解码，即本端可能无法正常显示某些远端的视频画面，同样远端也可能无法显示本端画面。  </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae131893c2d363a3b9c507966fa56ee2ba9c0953430489b743cf8ee85755d08001" name="ae131893c2d363a3b9c507966fa56ee2ba9c0953430489b743cf8ee85755d08001"></a>kNERtcWarningASLFallback&#160;</td><td class="fielddoc"><p>音频自动选路回退。  </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a1cce4ad1683f914ba0963e44ca975b7f" name="a1cce4ad1683f914ba0963e44ca975b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cce4ad1683f914ba0963e44ca975b7f">&#9670;&#160;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(visibility(&quot;default&quot;))</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取错误码描述。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码，详细信息请参考 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError</a></code>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>描述字符串。  </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

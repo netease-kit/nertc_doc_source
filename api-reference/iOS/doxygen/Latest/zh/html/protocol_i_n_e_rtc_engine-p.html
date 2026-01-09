@@ -1,0 +1,1720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: &lt;INERtcEngine&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">实例方法</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="protocol_i_n_e_rtc_engine-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;INERtcEngine&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 的常用接口。   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_i_n_e_rtc_engine_8h_source.html">INERtcEngine.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;INERtcEngine&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_i_n_e_rtc_engine-p.png" usemap="#_3CINERtcEngine_3E_map" alt=""/>
+  <map id="_3CINERtcEngine_3E_map" name="_3CINERtcEngine_3E_map">
+<area href="protocol_i_n_e_rtc_engine_ex-p.html" title="NERtcEngine 扩展接口" alt="&lt;INERtcEngineEx&gt;" shape="rect" coords="0,112,117,136"/>
+<area href="interface_n_e_rtc_engine.html" title="NERtcEngine 类" alt="NERtcEngine" shape="rect" coords="0,168,117,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+实例方法</h2></td></tr>
+<tr class="memitem:a2bc8a0d82bdd1ae2a98e64ae42909f9a" id="r_a2bc8a0d82bdd1ae2a98e64ae42909f9a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a2bc8a0d82bdd1ae2a98e64ae42909f9a">connectionState</a></td></tr>
+<tr class="memdesc:a2bc8a0d82bdd1ae2a98e64ae42909f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前房间连接状态。  <br /></td></tr>
+<tr class="separator:a2bc8a0d82bdd1ae2a98e64ae42909f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b59418e236407489b3a5cb7abdd9e1" id="r_aa0b59418e236407489b3a5cb7abdd9e1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aa0b59418e236407489b3a5cb7abdd9e1">setupEngineWithContext:</a></td></tr>
+<tr class="memdesc:aa0b59418e236407489b3a5cb7abdd9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建 NERtc 实例。 <br  />
+通过本接口可以实现创建 NERtc 实例并初始化 NERTC SDK 服务。  <br /></td></tr>
+<tr class="separator:aa0b59418e236407489b3a5cb7abdd9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fde302a4f93e0eafd5612ee8398ee4f" id="r_a8fde302a4f93e0eafd5612ee8398ee4f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a8fde302a4f93e0eafd5612ee8398ee4f">setEngineEventDelegate:</a></td></tr>
+<tr class="memdesc:a8fde302a4f93e0eafd5612ee8398ee4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 SDK 主回调，调用此方法后会更新之前 setupEngineWithContext 及 setEngineEventDelegate 设置的回调。 如果设置为空指针， 那么表示清空回调。 注意： 需要在初始化之后调用， destroyEngine 之后自动失效。  <br /></td></tr>
+<tr class="separator:a8fde302a4f93e0eafd5612ee8398ee4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac498cf194c649015a2b82b53c0112f03" id="r_ac498cf194c649015a2b82b53c0112f03"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac498cf194c649015a2b82b53c0112f03">setDelegateQueue:</a></td></tr>
+<tr class="memdesc:ac498cf194c649015a2b82b53c0112f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置驱动 <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。">NERtcEngineDelegateEx</a> 事件回调队列  <br /></td></tr>
+<tr class="separator:ac498cf194c649015a2b82b53c0112f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf60d9392e4b50ff73872138965f022f" id="r_adf60d9392e4b50ff73872138965f022f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#adf60d9392e4b50ff73872138965f022f">joinChannelWithToken:channelName:myUid:completion:</a></td></tr>
+<tr class="memdesc:adf60d9392e4b50ff73872138965f022f"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。  <br /></td></tr>
+<tr class="separator:adf60d9392e4b50ff73872138965f022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4876b67191a8e51488fc0d0ef14fc724" id="r_a4876b67191a8e51488fc0d0ef14fc724"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a4876b67191a8e51488fc0d0ef14fc724">joinChannelWithToken:channelName:myUid:channelOptions:completion:</a></td></tr>
+<tr class="memdesc:a4876b67191a8e51488fc0d0ef14fc724"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。  <br /></td></tr>
+<tr class="separator:a4876b67191a8e51488fc0d0ef14fc724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810e41b2be7de2b00458ee786302631c" id="r_a810e41b2be7de2b00458ee786302631c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a810e41b2be7de2b00458ee786302631c">leaveChannel</a></td></tr>
+<tr class="memdesc:a810e41b2be7de2b00458ee786302631c"><td class="mdescLeft">&#160;</td><td class="mdescRight">离开音视频房间。 <br  />
+通过本接口可以实现挂断或退出通话，并释放本房间内的相关资源。  <br /></td></tr>
+<tr class="separator:a810e41b2be7de2b00458ee786302631c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9819e1ecad009c45f933f77c14db75f" id="r_ac9819e1ecad009c45f933f77c14db75f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac9819e1ecad009c45f933f77c14db75f">switchChannelWithToken:channelName:completion:</a></td></tr>
+<tr class="memdesc:ac9819e1ecad009c45f933f77c14db75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速切换音视频房间。 通过此接口可以实现当房间场景为直播场景时，用户从当前房间快速切换至另一个房间。  <br /></td></tr>
+<tr class="separator:ac9819e1ecad009c45f933f77c14db75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f6b81e234fe70c715eb35c7665bbcd" id="r_ae8f6b81e234fe70c715eb35c7665bbcd"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ae8f6b81e234fe70c715eb35c7665bbcd">switchChannelWithToken:channelName:channelOptions:completion:</a></td></tr>
+<tr class="memdesc:ae8f6b81e234fe70c715eb35c7665bbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速切换音视频房间。 <br  />
+房间场景为直播场景时，房间中角色为观众的成员可以调用该方法从当前房间快速切换至另一个房间。 <br  />
+成功调用该方切换房间后，本端会收到离开房间的回调 onNERtcEngineDidLeaveChannelWithResult；远端用户会收到 onNERtcEngineUserDidLeaveWithUserID 和 onNERtcEngineUserDidJoinWithUserID 的回调。  <br /></td></tr>
+<tr class="separator:ae8f6b81e234fe70c715eb35c7665bbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1370eda8c43b36f5764cb96ed927f98d" id="r_a1370eda8c43b36f5764cb96ed927f98d"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a1370eda8c43b36f5764cb96ed927f98d">enableLocalAudio:</a></td></tr>
+<tr class="memdesc:a1370eda8c43b36f5764cb96ed927f98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭本地音频采集和发送。 <br  />
+通过本接口可以实现开启或关闭本地语音功能，进行本地音频采集及处理。  <br /></td></tr>
+<tr class="separator:a1370eda8c43b36f5764cb96ed927f98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea18a0b1c2fc5eb7f175dd24cdf0f2a" id="r_a2ea18a0b1c2fc5eb7f175dd24cdf0f2a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a2ea18a0b1c2fc5eb7f175dd24cdf0f2a">enableLocalVideo:</a></td></tr>
+<tr class="memdesc:a2ea18a0b1c2fc5eb7f175dd24cdf0f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地视频的采集与发送。 <br  />
+通过本接口可以实现开启或关闭本地视频，不影响接收远端视频。  <br /></td></tr>
+<tr class="separator:a2ea18a0b1c2fc5eb7f175dd24cdf0f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f13beb56a8b9fdfbc856d304c0d10cb" id="r_a9f13beb56a8b9fdfbc856d304c0d10cb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a9f13beb56a8b9fdfbc856d304c0d10cb">enableLocalVideo:streamType:</a></td></tr>
+<tr class="memdesc:a9f13beb56a8b9fdfbc856d304c0d10cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地视频的采集与发送。 <br  />
+通过主流或辅流视频通道进行本地视频流的采集与发送。  <br /></td></tr>
+<tr class="separator:a9f13beb56a8b9fdfbc856d304c0d10cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6f693d05adcb847ddf8e268f9d3e7c" id="r_aad6f693d05adcb847ddf8e268f9d3e7c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aad6f693d05adcb847ddf8e268f9d3e7c">enableMediaPub:withMediaType:</a></td></tr>
+<tr class="memdesc:aad6f693d05adcb847ddf8e268f9d3e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地媒体流（主流）的发送。 <br  />
+该方法用于开始或停止向网络发送本地音频或视频数据。 <br  />
+该方法不影响接收或播放远端媒体流，也不会影响本地音频或视频的采集状态。  <br /></td></tr>
+<tr class="separator:aad6f693d05adcb847ddf8e268f9d3e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1ddb3e3ea5c8ddd6c2a9052a596410" id="r_aeb1ddb3e3ea5c8ddd6c2a9052a596410"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">setChannelProfile:</a></td></tr>
+<tr class="memdesc:aeb1ddb3e3ea5c8ddd6c2a9052a596410"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置房间场景。 <br  />
+ 通过此接口可以实现设置房间场景为通话（默认）、直播场景、视频 1 对 1 呼叫场景、语聊房场景等。针对不同场景采取的优化策略不同，如通话场景侧重语音流畅度，直播场景侧重视频清晰度。  <br /></td></tr>
+<tr class="separator:aeb1ddb3e3ea5c8ddd6c2a9052a596410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040ee549ad4a2b1d74d275defda38140" id="r_a040ee549ad4a2b1d74d275defda38140"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a040ee549ad4a2b1d74d275defda38140">setLocalVideoConfig:</a></td></tr>
+<tr class="memdesc:a040ee549ad4a2b1d74d275defda38140"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频编码属性。 <br  />
+通过此接口可以设置视频主流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数，详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zcwMTY4MzM">设置视频属性</a>。  <br /></td></tr>
+<tr class="separator:a040ee549ad4a2b1d74d275defda38140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eeaa48e5900c00f408182b38c56b58" id="r_a96eeaa48e5900c00f408182b38c56b58"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a96eeaa48e5900c00f408182b38c56b58">setLocalVideoConfig:streamType:</a></td></tr>
+<tr class="memdesc:a96eeaa48e5900c00f408182b38c56b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频编码属性。 <br  />
+通过此接口可以设置视频主流或辅流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数。  <br /></td></tr>
+<tr class="separator:a96eeaa48e5900c00f408182b38c56b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79daa01fb308cf2b70d27fb7f73cab01" id="r_a79daa01fb308cf2b70d27fb7f73cab01"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a79daa01fb308cf2b70d27fb7f73cab01">setAudioProfile:scenario:</a></td></tr>
+<tr class="memdesc:a79daa01fb308cf2b70d27fb7f73cab01"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等，也可以设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景等。  <br /></td></tr>
+<tr class="separator:a79daa01fb308cf2b70d27fb7f73cab01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe79c3a3439b464314046d9638006ae" id="r_acbe79c3a3439b464314046d9638006ae"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#acbe79c3a3439b464314046d9638006ae">setAudioProfile:</a></td></tr>
+<tr class="memdesc:acbe79c3a3439b464314046d9638006ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等。  <br /></td></tr>
+<tr class="separator:acbe79c3a3439b464314046d9638006ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b66092b4107ffc3a1f8226cbc05b0ce" id="r_a0b66092b4107ffc3a1f8226cbc05b0ce"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a0b66092b4107ffc3a1f8226cbc05b0ce">setAudioScenario:</a></td></tr>
+<tr class="memdesc:a0b66092b4107ffc3a1f8226cbc05b0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频应用场景 <br  />
+通过此接口可以实现设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景。也可以使用 通过 <code><a class="el" href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">INERtcEngine#setChannelProfile:</a></code> 设置其他场景，包括 1v1 呼叫场景、清晰度较高的 1v1 呼叫场景、语聊房场景、清晰度较高的语聊房场景、会议场景。  <br /></td></tr>
+<tr class="separator:a0b66092b4107ffc3a1f8226cbc05b0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b1b7c15de0bb8e0ccfeee1b6c6874c" id="r_aa8b1b7c15de0bb8e0ccfeee1b6c6874c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aa8b1b7c15de0bb8e0ccfeee1b6c6874c">setAINSMode:</a></td></tr>
+<tr class="memdesc:aa8b1b7c15de0bb8e0ccfeee1b6c6874c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频 AI 降噪模式  <br /></td></tr>
+<tr class="separator:aa8b1b7c15de0bb8e0ccfeee1b6c6874c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461d8173cd13f4370f7eff01bb48d9dc" id="r_a461d8173cd13f4370f7eff01bb48d9dc"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a461d8173cd13f4370f7eff01bb48d9dc">setupLocalVideoCanvas:</a></td></tr>
+<tr class="memdesc:a461d8173cd13f4370f7eff01bb48d9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地用户视图。 <br  />
+通过本接口可以实现绑定本地用户和显示视图，并设置本地用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。  <br /></td></tr>
+<tr class="separator:a461d8173cd13f4370f7eff01bb48d9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56db50d6e25fac43db491fbfcf9a03a" id="r_ae56db50d6e25fac43db491fbfcf9a03a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ae56db50d6e25fac43db491fbfcf9a03a">setupRemoteVideoCanvas:forUserID:</a></td></tr>
+<tr class="memdesc:ae56db50d6e25fac43db491fbfcf9a03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远端用户视图。 <br  />
+通过本接口可以实现绑定远端用户和显示视图，并设置远端用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。  <br /></td></tr>
+<tr class="separator:ae56db50d6e25fac43db491fbfcf9a03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34309b13dc0107b607cf6e93c8b7f6b9" id="r_a34309b13dc0107b607cf6e93c8b7f6b9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a34309b13dc0107b607cf6e93c8b7f6b9">switchCamera</a></td></tr>
+<tr class="memdesc:a34309b13dc0107b607cf6e93c8b7f6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换前置或后置摄像头。  <br /></td></tr>
+<tr class="separator:a34309b13dc0107b607cf6e93c8b7f6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcc34bb7200daa27c7d2adc4c624fc0" id="r_a7fcc34bb7200daa27c7d2adc4c624fc0"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a7fcc34bb7200daa27c7d2adc4c624fc0">setClientRole:</a></td></tr>
+<tr class="memdesc:a7fcc34bb7200daa27c7d2adc4c624fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置直播场景下的用户角色。 <br  />
+通过本接口可以实现将用户角色在“主播”（kNERtcClientRoleBroadcaster）和“观众“（kNERtcClientRoleAudience）之间的切换，用户加入房间后默认为“主播”。  <br /></td></tr>
+<tr class="separator:a7fcc34bb7200daa27c7d2adc4c624fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a674564c41bbd4b5556f08a9d65a558" id="r_a2a674564c41bbd4b5556f08a9d65a558"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a2a674564c41bbd4b5556f08a9d65a558">setParameters:</a></td></tr>
+<tr class="memdesc:a2a674564c41bbd4b5556f08a9d65a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音视频通话的相关参数。 <br  />
+ 此接口提供技术预览或特别定制功能，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。  <br /></td></tr>
+<tr class="separator:a2a674564c41bbd4b5556f08a9d65a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d80c25be96e3f70eebf7b3ac45a3e85" id="r_a3d80c25be96e3f70eebf7b3ac45a3e85"><td class="memItemLeft" align="right" valign="top">(NSString *_Nullable)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a3d80c25be96e3f70eebf7b3ac45a3e85">getParameter:extraInfo:</a></td></tr>
+<tr class="memdesc:a3d80c25be96e3f70eebf7b3ac45a3e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 String 的形式获取一些内部参数，此接口为隐藏接口，需要特定参数及特定时机，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。  <br /></td></tr>
+<tr class="separator:a3d80c25be96e3f70eebf7b3ac45a3e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a44c13fabaa16fc7ec6f7c39fb86ba975" id="r_a44c13fabaa16fc7ec6f7c39fb86ba975"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html">NERtcEngineDelegateEx</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44c13fabaa16fc7ec6f7c39fb86ba975">engineDelegate</a></td></tr>
+<tr class="separator:a44c13fabaa16fc7ec6f7c39fb86ba975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 的常用接口。  </p>
+</div><h2 class="groupheader">成员函数文档</h2>
+<a id="a2bc8a0d82bdd1ae2a98e64ae42909f9a" name="a2bc8a0d82bdd1ae2a98e64ae42909f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bc8a0d82bdd1ae2a98e64ae42909f9a">&#9670;&#160;</a></span>connectionState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a>) connectionState </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取当前房间连接状态。 </p>
+<dl class="section return"><dt>返回</dt><dd>当前房间连接状态。  </dd></dl>
+
+</div>
+</div>
+<a id="a1370eda8c43b36f5764cb96ed927f98d" name="a1370eda8c43b36f5764cb96ed927f98d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1370eda8c43b36f5764cb96ed927f98d">&#9670;&#160;</a></span>enableLocalAudio:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) enableLocalAudio: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启/关闭本地音频采集和发送。 <br  />
+通过本接口可以实现开启或关闭本地语音功能，进行本地音频采集及处理。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>加入房间后，语音功能默认为开启状态。</li>
+<li>该方法设置内部引擎为启用状态，在 leaveChannel 后仍然有效。</li>
+<li>该方法不影响接收或播放远端音频流，enableLocalAudio(false) 适用于只下行不上行音频流的场景。</li>
+<li>自 V4.4.0 版本起，开启或关闭本地音频采集的操作不会影响伴音/音效接口的使用，比如 enableLocalAudio(NO) 后仍可以调用 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a88d69ad7016f3a7bb00cae1af4f91c2e">INERtcEngineEx#startAudioMixingWithOption:</a></code> 方法播放音乐文件。</li>
+<li>该方法会操作音频硬件设备，建议避免频繁开关，否则可能导致设备异常。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>enabled </td><td>BOOL </td><td>是否启用本地音频的采集和发送：<ul>
+<li>
+YES：开启本地音频采集。</li>
+<li>
+NO：关闭本地音频采集。关闭后，远端用户会接收不到本地用户的音频流；但本地用户依然可以接收到远端用户的音频流。  </li>
+</ul>
+</td></tr>
+</table>
+<br  />
+ </dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//打开音频采集</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalAudio:YES];</div>
+<div class="line"><span class="comment">//关闭音频采集</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalAudio:NO];</div>
+<div class="ttc" id="ainterface_n_e_rtc_engine_html"><div class="ttname"><a href="interface_n_e_rtc_engine.html">NERtcEngine</a></div><div class="ttdoc">NERtcEngine 类</div><div class="ttdef"><b>定义</b> NERtcEngine.h:15</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>开启音频采集后，远端会触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#ade328996bde998b68b5d202d66b2b5f7">NERtcEngineDelegate#onNERtcEngineUserAudioDidStart:</a></code> 回调。</li>
+<li>关闭音频采集后，远端会触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a6c42c61f74cf977b558d6ac5f9228eaf">NERtcEngineDelegate#onNERtcEngineUserAudioDidStop:</a></code> 回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6eac5c00babe5ab2dcc8127c5c01abb7">INERtcEngineEx#muteLocalAudio:</a></code>：两者的差异在于，enableLocalAudio 用于开启本地语音采集及处理，而 muteLocalAudio 用于停止或继续发送本地音频流。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化。</li>
+<li>30004（kNERtcErrNotSupported）：多房间场景下，在其他房间内已经开启了音频。</li>
+<li>30005（kNERtcErrInvalidState）：状态错误，比如引擎尚未初始化，或者正在进行网络测速。</li>
+<li>30101（kNERtcErrChannelNotJoined）：尚未加入房间。</li>
+<li>30300（kNERtcErrOSAuthorize）：未开启麦克风权限。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2ea18a0b1c2fc5eb7f175dd24cdf0f2a" name="a2ea18a0b1c2fc5eb7f175dd24cdf0f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea18a0b1c2fc5eb7f175dd24cdf0f2a">&#9670;&#160;</a></span>enableLocalVideo:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) enableLocalVideo: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启或关闭本地视频的采集与发送。 <br  />
+通过本接口可以实现开启或关闭本地视频，不影响接收远端视频。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>该方法设置内部引擎为开启或关闭状态, 在 <code><a class="el" href="protocol_i_n_e_rtc_channel-p.html#a2dc58957c2aaec792558ec411a2eb238">INERtcChannel#leaveChannel</a></code> 后仍然有效。 </dd></dl>
+<dl class="section user"><dt>参数说明 </dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>enabled </td><td>BOOL </td><td>是否开启本地视频采集与发送：<ul>
+<li>
+YES：开启本地视频采集。</li>
+<li>
+NO：关闭本地视频采集。关闭后，远端用户无法接收到本地用户的视频流；但本地用户仍然可以接收到远端用户的视频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//打开视频</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalVideo:YES];</div>
+<div class="line"><span class="comment">//关闭视频</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalVideo:NO];</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>开启本地视频采集后，远端会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#ade328996bde998b68b5d202d66b2b5f7">NERtcEngineDelegate#onNERtcEngineUserAudioDidStart:</a></code> 回调。</li>
+<li>关闭本地视频采集后，远端会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a6c42c61f74cf977b558d6ac5f9228eaf">NERtcEngineDelegate#onNERtcEngineUserAudioDidStop:</a></code> 回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望开启辅流通道的视频采集，请调用 <code><a class="el" href="#a9f13beb56a8b9fdfbc856d304c0d10cb">INERtcEngine#enableLocalVideo:streamType:</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：通用错误，一般表示引擎错误，尝试再次调用此接口即可。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如已开启外部视频采集。</li>
+<li>30300（kNERtcErrOSAuthorize）：应用未获取到操作系统的摄像头权限。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a9f13beb56a8b9fdfbc856d304c0d10cb" name="a9f13beb56a8b9fdfbc856d304c0d10cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f13beb56a8b9fdfbc856d304c0d10cb">&#9670;&#160;</a></span>enableLocalVideo:streamType:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) <a class="el" href="#a2ea18a0b1c2fc5eb7f175dd24cdf0f2a">enableLocalVideo:</a> </td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">streamType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启或关闭本地视频的采集与发送。 <br  />
+通过主流或辅流视频通道进行本地视频流的采集与发送。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>该方法设置内部引擎为开启或关闭状态, 在 <code><a class="el" href="#a810e41b2be7de2b00458ee786302631c">INERtcEngine#leaveChannel</a></code> 后仍然有效。 </dd></dl>
+<dl class="section user"><dt>参数说明 </dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a></code> </td><td>视频通道类型：<ul>
+<li>
+kNERtcStreamChannelTypeMainStream：主流。</li>
+<li>
+kNERtcStreamChannelTypeSubStream：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>enabled </td><td>BOOL </td><td>是否开启本地视频采集与发送：<ul>
+<li>
+YES：开启本地视频采集。</li>
+<li>
+NO：关闭本地视频采集。关闭后，远端用户无法接收到本地用户的视频流；但本地用户仍然可以接收到远端用户的视频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//打开视频主流</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalVideo:YES streamType:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0a693d2e4a3d4c1e8ac3debb9781c15376">kNERtcStreamChannelTypeMainStream</a>];</div>
+<div class="line"><span class="comment">//关闭视频主流</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalVideo:NO streamType:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0a693d2e4a3d4c1e8ac3debb9781c15376">kNERtcStreamChannelTypeMainStream</a>];</div>
+<div class="line"><span class="comment">//打开视频辅流</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalVideo:YES streamType:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0affe50e0122ed5a179254c496cfabf32c">kNERtcStreamChannelTypeSubStream</a>];</div>
+<div class="line"><span class="comment">//关闭视频辅流</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] enableLocalVideo:NO streamType:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0affe50e0122ed5a179254c496cfabf32c">kNERtcStreamChannelTypeSubStream</a>];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_acfea712a4ac06896174a67d88a9743e0a693d2e4a3d4c1e8ac3debb9781c15376"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0a693d2e4a3d4c1e8ac3debb9781c15376">kNERtcStreamChannelTypeMainStream</a></div><div class="ttdeci">@ kNERtcStreamChannelTypeMainStream</div><div class="ttdoc">主流通道。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1144</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_acfea712a4ac06896174a67d88a9743e0affe50e0122ed5a179254c496cfabf32c"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0affe50e0122ed5a179254c496cfabf32c">kNERtcStreamChannelTypeSubStream</a></div><div class="ttdeci">@ kNERtcStreamChannelTypeSubStream</div><div class="ttdoc">辅流通道。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1153</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>streamType 为 kNERtcStreamChannelTypeMainStream（主流）时：<ul>
+<li>开启本地视频采集后，远端会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#ade328996bde998b68b5d202d66b2b5f7">NERtcEngineDelegate#onNERtcEngineUserAudioDidStart:</a></code> 回调。</li>
+<li>关闭本地视频采集后，远端会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a6c42c61f74cf977b558d6ac5f9228eaf">NERtcEngineDelegate#onNERtcEngineUserAudioDidStop:</a></code> 回调。</li>
+</ul>
+</li>
+<li>streamType 为 kNERtcStreamChannelTypeSubStream（辅流）时：<ul>
+<li>开启本地视频采集后，远端会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a93bba2b15ac3a40507adae5a828e9269">NERtcEngineDelegate#onNERtcEngineUserSubStreamAudioDidStart:</a></code> 回调。</li>
+<li>关闭本地视频采集后，远端会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a4b02d2d612737de435875990f0f83194">NERtcEngineDelegate#onNERtcEngineUserSubStreamAudioDidStop:</a></code> 回调。 </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：通用错误，一般表示引擎错误，尝试再次调用此接口即可。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如已开启外部视频采集。</li>
+<li>30027（kNERtcErrDeviceOccupied）: 所选设备已被占用。比如已通过主流通道开启了摄像头，无法再通过辅流通道开启摄像头。</li>
+<li>30300（kNERtcErrOSAuthorize）：应用未获取到操作系统的摄像头权限。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aad6f693d05adcb847ddf8e268f9d3e7c" name="aad6f693d05adcb847ddf8e268f9d3e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad6f693d05adcb847ddf8e268f9d3e7c">&#9670;&#160;</a></span>enableMediaPub:withMediaType:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) enableMediaPub: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withMediaType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a3853d4e953350ddff15f87b0e1f0b1b9">NERtcMediaPubType</a>)</td>          <td class="paramname"><span class="paramname"><em>mediaType</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启或关闭本地媒体流（主流）的发送。 <br  />
+该方法用于开始或停止向网络发送本地音频或视频数据。 <br  />
+该方法不影响接收或播放远端媒体流，也不会影响本地音频或视频的采集状态。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法暂时仅支持控制音频流的发送。</li>
+<li>该方法在加入房间前后均可调用。</li>
+<li>停止发送媒体流的状态会在通话结束后被重置为允许发送。</li>
+<li>成功调用该方法切换本地用户的发流状态后，房间内其他用户会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#ade328996bde998b68b5d202d66b2b5f7">NERtcEngineDelegate#onNERtcEngineUserAudioDidStart:</a></code>（开启发送音频）或 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a6c42c61f74cf977b558d6ac5f9228eaf">NERtcEngineDelegate#onNERtcEngineUserAudioDidStop:</a></code>（停止发送音频）的回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><ul>
+<li><code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6eac5c00babe5ab2dcc8127c5c01abb7">INERtcEngineEx#muteLocalAudio:</a></code>：<ul>
+<li>在需要开启本地音频采集（监测本地用户音量）但不发送音频流的情况下，您也可以调用 muteLocalAudio(YES) 方法。</li>
+<li>两者的差异在于， muteLocalAudio(YES) 仍然保持与服务器的音频通道连接，而 enableMediaPub(NO) 表示断开此通道，因此若您的实际业务场景为多人并发的大房间，建议您调用 enableMediaPub 方法。 <br  />
+ </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>是否发布本地媒体流。<ul>
+<li>YES（默认）：发布本地媒体流。</li>
+<li>NO：不发布本地媒体流。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">mediaType</td><td>媒体发布类型，暂时仅支持音频。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0：方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a3d80c25be96e3f70eebf7b3ac45a3e85" name="a3d80c25be96e3f70eebf7b3ac45a3e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d80c25be96e3f70eebf7b3ac45a3e85">&#9670;&#160;</a></span>getParameter:extraInfo:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *_Nullable) getParameter: </td>
+          <td></td>
+          <td class="paramtype">(NSString *_Nonnull)</td>          <td class="paramname"><span class="paramname"><em>parameterKey</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">extraInfo:</td>
+          <td></td>
+          <td class="paramtype">(NSString *_Nullable)</td>          <td class="paramname"><span class="paramname"><em>extraInfo</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>以 String 的形式获取一些内部参数，此接口为隐藏接口，需要特定参数及特定时机，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameterKey</td><td>参数 key </td></tr>
+    <tr><td class="paramname">extraInfo</td><td>额外的信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果查询到相关参数，以 String 形式返回，否则返回 nil </dd></dl>
+
+</div>
+</div>
+<a id="a4876b67191a8e51488fc0d0ef14fc724" name="a4876b67191a8e51488fc0d0ef14fc724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4876b67191a8e51488fc0d0ef14fc724">&#9670;&#160;</a></span>joinChannelWithToken:channelName:myUid:channelOptions:completion:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) joinChannelWithToken: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">channelName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">myUid:</td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>uId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">channelOptions:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="interface_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> *)</td>          <td class="paramname"><span class="paramname"><em>channelOptions</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">completion:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(NSError *_Nullable error, uint64_t channelId, uint64_t elapesd, uint64_t uid, <a class="el" href="interface_n_e_rtc_join_channel_extra_info.html">NERtcJoinChannelExtraInfo</a> *_Nullable info))</td>          <td class="paramname"><span class="paramname"><em>completion</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.6.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>同一个房间内的用户可以互相通话，多个用户加入同一个房间，可以群聊。使用不同 App Key 的 App 之间不能互通。</li>
+<li>用户成功加入房间后，默认订阅房间内所有其他用户的音频流，可能会因此产生用量并影响计费；若您想取消自动订阅，可以在通话前通过调用 <code><a class="el" href="#a2a674564c41bbd4b5556f08a9d65a558">INERtcEngine#setParameters:</a></code> 方法实现。</li>
+<li>加入音视频房间时，如果指定房间尚未创建，云信服务器内部会自动创建一个同名房间。</li>
+<li>传参中 uId 可选，若不指定则默认为 0，SDK 会自动分配一个随机 uId，并在 <code><a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a></code> 回调方法中返回；App 层必须记住该返回值并维护，SDK 不对该返回值进行维护。</li>
+<li>网络测速过程中无法加入房间。</li>
+<li>若使用了云代理功能，uid 不允许传 0，请用真实的 uid。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>token </td><td>NSString </td><td>安全认证签名（NERTC Token），可以设置为：<ul>
+<li>
+null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在网易云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>
+已获取的 NERTC Token。安全模式下必须设置为获取到的 Token。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>channelName </td><td>NSString </td><td>房间名称，设置相同房间名称的用户会进入同一个通话房间。<ul>
+<li>
+字符串格式，长度为 1 ~ 64 字节。</li>
+<li>
+支持以下 89 个字符：a-z, A-Z, 0-9, space, !#$%&amp;()+-:;≤.,&gt;? @[]^_{|}~”  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uId </td><td>uint64_t </td><td>用户的唯一标识 ID。  </td></tr>
+<tr>
+<td>channelOptions </td><td><a class="el" href="interface_n_e_rtc_join_channel_options.html" title="joinChannel 时的一些可选信息">NERtcJoinChannelOptions</a> * </td><td>加入房间时设置一些特定的房间参数。默认值为 NULL，详细信息请参考 <code><a class="el" href="interface_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a></code>。  </td></tr>
+<tr>
+<td>completion </td><td><code><a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a></code> </td><td>操作完成的 block 回调。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> result = [[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] joinChannelWithToken:token channelName:channelName myUid:uid completion:^(NSError * _Nullable error, uint64_t channelId, uint64_t elapesd, uint64_t uid) {</div>
+<div class="line">                <span class="keywordflow">if</span> (error) {</div>
+<div class="line">                   <span class="comment">//join room failed</span></div>
+<div class="line">                }</div>
+<div class="line">                <span class="keywordflow">else</span> {</div>
+<div class="line">               <span class="comment">//join room success</span></div>
+<div class="line">                }</div>
+<div class="line">            }];</div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf">kNERtcNoError</a> != result) {</div>
+<div class="line">    <span class="comment">//join room failed</span></div>
+<div class="line">}</div>
+<div class="ttc" id="a_n_e_rtc_engine_error_code_8h_html_a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf"><div class="ttname"><a href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf">kNERtcNoError</a></div><div class="ttdeci">@ kNERtcNoError</div><div class="ttdoc">没有错误。</div><div class="ttdef"><b>定义</b> NERtcEngineErrorCode.h:27</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><ul>
+<li>您可以调用 <code><a class="el" href="#a810e41b2be7de2b00458ee786302631c">INERtcEngine#leaveChannel</a></code> 方法离开房间。</li>
+<li>直播场景中，观众角色可以通过 <code><a class="el" href="#ac9819e1ecad009c45f933f77c14db75f">INERtcEngine#switchChannelWithToken:channelName:completion:</a></code> 接口切换房间。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用该方法加入房间后，远端会触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（kNERtcErrInvalidState)：状态错误，比如引擎尚未初始化或正在进行网络探测。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="adf60d9392e4b50ff73872138965f022f" name="adf60d9392e4b50ff73872138965f022f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf60d9392e4b50ff73872138965f022f">&#9670;&#160;</a></span>joinChannelWithToken:channelName:myUid:completion:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) joinChannelWithToken: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">channelName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">myUid:</td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>uId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">completion:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a>)</td>          <td class="paramname"><span class="paramname"><em>completion</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.6.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>同一个房间内的用户可以互相通话，多个用户加入同一个房间，可以群聊。使用不同 App Key 的 App 之间不能互通。</li>
+<li>用户成功加入房间后，默认订阅房间内所有其他用户的音频流，可能会因此产生用量并影响计费；若您想取消自动订阅，可以在通话前通过调用 <code><a class="el" href="#a2a674564c41bbd4b5556f08a9d65a558">INERtcEngine#setParameters:</a></code> 方法实现。</li>
+<li>加入音视频房间时，如果指定房间尚未创建，云信服务器内部会自动创建一个同名房间。</li>
+<li>传参中 uId 可选，若不指定则默认为 0，SDK 会自动分配一个随机 uId，并在 <code><a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a></code> 回调方法中返回；App 层必须记住该返回值并维护，SDK 不对该返回值进行维护。</li>
+<li>网络测速过程中无法加入房间。</li>
+<li>若使用了云代理功能，uid 不允许传 0，请用真实的 uid。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>token </td><td>NSString </td><td>安全认证签名（NERTC Token），可以设置为：<ul>
+<li>
+null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在网易云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>
+已获取的 NERTC Token。安全模式下必须设置为获取到的 Token。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>channelName </td><td>NSString </td><td>房间名称，设置相同房间名称的用户会进入同一个通话房间。<ul>
+<li>
+字符串格式，长度为 1 ~ 64 字节。</li>
+<li>
+支持以下 89 个字符：a-z, A-Z, 0-9, space, !#$%&amp;()+-:;≤.,&gt;? @[]^_{|}~”  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uId </td><td>uint64_t </td><td>用户的唯一标识 ID。  </td></tr>
+<tr>
+<td>completion </td><td><code><a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a></code> </td><td>操作完成的 block 回调。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> result = [[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] joinChannelWithToken:token channelName:channelName myUid:uid completion:^(NSError * _Nullable error, uint64_t channelId, uint64_t elapesd, uint64_t uid) {</div>
+<div class="line">                <span class="keywordflow">if</span> (error) {</div>
+<div class="line">                   <span class="comment">//join room failed</span></div>
+<div class="line">                }</div>
+<div class="line">                <span class="keywordflow">else</span> {</div>
+<div class="line">               <span class="comment">//join room success</span></div>
+<div class="line">                }</div>
+<div class="line">            }];</div>
+<div class="line"><span class="keywordflow">if</span>(<a class="code hl_enumvalue" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15a524e9fd1b63b6fbe5b814f41a63e03cf">kNERtcNoError</a> != result) {</div>
+<div class="line">    <span class="comment">//join room failed</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><ul>
+<li>您可以调用 <code><a class="el" href="#a810e41b2be7de2b00458ee786302631c">INERtcEngine#leaveChannel</a></code> 方法离开房间。</li>
+<li>直播场景中，观众角色可以通过 <code><a class="el" href="#ac9819e1ecad009c45f933f77c14db75f">INERtcEngine#switchChannelWithToken:channelName:completion:</a></code> 接口切换房间。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用该方法加入房间后，远端会触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（kNERtcErrInvalidState)：状态错误，比如引擎尚未初始化或正在进行网络探测。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a810e41b2be7de2b00458ee786302631c" name="a810e41b2be7de2b00458ee786302631c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810e41b2be7de2b00458ee786302631c">&#9670;&#160;</a></span>leaveChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) leaveChannel </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>离开音视频房间。 <br  />
+通过本接口可以实现挂断或退出通话，并释放本房间内的相关资源。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化并成功加入房间后调用该方法。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>结束通话时必须调用此方法离开房间，否则无法开始下一次通话。 </dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] <a class="code hl_function" href="#a810e41b2be7de2b00458ee786302631c">leaveChannel</a>];</div>
+<div class="ttc" id="aprotocol_i_n_e_rtc_engine-p_html_a810e41b2be7de2b00458ee786302631c"><div class="ttname"><a href="#a810e41b2be7de2b00458ee786302631c">-[INERtcEngine-p leaveChannel]</a></div><div class="ttdeci">int leaveChannel()</div><div class="ttdoc">离开音视频房间。  通过本接口可以实现挂断或退出通话，并释放本房间内的相关资源。</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用该方法离开房间后，本地会触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a1ba9968da680d14f496b2b16a78c6ad8">NERtcEngineDelegate#onNERtcEngineDidLeaveChannelWithResult:</a></code> 回调，远端会触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a1e39aeff7071b061b28034b840cefbf5">NERtcEngineDelegate#onNERtcEngineUserDidLeaveWithUserID:reason:</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化。</li>
+<li>30005（kNERtcErrInvalidState)：状态错误，比如正在进行网络探测。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aa8b1b7c15de0bb8e0ccfeee1b6c6874c" name="aa8b1b7c15de0bb8e0ccfeee1b6c6874c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b1b7c15de0bb8e0ccfeee1b6c6874c">&#9670;&#160;</a></span>setAINSMode:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setAINSMode: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a5a38d23d358dca41af37475b8cd6a7ec">NERtcAudioAINSMode</a>)</td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频 AI 降噪模式 </p>
+<dl class="section since"><dt>自从</dt><dd>V5.9.10 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>mode </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a5a38d23d358dca41af37475b8cd6a7ec">NERtcAudioAINSMode</a></code> </td><td>AI 降噪模式。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 AI 降噪为普通模式</span></div>
+<div class="line"><a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a5a38d23d358dca41af37475b8cd6a7ec">NERtcAudioAINSMode</a> mode = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a5a38d23d358dca41af37475b8cd6a7ecaa115f1b721929199ce0950af2167003a">kNERtcAudioAINSNormal</a>;</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setAINSMode:mode];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a5a38d23d358dca41af37475b8cd6a7ec"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a5a38d23d358dca41af37475b8cd6a7ec">NERtcAudioAINSMode</a></div><div class="ttdeci">NERtcAudioAINSMode</div><div class="ttdoc">AI 降噪模式。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2172</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a5a38d23d358dca41af37475b8cd6a7ecaa115f1b721929199ce0950af2167003a"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a5a38d23d358dca41af37475b8cd6a7ecaa115f1b721929199ce0950af2167003a">kNERtcAudioAINSNormal</a></div><div class="ttdeci">@ kNERtcAudioAINSNormal</div><div class="ttdoc">AINS 普通模式。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2190</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化或下发配置未更新。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="acbe79c3a3439b464314046d9638006ae" name="acbe79c3a3439b464314046d9638006ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe79c3a3439b464314046d9638006ae">&#9670;&#160;</a></span>setAudioProfile:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setAudioProfile: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a>)</td>          <td class="paramname"><span class="paramname"><em>profile</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等。 </p>
+<dl class="section since"><dt>自从</dt><dd>V5.5.40 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>profile </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a></code> </td><td>设置采样率、码率、编码模式和声道数。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 profile 为标准模式，scenario 为语音场景</span></div>
+<div class="line"><a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a> profile = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cda8c202e4b2b8f04bf5ff19cc9ea743e6b">kNERtcAudioProfileStandard</a>;</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setAudioProfile:profile];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a2d97e6853715f5f1f80989af286d58cd"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a></div><div class="ttdeci">NERtcAudioProfileType</div><div class="ttdoc">音频质量能力概要  音频属性:设置采样率，码率，编码模式和声道数</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2041</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a2d97e6853715f5f1f80989af286d58cda8c202e4b2b8f04bf5ff19cc9ea743e6b"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cda8c202e4b2b8f04bf5ff19cc9ea743e6b">kNERtcAudioProfileStandard</a></div><div class="ttdeci">@ kNERtcAudioProfileStandard</div><div class="ttdoc">标准音质模式。采样率为 16 kHz、语音编码、单声道、编码码率最大值为 20 Kbps。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2059</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化或下发配置未更新。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a79daa01fb308cf2b70d27fb7f73cab01" name="a79daa01fb308cf2b70d27fb7f73cab01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79daa01fb308cf2b70d27fb7f73cab01">&#9670;&#160;</a></span>setAudioProfile:scenario:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) <a class="el" href="#acbe79c3a3439b464314046d9638006ae">setAudioProfile:</a> </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a>)</td>          <td class="paramname"><span class="paramname"><em>profile</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">scenario:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a>)</td>          <td class="paramname"><span class="paramname"><em>scenario</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等，也可以设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景等。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>音乐场景下，建议将 profile 设置为 kNERtcAudioProfileHighQuality。</li>
+<li>若您通过 <code><a class="el" href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">INERtcEngine#setChannelProfile:</a></code> 接口设置房间场景为直播模式，即 kNERtcChannelProfileLiveBroadcasting，但未调用此方法设置音频编码属性，或仅设置 profile 为 kNERtcAudioProfileDefault，则 SDK 会自动设置 profile 为 kNERtcAudioProfileHighQuality，且设置 scenario 为 kNERtcAudioScenarioMusic。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明 </dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>profile </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a></code> </td><td>设置采样率、码率、编码模式和声道数。  </td></tr>
+<tr>
+<td>scenario </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a></code> </td><td>设置音频应用场景。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 profile 为标准模式，scenario 为语音场景</span></div>
+<div class="line"><a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a> scenario = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fca7c623453e95c16c6c8d464172582ada6">kNERtcAudioScenarioSpeech</a>;</div>
+<div class="line"><a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cd">NERtcAudioProfileType</a> profile = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a2d97e6853715f5f1f80989af286d58cda8c202e4b2b8f04bf5ff19cc9ea743e6b">kNERtcAudioProfileStandard</a>;</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setAudioProfile:profile scenario:scenario];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ab2ea004f99606d36b28fad18c03d28fc"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a></div><div class="ttdeci">NERtcAudioScenarioType</div><div class="ttdoc">音频应用场景。  不同的场景设置对应不同的音频采集模式（移动平台）、播放模式。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2125</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ab2ea004f99606d36b28fad18c03d28fca7c623453e95c16c6c8d464172582ada6"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fca7c623453e95c16c6c8d464172582ada6">kNERtcAudioScenarioSpeech</a></div><div class="ttdeci">@ kNERtcAudioScenarioSpeech</div><div class="ttdoc">语音场景。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2143</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化或下发配置未更新。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a0b66092b4107ffc3a1f8226cbc05b0ce" name="a0b66092b4107ffc3a1f8226cbc05b0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b66092b4107ffc3a1f8226cbc05b0ce">&#9670;&#160;</a></span>setAudioScenario:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setAudioScenario: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a>)</td>          <td class="paramname"><span class="paramname"><em>scenario</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音频应用场景 <br  />
+通过此接口可以实现设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景。也可以使用 通过 <code><a class="el" href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">INERtcEngine#setChannelProfile:</a></code> 设置其他场景，包括 1v1 呼叫场景、清晰度较高的 1v1 呼叫场景、语聊房场景、清晰度较高的语聊房场景、会议场景。 </p>
+<dl class="section since"><dt>自从</dt><dd>V5.5.40 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>scenario </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a></code> </td><td>设置音频应用场景。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 scenario 为语音场景</span></div>
+<div class="line"><a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fc">NERtcAudioScenarioType</a> scenario = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ab2ea004f99606d36b28fad18c03d28fca7c623453e95c16c6c8d464172582ada6">kNERtcAudioScenarioSpeech</a>;</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setAudioScenario:scenario];</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化或下发配置未更新。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aeb1ddb3e3ea5c8ddd6c2a9052a596410" name="aeb1ddb3e3ea5c8ddd6c2a9052a596410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">&#9670;&#160;</a></span>setChannelProfile:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setChannelProfile: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#ac0b3e90736033b48ac1ddfe938c02db3">NERtcChannelProfileType</a>)</td>          <td class="paramname"><span class="paramname"><em>channelProfile</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置房间场景。 <br  />
+ 通过此接口可以实现设置房间场景为通话（默认）、直播场景、视频 1 对 1 呼叫场景、语聊房场景等。针对不同场景采取的优化策略不同，如通话场景侧重语音流畅度，直播场景侧重视频清晰度。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.6.0 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>同一个房间内的用户建议使用同一种房间场景以获得最佳效果。</li>
+<li>设置场景会影响音视频码率、帧率、视频分辨率、视频大小流模式、自动打开视频、自动订阅视频、传输策略。</li>
+<li>调用此函数将覆盖上一次调用此函数设置的场景。</li>
+<li>调用此函数场景类型为视频 1 对 1 呼叫场景、清晰度较高的 1 对 1 呼叫场景等 v5.5.40 新增的房间场景将覆盖您通过 <code><a class="el" href="">setLocalVideoConfig</a></code>, <code><a class="el" href="">setAudioProfile</a></code> 等 API 设置的音视频相关配置，因此建议先第一时间设置场景再通过其他 API 调整音视频配置。</li>
+<li>V5.5.40 之前就存在通信场景和直播场景，设置通信场景和直播场景，不会覆盖 <code><a class="el" href="">setLocalVideoConfig</a></code>, <code><a class="el" href="">setAudioProfile</a></code> 等 API 设置的音视频相关配置 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法仅可在加入房间前调用。建议在初始化之后先调此方法，再调别的 API 设置的音视频相关配置。 加入房间后, 只有语聊房场景、高品质语聊房场景、卡拉 OK (KTV) 场景之间可以互相切换，其他房间场景会中无法切换。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>channelProfile </td><td>int </td><td>设置房间场景：<ul>
+<li>
+kNERtcChannelProfileCommunication：通话场景。</li>
+<li>
+kNERtcChannelProfileLiveBroadcasting：直播场景。</li>
+<li>
+kNERtcChannelProfileVideoCall：视频 1 对 1 呼叫场景。 </li>
+<li>
+kNERtcChannelProfileHighQualityVideoCall：清晰度较高的 1 对 1 呼叫场景。 </li>
+<li>
+kNERtcChannelProfileChatroom：语聊房场景。</li>
+<li>
+kNERtcChannelProfileHighQualityChatroom：高品质语聊房场景。</li>
+<li>
+kNERtcChannelProfileMeeting：会议场景。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置房间场景为直播场景</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setChannelProfile:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ac0b3e90736033b48ac1ddfe938c02db3a864a04a5668f2cf952e6b972d5994d8f">kNERtcChannelProfileLiveBroadcasting</a>];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ac0b3e90736033b48ac1ddfe938c02db3a864a04a5668f2cf952e6b972d5994d8f"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ac0b3e90736033b48ac1ddfe938c02db3a864a04a5668f2cf952e6b972d5994d8f">kNERtcChannelProfileLiveBroadcasting</a></div><div class="ttdeci">@ kNERtcChannelProfileLiveBroadcasting</div><div class="ttdoc">直播场景。该场景有主播和观众两种用户角色，可以通过 setClientRole 设置。主播可以发布和接收音视频流，观众直接接收流。适用于语聊房、视频直播、互动大班课等应用场景。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2229</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（kNERtcErrInvalidParam）：参数错误。</li>
+<li>30005（kNERtcErrInvalidState)：当前状态不支持的操作，比如已经加入房间。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7fcc34bb7200daa27c7d2adc4c624fc0" name="a7fcc34bb7200daa27c7d2adc4c624fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcc34bb7200daa27c7d2adc4c624fc0">&#9670;&#160;</a></span>setClientRole:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setClientRole: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a>)</td>          <td class="paramname"><span class="paramname"><em>role</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置直播场景下的用户角色。 <br  />
+通过本接口可以实现将用户角色在“主播”（kNERtcClientRoleBroadcaster）和“观众“（kNERtcClientRoleAudience）之间的切换，用户加入房间后默认为“主播”。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.9.0 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>该方法仅在通过 <code><a class="el" href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">INERtcEngine#setChannelProfile:</a></code> 方法设置房间场景为直播场景（kNERtcChannelProfileLiveBroadcasting ）时调用有效。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>适用于观众上下麦与主播互动的互动直播场景。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>用户切换为观众角色时，SDK 会自动关闭音视频设备。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>role </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a></code> </td><td>用户角色：<ul>
+<li>
+kNERtcClientRoleBroadcaster（0）：设置用户角色为主播。主播可以开关摄像头等设备、可以发布流、可以操作互动直播推流相关接口、加入或退出房间状态对其他房间内用户可见。</li>
+<li>
+kNERtcClientRoleAudience（1）：设置用户角色为观众。观众只能收流不能发流、加入或退出房间状态对其他房间内用户不可见。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//切换用户角色为主播</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setClientRole:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9a68c48e1407cc8d3af3e1c3dc63e1cd97">kNERtcClientRoleAudience</a>];</div>
+<div class="line"><span class="comment">//切换用户角色为观众</span></div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setClientRole:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9a19cf5a5d5b20541789fef3ae97b5d611">kNERtcClientRoleBroadcaster</a>];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ac92fefa5fc00ecadf669b09ec11ed5c9a19cf5a5d5b20541789fef3ae97b5d611"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9a19cf5a5d5b20541789fef3ae97b5d611">kNERtcClientRoleBroadcaster</a></div><div class="ttdeci">@ kNERtcClientRoleBroadcaster</div><div class="ttdoc">（默认）直播模式中的主播，可以操作摄像头等音视频设备、发布流、配置互动直播推流任务、上下线对房间内其他用户可见。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:215</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ac92fefa5fc00ecadf669b09ec11ed5c9a68c48e1407cc8d3af3e1c3dc63e1cd97"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9a68c48e1407cc8d3af3e1c3dc63e1cd97">kNERtcClientRoleAudience</a></div><div class="ttdeci">@ kNERtcClientRoleAudience</div><div class="ttdoc">直播模式中的观众，观众只能接收音视频流，不支持操作音视频设备、配置互动直播推流任务、上下线不通知其他用户。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:224</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>加入房间前调用该方法设置用户角色，不会触发任何回调，在加入房间成功后角色自动生效：<ul>
+<li>设置用户角色为主播：加入房间后，远端用户触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调。</li>
+<li>设置用户角色为观众：加入房间后，远端用户不触发任何回调。</li>
+</ul>
+</li>
+<li>加入房间后调用该方法切换用户角色：<ul>
+<li>从观众角色切为主播：本端用户触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#ae6511d58efa3d67e9c2901149e0b3e60">NERtcEngineDelegate#onNERtcEngineDidClientRoleChanged:newRole:</a></code> 回调，远端用户触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调。</li>
+<li>从主播角色切为观众：本端用户触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#ae6511d58efa3d67e9c2901149e0b3e60">NERtcEngineDelegate#onNERtcEngineDidClientRoleChanged:newRole:</a></code> 回调，远端用户触发 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a1e39aeff7071b061b28034b840cefbf5">NERtcEngineDelegate#onNERtcEngineUserDidLeaveWithUserID:reason:</a></code> 回调。 </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal)：引擎未创建成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ac498cf194c649015a2b82b53c0112f03" name="ac498cf194c649015a2b82b53c0112f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac498cf194c649015a2b82b53c0112f03">&#9670;&#160;</a></span>setDelegateQueue:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setDelegateQueue: </td>
+          <td></td>
+          <td class="paramtype">(nullable dispatch_queue_t)</td>          <td class="paramname"><span class="paramname"><em>delegateQueue</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置驱动 <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。">NERtcEngineDelegateEx</a> 事件回调队列 </p>
+<dl class="section since"><dt>自从</dt><dd>V5.5.10 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>如果您不指定自己的 delegateQueue 或者设置为 NULL, 默认会采用 MainQueue 作为驱动 NERtcCallback 事件回调的队列。</li>
+<li>如果您指定了自己的 delegateQueue，请不要直接 <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。">NERtcEngineDelegateEx</a> 回调函数中操作 UI，会引发线程安全问题。且需要考虑线程的生命周期，如果线程提前终止，将无法收到 <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。">NERtcEngineDelegateEx</a> 的回调。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a8fde302a4f93e0eafd5612ee8398ee4f" name="a8fde302a4f93e0eafd5612ee8398ee4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fde302a4f93e0eafd5612ee8398ee4f">&#9670;&#160;</a></span>setEngineEventDelegate:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setEngineEventDelegate: </td>
+          <td></td>
+          <td class="paramtype">(nullable id&lt; <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html">NERtcEngineDelegateEx</a> &gt;)</td>          <td class="paramname"><span class="paramname"><em>delegate</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 SDK 主回调，调用此方法后会更新之前 setupEngineWithContext 及 setEngineEventDelegate 设置的回调。 如果设置为空指针， 那么表示清空回调。 注意： 需要在初始化之后调用， destroyEngine 之后自动失效。 </p>
+
+</div>
+</div>
+<a id="a040ee549ad4a2b1d74d275defda38140" name="a040ee549ad4a2b1d74d275defda38140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040ee549ad4a2b1d74d275defda38140">&#9670;&#160;</a></span>setLocalVideoConfig:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setLocalVideoConfig: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> *)</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置视频编码属性。 <br  />
+通过此接口可以设置视频主流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数，详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zcwMTY4MzM">设置视频属性</a>。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>每个属性对应一套视频参数，例如分辨率、帧率、码率等。所有设置的参数均为理想情况下的最大值。当视频引擎因网络环境等原因无法达到设置的分辨率、帧率或码率的最大值时，会取最接近最大值的那个值。</li>
+<li>此接口为全量参数配置接口，重复调用此接口时，SDK 会刷新此前的所有参数配置，以最新的传参为准。所以每次修改配置时都需要设置所有参数，未设置的参数将取默认值。</li>
+<li>自 V4.5.0 版本起，此方法设置实时生效；此前的版本中，此方法设置成功后，下次开启本端视频时生效。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明 </dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>config </td><td><code><a class="el" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a></code> </td><td>视频编码属性配置。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置本地视频主流编码参数</span></div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> *coreEngine = [<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine];</div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> *config = [[<a class="code hl_interface" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> alloc] init];</div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#a32b18b81f7b257594a697dc1351d569b">width</a> = 640;<span class="comment">// 设置分辨率宽</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#ac5e2281804c203bb67fbcd297ac95088">height</a> = 360;<span class="comment">// 设置分辨率高</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#a6222958d2d8e0ed4943196ccc9030071">cropMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a1eea35f7dcaca009305ba23801bc9099a869482ba705005763f951c1126ed13c2">kNERtcVideoCropMode16_9</a>;      <span class="comment">// 设置裁剪格式为 16:9</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#a5f3e81b29fcc10824af50605d14404f1">frameRate</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ae5379f1436fcbbebb653c6532262a4b5afb8bea260c8645ce4ff936607ea0cc20">kNERtcVideoFrameRateFps30</a>; <span class="comment">//视频帧率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#ad29d2a2fc1d3e31ea10a824f107648ac">minFrameRate</a> = mMinFrameRate; <span class="comment">//视频最小帧率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#a0e543671326dca52177607871c054337">bitrate</a> = mBitrate; <span class="comment">//视频编码码率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#aed5d63be5df7f97fab3e6007a007786e">minBitrate</a> = mMinBitrate; <span class="comment">//视频编码最小码率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#aad45c14af27c85ee257e7c42f3546eb9">degradationPreference</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#adef025c492f8fbcc4a915cc98505a53faa292f3b03e480c76b5621aea22f905d9">kNERtcDegradationDefault</a>; ;<span class="comment">//带宽受限时的视频编码降级偏好</span></div>
+<div class="line">[coreEngine setLocalVideoConfig:config];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a1eea35f7dcaca009305ba23801bc9099a869482ba705005763f951c1126ed13c2"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a1eea35f7dcaca009305ba23801bc9099a869482ba705005763f951c1126ed13c2">kNERtcVideoCropMode16_9</a></div><div class="ttdeci">@ kNERtcVideoCropMode16_9</div><div class="ttdoc">16:9</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:966</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_adef025c492f8fbcc4a915cc98505a53faa292f3b03e480c76b5621aea22f905d9"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#adef025c492f8fbcc4a915cc98505a53faa292f3b03e480c76b5621aea22f905d9">kNERtcDegradationDefault</a></div><div class="ttdeci">@ kNERtcDegradationDefault</div><div class="ttdoc">（默认）根据场景模式调整适应性偏好。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:634</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ae5379f1436fcbbebb653c6532262a4b5afb8bea260c8645ce4ff936607ea0cc20"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ae5379f1436fcbbebb653c6532262a4b5afb8bea260c8645ce4ff936607ea0cc20">kNERtcVideoFrameRateFps30</a></div><div class="ttdeci">@ kNERtcVideoFrameRateFps30</div><div class="ttdoc">30 fps.</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:589</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_base_video_encode_configuration_html_a0e543671326dca52177607871c054337"><div class="ttname"><a href="interface_n_e_rtc_base_video_encode_configuration.html#a0e543671326dca52177607871c054337">NERtcBaseVideoEncodeConfiguration::bitrate</a></div><div class="ttdeci">NSInteger bitrate</div><div class="ttdoc">视频编码的码率，单位为 Kbps。  您可以根据场景需要，手动设置想要的码率。详细码表请参考 设置视频属性。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:468</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_base_video_encode_configuration_html_a5f3e81b29fcc10824af50605d14404f1"><div class="ttname"><a href="interface_n_e_rtc_base_video_encode_configuration.html#a5f3e81b29fcc10824af50605d14404f1">NERtcBaseVideoEncodeConfiguration::frameRate</a></div><div class="ttdeci">NERtcVideoFrameRate frameRate</div><div class="ttdoc">视频编码的帧率。详细信息请参考 NERtcVideoFrameRate。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:395</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_base_video_encode_configuration_html_ad29d2a2fc1d3e31ea10a824f107648ac"><div class="ttname"><a href="interface_n_e_rtc_base_video_encode_configuration.html#ad29d2a2fc1d3e31ea10a824f107648ac">NERtcBaseVideoEncodeConfiguration::minFrameRate</a></div><div class="ttdeci">NSInteger minFrameRate</div><div class="ttdoc">视频编码的最小帧率。默认为 0，表示使用默认最小帧率。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:405</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_base_video_encode_configuration_html_aed5d63be5df7f97fab3e6007a007786e"><div class="ttname"><a href="interface_n_e_rtc_base_video_encode_configuration.html#aed5d63be5df7f97fab3e6007a007786e">NERtcBaseVideoEncodeConfiguration::minBitrate</a></div><div class="ttdeci">NSInteger minBitrate</div><div class="ttdoc">视频编码的最小码率，单位为 Kbps。您可以根据场景需要，手动设置想要的最小码率，若设置为 0，SDK 将会自行计算处理。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:478</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_encode_configuration_html"><div class="ttname"><a href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a></div><div class="ttdoc">本地视频发送配置</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:555</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_encode_configuration_html_a32b18b81f7b257594a697dc1351d569b"><div class="ttname"><a href="interface_n_e_rtc_video_encode_configuration.html#a32b18b81f7b257594a697dc1351d569b">NERtcVideoEncodeConfiguration::width</a></div><div class="ttdeci">int width</div><div class="ttdoc">视频编码分辨率，衡量编码质量，以宽 x 高表示。与 maxProfile 属性二选一。推荐优先使用自定义宽高设置。  width 表示视频帧在横轴上的像素，即自定义宽。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:572</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_encode_configuration_html_a6222958d2d8e0ed4943196ccc9030071"><div class="ttname"><a href="interface_n_e_rtc_video_encode_configuration.html#a6222958d2d8e0ed4943196ccc9030071">NERtcVideoEncodeConfiguration::cropMode</a></div><div class="ttdeci">NERtcVideoCropMode cropMode</div><div class="ttdoc">视频画面裁剪模式，默认为 kNERtcVideoCropDefault。自定义视频输入不支持设置裁剪模式。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:600</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_encode_configuration_html_aad45c14af27c85ee257e7c42f3546eb9"><div class="ttname"><a href="interface_n_e_rtc_video_encode_configuration.html#aad45c14af27c85ee257e7c42f3546eb9">NERtcVideoEncodeConfiguration::degradationPreference</a></div><div class="ttdeci">NERtcDegradationPreference degradationPreference</div><div class="ttdoc">带宽受限时的视频编码降级偏好。详细信息请参考 NERtcDegradationPreference。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:622</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_encode_configuration_html_ac5e2281804c203bb67fbcd297ac95088"><div class="ttname"><a href="interface_n_e_rtc_video_encode_configuration.html#ac5e2281804c203bb67fbcd297ac95088">NERtcVideoEncodeConfiguration::height</a></div><div class="ttdeci">int height</div><div class="ttdoc">视频编码分辨率，衡量编码质量，以宽 x 高表示。与 maxProfile 属性二选一。推荐优先使用自定义宽高设置。  height 表示视频帧在纵轴上的像素，即自定义高。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:590</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望为视频辅流通道设置编码属性，请调用 <code><a class="el" href="#a96eeaa48e5900c00f408182b38c56b58">INERtcEngine#setLocalVideoConfig:streamType:</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（kNERtcErrInvalidParam）：参数错误，比如 config 设置为空。</li>
+<li>30004（kNERtcErrNotSupported）：不支持的操作，比如当前使用的是纯音频 SDK。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引擎未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a96eeaa48e5900c00f408182b38c56b58" name="a96eeaa48e5900c00f408182b38c56b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eeaa48e5900c00f408182b38c56b58">&#9670;&#160;</a></span>setLocalVideoConfig:streamType:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) <a class="el" href="#a040ee549ad4a2b1d74d275defda38140">setLocalVideoConfig:</a> </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> *)</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">streamType:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)</td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置视频编码属性。 <br  />
+通过此接口可以设置视频主流或辅流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数。 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>每个属性对应一套视频参数，例如分辨率、帧率、码率等。所有设置的参数均为理想情况下的最大值。当视频引擎因网络环境等原因无法达到设置的分辨率、帧率或码率的最大值时，会取最接近最大值的那个值。</li>
+<li>此接口为全量参数配置接口，重复调用此接口时，SDK 会刷新此前的所有参数配置，以最新的传参为准。所以每次修改配置时都需要设置所有参数，未设置的参数将取默认值。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明 </dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>config </td><td><code><a class="el" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a></code> </td><td>视频编码属性配置。  </td></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a></code> </td><td>视频通道类型：<ul>
+<li>
+kNERtcStreamChannelTypeMainStream：主流。</li>
+<li>
+kNERtcStreamChannelTypeSubStream：辅流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置本地视频主流编码参数</span></div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> *coreEngine = [<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine];</div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> *config = [[<a class="code hl_interface" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> alloc] init];</div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#a32b18b81f7b257594a697dc1351d569b">width</a> = 640;<span class="comment">// 设置分辨率宽</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#ac5e2281804c203bb67fbcd297ac95088">height</a> = 360;<span class="comment">// 设置分辨率高</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#a6222958d2d8e0ed4943196ccc9030071">cropMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a1eea35f7dcaca009305ba23801bc9099a869482ba705005763f951c1126ed13c2">kNERtcVideoCropMode16_9</a>;      <span class="comment">// 设置裁剪格式为 16:9</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#a5f3e81b29fcc10824af50605d14404f1">frameRate</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ae5379f1436fcbbebb653c6532262a4b5afb8bea260c8645ce4ff936607ea0cc20">kNERtcVideoFrameRateFps30</a>; <span class="comment">//视频帧率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#ad29d2a2fc1d3e31ea10a824f107648ac">minFrameRate</a> = mMinFrameRate; <span class="comment">//视频最小帧率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#a0e543671326dca52177607871c054337">bitrate</a> = mBitrate; <span class="comment">//视频编码码率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#aed5d63be5df7f97fab3e6007a007786e">minBitrate</a> = mMinBitrate; <span class="comment">//视频编码最小码率</span></div>
+<div class="line">config.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#aad45c14af27c85ee257e7c42f3546eb9">degradationPreference</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#adef025c492f8fbcc4a915cc98505a53faa292f3b03e480c76b5621aea22f905d9">kNERtcDegradationDefault</a>; ;<span class="comment">//带宽受限时的视频编码降级偏好</span></div>
+<div class="line">[coreEngine setLocalVideoConfig:config streamType:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0a693d2e4a3d4c1e8ac3debb9781c15376">kNERtcStreamChannelTypeMainStream</a>];</div>
+<div class="line"><span class="comment">//设置本地视频辅流编码参数</span></div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> *subConfig = [[<a class="code hl_interface" href="interface_n_e_rtc_video_encode_configuration.html">NERtcVideoEncodeConfiguration</a> alloc] init];</div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#a32b18b81f7b257594a697dc1351d569b">width</a> = 640;</div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#ac5e2281804c203bb67fbcd297ac95088">height</a> = 360;</div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#a6222958d2d8e0ed4943196ccc9030071">cropMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a1eea35f7dcaca009305ba23801bc9099a869482ba705005763f951c1126ed13c2">kNERtcVideoCropMode16_9</a>;      </div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#a5f3e81b29fcc10824af50605d14404f1">frameRate</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ae5379f1436fcbbebb653c6532262a4b5afb8bea260c8645ce4ff936607ea0cc20">kNERtcVideoFrameRateFps30</a>; </div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#ad29d2a2fc1d3e31ea10a824f107648ac">minFrameRate</a> = mMinFrameRate; </div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#a0e543671326dca52177607871c054337">bitrate</a> = mBitrate;</div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_base_video_encode_configuration.html#aed5d63be5df7f97fab3e6007a007786e">minBitrate</a> = mMinBitrate; </div>
+<div class="line">subConfig.<a class="code hl_property" href="interface_n_e_rtc_video_encode_configuration.html#aad45c14af27c85ee257e7c42f3546eb9">degradationPreference</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#adef025c492f8fbcc4a915cc98505a53faa292f3b03e480c76b5621aea22f905d9">kNERtcDegradationDefault</a>;</div>
+<div class="line">[coreEngine setLocalVideoConfig:config streamType:<a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0affe50e0122ed5a179254c496cfabf32c">kNERtcStreamChannelTypeSubStream</a>];</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（kNERtcErrInvalidParam）：参数错误，比如 config 设置为空。</li>
+<li>30004（kNERtcErrNotSupported）：不支持的操作，比如当前使用的是纯音频 SDK。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引擎未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2a674564c41bbd4b5556f08a9d65a558" name="a2a674564c41bbd4b5556f08a9d65a558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a674564c41bbd4b5556f08a9d65a558">&#9670;&#160;</a></span>setParameters:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setParameters: </td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置音视频通话的相关参数。 <br  />
+ 此接口提供技术预览或特别定制功能，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>parameters </td><td>NSDictionary </td><td>音视频通话的参数集合。详细信息请参考 <a class="el" href="_n_e_rtc_engine_base_8h.html">NERtcEngineBase.h</a> 中的定义。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">NSDictionary *paramDic = @{<a class="code hl_variable" href="_n_e_rtc_engine_base_8h.html#a97af2a4ef6a44054673f2d6ebf6ffa3b">kNERtcKeyVideoPreferHWEncode</a> : @(YES)};</div>
+<div class="line">...</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setParameters:paramDic];</div>
+<div class="ttc" id="a_n_e_rtc_engine_base_8h_html_a97af2a4ef6a44054673f2d6ebf6ffa3b"><div class="ttname"><a href="_n_e_rtc_engine_base_8h.html#a97af2a4ef6a44054673f2d6ebf6ffa3b">kNERtcKeyVideoPreferHWEncode</a></div><div class="ttdeci">NERTC_EXTERN_API NSString *const kNERtcKeyVideoPreferHWEncode</div><div class="ttdoc">是否优先使用硬件编码视频数据。  布尔值，默认值 YES。  请在初始化（setupEngineWithContext）之前设置该参数，否则该参数会在下次初始化之后生效。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:48</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrInvalidParam）：参数错误。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aa0b59418e236407489b3a5cb7abdd9e1" name="aa0b59418e236407489b3a5cb7abdd9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0b59418e236407489b3a5cb7abdd9e1">&#9670;&#160;</a></span>setupEngineWithContext:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setupEngineWithContext: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_engine_context.html">NERtcEngineContext</a> *)</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建 NERtc 实例。 <br  />
+通过本接口可以实现创建 NERtc 实例并初始化 NERTC SDK 服务。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请确保在调用其他 API 前先调用该方法创建并初始化 NERtc 实例。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>使用同一个 App Key 的 App 才能进入同一个房间进行通话或直播。</li>
+<li>一个 App Key 只能用于创建一个 NERtc 实例；若您需要更换 App Key，必须先调用 <code><a class="el" href="interface_n_e_rtc_engine.html#a48ce64655a2033a6e0d25f7308a7f0cc">NERtcEngine#destroyEngine</a></code> 方法销毁当前实例，再调用本方法重新创建实例。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>context </td><td><code><a class="el" href="interface_n_e_rtc_engine_context.html">NERtcEngineContext</a></code> </td><td>传入的 RTC engine context 对象。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_interface" href="interface_n_e_rtc_engine_context.html">NERtcEngineContext</a> *context = [[<a class="code hl_interface" href="interface_n_e_rtc_engine_context.html">NERtcEngineContext</a> alloc] init];</div>
+<div class="line">context.<a class="code hl_property" href="interface_n_e_rtc_engine_context.html#aa00baf1fea74d044b7fd96f2e93546f6">appKey</a> = appkey; <span class="comment">//appkey</span></div>
+<div class="line">context.<a class="code hl_property" href="interface_n_e_rtc_engine_context.html#a830e45440666ff9dde84570038269671">engineDelegate</a> = delegate; <span class="comment">//delegate 处理对象        </span></div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_log_setting.html">NERtcLogSetting</a> *logSetting = [[<a class="code hl_interface" href="interface_n_e_rtc_log_setting.html">NERtcLogSetting</a> alloc] init];</div>
+<div class="line">logSetting.<a class="code hl_property" href="interface_n_e_rtc_log_setting.html#a54eaaa552e4219ce6d1652f02bd9fa9a">logDir</a> = logDir;<span class="comment">//日志路径</span></div>
+<div class="line">logSetting.<a class="code hl_property" href="interface_n_e_rtc_log_setting.html#a6fa862a3e189b6cbe186c8f551340752">logLevel</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#a3643aadb14592424e247d088c2eef6a0a842f0f62a7c383c4679c9e5ec279bd5a">kNERtcLogLevelWarning</a>; <span class="comment">//debug 级别可选择 kNERtcLogLevelInfo 或者更高，有利于调试中的问题定位;release 版本建议用 warning 级别</span></div>
+<div class="line">context.<a class="code hl_property" href="interface_n_e_rtc_engine_context.html#a761af3f0673af5f95d24770ea59ed328">logSetting</a> = logSetting;</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setupEngineWithContext:context];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a3643aadb14592424e247d088c2eef6a0a842f0f62a7c383c4679c9e5ec279bd5a"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a3643aadb14592424e247d088c2eef6a0a842f0f62a7c383c4679c9e5ec279bd5a">kNERtcLogLevelWarning</a></div><div class="ttdeci">@ kNERtcLogLevelWarning</div><div class="ttdoc">Warning 级别日志信息。默认级别。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:4206</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_engine_context_html"><div class="ttname"><a href="interface_n_e_rtc_engine_context.html">NERtcEngineContext</a></div><div class="ttdoc">初始化设置 NERtcEngine</div><div class="ttdef"><b>定义</b> NERtcEngineContext.h:22</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_engine_context_html_a761af3f0673af5f95d24770ea59ed328"><div class="ttname"><a href="interface_n_e_rtc_engine_context.html#a761af3f0673af5f95d24770ea59ed328">NERtcEngineContext::logSetting</a></div><div class="ttdeci">NERtcLogSetting * logSetting</div><div class="ttdoc">日志配置，详细信息请参考 NERtcLogSetting。</div><div class="ttdef"><b>定义</b> NERtcEngineContext.h:41</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_engine_context_html_a830e45440666ff9dde84570038269671"><div class="ttname"><a href="interface_n_e_rtc_engine_context.html#a830e45440666ff9dde84570038269671">NERtcEngineContext::engineDelegate</a></div><div class="ttdeci">id&lt; NERtcEngineDelegateEx &gt; engineDelegate</div><div class="ttdoc">NERtcEngine 的回调接口，由用户提供。</div><div class="ttdef"><b>定义</b> NERtcEngineContext.h:51</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_engine_context_html_aa00baf1fea74d044b7fd96f2e93546f6"><div class="ttname"><a href="interface_n_e_rtc_engine_context.html#aa00baf1fea74d044b7fd96f2e93546f6">NERtcEngineContext::appKey</a></div><div class="ttdeci">NSString * appKey</div><div class="ttdoc">应用的 App Key。在网易云信控制台创建应用后，可以查看对应的 App Key。</div><div class="ttdef"><b>定义</b> NERtcEngineContext.h:31</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_log_setting_html"><div class="ttname"><a href="interface_n_e_rtc_log_setting.html">NERtcLogSetting</a></div><div class="ttdoc">日志相关设置。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2590</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_log_setting_html_a54eaaa552e4219ce6d1652f02bd9fa9a"><div class="ttname"><a href="interface_n_e_rtc_log_setting.html#a54eaaa552e4219ce6d1652f02bd9fa9a">NERtcLogSetting::logDir</a></div><div class="ttdeci">NSString * logDir</div><div class="ttdoc">日志目录的完整路径，采用 UTF-8 编码。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2599</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_log_setting_html_a6fa862a3e189b6cbe186c8f551340752"><div class="ttname"><a href="interface_n_e_rtc_log_setting.html#a6fa862a3e189b6cbe186c8f551340752">NERtcLogSetting::logLevel</a></div><div class="ttdeci">NERtcLogLevel logLevel</div><div class="ttdoc">打印的日志级别。默认为 info 级别。详细信息请参考 NERtcLogLevel。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2609</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您不再使用 NERtc 实例，需要调用 <code><a class="el" href="interface_n_e_rtc_engine.html#a48ce64655a2033a6e0d25f7308a7f0cc">NERtcEngine#destroyEngine</a></code> 方法进行销毁。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（kNERtcErrInvalidParam）：参数错误。</li>
+<li>30005（kNERtcErrInvalidState)：状态错误，比如正在重连。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a461d8173cd13f4370f7eff01bb48d9dc" name="a461d8173cd13f4370f7eff01bb48d9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461d8173cd13f4370f7eff01bb48d9dc">&#9670;&#160;</a></span>setupLocalVideoCanvas:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setupLocalVideoCanvas: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a> *_Nullable)</td>          <td class="paramname"><span class="paramname"><em>canvas</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置本地用户视图。 <br  />
+通过本接口可以实现绑定本地用户和显示视图，并设置本地用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>在实际业务中，通常建议在初始化后即调用该方法进行本地视图设置，然后再加入房间或开启预览。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>render </td><td><code><a class="el" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a></code> </td><td>本地用户视频的画布。设置为 nil 表示取消并释放已设置的画布。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">UIView *localUserView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];</div>
+<div class="line"><a class="code hl_interface" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a> *canvas = [[<a class="code hl_interface" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a> alloc] init];</div>
+<div class="line">canvas.<a class="code hl_property" href="interface_n_e_rtc_video_canvas.html#a9d8076af06d5cfbeee8026ecb741e68f">container</a> = localUserView;</div>
+<div class="line">canvas.<a class="code hl_property" href="interface_n_e_rtc_video_canvas.html#a8ed45a77111ec647a7fc8af179a95f04">renderMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#aed93801676e293da4cc95b382a6d05d1aea2cbecbc0be393b626685892a9126c5">kNERtcVideoRenderScaleFit</a>;</div>
+<div class="line">canvas.<a class="code hl_property" href="interface_n_e_rtc_video_canvas.html#aef9343efe9f21931144b01c3286d6d86">mirrorMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ace09d403332c4b627de8997354b3cd7cab0da37b0e128b5de07c9a9fdeb0469dd">kNERtcVideoMirrorModeAuto</a>;</div>
+<div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setupLocalVideoCanvas:canvas];</div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ace09d403332c4b627de8997354b3cd7cab0da37b0e128b5de07c9a9fdeb0469dd"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ace09d403332c4b627de8997354b3cd7cab0da37b0e128b5de07c9a9fdeb0469dd">kNERtcVideoMirrorModeAuto</a></div><div class="ttdeci">@ kNERtcVideoMirrorModeAuto</div><div class="ttdoc">（默认）由 SDK 决定镜像模式</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:871</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_aed93801676e293da4cc95b382a6d05d1aea2cbecbc0be393b626685892a9126c5"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#aed93801676e293da4cc95b382a6d05d1aea2cbecbc0be393b626685892a9126c5">kNERtcVideoRenderScaleFit</a></div><div class="ttdeci">@ kNERtcVideoRenderScaleFit</div><div class="ttdoc">适应视频，视频尺寸等比缩放。优先保证视频内容全部显示。若视频尺寸与显示视窗尺寸不一致，视窗未被填满的区域填充背景色。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:803</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_canvas_html"><div class="ttname"><a href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a></div><div class="ttdoc">视频画布设置。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:299</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_canvas_html_a8ed45a77111ec647a7fc8af179a95f04"><div class="ttname"><a href="interface_n_e_rtc_video_canvas.html#a8ed45a77111ec647a7fc8af179a95f04">NERtcVideoCanvas::renderMode</a></div><div class="ttdeci">NERtcVideoRenderScaleMode renderMode</div><div class="ttdoc">视频渲染模式。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:328</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_canvas_html_a9d8076af06d5cfbeee8026ecb741e68f"><div class="ttname"><a href="interface_n_e_rtc_video_canvas.html#a9d8076af06d5cfbeee8026ecb741e68f">NERtcVideoCanvas::container</a></div><div class="ttdeci">VIEW_CLASS * container</div><div class="ttdoc">视频窗口容器（SDK 内部渲染）。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:318</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_canvas_html_aef9343efe9f21931144b01c3286d6d86"><div class="ttname"><a href="interface_n_e_rtc_video_canvas.html#aef9343efe9f21931144b01c3286d6d86">NERtcVideoCanvas::mirrorMode</a></div><div class="ttdeci">NERtcVideoMirrorMode mirrorMode</div><div class="ttdoc">视频镜像模式。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:342</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望在通话中更新本地用户视图的渲染或镜像模式，请调用 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa18b6a92ccca204b2a6caa87b412d9bc">INERtcEngineEx#setLocalRenderScaleMode:</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化。</li>
+<li>30004（kNERtcErrNotSupported）：不支持的操作，比如纯音频 SDK 不支持该功能。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引起尚未成功启动。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ae56db50d6e25fac43db491fbfcf9a03a" name="ae56db50d6e25fac43db491fbfcf9a03a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56db50d6e25fac43db491fbfcf9a03a">&#9670;&#160;</a></span>setupRemoteVideoCanvas:forUserID:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) setupRemoteVideoCanvas: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a> *_Nullable)</td>          <td class="paramname"><span class="paramname"><em>canvas</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">forUserID:</td>
+          <td></td>
+          <td class="paramtype">(uint64_t)</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置远端用户视图。 <br  />
+通过本接口可以实现绑定远端用户和显示视图，并设置远端用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机 </dt><dd><br  />
+ 请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>您可以通过设置 canvas 参数为空（传 nil）以解除远端用户视图绑定；退出房间后，SDK 也会主动清除远端用户和视图的绑定关系。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>canvas </td><td><code><a class="el" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a></code>  </td><td>远端用户视频的画布。  </td></tr>
+<tr>
+<td>userID </td><td>uint64_t </td><td>远端用户的 ID。可以在 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a7e47ea04b33f9dc7746ede6a0d53a6eb">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:</a></code> 回调中获取。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">- (void)onNERtcEngineUserDidJoinWithUserID:(uint64_t)userID userName:(NSString *)userName {</div>
+<div class="line">    UIView *remoteUserView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];</div>
+<div class="line">    <a class="code hl_interface" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a> *canvas = [[<a class="code hl_interface" href="interface_n_e_rtc_video_canvas.html">NERtcVideoCanvas</a> alloc] init];</div>
+<div class="line">    canvas.<a class="code hl_property" href="interface_n_e_rtc_video_canvas.html#a9d8076af06d5cfbeee8026ecb741e68f">container</a> = remoteUserView;</div>
+<div class="line">    canvas.<a class="code hl_property" href="interface_n_e_rtc_video_canvas.html#a8ed45a77111ec647a7fc8af179a95f04">renderMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#aed93801676e293da4cc95b382a6d05d1aea2cbecbc0be393b626685892a9126c5">kNERtcVideoRenderScaleFit</a>;</div>
+<div class="line">    canvas.<a class="code hl_property" href="interface_n_e_rtc_video_canvas.html#aef9343efe9f21931144b01c3286d6d86">mirrorMode</a> = <a class="code hl_enumvalue" href="_n_e_rtc_engine_enum_8h.html#ace09d403332c4b627de8997354b3cd7cab0da37b0e128b5de07c9a9fdeb0469dd">kNERtcVideoMirrorModeAuto</a>;</div>
+<div class="line">    [[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] setupRemoteVideoCanvas:canvas forUserID:userID];</div>
+<div class="line">}</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望在通话中更新远端用户视图的渲染模式，请调用 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a62008220788ca800b93437f8def39085">INERtcEngineEx#setRemoteRenderScaleMode:forUserID:</a></code>方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（kNERtcErrFatal）：引擎尚未初始化。</li>
+<li>30004（kNERtcErrNotSupported）：纯音频 SDK 不支持该功能。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引擎尚未成功启动。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a34309b13dc0107b607cf6e93c8b7f6b9" name="a34309b13dc0107b607cf6e93c8b7f6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34309b13dc0107b607cf6e93c8b7f6b9">&#9670;&#160;</a></span>switchCamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) switchCamera </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>切换前置或后置摄像头。 </p>
+<dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在调用 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a39334f2aeb02faba230d81afcda1e807">INERtcEngineEx#startPreview:</a></code> 或 <code><a class="el" href="#a4876b67191a8e51488fc0d0ef14fc724">INERtcEngine#joinChannelWithToken:channelName:myUid:channelOptions:completion:</a></code> 方法且开启摄像头之后调用此接口。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK。</li>
+<li>该方法需要在相机启动后才可调用。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">[[<a class="code hl_interface" href="interface_n_e_rtc_engine.html">NERtcEngine</a> sharedEngine] <a class="code hl_function" href="#a34309b13dc0107b607cf6e93c8b7f6b9">switchCamera</a>];</div>
+<div class="ttc" id="aprotocol_i_n_e_rtc_engine-p_html_a34309b13dc0107b607cf6e93c8b7f6b9"><div class="ttname"><a href="#a34309b13dc0107b607cf6e93c8b7f6b9">-[INERtcEngine-p switchCamera]</a></div><div class="ttdeci">int switchCamera()</div><div class="ttdoc">切换前置或后置摄像头。</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）：方法调用成功。</li>
+</ul>
+</dd></dl>
+<ul>
+<li>其他：方法调用失败。<ul>
+<li>30004（kNERtcErrNotSupported）：不支持的操作，比如纯音频 SDK 不支持该功能。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引擎尚未初始化或者未开启摄像头。  </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ae8f6b81e234fe70c715eb35c7665bbcd" name="ae8f6b81e234fe70c715eb35c7665bbcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f6b81e234fe70c715eb35c7665bbcd">&#9670;&#160;</a></span>switchChannelWithToken:channelName:channelOptions:completion:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) switchChannelWithToken: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">channelName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">channelOptions:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="interface_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> *)</td>          <td class="paramname"><span class="paramname"><em>channelOptions</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">completion:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(NSError *_Nullable error, uint64_t channelId, uint64_t elapesd, uint64_t uid, <a class="el" href="interface_n_e_rtc_join_channel_extra_info.html">NERtcJoinChannelExtraInfo</a> *_Nullable info))</td>          <td class="paramname"><span class="paramname"><em>completion</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>快速切换音视频房间。 <br  />
+房间场景为直播场景时，房间中角色为观众的成员可以调用该方法从当前房间快速切换至另一个房间。 <br  />
+成功调用该方切换房间后，本端会收到离开房间的回调 onNERtcEngineDidLeaveChannelWithResult；远端用户会收到 onNERtcEngineUserDidLeaveWithUserID 和 onNERtcEngineUserDidJoinWithUserID 的回调。 </p>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>房间成员成功切换房间后，默认订阅房间内所有其他成员的音频流，因此产生用量并影响计费。如果想取消订阅，可以通过调用相应的 subscribeRemoteAudio 方法实现。</li>
+<li>该方法仅适用于直播场景中，角色为观众的音视频房间成员。即已通过接口 setchannelprofile 设置房间场景为直播，通过 setClientRole 设置房间成员的角色为观众。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>在服务器端生成的用于鉴权的安全认证签名（Token）。可设置为：<ul>
+<li>null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在网易云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>已获取的 NERTC Token。安全模式下必须设置为获取到的 Token。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">channelName</td><td>期望切换到的目标房间名称 </td></tr>
+    <tr><td class="paramname">channelOptions</td><td>加入房间时设置一些特定的房间参数 </td></tr>
+    <tr><td class="paramname">completion</td><td>操作完成的 block 回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0(<code><a class="el" href="">NERtcEngineErrorCode.kNERtcNoError</a></code>)：方法调用成功。</li>
+<li>30001(<code><a class="el" href="">NERtcEngineErrorCode.kNERtcErrFatal</a></code>)：通用错误。</li>
+<li>30003(<code><a class="el" href="">NERtcEngineErrorCode.kNERtcErrInvalidParam</a></code>)：参数错误。</li>
+<li>30109(<code><a class="el" href="">NERtcEngineErrorCode.kNERtcErrSwitchChannelInvalidState</a></code>): 切换房间状态无效。</li>
+<li>403(<code><a class="el" href="">NERtcEngineErrorCode.KNERtcErrChannelReservePermissionDenied</a></code>): 用户角色不是观众。</li>
+<li>30100(<code><a class="el" href="">NERtcEngineErrorCode.kNERtcErrChannelAlreadyJoined</a></code>): 房间名无效，已在此房间中。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ac9819e1ecad009c45f933f77c14db75f" name="ac9819e1ecad009c45f933f77c14db75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9819e1ecad009c45f933f77c14db75f">&#9670;&#160;</a></span>switchChannelWithToken:channelName:completion:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) switchChannelWithToken: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">channelName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">completion:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a>)</td>          <td class="paramname"><span class="paramname"><em>completion</em></span>&#160;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>快速切换音视频房间。 通过此接口可以实现当房间场景为直播场景时，用户从当前房间快速切换至另一个房间。 </p>
+<dl class="section user"><dt>使用前提</dt><dd>请先通过 <code><a class="el" href="#aeb1ddb3e3ea5c8ddd6c2a9052a596410">INERtcEngine#setChannelProfile:</a></code> 接口设置房间模式为直播模式。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法仅可在加入房间后调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>房间成员成功切换房间后，将会保持切换前的音视频的状态。</li>
+<li>v5.5.10 及之后版本，主播和观众都支持调用本接口快速切换至另一个房间。</li>
+<li>v5.5.10 之前版本，只支持观众调用本接口快速切换至另一个房间。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>token </td><td>NSString * </td><td>在服务器端生成的用于鉴权的安全认证签名（Token），可设置为：<ul>
+<li>
+已获取的 NERTC Token。安全模式下必须设置为获取到的 Token，默认 Token 有效期为 10min，也可以定期通过应用服务器向云信服务器申请 Token 或者申请长期且可复用的 Token。</li>
+<li>
+null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在网易云信控制台中将鉴权方式恢复为默认的安全模式。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>channelName </td><td>NSString * </td><td>期望切换到的目标房间名称。  </td></tr>
+<tr>
+<td>completion </td><td><code><a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a></code> </td><td>操作完成的 block 回调。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">[self switchChannelWithToken:token channelName:channelName channelOptions:channelOption completion:^(NSError * _Nullable error, uint64_t channelId, uint64_t elapesd, uint64_t uid, <a class="code hl_interface" href="interface_n_e_rtc_join_channel_extra_info.html">NERtcJoinChannelExtraInfo</a> * _Nullable info) {</div>
+<div class="line">}];</div>
+<div class="ttc" id="ainterface_n_e_rtc_join_channel_extra_info_html"><div class="ttname"><a href="interface_n_e_rtc_join_channel_extra_info.html">NERtcJoinChannelExtraInfo</a></div><div class="ttdoc">joinChannel 回调时的一些可选信息</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2835</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用此接口切换房间后：<ul>
+<li>本端用户会先收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a1ba9968da680d14f496b2b16a78c6ad8">NERtcEngineDelegate#onNERtcEngineDidLeaveChannelWithResult:</a></code> 回调，其中 result 参数为 <code><a class="el" href="">NERtcEngineErrorCode.NERtcError#kNERtcErrChannelLeaveBySwitchAction</a></code>；再收到成功加入新房间的回调 <code><a class="el" href="_i_n_e_rtc_engine_8h.html#aa42cdb0d053a6ae6dacd6c00d5417b70">NERtcJoinChannelCompletion</a></code>。</li>
+<li>远端用户会收到 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a7c893749e3260953119d084cbea80cb6">NERtcEngineDelegate#onNERtcEngineUserDidLeaveWithUserID:reason:leaveExtraInfo:</a></code> 和 <code><a class="el" href="protocol_n_e_rtc_engine_delegate-p.html#a0c0c4d9ea21cf94bd7219de1077b6136">NERtcEngineDelegate#onNERtcEngineUserDidJoinWithUserID:userName:joinExtraInfo:</a></code> 的回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（kNERtcNoError）： 方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>403（kNERtcErrChannelReservePermissionDenied）：没有权限，比如主播无法切换房间。</li>
+<li>30004（kNERtcErrNotSupported）：不支持的操作，比如当前是 1 对 1 模式。</li>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引擎尚未初始化。</li>
+<li>30100（kNERtcErrChannelAlreadyJoined）：重复加入房间。</li>
+<li>30103（kNERtcErrRequestJoinChannelFail）：加入房间操作失败。</li>
+<li>30109（kNERtcErrSwitchChannelInvalidState）：尚未加入房间。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a id="a44c13fabaa16fc7ec6f7c39fb86ba975" name="a44c13fabaa16fc7ec6f7c39fb86ba975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c13fabaa16fc7ec6f7c39fb86ba975">&#9670;&#160;</a></span>engineDelegate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id&lt;<a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html">NERtcEngineDelegateEx</a>&gt;) engineDelegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">weak</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_i_n_e_rtc_engine_8h_source.html">INERtcEngine.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

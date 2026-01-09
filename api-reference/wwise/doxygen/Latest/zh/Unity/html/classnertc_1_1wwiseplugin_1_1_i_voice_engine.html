@@ -1,0 +1,887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IVoiceEngine类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">IVoiceEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IVoiceEngine类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 nertc.wwiseplugin.IVoiceEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1wwiseplugin_1_1_i_voice_engine.png" usemap="#nertc.wwiseplugin.IVoiceEngine_map" alt=""/>
+  <map id="nertc.wwiseplugin.IVoiceEngine_map" name="nertc.wwiseplugin.IVoiceEngine_map">
+<area href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html" alt="nertc.wwiseplugin.IVoiceEngineNative" shape="rect" coords="0,0,228,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2442189ac1509009f3c2df74fd422546" id="r_a2442189ac1509009f3c2df74fd422546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2442189ac1509009f3c2df74fd422546">SetEvents</a> (<a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">IVoiceEngineCallback</a> callbacks)</td></tr>
+<tr class="separator:a2442189ac1509009f3c2df74fd422546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a939664addbb38bd875d032875b0f5f" id="r_a1a939664addbb38bd875d032875b0f5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a939664addbb38bd875d032875b0f5f">SetAuth</a> (ulong uid, string token)</td></tr>
+<tr class="separator:a1a939664addbb38bd875d032875b0f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48eba07aa6db3d343de3c4dad358fc5" id="r_ab48eba07aa6db3d343de3c4dad358fc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab48eba07aa6db3d343de3c4dad358fc5">SetMaxMessageLength</a> (int time)</td></tr>
+<tr class="separator:ab48eba07aa6db3d343de3c4dad358fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1847ebb1d41cd95044d36efe03673c70" id="r_a1847ebb1d41cd95044d36efe03673c70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1847ebb1d41cd95044d36efe03673c70">StartRecording</a> (string filePath)</td></tr>
+<tr class="separator:a1847ebb1d41cd95044d36efe03673c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e2793a2d871ff806a4164528cc31b0" id="r_af3e2793a2d871ff806a4164528cc31b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3e2793a2d871ff806a4164528cc31b0">StopRecording</a> ()</td></tr>
+<tr class="separator:af3e2793a2d871ff806a4164528cc31b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2061de24034533c3418ea019eb7ec02" id="r_ab2061de24034533c3418ea019eb7ec02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2061de24034533c3418ea019eb7ec02">PauseRecording</a> ()</td></tr>
+<tr class="separator:ab2061de24034533c3418ea019eb7ec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f664004076bf1218eb6ba1ba24c44f" id="r_a92f664004076bf1218eb6ba1ba24c44f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92f664004076bf1218eb6ba1ba24c44f">ResumeRecording</a> ()</td></tr>
+<tr class="separator:a92f664004076bf1218eb6ba1ba24c44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269944a6e765e11682da155f40fcbcd3" id="r_a269944a6e765e11682da155f40fcbcd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269944a6e765e11682da155f40fcbcd3">CancelRecording</a> ()</td></tr>
+<tr class="separator:a269944a6e765e11682da155f40fcbcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5211f5fb69dfa23650c982382993373" id="r_aa5211f5fb69dfa23650c982382993373"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5211f5fb69dfa23650c982382993373">UploadRecordedFile</a> (string filePath)</td></tr>
+<tr class="separator:aa5211f5fb69dfa23650c982382993373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342d14a5fa3516c7da827d42faf391f8" id="r_a342d14a5fa3516c7da827d42faf391f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a342d14a5fa3516c7da827d42faf391f8">DownloadRecordedFile</a> (string fileID, string filePath)</td></tr>
+<tr class="separator:a342d14a5fa3516c7da827d42faf391f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb66692a7dd4d6c27309ddcb6575f8ae" id="r_acb66692a7dd4d6c27309ddcb6575f8ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb66692a7dd4d6c27309ddcb6575f8ae">PlayRecordedFile</a> (string filePath)</td></tr>
+<tr class="separator:acb66692a7dd4d6c27309ddcb6575f8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624e12826b1d384ad9f2b79826f941df" id="r_a624e12826b1d384ad9f2b79826f941df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a624e12826b1d384ad9f2b79826f941df">StopPlayFile</a> ()</td></tr>
+<tr class="separator:a624e12826b1d384ad9f2b79826f941df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc2c88687c6d1aae2846cc001afc40c" id="r_addc2c88687c6d1aae2846cc001afc40c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc2c88687c6d1aae2846cc001afc40c">SpeechToText</a> (string fileID)</td></tr>
+<tr class="separator:addc2c88687c6d1aae2846cc001afc40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7201eb2300e0cb228b4d657f49664b67" id="r_a7201eb2300e0cb228b4d657f49664b67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7201eb2300e0cb228b4d657f49664b67">GetFileSize</a> (string filePath)</td></tr>
+<tr class="separator:a7201eb2300e0cb228b4d657f49664b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0b54a41d504ac0de6fd69dc2493846" id="r_aae0b54a41d504ac0de6fd69dc2493846"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae0b54a41d504ac0de6fd69dc2493846">GetVoiceFileDuration</a> (string filePath)</td></tr>
+<tr class="separator:aae0b54a41d504ac0de6fd69dc2493846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7ab4b5db36436cc0d6c8c2da0ae460" id="r_a7f7ab4b5db36436cc0d6c8c2da0ae460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f7ab4b5db36436cc0d6c8c2da0ae460">SetMicVolume</a> (int volume)</td></tr>
+<tr class="separator:a7f7ab4b5db36436cc0d6c8c2da0ae460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d23d95bcceae57e50c59066ff14fbb" id="r_a46d23d95bcceae57e50c59066ff14fbb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46d23d95bcceae57e50c59066ff14fbb">GetMicVolume</a> ()</td></tr>
+<tr class="separator:a46d23d95bcceae57e50c59066ff14fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45848c9aceb68319b6c98e01cf171f7" id="r_aa45848c9aceb68319b6c98e01cf171f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa45848c9aceb68319b6c98e01cf171f7">SetSpeakerVolume</a> (int volume)</td></tr>
+<tr class="separator:aa45848c9aceb68319b6c98e01cf171f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad082c5cd78d383fe5c8d2b343486c5fa" id="r_ad082c5cd78d383fe5c8d2b343486c5fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad082c5cd78d383fe5c8d2b343486c5fa">GetSpeakerVolume</a> ()</td></tr>
+<tr class="separator:ad082c5cd78d383fe5c8d2b343486c5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html">nertc.wwiseplugin.IVoiceEngineNative</a></td></tr>
+<tr class="memitem:a175ab83b99074771d41d47eb882cc21d inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a175ab83b99074771d41d47eb882cc21d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a175ab83b99074771d41d47eb882cc21d">onAuth</a> (int error_code)</td></tr>
+<tr class="separator:a175ab83b99074771d41d47eb882cc21d inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0faa568d64523949f84ce651e0801d06 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a0faa568d64523949f84ce651e0801d06"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a0faa568d64523949f84ce651e0801d06">onRecordCompleted</a> (int error_code, string filePath)</td></tr>
+<tr class="separator:a0faa568d64523949f84ce651e0801d06 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02ee3ddae2e64dc534202ea9a25f5f6 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_ab02ee3ddae2e64dc534202ea9a25f5f6"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ab02ee3ddae2e64dc534202ea9a25f5f6">onPlayCompleted</a> (int error_code, string filePath)</td></tr>
+<tr class="separator:ab02ee3ddae2e64dc534202ea9a25f5f6 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5718074c261db7c8e4846de05b2333cb inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a5718074c261db7c8e4846de05b2333cb"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a5718074c261db7c8e4846de05b2333cb">onUploadCompleted</a> (int error_code, string filePath, string fileID)</td></tr>
+<tr class="separator:a5718074c261db7c8e4846de05b2333cb inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e051a2b7ebabfcd114e570db4f5a66 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_af7e051a2b7ebabfcd114e570db4f5a66"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#af7e051a2b7ebabfcd114e570db4f5a66">onDownloadCompleted</a> (int error_code, string filePath, string fileID, int auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:af7e051a2b7ebabfcd114e570db4f5a66 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab133d30801f8a8c8dcc92c5364dc1776 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_ab133d30801f8a8c8dcc92c5364dc1776"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ab133d30801f8a8c8dcc92c5364dc1776">onSpeechToTextCompleted</a> (int error_code, string fileID, string text, int auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:ab133d30801f8a8c8dcc92c5364dc1776 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8775e34d22675d9e9f18661fc2e70688 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a8775e34d22675d9e9f18661fc2e70688"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a8775e34d22675d9e9f18661fc2e70688">onRecordingVolume</a> (int volume)</td></tr>
+<tr class="separator:a8775e34d22675d9e9f18661fc2e70688 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50ba70d0836cf6d9e934855abd06268 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_ae50ba70d0836cf6d9e934855abd06268"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ae50ba70d0836cf6d9e934855abd06268">onPlayingVolume</a> (int volume)</td></tr>
+<tr class="separator:ae50ba70d0836cf6d9e934855abd06268 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8118bad34bde9b520b125db11500f87 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_aa8118bad34bde9b520b125db11500f87"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aa8118bad34bde9b520b125db11500f87">setEvents</a> (ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_i_voice_engine_native_1_1_native_voice_engine_event.html">NativeVoiceEngineEvent</a> events)</td></tr>
+<tr class="separator:aa8118bad34bde9b520b125db11500f87 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ca1fdfd30aacf1e982e68baaa8a690 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a55ca1fdfd30aacf1e982e68baaa8a690"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a55ca1fdfd30aacf1e982e68baaa8a690">setAuth</a> (ulong userID, string token, int size)</td></tr>
+<tr class="separator:a55ca1fdfd30aacf1e982e68baaa8a690 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17239fc9be7c973a304dd92e318bb089 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a17239fc9be7c973a304dd92e318bb089"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a17239fc9be7c973a304dd92e318bb089">setMaxMessageLength</a> (int timestamp)</td></tr>
+<tr class="separator:a17239fc9be7c973a304dd92e318bb089 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53af7f6c2286dd495ad4f65985e1db6f inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a53af7f6c2286dd495ad4f65985e1db6f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a53af7f6c2286dd495ad4f65985e1db6f">startRecording</a> (string filePath)</td></tr>
+<tr class="separator:a53af7f6c2286dd495ad4f65985e1db6f inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae239b5f28ab6a844308982d5254d8cd2 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_ae239b5f28ab6a844308982d5254d8cd2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ae239b5f28ab6a844308982d5254d8cd2">stopRecording</a> ()</td></tr>
+<tr class="separator:ae239b5f28ab6a844308982d5254d8cd2 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad593f6f8b8581d986d7663aea2a43d30 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_ad593f6f8b8581d986d7663aea2a43d30"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ad593f6f8b8581d986d7663aea2a43d30">pauseRecording</a> ()</td></tr>
+<tr class="separator:ad593f6f8b8581d986d7663aea2a43d30 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8254208b8f21b0d55cec15d6b50ddc54 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a8254208b8f21b0d55cec15d6b50ddc54"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a8254208b8f21b0d55cec15d6b50ddc54">resumeRecording</a> ()</td></tr>
+<tr class="separator:a8254208b8f21b0d55cec15d6b50ddc54 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33234a25398dea84eb6450af20cf45d inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_ac33234a25398dea84eb6450af20cf45d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#ac33234a25398dea84eb6450af20cf45d">cancelRecording</a> ()</td></tr>
+<tr class="separator:ac33234a25398dea84eb6450af20cf45d inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81863f6e46c52341f49864fb51207cfe inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a81863f6e46c52341f49864fb51207cfe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a81863f6e46c52341f49864fb51207cfe">uploadRecordedFile</a> (string filePath)</td></tr>
+<tr class="separator:a81863f6e46c52341f49864fb51207cfe inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356cf322425b2ffc577ea29a4d2639ef inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a356cf322425b2ffc577ea29a4d2639ef"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a356cf322425b2ffc577ea29a4d2639ef">downloadRecordedFile</a> (string fileID, string filePath)</td></tr>
+<tr class="separator:a356cf322425b2ffc577ea29a4d2639ef inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed784a9c114331813f875220b1480a7 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a2ed784a9c114331813f875220b1480a7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a2ed784a9c114331813f875220b1480a7">playRecordedFile</a> (string filePath)</td></tr>
+<tr class="separator:a2ed784a9c114331813f875220b1480a7 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1183c0c361b3eac15c08ab901d4f993c inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a1183c0c361b3eac15c08ab901d4f993c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a1183c0c361b3eac15c08ab901d4f993c">stopPlayFile</a> ()</td></tr>
+<tr class="separator:a1183c0c361b3eac15c08ab901d4f993c inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729b70de9a1839859c7669d335eb6c11 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a729b70de9a1839859c7669d335eb6c11"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a729b70de9a1839859c7669d335eb6c11">speechToText</a> (string fileID)</td></tr>
+<tr class="separator:a729b70de9a1839859c7669d335eb6c11 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588738d9bb899a5e799ef09a264085bc inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a588738d9bb899a5e799ef09a264085bc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a588738d9bb899a5e799ef09a264085bc">getFileSize</a> (string filePath)</td></tr>
+<tr class="separator:a588738d9bb899a5e799ef09a264085bc inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490e19ad4fcf95ef38dd777b48d99dd5 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a490e19ad4fcf95ef38dd777b48d99dd5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a490e19ad4fcf95ef38dd777b48d99dd5">getVoiceFileDuration</a> (string filePath)</td></tr>
+<tr class="separator:a490e19ad4fcf95ef38dd777b48d99dd5 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5060e9b5f0bb8589c51df1fd10a0e6c inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_aa5060e9b5f0bb8589c51df1fd10a0e6c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aa5060e9b5f0bb8589c51df1fd10a0e6c">setMicVolume</a> (int volume)</td></tr>
+<tr class="separator:aa5060e9b5f0bb8589c51df1fd10a0e6c inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4fdd7bf43658aa14e450ee7b742233f inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_aa4fdd7bf43658aa14e450ee7b742233f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aa4fdd7bf43658aa14e450ee7b742233f">getMicVolume</a> ()</td></tr>
+<tr class="separator:aa4fdd7bf43658aa14e450ee7b742233f inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadc57c74962aab1f4992c9b46ac9932 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_aaadc57c74962aab1f4992c9b46ac9932"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#aaadc57c74962aab1f4992c9b46ac9932">setSpeakerVolume</a> (int volume)</td></tr>
+<tr class="separator:aaadc57c74962aab1f4992c9b46ac9932 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5539b00ab356094ede307c9f16fc83f8 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native" id="r_a5539b00ab356094ede307c9f16fc83f8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html#a5539b00ab356094ede307c9f16fc83f8">getSpeakerVolume</a> ()</td></tr>
+<tr class="separator:a5539b00ab356094ede307c9f16fc83f8 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_voice_engine_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a269944a6e765e11682da155f40fcbcd3" name="a269944a6e765e11682da155f40fcbcd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269944a6e765e11682da155f40fcbcd3">&#9670;&#160;</a></span>CancelRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.CancelRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>取消录制语音消息。 <br  />
+取消录制语音消息，录制完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aa5957435587496daff330f9ea2a7466d">OnRecordCompleted</a> 回调通知录制结果。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a342d14a5fa3516c7da827d42faf391f8" name="a342d14a5fa3516c7da827d42faf391f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342d14a5fa3516c7da827d42faf391f8">&#9670;&#160;</a></span>DownloadRecordedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.DownloadRecordedFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>下载录制的语音消息。 <br  />
+下载录制的语音消息，下载完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a59d7221bac5c93eafab8cc33b77311fe">OnDownloadCompleted</a> 回调通知下载结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileID</td><td>语音消息文件 ID。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>下载文件路径。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7201eb2300e0cb228b4d657f49664b67" name="a7201eb2300e0cb228b4d657f49664b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7201eb2300e0cb228b4d657f49664b67">&#9670;&#160;</a></span>GetFileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.GetFileSize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取文件大小。 <br  />
+获取文件大小，单位字节。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>&gt;=0: 文件大小。</li>
+<li>&lt;0: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a46d23d95bcceae57e50c59066ff14fbb" name="a46d23d95bcceae57e50c59066ff14fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d23d95bcceae57e50c59066ff14fbb">&#9670;&#160;</a></span>GetMicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.GetMicVolume </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取麦克风录制音量。 <br  />
+获取麦克风录制音量，范围 0-100。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>&gt;=0: 麦克风录制音量。</li>
+<li>&lt;0: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad082c5cd78d383fe5c8d2b343486c5fa" name="ad082c5cd78d383fe5c8d2b343486c5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad082c5cd78d383fe5c8d2b343486c5fa">&#9670;&#160;</a></span>GetSpeakerVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.GetSpeakerVolume </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取语音播放音量。 <br  />
+获取语音播放音量，范围 0-100。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>&gt;=0: 语音播放音量。</li>
+<li>&lt;0: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aae0b54a41d504ac0de6fd69dc2493846" name="aae0b54a41d504ac0de6fd69dc2493846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae0b54a41d504ac0de6fd69dc2493846">&#9670;&#160;</a></span>GetVoiceFileDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.GetVoiceFileDuration </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取语音消息时长。 <br  />
+获取语音消息时长，单位毫秒。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>&gt;=0: 语音消息时长。</li>
+<li>&lt;0: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ab2061de24034533c3418ea019eb7ec02" name="ab2061de24034533c3418ea019eb7ec02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2061de24034533c3418ea019eb7ec02">&#9670;&#160;</a></span>PauseRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.PauseRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>暂停录制语音消息。 <br  />
+暂停录制语音消息，录制完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aa5957435587496daff330f9ea2a7466d">OnRecordCompleted</a> 回调通知录制结果。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="acb66692a7dd4d6c27309ddcb6575f8ae" name="acb66692a7dd4d6c27309ddcb6575f8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb66692a7dd4d6c27309ddcb6575f8ae">&#9670;&#160;</a></span>PlayRecordedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.PlayRecordedFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>播放录制的语音消息。 <br  />
+播放录制的语音消息，播放完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a0471caddca35f871d9722b9194b6eb7d">OnPlayCompleted</a> 回调通知播放结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>录制文件路径。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a92f664004076bf1218eb6ba1ba24c44f" name="a92f664004076bf1218eb6ba1ba24c44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f664004076bf1218eb6ba1ba24c44f">&#9670;&#160;</a></span>ResumeRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.ResumeRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>恢复录制语音消息。 <br  />
+恢复录制语音消息，录制完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aa5957435587496daff330f9ea2a7466d">OnRecordCompleted</a> 回调通知录制结果。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a1a939664addbb38bd875d032875b0f5f" name="a1a939664addbb38bd875d032875b0f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a939664addbb38bd875d032875b0f5f">&#9670;&#160;</a></span>SetAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.SetAuth </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>语音模块鉴权。 <br  />
+只有鉴权成功后才能继续使用语音模块的其他功能。结果通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae053212abdd47387407c4649396cd087">OnAuth</a> 回调通知。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>用户唯一ID。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>鉴权 token。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2442189ac1509009f3c2df74fd422546" name="a2442189ac1509009f3c2df74fd422546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2442189ac1509009f3c2df74fd422546">&#9670;&#160;</a></span>SetEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngine.SetEvents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">IVoiceEngineCallback</a></td>          <td class="paramname"><span class="paramname"><em>callbacks</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置 语音消息相关接口的事件句柄。 <br  />
+你可以通过设置的事件句柄，监听当前语音消息相关接口对应的事件。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callbacks</td><td>事件监听句柄对象  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab48eba07aa6db3d343de3c4dad358fc5" name="ab48eba07aa6db3d343de3c4dad358fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48eba07aa6db3d343de3c4dad358fc5">&#9670;&#160;</a></span>SetMaxMessageLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.SetMaxMessageLength </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置语音消息最大长度。 <br  />
+语音消息最大长度，单位毫秒，默认为 60 秒。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>语音消息最大长度，单位毫秒。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7f7ab4b5db36436cc0d6c8c2da0ae460" name="a7f7ab4b5db36436cc0d6c8c2da0ae460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7ab4b5db36436cc0d6c8c2da0ae460">&#9670;&#160;</a></span>SetMicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.SetMicVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置麦克风录制音量。 <br  />
+设置麦克风录制音量，范围 0-100。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">volume</td><td>音量值，范围 0-100。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aa45848c9aceb68319b6c98e01cf171f7" name="aa45848c9aceb68319b6c98e01cf171f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45848c9aceb68319b6c98e01cf171f7">&#9670;&#160;</a></span>SetSpeakerVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.SetSpeakerVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置语音播放音量。 <br  />
+设置语音播放音量，范围 0-100。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">volume</td><td>音量值，范围 0-100。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="addc2c88687c6d1aae2846cc001afc40c" name="addc2c88687c6d1aae2846cc001afc40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc2c88687c6d1aae2846cc001afc40c">&#9670;&#160;</a></span>SpeechToText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.SpeechToText </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>语音转文字。 <br  />
+语音转文字，转换完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae8a352868fce21501da61a86d1a91e7a">OnSpeechToTextCompleted</a> 回调通知转换结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fileID</td><td>语音消息文件 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。 </li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>语音转文字功能需要联系您的网易云信商务经理开通。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a1847ebb1d41cd95044d36efe03673c70" name="a1847ebb1d41cd95044d36efe03673c70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1847ebb1d41cd95044d36efe03673c70">&#9670;&#160;</a></span>StartRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.StartRecording </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开始录制语音消息。 <br  />
+开始录制语音消息，录制完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aa5957435587496daff330f9ea2a7466d">OnRecordCompleted</a> 回调通知录制结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>录制文件路径。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a624e12826b1d384ad9f2b79826f941df" name="a624e12826b1d384ad9f2b79826f941df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624e12826b1d384ad9f2b79826f941df">&#9670;&#160;</a></span>StopPlayFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.StopPlayFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>停止播放录制的语音消息。 <br  />
+停止播放录制的语音消息，播放完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a0471caddca35f871d9722b9194b6eb7d">OnPlayCompleted</a> 回调通知播放结果。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="af3e2793a2d871ff806a4164528cc31b0" name="af3e2793a2d871ff806a4164528cc31b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e2793a2d871ff806a4164528cc31b0">&#9670;&#160;</a></span>StopRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.StopRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>停止录制语音消息。 <br  />
+停止录制语音消息，录制完成后会通过 onRecordComplete 回调通知录制结果。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aa5211f5fb69dfa23650c982382993373" name="aa5211f5fb69dfa23650c982382993373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5211f5fb69dfa23650c982382993373">&#9670;&#160;</a></span>UploadRecordedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IVoiceEngine.UploadRecordedFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>上传录制的语音消息。 <br  />
+上传录制的语音消息，上传完成后会通过 <a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aab6a88b53c69dffc09cc63d844e839dd">OnUploadCompleted</a> 回调通知上传结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filePath</td><td>录制文件路径。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/voice/<a class="el" href="_voice_engine_8cs.html">VoiceEngine.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

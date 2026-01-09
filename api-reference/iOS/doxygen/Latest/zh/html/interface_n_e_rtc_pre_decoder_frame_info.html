@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcPreDecoderFrameInfo类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_rtc_pre_decoder_frame_info-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcPreDecoderFrameInfo类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>编码完的媒体数据帧  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcPreDecoderFrameInfo 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_pre_decoder_frame_info.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:af2ef1e35b281e031fd71e29cf5ca0860" id="r_af2ef1e35b281e031fd71e29cf5ca0860"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#a04d75331c85073c37fd6b76d0ef32667">NERtcPreDecoderMediaType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2ef1e35b281e031fd71e29cf5ca0860">mediaType</a></td></tr>
+<tr class="memdesc:af2ef1e35b281e031fd71e29cf5ca0860"><td class="mdescLeft">&#160;</td><td class="mdescRight">媒体数据类型  <br /></td></tr>
+<tr class="separator:af2ef1e35b281e031fd71e29cf5ca0860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8eeec886d211dbb0f5174e94399192a" id="r_af8eeec886d211dbb0f5174e94399192a"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8eeec886d211dbb0f5174e94399192a">uid</a></td></tr>
+<tr class="memdesc:af8eeec886d211dbb0f5174e94399192a"><td class="mdescLeft">&#160;</td><td class="mdescRight">用户 uid  <br /></td></tr>
+<tr class="separator:af8eeec886d211dbb0f5174e94399192a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cd63747bfb7cd2fd2639c1d9440d89" id="r_a61cd63747bfb7cd2fd2639c1d9440d89"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61cd63747bfb7cd2fd2639c1d9440d89">timestampMs</a></td></tr>
+<tr class="memdesc:a61cd63747bfb7cd2fd2639c1d9440d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">时间戳:ms  <br /></td></tr>
+<tr class="separator:a61cd63747bfb7cd2fd2639c1d9440d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba3c234273952291a5db6d48fae9212" id="r_a2ba3c234273952291a5db6d48fae9212"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ba3c234273952291a5db6d48fae9212">data</a></td></tr>
+<tr class="memdesc:a2ba3c234273952291a5db6d48fae9212"><td class="mdescLeft">&#160;</td><td class="mdescRight">编码后的媒体数据  <br /></td></tr>
+<tr class="separator:a2ba3c234273952291a5db6d48fae9212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4729570130de72ea4d5055b2f1db21b" id="r_ab4729570130de72ea4d5055b2f1db21b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4729570130de72ea4d5055b2f1db21b">length</a></td></tr>
+<tr class="memdesc:ab4729570130de72ea4d5055b2f1db21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">有效数据长度  <br /></td></tr>
+<tr class="separator:ab4729570130de72ea4d5055b2f1db21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08308ee5114825237fd67831ea7d066d" id="r_a08308ee5114825237fd67831ea7d066d"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08308ee5114825237fd67831ea7d066d">codec</a></td></tr>
+<tr class="memdesc:a08308ee5114825237fd67831ea7d066d"><td class="mdescLeft">&#160;</td><td class="mdescRight">编码器名称  <br /></td></tr>
+<tr class="separator:a08308ee5114825237fd67831ea7d066d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc96908565f506c1f97f9576866f713" id="r_adcc96908565f506c1f97f9576866f713"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcc96908565f506c1f97f9576866f713">isMainStream</a></td></tr>
+<tr class="memdesc:adcc96908565f506c1f97f9576866f713"><td class="mdescLeft">&#160;</td><td class="mdescRight">数据是否为主流或辅流数据  <br /></td></tr>
+<tr class="separator:adcc96908565f506c1f97f9576866f713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837794a5302c30b74eb2f046ab3cb25b" id="r_a837794a5302c30b74eb2f046ab3cb25b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_n_e_rtc_pre_decoder_video_info.html">NERtcPreDecoderVideoInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a837794a5302c30b74eb2f046ab3cb25b">videoInfo</a></td></tr>
+<tr class="memdesc:a837794a5302c30b74eb2f046ab3cb25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频相关信息，仅 mediaType 为 video\screenshare\之一时有效，其他情况为 nil  <br /></td></tr>
+<tr class="separator:a837794a5302c30b74eb2f046ab3cb25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88082eb22aca2322c89c736cb3077112" id="r_a88082eb22aca2322c89c736cb3077112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_n_e_rtc_pre_decoder_audio_info.html">NERtcPreDecoderAudioInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88082eb22aca2322c89c736cb3077112">audioInfo</a></td></tr>
+<tr class="memdesc:a88082eb22aca2322c89c736cb3077112"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频相关信息，仅 mediaType 为 audio 时有效，其他情况为 nil  <br /></td></tr>
+<tr class="separator:a88082eb22aca2322c89c736cb3077112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>编码完的媒体数据帧 </p>
+</div><h2 class="groupheader">属性说明</h2>
+<a id="a88082eb22aca2322c89c736cb3077112" name="a88082eb22aca2322c89c736cb3077112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88082eb22aca2322c89c736cb3077112">&#9670;&#160;</a></span>audioInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_n_e_rtc_pre_decoder_audio_info.html">NERtcPreDecoderAudioInfo</a>*) audioInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>音频相关信息，仅 mediaType 为 audio 时有效，其他情况为 nil </p>
+
+</div>
+</div>
+<a id="a08308ee5114825237fd67831ea7d066d" name="a08308ee5114825237fd67831ea7d066d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08308ee5114825237fd67831ea7d066d">&#9670;&#160;</a></span>codec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) codec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">copy</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>编码器名称 </p>
+
+</div>
+</div>
+<a id="a2ba3c234273952291a5db6d48fae9212" name="a2ba3c234273952291a5db6d48fae9212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba3c234273952291a5db6d48fae9212">&#9670;&#160;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint8_t*) data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>编码后的媒体数据 </p>
+
+</div>
+</div>
+<a id="adcc96908565f506c1f97f9576866f713" name="adcc96908565f506c1f97f9576866f713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc96908565f506c1f97f9576866f713">&#9670;&#160;</a></span>isMainStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isMainStream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>数据是否为主流或辅流数据 </p>
+
+</div>
+</div>
+<a id="ab4729570130de72ea4d5055b2f1db21b" name="ab4729570130de72ea4d5055b2f1db21b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4729570130de72ea4d5055b2f1db21b">&#9670;&#160;</a></span>length</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) length</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>有效数据长度 </p>
+
+</div>
+</div>
+<a id="af2ef1e35b281e031fd71e29cf5ca0860" name="af2ef1e35b281e031fd71e29cf5ca0860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ef1e35b281e031fd71e29cf5ca0860">&#9670;&#160;</a></span>mediaType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#a04d75331c85073c37fd6b76d0ef32667">NERtcPreDecoderMediaType</a>) mediaType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>媒体数据类型 </p>
+
+</div>
+</div>
+<a id="a61cd63747bfb7cd2fd2639c1d9440d89" name="a61cd63747bfb7cd2fd2639c1d9440d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cd63747bfb7cd2fd2639c1d9440d89">&#9670;&#160;</a></span>timestampMs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int64_t) timestampMs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>时间戳:ms </p>
+
+</div>
+</div>
+<a id="af8eeec886d211dbb0f5174e94399192a" name="af8eeec886d211dbb0f5174e94399192a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8eeec886d211dbb0f5174e94399192a">&#9670;&#160;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) uid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>用户 uid </p>
+
+</div>
+</div>
+<a id="a837794a5302c30b74eb2f046ab3cb25b" name="a837794a5302c30b74eb2f046ab3cb25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837794a5302c30b74eb2f046ab3cb25b">&#9670;&#160;</a></span>videoInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_n_e_rtc_pre_decoder_video_info.html">NERtcPreDecoderVideoInfo</a>*) videoInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频相关信息，仅 mediaType 为 video\screenshare\之一时有效，其他情况为 nil </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

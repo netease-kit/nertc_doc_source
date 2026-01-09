@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: include/NERtcEngineStatistics.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">NERtcEngineStatistics.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_rtc_engine_statistics_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2021 NetEase, Inc.  All rights reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_rtc_engine_enum_8h.html">NERtcEngineEnum.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma clang diagnostic push</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma clang diagnostic ignored &quot;-Wdocumentation&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html">   22</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_stats.html">NERtcStats</a> : NSObject</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a6a347e841d265267827eb6115cd2f026">   33</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a6a347e841d265267827eb6115cd2f026">txBytes</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a31beeac69cd6368f28fde4c41f4a1f14">   43</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a31beeac69cd6368f28fde4c41f4a1f14">rxBytes</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a58e14dcc23106f964ad65176d600d668">   53</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a58e14dcc23106f964ad65176d600d668">cpuAppUsage</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a68200b8ce8fb40da1bf4641902ef8a18">   63</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a68200b8ce8fb40da1bf4641902ef8a18">cpuTotalUsage</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a12afe89cb3eb62544badb3ceaba92be9">   73</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a12afe89cb3eb62544badb3ceaba92be9">memoryAppUsageRatio</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#afc1eba8f2d461d899a57a30a6aea3fdf">   83</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#afc1eba8f2d461d899a57a30a6aea3fdf">memoryTotalUsageRatio</a>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a5a998f14690cc8e111dd228988d25b01">   93</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a5a998f14690cc8e111dd228988d25b01">memoryAppUsageInKBytes</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a8b63cd0d7f94eeb08eb3575aa0e6350c">  103</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a8b63cd0d7f94eeb08eb3575aa0e6350c">totalDuration</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a979bcd8c9369c13bde6fbfeb6855a113">  113</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a979bcd8c9369c13bde6fbfeb6855a113">txAudioBytes</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a413216aef7ada57b7234365518b64ed9">  123</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a413216aef7ada57b7234365518b64ed9">txVideoBytes</a>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a720f8991f8b61bc3a6b35df04a0bba47">  134</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a720f8991f8b61bc3a6b35df04a0bba47">rxAudioBytes</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a295f959da1c74919ee58d8a5d6f48c05">  145</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a295f959da1c74919ee58d8a5d6f48c05">rxVideoBytes</a>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a8d0dec88b4a84d817c558c217f34f9fe">  155</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a8d0dec88b4a84d817c558c217f34f9fe">rxAudioKBitRate</a>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#abae03a0f6541438b8d406f70e9a172e9">  165</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#abae03a0f6541438b8d406f70e9a172e9">rxVideoKBitRate</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a19606c2b5ecfbe07b02db204f9b8d265">  175</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a19606c2b5ecfbe07b02db204f9b8d265">txAudioKBitRate</a>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#aa34822e3808915e4e32a1a3cdcc03132">  185</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#aa34822e3808915e4e32a1a3cdcc03132">txVideoKBitRate</a>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#aad0ced3cbc48aa59a9e458f07a8af524">  195</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#aad0ced3cbc48aa59a9e458f07a8af524">upRtt</a>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a8aa754b2afeeeed1d4c487892b44cc00">  205</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a8aa754b2afeeeed1d4c487892b44cc00">downRtt</a>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a376bad24d88c7629fa7b6b02d7004b67">  215</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a376bad24d88c7629fa7b6b02d7004b67">txAudioPacketLossRate</a>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a260baef5c07f3e0ad95c100fe8797082">  225</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a260baef5c07f3e0ad95c100fe8797082">txVideoPacketLossRate</a>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a0f063d9b56e2cfeff1695cc6d2a4ecf7">  235</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a0f063d9b56e2cfeff1695cc6d2a4ecf7">txAudioPacketLossSum</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a5910ebddba0626e6f275d208f22bb61e">  245</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a5910ebddba0626e6f275d208f22bb61e">txVideoPacketLossSum</a>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a06edc5f61af578d6ed36301c2fb50b20">  255</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a06edc5f61af578d6ed36301c2fb50b20">txAudioJitter</a>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#ad0a0f5395ef8e4fbf0f34714c9b5ca2d">  265</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#ad0a0f5395ef8e4fbf0f34714c9b5ca2d">txVideoJitter</a>;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#ad272177737f70e48a678e6dadb52df49">  275</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#ad272177737f70e48a678e6dadb52df49">rxAudioPacketLossRate</a>;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a3e2e48a42e16697aeea6d65a0916c62c">  285</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a3e2e48a42e16697aeea6d65a0916c62c">rxVideoPacketLossRate</a>;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a817c9c997681df46c7d0110f29006e48">  295</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a817c9c997681df46c7d0110f29006e48">rxAudioPacketLossSum</a>;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a0b8a069f90b639d2a062d238da4a17cb">  305</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a0b8a069f90b639d2a062d238da4a17cb">rxVideoPacketLossSum</a>;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#aa54a4b39db9ae21c596f3f9ee20c8d04">  316</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#aa54a4b39db9ae21c596f3f9ee20c8d04">rxAudioJitter</a>;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_stats.html#a1429e7d194b1343e9e23bb23ffac8577">  326</a></span><span class="keyword">@property</span> (nonatomic, assign) uint32_t <a class="code hl_property" href="interface_n_e_rtc_stats.html#a1429e7d194b1343e9e23bb23ffac8577">rxVideoJitter</a>;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html">  338</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_video_layer_send_stats.html">NERtcVideoLayerSendStats</a> : NSObject</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a8004c35c6dbfdc88ee7317cf498db00d">  348</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t layerType;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#ae4ef06c85886179ae6302f09cc5ed8bf">  358</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t width;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#ad3ee848a1bff927f6a3b856e7060efe4">  368</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t height;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a3ef2ec48f5f6d3191372e166726647eb">  378</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t captureWidth;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a1679d1728b890f6a63fafc7c0ba4b32a">  388</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t captureHeight;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#aab98035167b51cb3bb40af30e9d77981">  398</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t sendBitrate;</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#acef217de5f3dd1368f7b0c6e8d0bff4a">  408</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t encoderOutputFrameRate;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#af5d73929b67d27de1bbb2108d041fa0d">  418</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t captureFrameRate;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  </div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#af46e04cbb39b3d7bd4f6101ce131dcb3">  428</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t targetBitrate;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a0d601202547e888eddd2ac93509696fd">  438</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t encoderBitrate;</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a6cbb7ad0eb8212497ce80d83799a74af">  448</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t sentFrameRate;</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a2f48aa0b265c9aa3a7d274effdcf0d6a">  458</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t renderFrameRate;</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span> </div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#af7811e8c602d62161402d5cb885ec38c">  468</a></span><span class="keyword">@property</span> (nonatomic, copy) NSString *encoderName;</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span> </div>
+<div class="line"><a id="l00478" name="l00478"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_send_stats.html#a746106ffc6b67e22bdbe5fb4ce0e38e8">  478</a></span><span class="keyword">@property</span> (nonatomic, assign) BOOL dropBwStrategyEnabled;</div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_send_stats.html">  490</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_video_send_stats.html">NERtcVideoSendStats</a> : NSObject</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_send_stats.html#af74d831233b9565fc6a85633918058b6">  500</a></span><span class="keyword">@property</span> (nonatomic, strong)NSArray&lt;NERtcVideoLayerSendStats *&gt; *videoLayers;</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html">  512</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_video_layer_recv_stats.html">NERtcVideoLayerRecvStats</a> : NSObject</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span> </div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#ae17f2e3c8accbcffe83d2663b528ea6e">  522</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t layerType;</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a33ab147d6699dad8897655ee79925f56">  532</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t width;</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a4fbec807c812e61ac588a5d7e3a4fd30">  542</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t height;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a0276ae8ba93204eae6b9b5c6368eb0d1">  552</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t receivedBitrate;</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a87ac4da3940e03737636b3c5023ed660">  563</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t fps;</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a5eda6c5d4a1e4784dbe0d6a6d18a2786">  573</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t packetLossRate;</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  </div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a68af5e13a8b2d561dd4673fcd7ff523b">  583</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t decoderOutputFrameRate;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a8898e19420ae2010799dcd2b75667b53">  593</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t rendererOutputFrameRate;</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a5cd42cc67e9dcb6a0f5a80b54144ed76">  603</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t totalFrozenTime;</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a46b8b93cebc143dbef40bae32313682d">  613</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t frozenRate;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a6bc578d920fd9a83bda6fb07839f3861">  623</a></span><span class="keyword">@property</span> (nonatomic, copy) NSString *decoderName;</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_layer_recv_stats.html#a58373facbf045fb2ec64e6d3ea422319">  633</a></span><span class="keyword">@property</span>(nonatomic, assign) int32_t peerToPeerDelay;</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_recv_stats.html">  645</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_video_recv_stats.html">NERtcVideoRecvStats</a> : NSObject</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_recv_stats.html#a7c81fd21c41f397ad47fe77616b3be37">  655</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t uid;</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_video_recv_stats.html#a09214b0042ee9f66c76b3c2bdb016d15">  665</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray&lt;NERtcVideoLayerRecvStats *&gt; *videoLayers;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span> </div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html">  678</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a> <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_audio_layer_send_stats.html">NERtcAudioLayerSendStats</a> : NSObject</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#a7bf4918457d3fe910b9cfbde5e5cd599">  688</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#af0eb8029030e25ac7ee3ac22fdfce844">NERtcAudioStreamType</a> streamType;</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#ab5bf534d5f86b0d381c4ee3332bc5974">  699</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t sentBitrate;</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span> </div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#aac7ecfcc2d76cf7fb219640ff9764fac">  709</a></span><span class="keyword">@property</span> (nonatomic, assign) int16_t lossRate;</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#ad81aa56a82d3aca056824a4dea321638">  719</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t rtt;</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span> </div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#ac2c18e90c425960f53d4115b76029284">  729</a></span><span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">int</span> volume;</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#a779044759bf73724fb918d5b9dc28158">  740</a></span><span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">int</span> capVolume;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#a8b3bb9596c5b50fb46551023653bf0a1">  750</a></span><span class="keyword">@property</span> (nonatomic, assign) int16_t numChannels;</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_send_stats.html#af7b7ed6d9def0f819d3a750f08ac998c">  760</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t sentSampleRate;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_send_stats.html">  772</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_audio_send_stats.html">NERtcAudioSendStats</a> : NSObject</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_send_stats.html#a7584ae23748b4cb3b8482b426ae1dfe7">  782</a></span><span class="keyword">@property</span> (nonatomic, strong)NSArray&lt;NERtcAudioLayerSendStats *&gt; *audioLayers;</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html">  793</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a> <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_audio_layer_recv_stats.html">NERtcAudioLayerRecvStats</a> : NSObject</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a8e3e7ea599d3c31bbcdec3a8cc64cdb9">  801</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#af0eb8029030e25ac7ee3ac22fdfce844">NERtcAudioStreamType</a> streamType;</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a2bc6cd0d4f3bf2eeabb79d93b8e2dfc3">  811</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t receivedBitrate;</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span> </div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a5ac4873c8db4d1a11f3a4a513da577d7">  822</a></span><span class="keyword">@property</span> (nonatomic, assign) int16_t audioLossRate;</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a69037d2c91095256977d43d3dbf46212">  832</a></span><span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">int</span> volume;</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a0ec4f283da3cf1402675c6776c97bcb0">  842</a></span><span class="keyword">@property</span> (nonatomic, assign) int64_t totalFrozenTime;</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span> </div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a82e2b646ee09a51aad81e1d38b869f42">  852</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t frozenRate;</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#accee10d65ef28534eb387264188d3df3">  863</a></span><span class="keyword">@property</span> (nonatomic, assign) int32_t avTimeStampDiff;</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_layer_recv_stats.html#a3403e2c2814b5ecbbc125bc86eb5248c">  873</a></span><span class="keyword">@property</span>(nonatomic, assign) int32_t peerToPeerDelay;</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span> </div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span> </div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_recv_stats.html">  886</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_audio_recv_stats.html">NERtcAudioRecvStats</a> : NSObject</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span> </div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_recv_stats.html#aea593ae4cadc954d961d5b29bc7018d8">  896</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t uid;</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span> </div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span> </div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_audio_recv_stats.html#a1cd178edc6e8398096b3a3b5a676eeb9">  907</a></span><span class="keyword">@property</span> (nonatomic, strong)NSArray&lt;NERtcAudioLayerRecvStats *&gt; *audioLayers;</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span> </div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_network_quality_stats.html">  919</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a>  <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_network_quality_stats.html">NERtcNetworkQualityStats</a> : NSObject</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_network_quality_stats.html#a439d512f6694c1c0ca2e6a1355ba56c5">  929</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t userId;</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span> </div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_network_quality_stats.html#a55d881d057b96177e6f47424b7989e75">  939</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ab1fedbf7174dc3a0030263f81b167c7f">NERtcNetworkQuality</a> txQuality;</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span> </div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_media_stats_observer-p.html#a19565a7b735c9b20ea9b02b75cae3065">  949</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ab1fedbf7174dc3a0030263f81b167c7f">NERtcNetworkQuality</a> rxQuality;</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_media_stats_observer-p.html">  961</a></span><span class="keyword">@protocol </span>NERtcEngineMediaStatsObserver&lt;NSObject&gt;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span> </div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span> </div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>-(void)onRtcStats:(<a class="code hl_interface" href="interface_n_e_rtc_stats.html">NERtcStats</a> *)stat;</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>- (void)onLocalAudioStat:(<a class="code hl_interface" href="interface_n_e_rtc_audio_send_stats.html">NERtcAudioSendStats</a> *)stat;</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span> </div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>- (void)onRemoteAudioStats:(NSArray&lt;<a class="code hl_interface" href="interface_n_e_rtc_audio_recv_stats.html">NERtcAudioRecvStats</a>*&gt; *)stats;</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span> </div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>-(void)onLocalVideoStat:(<a class="code hl_interface" href="interface_n_e_rtc_video_send_stats.html">NERtcVideoSendStats</a> *)stat;</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>- (void)onRemoteVideoStats:(NSArray&lt;<a class="code hl_interface" href="interface_n_e_rtc_video_recv_stats.html">NERtcVideoRecvStats</a>*&gt; *)stats;</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span> </div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>  - (void)onNetworkQuality:(NSArray&lt;<a class="code hl_interface" href="interface_n_e_rtc_network_quality_stats.html">NERtcNetworkQualityStats</a> *&gt; *)stats;</div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span> </div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span> </div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_channel_media_stats_observer-p.html"> 1063</a></span><span class="keyword">@protocol </span>NERtcChannelMediaStatsObserver&lt;NERtcEngineMediaStatsObserver&gt;</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span> </div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span> </div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span> </div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span> </div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span><span class="preprocessor">#pragma clang diagnostic pop</span></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html">NERtcEngineEnum.h</a></div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ab1fedbf7174dc3a0030263f81b167c7f"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ab1fedbf7174dc3a0030263f81b167c7f">NERtcNetworkQuality</a></div><div class="ttdeci">NERtcNetworkQuality</div><div class="ttdoc">网络质量类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3852</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ae3a0c61b75d9be47ffb348ff64e9e2fe"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a></div><div class="ttdeci">#define NERTC_EXPORT</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:12</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_af0eb8029030e25ac7ee3ac22fdfce844"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#af0eb8029030e25ac7ee3ac22fdfce844">NERtcAudioStreamType</a></div><div class="ttdeci">NERtcAudioStreamType</div><div class="ttdoc">音频流类型，目前同时支持音频两路流：主流和辅流</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2348</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_audio_layer_recv_stats_html"><div class="ttname"><a href="interface_n_e_rtc_audio_layer_recv_stats.html">NERtcAudioLayerRecvStats</a></div><div class="ttdoc">远端用户的音频统计。</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:794</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_audio_layer_send_stats_html"><div class="ttname"><a href="interface_n_e_rtc_audio_layer_send_stats.html">NERtcAudioLayerSendStats</a></div><div class="ttdoc">本地音频流上传统计信息。</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:679</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_audio_recv_stats_html"><div class="ttname"><a href="interface_n_e_rtc_audio_recv_stats.html">NERtcAudioRecvStats</a></div><div class="ttdoc">远端用户的音频统计。</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:887</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_audio_send_stats_html"><div class="ttname"><a href="interface_n_e_rtc_audio_send_stats.html">NERtcAudioSendStats</a></div><div class="ttdoc">本地音频流上传统计信息。</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:773</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_network_quality_stats_html"><div class="ttname"><a href="interface_n_e_rtc_network_quality_stats.html">NERtcNetworkQualityStats</a></div><div class="ttdoc">用户的网络质量</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:920</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html"><div class="ttname"><a href="interface_n_e_rtc_stats.html">NERtcStats</a></div><div class="ttdoc">通话相关的统计信息</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:23</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a06edc5f61af578d6ed36301c2fb50b20"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a06edc5f61af578d6ed36301c2fb50b20">NERtcStats::txAudioJitter</a></div><div class="ttdeci">uint32_t txAudioJitter</div><div class="ttdoc">本地上行音频抖动 (ms)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:255</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a0b8a069f90b639d2a062d238da4a17cb"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a0b8a069f90b639d2a062d238da4a17cb">NERtcStats::rxVideoPacketLossSum</a></div><div class="ttdeci">uint32_t rxVideoPacketLossSum</div><div class="ttdoc">本地下行视频丢包数</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:305</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a0f063d9b56e2cfeff1695cc6d2a4ecf7"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a0f063d9b56e2cfeff1695cc6d2a4ecf7">NERtcStats::txAudioPacketLossSum</a></div><div class="ttdeci">uint32_t txAudioPacketLossSum</div><div class="ttdoc">本地上行音频丢包数</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:235</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a12afe89cb3eb62544badb3ceaba92be9"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a12afe89cb3eb62544badb3ceaba92be9">NERtcStats::memoryAppUsageRatio</a></div><div class="ttdeci">uint32_t memoryAppUsageRatio</div><div class="ttdoc">当前 App 的内存占比 (%) , 占最大可用内存</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:73</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a1429e7d194b1343e9e23bb23ffac8577"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a1429e7d194b1343e9e23bb23ffac8577">NERtcStats::rxVideoJitter</a></div><div class="ttdeci">uint32_t rxVideoJitter</div><div class="ttdoc">本地下行视频抖动 (ms)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:326</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a19606c2b5ecfbe07b02db204f9b8d265"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a19606c2b5ecfbe07b02db204f9b8d265">NERtcStats::txAudioKBitRate</a></div><div class="ttdeci">uint64_t txAudioKBitRate</div><div class="ttdoc">音频发送码率（kbps）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:175</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a260baef5c07f3e0ad95c100fe8797082"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a260baef5c07f3e0ad95c100fe8797082">NERtcStats::txVideoPacketLossRate</a></div><div class="ttdeci">uint32_t txVideoPacketLossRate</div><div class="ttdoc">本地上行视频实际丢包率(%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:225</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a295f959da1c74919ee58d8a5d6f48c05"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a295f959da1c74919ee58d8a5d6f48c05">NERtcStats::rxVideoBytes</a></div><div class="ttdeci">uint64_t rxVideoBytes</div><div class="ttdoc">自加入房间后累计的接收的视频字节数（Byte）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:145</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a31beeac69cd6368f28fde4c41f4a1f14"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a31beeac69cd6368f28fde4c41f4a1f14">NERtcStats::rxBytes</a></div><div class="ttdeci">int64_t rxBytes</div><div class="ttdoc">接收字节数（bytes），累计值</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:43</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a376bad24d88c7629fa7b6b02d7004b67"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a376bad24d88c7629fa7b6b02d7004b67">NERtcStats::txAudioPacketLossRate</a></div><div class="ttdeci">uint32_t txAudioPacketLossRate</div><div class="ttdoc">本地上行音频丢包率(%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:215</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a3e2e48a42e16697aeea6d65a0916c62c"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a3e2e48a42e16697aeea6d65a0916c62c">NERtcStats::rxVideoPacketLossRate</a></div><div class="ttdeci">uint32_t rxVideoPacketLossRate</div><div class="ttdoc">本地下行视频丢包率(%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:285</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a413216aef7ada57b7234365518b64ed9"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a413216aef7ada57b7234365518b64ed9">NERtcStats::txVideoBytes</a></div><div class="ttdeci">uint64_t txVideoBytes</div><div class="ttdoc">自加入房间后累计的发送的视频字节数（Byte）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:123</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a58e14dcc23106f964ad65176d600d668"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a58e14dcc23106f964ad65176d600d668">NERtcStats::cpuAppUsage</a></div><div class="ttdeci">uint32_t cpuAppUsage</div><div class="ttdoc">当前 App 的 CPU 使用率 (%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:53</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a5910ebddba0626e6f275d208f22bb61e"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a5910ebddba0626e6f275d208f22bb61e">NERtcStats::txVideoPacketLossSum</a></div><div class="ttdeci">uint32_t txVideoPacketLossSum</div><div class="ttdoc">本地上行视频丢包数</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:245</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a5a998f14690cc8e111dd228988d25b01"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a5a998f14690cc8e111dd228988d25b01">NERtcStats::memoryAppUsageInKBytes</a></div><div class="ttdeci">uint32_t memoryAppUsageInKBytes</div><div class="ttdoc">当前 App 的内存大小 (KB)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:93</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a68200b8ce8fb40da1bf4641902ef8a18"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a68200b8ce8fb40da1bf4641902ef8a18">NERtcStats::cpuTotalUsage</a></div><div class="ttdeci">uint32_t cpuTotalUsage</div><div class="ttdoc">当前系统的 CPU 使用率 (%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:63</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a6a347e841d265267827eb6115cd2f026"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a6a347e841d265267827eb6115cd2f026">NERtcStats::txBytes</a></div><div class="ttdeci">int64_t txBytes</div><div class="ttdoc">发送字节数（bytes），累计值</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:33</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a720f8991f8b61bc3a6b35df04a0bba47"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a720f8991f8b61bc3a6b35df04a0bba47">NERtcStats::rxAudioBytes</a></div><div class="ttdeci">uint64_t rxAudioBytes</div><div class="ttdoc">自加入房间后累计的接收的音频字节数（Byte）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:134</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a817c9c997681df46c7d0110f29006e48"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a817c9c997681df46c7d0110f29006e48">NERtcStats::rxAudioPacketLossSum</a></div><div class="ttdeci">uint64_t rxAudioPacketLossSum</div><div class="ttdoc">本地下行音频丢包数</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:295</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a8aa754b2afeeeed1d4c487892b44cc00"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a8aa754b2afeeeed1d4c487892b44cc00">NERtcStats::downRtt</a></div><div class="ttdeci">uint64_t downRtt</div><div class="ttdoc">下行平均往返时延(ms)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:205</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a8b63cd0d7f94eeb08eb3575aa0e6350c"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a8b63cd0d7f94eeb08eb3575aa0e6350c">NERtcStats::totalDuration</a></div><div class="ttdeci">uint64_t totalDuration</div><div class="ttdoc">自加入房间的通话时长， 退出后再加入重新计时 ( 单位：S)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:103</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a8d0dec88b4a84d817c558c217f34f9fe"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a8d0dec88b4a84d817c558c217f34f9fe">NERtcStats::rxAudioKBitRate</a></div><div class="ttdeci">uint64_t rxAudioKBitRate</div><div class="ttdoc">音频接收码率（kbps）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:155</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_a979bcd8c9369c13bde6fbfeb6855a113"><div class="ttname"><a href="interface_n_e_rtc_stats.html#a979bcd8c9369c13bde6fbfeb6855a113">NERtcStats::txAudioBytes</a></div><div class="ttdeci">uint64_t txAudioBytes</div><div class="ttdoc">自加入房间后累计的发送的音频字节数（Byte）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:113</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_aa34822e3808915e4e32a1a3cdcc03132"><div class="ttname"><a href="interface_n_e_rtc_stats.html#aa34822e3808915e4e32a1a3cdcc03132">NERtcStats::txVideoKBitRate</a></div><div class="ttdeci">uint64_t txVideoKBitRate</div><div class="ttdoc">视频发送码率（kbps）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:185</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_aa54a4b39db9ae21c596f3f9ee20c8d04"><div class="ttname"><a href="interface_n_e_rtc_stats.html#aa54a4b39db9ae21c596f3f9ee20c8d04">NERtcStats::rxAudioJitter</a></div><div class="ttdeci">uint32_t rxAudioJitter</div><div class="ttdoc">本地下行音频抖动 (ms)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:316</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_aad0ced3cbc48aa59a9e458f07a8af524"><div class="ttname"><a href="interface_n_e_rtc_stats.html#aad0ced3cbc48aa59a9e458f07a8af524">NERtcStats::upRtt</a></div><div class="ttdeci">uint64_t upRtt</div><div class="ttdoc">上行平均往返时延(ms)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:195</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_abae03a0f6541438b8d406f70e9a172e9"><div class="ttname"><a href="interface_n_e_rtc_stats.html#abae03a0f6541438b8d406f70e9a172e9">NERtcStats::rxVideoKBitRate</a></div><div class="ttdeci">uint64_t rxVideoKBitRate</div><div class="ttdoc">视频接收码率（kbps）</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:165</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_ad0a0f5395ef8e4fbf0f34714c9b5ca2d"><div class="ttname"><a href="interface_n_e_rtc_stats.html#ad0a0f5395ef8e4fbf0f34714c9b5ca2d">NERtcStats::txVideoJitter</a></div><div class="ttdeci">uint32_t txVideoJitter</div><div class="ttdoc">本地上行视频抖动 (ms)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:265</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_ad272177737f70e48a678e6dadb52df49"><div class="ttname"><a href="interface_n_e_rtc_stats.html#ad272177737f70e48a678e6dadb52df49">NERtcStats::rxAudioPacketLossRate</a></div><div class="ttdeci">uint32_t rxAudioPacketLossRate</div><div class="ttdoc">本地下行音频丢包率(%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:275</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_stats_html_afc1eba8f2d461d899a57a30a6aea3fdf"><div class="ttname"><a href="interface_n_e_rtc_stats.html#afc1eba8f2d461d899a57a30a6aea3fdf">NERtcStats::memoryTotalUsageRatio</a></div><div class="ttdeci">uint32_t memoryTotalUsageRatio</div><div class="ttdoc">当前系统的内存占比 (%)</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:83</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_layer_recv_stats_html"><div class="ttname"><a href="interface_n_e_rtc_video_layer_recv_stats.html">NERtcVideoLayerRecvStats</a></div><div class="ttdoc">每条流的接收下行统计信息</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:513</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_layer_send_stats_html"><div class="ttname"><a href="interface_n_e_rtc_video_layer_send_stats.html">NERtcVideoLayerSendStats</a></div><div class="ttdoc">本地视频单条流统计信息</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:339</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_recv_stats_html"><div class="ttname"><a href="interface_n_e_rtc_video_recv_stats.html">NERtcVideoRecvStats</a></div><div class="ttdoc">远端视频流的统计信息</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:646</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_send_stats_html"><div class="ttname"><a href="interface_n_e_rtc_video_send_stats.html">NERtcVideoSendStats</a></div><div class="ttdoc">本地视频流上传统计信息</div><div class="ttdef"><b>定义</b> NERtcEngineStatistics.h:491</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

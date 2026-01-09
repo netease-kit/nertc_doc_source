@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: include/NERtcLinkEngineBase.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">NERtcLinkEngineBase.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_rtc_link_engine_base_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  NERtcLinkEngineBase.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  NERtcSDK</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by Netease on 2021/9/13.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2021 Netease. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef NERtcLinkEngineBase_h</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define NERtcLinkEngineBase_h</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_rtc_link_engine_enum_8h.html">NERtcLinkEngineEnum.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">@protocol </span>NERtcLinkEngineDelegate;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_context.html">   27</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a> <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_link_engine_context.html">NERtcLinkEngineContext</a> : NSObject</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_context.html#a152ceb640e2885856112919bbaae76dd">   35</a></span><span class="keyword">@property</span> (nonatomic, weak, nullable) id&lt;NERtcLinkEngineDelegate&gt; <a class="code hl_property" href="interface_n_e_rtc_link_engine_context.html#a152ceb640e2885856112919bbaae76dd">delegate</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html">   46</a></span><a class="code hl_define" href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a> <span class="keyword">@interface </span><a class="code hl_interface" href="interface_n_e_rtc_link_engine_direct_call_call_param.html">NERtcLinkEngineDirectCallCallParam</a> : NSObject</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#aba9df691bfbc1b45b61ac2a54d9efdb8">   56</a></span><span class="keyword">@property</span> (nonatomic, copy) NSString *callee;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#a56761f0d2541d611bb208ace1381fc88">   66</a></span><span class="keyword">@property</span> (nonatomic, copy) NSString *appKey;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#adcdbf449914e7edb3a470bd1d26a4b47">   76</a></span><span class="keyword">@property</span> (nonatomic, copy) NSString *token;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#a1a5e9baccf56e7931bea13231b306da6">   86</a></span><span class="keyword">@property</span> (nonatomic, copy) NSString *channelName;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#a2b99aec592383119262679ba03ea49f8">   96</a></span><span class="keyword">@property</span> (nonatomic, assign) uint64_t uid;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#aec67c63e5b43e323eeca3984eb144880">  108</a></span><span class="keyword">@property</span> (nonatomic, copy, nullable) NSString *didNumber;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#aed88c4832962c8fa1cb77d49223d4cb3">  118</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="_n_e_rtc_link_engine_enum_8h.html#a130b1aae59335bfa5394e9ba0e93c704">NERtcLinkMediaType</a> mediaType;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#a49c6fe7c9e596e14f8bca6920e9e037f">  128</a></span><span class="keyword">@property</span> (nonatomic, copy, nullable) NSString *traceId;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="interface_n_e_rtc_link_engine_direct_call_call_param.html#aa0a216d548b71825eaada2cd383dcc73">  138</a></span><span class="keyword">@property</span> (nonatomic, assign) BOOL isNumberEncrypted;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#endif </span><span class="comment">/* NERtcLinkEngineBase_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ae3a0c61b75d9be47ffb348ff64e9e2fe"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ae3a0c61b75d9be47ffb348ff64e9e2fe">NERTC_EXPORT</a></div><div class="ttdeci">#define NERTC_EXPORT</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:12</div></div>
+<div class="ttc" id="a_n_e_rtc_link_engine_enum_8h_html"><div class="ttname"><a href="_n_e_rtc_link_engine_enum_8h.html">NERtcLinkEngineEnum.h</a></div></div>
+<div class="ttc" id="a_n_e_rtc_link_engine_enum_8h_html_a130b1aae59335bfa5394e9ba0e93c704"><div class="ttname"><a href="_n_e_rtc_link_engine_enum_8h.html#a130b1aae59335bfa5394e9ba0e93c704">NERtcLinkMediaType</a></div><div class="ttdeci">NERtcLinkMediaType</div><div class="ttdoc">呼叫媒体类型。</div><div class="ttdef"><b>定义</b> NERtcLinkEngineEnum.h:103</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_link_engine_context_html"><div class="ttname"><a href="interface_n_e_rtc_link_engine_context.html">NERtcLinkEngineContext</a></div><div class="ttdoc">初始化设置 NERtcLinkEngineContext 的参数类。</div><div class="ttdef"><b>定义</b> NERtcLinkEngineBase.h:28</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_link_engine_context_html_a152ceb640e2885856112919bbaae76dd"><div class="ttname"><a href="interface_n_e_rtc_link_engine_context.html#a152ceb640e2885856112919bbaae76dd">NERtcLinkEngineContext::delegate</a></div><div class="ttdeci">id&lt; NERtcLinkEngineDelegate &gt; delegate</div><div class="ttdoc">NERtcEngine 的回调接口，由用户提供。</div><div class="ttdef"><b>定义</b> NERtcLinkEngineBase.h:35</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_link_engine_direct_call_call_param_html"><div class="ttname"><a href="interface_n_e_rtc_link_engine_direct_call_call_param.html">NERtcLinkEngineDirectCallCallParam</a></div><div class="ttdoc">直呼相关参数。</div><div class="ttdef"><b>定义</b> NERtcLinkEngineBase.h:47</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

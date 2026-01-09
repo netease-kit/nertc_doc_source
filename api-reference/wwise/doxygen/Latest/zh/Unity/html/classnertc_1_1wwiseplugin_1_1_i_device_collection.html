@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IDeviceCollection类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_device_collection-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IDeviceCollection类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 nertc.wwiseplugin.IDeviceCollection 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1wwiseplugin_1_1_i_device_collection.png" usemap="#nertc.wwiseplugin.IDeviceCollection_map" alt=""/>
+  <map id="nertc.wwiseplugin.IDeviceCollection_map" name="nertc.wwiseplugin.IDeviceCollection_map">
+<area href="classnertc_1_1wwiseplugin_1_1_i_device_collection_native.html" alt="nertc.wwiseplugin.IDeviceCollectionNative" shape="rect" coords="0,0,252,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab86aeb0a03233690f51c95d42ce4c92b" id="r_ab86aeb0a03233690f51c95d42ce4c92b"><td class="memItemLeft" align="right" valign="top">ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab86aeb0a03233690f51c95d42ce4c92b">GetCount</a> ()</td></tr>
+<tr class="separator:ab86aeb0a03233690f51c95d42ce4c92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef3fce439919c7d1e0fdf7e9d17b912" id="r_a2ef3fce439919c7d1e0fdf7e9d17b912"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ef3fce439919c7d1e0fdf7e9d17b912">GetDevice</a> (ushort index, out string deviceName, out string deviceId)</td></tr>
+<tr class="separator:a2ef3fce439919c7d1e0fdf7e9d17b912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a8127625af4161a6705032ff082f08" id="r_a91a8127625af4161a6705032ff082f08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91a8127625af4161a6705032ff082f08">GetDeviceInfo</a> (ushort index, ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_device_info.html">RtcDeviceInfo</a> deviceInfo)</td></tr>
+<tr class="separator:a91a8127625af4161a6705032ff082f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ebd99c49a73456bcc5c7c11420d161" id="r_a44ebd99c49a73456bcc5c7c11420d161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44ebd99c49a73456bcc5c7c11420d161">Destroy</a> ()</td></tr>
+<tr class="separator:a44ebd99c49a73456bcc5c7c11420d161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection_native.html">nertc.wwiseplugin.IDeviceCollectionNative</a></td></tr>
+<tr class="memitem:aae9a3ff95e93033e10211013d72be0db inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native" id="r_aae9a3ff95e93033e10211013d72be0db"><td class="memItemLeft" align="right" valign="top">static ushort&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection_native.html#aae9a3ff95e93033e10211013d72be0db">getCount</a> (IntPtr self)</td></tr>
+<tr class="separator:aae9a3ff95e93033e10211013d72be0db inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78445e3eb7ed47358e368196b772f04f inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native" id="r_a78445e3eb7ed47358e368196b772f04f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection_native.html#a78445e3eb7ed47358e368196b772f04f">getDevice</a> (IntPtr self, ushort index, [MarshalAs(UnmanagedType.LPStr, SizeConst=256)]StringBuilder device_name, [MarshalAs(UnmanagedType.LPStr, SizeConst=256)]StringBuilder device_id)</td></tr>
+<tr class="separator:a78445e3eb7ed47358e368196b772f04f inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cb5f2f44b838eeee058db8e26b3efe inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native" id="r_af1cb5f2f44b838eeee058db8e26b3efe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection_native.html#af1cb5f2f44b838eeee058db8e26b3efe">getDeviceInfo</a> (IntPtr self, ushort index, ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_device_info.html">RtcDeviceInfo</a> device_info)</td></tr>
+<tr class="separator:af1cb5f2f44b838eeee058db8e26b3efe inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab337a54d908eb14eba4a8c52f891d835 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native" id="r_ab337a54d908eb14eba4a8c52f891d835"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection_native.html#ab337a54d908eb14eba4a8c52f891d835">destroy</a> (IntPtr self)</td></tr>
+<tr class="separator:ab337a54d908eb14eba4a8c52f891d835 inherit pro_methods_classnertc_1_1wwiseplugin_1_1_i_device_collection_native"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>设备相关方法。 <br  />
+此接口类获取设备相关的信息。  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a44ebd99c49a73456bcc5c7c11420d161" name="a44ebd99c49a73456bcc5c7c11420d161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ebd99c49a73456bcc5c7c11420d161">&#9670;&#160;</a></span>Destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IDeviceCollection.Destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>释放所有 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a> 资源。  </p>
+
+</div>
+</div>
+<a id="ab86aeb0a03233690f51c95d42ce4c92b" name="ab86aeb0a03233690f51c95d42ce4c92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86aeb0a03233690f51c95d42ce4c92b">&#9670;&#160;</a></span>GetCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ushort nertc.wwiseplugin.IDeviceCollection.GetCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取设备数量。 </p><dl class="section note"><dt>注解</dt><dd>调用此方法之前，必须调用 EnumeratePlayoutDevices 或 EnumeratePlayoutDevices 方法获取播放或采集设备数量。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>采集或播放设备数量。  </dd></dl>
+
+</div>
+</div>
+<a id="a2ef3fce439919c7d1e0fdf7e9d17b912" name="a2ef3fce439919c7d1e0fdf7e9d17b912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ef3fce439919c7d1e0fdf7e9d17b912">&#9670;&#160;</a></span>GetDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IDeviceCollection.GetDevice </td>
+          <td>(</td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>deviceName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string</td>          <td class="paramname"><span class="paramname"><em>deviceId</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取指定 index 的设备信息。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>指定想查询的设备信息。必须小于 <a class="el" href="#ab86aeb0a03233690f51c95d42ce4c92b">GetCount</a>返回的值。 </td></tr>
+    <tr><td class="paramname">deviceName</td><td>设备名称。 </td></tr>
+    <tr><td class="paramname">deviceId</td><td>设备 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a91a8127625af4161a6705032ff082f08" name="a91a8127625af4161a6705032ff082f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a8127625af4161a6705032ff082f08">&#9670;&#160;</a></span>GetDeviceInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nertc.wwiseplugin.IDeviceCollection.GetDeviceInfo </td>
+          <td>(</td>
+          <td class="paramtype">ushort</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_device_info.html">RtcDeviceInfo</a></td>          <td class="paramname"><span class="paramname"><em>deviceInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>检索有关索引设备的指定信息。 </p><dl class="section note"><dt>注解</dt><dd>可返回设备的链接方式，和SDK判定的疑似不可用状态。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>指定想查询的设备信息。 </td></tr>
+    <tr><td class="paramname">deviceInfo</td><td>设备信息，详细信息请参考 <a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_device_info.html">RtcDeviceInfo</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/device/<a class="el" href="_device_collection_8cs.html">DeviceCollection.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

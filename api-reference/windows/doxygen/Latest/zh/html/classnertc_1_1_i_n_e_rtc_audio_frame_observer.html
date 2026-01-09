@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC macOS/Windows SDK: nertc::INERtcAudioFrameObserver类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC macOS/Windows SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="classnertc_1_1_i_n_e_rtc_audio_frame_observer.html">INERtcAudioFrameObserver</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1_i_n_e_rtc_audio_frame_observer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc::INERtcAudioFrameObserver类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="nertc__engine__defines_8h_source.html">nertc_engine_defines.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:adf80dea6293a867cc276dd792741b478" id="r_adf80dea6293a867cc276dd792741b478"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf80dea6293a867cc276dd792741b478">onAudioFrameDidRecord</a> (<a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame)</td></tr>
+<tr class="separator:adf80dea6293a867cc276dd792741b478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1ed0a96e47acc5877d1c6b2ea45353" id="r_a4b1ed0a96e47acc5877d1c6b2ea45353"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b1ed0a96e47acc5877d1c6b2ea45353">onSubStreamAudioFrameDidRecord</a> (<a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame)</td></tr>
+<tr class="separator:a4b1ed0a96e47acc5877d1c6b2ea45353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94db2d9ee716cd8ebdca7931ef0465ed" id="r_a94db2d9ee716cd8ebdca7931ef0465ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94db2d9ee716cd8ebdca7931ef0465ed">onAudioFrameWillPlayback</a> (<a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame)</td></tr>
+<tr class="separator:a94db2d9ee716cd8ebdca7931ef0465ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8a6c6b00144f47a44f98a34238424a" id="r_a8e8a6c6b00144f47a44f98a34238424a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e8a6c6b00144f47a44f98a34238424a">onMixedAudioFrame</a> (<a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame)</td></tr>
+<tr class="separator:a8e8a6c6b00144f47a44f98a34238424a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f16275b27e0938dca39b0c1c5ab96d8" id="r_a8f16275b27e0938dca39b0c1c5ab96d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f16275b27e0938dca39b0c1c5ab96d8">onPlaybackAudioFrameBeforeMixing</a> (uint64_t userID, <a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame)</td></tr>
+<tr class="separator:a8f16275b27e0938dca39b0c1c5ab96d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c2580c87cec964c9b6cdc97136ab39" id="r_a82c2580c87cec964c9b6cdc97136ab39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82c2580c87cec964c9b6cdc97136ab39">onPlaybackAudioFrameBeforeMixing</a> (uint64_t userID, <a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame, <a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a> cid)</td></tr>
+<tr class="separator:a82c2580c87cec964c9b6cdc97136ab39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc7163a31023dbfc46166cfb0ff1c19" id="r_a7cc7163a31023dbfc46166cfb0ff1c19"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cc7163a31023dbfc46166cfb0ff1c19">onPlaybackSubStreamAudioFrameBeforeMixing</a> (uint64_t userID, <a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame, <a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a> cid)</td></tr>
+<tr class="separator:a7cc7163a31023dbfc46166cfb0ff1c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cedd3dfe33231c74700e319c1a1adc" id="r_ac9cedd3dfe33231c74700e319c1a1adc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9cedd3dfe33231c74700e319c1a1adc">onPlaybackAudioFrameBeforeMixingForPlayStreaming</a> (const char *stream_id, <a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame)</td></tr>
+<tr class="separator:ac9cedd3dfe33231c74700e319c1a1adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>语音观测器对象。 <br  />
+部分接口允许修改 frame 里 void *data 所指向的内容，但不允许修改 format。如果对 format 有要求，需调用相应设置接口。  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="adf80dea6293a867cc276dd792741b478" name="adf80dea6293a867cc276dd792741b478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf80dea6293a867cc276dd792741b478">&#9670;&#160;</a></span>onAudioFrameDidRecord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onAudioFrameDidRecord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>采集音频数据回调，用于声音处理等操作。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>返回音频数据支持读/写。</li>
+<li>有本地音频数据驱动就会回调。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>音频帧。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a94db2d9ee716cd8ebdca7931ef0465ed" name="a94db2d9ee716cd8ebdca7931ef0465ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94db2d9ee716cd8ebdca7931ef0465ed">&#9670;&#160;</a></span>onAudioFrameWillPlayback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onAudioFrameWillPlayback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>播放音频数据回调，用于声音处理等操作。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>返回音频数据支持读/写。</li>
+<li>有本地音频数据驱动就会回调。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>音频帧。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e8a6c6b00144f47a44f98a34238424a" name="a8e8a6c6b00144f47a44f98a34238424a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8a6c6b00144f47a44f98a34238424a">&#9670;&#160;</a></span>onMixedAudioFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onMixedAudioFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取本地用户和所有远端用户混音后的原始音频数据。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>返回音频数据只读。</li>
+<li>有本地音频数据驱动就会回调。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>音频帧。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f16275b27e0938dca39b0c1c5ab96d8" name="a8f16275b27e0938dca39b0c1c5ab96d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f16275b27e0938dca39b0c1c5ab96d8">&#9670;&#160;</a></span>onPlaybackAudioFrameBeforeMixing() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onPlaybackAudioFrameBeforeMixing </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取单个远端用户混音前的音频数据。 <br  />
+成功注册音频观测器后，如果订阅了远端音频（默认订阅）且远端用户开启音频后，SDK 会在捕捉到混音前的音频数据时，触发该回调，将音频数据回调给用户。 </p><dl class="section note"><dt>注解</dt><dd>返回音频数据只读。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">弃用</a></b></dt><dd>即将废弃，请改用接口 <a class="el" href="#a82c2580c87cec964c9b6cdc97136ab39">onPlaybackAudioFrameBeforeMixing</a>[2/2]。在多房间场景下，此接口可通过 cid 识别不同房间。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID。 </td></tr>
+    <tr><td class="paramname">frame</td><td>音频帧。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a82c2580c87cec964c9b6cdc97136ab39" name="a82c2580c87cec964c9b6cdc97136ab39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c2580c87cec964c9b6cdc97136ab39">&#9670;&#160;</a></span>onPlaybackAudioFrameBeforeMixing() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onPlaybackAudioFrameBeforeMixing </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a></td>          <td class="paramname"><span class="paramname"><em>cid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取单个远端用户混音前的音频数据。 <br  />
+成功注册音频观测器后，如果订阅了远端音频（默认订阅）且远端用户开启音频后，SDK 会在捕捉到混音前的音频数据时，触发该回调，将音频数据回调给用户。 </p><dl class="section note"><dt>注解</dt><dd>返回的音频数据只读。 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID。 </td></tr>
+    <tr><td class="paramname">frame</td><td>音频帧。 </td></tr>
+    <tr><td class="paramname">cid</td><td>房间 ID。在多房间场景下，cid 用于识别不同的房间。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac9cedd3dfe33231c74700e319c1a1adc" name="ac9cedd3dfe33231c74700e319c1a1adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cedd3dfe33231c74700e319c1a1adc">&#9670;&#160;</a></span>onPlaybackAudioFrameBeforeMixingForPlayStreaming()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onPlaybackAudioFrameBeforeMixingForPlayStreaming </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>stream_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取指定播放流混音前的音频数据。 <br  />
+成功注册音频观测器后，当系统捕捉到指定播放流混音前的音频数据时，SDK 会触发该回调，将音频数据发送给您。 </p><dl class="section note"><dt>注解</dt><dd>返回音频数据只读。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream_id</td><td>播放流的 ID。 </td></tr>
+    <tr><td class="paramname">frame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7cc7163a31023dbfc46166cfb0ff1c19" name="a7cc7163a31023dbfc46166cfb0ff1c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc7163a31023dbfc46166cfb0ff1c19">&#9670;&#160;</a></span>onPlaybackSubStreamAudioFrameBeforeMixing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onPlaybackSubStreamAudioFrameBeforeMixing </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a></td>          <td class="paramname"><span class="paramname"><em>cid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取指定远端用户混音前的辅流音频数据。 <br  />
+成功注册音频观测器后，如果订阅了远端辅流音频（默认订阅）且远端用户开启辅流音频后，SDK 会在捕捉到混音前的辅流音频数据时，触发该回调，将辅流音频数据回调给用户。 </p><dl class="section note"><dt>注解</dt><dd>返回音频数据只读。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>用户 ID。 </td></tr>
+    <tr><td class="paramname">frame</td><td>音频帧。 </td></tr>
+    <tr><td class="paramname">cid</td><td>房间 ID。在多房间场景下，cid 用于识别不同的房间。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b1ed0a96e47acc5877d1c6b2ea45353" name="a4b1ed0a96e47acc5877d1c6b2ea45353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1ed0a96e47acc5877d1c6b2ea45353">&#9670;&#160;</a></span>onSubStreamAudioFrameDidRecord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcAudioFrameObserver::onSubStreamAudioFrameDidRecord </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *</td>          <td class="paramname"><span class="paramname"><em>frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>辅流采集音频数据回调。 <br  />
+通过 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ab9adc2e53fa43ee428dcb5ae2fc7a6f8">setAudioFrameObserver</a> 接口设置回调监听，当辅流设备工作时，会触发该回调。此外您可以通过 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ae3f5b17aade8c9fe8ff5a6fef6383d9e">setRecordingAudioFrameParameters</a> 接口设置回调数据格式。 </p><dl class="section user"><dt>业务场景</dt><dd>通过该回调数据可以获取辅流采集数据，也可以通过回调数据做音频前处理（变声、音效处理等）。 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>有本地音频辅流据驱动就会返回该回调。 <br  />
+</li>
+<li>返回音频数据支持读/写。</li>
+<li>该接口返回的数据格式，需要以返回数据 <a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> 中的 <a class="el" href="structnertc_1_1_n_e_rtc_audio_format.html">NERtcAudioFormat</a> 为准。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>frame </td><td><a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> </td><td>音频帧。包含数据格式及数据内容。  </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="nertc__engine__defines_8h_source.html">nertc_engine_defines.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

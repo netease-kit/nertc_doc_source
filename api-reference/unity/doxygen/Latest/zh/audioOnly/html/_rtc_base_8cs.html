@@ -1,0 +1,1078 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Unity SDK: RtcBase.cs 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Unity SDK<span id="projectnumber">&#160;V.5.4.128</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_891c75a0661ddb9d371604b8a02fc0ab.html">Gaming</a></li><li class="navelem"><a class="el" href="dir_1236680abdae7631fa3d6696d1d83681.html">Assets</a></li><li class="navelem"><a class="el" href="dir_b06bcffdad1451b673f074b4b2c1d2a8.html">GameSDK</a></li><li class="navelem"><a class="el" href="dir_1a1c7be77d9519e275fa84bdcba3b01a.html">nertc</a></li><li class="navelem"><a class="el" href="dir_0bafd07708bb69d84b5b6c645491782b.html">Runtime</a></li><li class="navelem"><a class="el" href="dir_01cda65185316522bb216a064e421271.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">RtcBase.cs 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>nertc.RtcConstants</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_engine_context.html">nertc.RtcEngineContext</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_live_stream_task_option.html">nertc.RtcLiveStreamTaskOption</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_live_stream_user_transcoding.html">nertc.RtcLiveStreamUserTranscoding</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_live_stream_image_info.html">nertc.RtcLiveStreamImageInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_live_stream_layout.html">nertc.RtcLiveStreamLayout</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_live_stream_config.html">nertc.RtcLiveStreamConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_live_stream_task_info.html">nertc.RtcLiveStreamTaskInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_camera_capture_config.html">nertc.RtcCameraCaptureConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_device_info.html">nertc.RtcDeviceInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_volume_info.html">nertc.RtcAudioVolumeInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_stats.html">nertc.RtcStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_layer_send_stats.html">nertc.RtcVideoLayerSendStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_send_stats.html">nertc.RtcVideoSendStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_layer_recv_stats.html">nertc.RtcVideoLayerRecvStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_recv_stats.html">nertc.RtcVideoRecvStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_layer_send_stats.html">nertc.RtcAudioLayerSendStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_audio_send_stats.html">nertc.RtcAudioSendStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_layer_recv_stats.html">nertc.RtcAudioLayerRecvStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_recv_stats.html">nertc.RtcAudioRecvStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_network_quality_info.html">nertc.RtcNetworkQualityInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_config.html">nertc.RtcVideoConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_rectangle.html">nertc.RtcRectangle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_dimensions.html">nertc.RtcVideoDimensions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_screen_capture_parameters.html">nertc.RtcScreenCaptureParameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_video_canvas.html">nertc.RtcVideoCanvas</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_frame_request_format.html">nertc.RtcAudioFrameRequestFormat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_format.html">nertc.RtcAudioFormat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_frame.html">nertc.RtcAudioFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_encoded_frame.html">nertc.RtcAudioEncodedFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_external_video_frame.html">nertc.RtcExternalVideoFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_frame.html">nertc.RtcVideoFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_video_encoded_frame.html">nertc.RtcVideoEncodedFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_create_audio_mixing_option.html">nertc.RtcCreateAudioMixingOption</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_create_audio_effect_option.html">nertc.RtcCreateAudioEffectOption</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_channel_media_relay_info.html">nertc.RtcChannelMediaRelayInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnertc_1_1_rtc_channel_media_relay_config.html">nertc.RtcChannelMediaRelayConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_image_watermark_config.html">nertc.RtcImageWatermarkConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_text_watermark_config.html">nertc.RtcTextWatermarkConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_timestamp_watermark_config.html">nertc.RtcTimestampWatermarkConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_watermark_config.html">nertc.RtcVideoWatermarkConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_server_addresses.html">nertc.RtcServerAddresses</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_audio_recording_configuration.html">nertc.RtcAudioRecordingConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_encryption_config.html">nertc.RtcEncryptionConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_lastmile_probe_config.html">nertc.RtcLastmileProbeConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_lastmile_probe_one_way_result.html">nertc.RtcLastmileProbeOneWayResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_lastmile_probe_result.html">nertc.RtcLastmileProbeResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_virtual_background_source.html">nertc.RtcVirtualBackgroundSource</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_reverb_param.html">nertc.RtcReverbParam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_join_channel_options.html">nertc.RtcJoinChannelOptions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_user_join_extra_info.html">nertc.RtcUserJoinExtraInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_position_info.html">nertc.RtcPositionInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_spatializer_room_property.html">nertc.RtcSpatializerRoomProperty</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_camera_focus_and_exposure_info.html">nertc.RtcCameraFocusAndExposureInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_point.html">nertc.RtcPoint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1_rtc_video_correction_configuration.html">nertc.RtcVideoCorrectionConfiguration</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html">nertc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a3db838edfb8cde9d95ab5d9e4eb88cee" id="r_a3db838edfb8cde9d95ab5d9e4eb88cee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">nertc.RtcErrorCode</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea04ce105615cbc4cea1c8385611d3b518">nertc.kNERtcNoError</a> = 0
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0d80b2bf7a93930f87b8e333e7b94845">nertc.kNERtcErrChannelReservePermissionDenied</a> = 403
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeabc0f916131af2eca7d7f503252abc402">nertc.kNERtcErrChannelReserveTimeOut</a> = 408
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea95cfd68f1e17e210f9a38d4bdb9e6bef">nertc.kNERtcErrChannelReserveErrorParam</a> = 414
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaf73de1719b864362555762913070ec24">nertc.kNERtcErrChannelReserveErrorAppKey</a> = 417
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea487095103c3800f60ae6177765fbd02e">nertc.kNERtcErrChannelReserveUnknownError</a> = 500
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9189d74b7663dff96bb3767b167a9168">nertc.kNERtcErrChannelReserveMoreThanTwoUser</a> = 600
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaf008b3fa9e095dd16e00e81f25286bee">nertc.kNERtcErrChannelPermissionKeyError</a> = 901
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea3063139f1c9f200e7700ada147945e82">nertc.kNERtcErrChannelPermissionKeyTimeout</a> = 902
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea075b5cd2ecbe08591aac60bfb542ac3b">nertc.kNERtcErrLsTaskRequestInvalid</a> = 1301
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea00d5058459afe86cbef572376bdc159e">nertc.kNERtcErrLsTaskIsInvaild</a> = 1400
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea3a5fe1f6212835a65c68b00ef41f5475">nertc.kNERtcErrLsTaskRoomExited</a> = 1401
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea4472e9233d22d28e5dd03de7e3d24da1">nertc.kNERtcErrLsTaskNumLimit</a> = 1402
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaa60bc5367ae3d672d6685785516179e3">nertc.kNERtcErrLsTaskDuplicateId</a> = 1403
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0f788374bfa1d23f85bbac7cdf171a4a">nertc.kNERtcErrLsTaskNotFound</a> = 1404
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea02291bb930ca0de31cc5158cd749601e">nertc.kNERtcErrLsTaskRequestErr</a> = 1417
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeae572f9ffcf2d4e1fad3328f75ecd2f69">nertc.kNERtcErrLsTaskInternalServerErr</a> = 1500
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea2d8074acf80eca6e182c2862657b64e3">nertc.kNERtcErrLsTaskInvalidLayout</a> = 1501
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea1349c9de5b25a504ed566e08fbfd4359">nertc.kNERtcErrLsTaskUserPicErr</a> = 1512
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0ce3047f63850827ddb6e23fba92a5ae">nertc.kNERtcErrChannelNoPublishPermission</a> = 1620
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea7afde512753cc44a9729f6921edf0068">nertc.kNERtcErrChannelNoSubscribePermission</a> = 2803
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaaabcc2da89afe1c34649d53069d22d4e">nertc.kNERtcErrServerPersonsInRoomReachedTheLimit</a> = 4003
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea569f750c18b1becce223e6b51209a175">nertc.kNERtcErrFatal</a> = 30001
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea2758746e03e7ed48d937ff3b651f412e">nertc.kNERtcErrOutOfMemory</a> = 30002
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea02f91abb9a8d312e51314622cc5f8419">nertc.kNERtcErrInvalidParam</a> = 30003
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeafebebb3b849f022c9105d7d26f462634">nertc.kNERtcErrNotSupported</a> = 30004
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeae769c03cb48c8bb3952029e84b42085e">nertc.kNERtcErrInvalidState</a> = 30005
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaffbb67a1b96817cae716ce13cfba1fbc">nertc.kNERtcErrLackOfResource</a> = 30006
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea6b2c9cdd780296b206132df205c0b047">nertc.kNERtcErrInvalidIndex</a> = 30007
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea5b87bb1950be68f85faa3ca631779767">nertc.kNERtcErrDeviceNotFound</a> = 30008
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9c698659c3320bccadd956590aa6b6a3">nertc.kNERtcErrInvalidDeviceSourceID</a> = 30009
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea8e6876729ee7d6d8d9bed13e0693668f">nertc.kNERtcErrInvalidVideoProfile</a> = 30010
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9c262464d70f24832c135e6143a78e74">nertc.kNERtcErrCreateDeviceSourceFail</a> = 30011
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea89aea7b37774e71125795e86ccc47094">nertc.kNERtcErrInvalidRender</a> = 30012
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeacddcdeb535f34e469f1799e0094a8c0d">nertc.kNERtcErrDevicePreviewAlreadyStarted</a> = 30013
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaaef50a2907c8e5782cdca7c43d011135">nertc.kNERtcErrTransmitPendding</a> = 30014
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaa54e821d6321d0214f617ecb436a3d00">nertc.kNERtcErrConnectFail</a> = 30015
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9f1310a23ca2cba31497197a7e1635af">nertc.kNERtcErrCreateDumpFileFail</a> = 30016
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea1d5a06e0aa9385954fde8bec969f9fed">nertc.kNERtcErrStartDumpFail</a> = 30017
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea51d98e1a9f9e08b641af020f6e9af0a7">nertc.kNERtcErrDesktopCaptureInvalidState</a> = 30020
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea2dc26a244dc15d192707e6e56d12755e">nertc.kNERtcErrDesktopCaptureInvalidParam</a> = 30021
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeafa83a89b02a4b8913faa0e2d1cec6fa1">nertc.kNERtcErrDesktopCaptureNotReady</a> = 30022
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea2d62decb5f1508156e8c956f98dbce17">nertc.kNERtcErrDeviceOccupied</a> = 30027
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea4b7e1697d02ae12a4be0a5d3c3b68d03">nertc.kNERtcErrChannelAlreadyJoined</a> = 30100
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeacfdcffa8424778bb6e38d3ff79a321a2">nertc.kNERtcErrChannelNotJoined</a> = 30101
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeac534a5ee4e25b6589383171d55caa3db">nertc.kNERtcErrChannelRepleatedlyLeave</a> = 30102
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea436787abaa9e7bf57fe93f8d4664e1a9">nertc.kNERtcErrRequestJoinChannelFail</a> = 30103
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea8deb5db5ef3d2948b59dad272933868d">nertc.kNERtcErrSessionNotFound</a> = 30104
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea48513895aea83ec1abde78fa85811a48">nertc.kNERtcErrUserNotFound</a> = 30105
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaf2b3892a18af4ae55991f0f77d3a8ae4">nertc.kNERtcErrInvalidUserID</a> = 30106
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeab610a273d26db6d89133a3ca8cd26193">nertc.kNERtcErrMediaNotStarted</a> = 30107
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeac8ba321dee64e02afda05c841979258a">nertc.kNERtcErrSourceNotFound</a> = 30108
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea1dee2d7bf4f5c6a3ab90660c6a8c7bb8">nertc.kNERtcErrSwitchChannelInvalidState</a> = 30109
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceead24dbf3ef708f5c0b374fbc6ec047d52">nertc.kNERtcErrChannelMediaRelayInvalidState</a> = 30110
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaef552af6c382cceabdd9802fb7ac4668">nertc.kNERtcErrChannelMediaRelayPermissionDenied</a> = 30111
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeabe8af5476d5b9767832a72295c74230a">nertc.kNERtcErrChannelMediaRelayStopFailed</a> = 30112
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceead22602cd256a1a8be2f6a88e80ffaf1a">nertc.kNERtcErrEncryptNotSuitable</a> = 30113
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeafff2e1ac0878e91c6c63ef7f06bb5bfe">nertc.kNERtcErrUserPermKeyAuthFailed</a> = 30121
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea47c1d8f5977aede734bb5d1a65c7ff42">nertc.kNERtcErrSEIExceedMaxDataLimit</a> = 30122
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea97b720ad7f07b1bba407d909bf921a5a">nertc.kNERtcErrDataChannelExceedMaxDataLimit</a> = 30123
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaaa98f788486c65eb98f2c3b93d1ec4bf">nertc.kNERtcErrConnectionNotFound</a> = 30200
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaf29a0955489e40d080f812dddf26b5aa">nertc.kNERtcErrStreamNotFound</a> = 30201
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceead9854bbcba3445da02044104efa5b3d4">nertc.kNERtcErrAddTrackFail</a> = 30202
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaebfd7645b29af4bde436840c1ee3972f">nertc.kNERtcErrTrackNotFound</a> = 30203
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeac159ebe3032e8c034a3c7c3b758b34aa">nertc.kNERtcErrMediaConnectionDisconnected</a> = 30204
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeac1720a3f39c6a871bacf04c9ccb3db55">nertc.kNERtcErrSignalDisconnected</a> = 30205
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeac8f146fd3dad75af0cc9d3274ba7a8e0">nertc.kNERtcErrServerKicked</a> = 30206
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea65dcb5caf51122a6eeb363d21a4be3eb">nertc.kNERtcErrKickedForRoomClosed</a> = 30207
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea771c3c67ed553d15d1f53afb70a74b1e">nertc.kNERtcErrChannelLeaveBySwitchAction</a> = 30208
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9486f0b05912bf45f7b2429c28d434fb">nertc.kNERtcErrChannelLeaveByDuplicateUidLogin</a> = 30209
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeab9b4bd5e417b0fdde7e55e7ec82da935">nertc.kNERtcErrOSAuthorize</a> = 30300
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceead939ab62cd3703eeca5a81008c17d85f">nertc.kNERtcErrPTTAuthorizeFailed</a> = 31001
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0c8d5a6eb73107714fb92bc95857b92f">nertc.kNERtcErrPTTAuthNetError</a> = 31002
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea32613ff7ceeea2a5cc2eedf225f7ca8d">nertc.kNERtcErrPTTAuthTimeOut</a> = 31003
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaa2d86b079a20d1bf8cab2be58b0685d8">nertc.kNERtcErrPTTRecordingAreadyStarted</a> = 31011
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea2458d545e26f4d64577f059552cea275">nertc.kNERtcErrPTTRecordingOpenFileFailed</a> = 31012
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeacbcda79f20d527337039d7151489c4db">nertc.kNERtcErrPTTRecordingDurationTooShort</a> = 31013
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeae75794f81e21b4f60daaeef342129b43">nertc.kNERtcErrPTTRecordingNotStarted</a> = 31014
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaea51a14fdf87120c9c516c858048b4d5">nertc.kNERtcErrPTTPlayOpenFileFailed</a> = 31021
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea55bae45e35f454bf873d036fbc837d94">nertc.kNERtcErrPTTPlayReadFileFailed</a> = 31022
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0fa89a6967e5568b183dd586728fb937">nertc.kNERtcErrPTTPlayNotStarted</a> = 31023
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0aabce5cd2d76763bc8df06ffd657970">nertc.kNERtcErrPTTUploadOpenFileFailed</a> = 31031
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeab8e574cf301d8fae333d7a482dde7695">nertc.kNERtcErrPTTUploadFileTooLarge</a> = 31032
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9fea54de55b30495fe9411336745a9bc">nertc.kNERtcErrPTTUploadAuthFailed</a> = 31033
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea1e6075dfa5828b13c687a6062e6895eb">nertc.kNERtcErrPTTUploadNetError</a> = 31034
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea2d2456af2526f789ac69febb6b4e35fb">nertc.kNERtcErrPTTUploadDataError</a> = 31035
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeae30305c43913e6a39e5958e7433fc59f">nertc.kNERtcErrPTTDownloadOpenFileFailed</a> = 31041
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea319bec9774c3e30e2ce61819846eb169">nertc.kNERtcErrPTTDownloadAuthFailed</a> = 31042
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeafa3e3fb79c51a9a7d5437cdd0db70528">nertc.kNERtcErrPTTDownloadNetError</a> = 31043
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaf561259ee9a0f3cd243a01f1d31b2c3d">nertc.kNERtcErrPTTDownloadNotFound</a> = 31044
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea888daa4079279dda03e316e7613d4e68">nertc.kNERtcErrPTTDownloadDataError</a> = 31045
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea1c1594044c3c179538a317532167a528">nertc.kNERtcErrPTTDownloadAuditing</a> = 31046
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea024a7f83ad83cc976993b53cb4d6b822">nertc.kNERtcErrPTTDownloadAuditFailed</a> = 31047
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeae5cbcbf209e95278b795ca483c7245c6">nertc.kNERtcErrPTTSTTAuthFailed</a> = 31051
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9e6398722bc44945fc39288008b2e8ea">nertc.kNERtcErrPTTSTTNetError</a> = 31052
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea8e686fcecbc47101231be4a39b1d54b7">nertc.kNERtcErrPTTSTTTranslateFaild</a> = 31053
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea5514f743766712b51775f40ab048f295">nertc.kNERtcErrPTTSTTNotFound</a> = 31054
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea5c62fe739b14daa103ae217b2ade3a81">nertc.kNERtcErrPTTSTTDataError</a> = 31055
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea45c9ddeae8cf4c030a9d7f0e53a6f8e1">nertc.kNERtcErrPTTSTTAuditing</a> = 31056
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaec2757ff3750bd4487d1e5f3933f4092">nertc.kNERtcErrPTTSTTAuditFailed</a> = 31057
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea7a5947180d5c3ebba31f138b8ac8caa1">nertc.kNERtcRuntimeErrADMNoAuthorize</a> = 40000
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea119cc1d6f56c19e8ba8a0a8a433e77b7">nertc.kNERtcRuntimeErrADMInitRecordingFailed</a> = 40001
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea938662751c5fe5da2b595647452af812">nertc.kNERtcRuntimeErrADMStartRecordingFailed</a> = 40002
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea17027cf6bffde171804da3aae324d153">nertc.kNERtcRuntimeErrADMStopRecordingFailed</a> = 40003
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea00bae91a96f6220c9653953417cc865f">nertc.kNERtcRuntimeErrADMInitPlayoutFailed</a> = 40004
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceeaa58fa71a97c6d343e11b40431ce24ced">nertc.kNERtcRuntimeErrADMStartPlayoutFailed</a> = 40005
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceead5a7b4805d1d5baa59875618f7eef2d4">nertc.kNERtcRuntimeErrADMStopPlayoutFailed</a> = 40006
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea6bc05ba9fd0e3645c59f7e678a1840b7">nertc.kNERtcRuntimeErrADMRecordingFailed</a> = 40007
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea9ff275b1baa7103ee08b7fda39a9b5a5">nertc.kNERtcRuntimeErrADMPlayoutFailed</a> = 40008
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea7098454a0cd11e37af747bfa61ac5d83">nertc.kNERtcRuntimeErrADMRecording</a> = 40008
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0a74bc058527f576fe22c12a3baacd8a">nertc.kNERtcRuntimeErrADMPlayout</a> = 40009
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea679d7e2d6fd0bc422523b628b09b2276">nertc.kNERtcRuntimeErrVDMNoAuthorize</a> = 50000
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea3f29e381dea60f925b8c7ecb727a7154">nertc.kNERtcRuntimeErrVDMNotScreenUseSubStream</a> = 50001
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea47cbe44cae4f9d3e90fe6499321e86a7">nertc.kNERtcRuntimeErrVDMCameraDisconnect</a> = 50303
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea0827a3be13d7dba230ee653026ab61f0">nertc.kNERtcRuntimeErrVDMCameraFreezed</a> = 50304
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea51bc1218213c9a46e2c7dfffcf2709f3">nertc.kNERtcRuntimeErrVDMCameraUnknownError</a> = 50305
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea005f80a1328784ea8833297217badf5a">nertc.kNERtcRuntimeErrVDMCameraNoFrame</a> = 50306
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceead57a4b161315f4b04cc4875473503376">nertc.kNERtcRuntimeErrVDMCameraCreateFail</a> = 50307
+, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88ceea8f6a3f9593f5aaf9953a4f363fbe7acb">nertc.kNERtcRuntimeErrScreenCaptureNoAuthorize</a> = 50400
+<br />
+ }</td></tr>
+<tr class="separator:a3db838edfb8cde9d95ab5d9e4eb88cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ea4d720134a1f9c3618f2e57489bf3" id="r_a33ea4d720134a1f9c3618f2e57489bf3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3">nertc.RtcAudioMixingErrorCode</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a6d068020eec200bfcb71aeea124228d7">nertc.kNERtcAudioMixingErrorOK</a> = 0
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a4e92df7ee6afc4b57b45a648ddb4bd4f">nertc.kNERtcAudioMixingErrorFatal</a> = 1
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3ac5bef8fe789ce79a18731625163ac087">nertc.kNERtcAudioMixingErrorCanNotOpen</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3ae16563e3a1bee28ff4e187acf365cc7c">nertc.kNERtcAudioMixingErrorDecode</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a4c502681afb071bf0f40fc437d39b6cc">nertc.kNERtcAudioMixingErrorInterrupt</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a504d1652fa01f0e7d5f9f89989837517">nertc.kNERtcAudioMixingErrorHttpNotFound</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a1ac0c8a204d43a8633c8e7bdeb5743ec">nertc.kNERtcAudioMixingErrorOpen</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a418e271a60f51c45dbb95790ba27e46d">nertc.kNERtcAudioMixingErrorNInfo</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a803fda2f7f23e6068cd5e6cc0aac906d">nertc.kNERtcAudioMixingErrorNStream</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a023c1c73c6fc64b71aebc6ad249892c1">nertc.kNERtcAudioMixingErrorNCodec</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a80d3a63141cbbe3402325626c44fb978">nertc.kNERtcAudioMixingErrorNMem</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a552d2b6a489083dcdbb671bda2c1ac52">nertc.kNERtcAudioMixingErrorCodecOpen</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3ab4b355caa84ee4bc18cef66b1f7015cc">nertc.kNERtcAudioMixingErrorInvalidInfo</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a6428327508fcb1fce73a2c43e6557010">nertc.kNERtcAudioMixingErrorOpenTimeout</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3a64e6654cbc4fd8a9dc901e727ba9d2f1">nertc.kNERtcAudioMixingErrorIoTimeout</a>
+, <a class="el" href="namespacenertc.html#a33ea4d720134a1f9c3618f2e57489bf3af91b67e0b0b83de1833933b783dd4176">nertc.kNERtcAudioMixingErrorIo</a>
+<br />
+ }</td></tr>
+<tr class="separator:a33ea4d720134a1f9c3618f2e57489bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc5e9257415cbd9089fb7a41b49a52e" id="r_aabc5e9257415cbd9089fb7a41b49a52e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aabc5e9257415cbd9089fb7a41b49a52e">nertc.RtcWarnCode</a> : int { <a class="el" href="namespacenertc.html#aabc5e9257415cbd9089fb7a41b49a52ea5998bcb9a8b35445f35db7fd97678e7e">nertc.kLiteSDKNoWarning</a> = 0
+, <a class="el" href="namespacenertc.html#aabc5e9257415cbd9089fb7a41b49a52ea031d5442b4d6ace5db859048256f0188">nertc.kNERtcWarningChannelAbilityNotMatch</a> = 406
+, <a class="el" href="namespacenertc.html#aabc5e9257415cbd9089fb7a41b49a52ea436e4e3ea68e7df849f3f81b55d2d84d">nertc.kNERtcWarningASLAudioFallback</a> = 407
+ }</td></tr>
+<tr class="separator:aabc5e9257415cbd9089fb7a41b49a52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed2b98844b981f23bf54a4af096d258" id="r_a7ed2b98844b981f23bf54a4af096d258"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a7ed2b98844b981f23bf54a4af096d258">nertc.RtcInterfaceIdType</a> : int { <a class="el" href="namespacenertc.html#a7ed2b98844b981f23bf54a4af096d258ac27e5560c6a734991ef0fdb297d5eccb">nertc.kNERtcIIDAudioDeviceManager</a> = 1
+, <a class="el" href="namespacenertc.html#a7ed2b98844b981f23bf54a4af096d258a850b7261882b2b84b1061c3ca717fc4e">nertc.kNERtcIIDVideoDeviceManager</a> = 2
+ }</td></tr>
+<tr class="separator:a7ed2b98844b981f23bf54a4af096d258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83c77a6c52ab22f65448afdb17a3746" id="r_ad83c77a6c52ab22f65448afdb17a3746"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ad83c77a6c52ab22f65448afdb17a3746">nertc.RtcClientRole</a> : int { <a class="el" href="namespacenertc.html#ad83c77a6c52ab22f65448afdb17a3746a23cd6b32b64597f413fe3930a8d58427">nertc.kNERtcClientRoleBroadcaster</a> = 0
+, <a class="el" href="namespacenertc.html#ad83c77a6c52ab22f65448afdb17a3746a6bf983ad2ce921f9bf1d89688f325979">nertc.kNERtcClientRoleAudience</a> = 1
+ }</td></tr>
+<tr class="separator:ad83c77a6c52ab22f65448afdb17a3746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ce3a3f9dae2b5318ed2ff3b4513268" id="r_a51ce3a3f9dae2b5318ed2ff3b4513268"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a51ce3a3f9dae2b5318ed2ff3b4513268">nertc.RtcChannelProfileType</a> : int { <a class="el" href="namespacenertc.html#a51ce3a3f9dae2b5318ed2ff3b4513268ad494114e3e6cc9ba11aacf8b17879c35">nertc.kNERtcChannelProfileCommunication</a> = 0
+, <a class="el" href="namespacenertc.html#a51ce3a3f9dae2b5318ed2ff3b4513268af4c307d06d1e366d2a87751d5b66fb2b">nertc.kNERtcChannelProfileLiveBroadcasting</a> = 1
+ }</td></tr>
+<tr class="separator:a51ce3a3f9dae2b5318ed2ff3b4513268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b397edb9e732c1a59ec57c24f6eae33" id="r_a8b397edb9e732c1a59ec57c24f6eae33"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a8b397edb9e732c1a59ec57c24f6eae33">nertc.RtcMediaPriorityType</a> : int { <a class="el" href="namespacenertc.html#a8b397edb9e732c1a59ec57c24f6eae33ac9ca3a0d1e46e8016eb15241c0e4c4b7">nertc.kNERtcMediaPriorityHigh</a> = 50
+, <a class="el" href="namespacenertc.html#a8b397edb9e732c1a59ec57c24f6eae33aff99902366adc17d668ccd2ee264d5ef">nertc.kNERtcMediaPriorityNormal</a> = 100
+ }</td></tr>
+<tr class="separator:a8b397edb9e732c1a59ec57c24f6eae33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b508cc0483b0b70525380f6bbca316c" id="r_a3b508cc0483b0b70525380f6bbca316c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316c">nertc.RtcLiveStreamLayoutMode</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316ca24d8fe73190855eae1f4c0c3af2d92e6">nertc.kNERtcLayoutFloatingRightVertical</a> = 0
+, <a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316caaf6d44a50e0e6ac5a0417de208ecbc16">nertc.kNERtcLayoutFloatingLeftVertical</a>
+, <a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316ca057d1d5bd67d4df0804bc6577d1fc823">nertc.kNERtcLayoutSplitScreen</a>
+, <a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316caaa6785c743ab43da019112eccfddb1a9">nertc.kNERtcLayoutSplitScreenScaling</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316ca6c0be293abe384d509df3596b547a876">nertc.kNERtcLayoutCustom</a>
+, <a class="el" href="namespacenertc.html#a3b508cc0483b0b70525380f6bbca316cace04e3310cf06cc04acc1f5c4ab9912e">nertc.kNERtcLayoutAudioOnly</a>
+<br />
+ }</td></tr>
+<tr class="separator:a3b508cc0483b0b70525380f6bbca316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4a58cc65ce3a8d542eb2b843225e06" id="r_a5d4a58cc65ce3a8d542eb2b843225e06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a5d4a58cc65ce3a8d542eb2b843225e06">nertc.RtcLiveStreamMode</a> : int { <a class="el" href="namespacenertc.html#a5d4a58cc65ce3a8d542eb2b843225e06a6ab37c454750cb3d2473d375a8e305e8">nertc.kNERtcLsModeVideo</a> = 0
+, <a class="el" href="namespacenertc.html#a5d4a58cc65ce3a8d542eb2b843225e06a07b9d33617b59ef09448dd6b52ba2304">nertc.kNERtcLsModeAudio</a> = 1
+ }</td></tr>
+<tr class="separator:a5d4a58cc65ce3a8d542eb2b843225e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea578c88b75bf9458995c5a10d591054" id="r_aea578c88b75bf9458995c5a10d591054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aea578c88b75bf9458995c5a10d591054">nertc.RtcLiveStreamVideoScaleMode</a> : int { <a class="el" href="namespacenertc.html#aea578c88b75bf9458995c5a10d591054a9196d1e3c24867dcc9a663f270177242">nertc.kNERtcLsModeVideoScaleFit</a> = 0
+, <a class="el" href="namespacenertc.html#aea578c88b75bf9458995c5a10d591054a84de3c0c30dedbff6d32c9738b87311c">nertc.kNERtcLsModeVideoScaleCropFill</a> = 1
+ }</td></tr>
+<tr class="separator:aea578c88b75bf9458995c5a10d591054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab693699f2323ceb83a3d4f9d323e7537" id="r_ab693699f2323ceb83a3d4f9d323e7537"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab693699f2323ceb83a3d4f9d323e7537">nertc.RtcLiveStreamAudioSampleRate</a> : int { <a class="el" href="namespacenertc.html#ab693699f2323ceb83a3d4f9d323e7537a484f45f98bca61fe13dc44b916e0f154">nertc.kNERtcLiveStreamAudioSampleRate32000</a> = 32000
+, <a class="el" href="namespacenertc.html#ab693699f2323ceb83a3d4f9d323e7537a2945cc2bd56beb8cff9a178cc4612109">nertc.kNERtcLiveStreamAudioSampleRate44100</a> = 44100
+, <a class="el" href="namespacenertc.html#ab693699f2323ceb83a3d4f9d323e7537a46a22648413cf612728accb3d4847380">nertc.kNERtcLiveStreamAudioSampleRate48000</a> = 48000
+ }</td></tr>
+<tr class="separator:ab693699f2323ceb83a3d4f9d323e7537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643d8dc1c6566c4b4d23b8965742bbfd" id="r_a643d8dc1c6566c4b4d23b8965742bbfd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a643d8dc1c6566c4b4d23b8965742bbfd">nertc.RtcLiveStreamAudioCodecProfile</a> : int { <a class="el" href="namespacenertc.html#a643d8dc1c6566c4b4d23b8965742bbfda636254a3d4ed2faaa9395106213e1789">nertc.kNERtcLiveStreamAudioCodecProfileLCAAC</a> = 0
+, <a class="el" href="namespacenertc.html#a643d8dc1c6566c4b4d23b8965742bbfda15b32c9b85341191f0dc74f24bc007c5">nertc.kNERtcLiveStreamAudioCodecProfileHEAAC</a> = 1
+ }</td></tr>
+<tr class="separator:a643d8dc1c6566c4b4d23b8965742bbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e6ec3d9d3c517a2f50564833ef39fc" id="r_a79e6ec3d9d3c517a2f50564833ef39fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a79e6ec3d9d3c517a2f50564833ef39fc">nertc.RtcLiveStreamStateCode</a> : int { <a class="el" href="namespacenertc.html#a79e6ec3d9d3c517a2f50564833ef39fcac735925cddb9ba30fe0cb0d30004c6dd">nertc.kNERtcLsStatePushing</a> = 505
+, <a class="el" href="namespacenertc.html#a79e6ec3d9d3c517a2f50564833ef39fcac31f37c207beca8c8438d907aad921c5">nertc.kNERtcLsStatePushFail</a> = 506
+, <a class="el" href="namespacenertc.html#a79e6ec3d9d3c517a2f50564833ef39fca02287f1f6afd1ee3baac9a0660311c14">nertc.kNERtcLsStatePushStopped</a> = 511
+, <a class="el" href="namespacenertc.html#a79e6ec3d9d3c517a2f50564833ef39fcaa1fd182640dda6b93efef2c6a48b3956">nertc.kNERtcLsStateImageError</a> = 512
+ }</td></tr>
+<tr class="separator:a79e6ec3d9d3c517a2f50564833ef39fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde3a454cc34b9d91ba5b03f46dd6da6" id="r_abde3a454cc34b9d91ba5b03f46dd6da6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#abde3a454cc34b9d91ba5b03f46dd6da6">nertc.RtcOsCategory</a> : int { <a class="el" href="namespacenertc.html#abde3a454cc34b9d91ba5b03f46dd6da6a15b9efb03dd5f5947e7389f9fdbac325">nertc.kNERtcOSiOS</a> = 1
+, <a class="el" href="namespacenertc.html#abde3a454cc34b9d91ba5b03f46dd6da6a839ee5ab36d8c0751014f50b593e83df">nertc.kNERtcOSAndroid</a> = 2
+, <a class="el" href="namespacenertc.html#abde3a454cc34b9d91ba5b03f46dd6da6ab653b376bfcf6bab49f75776e13bbdea">nertc.kNERtcOSPC</a> = 3
+, <a class="el" href="namespacenertc.html#abde3a454cc34b9d91ba5b03f46dd6da6afafe3bc09d246a6868d8af67f17dcc33">nertc.kNERtcOSWebRTC</a> = 4
+ }</td></tr>
+<tr class="separator:abde3a454cc34b9d91ba5b03f46dd6da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc2d45cebf46cf9489d33210f643129" id="r_afbc2d45cebf46cf9489d33210f643129"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129">nertc.RtcAudioProfileType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129ad354d4a00029a748b263a2e4053614f8">nertc.kNERtcAudioProfileDefault</a> = 0
+, <a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129a57054d2efac5b6b29b8c481431c1913b">nertc.kNERtcAudioProfileStandard</a> = 1
+, <a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129aa7085af5fc5bd6b677eadd5281b59402">nertc.kNERtcAudioProfileStandardExtend</a> = 2
+, <a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129a2871539beec78c209a9bfe12df8b17bd">nertc.kNERtcAudioProfileMiddleQuality</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129a2cd6b5b8b9d01add0fbeb1004306cfc3">nertc.kNERtcAudioProfileMiddleQualityStereo</a> = 4
+, <a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129a8dce68a3f215223898708d50d6fa084e">nertc.kNERtcAudioProfileHighQuality</a> = 5
+, <a class="el" href="namespacenertc.html#afbc2d45cebf46cf9489d33210f643129a19af7e3f73543562bbfb88fa95acc4e9">nertc.kNERtcAudioProfileHighQualityStereo</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:afbc2d45cebf46cf9489d33210f643129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c3d10e4f37ea61f2aefc8db697756e" id="r_a58c3d10e4f37ea61f2aefc8db697756e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a58c3d10e4f37ea61f2aefc8db697756e">nertc.RtcAudioScenarioType</a> : int { <a class="el" href="namespacenertc.html#a58c3d10e4f37ea61f2aefc8db697756ea384b64df4ae32cafeab7e959870c03bc">nertc.kNERtcAudioScenarioDefault</a> = 0
+, <a class="el" href="namespacenertc.html#a58c3d10e4f37ea61f2aefc8db697756ea882e51a2cc198bd93894b1854d430f5e">nertc.kNERtcAudioScenarioSpeech</a> = 1
+, <a class="el" href="namespacenertc.html#a58c3d10e4f37ea61f2aefc8db697756eac26a880ca960cc512727880711487f52">nertc.kNERtcAudioScenarioMusic</a> = 2
+, <a class="el" href="namespacenertc.html#a58c3d10e4f37ea61f2aefc8db697756ead3de4f0fd14286a10e5d8c9042dd767b">nertc.kNERtcAudioScenarioChatroom</a> = 3
+ }</td></tr>
+<tr class="separator:a58c3d10e4f37ea61f2aefc8db697756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8033c3d6f57c46a8baa5333e37b2291b" id="r_a8033c3d6f57c46a8baa5333e37b2291b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291b">nertc.RtcVoiceChangerType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba4dc4bc2e809540cd835e5c65238937c0">nertc.kNERtcVoiceChangerOff</a> = 0
+, <a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291baa660438d9fc502dc38a74ef1a25700ab">nertc.kNERtcVoiceChangerRobot</a> = 1
+, <a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba1ae6c37d01a0ca647d5d3ec1e6d931ea">nertc.kNERtcVoiceChangerGaint</a> = 2
+, <a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba4bd276abbe32c81552e862d8d786b85b">nertc.kNERtcVoiceChangerHorror</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba85c9167d311e8348416fcab586986239">nertc.kNERtcVoiceChangerMature</a> = 4
+, <a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba98c1b9c3028372bfb2b9c7fab8c639d0">nertc.kNERtcVoiceChangerManToWoman</a> = 5
+, <a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba7128259baa731b458589cd6af0e9efa3">nertc.kNERtcVoiceChangerWomanToMan</a> = 6
+, <a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291ba55bbb283e08808eceeb951f30319939a">nertc.kNERtcVoiceChangerManToLoli</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a8033c3d6f57c46a8baa5333e37b2291baa14aa8dfe570f436e29c29fccc72b5e9">nertc.kNERtcVoiceChangerWomanToLoli</a> = 8
+<br />
+ }</td></tr>
+<tr class="separator:a8033c3d6f57c46a8baa5333e37b2291b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3598f1cf19951630eafe0333e8b2873" id="r_aa3598f1cf19951630eafe0333e8b2873"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873">nertc.RtcVoiceBeautifierType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873ad1c80bbfe1e59f28d9a6d3fd679b3993">nertc.kNERtcVoiceBeautifierOff</a> = 0
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873a0ee2e2a0c88b9fc7a74dbd2a19fae43a">nertc.kNERtcVoiceBeautifierMuffled</a> = 1
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873aeb5c145fd72c0d7880da8e6e33853929">nertc.kNERtcVoiceBeautifierMellow</a> = 2
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873a378a2cff05bfbd5f957072303104bc9f">nertc.kNERtcVoiceBeautifierClear</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873aea38a614d5a5a2cb8a3367f7afc3e609">nertc.kNERtcVoiceBeautifierMagnetic</a> = 4
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873a0242518aae26a814a8131c038e102c31">nertc.kNERtcVoiceBeautifierRecordingstudio</a> = 5
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873a5172c449cf42c46506dda189128f3d67">nertc.kNERtcVoiceBeautifierNature</a> = 6
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873ac09021afe4e308784acdd85ef19bcfd1">nertc.kNERtcVoiceBeautifierKTV</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873acfe46727c0e5dbf56734a9008d0a5b7b">nertc.kNERtcVoiceBeautifierRemote</a> = 8
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873adc49b1b8226aa422ec4308312e4a7149">nertc.kNERtcVoiceBeautifierChurch</a> = 9
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873adadb09b53094267861931b927ede4f7f">nertc.kNERtcVoiceBeautifierBedroom</a> = 10
+, <a class="el" href="namespacenertc.html#aa3598f1cf19951630eafe0333e8b2873a0c4197ce3747823b301a025697485abd">nertc.kNERtcVoiceBeautifierLive</a> = 11
+<br />
+ }</td></tr>
+<tr class="separator:aa3598f1cf19951630eafe0333e8b2873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221746ca1d74b19ef2c7b26f640b7444" id="r_a221746ca1d74b19ef2c7b26f640b7444"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444">nertc.RtcVoiceEqualizationBand</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444a2edf2d8f527e23b532fd8185fa07da15">nertc.kNERtcVoiceEqualizationBand31</a> = 0
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444a27e15d0b568d9063fe149c4f6472d01c">nertc.kNERtcVoiceEqualizationBand62</a> = 1
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444ac751a7677434009f758f4c0e9ba9c59c">nertc.kNERtcVoiceEqualizationBand125</a> = 2
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444a64c0611748183b947bb4b758423b58d1">nertc.kNERtcVoiceEqualizationBand250</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444a9e3ce996508ddca9f4ead355bb3eaaba">nertc.kNERtcVoiceEqualizationBand500</a> = 4
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444a1d9dc8b92a708e44d1ea8e9bb844c5ed">nertc.kNERtcVoiceEqualizationBand1K</a> = 5
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444adef1cd00ab05b71258d842f9e90eacd6">nertc.kNERtcVoiceEqualizationBand2K</a> = 6
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444abbfb4fc9cecd209e2026dc1ec58f6708">nertc.kNERtcVoiceEqualizationBand4K</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444a4eb848715b81ae529b778105cb784e3d">nertc.kNERtcVoiceEqualizationBand8K</a> = 8
+, <a class="el" href="namespacenertc.html#a221746ca1d74b19ef2c7b26f640b7444aa4c00861b70b7d6171b8a796ff3fdf41">nertc.kNERtcVoiceEqualizationBand16K</a> = 9
+<br />
+ }</td></tr>
+<tr class="separator:a221746ca1d74b19ef2c7b26f640b7444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8428b05da263292a7388aa4d5e4be74" id="r_af8428b05da263292a7388aa4d5e4be74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74">nertc.RtcVideoProfileType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74af86faefc69b2e45af672f0dd13a3968b">nertc.kNERtcVideoProfileLowest</a> = 0
+, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74a95506915abda6f8642b6dd6c1fe4b3e4">nertc.kNERtcVideoProfileLow</a> = 1
+, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74a203f7f1100b71a539ffa08da1975db9d">nertc.kNERtcVideoProfileStandard</a> = 2
+, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74a43e73ac3c3cf8846f1a210d846a6815a">nertc.kNERtcVideoProfileHD720P</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74a92220c404dbcbb8ea580ca585fa72808">nertc.kNERtcVideoProfileHD1080P</a> = 4
+, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74a6a91e0a2eb8495d97c07760c71d23b0a">nertc.kNERtcVideoProfileNone</a> = 5
+, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74adb0e3e51b3508f9c90b7437b26b5edd2">nertc.kNERtcVideoProfileMAX</a> = kNERtcVideoProfileHD1080P
+, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74a16f68abd40dcf2f4a8380704147db452">nertc.kNERtcVideoProfileFake</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:af8428b05da263292a7388aa4d5e4be74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d140e60ce319a87ac0415d5d446375" id="r_a64d140e60ce319a87ac0415d5d446375"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a64d140e60ce319a87ac0415d5d446375">nertc.RtcRemoteVideoStreamType</a> : int { <a class="el" href="namespacenertc.html#a64d140e60ce319a87ac0415d5d446375a2d73ed5f7e9bfa3e00f95fcf38efd634">nertc.kNERtcRemoteVideoStreamTypeHigh</a> = 0
+, <a class="el" href="namespacenertc.html#a64d140e60ce319a87ac0415d5d446375a27ed434494e275b2405d668d0f8c5f1f">nertc.kNERtcRemoteVideoStreamTypeLow</a> = 1
+, <a class="el" href="namespacenertc.html#a64d140e60ce319a87ac0415d5d446375afaff8b45c57ea0da28a21e53ed03eafc">nertc.kNERtcRemoteVideoStreamTypeNone</a> = 2
+ }</td></tr>
+<tr class="separator:a64d140e60ce319a87ac0415d5d446375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7cf249583703ea6fd589781c742b28" id="r_a3d7cf249583703ea6fd589781c742b28"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a3d7cf249583703ea6fd589781c742b28">nertc.RtcAudioDeviceType</a> : int { <a class="el" href="namespacenertc.html#a3d7cf249583703ea6fd589781c742b28ab74b018c2bd83fa56928e71acd46a881">nertc.kNERtcAudioDeviceUnknown</a> = 0
+, <a class="el" href="namespacenertc.html#a3d7cf249583703ea6fd589781c742b28ab1816defeae5fab5e10542fbece896a6">nertc.kNERtcAudioDeviceRecord</a>
+, <a class="el" href="namespacenertc.html#a3d7cf249583703ea6fd589781c742b28af7b5cacebf5eb6135467ede2933c3f6e">nertc.kNERtcAudioDevicePlayout</a>
+ }</td></tr>
+<tr class="separator:a3d7cf249583703ea6fd589781c742b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2451c2d6b1611a67bb8f3ad38193309b" id="r_a2451c2d6b1611a67bb8f3ad38193309b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a2451c2d6b1611a67bb8f3ad38193309b">nertc.RtcAudioDeviceState</a> : int { <a class="el" href="namespacenertc.html#a2451c2d6b1611a67bb8f3ad38193309ba8c3153d452538ce73fb963648d7b6236">nertc.kNERtcAudioDeviceActive</a> = 0
+, <a class="el" href="namespacenertc.html#a2451c2d6b1611a67bb8f3ad38193309ba0312cb78f7ee0b61a2685dd790125e34">nertc.kNERtcAudioDeviceUnactive</a>
+ }</td></tr>
+<tr class="separator:a2451c2d6b1611a67bb8f3ad38193309b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae932a798df7121f952b37cc83593e7c1" id="r_ae932a798df7121f952b37cc83593e7c1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1">nertc.RtcAudioDeviceTransportType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1af6f7f0cb4a1db69ed840e333cc2c2ffe">nertc.kNERtcAudioDeviceTransportTypeUnknown</a> = 0
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a701ae321cf4a1d1317c1bc6ed1e7e186">nertc.kNERtcAudioDeviceTransportTypeBluetooth</a> = 1
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a36cd94766bb03ea143e8b696cbfd0a50">nertc.kNERtcAudioDeviceTransportTypeBluetoothA2DP</a> = 2
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1aabb800834d5d78a05b32d476fedc602a">nertc.kNERtcAudioDeviceTransportTypeBluetoothLE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1ad42cc35fdc8f30239cff0054819736ce">nertc.kNERtcAudioDeviceTransportTypeUSB</a> = 4
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a4e9867405498ef6b507cdc06e7881d52">nertc.kNERtcAudioDeviceTransportTypeHDMI</a> = 5
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a91a2d6ccea3942a25057d363836a3067">nertc.kNERtcAudioDeviceTransportTypeBuiltIn</a> = 6
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1aa0e541036f14d96e997be0ba5801ff86">nertc.kNERtcAudioDeviceTransportTypeThunderbolt</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a43d36334a98222466758a7beb205473f">nertc.kNERtcAudioDeviceTransportTypeAirPlay</a> = 8
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a7afb2222add62a652625d2c48a99cd8d">nertc.kNERtcAudioDeviceTransportTypeVirtual</a> = 9
+, <a class="el" href="namespacenertc.html#ae932a798df7121f952b37cc83593e7c1a31c812d9e568fd5d21d160e3ec960991">nertc.kNERtcAudioDeviceTransportTypeOther</a> = 10
+<br />
+ }</td></tr>
+<tr class="separator:ae932a798df7121f952b37cc83593e7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91453822b7cfdf2c94121044b877b993" id="r_a91453822b7cfdf2c94121044b877b993"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a91453822b7cfdf2c94121044b877b993">nertc.RtcVideoDeviceTransportType</a> : int { <a class="el" href="namespacenertc.html#a91453822b7cfdf2c94121044b877b993a9c8097661d9b206631c8478e0014010c">nertc.kNERtcVideoDeviceTransportTypeUnknown</a> = 0
+, <a class="el" href="namespacenertc.html#a91453822b7cfdf2c94121044b877b993a4885e40123982c6d5c5d077b7f9e765c">nertc.kNERtcVideoDeviceTransportTypeUSB</a> = 1
+, <a class="el" href="namespacenertc.html#a91453822b7cfdf2c94121044b877b993a780ca3f446914740770ead4fa64d7e77">nertc.kNERtcVideoDeviceTransportTypeVirtual</a> = 2
+, <a class="el" href="namespacenertc.html#a91453822b7cfdf2c94121044b877b993af779beb3e974a0b85626b7a3938abd0e">nertc.kNERtcVideoDeviceTransportTypeOther</a> = 3
+ }</td></tr>
+<tr class="separator:a91453822b7cfdf2c94121044b877b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3bc53d36a49193d1e9a434ae4fc32d" id="r_a9b3bc53d36a49193d1e9a434ae4fc32d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9b3bc53d36a49193d1e9a434ae4fc32d">nertc.RtcVideoDeviceType</a> : int { <a class="el" href="namespacenertc.html#a9b3bc53d36a49193d1e9a434ae4fc32da12c6ad8e080755c5caf82a129d248336">nertc.kNERtcVideoDeviceUnknown</a> = 0
+, <a class="el" href="namespacenertc.html#a9b3bc53d36a49193d1e9a434ae4fc32da21804a14b3ea2235c2c46c9a62b7d00e">nertc.kNERtcVideoDeviceCapture</a>
+ }</td></tr>
+<tr class="separator:a9b3bc53d36a49193d1e9a434ae4fc32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e169055166e41f8820c37b1be7e9b9a" id="r_a4e169055166e41f8820c37b1be7e9b9a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a4e169055166e41f8820c37b1be7e9b9a">nertc.RtcVideoDeviceState</a> : int { <a class="el" href="namespacenertc.html#a4e169055166e41f8820c37b1be7e9b9aa3ff3bc7ff2af50c6f2a7ebf5bcec0dfc">nertc.kNERtcVideoDeviceAdded</a> = 0
+, <a class="el" href="namespacenertc.html#a4e169055166e41f8820c37b1be7e9b9aa305f27ffcf88b69f08c0d303a9f69a2e">nertc.kNERtcVideoDeviceRemoved</a>
+ }</td></tr>
+<tr class="separator:a4e169055166e41f8820c37b1be7e9b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816ba455133269edbfd99ba5f3dbebb7" id="r_a816ba455133269edbfd99ba5f3dbebb7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a816ba455133269edbfd99ba5f3dbebb7">nertc.RtcVideoScalingMode</a> : int { <a class="el" href="namespacenertc.html#a816ba455133269edbfd99ba5f3dbebb7a63ff94793491e58d9f365f473623bd7d">nertc.kNERtcVideoScaleFit</a> = 0
+, <a class="el" href="namespacenertc.html#a816ba455133269edbfd99ba5f3dbebb7a7c16172fc5770912c8910ca3deaec473">nertc.kNERtcVideoScaleFullFill</a> = 1
+, <a class="el" href="namespacenertc.html#a816ba455133269edbfd99ba5f3dbebb7a1ceea7181035015ce3e121928db0abc0">nertc.kNERtcVideoScaleCropFill</a> = 2
+ }</td></tr>
+<tr class="separator:a816ba455133269edbfd99ba5f3dbebb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4068599128e7ef388a8994f9fd99e11f" id="r_a4068599128e7ef388a8994f9fd99e11f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a4068599128e7ef388a8994f9fd99e11f">nertc.RtcVideoMirrorMode</a> : int { <a class="el" href="namespacenertc.html#a4068599128e7ef388a8994f9fd99e11fa9151d7996b1c88b6bddb39fef42c38ca">nertc.kNERtcVideoMirrorModeAuto</a> = 0
+, <a class="el" href="namespacenertc.html#a4068599128e7ef388a8994f9fd99e11fa960a462c34692a367ea665ba31072981">nertc.kNERtcVideoMirrorModeEnabled</a> = 1
+, <a class="el" href="namespacenertc.html#a4068599128e7ef388a8994f9fd99e11fa5f498bc81e707cdb9b224ff7d59d579d">nertc.kNERtcVideoMirrorModeDisabled</a> = 2
+ }</td></tr>
+<tr class="separator:a4068599128e7ef388a8994f9fd99e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b52a7bbfd5757a175535e5777c4f87" id="r_ac5b52a7bbfd5757a175535e5777c4f87"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ac5b52a7bbfd5757a175535e5777c4f87">nertc.RtcVideoOrientationMode</a> : int { <a class="el" href="namespacenertc.html#ac5b52a7bbfd5757a175535e5777c4f87a284386bea226a713a6385c588a3ac067">nertc.kNERtcVideoOutputOrientationModeAdaptative</a> = 0
+, <a class="el" href="namespacenertc.html#ac5b52a7bbfd5757a175535e5777c4f87a7c735cc85cbd1e0bc204e37cefa8bd47">nertc.kNERtcVideoOutputOrientationModeFixedLandscape</a> = 1
+, <a class="el" href="namespacenertc.html#ac5b52a7bbfd5757a175535e5777c4f87a4799a401d1ff78faf1ce85ee36ca8a93">nertc.kNERtcVideoOutputOrientationModeFixedPortrait</a> = 2
+ }</td></tr>
+<tr class="separator:ac5b52a7bbfd5757a175535e5777c4f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b428d398585d9290b3f19bd0450c143" id="r_a9b428d398585d9290b3f19bd0450c143"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143">nertc.RtcConnectionStateType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143a334d9588ad5c0a831cab9440bd474dab">nertc.kNERtcConnectionStateDisconnected</a> = 1
+, <a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143ad1c1e637a8f2f3c6ec209d5ad6381bbd">nertc.kNERtcConnectionStateConnecting</a> = 2
+, <a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143a7c528528aa84f78079bf7a007cfc9525">nertc.kNERtcConnectionStateConnected</a> = 3
+, <a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143a315273172428f438847055f9e4de9a77">nertc.kNERtcConnectionStateReconnecting</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143ae7a672869e67e7a7fdc84d7dbfeb2fa4">nertc.kNERtcConnectionStateFailed</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a9b428d398585d9290b3f19bd0450c143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab623170af915480d4039982d1936872c" id="r_ab623170af915480d4039982d1936872c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872c">nertc.RtcReasonConnectionChangedType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca9d8472e3e82d90ae41691ff39913a360">nertc.kNERtcReasonConnectionChangedLeaveChannel</a> = 1
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca174daa0eaa8c7649899a11ca46703b74">nertc.kNERtcReasonConnectionChangedChannelClosed</a> = 2
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca99b7ed65ad094c21d1d2029d44df471d">nertc.kNERtcReasonConnectionChangedBeKicked</a> = 3
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca19c1d45e963a0e2c67a7528813634e48">nertc.kNERtcReasonConnectionChangedTimeOut</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca0e3de66fc93baca9edaab9cb46c90949">nertc.kNERtcReasonConnectionChangedJoinChannel</a> = 5
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca012f33bb7d59f72f8822866cb44e61b4">nertc.kNERtcReasonConnectionChangedJoinSucceed</a> = 6
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca04774a8ec5aac80a858993a335dce565">nertc.kNERtcReasonConnectionChangedReJoinSucceed</a> = 7
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872caac6a407154a59807a5c3e73724019003">nertc.kNERtcReasonConnectionChangedMediaConnectionDisconnected</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca6ac32221e9571f788b4a7c7ea6899267">nertc.kNERtcReasonConnectionChangedSignalDisconnected</a> = 9
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872cac692d4bca09a1f703bc51a3ae72d54e3">nertc.kNERtcReasonConnectionChangedRequestChannelFailed</a> = 10
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872ca5ed72747d43b5b1fc1e38dfe8b9934c3">nertc.kNERtcReasonConnectionChangedJoinChannelFailed</a> = 11
+, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872cad692501dad0f186749d3a26fd97e59a3">nertc.kNERtcReasonConnectionChangedReDispatch</a> = 12
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872caeaab90b54af0c91a8e4125825fe00fa6">nertc.kNERtcReasonConnectionChangedSettingProxyServer</a> = 13
+<br />
+ }</td></tr>
+<tr class="separator:ab623170af915480d4039982d1936872c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab719b40d3126510d848092c58db34a48" id="r_ab719b40d3126510d848092c58db34a48"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48">nertc.RtcAudioStreamType</a> : int { <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48a088fe457c05665e5b68ed30477471a0f">nertc.kNERtcAudioStreamTypeMain</a> = 0
+, <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48a3812534e462ac4d88fef6f4c2797b58d">nertc.kNERtcAudioStreamTypeSub</a> = 1
+ }</td></tr>
+<tr class="separator:ab719b40d3126510d848092c58db34a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab143de899f0796d7eff30a454fa142b3" id="r_ab143de899f0796d7eff30a454fa142b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3">nertc.RtcNetworkQualityType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3a5b128e4a03c1ffe8c8f6ddaf2f1fe71f">nertc.kNERtcNetworkQualityUnknown</a> = 0
+, <a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3a442b1838dad1dcb9b1aa06022a00bd93">nertc.kNERtcNetworkQualityExcellent</a> = 1
+, <a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3ae3bab35052107009b74eab07b6ae62e2">nertc.kNERtcNetworkQualityGood</a> = 2
+, <a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3ad5d79f2d031c9c6ca78ad516cc89f873">nertc.kNERtcNetworkQualityPoor</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3a414f48d49d770b3646197852751ea74b">nertc.kNERtcNetworkQualityBad</a> = 4
+, <a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3a91458db2918235e53cbe1c769000bac8">nertc.kNERtcNetworkQualityVeryBad</a> = 5
+, <a class="el" href="namespacenertc.html#ab143de899f0796d7eff30a454fa142b3ad32e451181fb9bdcad450c46d3e66498">nertc.kNERtcNetworkQualityDown</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:ab143de899f0796d7eff30a454fa142b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371f285a2f91e5710100bdb1fa650ec1" id="r_a371f285a2f91e5710100bdb1fa650ec1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a371f285a2f91e5710100bdb1fa650ec1">nertc.RtcVideoCropMode</a> : int { <a class="el" href="namespacenertc.html#a371f285a2f91e5710100bdb1fa650ec1a4dc998d3dc62081cf7e161d540098429">nertc.kNERtcVideoCropModeDefault</a> = 0
+, <a class="el" href="namespacenertc.html#a371f285a2f91e5710100bdb1fa650ec1a3b5f999ab1787580bd757786ff0c86b3">nertc.kNERtcVideoCropMode16x9</a> = 1
+, <a class="el" href="namespacenertc.html#a371f285a2f91e5710100bdb1fa650ec1af8bacf48251405093944735200a8b525">nertc.kNERtcVideoCropMode4x3</a> = 2
+, <a class="el" href="namespacenertc.html#a371f285a2f91e5710100bdb1fa650ec1a6f004c3924f88c62a2ce8ee368e74c87">nertc.kNERtcVideoCropMode1x1</a> = 3
+ }</td></tr>
+<tr class="separator:a371f285a2f91e5710100bdb1fa650ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d18e8ca4a7258bbe7753b80e134d5f" id="r_af7d18e8ca4a7258bbe7753b80e134d5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5f">nertc.RtcVideoFramerateType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5fa1bf8240c76b2b82ce7563aa6dbd50d4f">nertc.kNERtcVideoFramerateFpsDefault</a> = 0
+, <a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5faef9b94a62376a15fae8e106696b22a8d">nertc.kNERtcVideoFramerateFps7</a> = 7
+, <a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5fa3f7213001509552812150244ebfe653f">nertc.kNERtcVideoFramerateFps10</a> = 10
+, <a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5fafc8dacc253091da3ecb9e7c79c01e5eb">nertc.kNERtcVideoFramerateFps15</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5fa2aa8b08c2508c5fd9050cef75d3a2936">nertc.kNERtcVideoFramerateFps24</a> = 24
+, <a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5fac695aa65d692c1caf661e0a404831df9">nertc.kNERtcVideoFramerateFps30</a> = 30
+, <a class="el" href="namespacenertc.html#af7d18e8ca4a7258bbe7753b80e134d5faee6f24876e06db3d2d5c8ff0bc5f2879">nertc.kNERtcVideoFramerateFps60</a> = 60
+<br />
+ }</td></tr>
+<tr class="separator:af7d18e8ca4a7258bbe7753b80e134d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af471bdfa010c12eea1bccb7aa0fd8f" id="r_a9af471bdfa010c12eea1bccb7aa0fd8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9af471bdfa010c12eea1bccb7aa0fd8f">nertc.RtcDegradationPreference</a> : int { <a class="el" href="namespacenertc.html#a9af471bdfa010c12eea1bccb7aa0fd8fa445e89ac085dd79efea7ef35eb578c6b">nertc.kNERtcDegradationDefault</a> = 0
+, <a class="el" href="namespacenertc.html#a9af471bdfa010c12eea1bccb7aa0fd8fa4b193e106966bc951fef3680811bf281">nertc.kNERtcDegradationMaintainFramerate</a> = 1
+, <a class="el" href="namespacenertc.html#a9af471bdfa010c12eea1bccb7aa0fd8fa16d9314648f30344da02f7b5db302d25">nertc.kNERtcDegradationMaintainQuality</a> = 2
+, <a class="el" href="namespacenertc.html#a9af471bdfa010c12eea1bccb7aa0fd8facb22a0d4f1352f0bd0463e038a9e12a1">nertc.kNERtcDegradationBalanced</a> = 3
+ }</td></tr>
+<tr class="separator:a9af471bdfa010c12eea1bccb7aa0fd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ac6bf24881b8c9f31c7dedd1fa8738" id="r_a55ac6bf24881b8c9f31c7dedd1fa8738"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738">nertc.RtcScreenProfileType</a> { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738a92c3caeffc5bdbecd30ee817aeb11b82">nertc.kNERtcScreenProfile480P</a> = 0
+, <a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738a22746beca6a83c53a0949869312bc25b">nertc.kNERtcScreenProfileHD720P</a> = 1
+, <a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738afa2ff8258d85c5b9e185b57799e38945">nertc.kNERtcScreenProfileHD1080P</a> = 2
+, <a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738ae8763ca87ada38ad4bc0bef6c2548720">nertc.kNERtcScreenProfileCustom</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738a0beb1835a52811075638bd8612d1e679">nertc.kNERtcScreenProfileNone</a> = 4
+, <a class="el" href="namespacenertc.html#a55ac6bf24881b8c9f31c7dedd1fa8738aeeb81b0496478156aa16a2c98cf69fcf">nertc.kNERtcScreenProfileMAX</a> = kNERtcScreenProfileHD1080P
+<br />
+ }</td></tr>
+<tr class="separator:a55ac6bf24881b8c9f31c7dedd1fa8738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e7b141e1f201b52b9296263486e1b8" id="r_a22e7b141e1f201b52b9296263486e1b8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8">nertc.RtcScreenCaptureStatus</a> { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8a2c124ec348d03a6422656f9d92171457">nertc.kNERtcScreenCaptureStatusStart</a> = 1
+, <a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8a38a80bb766f32a2d8c0063a09a5fe369">nertc.kNERtcScreenCaptureStatusPause</a> = 2
+, <a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8a1799a95b0dbd2a4e0d145eadf8c3ea32">nertc.kNERtcScreenCaptureStatusResume</a> = 3
+, <a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8a40480b8d0e59cdc2c19c6659e0a38247">nertc.kNERtcScreenCaptureStatusStop</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8a90baf5f5365003d2f3bb6176518debf7">nertc.kNERtcScreenCaptureStatusCovered</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a22e7b141e1f201b52b9296263486e1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33e4fc8eacefa525710449e382abded" id="r_ae33e4fc8eacefa525710449e382abded"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ae33e4fc8eacefa525710449e382abded">nertc.RtcSubStreamContentPrefer</a> { <a class="el" href="namespacenertc.html#ae33e4fc8eacefa525710449e382abdeda5768961b2af6d02884d06789a2a1e33c">nertc.kNERtcSubStreamContentPreferMotion</a> = 0
+, <a class="el" href="namespacenertc.html#ae33e4fc8eacefa525710449e382abdeda03b56d721483ef450761078d6030b81a">nertc.kNERtcSubStreamContentPreferDetails</a> = 1
+ }</td></tr>
+<tr class="separator:ae33e4fc8eacefa525710449e382abded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef030918a5c4598a5e9a78fff177cd2" id="r_aeef030918a5c4598a5e9a78fff177cd2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aeef030918a5c4598a5e9a78fff177cd2">nertc.RtcRecordType</a> : int { <a class="el" href="namespacenertc.html#aeef030918a5c4598a5e9a78fff177cd2af118ff2d1f5fd69c084d33b79d4515d5">nertc.kNERtcRecordTypeAll</a> = 0
+, <a class="el" href="namespacenertc.html#aeef030918a5c4598a5e9a78fff177cd2a0106e14909a261b04df1bc8050fd1fab">nertc.kNERtcRecordTypeMix</a> = 1
+, <a class="el" href="namespacenertc.html#aeef030918a5c4598a5e9a78fff177cd2a96632e55ada4e7e00210ca1716ab294b">nertc.kNERtcRecordTypeSingle</a> = 2
+ }</td></tr>
+<tr class="separator:aeef030918a5c4598a5e9a78fff177cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab406127fc5b7366416924cbeec8a8196" id="r_ab406127fc5b7366416924cbeec8a8196"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab406127fc5b7366416924cbeec8a8196">nertc.RtcAudioType</a> : int { <a class="el" href="namespacenertc.html#ab406127fc5b7366416924cbeec8a8196ad99b03fb77098390ec9a0c8d5cdf86ba">nertc.kNERtcAudioTypePCM16</a> = 0
+ }</td></tr>
+<tr class="separator:ab406127fc5b7366416924cbeec8a8196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7355e176d8f5d2c3a3f58089d6fa9d" id="r_a6a7355e176d8f5d2c3a3f58089d6fa9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a6a7355e176d8f5d2c3a3f58089d6fa9d">nertc.RtcRawAudioFrameOpModeType</a> : int { <a class="el" href="namespacenertc.html#a6a7355e176d8f5d2c3a3f58089d6fa9da19bdabac7e3c94ce728f068199ed1bc7">nertc.kNERtcRawAudioFrameOpModeReadOnly</a> = 0
+, <a class="el" href="namespacenertc.html#a6a7355e176d8f5d2c3a3f58089d6fa9da7471e3952d263e4c602fc307119fb9a8">nertc.kNERtcRawAudioFrameOpModeReadWrite</a>
+ }</td></tr>
+<tr class="separator:a6a7355e176d8f5d2c3a3f58089d6fa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b9d195f0c4a48a513e92df11a071c5" id="r_a57b9d195f0c4a48a513e92df11a071c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a57b9d195f0c4a48a513e92df11a071c5">nertc.RtcAudioPayloadType</a> : int { <a class="el" href="namespacenertc.html#a57b9d195f0c4a48a513e92df11a071c5ac9de339a012e553d3bc2e25ec50437fa">nertc.kNERtcAudioPayloadTypeOPUS</a> = 111
+ }</td></tr>
+<tr class="separator:a57b9d195f0c4a48a513e92df11a071c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af828f64dc87cca4ad8a2a8b11b275d3f" id="r_af828f64dc87cca4ad8a2a8b11b275d3f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3f">nertc.RtcVideoType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3fa072335d0055317e7cfc77a680f5d1fee">nertc.kNERtcVideoTypeI420</a> = 0
+, <a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3fa892c5dd552a8d7a93db8f19e8e8a0b6b">nertc.kNERtcVideoTypeNV12</a> = 1
+, <a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3fa4e496d447dfeba9b90014a380a71a5c9">nertc.kNERtcVideoTypeNV21</a> = 2
+, <a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3fa3b9e7170f45b26bcfd77f0107028baf3">nertc.kNERtcVideoTypeBGRA</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3fa392ae1a6f8bcbd9b102ae69d408f3e23">nertc.kNERtcVideoTypeARGB</a> = 4
+, <a class="el" href="namespacenertc.html#af828f64dc87cca4ad8a2a8b11b275d3faf5a2fbf811ce4a444f4c4bb4547ec8cc">nertc.kNERtcVideoTypeCVPixelBuffer</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:af828f64dc87cca4ad8a2a8b11b275d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35683bd18274a7048cc0cd1428731cc4" id="r_a35683bd18274a7048cc0cd1428731cc4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a35683bd18274a7048cc0cd1428731cc4">nertc.RtcVideoRotation</a> : int { <a class="el" href="namespacenertc.html#a35683bd18274a7048cc0cd1428731cc4ae5aace1d0ad241a18259e63dad00eed8">nertc.kNERtcVideoRotation0</a> = 0
+, <a class="el" href="namespacenertc.html#a35683bd18274a7048cc0cd1428731cc4a2fb0a7d3098161915bc9bb3917ed8c78">nertc.kNERtcVideoRotation90</a> = 90
+, <a class="el" href="namespacenertc.html#a35683bd18274a7048cc0cd1428731cc4af09b097c7ab5f1e48eda529532363573">nertc.kNERtcVideoRotation180</a> = 180
+, <a class="el" href="namespacenertc.html#a35683bd18274a7048cc0cd1428731cc4a4657d8fd87ebef38778640bb0c2987a7">nertc.kNERtcVideoRotation270</a> = 270
+ }</td></tr>
+<tr class="separator:a35683bd18274a7048cc0cd1428731cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61025fc3ba765dd96632636f216c4801" id="r_a61025fc3ba765dd96632636f216c4801"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a61025fc3ba765dd96632636f216c4801">nertc.RtcVideoCodecType</a> : int { <a class="el" href="namespacenertc.html#a61025fc3ba765dd96632636f216c4801a6c15dce6077afa5ba829d81bcc234e8f">nertc.kNERtcVideoCodecTypeH264</a> = 3
+ }</td></tr>
+<tr class="separator:a61025fc3ba765dd96632636f216c4801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65266b0a972eeabe67e752b349d6035d" id="r_a65266b0a972eeabe67e752b349d6035d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a65266b0a972eeabe67e752b349d6035d">nertc.RtcNalFrameType</a> { <a class="el" href="namespacenertc.html#a65266b0a972eeabe67e752b349d6035da5f3a7ce98e7a0de7a4edf0e5c45b91ad">nertc.kNERtcNalFrameTypeIDR</a> = 1
+, <a class="el" href="namespacenertc.html#a65266b0a972eeabe67e752b349d6035da92c8b8cd8829baa42365e16ef4f62ad0">nertc.kNERtcNalFrameTypeI</a> = 2
+, <a class="el" href="namespacenertc.html#a65266b0a972eeabe67e752b349d6035da5c68a57a9fcfc349affb371517ed2cdc">nertc.kNERtcNalFrameTypeP</a> = 3
+ }</td></tr>
+<tr class="separator:a65266b0a972eeabe67e752b349d6035d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3264d4b37673383d51eb4bc3995f5483" id="r_a3264d4b37673383d51eb4bc3995f5483"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483">nertc.RtcSessionLeaveReason</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483a1620f46842d9c75c43227fe665c76b8c">nertc.kNERtcSessionLeaveNormal</a> = 0
+, <a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483a8d2ba28858976eeb0edced37a194c0d9">nertc.kNERtcSessionLeaveForFailOver</a> = 1
+, <a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483a5a00848eeaad9031d70ecd05c8e82b21">nertc.kNERtcSessionLeaveUpdate</a> = 2
+, <a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483a93e9fb9c9520a5f2a4d7e86d0dc27aa8">nertc.kNERtcSessionLeaveForKick</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483a59b01ee3934270f62ed7d5ff57e3a6e6">nertc.kNERtcSessionLeaveTimeOut</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:a3264d4b37673383d51eb4bc3995f5483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47af9c93b0b232b7ff9a22fc78f63c8" id="r_aa47af9c93b0b232b7ff9a22fc78f63c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aa47af9c93b0b232b7ff9a22fc78f63c8">nertc.RtcAudioMixingState</a> : int { <a class="el" href="namespacenertc.html#aa47af9c93b0b232b7ff9a22fc78f63c8a51b30587c6270c4f9ca1df249322b21e">nertc.kNERtcAudioMixingStateFinished</a> = 0
+, <a class="el" href="namespacenertc.html#aa47af9c93b0b232b7ff9a22fc78f63c8a6d4af3a2a71ab2c1d772b61edcc680d5">nertc.kNERtcAudioMixingStateFailed</a> = 1
+ }</td></tr>
+<tr class="separator:aa47af9c93b0b232b7ff9a22fc78f63c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a58e4d51fb1f6e4f31edf43cc97d903" id="r_a5a58e4d51fb1f6e4f31edf43cc97d903"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">nertc.RtcVideoStreamType</a> : int { <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903abf4750c4bf983365dce5dd77c0dc4711">nertc.kNERTCVideoStreamMain</a> = 0
+, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903a58d72c31109e88d1df3e7559f10ed953">nertc.kNERTCVideoStreamSub</a> = 1
+, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903ad5c413c40e82dbfe1ebc190a7bc5e213">nertc.kNERTCVideoStreamCount</a>
+ }</td></tr>
+<tr class="separator:a5a58e4d51fb1f6e4f31edf43cc97d903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97cebfbab8b57c22d56b5f6980e6ca8" id="r_af97cebfbab8b57c22d56b5f6980e6ca8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#af97cebfbab8b57c22d56b5f6980e6ca8">nertc.RtcChannelMediaRelayState</a> : int { <a class="el" href="namespacenertc.html#af97cebfbab8b57c22d56b5f6980e6ca8aeb5d61845ec7ccce3f3cae6df9c4c64f">nertc.kNERtcChannelMediaRelayStateIdle</a> = 0
+, <a class="el" href="namespacenertc.html#af97cebfbab8b57c22d56b5f6980e6ca8a274a1f3d25d0fac9564024d9cf3dc9aa">nertc.kNERtcChannelMediaRelayStateConnecting</a> = 1
+, <a class="el" href="namespacenertc.html#af97cebfbab8b57c22d56b5f6980e6ca8a5ce53dfce8f15630f7a2128bec359165">nertc.kNERtcChannelMediaRelayStateRunning</a> = 2
+, <a class="el" href="namespacenertc.html#af97cebfbab8b57c22d56b5f6980e6ca8abc6874450bcba09724a7a3bca42beafe">nertc.kNERtcChannelMediaRelayStateFailure</a> = 3
+ }</td></tr>
+<tr class="separator:af97cebfbab8b57c22d56b5f6980e6ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96aaebf481daa00006a0c0b11d843414" id="r_a96aaebf481daa00006a0c0b11d843414"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414">nertc.RtcChannelMediaRelayEvent</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414ae122a5706b708a65481721e52702f5a2">nertc.kNERtcChannelMediaRelayEventDisconnect</a> = 0
+, <a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414a9593f3745f809d114b004a95b88bfca6">nertc.kNERtcChannelMediaRelayEventConnecting</a> = 1
+, <a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414a95949f816645d5835a7347e0bed64e14">nertc.kNERtcChannelMediaRelayEventConnected</a> = 2
+, <a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414ad2efe269ad609c7b81db81ddd3b0f1ed">nertc.kNERtcChannelMediaRelayEventVideoSentToDestChannelSuccess</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414ad699ea6fd580cb576348fc50ddc61aaf">nertc.kNERtcChannelMediaRelayEventAudioSentToDestChannelSuccess</a> = 4
+, <a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414a1141acceddcd7c1d56213ecf63f062a1">nertc.kNERtcChannelMediaRelayEventOtherStreamSentToDestChannelSuccess</a> = 5
+, <a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414aa54d4e7c71deaffacbf5126698cdd569">nertc.kNERtcChannelMediaRelayEventFailure</a> = 100
+<br />
+ }</td></tr>
+<tr class="separator:a96aaebf481daa00006a0c0b11d843414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed50672429fa893d6bb19804f3bf0582" id="r_aed50672429fa893d6bb19804f3bf0582"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582">nertc.RtcLocalVideoWatermarkState</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582a359eebd8fbdba9579a7fea9b54ec8669">nertc.kNERtcLocalWatermarkStateSetSuccess</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582a86c7e420327e04895715d7a897b8c78c">nertc.kNERtcLocalWatermarkStateDeviceNotSupported</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582a0d7015a458ff1003daf35e208e4c2b6f">nertc.kNERtcLocalWatermarkStateImgFormatNotSupported</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582aa38dc8ee1e528a03c6b21b5c19a5ce4a">nertc.kNERtcLocalWatermarkStateImgNumError</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582a12dc385bede3d5b9cfee3f96d803ec1a">nertc.kNERtcLocalWatermarkStateImgSizeError</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582ad50978eaa7b80f17c8feaef3dd5f2a67">nertc.kNERtcLocalWatermarkStateFPSError</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582ab4486ea8a363926f5df33e5c91b594fa">nertc.kNERtcLocalWatermarkStateFontError</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582af1b7ce7f9aa2dbd901921fd3243dbded">nertc.kNERtcLocalWatermarkStateWmAlphaError</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582a8feac109eff1849a004c19d708422198">nertc.kNERtcLocalWatermarkStateTextContentEmptyError</a>
+, <a class="el" href="namespacenertc.html#aed50672429fa893d6bb19804f3bf0582ab49de00adf190419d472d1842ffc723b">nertc.kNERtcLocalWatermarkStateCancel</a> = 20
+<br />
+ }</td></tr>
+<tr class="separator:aed50672429fa893d6bb19804f3bf0582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7c56d069f1931939ed35bc0264b89d" id="r_a7d7c56d069f1931939ed35bc0264b89d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a7d7c56d069f1931939ed35bc0264b89d">nertc.RtcWatermarkType</a> : int { <a class="el" href="namespacenertc.html#a7d7c56d069f1931939ed35bc0264b89da3195a1a47868091bd81a22d3729a0496">nertc.kNERtcWatermarkTypeImage</a> = 0
+, <a class="el" href="namespacenertc.html#a7d7c56d069f1931939ed35bc0264b89da743282c3fbb437b12c073ae6842f58a3">nertc.kNERtcWatermarkTypeText</a>
+, <a class="el" href="namespacenertc.html#a7d7c56d069f1931939ed35bc0264b89da1ff3ce46e0bcd1232dfc1f7205c2ddd1">nertc.kNERtcWatermarkTypeTimestamp</a>
+ }</td></tr>
+<tr class="separator:a7d7c56d069f1931939ed35bc0264b89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06bf6e3db07dec06665c375e8ea1b6c" id="r_ab06bf6e3db07dec06665c375e8ea1b6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6c">nertc.RtcLogLevel</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6cad57506d33a0205d25406d27c2b41851f">nertc.kNERtcLogLevelFatal</a> = 0
+, <a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6ca02af7d23db9fcf0e954142bff92ef0b3">nertc.kNERtcLogLevelError</a> = 1
+, <a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6ca66af703d6cea951fad2c1a14b6aaa1ec">nertc.kNERtcLogLevelWarning</a> = 2
+, <a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6ca8fa236dd02feec2b152a786b06c8929b">nertc.kNERtcLogLevelInfo</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6ca6eb610bfc0934b27ad1a678ee70a1b01">nertc.kNERtcLogLevelDetailInfo</a> = 4
+, <a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6cac538065095e42be3110736804f8aaa49">nertc.kNERtcLogLevelVerbos</a> = 5
+, <a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6ca90c84a8cfc0222ba21070d51c1aa9ca3">nertc.kNERtcLogLevelDebug</a> = 6
+, <a class="el" href="namespacenertc.html#ab06bf6e3db07dec06665c375e8ea1b6ca9ceb9c3d7db765617e2bbe62c91d3b23">nertc.kNERtcLogLevelOff</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:ab06bf6e3db07dec06665c375e8ea1b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea3c2036273aba95e50f75cec286db5" id="r_a7ea3c2036273aba95e50f75cec286db5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a7ea3c2036273aba95e50f75cec286db5">nertc.RtcSendOnPubType</a> : int { <a class="el" href="namespacenertc.html#a7ea3c2036273aba95e50f75cec286db5acdb1a0fca3a3a1d97d643841f725aa68">nertc.kNERtcSendOnPubNone</a> = 0
+, <a class="el" href="namespacenertc.html#a7ea3c2036273aba95e50f75cec286db5a4839fdc568a426659d34fe7d5f2d65bf">nertc.kNERtcSendOnPubHigh</a> = 1
+, <a class="el" href="namespacenertc.html#a7ea3c2036273aba95e50f75cec286db5a5aa7c34bdc8c296a97b2dcdb24a9cd40">nertc.kNERtcSendOnPubLow</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacenertc.html#a7ea3c2036273aba95e50f75cec286db5a107e12a356f77eaee2b6fe05e7a04e9b">nertc.kNERtcSendOnPubAll</a> = kNERtcSendOnPubLow | kNERtcSendOnPubHigh
+ }</td></tr>
+<tr class="separator:a7ea3c2036273aba95e50f75cec286db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2cf97fd56fd0808236cac38c488490a" id="r_ac2cf97fd56fd0808236cac38c488490a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ac2cf97fd56fd0808236cac38c488490a">nertc.RtcAudioRecordingQuality</a> : int { <a class="el" href="namespacenertc.html#ac2cf97fd56fd0808236cac38c488490aa83923e613ba2f847d665df55af97b4ab">nertc.kNERtcAudioRecordingQualityLow</a> = 0
+, <a class="el" href="namespacenertc.html#ac2cf97fd56fd0808236cac38c488490aa03bafab0eaa06eca807e00f36a645d15">nertc.kNERtcAudioRecordingQualityMedium</a> = 1
+, <a class="el" href="namespacenertc.html#ac2cf97fd56fd0808236cac38c488490aad4909b97cbd14de00cfa992ef6d3408e">nertc.kNERtcAudioRecordingQualityHigh</a> = 2
+ }</td></tr>
+<tr class="separator:ac2cf97fd56fd0808236cac38c488490a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e31a70ea155e2ce9a6f08239da6a5b" id="r_a64e31a70ea155e2ce9a6f08239da6a5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a64e31a70ea155e2ce9a6f08239da6a5b">nertc.RtcAudioRecordingPosition</a> : int { <a class="el" href="namespacenertc.html#a64e31a70ea155e2ce9a6f08239da6a5baea860495b66cbcbc9c35376343b767d0">nertc.kNERtcAudioRecordingPositionMixedRecordingAndPlayback</a> = 0
+, <a class="el" href="namespacenertc.html#a64e31a70ea155e2ce9a6f08239da6a5ba875a2f147dc557dc2a417bdd9280a99b">nertc.kNERtcAudioRecordingPositionRecording</a> = 1
+, <a class="el" href="namespacenertc.html#a64e31a70ea155e2ce9a6f08239da6a5ba8c5c11a889165a40ec0c5a3d2419c410">nertc.kNERtcAudioRecordingPositionMixedPlayback</a> = 2
+ }</td></tr>
+<tr class="separator:a64e31a70ea155e2ce9a6f08239da6a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ab2f14ee153b7bb1acd24df245e545" id="r_a15ab2f14ee153b7bb1acd24df245e545"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a15ab2f14ee153b7bb1acd24df245e545">nertc.RtcAudioRecordingCycleTime</a> { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a15ab2f14ee153b7bb1acd24df245e545a4f668f7477d87966f7f046727977c237">nertc.kNERtcAudioRecordingCycleTime0</a> = 0
+, <a class="el" href="namespacenertc.html#a15ab2f14ee153b7bb1acd24df245e545a2b31d010eaaa3330d40eadf94477b371">nertc.kNERtcAudioRecordingCycleTime10</a> = 10
+, <a class="el" href="namespacenertc.html#a15ab2f14ee153b7bb1acd24df245e545af65202b4f0ea833f8c486372e97e7f20">nertc.kNERtcAudioRecordingCycleTime60</a> = 60
+, <a class="el" href="namespacenertc.html#a15ab2f14ee153b7bb1acd24df245e545aa4f6330637c2fbc4a0ebef1ffdbedb97">nertc.kNERtcAudioRecordingCycleTime360</a> = 360
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a15ab2f14ee153b7bb1acd24df245e545a3b454919f4bf7e50b86651f968b86b92">nertc.kNERtcAudioRecordingCycleTime900</a> = 900
+<br />
+ }</td></tr>
+<tr class="separator:a15ab2f14ee153b7bb1acd24df245e545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d41e60a9b699ba1ba350e69876123e" id="r_a18d41e60a9b699ba1ba350e69876123e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a18d41e60a9b699ba1ba350e69876123e">nertc.RtcAudioRecordingCode</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a18d41e60a9b699ba1ba350e69876123ea77a8b3579fcb7928ec6faf6ad253d0fa">nertc.kNERtcAudioRecordErrorSuffix</a> = 1
+, <a class="el" href="namespacenertc.html#a18d41e60a9b699ba1ba350e69876123ea3cf6612b6b213e094a8fe393d83f4ef9">nertc.kNERtcAudioRecordOpenFileFailed</a> = 2
+, <a class="el" href="namespacenertc.html#a18d41e60a9b699ba1ba350e69876123ea2af00b9e8199b9290e9bb19f5672e306">nertc.kNERtcAudioRecordStart</a> = 3
+, <a class="el" href="namespacenertc.html#a18d41e60a9b699ba1ba350e69876123ea98ba14428e2459d5459b4de1bec562a9">nertc.kNERtcAudioRecordError</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a18d41e60a9b699ba1ba350e69876123ea63a0f825be62ab29d7debe7c96d5fe43">nertc.kNERtcAudioRecordFinish</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a18d41e60a9b699ba1ba350e69876123e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1082e18628c705d9000536f61b5059d" id="r_ac1082e18628c705d9000536f61b5059d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ac1082e18628c705d9000536f61b5059d">nertc.RtcStreamFallbackOption</a> : int { <a class="el" href="namespacenertc.html#ac1082e18628c705d9000536f61b5059dadf19ad52b8809747070414334b3d2787">nertc.kNERtcStreamFallbackDisabled</a> = 0
+, <a class="el" href="namespacenertc.html#ac1082e18628c705d9000536f61b5059daf23c1f39a619da05afb8f180e8acc573">nertc.kNERtcStreamFallbackVideoStreamLow</a> = 1
+, <a class="el" href="namespacenertc.html#ac1082e18628c705d9000536f61b5059da71602ce08b3f6828d85b1e03995f1059">nertc.kNERtcStreamFallbackAudioOnly</a> = 2
+ }</td></tr>
+<tr class="separator:ac1082e18628c705d9000536f61b5059d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70878dde77c7d0b96cbe0010eadf91fe" id="r_a70878dde77c7d0b96cbe0010eadf91fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a70878dde77c7d0b96cbe0010eadf91fe">nertc.RtcEncryptionMode</a> : int { <a class="el" href="namespacenertc.html#a70878dde77c7d0b96cbe0010eadf91feaffd62a28f2b1ad62b183ec85cbcb926d">nertc.kNERtcGMCryptoSM4ECB</a> = 0
+ }</td></tr>
+<tr class="separator:a70878dde77c7d0b96cbe0010eadf91fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f889e8e4b1d5323552a6f7b997a0cc" id="r_a51f889e8e4b1d5323552a6f7b997a0cc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a51f889e8e4b1d5323552a6f7b997a0cc">nertc.RtcLastmileProbeResultState</a> : int { <a class="el" href="namespacenertc.html#a51f889e8e4b1d5323552a6f7b997a0cca18bb4b2be0d50b51194261dba2b2a38d">nertc.kNERtcLastmileProbeResultComplete</a> = 1
+, <a class="el" href="namespacenertc.html#a51f889e8e4b1d5323552a6f7b997a0cca5b5fa244d6458c38d71366c0914916c4">nertc.kNERtcLastmileProbeResultIncompleteNoBwe</a> = 2
+, <a class="el" href="namespacenertc.html#a51f889e8e4b1d5323552a6f7b997a0cca72766a2f0911684d81bf2e49fdb4fb83">nertc.kNERtcLastmileProbeResultUnavailable</a> = 3
+ }</td></tr>
+<tr class="separator:a51f889e8e4b1d5323552a6f7b997a0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd4ee70911d5f03aba89bc8b2c91ed0" id="r_accd4ee70911d5f03aba89bc8b2c91ed0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#accd4ee70911d5f03aba89bc8b2c91ed0">nertc.RtcTransportType</a> : int { <a class="el" href="namespacenertc.html#accd4ee70911d5f03aba89bc8b2c91ed0a136bfe707ea4c6d4e9e71144d5bbef88">nertc.kNERtcTransportTypeNoneProxy</a> = 0
+, <a class="el" href="namespacenertc.html#accd4ee70911d5f03aba89bc8b2c91ed0a3a79f208d4af72b842595d8daaf1e64e">nertc.kNERtcTransportTypeUDPProxy</a> = 1
+ }</td></tr>
+<tr class="separator:accd4ee70911d5f03aba89bc8b2c91ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d19c5c6db5cf09401025573bb4b68f8" id="r_a3d19c5c6db5cf09401025573bb4b68f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a3d19c5c6db5cf09401025573bb4b68f8">nertc.RtcInstallCastAudioDriverResult</a> : int { <a class="el" href="namespacenertc.html#a3d19c5c6db5cf09401025573bb4b68f8ab8bd7883ab2744009a4ff4080e86822c">nertc.kNERtcInstallCastAudioDriverSuccess</a> = 0
+, <a class="el" href="namespacenertc.html#a3d19c5c6db5cf09401025573bb4b68f8a157740eaf13258beba33367f01ef4935">nertc.kNERtcInstallCastAudioDriverNotAuthorized</a> = 1
+, <a class="el" href="namespacenertc.html#a3d19c5c6db5cf09401025573bb4b68f8a799681f0e0452f25a8339f5be1a0e160">nertc.kNERtcInstallCastAudioDriverFailed</a> = 2
+ }</td></tr>
+<tr class="separator:a3d19c5c6db5cf09401025573bb4b68f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9616ee1f4206dd23da447419244b24" id="r_adb9616ee1f4206dd23da447419244b24"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#adb9616ee1f4206dd23da447419244b24">nertc.RtcVirtualBackgroundSourcStateReason</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#adb9616ee1f4206dd23da447419244b24ac651996a4672e72c03b669df1fd54c62">nertc.kNERtcVirtualBackgroundSourceStateReasonSuccess</a> = 0
+, <a class="el" href="namespacenertc.html#adb9616ee1f4206dd23da447419244b24a898088233bd1f2aeed7fc09f1c508b15">nertc.kNERtcVirtualBackgroundSourceStateReasonImageNotExist</a> = 1
+, <a class="el" href="namespacenertc.html#adb9616ee1f4206dd23da447419244b24a1934d6fc3934387245d2eea0e944f497">nertc.kNERtcVirtualBackgroundSourceStateReasonImageFormatNotSupported</a> = 2
+, <a class="el" href="namespacenertc.html#adb9616ee1f4206dd23da447419244b24a4e2fd409d1f387508a48ed468a510247">nertc.kNERtcVirtualBackgroundSourceStateReasonColorFormatNotSupported</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#adb9616ee1f4206dd23da447419244b24aeeb91cf3a933a95026f8e9643fc03ae3">nertc.kNERtcVirtualBackgroundSourceStateReasonDeviceNotSupported</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:adb9616ee1f4206dd23da447419244b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46b933b37648de1e61224fa828fca0d" id="r_ad46b933b37648de1e61224fa828fca0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ad46b933b37648de1e61224fa828fca0d">nertc.RtcVirtualBackgroundSourceType</a> : int { <a class="el" href="namespacenertc.html#ad46b933b37648de1e61224fa828fca0da737b49e750d4d898c87b4ed7486f504a">nertc.kNERtcBackgroundColor</a> = 1
+, <a class="el" href="namespacenertc.html#ad46b933b37648de1e61224fa828fca0da3d35fe20740551edb5cf18587c7ae216">nertc.kNERtcBackgroundImage</a>
+ }</td></tr>
+<tr class="separator:ad46b933b37648de1e61224fa828fca0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60a027247c3475b5e6ab9d9472386c9" id="r_ac60a027247c3475b5e6ab9d9472386c9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ac60a027247c3475b5e6ab9d9472386c9">nertc.RtcAudioDumpType</a> : int { <a class="el" href="namespacenertc.html#ac60a027247c3475b5e6ab9d9472386c9a93b08f8f9aca9d46b22d226e729970ea">nertc.kNERtcAudioDumpTypePCM</a> = 0
+, <a class="el" href="namespacenertc.html#ac60a027247c3475b5e6ab9d9472386c9abee15653a91c48eb1be3db8001ecf5c2">nertc.kNERtcAudioDumpTypeAll</a> = 1
+, <a class="el" href="namespacenertc.html#ac60a027247c3475b5e6ab9d9472386c9acb97e067beb29f1121b1098c658b0d28">nertc.kNERtcAudioDumpTypeWAV</a> = 2
+ }</td></tr>
+<tr class="separator:ac60a027247c3475b5e6ab9d9472386c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7fb11e87f6cb778d5b8f9edb40139d" id="r_a9c7fb11e87f6cb778d5b8f9edb40139d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9c7fb11e87f6cb778d5b8f9edb40139d">nertc.RtcRangeAudioMode</a> : int { <a class="el" href="namespacenertc.html#a9c7fb11e87f6cb778d5b8f9edb40139da94eae7c259983ceb8af9a9f24edd167c">nertc.kNERtcRangeAudioModeDefault</a> = 0
+, <a class="el" href="namespacenertc.html#a9c7fb11e87f6cb778d5b8f9edb40139daf24495ee26924c7fb1c9ff4d631b015d">nertc.kNERtcRangeAudioModeTeam</a> = 1
+ }</td></tr>
+<tr class="separator:a9c7fb11e87f6cb778d5b8f9edb40139d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a326b15c05d8c12eb3b8e5d2975b20" id="r_a52a326b15c05d8c12eb3b8e5d2975b20"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a52a326b15c05d8c12eb3b8e5d2975b20">nertc.RtcMediaPubType</a> : int { <a class="el" href="namespacenertc.html#a52a326b15c05d8c12eb3b8e5d2975b20a8a74d02873190a412c485817f56fb11d">nertc.kNERtcMediaPubTypeAudio</a>
+ }</td></tr>
+<tr class="separator:a52a326b15c05d8c12eb3b8e5d2975b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425d4ec5fa3f22e831eb3f02ad17d91b" id="r_a425d4ec5fa3f22e831eb3f02ad17d91b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91b">nertc.RtcBeautyEffectType</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba1d6efe8c6c2e10b530185e963df9a3fc">nertc.kNERtcBeautyWhiteTeeth</a> = 0
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91bab727cf74c0592ce85d28cf0e5f21e290">nertc.kNERtcBeautyLightEye</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baecf6b08d3e21887efc42df1c57d07692">nertc.kNERtcBeautyWhiten</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba448a1f64cb075e47302dde88e32996b8">nertc.kNERtcBeautySmooth</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baa1e7e1099d573b99a0ac1bd80bf802ae">nertc.kNERtcBeautySmallNose</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91bad2a2a896604bccbb93fc24c0f5138c63">nertc.kNERtcBeautyEyeDis</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba703fc5c1d3c61c1bc39cee1afdfa2c65">nertc.kNERtcBeautyEyeAngle</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91bab8c0de7927a7465c1918cb6472a4e5e3">nertc.kNERtcBeautyMouth</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba0c1ec4a7945fdb59b76d44329701fa62">nertc.kNERtcBeautyBigEye</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baae8abcaf38a6341b09ddc070d1d485f2">nertc.kNERtcBeautySmallFace</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba57b6574e1f3dd0e193296357cd189639">nertc.kNERtcBeautyJaw</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba58163fb79e0bdc43aab6b812132aa145">nertc.kNERtcBeautyThinFace</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba1867d20a6bdac92915271ea81adb19e9">nertc.kNERtcBeautyFaceRuddy</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baed73e5733e929fb2d60a020bfd793e9c">nertc.kNERtcBeautyLongNose</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba921586aefcc430f71121d569e11f682e">nertc.kNERtcBeautyRenZhong</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba0a476f483292eef94d583aaf3cb56c8f">nertc.kNERtcBeautyMouthAngle</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baa834435cda6195f1b733463b7ed86353">nertc.kNERtcBeautyRoundEye</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91babdd12a513c8bb983bf9d0d1b3ddabbec">nertc.kNERtcBeautyOpenEyeAngle</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baf8c61ab392a2205c32c52a8dedd0c0fe">nertc.kNERtcBeautyVFace</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba3f1c97318fe1acefa869cad134b03a82">nertc.kNERtcBeautyThinUnderjaw</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba467f7ab840b2fc4b55e400a72e6a75cd">nertc.kNERtcBeautyNarrowFace</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baefca3423d0319206906c2506c1d58dfb">nertc.kNERtcBeautyCheekBone</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91baaf91384ca38edce582a0fe9c4bb704c4">nertc.kNERtcBeautyFaceSharpen</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba5053e0f85a8c7f5e3a46c382ede4e649">nertc.kNERtcBeautyMouthWider</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91ba6cc007a01fd946bd3f67945c0dc39829">nertc.kNERtcBeautyForeheadWrinkles</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91bae38830a925f8c2a3a208794038f4d71b">nertc.kNERtcBeautyDarkCircles</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91bab3bae6339f3947704a6d18374c115609">nertc.kNERtcBeautySmileLines</a>
+, <a class="el" href="namespacenertc.html#a425d4ec5fa3f22e831eb3f02ad17d91babc4f68d688c9d209804de61f7d880e5d">nertc.kNERtcBeautyShortFace</a>
+<br />
+ }</td></tr>
+<tr class="separator:a425d4ec5fa3f22e831eb3f02ad17d91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd95c9de0bcaa641b3143aa2bc3967d" id="r_a2cd95c9de0bcaa641b3143aa2bc3967d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a2cd95c9de0bcaa641b3143aa2bc3967d">nertc.RtcSpatializerRoomCapacity</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a2cd95c9de0bcaa641b3143aa2bc3967da624807c046fce1fa92e83768bbd57c3c">nertc.kNERtcSpatializerRoomCapacitySmall</a> = 0
+, <a class="el" href="namespacenertc.html#a2cd95c9de0bcaa641b3143aa2bc3967dad22f60d051e3fe01119af0b032f0013c">nertc.kNERtcSpatializerRoomCapacityMedium</a> = 1
+, <a class="el" href="namespacenertc.html#a2cd95c9de0bcaa641b3143aa2bc3967dac53659fe0f2496dae4a4ab02c3f37238">nertc.kNERtcSpatializerRoomCapacityLarge</a> = 2
+, <a class="el" href="namespacenertc.html#a2cd95c9de0bcaa641b3143aa2bc3967da27f52df01240997b910fca3f3336a848">nertc.kNERtcSpatializerRoomCapacityHuge</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a2cd95c9de0bcaa641b3143aa2bc3967da0340bbe932ab950b7dece311ab2a2124">nertc.kNERtcSpatializerRoomCapacityNone</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:a2cd95c9de0bcaa641b3143aa2bc3967d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c960c7abc81b0755c7f93c6400bbdb0" id="r_a7c960c7abc81b0755c7f93c6400bbdb0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0">nertc.RtcSpatializerMaterialName</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a487ea9d3f3c89893cfb0637d48e093d9">nertc.kNERtcSpatializerMaterialTransparent</a> = 0
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0aa9858a99deea6944f4f3bcf126956352">nertc.kNERtcSpatializerMaterialAcousticCeilingTiles</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a5c554acf4a2eb7526789c4c0103237d1">nertc.kNERtcSpatializerMaterialBrickBare</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a73ca40bbcf3d6b982c7a0e9c1a9f956b">nertc.kNERtcSpatializerMaterialBrickPainted</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a996d36c770aa99e5e276c33bc5b339f5">nertc.kNERtcSpatializerMaterialConcreteBlockCoarse</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a411b679cc393ab2f6716b24d5d91dc6f">nertc.kNERtcSpatializerMaterialConcreteBlockPainted</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a52554fff4d27e522c10f7bf9982d6f3d">nertc.kNERtcSpatializerMaterialCurtainHeavy</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a1ae9f4cd086e44520134f198f5491295">nertc.kNERtcSpatializerMaterialFiberGlassInsulation</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a57317e0609319caf7ee65b128e95eaa2">nertc.kNERtcSpatializerMaterialGlassThin</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0afff4f71ee1aa64922b14248b00739745">nertc.kNERtcSpatializerMaterialGlassThick</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a02ceb1fa23ccb01c88b0f98c9e15d595">nertc.kNERtcSpatializerMaterialGrass</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a0faffb8514cb343834c5b44b1e2b5262">nertc.kNERtcSpatializerMaterialLinoleumOnConcrete</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a8a2da536d353106b9c3d59223bab0f40">nertc.kNERtcSpatializerMaterialMarble</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0ada285223d53512ddcaee10c6c9cf19d2">nertc.kNERtcSpatializerMaterialMetal</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0ab4138430cb4e60db037965d4603f785f">nertc.kNERtcSpatializerMaterialParquetOnConcrete</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a98708311fd1d388864b95af4bdb53452">nertc.kNERtcSpatializerMaterialPlasterRough</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a03a88d471c1b342c9c39e49a5b9a23ac">nertc.kNERtcSpatializerMaterialPlasterSmooth</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a3896006d483fd8e160beb94a9a08c1a6">nertc.kNERtcSpatializerMaterialPlywoodPanel</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a92281ae45f6ad3cf8d36f1f4a549be86">nertc.kNERtcSpatializerMaterialPolishedConcreteOrTile</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a197ae0e34b74bfe4fd2ec8f5136e2c65">nertc.kNERtcSpatializerMaterialSheetrock</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a91224a9a59500aa70a89c2109e4132e2">nertc.kNERtcSpatializerMaterialWaterOrIceSurface</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0abeb397b1d652a0323dd27f17ff11abc2">nertc.kNERtcSpatializerMaterialWoodCeiling</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a09297a3ffc19e1717b644e8484c15516">nertc.kNERtcSpatializerMaterialWoodPanel</a>
+, <a class="el" href="namespacenertc.html#a7c960c7abc81b0755c7f93c6400bbdb0a4df4702834f9b80666aff8419e04cc42">nertc.kNERtcSpatializerMaterialUniform</a>
+<br />
+ }</td></tr>
+<tr class="separator:a7c960c7abc81b0755c7f93c6400bbdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8937b89f1018f08d098671020eebf93f" id="r_a8937b89f1018f08d098671020eebf93f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a8937b89f1018f08d098671020eebf93f">nertc.RtcSpatializerRenderMode</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a8937b89f1018f08d098671020eebf93fa827bde4a72b822fae8deed62739683ba">nertc.kNERtcSpatializerRenderStereoPanning</a> = 0
+, <a class="el" href="namespacenertc.html#a8937b89f1018f08d098671020eebf93fa71d3efdf3637a18def7255c18b8c67a1">nertc.kNERtcSpatializerRenderBinauralLowQuality</a>
+, <a class="el" href="namespacenertc.html#a8937b89f1018f08d098671020eebf93fa3777a29b68bc21d52473c5e57047bf3c">nertc.kNERtcSpatializerRenderBinauralMediumQuality</a>
+, <a class="el" href="namespacenertc.html#a8937b89f1018f08d098671020eebf93fa5b518a12b05d3bd492d1a6cc7c7a720e">nertc.kNERtcSpatializerRenderBinauralHighQuality</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a8937b89f1018f08d098671020eebf93fa1c975689de5eec6974171dd3c67bfd2d">nertc.kNERtcSpatializerRenderRoomEffectsOnly</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8937b89f1018f08d098671020eebf93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a97dac40e0b42e1f7e20e3f5ace5a59" id="r_a0a97dac40e0b42e1f7e20e3f5ace5a59"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a0a97dac40e0b42e1f7e20e3f5ace5a59">nertc.RtcDistanceRolloffModel</a> : int { <a class="el" href="namespacenertc.html#a0a97dac40e0b42e1f7e20e3f5ace5a59a467b760e1ccf5d09e51c08e04e1aa286">nertc.kNERtcDistanceRolloffLogarithmic</a> = 0
+, <a class="el" href="namespacenertc.html#a0a97dac40e0b42e1f7e20e3f5ace5a59ab6914646fad78b4343ab4ddaa9ca5034">nertc.kNERtcDistanceRolloffLinear</a>
+, <a class="el" href="namespacenertc.html#a0a97dac40e0b42e1f7e20e3f5ace5a59a737e7c7d3ee037e348db2459c9a82bb3">nertc.kNERtcDistanceRolloffNone</a>
+ }</td></tr>
+<tr class="separator:a0a97dac40e0b42e1f7e20e3f5ace5a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b549e840db271ed0bd826de6c648bf2" id="r_a5b549e840db271ed0bd826de6c648bf2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2">nertc.RtcVoiceAuditStatus</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2aa7342a48ebf58aacbca4201432c32604">nertc.kNERtcVoiceAuditUnkonwn</a> = -1
+, <a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2aa03c6a7ef62850da87b6b23c1808c683">nertc.kNERtcVoiceAuditing</a> = 0
+, <a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2a074dcfcec38431d721ac8f9d40f758a2">nertc.kNERtcVoiceAuditFinished</a> = 1
+, <a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2afdf497c869756ebb6039c2bf2c8894f7">nertc.kNERtcVoiceAuditServerError</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2adb8c374dc12af90dc49c40128c3f85d6">nertc.kNERtcVoiceAuditUnactivated</a> = 3
+<br />
+ }</td></tr>
+<tr class="separator:a5b549e840db271ed0bd826de6c648bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f22ae3813b79b05770552b246ba608d" id="r_a9f22ae3813b79b05770552b246ba608d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608d">nertc.RtcAudioDeviceError</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da4398041d888e28e67334e60962384041">nertc.kNERtcAudioDeviceNoError</a> = 0
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608dafe096fb60a0f447637ff634b815bc1c7">nertc.kNERtcAudioDeviceErrorInitRecording</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da659f5909635a81913184083e02e0580c">nertc.kNERtcAudioDeviceErrorStartRecording</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608dab90ad1d867329ff64099dd6a9bfbad8a">nertc.kNERtcAudioDeviceErrorStopRecording</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608dafbe38453d306ffb8979b552042949ce2">nertc.kNERtcAudioDeviceErrorInitPlayout</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da0ee721ed58b07765a49a39c11e76eefd">nertc.kNERtcAudioDeviceErrorStartPlayout</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608dacf048c41bc848fed0733ba99d84a286f">nertc.kNERtcAudioDeviceErrorStopplayout</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da526ce7d1ba21cf1763ce19ef94538b30">nertc.kNERtcAudioDeviceErrorCaptureThreadStop</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da7a420731238ddca2148357b97ee3290c">nertc.kNERtcAudioDeviceErrorPlayoutThreadStop</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608daf141c5f79e226b1d66c97c5a3eb68e44">nertc.kNERtcAudioDeviceErrorCaptureSampleRate</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da7d32b06665e57d4eb3e3d87297ee219a">nertc.kNERtcAudioDeviceErrorPlayoutSampleRate</a>
+, <a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608da344b57a49f2add4173d5441d5639dcf9">nertc.kNERtcAudioDeviceErrorConfigSession</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a9f22ae3813b79b05770552b246ba608dad4d600ef3e5132cd5bb86e749e5476b7">nertc.kNERtcAudioDeviceErrorCodeReporter</a>
+<br />
+ }</td></tr>
+<tr class="separator:a9f22ae3813b79b05770552b246ba608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6603889c4596c650d0c4307b024c4e16" id="r_a6603889c4596c650d0c4307b024c4e16"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a6603889c4596c650d0c4307b024c4e16">nertc.RtcVideoDeviceError</a> : int { <a class="el" href="namespacenertc.html#a6603889c4596c650d0c4307b024c4e16a8a15faaaec62d38d28d912adedaef58c">nertc.kNERtcVideoDeviceErrorNoFrame</a> = 0
+, <a class="el" href="namespacenertc.html#a6603889c4596c650d0c4307b024c4e16a3e9c18ddfea3454ee64da73f030c9d32">nertc.kNERtcVideoDeviceErrorNotAvailableInBackground</a>
+, <a class="el" href="namespacenertc.html#a6603889c4596c650d0c4307b024c4e16a9ca2ee0fdbf382a9c30c156f5c6406d9">nertc.kNERtcVideoDeviceErrorUsingByAnotherClient</a>
+, <a class="el" href="namespacenertc.html#a6603889c4596c650d0c4307b024c4e16acd74e4e8b871f4d7be9be19eadeff374">nertc.kNERtcVideoDeviceErrorNotAvailableWithMultipleForegroundApps</a>
+ }</td></tr>
+<tr class="separator:a6603889c4596c650d0c4307b024c4e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5db199322adcca807df4b5f8158b323" id="r_ad5db199322adcca807df4b5f8158b323"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ad5db199322adcca807df4b5f8158b323">nertc.RtcAudioOutputRouting</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ad5db199322adcca807df4b5f8158b323a71560f064e791641e70960cac21d7cdb">nertc.kNERtcAudioOutputRoutingDefault</a> = 0
+, <a class="el" href="namespacenertc.html#ad5db199322adcca807df4b5f8158b323aa7633ad99d75c5d0c4d1dba2ffe671cf">nertc.kNERtcAudioOutputRoutingHeadset</a>
+, <a class="el" href="namespacenertc.html#ad5db199322adcca807df4b5f8158b323ac8ae28357c32c88241aa4b725c57444b">nertc.kNERtcAudioOutputRoutingEarpiece</a>
+, <a class="el" href="namespacenertc.html#ad5db199322adcca807df4b5f8158b323a4b7092cb17cee1e6e619ad93917fb98d">nertc.kNERtcAudioOutputRoutingLoudspeaker</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#ad5db199322adcca807df4b5f8158b323a72533c7ad094a51e154130630584c4ed">nertc.kNERtcAudioOutputRoutingBluetooth</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad5db199322adcca807df4b5f8158b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43544eef45d8afd4e05dfba4bd288fd3" id="r_a43544eef45d8afd4e05dfba4bd288fd3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3">nertc.RtcNetworkType</a> { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3a6364c66c2522916254415c3ed4cc7b7e">nertc.kNERtcNetworkTypeUnknown</a> = 0
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3aed19d04001e147d35e054e7cf4f6849e">nertc.kNERtcNetworkTypeEthernet</a>
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3a0b78a34b10724971c3f252d68033e13a">nertc.kNERtcNetworkTypeWifi</a>
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3ab798d0d7e4b93d3b5b5c1d2d010ad47d">nertc.kNERtcNetworkType2G</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3a614e3835dc43e75f8f955242516f7d79">nertc.kNERtcNetworkType3G</a>
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3ac8e120e47f1bb93a5d42fa185da54b8c">nertc.kNERtcNetworkType4G</a>
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3ace80a0d582e8481b8bc7d5072d3afe5c">nertc.kNERtcNetworkType5G</a>
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3a33166d5bb00b44a2f9e94c6145b75040">nertc.kNERtcNetworkTypeWWAN</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3a17e68b79c94730365c34670694d88943">nertc.kNERtcNetworkTypeBluetooth</a>
+, <a class="el" href="namespacenertc.html#a43544eef45d8afd4e05dfba4bd288fd3a2707eaa66b134b2b3b75c32c6252d3da">nertc.kNERtcNetworkTypeNone</a>
+<br />
+ }</td></tr>
+<tr class="separator:a43544eef45d8afd4e05dfba4bd288fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d62624887dba60fe414edf776bc3b3" id="r_a69d62624887dba60fe414edf776bc3b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a69d62624887dba60fe414edf776bc3b3">nertc.RtcAudioSessionOperationRestriction</a> : int { <a class="el" href="namespacenertc.html#a69d62624887dba60fe414edf776bc3b3a4f44f388e3eeb01f9695c296202903fe">nertc.kNERtcAudioSessionOperationRestrictionNone</a> = 0
+, <a class="el" href="namespacenertc.html#a69d62624887dba60fe414edf776bc3b3a77ce5aa22323acf367cf07fd960876a4">nertc.kNERtcAudioSessionOperationRestrictionAll</a>
+, <a class="el" href="namespacenertc.html#a69d62624887dba60fe414edf776bc3b3ae8734f62f9853d2f05dac8a39372f8c2">nertc.kNERtcAudioSessionOperationRestrictionDeactivateSession</a>
+ }</td></tr>
+<tr class="separator:a69d62624887dba60fe414edf776bc3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314e19cd6492dd331344675f10da70ae" id="r_a314e19cd6492dd331344675f10da70ae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a314e19cd6492dd331344675f10da70ae">nertc.RtcAudioFocusMode</a> : int { <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a314e19cd6492dd331344675f10da70aeaaf14fbf558ebaf08de04d66e51321fb4">nertc.kNERtcAudioFocusOff</a> = 0
+, <a class="el" href="namespacenertc.html#a314e19cd6492dd331344675f10da70aeabb432c0ca7c030bcb69b9e30410df886">nertc.kNERtcAudioFocusGain</a> = 1
+, <a class="el" href="namespacenertc.html#a314e19cd6492dd331344675f10da70aea1e93a89c4d9b4dcdeb59c73b19e60dd6">nertc.kNERtcAudioFocusGainTransient</a> = 2
+, <a class="el" href="namespacenertc.html#a314e19cd6492dd331344675f10da70aea2ec94cba7f4920da499d4a0b33b37aab">nertc.kNERtcAudioFocusGainTransientMayDuck</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacenertc.html#a314e19cd6492dd331344675f10da70aea2ed130863f1daa4ed5668d8d25eb207f">nertc.kNERtcAudioFocusGainTransientExclisive</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:a314e19cd6492dd331344675f10da70ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9cf9a0fd678856f23f5d77d9a5f2ab" id="r_a5f9cf9a0fd678856f23f5d77d9a5f2ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a5f9cf9a0fd678856f23f5d77d9a5f2ab">nertc.RtcCameraPosition</a> : int { <a class="el" href="namespacenertc.html#a5f9cf9a0fd678856f23f5d77d9a5f2abab75c1cba5cd595be613098788d28615b">nertc.kNERtcCameraPositionBack</a> = 0
+, <a class="el" href="namespacenertc.html#a5f9cf9a0fd678856f23f5d77d9a5f2aba839205dc60eedc273784cbc7c0a63bcc">nertc.kNERtcCameraPositionFront</a>
+ }</td></tr>
+<tr class="separator:a5f9cf9a0fd678856f23f5d77d9a5f2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a4785f113226165ca44a7caa2e571a4b9" id="r_a4785f113226165ca44a7caa2e571a4b9"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a4785f113226165ca44a7caa2e571a4b9">nertc.RtcTakeSnapshotCallback</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string image)</td></tr>
+<tr class="separator:a4785f113226165ca44a7caa2e571a4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

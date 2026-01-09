@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcVideoFrame类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_rtc_video_frame-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcVideoFrame类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>视频帧信息。   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcVideoFrame 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_video_frame.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a460da488534e9d0d4af38134a06f905a" id="r_a460da488534e9d0d4af38134a06f905a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a460da488534e9d0d4af38134a06f905a">format</a></td></tr>
+<tr class="memdesc:a460da488534e9d0d4af38134a06f905a"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频帧格式，详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a></code>。 视频外部渲染场景下，仅支持 kNERtcVideoFormatI420。   <br /></td></tr>
+<tr class="separator:a460da488534e9d0d4af38134a06f905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8bbb3af680e11805e928f9a3621a1d" id="r_a4b8bbb3af680e11805e928f9a3621a1d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b8bbb3af680e11805e928f9a3621a1d">timestamp</a></td></tr>
+<tr class="memdesc:a4b8bbb3af680e11805e928f9a3621a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频时间戳，单位为毫秒。   <br /></td></tr>
+<tr class="separator:a4b8bbb3af680e11805e928f9a3621a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db937ac4cde32263af8fb8b8098cff0" id="r_a0db937ac4cde32263af8fb8b8098cff0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0db937ac4cde32263af8fb8b8098cff0">width</a></td></tr>
+<tr class="memdesc:a0db937ac4cde32263af8fb8b8098cff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频高，即视频帧在横轴上的像素。   <br /></td></tr>
+<tr class="separator:a0db937ac4cde32263af8fb8b8098cff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab8abe3b19d32acaab1a35cb6d89046" id="r_adab8abe3b19d32acaab1a35cb6d89046"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adab8abe3b19d32acaab1a35cb6d89046">height</a></td></tr>
+<tr class="memdesc:adab8abe3b19d32acaab1a35cb6d89046"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频宽，即视频帧在纵轴上的像素。   <br /></td></tr>
+<tr class="separator:adab8abe3b19d32acaab1a35cb6d89046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0857ce308ec724442eba451ad2fa774b" id="r_a0857ce308ec724442eba451ad2fa774b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0857ce308ec724442eba451ad2fa774b">rotation</a></td></tr>
+<tr class="memdesc:a0857ce308ec724442eba451ad2fa774b"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频顺时针旋转角度。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a></code>。   <br /></td></tr>
+<tr class="separator:a0857ce308ec724442eba451ad2fa774b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca13b28eeea90bda6957cb74f8714fd" id="r_a6ca13b28eeea90bda6957cb74f8714fd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca13b28eeea90bda6957cb74f8714fd">buffer</a></td></tr>
+<tr class="memdesc:a6ca13b28eeea90bda6957cb74f8714fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频数据指针。 视频外部输入场景下，按照不同的格式，可支持 CVPixelBuffer、NSData 的 bytes； 对于 I420 格式，代表 Y 分量的指针； 对于 NV12 和 BGRA 格式，代表 CVPixelBuffer。 视频外部渲染场景下，代表 I420 数据中 Y 分量的指针。   <br /></td></tr>
+<tr class="separator:a6ca13b28eeea90bda6957cb74f8714fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44652a7e611c4cd43f4c7e7746745b09" id="r_a44652a7e611c4cd43f4c7e7746745b09"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44652a7e611c4cd43f4c7e7746745b09">uBuffer</a></td></tr>
+<tr class="memdesc:a44652a7e611c4cd43f4c7e7746745b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频数据指针。 目前该参数仅在外部渲染视频的场景下有实际意义。 视频外部渲染场景下，代表 I420 数据中 U 分量的指针。   <br /></td></tr>
+<tr class="separator:a44652a7e611c4cd43f4c7e7746745b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdcedb2b7c5811e3b7e7d66c43feb3d" id="r_aacdcedb2b7c5811e3b7e7d66c43feb3d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacdcedb2b7c5811e3b7e7d66c43feb3d">vBuffer</a></td></tr>
+<tr class="memdesc:aacdcedb2b7c5811e3b7e7d66c43feb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频数据指针。 目前该参数仅在外部渲染视频的场景下有实际意义。 视频外部渲染场景下，代表 I420 数据中 V 分量的指针。   <br /></td></tr>
+<tr class="separator:aacdcedb2b7c5811e3b7e7d66c43feb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa430efd61ace1f955655faabaf5942b6" id="r_aa430efd61ace1f955655faabaf5942b6"><td class="memItemLeft" align="right" valign="top">NSArray&lt; NSNumber * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa430efd61ace1f955655faabaf5942b6">strides</a></td></tr>
+<tr class="memdesc:aa430efd61ace1f955655faabaf5942b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频帧各平面的行间距。 目前该参数仅在外部渲染视频的场景下有实际意义。   <br /></td></tr>
+<tr class="separator:aa430efd61ace1f955655faabaf5942b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d754be760dfd12cc2e505c1dc3d80d0" id="r_a1d754be760dfd12cc2e505c1dc3d80d0"><td class="memItemLeft" align="right" valign="top">id&lt; MTLTexture &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d754be760dfd12cc2e505c1dc3d80d0">texture</a></td></tr>
+<tr class="separator:a1d754be760dfd12cc2e505c1dc3d80d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62e211be34f5722b12394c620c7bcd6" id="r_aa62e211be34f5722b12394c620c7bcd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#a1054d173d7cbcaaf59780b2078843974">NERtcVideoColorSpaceRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa62e211be34f5722b12394c620c7bcd6">colorSpaceRange</a></td></tr>
+<tr class="memdesc:aa62e211be34f5722b12394c620c7bcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频颜色范围。   <br /></td></tr>
+<tr class="separator:aa62e211be34f5722b12394c620c7bcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae696042f3af3096444c16f910b7519f3" id="r_ae696042f3af3096444c16f910b7519f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#ab5f0ba24de4fed2cefbf4276ce766753">NERtcVideoColorSpaceMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae696042f3af3096444c16f910b7519f3">colorSpaceMatrix</a></td></tr>
+<tr class="memdesc:ae696042f3af3096444c16f910b7519f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频颜色空间矩阵。   <br /></td></tr>
+<tr class="separator:ae696042f3af3096444c16f910b7519f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8136a8f90e7ae0bfbd5d30ba2e7fb2" id="r_a9f8136a8f90e7ae0bfbd5d30ba2e7fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#a077cb123a17fc5070ccc382dd2b18451">NERtcVideoColorSpacePrimary</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f8136a8f90e7ae0bfbd5d30ba2e7fb2">colorSpacePrimary</a></td></tr>
+<tr class="memdesc:a9f8136a8f90e7ae0bfbd5d30ba2e7fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频颜色空间主色。   <br /></td></tr>
+<tr class="separator:a9f8136a8f90e7ae0bfbd5d30ba2e7fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5807c51a15df3d97949708acc6f37f" id="r_a5f5807c51a15df3d97949708acc6f37f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#aa24e2d7e4fbbc8e83c9eb1f676427393">NERtcVideoColorSpaceTransfer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5807c51a15df3d97949708acc6f37f">colorSpaceTransfer</a></td></tr>
+<tr class="memdesc:a5f5807c51a15df3d97949708acc6f37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频颜色空间传输。   <br /></td></tr>
+<tr class="separator:a5f5807c51a15df3d97949708acc6f37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>视频帧信息。  </p>
+</div><h2 class="groupheader">属性说明</h2>
+<a id="a6ca13b28eeea90bda6957cb74f8714fd" name="a6ca13b28eeea90bda6957cb74f8714fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca13b28eeea90bda6957cb74f8714fd">&#9670;&#160;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void*) buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频数据指针。 视频外部输入场景下，按照不同的格式，可支持 CVPixelBuffer、NSData 的 bytes； 对于 I420 格式，代表 Y 分量的指针； 对于 NV12 和 BGRA 格式，代表 CVPixelBuffer。 视频外部渲染场景下，代表 I420 数据中 Y 分量的指针。  </p>
+
+</div>
+</div>
+<a id="ae696042f3af3096444c16f910b7519f3" name="ae696042f3af3096444c16f910b7519f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae696042f3af3096444c16f910b7519f3">&#9670;&#160;</a></span>colorSpaceMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#ab5f0ba24de4fed2cefbf4276ce766753">NERtcVideoColorSpaceMatrix</a>) colorSpaceMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频颜色空间矩阵。  </p>
+
+</div>
+</div>
+<a id="a9f8136a8f90e7ae0bfbd5d30ba2e7fb2" name="a9f8136a8f90e7ae0bfbd5d30ba2e7fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8136a8f90e7ae0bfbd5d30ba2e7fb2">&#9670;&#160;</a></span>colorSpacePrimary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#a077cb123a17fc5070ccc382dd2b18451">NERtcVideoColorSpacePrimary</a>) colorSpacePrimary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频颜色空间主色。  </p>
+
+</div>
+</div>
+<a id="aa62e211be34f5722b12394c620c7bcd6" name="aa62e211be34f5722b12394c620c7bcd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62e211be34f5722b12394c620c7bcd6">&#9670;&#160;</a></span>colorSpaceRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#a1054d173d7cbcaaf59780b2078843974">NERtcVideoColorSpaceRange</a>) colorSpaceRange</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频颜色范围。  </p>
+
+</div>
+</div>
+<a id="a5f5807c51a15df3d97949708acc6f37f" name="a5f5807c51a15df3d97949708acc6f37f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5807c51a15df3d97949708acc6f37f">&#9670;&#160;</a></span>colorSpaceTransfer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#aa24e2d7e4fbbc8e83c9eb1f676427393">NERtcVideoColorSpaceTransfer</a>) colorSpaceTransfer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频颜色空间传输。  </p>
+
+</div>
+</div>
+<a id="a460da488534e9d0d4af38134a06f905a" name="a460da488534e9d0d4af38134a06f905a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460da488534e9d0d4af38134a06f905a">&#9670;&#160;</a></span>format</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a>) format</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频帧格式，详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a></code>。 视频外部渲染场景下，仅支持 kNERtcVideoFormatI420。  </p>
+
+</div>
+</div>
+<a id="adab8abe3b19d32acaab1a35cb6d89046" name="adab8abe3b19d32acaab1a35cb6d89046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adab8abe3b19d32acaab1a35cb6d89046">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频宽，即视频帧在纵轴上的像素。  </p>
+
+</div>
+</div>
+<a id="a0857ce308ec724442eba451ad2fa774b" name="a0857ce308ec724442eba451ad2fa774b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0857ce308ec724442eba451ad2fa774b">&#9670;&#160;</a></span>rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a>) rotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频顺时针旋转角度。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a></code>。  </p>
+
+</div>
+</div>
+<a id="aa430efd61ace1f955655faabaf5942b6" name="aa430efd61ace1f955655faabaf5942b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa430efd61ace1f955655faabaf5942b6">&#9670;&#160;</a></span>strides</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray&lt;NSNumber *&gt;*) strides</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频帧各平面的行间距。 目前该参数仅在外部渲染视频的场景下有实际意义。  </p>
+
+</div>
+</div>
+<a id="a1d754be760dfd12cc2e505c1dc3d80d0" name="a1d754be760dfd12cc2e505c1dc3d80d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d754be760dfd12cc2e505c1dc3d80d0">&#9670;&#160;</a></span>texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id&lt;MTLTexture&gt;) texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b8bbb3af680e11805e928f9a3621a1d" name="a4b8bbb3af680e11805e928f9a3621a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8bbb3af680e11805e928f9a3621a1d">&#9670;&#160;</a></span>timestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) timestamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频时间戳，单位为毫秒。  </p>
+
+</div>
+</div>
+<a id="a44652a7e611c4cd43f4c7e7746745b09" name="a44652a7e611c4cd43f4c7e7746745b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44652a7e611c4cd43f4c7e7746745b09">&#9670;&#160;</a></span>uBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void*) uBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频数据指针。 目前该参数仅在外部渲染视频的场景下有实际意义。 视频外部渲染场景下，代表 I420 数据中 U 分量的指针。  </p>
+
+</div>
+</div>
+<a id="aacdcedb2b7c5811e3b7e7d66c43feb3d" name="aacdcedb2b7c5811e3b7e7d66c43feb3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacdcedb2b7c5811e3b7e7d66c43feb3d">&#9670;&#160;</a></span>vBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void*) vBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频数据指针。 目前该参数仅在外部渲染视频的场景下有实际意义。 视频外部渲染场景下，代表 I420 数据中 V 分量的指针。  </p>
+
+</div>
+</div>
+<a id="a0db937ac4cde32263af8fb8b8098cff0" name="a0db937ac4cde32263af8fb8b8098cff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db937ac4cde32263af8fb8b8098cff0">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频高，即视频帧在横轴上的像素。  </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

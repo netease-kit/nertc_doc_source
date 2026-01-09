@@ -1,169 +1,169 @@
-# NERTC SDK Documentation
+# NERTC SDK 文档
 
-Welcome to the NERTC (NetEase RTC) SDK documentation. This repository contains comprehensive guides and references for integrating NERTC SDK into your applications.
+欢迎使用 NERTC（NetEase RTC）SDK 文档。本仓库包含将 NERTC SDK 集成到应用程序中的完整指南和参考资料。
 
-## Documentation Structure
+## 文档结构
 
-### Guides (`/guides`)
+### 指南（`/guides`）
 
-Complete integration guides, tutorials, and best practices for all supported platforms:
+所有支持平台的完整集成指南、教程和最佳实践：
 
-- **Android** - Mobile Android integration
-- **iOS** - Mobile iOS integration
-- **Web** - Web browser integration
-- **Windows** - Windows desktop integration
-- **macOS** - macOS desktop integration
-- **Linux** - Linux platform integration
-- **Electron** - Cross-platform desktop apps
-- **Flutter** - Cross-platform mobile development
-- **Unity** - Game engine integration
-- **Unreal Engine** - Game engine integration
-- **HarmonyOS** - Huawei HarmonyOS integration
-- **Mini Programs** (小程序) - WeChat and other mini programs
-- **uni-app** - Cross-platform framework
-- **Wwise** - Audio middleware integration
+- **Android** - 移动端 Android 集成
+- **iOS** - 移动端 iOS 集成
+- **Web** - Web 浏览器集成
+- **Windows** - Windows 桌面端集成
+- **macOS** - macOS 桌面端集成
+- **Linux** - Linux 平台集成
+- **Electron** - 跨平台桌面应用
+- **Flutter** - 跨平台移动开发
+- **Unity** - 游戏引擎集成
+- **Unreal Engine** - 游戏引擎集成
+- **HarmonyOS** - 华为 HarmonyOS 集成
+- **小程序** - 微信及其他小程序
+- **uni-app** - 跨平台框架
+- **Wwise** - 音频中间件集成
 
-Each platform guide includes:
-- **Quick Start** - Download SDK, run demos, basic integration
-- **Core Features** - Audio/video configuration, device management, quality monitoring
-- **Advanced Features** - Custom capture, effects, encryption, recording
-- **AI Features** - AI noise reduction, super resolution, subtitles, virtual backgrounds
-- **Best Practices** - Optimization tips and scenario implementations
-- **Troubleshooting** - FAQs and common issues
+每个平台指南包含：
+- **快速开始** - 下载 SDK、运行示例、基础集成
+- **基础功能** - 音视频配置、设备管理、质量监测
+- **进阶功能** - 自定义采集、特效、加密、录制
+- **AI 融合功能** - AI 降噪、超分、字幕、虚拟背景
+- **最佳实践** - 优化建议和场景实现
+- **常见问题** - 问答和常见问题处理
 
-### API Reference (`/api-reference`)
+### API 参考（`/api-reference`）
 
-*Coming soon* - Detailed API references for all platforms
+*即将推出* - 所有平台的详细 API 参考
 
-## Getting Started
+## 快速开始
 
-1. Choose your target platform from the `/guides` directory
-2. Follow the Quick Start guide to download SDK and run the sample code
-3. Integrate the SDK into your project following the integration guide
-4. Explore advanced features based on your use case
+1. 从 `/guides` 目录中选择您的目标平台
+2. 按照快速开始指南下载 SDK 并运行示例代码
+3. 遵循集成指南将 SDK 集成到您的项目中
+4. 根据您的使用场景探索进阶功能
 
-## Platform-Specific Quick Links
+## 平台快速链接
 
-### Mobile Platforms
+### 移动端平台
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速开始 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Android** | [实现音视频通话](guides/Android/快速开始/实现音视频通话.md) | [集成 SDK](guides/Android/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/Android/快速开始/下载%20SDK%20和示例代码.md) |
 | **iOS** | [实现音视频通话](guides/iOS/快速开始/实现音视频通话.md) | [集成 SDK](guides/iOS/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/iOS/快速开始/下载%20SDK%20和%20示例代码.md) |
 | **HarmonyOS** | [实现音视频通话](guides/HarmonyOS/快速开始/实现音视频通话.md) | [集成 SDK](guides/HarmonyOS/快速开始/集成%20SDK.md) | [快速跑通 Sample](guides/HarmonyOS/快速开始/快速跑通%20Sample%20Code.md) |
 
-### Desktop Platforms
+### 桌面端平台
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速开始 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Windows** | [实现音视频通话](guides/Windows/快速开始/实现音视频通话.md) | [集成 SDK](guides/Windows/快速开始/集成%20SDK.md) | [下载 SDK](guides/Windows/快速开始/下载%20SDK%20和%20示例代码.md) |
 | **macOS** | [实现音视频通话](guides/macOS/快速开始/实现音视频通话.md) | [集成 SDK](guides/macOS/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/macOS/快速开始/下载%20SDK%20和%20示例代码.md) |
 | **Linux** | [实现音视频通话](guides/Linux/快速开始/实现音视频通话.md) | [集成 SDK](guides/Linux/快速开始/集成%20SDK.md) | [下载 SDK](guides/Linux/快速开始/下载%20SDK%20和示例代码.md) |
 
-### Web & Cross-Platform
+### Web 与跨平台
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速开始 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Web** | [实现音视频通话](guides/Web/快速开始/实现音视频通话.md) | [集成 SDK](guides/Web/快速开始/集成%20SDK.md) | [下载 SDK](guides/Web/快速开始/下载%20SDK%20和示例代码.md) |
-| **Electron** | [实现音视频通话](guides/Electron/快速开始/实现音视频通话.md) | [集成 SDK](guides/Electron/快速开始/集成%20SDK.md) | [下载 SDK](guides/Electron/快速开始/下载%20SDK%20和示例代码.md) |
+| **Electron** | [实现音视频通话](guides/Electron/快速开始/实现音视频通话.md) | [集成 SDK](guides/Electron/快速开始/集成%20SDK.md) | [下载 SDK](guides/Electron/快速开始/下载%20SDK%20和%20示例代码.md) |
 | **Flutter** | [实现音视频通话](guides/Flutter/快速开始/实现音视频通话.md) | [集成 SDK](guides/Flutter/快速开始/集成%20SDK.md) | [下载 SDK](guides/Flutter/快速开始/下载%20SDK%20和%20示例代码.md) |
-| **uni-app** | [实现音视频通话](guides/uni-app/快速开始/实现音视频通话.md) | [集成 SDK](guides/uni-app/快速开始/集成%20SDK.md) | [下载 SDK](guides/uni-app/快速开始/下载%20SDK%20和示例代码.md) |
-| **小程序** | [实现音视频通话](guides/小程序/快速开始/实现音视频通话.md) | [集成 SDK](guides/小程序/快速开始/集成%20SDK.md) | [下载 SDK](guides/小程序/快速开始/下载%20SDK%20和示例代码.md) |
+| **uni-app** | [实现音视频通话](guides/uni-app/快速开始/实现音视频通话.md) | [集成 SDK](guides/uni-app/快速开始/集成%20SDK.md) | [下载 SDK](guides/uni-app/快速开始/下载%20SDK%20和%20示例代码.md) |
+| **小程序** | [实现音视频通话](guides/小程序/快速开始/实现音视频通话.md) | [集成 SDK](guides/小程序/快速开始/集成%20SDK.md) | [下载 SDK](guides/小程序/快速开始/下载%20SDK%20和%20示例代码.md) |
 
-### Game Engines
+### 游戏引擎
 
-| Platform | Quick Start | Integration | Download SDK |
+| 平台 | 快速开始 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
-| **Unity** | [实现音视频通话](guides/Unity/快速开始/实现音视频通话.md) | [集成 SDK（音视频）](guides/Unity/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/Unity/快速开始/下载%20SDK%20和示例代码.md) |
+| **Unity** | [实现音视频通话](guides/Unity/快速开始/实现音视频通话.md) | [集成 SDK（音视频）](guides/Unity/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/Unity/快速开始/下载%20SDK%20和%20示例代码.md) |
 | **Unreal Engine** | [实现语音通话](guides/Unreal%20Engine/快速开始/实现语音通话.md) | [集成 SDK](guides/Unreal%20Engine/快速开始/集成%20SDK.md) | [下载 SDK](guides/Unreal%20Engine/快速开始/下载%20SDK&Demo.md) |
 | **Wwise** | [在 Wwise 中安装和使用](guides/Wwise/在%20Wwise%20中安装和使用.md) | [Unity 集成](guides/Wwise/Unity%20集成/集成%20Unity%20项目.md) | [Unreal 集成](guides/Wwise/Unreal%20Engine%20集成/集成%20Unreal%20项目.md) |
 
-## Key Features
+## 核心功能
 
-### Core Capabilities
+### 基础能力
 
-- **Multi-platform Support** - Native SDKs for 14+ platforms including mobile, desktop, web, and game engines
-- **High Quality Audio/Video** - Professional-grade real-time communication with adaptive bitrate and quality optimization
-- **Flexible Architecture** - Support for various scenarios:
-  - 1-on-1 audio/video calls
-  - Multi-party group calls
-  - Live streaming with CDN push
-  - Low-latency live streaming
-  - Audio-only communication
+- **多平台支持** - 为 14+ 平台提供原生 SDK，包括移动端、桌面端、Web 和游戏引擎
+- **高质量音视频** - 专业级实时通信，支持自适应码率和质量优化
+- **灵活架构** - 支持多种场景：
+  - 一对一音视频通话
+  - 多人群体通话
+  - CDN 推流直播
+  - 低延迟直播
+  - 纯语音通信
 
-### Advanced Features
+### 进阶功能
 
-- **AI-Powered Enhancements**
-  - AI noise reduction for crystal-clear audio
-  - AI super resolution for enhanced video quality
-  - AI virtual backgrounds
-  - AI subtitles and real-time translation
+- **AI 增强功能**
+  - AI 降噪，实现清晰音频
+  - AI 超分，提升视频质量
+  - AI 虚拟背景
+  - AI 字幕和实时翻译
 
-- **Media Processing**
-  - Custom audio/video capture and rendering
-  - Beauty filters and effects (multiple vendor support)
-  - Screen sharing and audio sharing
-  - Video watermarks and screenshots
-  - Audio effects and mixing
+- **媒体处理**
+  - 自定义音视频采集和渲染
+  - 美颜滤镜和特效（支持多家厂商）
+  - 屏幕共享和音频共享
+  - 视频水印和截图
+  - 音效和混音
 
-- **Quality & Monitoring**
-  - Pre-call network quality detection
-  - Real-time call quality monitoring
-  - Adaptive video streaming with fallback
-  - Speaker volume monitoring
+- **质量与监测**
+  - 通话前网络质量检测
+  - 实时通话质量监测
+  - 自适应视频流降级
+  - 扬声器音量监测
 
-- **Advanced Scenarios**
-  - Multi-room management
-  - Cross-room media forwarding
-  - Cloud recording
-  - Media stream encryption
-  - Spatial audio effects
-  - Range voice for gaming
+- **进阶场景**
+  - 多房间管理
+  - 跨房间媒体转发
+  - 云端录制
+  - 媒体流加密
+  - 空间音效
+  - 游戏范围语音
 
-## Use Cases
+## 使用场景
 
-- **Social & Entertainment** - 1-on-1 video chat, voice chat rooms, live streaming
-- **Education** - Online classrooms, interactive tutoring, remote training
-- **Healthcare** - Telemedicine consultations, remote diagnostics
-- **Gaming** - In-game voice chat, spatial audio, team communication
-- **Enterprise** - Video conferencing, remote collaboration, customer support
+- **社交娱乐** - 一对一视频聊天、语音聊天室、直播
+- **在线教育** - 线上课堂、互动辅导、远程培训
+- **医疗健康** - 远程医疗咨询、远程诊断
+- **游戏** - 游戏内语音聊天、空间音频、团队沟通
+- **企业应用** - 视频会议、远程协作、客户支持
 
-## Feature Guides by Topic
+## 功能主题指南
 
-Find documentation for specific features across different platforms:
+在不同平台查找特定功能的文档：
 
-### Audio Features
-- **Audio Configuration** - Available in all platforms under `基础功能/设置音频属性.md`
-- **Audio Effects** - See `进阶功能/音频管理/音效与伴音.md`
-- **Voice Changing** - See `进阶功能/音频管理/美声变声与混响.md`
-- **Spatial Audio** - See `进阶功能/音频管理/空间音效.md`
-- **Ear Return** - See `进阶功能/音频管理/耳返.md`
+### 音频功能
+- **音频配置** - 所有平台的 `基础功能/设置音频属性.md`
+- **音效与伴音** - 查看 `进阶功能/音频管理/音效与伴音.md`
+- **美声变声与混响** - 查看 `进阶功能/音频管理/美声变声与混响.md`
+- **空间音效** - 查看 `进阶功能/音频管理/空间音效.md`
+- **耳返** - 查看 `进阶功能/音频管理/耳返.md`
 
-### Video Features
-- **Video Configuration** - Available in all platforms under `基础功能/设置视频属性.md`
-- **Beauty Filters** - See `进阶功能/视频美颜/` or `进阶功能/视频管理/`
-- **Virtual Background** - See `进阶功能/视频管理/虚拟背景.md`
-- **Screen Sharing** - See `基础功能/屏幕共享.md`
-- **Custom Capture** - See `进阶功能/视频管理/自定义视频采集.md`
+### 视频功能
+- **视频配置** - 所有平台的 `基础功能/设置视频属性.md`
+- **美颜滤镜** - 查看 `进阶功能/视频美颜/` 或 `进阶功能/视频管理/`
+- **虚拟背景** - 查看 `进阶功能/视频管理/虚拟背景.md`
+- **屏幕共享** - 查看 `基础功能/屏幕共享.md`
+- **自定义采集** - 查看 `进阶功能/视频管理/自定义视频采集.md`
 
-### AI Features
-- **AI Noise Reduction** - See `AI 融合功能/AI 降噪.md`
-- **AI Super Resolution** - See `AI 融合功能/AI 超分.md`
-- **AI Subtitles** - See `AI 实时互动/AI 字幕和翻译.md`
-- **AI Virtual Background** - See `AI 融合功能/AI 虚拟背景.md`
+### AI 功能
+- **AI 降噪** - 查看 `AI 融合功能/AI 降噪.md`
+- **AI 超分** - 查看 `AI 融合功能/AI 超分.md`
+- **AI 字幕和翻译** - 查看 `AI 实时互动/AI 字幕和翻译.md`
+- **AI 虚拟背景** - 查看 `AI 融合功能/AI 虚拟背景.md`
 
-### Advanced Features
-- **Cloud Recording** - See `进阶功能/云端录制.md`
-- **Media Encryption** - See `进阶功能/媒体流管理/媒体流加密.md`
-- **Multi-room** - See `进阶功能/多房间管理.md`
-- **CDN Push** - See `进阶功能/CDN 推流.md`
+### 进阶功能
+- **云端录制** - 查看 `进阶功能/云端录制.md`
+- **媒体流加密** - 查看 `进阶功能/媒体流管理/媒体流加密.md`
+- **多房间管理** - 查看 `进阶功能/多房间管理.md`
+- **CDN 推流** - 查看 `进阶功能/CDN 推流.md`
 
-## Support
+## 技术支持
 
-- **Official Website** - [NetEase CommsEase](https://yunxin.163.com/)
-- **Console** - [Management Console](https://app.yunxin.163.com/)
-- **Technical Support** - Visit official website for support
+- **官方网站** - [网易七鱼](https://yunxin.163.com/)
+- **管理控制台** - [管理控制台](https://app.yunxin.163.com/)
+- **技术支持** - 访问官方网站获取支持
 
-## License
+## 许可证
 
-Please refer to NetEase CommsEase Service Agreement for SDK usage.
+SDK 使用请参考网易云信服务协议。

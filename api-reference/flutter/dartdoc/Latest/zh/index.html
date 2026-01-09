@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 8.0.1">
+  <meta name="description" content="nertc_core API docs, for the Dart programming language.">
+  <title>nertc_core - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/netease-im/NERTC-Flutter-SDK">nertc_core package</a></li>
+  </ol>
+  <div class="self-name">nertc_core</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <p>NERTC SDK 提供完善的音视频通话开发框架，提供基于网络的视频通话和语音通话功能，还提供多人视频和音频会议功能，支持通话中音视频设备控制和实时音视频模式切换，支持视频采集数据回调以实现美颜等自定义功能。</p>
+<ul>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine-class.html">NERtcEngine</a> 类包含应用程序调用的主要方法。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager-class.html">NERtcDeviceManager</a> 类包含设备调用的主要方法。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer-class.html">NERtcVideoRenderer</a> 类包含视频管理的 Flutter 单独封装的方法。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager-class.html">NERtcAudioMixingManager</a> 类包含伴音调用的主要方法。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager-class.html">NERtcAudioEffectManager</a> 类包含音效调用的主要方法。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback-class.html">NERtcChannelEventCallback</a> 类用于向应用程序发送用户状态回调通知。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceEventCallback-class.html">NERtcDeviceEventCallback</a> 类用于向应用程序发送设备状态回调通知。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingEventCallback-class.html">NERtcAudioMixingEventCallback</a> 类用于向应用程序发送伴音状态回调通知。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectEventCallback-class.html">NERtcAudioEffectEventCallback</a> 类用于向应用程序发送音效状态回调通知。</li>
+<li><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback-class.html">NERtcStatsEventCallback</a> 接口类用于向应用程序发送媒体状态类回调通知。</li>
+</ul>
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 50%;
+}
+table th:nth-of-type(3) {
+    width: 15%;
+}
+</style>
+<h2 id="">房间管理</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/create.html">create</a></td>
+<td>创建 NERTC 实例。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/release.html">release</a></td>
+<td>销毁 NERTC 实例，释放资源。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setChannelProfile.html">setChannelProfile</a></td>
+<td>设置房间场景。如果需要设置房间场景，必须在调用 create 之后、调用 joinChannel 之前调用此接口。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setClientRole.html">setClientRole</a></td>
+<td>设置用户角色。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/joinChannel.html">joinChannel</a></td>
+<td>加入房间。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/leaveChannel.html">leaveChannel</a></td>
+<td>离开房间。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/getConnectionState.html">getConnectionState</a></td>
+<td>主动获取网络连接状态。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/switchChannel.html">switchChannel</a></td>
+<td>快速切换音视频房间。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setParameters.html">setParameters</a></td>
+<td>设置音视频通话的相关参数。 此接口提供技术预览或特别定制功能。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/getConnectionState.html">getConnectionState</a></td>
+<td>获取连接状态。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/updatePermissionKey.html">updatePermissionKey</a></td>
+<td>更新权限密钥。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-2">房间事件</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onJoinChannel.html">onJoinChannel</a></td>
+<td>加入房间回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLeaveChannel.html">onLeaveChannel</a></td>
+<td>退出房间回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserJoined.html">onUserJoined</a></td>
+<td>远端用户加入当前房间回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserLeave.html">onUserLeave</a></td>
+<td>远端用户离开当前房间回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onReJoinChannel.html">onReJoinChannel</a></td>
+<td>重新加入房间回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onClientRoleChange.html">onClientRoleChange</a></td>
+<td>用户角色已切换回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onConnectionStateChanged.html">onConnectionStateChanged</a></td>
+<td>网络连接状态已改变回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onConnectionTypeChanged.html">onConnectionTypeChanged</a></td>
+<td>本地网络类型已改变回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onDisconnect.html">onDisconnect</a></td>
+<td>从房间断开的回调。</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onReconnectingStart.html">onReconnectingStart</a></td>
+<td>重连开始回调。</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-3">音频管理</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setAudioProfile.html">setAudioProfile</a></td>
+<td>设置音频编码配置</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/adjustRecordingSignalVolume.html">adjustRecordingSignalVolume</a></td>
+<td>调节录音音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/adjustPlaybackSignalVolume.html">adjustPlaybackSignalVolume</a></td>
+<td>调节播放音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/adjustUserPlaybackSignalVolume.html">adjustUserPlaybackSignalVolume</a></td>
+<td>调节本地播放的指定远端用户的信号音量。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableLocalVideo.html">enableLocalAudio</a></td>
+<td>开关本地音频采集</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/muteLocalAudioStream.html">muteLocalAudioStream</a></td>
+<td>开关本地音频发送</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/subscribeRemoteAudio.html">subscribeRemoteAudio</a></td>
+<td>订阅／取消订阅指定音频流</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/subscribeAllRemoteAudio.html">subscribeAllRemoteAudio</a></td>
+<td>订阅／取消订阅所有远端音频流</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setRemoteHighPriorityAudioStream.html">setRemoteHighPriorityAudioStream</a></td>
+<td>设置远端用户音频流的高优先级</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableLoopbackRecording.html">enableLoopbackRecording</a></td>
+<td>开启或关闭音频共享</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/adjustLoopBackRecordingSignalVolume.html">adjustLoopBackRecordingSignalVolume</a></td>
+<td>调整共享音频音量</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableLocalSubStreamAudio.html">enableLocalSubStreamAudio</a></td>
+<td>开启或关闭音频辅流</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/subscribeRemoteSubStreamAudio.html">subscribeRemoteSubStreamAudio</a></td>
+<td>取消或恢复订阅指定远端用户的音频主流</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/muteLocalSubStreamAudio.html">muteLocalSubStreamAudio</a></td>
+<td>静音或解除静音本地上行的音频辅流</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setAudioSubscribeOnlyBy.html">setAudioSubscribeOnlyBy</a></td>
+<td>设置自己的音频只能被房间内指定的人订阅</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableMediaPub.html">enableMediaPub</a></td>
+<td>开启或关闭本地媒体流（主流）的发送</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onAudioHasHowling.html">onAudioHasHowling</a></td>
+<td>检测到啸叫回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-4">视频管理</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableLocalVideo.html">enableLocalVideo</a></td>
+<td>开关本地视频</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setLocalVideoConfig.html">setLocalVideoConfig</a></td>
+<td>设置视频发送配置</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startVideoPreview.html">startVideoPreview</a></td>
+<td>开启视频预览</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopVideoPreview.html">stopVideoPreview</a></td>
+<td>停止视频预览</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/muteLocalVideoStream.html">muteLocalVideoStream</a></td>
+<td>开关本地视频发送</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/subscribeRemoteVideo.html">subscribeRemoteVideo</a></td>
+<td>订阅 / 取消订阅指定远端用户的视频流</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/attachToLocalVideo.html">attachToLocalVideo</a></td>
+<td>关联本地用户视频视图</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/attachToRemoteVideo.html">attachToRemoteVideo</a></td>
+<td>关联远端用户视频视图</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setCameraCaptureConfig.html">setCameraCaptureConfig</a></td>
+<td>设置本地摄像头的采集偏好等配置</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableSuperResolution.html">enableSuperResolution</a></td>
+<td>启用或停止 AI 超分</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/attachToRemoteSubStreamVideo.html">attachToRemoteSubStreamVideo</a></td>
+<td>添加为远端用户辅流视频画布</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/attachToLocalSubStreamVideo.html">attachToLocalSubStreamVideo</a></td>
+<td>添加为本地用户辅流视频画布</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableVirtualBackground.html">enableVirtualBackground</a></td>
+<td>开启/关闭虚拟背景</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableVideoCorrection.html">enableVideoCorrection</a></td>
+<td>是否启用视频图像畸变矫正</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setVideoCorrectionConfig.html">setVideoCorrectionConfig</a></td>
+<td>设置视频图像矫正参数</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/setMirror.html">setMirror</a></td>
+<td>设置画面是否镜像</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setExternalVideoSource.html">setExternalVideoSource</a></td>
+<td>开启外部视频源数据输入</td>
+<td>V5.4.7</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/pushExternalVideoFrame.html">pushExternalVideoFrame</a></td>
+<td>推送外部视频数据帧</td>
+<td>V5.4.7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-5">本地媒体事件</h2>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onFirstAudioFrameDecoded.html">onFirstAudioFrameDecoded</a></td>
+<td>已解码远端音频首帧的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onFirstVideoFrameDecoded.html">onFirstVideoFrameDecoded</a></td>
+<td>已解码远端视频首帧的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onFirstAudioDataReceived.html">onFirstAudioDataReceived</a></td>
+<td>远端音频首帧回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onFirstVideoDataReceived.html">onFirstVideoDataReceived</a></td>
+<td>远端视频首帧回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onMediaRightChange.html">onMediaRightChange</a></td>
+<td>服务端禁言音视频权限变化回调</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onVirtualBackgroundSourceEnabled.html">onVirtualBackgroundSourceEnabled</a></td>
+<td>通知虚拟背景是否成功开启的回调</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-6">远端媒体事件</h2>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserVideoProfileUpdate.html">onUserVideoProfileUpdate</a></td>
+<td>远端用户更改视频分辨率类型的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserVideoMute.html">onUserVideoMute</a></td>
+<td>远端用户关闭视频发送的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserAudioMute.html">onUserAudioMute</a></td>
+<td>远端用户关闭音频发送的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserAudioStart.html">onUserAudioStart</a></td>
+<td>远端用户开启音频的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserAudioStop.html">onUserAudioStop</a></td>
+<td>远端用户关闭音频的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserVideoStart.html">onUserVideoStart</a></td>
+<td>远端用户开启视频的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserVideoStop.html">onUserVideoStop</a></td>
+<td>远端用户关闭视频的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserSubStreamAudioMute.html">onUserSubStreamAudioMute</a></td>
+<td>远端用户暂停或恢复发送音频辅流的回调</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserSubStreamAudioStart.html">onUserSubStreamAudioStart</a></td>
+<td>远端用户开启音频辅流回调</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserSubStreamAudioStop.html">onUserSubStreamAudioStop</a></td>
+<td>远端用户停用音频辅流回调</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-7">数据统计事件</h2>
+<p>SDK 定期向 App 报告以下统计信息，每 2 秒触发一次。</p>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setStatsEventCallback.html">setStatsEventCallback</a></td>
+<td>设置统计信息回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/clearStatsEventCallback.html">clearStatsEventCallback</a></td>
+<td>清除统计信息回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback/onRtcStats.html">onRtcStats</a></td>
+<td>当前通话统计回调，每2秒触发一次</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback/onNetworkQuality.html">onNetworkQuality</a></td>
+<td>通话中每个用户的网络上下行质量报告回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback/onLocalAudioStats.html">onLocalAudioStats</a></td>
+<td>本地音频流统计信息回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback/onLocalVideoStats.html">onLocalVideoStats</a></td>
+<td>本地视频流统计信息回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback/onRemoteAudioStats.html">onRemoteAudioStats</a></td>
+<td>通话中远端音频流的统计信息回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcStatsEventCallback/onRemoteVideoStats.html">onRemoteVideoStats</a></td>
+<td>通话中远端视频流的统计信息回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-8">视频大小流</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableDualStreamMode.html">enableDualStreamMode</a></td>
+<td>设置是否开启视频大小流模式</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setLocalPublishFallbackOption.html">setLocalPublishFallbackOption</a></td>
+<td>设置弱网条件下发布的音视频流回退选项</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setRemoteSubscribeFallbackOption.html">setRemoteSubscribeFallbackOption</a></td>
+<td>设置弱网条件下订阅的音视频流回退选项。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLocalPublishFallbackToAudioOnly.html">onLocalPublishFallbackToAudioOnly</a></td>
+<td>本地发布流已回退为音频流、或已恢复为音视频流回调。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onRemoteSubscribeFallbackToAudioOnly.html">onRemoteSubscribeFallbackToAudioOnly</a></td>
+<td>订阅的远端流已回退为音频流、或已恢复为音视频流回调。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-9">通话前网络测试</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startLastmileProbeTest.html">startLastmileProbeTest</a></td>
+<td>开始通话前网络质量探测。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopLastmileProbeTest.html">stopLastmileProbeTest</a></td>
+<td>停止通话前网络质量探测。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLastmileQuality.html">onLastmileQuality</a></td>
+<td>报告本地用户的网络质量。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLastmileProbeResult.html">onLastmileProbeResult</a></td>
+<td>报告通话前网络上下行 last mile 质量。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-10">音乐文件播放管理</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/audioMixingManager.html">audioMixingManager</a></td>
+<td>获取伴音管理模块</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/startAudioMixing.html">startAudioMixing</a></td>
+<td>开始播放音乐文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/stopAudioMixing.html">stopAudioMixing</a></td>
+<td>停止播放音乐文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/pauseAudioMixing.html">pauseAudioMixing</a></td>
+<td>暂停播放音乐文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/resumeAudioMixing.html">resumeAudioMixing</a></td>
+<td>恢复播放音乐文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/setAudioMixingPlaybackVolume.html">setAudioMixingPlaybackVolume</a></td>
+<td>设置音乐文件播放音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/setAudioMixingSendVolume.html">setAudioMixingSendVolume</a></td>
+<td>设置音乐文件的发送音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/getAudioMixingPlaybackVolume.html">getAudioMixingPlaybackVolume</a></td>
+<td>获取音乐文件的播放音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/getAudioMixingSendVolume.html">getAudioMixingSendVolume</a></td>
+<td>获取音乐文件的发送音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/getAudioMixingDuration.html">getAudioMixingDuration</a></td>
+<td>获取音乐文件的总长度</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/setAudioMixingPosition.html">setAudioMixingPosition</a></td>
+<td>设置音乐文件的播放进度</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/getAudioMixingCurrentPosition.html">getAudioMixingCurrentPosition</a></td>
+<td>获取音乐文件当前播放进度</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/setEventCallback.html">setEventCallback</a></td>
+<td>设置伴音事件回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingManager/clearEventCallback.html">clearEventCallback</a></td>
+<td>清除伴音事件回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingEventCallback/onAudioMixingStateChanged.html">onAudioMixingStateChanged</a></td>
+<td>本地用户的音乐文件播放状态改变回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioMixingEventCallback/onAudioMixingTimestampUpdate.html">onAudioMixingTimestampUpdate</a></td>
+<td>音乐文件播放进度回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-11">音效文件播放管理</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/audioEffectManager.html">audioEffectManager</a></td>
+<td>获取音效管理模块</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/getEffectSendVolume.html">getEffectSendVolume</a></td>
+<td>获取音效文件播放音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/setEffectSendVolume.html">setEffectSendVolume</a></td>
+<td>设置音效文件播放音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/playEffect.html">playEffect</a></td>
+<td>播放指定音效文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/stopEffect.html">stopEffect</a></td>
+<td>停止播放指定音效文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/stopAllEffects.html">stopAllEffects</a></td>
+<td>停止播放所有音效文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/pauseEffect.html">pauseEffect</a></td>
+<td>暂停音效文件播放</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/pauseAllEffect.html">pauseAllEffect</a></td>
+<td>暂停所有音效文件播放</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/resumeEffect.html">resumeEffect</a></td>
+<td>恢复播放指定音效文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/resumeAllEffect.html">resumeAllEffect</a></td>
+<td>恢复播放所有音效文件</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/setEffectSendVolume.html">setEffectSendVolume</a></td>
+<td>设置音效文件的发送音量</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/getEffectSendVolume.html">getEffectSendVolume</a></td>
+<td>获取音效文件的发送音量</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/setEventCallback.html">setEventCallback</a></td>
+<td>设置音效事件回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/clearEventCallback.html">clearEventCallback</a></td>
+<td>清除音效事件回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectEventCallback/onAudioEffectFinished.html">onAudioEffectFinished</a></td>
+<td>音效结束回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-12">变声与混响</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setAudioEffectPreset.html">setAudioEffectPreset</a></td>
+<td>设置 SDK 预设的人声的变声音效。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setVoiceBeautifierPreset.html">setVoiceBeautifierPreset</a></td>
+<td>设置 SDK 预设的美声效果。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setLocalVoiceEqualization.html">setLocalVoiceEqualization</a></td>
+<td>设置本地语音音效均衡，即自定义设置本地人声均衡波段的中心频率。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setLocalVoicePitch.html">setLocalVoicePitch</a></td>
+<td>设置本地语音音调。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setLocalVoiceReverbParam.html">setLocalVoiceReverbParam</a></td>
+<td>开启本地语音混响效果。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-13">音量提示</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableAudioVolumeIndication.html">enableAudioVolumeIndication</a></td>
+<td>启用说话者音量提示</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onRemoteAudioVolumeIndication.html">onRemoteAudioVolumeIndication</a></td>
+<td>提示房间内谁正在说话及说话者音量的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLocalAudioVolumeIndication.html">onLocalAudioVolumeIndication</a></td>
+<td>本地用户瞬时音量的回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-14">音频播放路由</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setSpeakerphoneOn.html">setSpeakerphoneOn</a></td>
+<td>设置扬声器是否开启</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isSpeakerphoneOn.html">isSpeakerphoneOn</a></td>
+<td>获取扬声器是否开启</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-15">耳返</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/enableEarBack.html">enableEarBack</a></td>
+<td>开启耳返功能</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setEarBackVolume.html">setEarBackVolume</a></td>
+<td>设置耳返音量</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sei">媒体增强信息SEI</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/sendSEIMsg.html">sendSEIMsg</a></td>
+<td>通过主流通道发送媒体补充增强信息。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onRecvSEIMsg.html">onRecvSEIMsg</a></td>
+<td>收到远端流的 SEI 内容回调。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-16">旁路推流</h2>
+<p>方法调用后，在通话中有效</p>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/addLiveStreamTask.html">addLiveStreamTask</a></td>
+<td>添加房间推流任务</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/updateLiveStreamTask.html">updateLiveStreamTask</a></td>
+<td>更新修改房间推流任务</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/removeLiveStreamTask.html">removeLiveStreamTask</a></td>
+<td>删除房间推流任务</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLiveStreamState.html">onLiveStreamState</a></td>
+<td>直播推流状态回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-17">跨房间媒体流转发</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startChannelMediaRelay.html">startChannelMediaRelay</a></td>
+<td>开始跨房间媒体流转发。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/updateChannelMediaRelay.html">updateChannelMediaRelay</a></td>
+<td>更新媒体流转发的目标房间。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopChannelMediaRelay.html">stopChannelMediaRelay</a></td>
+<td>停止跨房间媒体流转发。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>描述</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onMediaRelayStatesChange.html">onMediaRelayStatesChange</a></td>
+<td>跨房间媒体流转发状态发生改变回调。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onMediaRelayReceiveEvent.html">onMediaRelayReceiveEvent</a></td>
+<td>媒体流相关转发事件回调。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-18">屏幕共享</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startScreenCapture.html">startScreenCapture</a></td>
+<td>开启屏幕共享</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopScreenCapture.html">stopScreenCapture</a></td>
+<td>停止屏幕共享</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/subscribeRemoteSubStreamVideo.html">subscribeRemoteSubStreamVideo</a></td>
+<td>订阅或取消订阅远端的屏幕共享辅流视频，订阅之后才能接收远端的辅流视频数据</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/attachToLocalSubStreamVideo.html">attachToLocalSubStreamVideo</a></td>
+<td>设置本端的辅流视频回放画布</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcVideoRenderer/attachToRemoteSubStreamVideo.html">attachToRemoteSubStreamVideo</a></td>
+<td>设置远端的辅流视频回放画布</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserSubStreamVideoStart.html">onUserSubStreamVideoStart</a></td>
+<td>远端用户开启屏幕共享辅流通道的回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onUserSubStreamVideoStop.html">onUserSubStreamVideoStop</a></td>
+<td>远端用户停止屏幕共享辅流通道的回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-19">美颜</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startBeauty.html">startBeauty</a></td>
+<td>开启美颜功能模块</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopBeauty.html">stopBeauty</a></td>
+<td>结束美颜功能模块</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableBeauty.html">enableBeauty</a></td>
+<td>暂停或恢复美颜效果</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setBeautyEffect.html">setBeautyEffect</a></td>
+<td>设置美颜效果</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/addBeautyFilter.html">addBeautyFilter</a></td>
+<td>添加滤镜效果</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/removeBeautyFilter.html">removeBeautyFilter</a></td>
+<td>移除滤镜</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setBeautyFilterLevel.html">setBeautyFilterLevel</a></td>
+<td>设置滤镜强度</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-20">自定义音视频采集与渲染</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setStreamAlignmentProperty.html">setStreamAlignmentProperty</a></td>
+<td>对齐本地系统与服务端的时间</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/getNtpTimeOffset.html">getNtpTimeOffset</a></td>
+<td>获取本地系统时间与服务端时间差值</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setExternalVideoSource.html">setExternalVideoSource</a></td>
+<td>开启外部视频源数据输入</td>
+<td>V5.4.7</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/pushExternalVideoFrame.html">pushExternalVideoFrame</a></td>
+<td>推送外部视频数据帧</td>
+<td>V5.4.7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-21">截图</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/takeLocalSnapshot.html">takeLocalSnapshot</a></td>
+<td>本地视频画面截图。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/takeRemoteSnapshot.html">takeRemoteSnapshot</a></td>
+<td>远端视频画面截图。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onTakeSnapshotResult.html">onTakeSnapshotResult</a></td>
+<td>截图结果回调</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-22">水印</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setLocalVideoWatermarkConfigs.html">setLocalVideoWatermarkConfigs</a></td>
+<td>添加本地视频水印</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onLocalVideoWatermarkState.html">onLocalVideoWatermarkState</a></td>
+<td>水印结果回调</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-23">加密</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/enableEncryption.html">enableEncryption</a></td>
+<td>开启或关闭媒体流加密</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-24">客户端音频录制</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startAudioRecording.html">startAudioRecording</a></td>
+<td>开始客户端录音。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startAudioRecordingWithConfig.html">startAudioRecordingWithConfig</a></td>
+<td>开始客户端录音。</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopAudioRecording.html">stopAudioRecording</a></td>
+<td>停止客户端录音。</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onAudioRecording.html">onAudioRecording</a></td>
+<td>音频录制状态回调</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-25">云代理</h2>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>功能</th>
+<th>起始版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/setCloudProxy.html">setCloudProxy</a></td>
+<td>开启并设置云代理服务</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-26">设备管理</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/deviceManager.html">deviceManager</a></td>
+<td>获取设备管理模块</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/switchCamera.html">switchCamera</a></td>
+<td>切换前置/后置摄像头</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/switchCameraWithPosition.html">switchCameraWithPosition</a></td>
+<td>指定前置/后置摄像头</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setCameraZoomFactor.html">setCameraZoomFactor</a></td>
+<td>设置摄像头缩放比例</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/getCameraMaxZoom.html">getCameraMaxZoom</a></td>
+<td>获取摄像头支持的最大视频缩放比例</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setCameraTorchOn.html">setCameraTorchOn</a></td>
+<td>设置是否打开闪光灯</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setCameraFocusPosition.html">setCameraFocusPosition</a></td>
+<td>设置当前摄像头聚焦点位置</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setPlayoutDeviceMute.html">setPlayoutDeviceMute</a></td>
+<td>设置音频播放设备的状态</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isPlayoutDeviceMute.html">isPlayoutDeviceMute</a></td>
+<td>获取当前音频播放设备是否静音</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setRecordDeviceMute.html">setRecordDeviceMute</a></td>
+<td>设置录音设备的状态</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isRecordDeviceMute.html">isRecordDeviceMute</a></td>
+<td>获取当前音频采集设备是否静音</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/getCurrentCamera.html">getCurrentCamera</a></td>
+<td>查看当前摄像头配置</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isCameraZoomSupported.html">isCameraZoomSupported</a></td>
+<td>检测设备当前使用的摄像头是否支持缩放功能</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/getCameraCurrentZoom.html">getCameraCurrentZoom</a></td>
+<td>获取当前缩放比例</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isCameraTorchSupported.html">isCameraTorchSupported</a></td>
+<td>检测设备是否支持闪光灯常亮</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isCameraFocusSupported.html">isCameraFocusSupported</a></td>
+<td>检测设备是否支持手动对焦功能</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/isCameraExposurePositionSupported.html">isCameraExposurePositionSupported</a></td>
+<td>检测设备是否支持手动曝光功能</td>
+<td>V4.6.52</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceManager/setCameraExposurePosition.html">setCameraExposurePosition</a></td>
+<td>设置摄像头的手动曝光位置</td>
+<td>V4.6.52</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/setEventCallback.html">setEventCallback</a></td>
+<td>设置设备事件回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcAudioEffectManager/clearEventCallback.html">clearEventCallback</a></td>
+<td>清除设备事件回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceEventCallback/onAudioDeviceChanged.html">onAudioDeviceChanged</a></td>
+<td>音频播放设备发生改变</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceEventCallback/onAudioDeviceStateChange.html">onAudioDeviceStateChange</a></td>
+<td>音频设备状态切换回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcDeviceEventCallback/onVideoDeviceStageChange.html">onVideoDeviceStageChange</a></td>
+<td>视频设备状态切换回调</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-27">故障排查</h2>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>功能描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/uploadSdkInfo.html">uploadSdkInfo</a></td>
+<td>上传SDK日志信息</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/startAudioDump.html">startAudioDump</a></td>
+<td>开始记录音频 dump</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcEngine/stopAudioDump.html">stopAudioDump</a></td>
+<td>结束记录音频 dump</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<thead>
+<tr>
+<th><strong>事件</strong></th>
+<th><strong>事件描述</strong></th>
+<th><strong>起始版本</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onWarning.html">onWarning</a></td>
+<td>发生警告回调</td>
+<td>V3.9.0</td>
+</tr>
+<tr>
+<td><a href="https://doc.yunxin.163.com/docs/interface/NERTC_SDK/Latest/Flutter/nertc/NERtcChannelEventCallback/onError.html">onError</a></td>
+<td>引擎发生了运行时的错误，需要用户干预</td>
+<td>V3.9.0</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="nertc">
+  <span class="name"><a href="nertc/nertc-library.html">nertc_core</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://github.com/netease-im/NERTC-Flutter-SDK">nertc_core package</a></li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">nertc_core</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="nertc/nertc-library.html">nertc_core</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

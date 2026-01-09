@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['enableaudiovolumeindication_0',['enableAudioVolumeIndication',['../classnertc_1_1_i_rtc_engine_ex.html#a81ed65dc33d5067ce739cf9ddd267694',1,'nertc::IRtcEngineEx::enableAudioVolumeIndication(bool enable, uint64_t interval)=0'],['../classnertc_1_1_i_rtc_engine_ex.html#afc6ac753580afdfc61470684826ba9f4',1,'nertc::IRtcEngineEx::enableAudioVolumeIndication(bool enable, uint64_t interval, bool enable_vad)=0']]],
+  ['enablebeauty_1',['enableBeauty',['../classnertc_1_1_i_rtc_engine_ex.html#a65d1eaace634e586df917fc94d422192',1,'nertc::IRtcEngineEx']]],
+  ['enablebeautymirrormode_2',['enableBeautyMirrorMode',['../classnertc_1_1_i_rtc_engine_ex.html#a811511555c432341acd4f46995fe588c',1,'nertc::IRtcEngineEx']]],
+  ['enabledualstreammode_3',['enableDualStreamMode',['../classnertc_1_1_i_rtc_channel.html#a00522dd52a04cb256b5ac0d3c845b6c2',1,'nertc::IRtcChannel::enableDualStreamMode()'],['../classnertc_1_1_i_rtc_engine_ex.html#ac83f9db30c5754efe06ca8f06eab1a05',1,'nertc::IRtcEngineEx::enableDualStreamMode(bool enable)=0']]],
+  ['enableearback_4',['enableEarback',['../classnertc_1_1_i_rtc_engine_ex.html#a550356dfd28a11cfb1db95f360c13ffa',1,'nertc::IRtcEngineEx']]],
+  ['enableencryption_5',['enableEncryption',['../classnertc_1_1_i_rtc_engine_ex.html#a4192d089c314b9090fc0d868ca3d2bf4',1,'nertc::IRtcEngineEx']]],
+  ['enablefaceenhance_6',['enableFaceEnhance',['../classnertc_1_1_i_rtc_engine_ex.html#abe5cb4811099b2f1aae4d52cb40f9540',1,'nertc::IRtcEngineEx']]],
+  ['enablelocalaudio_7',['enableLocalAudio',['../classnertc_1_1_i_rtc_channel.html#ac746f2cd380bbfeee1a0d56957a387aa',1,'nertc::IRtcChannel::enableLocalAudio()'],['../classnertc_1_1_i_rtc_engine.html#ad602d946e22e51eb6a5fafee999ac7bd',1,'nertc::IRtcEngine::enableLocalAudio()']]],
+  ['enablelocalsubstreamaudio_8',['enableLocalSubStreamAudio',['../classnertc_1_1_i_rtc_channel.html#abfa535557adb2f412ce32e6709b41d38',1,'nertc::IRtcChannel::enableLocalSubStreamAudio()'],['../classnertc_1_1_i_rtc_engine_ex.html#acb645a5a1cb5afecce680b434dd4c365',1,'nertc::IRtcEngineEx::enableLocalSubStreamAudio()']]],
+  ['enablelocalvideo_9',['enableLocalVideo',['../classnertc_1_1_i_rtc_channel.html#aba1054b2bb49c402013b62faf170bd2c',1,'nertc::IRtcChannel::enableLocalVideo(bool enabled)=0'],['../classnertc_1_1_i_rtc_channel.html#a5c336b19e3c9b0db9a73b9515d7108d7',1,'nertc::IRtcChannel::enableLocalVideo(NERtcVideoStreamType type, bool enabled)=0'],['../classnertc_1_1_i_rtc_engine.html#a57782589b573cf02bbfa836dace811c1',1,'nertc::IRtcEngine::enableLocalVideo(bool enabled)=0'],['../classnertc_1_1_i_rtc_engine.html#ad958fcb663c93a8c84d516effc50e863',1,'nertc::IRtcEngine::enableLocalVideo(NERtcVideoStreamType type, bool enabled)=0']]],
+  ['enableloopbackrecording_10',['enableLoopbackRecording',['../classnertc_1_1_i_rtc_engine_ex.html#a44ea82286265381d1a2348fbe5c591b7',1,'nertc::IRtcEngineEx']]],
+  ['enablemediapub_11',['enableMediaPub',['../classnertc_1_1_i_rtc_channel.html#add4150cf7de0bec23523a216c978245c',1,'nertc::IRtcChannel::enableMediaPub()'],['../classnertc_1_1_i_rtc_engine_ex.html#aa708fcf7730759a6338a3ab42829e303',1,'nertc::IRtcEngineEx::enableMediaPub(bool enabled, NERtcMediaPubType media_type)=0']]],
+  ['enablesuperresolution_12',['enableSuperResolution',['../classnertc_1_1_i_rtc_engine_ex.html#a2c95d6b6f1efb3f4b696ea59be9f1655',1,'nertc::IRtcEngineEx']]],
+  ['enablevirtualbackground_13',['enableVirtualBackground',['../classnertc_1_1_i_rtc_engine_ex.html#a991e26085c72577c984801cb078033f3',1,'nertc::IRtcEngineEx']]],
+  ['enumeratecapturedevices_14',['enumerateCaptureDevices',['../classnertc_1_1_i_video_device_manager.html#a666a04f70f9a2271e1caa11b569b0062',1,'nertc::IVideoDeviceManager']]],
+  ['enumerateplayoutdevices_15',['enumeratePlayoutDevices',['../classnertc_1_1_i_audio_device_manager.html#a6b145511cbae211e09c4bdecd6e62882',1,'nertc::IAudioDeviceManager']]],
+  ['enumeraterecorddevices_16',['enumerateRecordDevices',['../classnertc_1_1_i_audio_device_manager.html#a8818383a0109f82173bbec8a43bb72bb',1,'nertc::IAudioDeviceManager']]]
+];

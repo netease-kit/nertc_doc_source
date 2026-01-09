@@ -1,0 +1,1283 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NERTC V5.8.30</title>
+	<meta name="description" content="Documentation for NERTC V5.8.30">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">NERTC V5.8.30</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>NERTC V5.8.30</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#nertc-web-sdk" id="nertc-web-sdk" style="color: inherit; text-decoration: none;">
+					<h1><span id="NERtc Web SDK">NERTC Web SDK</span></h1>
+				</a>
+				<p>NERTC Web SDK 提供完善的音视频通话 JavaScript 开发框架，提供基于网络的视频通话和语音通话功能，支持在网页中调用 API 快速建立音视频连接，进行音视频通话和推流的服务。</p>
+				<p>完整的 NERTC Web SDK 由 NERTC、Client 和 Stream 三部分组成。</p>
+				<ul>
+					<li><a href="modules/nertc.nertc-1.html">NERTC</a> 是基础对象，是所有可调用方法的入口。</li>
+					<li><a href="interfaces/client.client-1.html">Client</a> 是客户端对象，负责通话中的本地或远程用户的核心操作。</li>
+					<li><a href="interfaces/stream.stream-1.html">Stream</a> 是音视频流对象，负责音视频流相关的设置。</li>
+				</ul>
+				<p><strong>注意</strong>：自 V4.4.0 开始，入口 WebRTC2 更名为 NERTC，同时兼容 WebRTC2。</p>
+				<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+</style>
+				<a href="#nertc-对象" id="nertc-对象" style="color: inherit; text-decoration: none;">
+					<h2><span id="NERTC 对象">NERTC 对象</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#createclient">NERTC.createClient</a></td>
+							<td>创建客户端。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#createstream">NERTC.createStream</a></td>
+							<td>创建音视频流对象。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getdevices">NERTC.getDevices</a></td>
+							<td>获取可用的媒体输入/输出设备。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getcameras">NERTC.getCameras</a></td>
+							<td>获取可用的视频输入设备。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getmicrophones">NERTC.getMicrophones</a></td>
+							<td>获取可用的音频输入设备。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getspeakers">NERTC.getSpeakers</a></td>
+							<td>获取可用的音频输出设备。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getsupportedcodec">NERTC.getSupportedCodec</a></td>
+							<td>获取 SDK 和当前浏览器同时支持的编解码格式。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.logger.html#enablelogupload">NERTC.Logger.enableLogUpload</a></td>
+							<td>开启日志上传。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.logger.html#disablelogupload">NERTC.Logger.disableLogUpload</a></td>
+							<td>关闭日志上传。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.device.html#enablecompatmode">NERTC.Device.enableCompatMode</a></td>
+							<td>开启音频采集设备兼容模式。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.device.html#disablecompatmode">NERTC.Device.disableCompatMode</a></td>
+							<td>关闭音频采集设备兼容模式。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#checksystemrequirements">NERTC.checkSystemRequirements</a></td>
+							<td>检查系统是否支持 NERTC。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#checkbrowsercompatibility">NERTC.checkBrowserCompatibility</a></td>
+							<td>检查浏览器是否支持 NERTC。</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setarea">NERTC.setArea</a></td>
+							<td>设置访问区域。</td>
+						</tr>
+				</tbody></table>
+				<a href="#client-客户端对象" id="client-客户端对象" style="color: inherit; text-decoration: none;">
+					<h2><span id="Client 客户端对象">Client 客户端对象</span></h2>
+				</a>
+				<a href="#客户端管理" id="客户端管理" style="color: inherit; text-decoration: none;">
+					<h3><span id="客户端管理">客户端管理</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#createclient">NERTC.createClient</a></td>
+							<td>创建客户端对象实例。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#destroy">Client.destroy</a></td>
+							<td>销毁客户端对象实例。</td>
+						</tr>
+				</tbody></table>
+				<a href="#房间管理" id="房间管理" style="color: inherit; text-decoration: none;">
+					<h3><span id="房间管理">房间管理</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/client.client-1.html#join">Client.join</a></td>
+							<td>加入音视频房间。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#leave">Client.leave</a></td>
+							<td>离开音视频房间。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#setchannelprofile">Client.setChannelProfile</a></td>
+							<td>设置房间场景。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#setclientrole">Client.setClientRole</a></td>
+							<td>设置用户角色。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#publish">Client.publish</a></td>
+							<td>发布音视频流。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#unpublish">Client.unpublish</a></td>
+							<td>取消发布音视频流。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#subscribe">Client.subscribe</a></td>
+							<td>接收远端音视频流。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#unsubscribe">Client.unsubscribe</a></td>
+							<td>取消接收远端音视频流。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#setremotevideostreamtype">Client.setRemoteVideoStreamType</a></td>
+							<td>动态更新订阅视频的分辨率。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#getconnectionstate">Client.getConnectionState</a></td>
+							<td>主动获取网络连接状态。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#getuid">Client.getUid</a></td>
+							<td>获取本地用户 ID。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#startproxyserver">Client.startProxyServer</a></td>
+							<td>开启云代理。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#stopproxyserver">Client.stopProxyServer</a></td>
+							<td>关闭云代理。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#enabledualstream">Client.enableDualStream</a></td>
+							<td>开启双流发布模式。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#disabledualstream">Client.disableDualStream</a></td>
+							<td>关闭双流发布模式。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#setplaybackvolume">Client.setPlaybackVolume</a></td>
+							<td>设定整个房间的远端播放音量。</td>
+						</tr>
+				</tbody></table>
+				<a href="#旁路推流管理" id="旁路推流管理" style="color: inherit; text-decoration: none;">
+					<h3><span id="旁路推流管理">旁路推流管理</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/client.client-1.html#addtasks">Client.addTasks</a></td>
+							<td>增加旁路推流任务。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#deletetasks">Client.deleteTasks</a></td>
+							<td>删除旁路推流任务。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#updatetasks">Client.updateTasks</a></td>
+							<td>更新旁路推流任务。</td>
+						</tr>
+				</tbody></table>
+				<a href="#设备数据" id="设备数据" style="color: inherit; text-decoration: none;">
+					<h3><span id="设备数据">设备数据</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/client.client-1.html#getsystemstats">Client.getSystemStats</a></td>
+							<td>获取系统电量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#gettransportstats">Client.getTransportStats</a></td>
+							<td>获取网络连接状况统计数据。</td>
+						</tr>
+				</tbody></table>
+				<a href="#音视频数据统计" id="音视频数据统计" style="color: inherit; text-decoration: none;">
+					<h3><span id="音视频数据统计">音视频数据统计</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/client.client-1.html#getlocalaudiostats">Client.getLocalAudioStats</a></td>
+							<td>获取本地发布流的音频统计数据。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#getlocalvideostats">Client.getLocalVideoStats</a></td>
+							<td>获取本地发布流的视频统计数据。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#getremoteaudiostats">Client.getRemoteAudioStats</a></td>
+							<td>获取远端订阅流的音频统计数据。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#getremotevideostats">Client.getRemoteVideoStats</a></td>
+							<td>获取远端订阅流的视频统计数据。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#getsessionstats">Client.getSessionStats</a></td>
+							<td>获取会话的连接状况统计数据。</td>
+						</tr>
+				</tbody></table>
+				<a href="#音视频流回退" id="音视频流回退" style="color: inherit; text-decoration: none;">
+					<h3><span id="音视频流回退">音视频流回退</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/client.client-1.html#setlocalmediapriority">Client.setLocalMediaPriority</a></td>
+							<td>设置本地用户的媒体流优先级。</td>
+						</tr>
+				</tbody></table>
+				<a href="#加密" id="加密" style="color: inherit; text-decoration: none;">
+					<h2><span id="加密">加密</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/client.client-1.html#setencryptionmode">Client.setEncryptionMode</a></td>
+							<td>设置媒体流加密模式。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/client.client-1.html#setencryptionsecret">Client.setEncryptionSecret</a></td>
+							<td>设置媒体流加密密钥。</td>
+						</tr>
+				</tbody></table>
+				<a href="#stream-音视频流对象" id="stream-音视频流对象" style="color: inherit; text-decoration: none;">
+					<h2><span id="Stream 音视频流对象">Stream 音视频流对象</span></h2>
+				</a>
+				<a href="#音视频流管理" id="音视频流管理" style="color: inherit; text-decoration: none;">
+					<h3><span id="音视频流管理">音视频流管理</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#createstream">NERTC.createStream</a></td>
+							<td>创建音视频流对象。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#destroy">Stream.destroy</a></td>
+							<td>销毁音视频流对象。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#init">Stream.init</a></td>
+							<td>初始化音视频流对象。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#play">Stream.play</a></td>
+							<td>播放音视频流。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#isplaying">Stream.isPlaying</a></td>
+							<td>音视频流是否正在播放。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#canplay">Stream.canPlay</a></td>
+							<td>音视频流是否可以播放。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#stop">Stream.stop</a></td>
+							<td>停止播放音视频流。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#open">Stream.open</a></td>
+							<td>打开音视频流输入设备，如麦克风。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#close">Stream.close</a></td>
+							<td>关闭音视频流输入设备，如麦克风。</td>
+						</tr>
+				</tbody></table>
+				<a href="#音频管理" id="音频管理" style="color: inherit; text-decoration: none;">
+					<h3><span id="音频管理">音频管理</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/stream.stream-1.html#setaudioprofile">Stream.setAudioProfile</a></td>
+							<td>设置音频属性。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setaudiovolume">Stream.setAudioVolume</a></td>
+							<td>设置音频播放的音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setcapturevolume">Stream.setCaptureVolume</a></td>
+							<td>设置麦克风采集的音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#muteaudio">Stream.muteAudio</a></td>
+							<td>禁用音频轨道。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#unmuteaudio">Stream.unmuteAudio</a></td>
+							<td>启用音频轨道。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#getaudiolevel">Stream.getAudioLevel</a></td>
+							<td>获取当前麦克风采集音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#hasaudio">Stream.hasAudio</a></td>
+							<td>当前 Stream 是否有音频。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setaudiooutput">Stream.setAudioOutput</a></td>
+							<td>设置音频输出设备。</td>
+						</tr>
+				</tbody></table>
+				<a href="#视频管理" id="视频管理" style="color: inherit; text-decoration: none;">
+					<h3><span id="视频管理">视频管理</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/stream.stream-1.html#setvideoprofile">Stream.setVideoProfile</a></td>
+							<td>设置视频属性。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setsubscribeconfig">Stream.setSubscribeConfig</a></td>
+							<td>设置视频订阅的参数。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setscreenprofile">Stream.setScreenProfile</a></td>
+							<td>设置屏幕共享属性。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#mutevideo">Stream.muteVideo</a></td>
+							<td>禁用视频轨道。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#unmutevideo">Stream.unmuteVideo</a></td>
+							<td>启用视频轨道。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setlocalrendermode">Stream.setLocalRenderMode</a></td>
+							<td>设置本端视频画面大小。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setremoterendermode">Stream.setRemoteRenderMode</a></td>
+							<td>设置对端视频画面大小。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#takesnapshot">Stream.takeSnapshot</a></td>
+							<td>截取指定用户的视频画面。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setcanvaswatermarkconfigs">Stream.setCanvasWatermarkConfigs</a></td>
+							<td>添加视频画布水印。</td>
+						</tr>
+				</tbody></table>
+				<a href="#音乐文件播放及混音" id="音乐文件播放及混音" style="color: inherit; text-decoration: none;">
+					<h3><span id="音乐文件播放及混音">音乐文件播放及混音</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/stream.stream-1.html#startaudiomixing">Stream.startAudioMixing</a></td>
+							<td>开始播放音乐文件和本地麦克风声音的混合。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#pauseaudiomixing">Stream.pauseAudioMixing</a></td>
+							<td>暂停播放音乐文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#resumeaudiomixing">Stream.resumeAudioMixing</a></td>
+							<td>恢复播放音乐文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#stopaudiomixing">Stream.stopAudioMixing</a></td>
+							<td>停止播放音乐文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#adjustaudiomixingvolume">Stream.adjustAudioMixingVolume</a></td>
+							<td>调节音乐文件播放音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#getaudiomixingduration">Stream.getAudioMixingDuration</a></td>
+							<td>获取音乐文件的总长度。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#getaudiomixingcurrentposition">Stream.getAudioMixingCurrentPosition</a></td>
+							<td>获取音乐文件当前播放进度。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setaudiomixingposition">Stream.setAudioMixingPosition</a></td>
+							<td>设置音乐文件当前播放进度。</td>
+						</tr>
+				</tbody></table>
+				<a href="#播放音效文件" id="播放音效文件" style="color: inherit; text-decoration: none;">
+					<h3><span id="播放音效文件">播放音效文件</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/stream.stream-1.html#playeffect">Stream.playEffect</a></td>
+							<td>播放指定音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#stopeffect">Stream.stopEffect</a></td>
+							<td>停止播放指定音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#pauseeffect">Stream.pauseEffect</a></td>
+							<td>暂停播放指定音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#resumeeffect">Stream.resumeEffect</a></td>
+							<td>恢复播放指定音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#setvolumeofeffect">Stream.setVolumeOfEffect</a></td>
+							<td>调节指定音效文件的音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#preloadeffect">Stream.preloadEffect</a></td>
+							<td>预加载指定音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#unloadeffect">Stream.unloadEffect</a></td>
+							<td>释放指定音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#geteffectsvolume">Stream.getEffectsVolume</a></td>
+							<td>获取所有音效文件播放音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#seteffectsvolume">Stream.setEffectsVolume</a></td>
+							<td>设置所有音效文件播放音量。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#stopalleffects">Stream.stopAllEffects</a></td>
+							<td>停止播放所有音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#pausealleffects">Stream.pauseAllEffects</a></td>
+							<td>暂停播放所有音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#resumealleffects">Stream.resumeAllEffects</a></td>
+							<td>恢复播放所有音效文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#getaudioeffectsduration">Stream.getAudioEffectsDuration</a></td>
+							<td>获取音效时长。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#getaudioeffectscurrentposition">Stream.getAudioEffectsCurrentPosition</a></td>
+							<td>获取音效播放进度。</td>
+						</tr>
+				</tbody></table>
+				<a href="#录制管理" id="录制管理" style="color: inherit; text-decoration: none;">
+					<h2><span id="录制管理">录制管理</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/stream.stream-1.html#startmediarecording">Stream.startMediaRecording</a></td>
+							<td>开启单人视频录制。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#stopmediarecording">Stream.stopMediaRecording</a></td>
+							<td>结束视频录制。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#playmediarecording">Stream.playMediaRecording</a></td>
+							<td>播放录制的音视频文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#listmediarecording">Stream.listMediaRecording</a></td>
+							<td>枚举已录制的音视频文件。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#cleanmediarecording">Stream.cleanMediaRecording</a></td>
+							<td>清除录制的音视频。</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/stream.stream-1.html#downloadmediarecording">Stream.downloadMediaRecording</a></td>
+							<td>下载录制的音视频。</td>
+						</tr>
+				</tbody></table>
+				<a href="#事件" id="事件" style="color: inherit; text-decoration: none;">
+					<h2><span id="事件">事件</span></h2>
+				</a>
+				<p>通过 <a href="interfaces/client.client-1.html#on">Client.on</a> 和 <a href="interfaces/stream.stream-1.html#on">Stream.on</a> 方法监听 <a href="interfaces/client.client-1.html">Client</a> 和 <a href="interfaces/stream.stream-1.html">Stream</a> 方法触发的事件。</p>
+				<a href="#错误代码" id="错误代码" style="color: inherit; text-decoration: none;">
+					<h2><span id="errorCode">错误代码</span></h2>
+				</a>
+				<p>以下为 SDK 可能抛出的错误，请参考下表进行处理。</p>
+				<a href="#errorcode" id="errorcode" style="color: inherit; text-decoration: none;">
+					<h3>ErrorCode</h3>
+				</a>
+				<a href="#4620-及之前的版本" id="4620-及之前的版本" style="color: inherit; text-decoration: none;">
+					<h4>4.6.20 及之前的版本</h4>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>key</th>
+							<th align="left">错误码</th>
+							<th align="left">描述</th>
+							<th align="left">可能原因及处理建议</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>INVALID_PARAMETER</td>
+							<td align="left">41000</td>
+							<td align="left">无效参数</td>
+							<td align="left">一般是参数错误，可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_SUPPORT</td>
+							<td align="left">41001</td>
+							<td align="left">浏览器不支持</td>
+							<td align="left">一般是浏览器不支持，可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NO_SERVER_ADDRESS</td>
+							<td align="left">41002</td>
+							<td align="left">没有找到服务器地址</td>
+							<td align="left">一般是服务器错误，请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>SOCKET_ERROR</td>
+							<td align="left">41003</td>
+							<td align="left">服务器地址连接失败</td>
+							<td align="left">一般是服务器地址连接失败，请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_SIGNALLING</td>
+							<td align="left">41004</td>
+							<td align="left">找不到信令</td>
+							<td align="left">一般是信令错误，请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_STATS</td>
+							<td align="left">41005</td>
+							<td align="left">数据格式错误</td>
+							<td align="left">一般是数据格式错误，请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_MEDIASERVER</td>
+							<td align="left">41006</td>
+							<td align="left">找不到媒体服务</td>
+							<td align="left">一般是媒体服务器错误，请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_MEETINGS</td>
+							<td align="left">41007</td>
+							<td align="left">找不到会议信息</td>
+							<td align="left">一般是会控错误，请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_LOCALSTREAM</td>
+							<td align="left">41008</td>
+							<td align="left">找不到 localStream 数据</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>INVALID_OPERATION</td>
+							<td align="left">41009</td>
+							<td align="left">非法操作</td>
+							<td align="left">一般是接口操作错误，可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>REPEAT_JOIN</td>
+							<td align="left">41010</td>
+							<td align="left">重复加入房间</td>
+							<td align="left">一般是重复加入房间导致的错误</td>
+						</tr>
+						<tr>
+							<td>USER_NOT_IN_CHANNEL</td>
+							<td align="left">41011</td>
+							<td align="left">本地用户不在频道中</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式，或联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NOT_SUPPORTED_YET</td>
+							<td align="left">41012</td>
+							<td align="left">当前不支持</td>
+							<td align="left">一般是当前操作浏览器不支持</td>
+						</tr>
+						<tr>
+							<td>UNKNOWN_TYPE</td>
+							<td align="left">41013</td>
+							<td align="left">位置类型</td>
+							<td align="left">一般是当前参数类型错误，可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_ALLOWED</td>
+							<td align="left">41014</td>
+							<td align="left">权限错误</td>
+							<td align="left">一般是没有权限进行操作，可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>STATE_ERROR</td>
+							<td align="left">41015</td>
+							<td align="left">状态错误</td>
+							<td align="left">请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_FILE</td>
+							<td align="left">41016</td>
+							<td align="left">找不到文件</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>DECODE_FAILED</td>
+							<td align="left">41017</td>
+							<td align="left">解码失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>ADD_TASK_FAILED</td>
+							<td align="left">41018</td>
+							<td align="left">添加推流任务失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>DELETE_TASK_FAILED</td>
+							<td align="left">41019</td>
+							<td align="left">删除推流任务请求失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>UPDATE_TASKS_FAILED</td>
+							<td align="left">41020</td>
+							<td align="left">更新推流任务请求失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>RECORD_API_ERROR</td>
+							<td align="left">41021</td>
+							<td align="left">录制接口出错</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NO_RECORDER_FOUND</td>
+							<td align="left">41022</td>
+							<td align="left">没有进行录制</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_DEFINED</td>
+							<td align="left">41023</td>
+							<td align="left">未定义错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_AVAILABLE</td>
+							<td align="left">41024</td>
+							<td align="left">不可用错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NO_MEDIAHELPER</td>
+							<td align="left">41025</td>
+							<td align="left">一般是某些媒体数据错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式，或联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_PLAY</td>
+							<td align="left">41026</td>
+							<td align="left">一般是没有开启播放导致的错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式，或联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>NO_RECORD</td>
+							<td align="left">41027</td>
+							<td align="left">一般是没有开启录制导致的错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_FOUND</td>
+							<td align="left">41028</td>
+							<td align="left">相关信息无法获取</td>
+							<td align="left">一般是参数设置问题，可以通过 console 日志查看错误原因及处理方式，或联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>APPDATA_ERROR</td>
+							<td align="left">41029</td>
+							<td align="left">一般是媒体数据错误</td>
+							<td align="left">请联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>AUTO_PLAY_NOT_ALLOWED</td>
+							<td align="left">41030</td>
+							<td align="left">一般是浏览器自动播放受限错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>MEDIA_OPEN_BANNED_BY_SERVER</td>
+							<td align="left">41032</td>
+							<td align="left">音视频被服务器禁言</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>PROXY_SERVER_ERROR</td>
+							<td align="left">41033</td>
+							<td align="left">云代理失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式，或联系云信技术支持</td>
+						</tr>
+						<tr>
+							<td>UNKNOWN</td>
+							<td align="left">99999</td>
+							<td align="left">一般是未知原因错误</td>
+							<td align="left">请联系云信技术支持</td>
+						</tr>
+				</tbody></table>
+				<a href="#4625" id="4625" style="color: inherit; text-decoration: none;">
+					<h4>4.6.25</h4>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>key</th>
+							<th align="left">错误码</th>
+							<th align="left">描述</th>
+							<th align="left">原因及处理建议</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>INVALID_PARAMETER_ERROR</td>
+							<td align="left">10000</td>
+							<td align="left">无效参数</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_SUPPORT_ERROR</td>
+							<td align="left">10001</td>
+							<td align="left">浏览器不支持</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NETWORK_ERROR</td>
+							<td align="left">10002</td>
+							<td align="left">网络环境异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NETWORK_REQUEST_ERROR</td>
+							<td align="left">10003</td>
+							<td align="left">网络请求异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SERVER_ERROR</td>
+							<td align="left">10004</td>
+							<td align="left">云信服务异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>MEDIA_SERVER_ERROR</td>
+							<td align="left">10005</td>
+							<td align="left">云信媒体服务异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SIGNALLING_ERROR</td>
+							<td align="left">10006</td>
+							<td align="left">云信信令异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SIGNALLING_SERVER_ERROR</td>
+							<td align="left">10007</td>
+							<td align="left">云信信令服务异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>API_CALL_SEQUENCE_ERROR</td>
+							<td align="left">10008</td>
+							<td align="left">接口调用顺序异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>INVALID_OPERATION_ERROR</td>
+							<td align="left">10009</td>
+							<td align="left">操作异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>LOCALSTREAM_ERROR</td>
+							<td align="left">10010</td>
+							<td align="left">localStream 异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>LOCALSTREAM_NOT_FOUND_ERROR</td>
+							<td align="left">10010</td>
+							<td align="left">localStream 未找到</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>UNKNOWN_TYPE_ERROR</td>
+							<td align="left">10012</td>
+							<td align="left">未知类型异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>UNDEFINED_ERROR</td>
+							<td align="left">10013</td>
+							<td align="left">未定义异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>UNAVAILABLE_ERROR</td>
+							<td align="left">10014</td>
+							<td align="left">不可用异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>BANNED_BY_SERVER</td>
+							<td align="left">10015</td>
+							<td align="left">被服务器禁言</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SOCKET_INIT_ERROR</td>
+							<td align="left">10016</td>
+							<td align="left">socket 异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>REPEAT_JOIN_ERROR</td>
+							<td align="left">10101</td>
+							<td align="left">重复进房错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>MEETING_ERROR</td>
+							<td align="left">10102</td>
+							<td align="left">会控异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>ROOM_SERVER_ERROR</td>
+							<td align="left">10103</td>
+							<td align="left">房间服务相关错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>USER_NOT_IN_CHANNEL_ERROR</td>
+							<td align="left">10104</td>
+							<td align="left">用户不在频道中错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>EVENT_UPLOAD_ERROR</td>
+							<td align="left">10105</td>
+							<td align="left">事件上报错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NOT_FOUND_ERROR</td>
+							<td align="left">10106</td>
+							<td align="left">未找到异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SDP_ERROR</td>
+							<td align="left">10107</td>
+							<td align="left">SDP 异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>ADD_TASK_FAILED_ERROR</td>
+							<td align="left">10201</td>
+							<td align="left">添加推流任务失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>DELETE_TASK_FAILED_ERROR</td>
+							<td align="left">10202</td>
+							<td align="left">删除推流任务失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>UPDATE_TASKS_FAILED_ERROR</td>
+							<td align="left">10203</td>
+							<td align="left">更新推流任务失败</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>TASK_ERROR</td>
+							<td align="left">10204</td>
+							<td align="left">推流任务异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>PLAY_NOT_START_ERROR</td>
+							<td align="left">10205</td>
+							<td align="left">未开始播放异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>APPDATA_OVERRIDE_ERROR</td>
+							<td align="left">10206</td>
+							<td align="left">appData 异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SET_BEAUTY_ERROR</td>
+							<td align="left">10401</td>
+							<td align="left">开关基础美颜相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SET_ADVANCED_BEAUTY_ERROR</td>
+							<td align="left">10402</td>
+							<td align="left">开关高级美颜相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SET_BODY_SEGMENT_ERROR</td>
+							<td align="left">10403</td>
+							<td align="left">开关背景替换相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>FORMAT_AUDIO_ERROR</td>
+							<td align="left">10420</td>
+							<td align="left">音频处理异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_MIX_FILE_ERROR</td>
+							<td align="left">10421</td>
+							<td align="left">伴音相关文件加载状态异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_MIX_STATE_ERROR</td>
+							<td align="left">10422</td>
+							<td align="left">伴音相关操作状态异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_EFFECT_STATE_ERROR</td>
+							<td align="left">10423</td>
+							<td align="left">音效相关操作状态异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_EFFECT_FILE_LOST_ERROR</td>
+							<td align="left">10424</td>
+							<td align="left">音效文件缺失</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_MIX_DECODE_FAILED_ERROR</td>
+							<td align="left">10425</td>
+							<td align="left">伴音解码异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_MIXING_ERROR</td>
+							<td align="left">10426</td>
+							<td align="left">伴音相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUDIO_EFFECT_ERROR</td>
+							<td align="left">10427</td>
+							<td align="left">音效相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SET_ENCRYPTION_MODE_ERROR</td>
+							<td align="left">10440</td>
+							<td align="left">国密加密相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>PROXY_ERROR</td>
+							<td align="left">10441</td>
+							<td align="left">云代理相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>RECORDING_ERROR</td>
+							<td align="left">10450</td>
+							<td align="left">录制时参数异常相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>RECORDING_NOT_START_ERROR</td>
+							<td align="left">10451</td>
+							<td align="left">录制未开始异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>WATERMARKS_EXCEEDED_ERROR</td>
+							<td align="left">10460</td>
+							<td align="left">水印数额超限相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>LBS_REQUEST_ERROR</td>
+							<td align="left">10461</td>
+							<td align="left">LBS 请求相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>LBS_JSON_ERROR</td>
+							<td align="left">10462</td>
+							<td align="left">LBS json 解析异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>NO_STATS_ERROR</td>
+							<td align="left">10470</td>
+							<td align="left">数据上报相关异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>SET_CLIENT_ROLE_ERROR</td>
+							<td align="left">10490</td>
+							<td align="left">用户角色修改异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>AUTO_PLAY_NOT_ALLOWED</td>
+							<td align="left">41030</td>
+							<td align="left">自动播放受限异常</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+						<tr>
+							<td>UNKNOWN</td>
+							<td align="left">99999</td>
+							<td align="left">未知错误</td>
+							<td align="left">可以通过 console 日志查看错误原因及处理方式</td>
+						</tr>
+				</tbody></table>
+				<a href="#4640-及之后版本" id="4640-及之后版本" style="color: inherit; text-decoration: none;">
+					<h4>4.6.40 及之后版本</h4>
+				</a>
+				<p>见 <a href="https://doc.yunxin.163.com/jcyOTA0ODM/docs/zU2MDQ4MjU?platform=web">API 参考 &gt; 错误码</a></p>
+				<a href="#其他常见报错及处理方式" id="其他常见报错及处理方式" style="color: inherit; text-decoration: none;">
+					<h3>其他常见报错及处理方式</h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>错误信息</th>
+							<th align="left">错误原因</th>
+							<th align="left">处理方案</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>getUserMedia error: NotAllowedError</td>
+							<td align="left">用户拒绝了当前的浏览器实例访问音频、视频或屏幕分享的请求</td>
+							<td align="left">用户需要授权摄像头/麦克风访问，才能进行音视频通话</td>
+						</tr>
+						<tr>
+							<td>getUserMedia error: NotFoundError</td>
+							<td align="left">找不到满足请求参数的媒体类型，如音频，视频</td>
+							<td align="left">建议通话前进行设备检测，确认设备状态正常</td>
+						</tr>
+						<tr>
+							<td>getUserMedia error: NotReadableError</td>
+							<td align="left">操作系统上某个硬件、浏览器或者网页层面发生的错误导致设备无法被访问</td>
+							<td align="left">请确保当前麦克风/摄像头没有被其他设备占用</td>
+						</tr>
+						<tr>
+							<td>getUserMedia error: OverconstrainedError</td>
+							<td align="left">浏览器无法获取到媒体设备的 deviceId，如 cameraId/microphoneId</td>
+							<td align="left">请确保 cameraId/microphoneId 是符合要求的非空字符串</td>
+						</tr>
+						<tr>
+							<td>getUserMedia error: TypeError</td>
+							<td align="left">当前使用的是 http 协议</td>
+							<td align="left">请确保 当前使用的是 https 协议</td>
+						</tr>
+				</tbody></table>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/browser.html">browser</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/client.html">client</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/nertc.html">nertc</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/stream.html">stream</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/types.html">types</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

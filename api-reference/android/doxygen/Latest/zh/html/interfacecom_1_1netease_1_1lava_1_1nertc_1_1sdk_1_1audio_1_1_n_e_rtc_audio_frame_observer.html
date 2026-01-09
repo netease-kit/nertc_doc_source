@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC Android SDK: com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC Android SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>netease</b></li><li class="navelem"><b>lava</b></li><li class="navelem"><b>nertc</b></li><li class="navelem"><a class="el" href="namespacecom_1_1netease_1_1lava_1_1nertc_1_1sdk.html">sdk</a></li><li class="navelem"><a class="el" href="namespacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio.html">audio</a></li><li class="navelem"><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html">NERtcAudioFrameObserver</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae33fb87300fb3664daa5e41929fd468f" id="r_ae33fb87300fb3664daa5e41929fd468f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae33fb87300fb3664daa5e41929fd468f">onRecordFrame</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame)</td></tr>
+<tr class="separator:ae33fb87300fb3664daa5e41929fd468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa480c1f114c2353c2ef81f001092cd57" id="r_aa480c1f114c2353c2ef81f001092cd57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa480c1f114c2353c2ef81f001092cd57">onRecordSubStreamAudioFrame</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame)</td></tr>
+<tr class="separator:aa480c1f114c2353c2ef81f001092cd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8a08aa23814c0b4d42550d44dc05fe" id="r_a1b8a08aa23814c0b4d42550d44dc05fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b8a08aa23814c0b4d42550d44dc05fe">onPlaybackFrame</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame)</td></tr>
+<tr class="separator:a1b8a08aa23814c0b4d42550d44dc05fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcabc16a28b2fb94e33f0be439fc87da" id="r_adcabc16a28b2fb94e33f0be439fc87da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcabc16a28b2fb94e33f0be439fc87da">onPlaybackAudioFrameBeforeMixingWithUserID</a> (long userID, <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame)</td></tr>
+<tr class="separator:adcabc16a28b2fb94e33f0be439fc87da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fbdeb37e4e8f09f56d910467a400ac9" id="r_a2fbdeb37e4e8f09f56d910467a400ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fbdeb37e4e8f09f56d910467a400ac9">onPlaybackAudioFrameBeforeMixingWithUserID</a> (long userID, <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame, long channelId)</td></tr>
+<tr class="separator:a2fbdeb37e4e8f09f56d910467a400ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b6429f555bf35d31683fadb9f820bf" id="r_ae1b6429f555bf35d31683fadb9f820bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1b6429f555bf35d31683fadb9f820bf">onMixedAudioFrame</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame)</td></tr>
+<tr class="separator:ae1b6429f555bf35d31683fadb9f820bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356d35b9bec5ad8307c9cdd1ff3d3c7f" id="r_a356d35b9bec5ad8307c9cdd1ff3d3c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a356d35b9bec5ad8307c9cdd1ff3d3c7f">onPlaybackSubStreamAudioFrameBeforeMixingWithUserID</a> (long userID, <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame, long channelId)</td></tr>
+<tr class="separator:a356d35b9bec5ad8307c9cdd1ff3d3c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb07b1e277de7400aa3c67dcce6b502" id="r_adeb07b1e277de7400aa3c67dcce6b502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb07b1e277de7400aa3c67dcce6b502">onPlaybackAudioFrameBeforeMixingForPlayStreaming</a> (String playStreamId, <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> audioFrame)</td></tr>
+<tr class="separator:adeb07b1e277de7400aa3c67dcce6b502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>PCM 数据回调监听  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ae1b6429f555bf35d31683fadb9f820bf" name="ae1b6429f555bf35d31683fadb9f820bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b6429f555bf35d31683fadb9f820bf">&#9670;&#160;</a></span>onMixedAudioFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onMixedAudioFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取本地用户和所有远端用户混音后的原始音频数据。 <br  />
+<b>注意</b></p><ul>
+<li>返回音频数据只读。</li>
+<li>有本地音频数据驱动就会回调。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="adeb07b1e277de7400aa3c67dcce6b502" name="adeb07b1e277de7400aa3c67dcce6b502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb07b1e277de7400aa3c67dcce6b502">&#9670;&#160;</a></span>onPlaybackAudioFrameBeforeMixingForPlayStreaming()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onPlaybackAudioFrameBeforeMixingForPlayStreaming </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>playStreamId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定播放流混音前的音频数据。 <br  />
+成功注册音频观测器后，当系统捕捉到指定播放流混音前的音频数据时，SDK 会触发该回调，将音频数据发送给您。 </p><dl class="section note"><dt>注解</dt><dd>返回音频数据只读。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playStreamId</td><td>播放流的 ID。 </td></tr>
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adcabc16a28b2fb94e33f0be439fc87da" name="adcabc16a28b2fb94e33f0be439fc87da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcabc16a28b2fb94e33f0be439fc87da">&#9670;&#160;</a></span>onPlaybackAudioFrameBeforeMixingWithUserID() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onPlaybackAudioFrameBeforeMixingWithUserID </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定远端用户混音前的音频数据。 <br  />
+成功注册音频观测器后，如果订阅了远端音频（默认订阅）且远端用户开启音频后，SDK 会在捕捉到混音前的音频数据时，触发该回调，将音频数据发送给您。 </p><dl class="section note"><dt>注解</dt><dd>返回音频数据只读。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">弃用</a></b></dt><dd>即将废弃，请改用接口 <code><a class="el" href="#a2fbdeb37e4e8f09f56d910467a400ac9">NERtcAudioFrameObserver#onPlaybackAudioFrameBeforeMixingWithUserID(long, NERtcAudioFrame, long)</a></code>。在多房间场景下，此接口可通过 channelId 识别不同房间。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户的 ID。 </td></tr>
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fbdeb37e4e8f09f56d910467a400ac9" name="a2fbdeb37e4e8f09f56d910467a400ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fbdeb37e4e8f09f56d910467a400ac9">&#9670;&#160;</a></span>onPlaybackAudioFrameBeforeMixingWithUserID() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onPlaybackAudioFrameBeforeMixingWithUserID </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>channelId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定远端用户混音前的音频数据。 <br  />
+成功注册音频观测器后，如果订阅了远端音频（默认订阅）且远端用户开启音频后，SDK 会在捕捉到混音前的音频数据时，触发该回调，将音频数据发送给您。 </p><dl class="section note"><dt>注解</dt><dd>返回音频数据只读。 </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户的 ID。 </td></tr>
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。 </td></tr>
+    <tr><td class="paramname">channelId</td><td>房间 ID。在多房间场景下，channelId 用于识别不同的房间。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b8a08aa23814c0b4d42550d44dc05fe" name="a1b8a08aa23814c0b4d42550d44dc05fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8a08aa23814c0b4d42550d44dc05fe">&#9670;&#160;</a></span>onPlaybackFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onPlaybackFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>播放音频数据回调，用于声音处理等操作。 <br  />
+<b>注意</b>：</p><ul>
+<li>返回音频数据支持读写。</li>
+<li>有本地音频数据驱动就会回调。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a356d35b9bec5ad8307c9cdd1ff3d3c7f" name="a356d35b9bec5ad8307c9cdd1ff3d3c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356d35b9bec5ad8307c9cdd1ff3d3c7f">&#9670;&#160;</a></span>onPlaybackSubStreamAudioFrameBeforeMixingWithUserID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onPlaybackSubStreamAudioFrameBeforeMixingWithUserID </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>channelId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取指定远端用户混音前的音频辅流数据。 <br  />
+成功注册音频观测器后，如果订阅了远端音频辅流（默认订阅）且远端用户开启音频辅流后，SDK 会在捕捉到混音前的音频数据时，触发该回调，将音频数据发送给您。 </p><dl class="section note"><dt>注解</dt><dd>返回的音频数据只读。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userID</td><td>远端用户的 ID。 </td></tr>
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。 </td></tr>
+    <tr><td class="paramname">channelId</td><td>房间 ID。在多房间场景下，channelId 用于识别不同的房间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adee9c69ac723cd4161f384bc13928693">NERtcEx.enableLocalSubStreamAudio(boolean)</a> </dd>
+<dd>
+<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adee9c69ac723cd4161f384bc13928693">NERtcEx.enableLocalSubStreamAudio(boolean)</a>  </dd></dl>
+
+</div>
+</div>
+<a id="ae33fb87300fb3664daa5e41929fd468f" name="ae33fb87300fb3664daa5e41929fd468f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae33fb87300fb3664daa5e41929fd468f">&#9670;&#160;</a></span>onRecordFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onRecordFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>采集音频数据回调，用于声音处理等操作。 <br  />
+<b>注意</b>：</p><ul>
+<li>返回音频数据支持读写。</li>
+<li>有本地音频数据驱动就会回调。 <dl class="section see"><dt>参见</dt><dd><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a76f615a5af2439576915b13c666ba13a">NERtcEx.setRecordingAudioFrameParameters(NERtcAudioFrameRequestFormat)</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aa480c1f114c2353c2ef81f001092cd57" name="aa480c1f114c2353c2ef81f001092cd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa480c1f114c2353c2ef81f001092cd57">&#9670;&#160;</a></span>onRecordSubStreamAudioFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.audio.NERtcAudioFrameObserver.onRecordSubStreamAudioFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></td>          <td class="paramname"><span class="paramname"><em>audioFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>本地音频辅流数据回调，用于自定义音频辅流数据。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>只要开启辅流，SDK 就会返回此回调。</li>
+<li>返回音频数据支持读或写模式，由于该回调一般用于自定义音频辅流数据，建议使用写模式。 </li>
+</ul>
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a76f615a5af2439576915b13c666ba13a">NERtcEx.setRecordingAudioFrameParameters(NERtcAudioFrameRequestFormat)</a> </dd>
+<dd>
+<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adee9c69ac723cd4161f384bc13928693">NERtcEx.enableLocalSubStreamAudio(boolean)</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioFrame</td><td>PCM 音频帧数据，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame.html">audio.NERtcAudioFrame</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>audio/<b>NERtcAudioFrameObserver.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

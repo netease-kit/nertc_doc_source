@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC macOS/Windows SDK: include/nertc_engine_event_handler_ex.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC macOS/Windows SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">nertc_engine_event_handler_ex.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="nertc__engine__event__handler__ex_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef NERTC_ENGINE_EVENT_HANDLER_EX_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define NERTC_ENGINE_EVENT_HANDLER_EX_H</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;nertc_base_types.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="nertc__engine__defines_8h.html">nertc_engine_defines.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="nertc__engine__event__handler_8h.html">nertc_engine_event_handler.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacenertc.html">nertc</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html">IRtcEngineEventHandlerEx</a> : <span class="keyword">public</span> <a class="code hl_class" href="classnertc_1_1_i_rtc_engine_event_handler.html">IRtcEngineEventHandler</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html">~IRtcEngineEventHandlerEx</a>() {}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a48f88b74beb1db6d8ccbca5f079912ee">   48</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a48f88b74beb1db6d8ccbca5f079912ee">onUserSubStreamVideoStart</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="code hl_enumeration" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a> max_profile) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        (void)uid;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        (void)max_profile;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUserVideoStreamStart(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> stream_type, <a class="code hl_enumeration" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a> max_profile) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      (void)uid;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      (void)stream_type;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      (void)max_profile;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abf09442bb44e42d300bcae8a1b21aaa3">   69</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abf09442bb44e42d300bcae8a1b21aaa3">onUserSubStreamVideoStop</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        (void)uid;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> onUserVideoStreamStop(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> stream_type) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      (void)uid;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      (void)stream_type;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7649a71ffa815cecde17836facd0834a">   93</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7649a71ffa815cecde17836facd0834a">onScreenCaptureStatus</a>(<a class="code hl_enumeration" href="namespacenertc.html#ab64601b9bac6ae15cdd9684d6febaf7d">NERtcScreenCaptureStatus</a> status) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        (void)status;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="}">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aff907bc7b9ebd74f5f25656b6f3246f7">  113</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aff907bc7b9ebd74f5f25656b6f3246f7">onScreenCaptureSourceDataUpdate</a>(<a class="code hl_struct" href="structnertc_1_1_n_e_rtc_screen_capture_source_data.html">NERtcScreenCaptureSourceData</a> data) {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        (void)data;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#af2cfb6dffae443600117bd0602f37792">  128</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#af2cfb6dffae443600117bd0602f37792">onUserVideoProfileUpdate</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="code hl_enumeration" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a> max_profile) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        (void)uid;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        (void)max_profile;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac25ac6d99552bad5df1230f95dd4fa41">  144</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac25ac6d99552bad5df1230f95dd4fa41">onUserSubStreamAudioStart</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) { </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        (void)uid; </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abee8de5ba478662532cdaeb97df0ce3f">  159</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abee8de5ba478662532cdaeb97df0ce3f">onUserSubStreamAudioStop</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        (void)uid; </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a396066fb82425ebf955e7956c625ca40">  175</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a396066fb82425ebf955e7956c625ca40">onUserAudioMute</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keywordtype">bool</span> mute) {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        (void)uid;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        (void)mute;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac62b4496eee82ab491a0a974817c9fc1">  197</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac62b4496eee82ab491a0a974817c9fc1">onUserSubStreamAudioMute</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keywordtype">bool</span> mute) {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        (void)uid;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        (void)mute;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac7e5ac9ae38cd3299cc71a73e17f42ac">  217</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac7e5ac9ae38cd3299cc71a73e17f42ac">onUserVideoMute</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keywordtype">bool</span> mute) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        (void)uid;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        (void)mute;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    }</div>
+</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="foldopen" id="foldopen00252" data-start="{" data-end="}">
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a43c7b0c38a3b0f2f08f7e6c9d249d972">  252</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a43c7b0c38a3b0f2f08f7e6c9d249d972">onUserVideoMute</a>(<a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> videoStreamType, <a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keywordtype">bool</span> mute) {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        (void)videoStreamType;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        (void)uid;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        (void)mute;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
+</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="foldopen" id="foldopen00272" data-start="{" data-end="}">
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9b712397ae3070f32b7c6e984a25be3f">  272</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9b712397ae3070f32b7c6e984a25be3f">onAudioDeviceStateChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> device_id[<a class="code hl_define" href="nertc__engine__defines_8h.html#a96b3556041bc59d27f5ad3e20579e473">kNERtcMaxDeviceIDLength</a>],</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <a class="code hl_enumeration" href="namespacenertc.html#a6a5a1e2b00ac2833758344938122b4c8">NERtcAudioDeviceType</a> device_type,</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <a class="code hl_enumeration" href="namespacenertc.html#a1bc71bd291b2e19f06880cbfb22afd54">NERtcAudioDeviceState</a> device_state) {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        (void)device_id;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        (void)device_type;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        (void)device_state;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    }</div>
+</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="foldopen" id="foldopen00292" data-start="{" data-end="}">
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a75985ef198f86e40ee910d54ba192ca8">  292</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a75985ef198f86e40ee910d54ba192ca8">onAudioDefaultDeviceChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> device_id[<a class="code hl_define" href="nertc__engine__defines_8h.html#a96b3556041bc59d27f5ad3e20579e473">kNERtcMaxDeviceIDLength</a>],</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <a class="code hl_enumeration" href="namespacenertc.html#a6a5a1e2b00ac2833758344938122b4c8">NERtcAudioDeviceType</a> device_type) {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        (void)device_id;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        (void)device_type;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    }</div>
+</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="foldopen" id="foldopen00312" data-start="{" data-end="}">
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4ea2f5e0c01f66e0d37de838ce52437b">  312</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4ea2f5e0c01f66e0d37de838ce52437b">onVideoDeviceStateChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> device_id[<a class="code hl_define" href="nertc__engine__defines_8h.html#a96b3556041bc59d27f5ad3e20579e473">kNERtcMaxDeviceIDLength</a>],</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <a class="code hl_enumeration" href="namespacenertc.html#af2ffb8c688fb78e39d09d2a7ba56d91a">NERtcVideoDeviceType</a> device_type,</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <a class="code hl_enumeration" href="namespacenertc.html#a938170cf2c79b8c6c704665f6fb847a2">NERtcVideoDeviceState</a> device_state) {</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        (void)device_id;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        (void)device_type;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        (void)device_state;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    }</div>
+</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="foldopen" id="foldopen00330" data-start="{" data-end="}">
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acfa16ac460dbc24ba702a6da705cb665">  330</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acfa16ac460dbc24ba702a6da705cb665">onFirstAudioDataReceived</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        (void)uid;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    }</div>
+</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="foldopen" id="foldopen00346" data-start="{" data-end="}">
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4660af87cb062b1d5a238a61faf9a65e">  346</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4660af87cb062b1d5a238a61faf9a65e">onFirstVideoDataReceived</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      (void)uid;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    }</div>
+</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="foldopen" id="foldopen00375" data-start="{" data-end="}">
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a59243fe41b7c71a9ea2daf1cc30f2fb0">  375</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a59243fe41b7c71a9ea2daf1cc30f2fb0">onFirstVideoDataReceived</a>(<a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, <a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        (void)uid;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        (void)type;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    }</div>
+</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  </div>
+<div class="foldopen" id="foldopen00418" data-start="{" data-end="}">
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae1258721f277ca0c39fc546bb595a50c">  418</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae1258721f277ca0c39fc546bb595a50c">onRemoteVideoReceiveSizeChanged</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, uint32_t width, uint32_t height) {</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        (void)uid;</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        (void)type;</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        (void)width;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        (void)height;</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    }</div>
+</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  </div>
+<div class="foldopen" id="foldopen00458" data-start="{" data-end="}">
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a8a48c702016e6a3c0d293f1ff0babd21">  458</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a8a48c702016e6a3c0d293f1ff0babd21">onLocalVideoRenderSizeChanged</a>(<a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, uint32_t width, uint32_t height) {</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>        (void)type;</div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>        (void)width;</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        (void)height;</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    }</div>
+</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
+<div class="foldopen" id="foldopen00474" data-start="{" data-end="}">
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a37b650aac357124e1cf1626de38ad9f0">  474</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a37b650aac357124e1cf1626de38ad9f0">onFirstAudioFrameDecoded</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span>        (void)uid;</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span>    }</div>
+</div>
+<div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span> </div>
+<div class="foldopen" id="foldopen00495" data-start="{" data-end="}">
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a201d723da036d5d426c50e742f5525f0">  495</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a201d723da036d5d426c50e742f5525f0">onFirstVideoFrameDecoded</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint32_t width, uint32_t height) {</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>      (void)uid;</div>
+<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>      (void)width;</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>      (void)height;</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    }</div>
+</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
+<div class="foldopen" id="foldopen00540" data-start="{" data-end="}">
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4290cb9c42e73178ec5c8a5b6376c527">  540</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4290cb9c42e73178ec5c8a5b6376c527">onFirstVideoFrameDecoded</a>(<a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, <a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint32_t width, uint32_t height) {</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        (void)type;</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        (void)uid;</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        (void)width;</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        (void)height;</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    }</div>
+</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>  </div>
+<div class="foldopen" id="foldopen00587" data-start="{" data-end="}">
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a0e7a7260496fe6a10fabd5ecee1f2f07">  587</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a0e7a7260496fe6a10fabd5ecee1f2f07">onFirstVideoFrameRender</a>(<a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, <a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint32_t width, uint32_t height, uint64_t elapsed) {</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        (void)type;</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        (void)uid;</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        (void)width;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        (void)height;</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        (void)elapsed;</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    }</div>
+</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
+<div class="foldopen" id="foldopen00621" data-start="{" data-end="}">
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad0423dae090d924f82a8765bacca3365">  621</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad0423dae090d924f82a8765bacca3365">onCaptureVideoFrame</a>(<span class="keywordtype">void</span> *data,</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <a class="code hl_enumeration" href="namespacenertc.html#acf948919b1f4d6c1b7b3e9508576eadc">NERtcVideoType</a> type, </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        uint32_t width, </div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>        uint32_t height,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        uint32_t count,</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        uint32_t offset[<a class="code hl_define" href="nertc__engine__defines_8h.html#a76ef604eed659f0042b2f7814fee3500">kNERtcMaxPlaneCount</a>],</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        uint32_t stride[<a class="code hl_define" href="nertc__engine__defines_8h.html#a76ef604eed659f0042b2f7814fee3500">kNERtcMaxPlaneCount</a>],</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        <a class="code hl_enumeration" href="namespacenertc.html#a7ffb459b161a5d4ca72e6916d8d832ea">NERtcVideoRotation</a> rotation) {</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        (void)data;</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        (void)type;</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        (void)width;</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        (void)height;</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        (void)count;</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>        (void)offset;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        (void)stride;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>        (void)rotation;</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    }</div>
+</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
+<div class="foldopen" id="foldopen00650" data-start="{" data-end="}">
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a61d841ebbd67b931baef7508b49ec467">  650</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a61d841ebbd67b931baef7508b49ec467">onCaptureVideoFrame2</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structnertc_1_1_n_e_rtc_video_callback_frame.html">NERtcVideoCallbackFrame</a>&amp; frame) {</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      (void)frame;</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    }</div>
+</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="foldopen" id="foldopen00674" data-start="{" data-end="}">
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a39351279a586979bc1ef25d10433894b">  674</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a39351279a586979bc1ef25d10433894b">onAudioMixingStateChanged</a>(<a class="code hl_enumeration" href="namespacenertc.html#ae9d6f38c518cda0c5fdf0d72f5cdcf67">NERtcAudioMixingState</a> state, <a class="code hl_enumeration" href="namespacenertc.html#a86b863a0b586ebd76802f7d7433ec68e">NERtcAudioMixingErrorCode</a> error_code) {</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        (void)state;</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        (void)error_code;</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    }</div>
+</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="foldopen" id="foldopen00691" data-start="{" data-end="}">
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad259b5769a5ba48b58643480faca79bc">  691</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad259b5769a5ba48b58643480faca79bc">onAudioMixingTimestampUpdate</a>(uint64_t timestamp_ms) {</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        (void)timestamp_ms;</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    }</div>
+</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="foldopen" id="foldopen00729" data-start="{" data-end="}">
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a98d0770e5d6981422560185899cd63fd">  729</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a98d0770e5d6981422560185899cd63fd">onAudioEffectTimestampUpdate</a>(uint32_t effect_id, uint64_t timestamp_ms) { </div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>        (void)effect_id;</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>        (void)timestamp_ms;</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    }</div>
+</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="foldopen" id="foldopen00746" data-start="{" data-end="}">
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a69ce2bfa8f0cec24dfabae2751cbf3d8">  746</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a69ce2bfa8f0cec24dfabae2751cbf3d8">onAudioEffectFinished</a>(uint32_t effect_id) {</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        (void)effect_id;</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    }</div>
+</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
+<div class="foldopen" id="foldopen00768" data-start="{" data-end="}">
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7a6c0e71fee59b50488367193581dcee">  768</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7a6c0e71fee59b50488367193581dcee">onLocalAudioVolumeIndication</a>(<span class="keywordtype">int</span> volume) {</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        (void)volume;</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>    }</div>
+</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    </div>
+<div class="foldopen" id="foldopen00790" data-start="{" data-end="}">
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a758b7b32a196ba57a1d658514fdc52a9">  790</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a758b7b32a196ba57a1d658514fdc52a9">onLocalAudioVolumeIndication</a>(<span class="keywordtype">int</span> volume, <span class="keywordtype">bool</span> enable_vad) {</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        (void)volume;</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        (void)enable_vad;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    }</div>
+</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    </div>
+<div class="foldopen" id="foldopen00819" data-start="{" data-end="}">
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a5917377045d6151993c6866e28b40464">  819</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a5917377045d6151993c6866e28b40464">onRemoteAudioVolumeIndication</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structnertc_1_1_n_e_rtc_audio_volume_info.html">NERtcAudioVolumeInfo</a> *speakers, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> speaker_number, <span class="keywordtype">int</span> total_volume) {</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        (void)speakers;</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>        (void)speaker_number;</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        (void)total_volume;</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    }</div>
+</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
+<div class="foldopen" id="foldopen00845" data-start="{" data-end="}">
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac87b9ec9ac76cec6583abb9bf8b121b2">  845</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac87b9ec9ac76cec6583abb9bf8b121b2">onAddLiveStreamTask</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* task_id, <span class="keyword">const</span> <span class="keywordtype">char</span>* url, <span class="keywordtype">int</span> error_code) {</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        (void)task_id;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>        (void)url;</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>        (void)error_code;</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    }</div>
+</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
+<div class="foldopen" id="foldopen00871" data-start="{" data-end="}">
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a51e871e3eb8f884f77e8f72001b0c6dd">  871</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a51e871e3eb8f884f77e8f72001b0c6dd">onUpdateLiveStreamTask</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* task_id, <span class="keyword">const</span> <span class="keywordtype">char</span>* url, <span class="keywordtype">int</span> error_code) {</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>        (void)task_id;</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        (void)url;</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>        (void)error_code;</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    }</div>
+</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span> </div>
+<div class="foldopen" id="foldopen00895" data-start="{" data-end="}">
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a373a0d2e896ea07a4a727c7f9899f160">  895</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a373a0d2e896ea07a4a727c7f9899f160">onRemoveLiveStreamTask</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* task_id, <span class="keywordtype">int</span> error_code) {</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>        (void)task_id;</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>        (void)error_code;</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>    }</div>
+</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span> </div>
+<div class="foldopen" id="foldopen00922" data-start="{" data-end="}">
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aba53fc5c94b82af9f477b463584c6f2f">  922</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aba53fc5c94b82af9f477b463584c6f2f">onLiveStreamState</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* task_id, <span class="keyword">const</span> <span class="keywordtype">char</span>* url, <a class="code hl_enumeration" href="namespacenertc.html#ade423c05860a21fe0186143d13aa4882">NERtcLiveStreamStateCode</a> state) {</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        (void)task_id;</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        (void)url;</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        (void)state;</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>    }</div>
+</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    </div>
+<div class="foldopen" id="foldopen00950" data-start="{" data-end="}">
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3d791701962ed5e7ebd81bda8fee1570">  950</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3d791701962ed5e7ebd81bda8fee1570">onAudioHowling</a>(<span class="keywordtype">bool</span> howling) {</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>        (void)howling;</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    }</div>
+</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span> </div>
+<div class="foldopen" id="foldopen00970" data-start="{" data-end="}">
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7ae085dd56871d5f27abc6498c02d6ac">  970</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7ae085dd56871d5f27abc6498c02d6ac">onRecvSEIMsg</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keyword">const</span> <span class="keywordtype">char</span>* data, uint32_t dataSize) {</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        (void)uid;</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        (void)data;</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>        (void)dataSize;</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>    }</div>
+</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span> </div>
+<div class="foldopen" id="foldopen00988" data-start="{" data-end="}">
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a1eabc3477df26bde007bcaf69bb19d0f">  988</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a1eabc3477df26bde007bcaf69bb19d0f">onAudioRecording</a>(<a class="code hl_enumeration" href="namespacenertc.html#ad3fe8df2fe00338ae7a4084f8d145d92">NERtcAudioRecordingCode</a> code, <span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) {</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>        (void)code;</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>        (void)file_path;</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>    }</div>
+</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span> </div>
+<div class="foldopen" id="foldopen01007" data-start="{" data-end="}">
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ab8c4d3c3a2d3f695200694ab3805dd62"> 1007</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ab8c4d3c3a2d3f695200694ab3805dd62">onMediaRelayStateChanged</a>(<a class="code hl_enumeration" href="namespacenertc.html#a270ec48c1ecb1976d061b9c41f1b94d1">NERtcChannelMediaRelayState</a> state, <span class="keyword">const</span> <span class="keywordtype">char</span>* channel_name) {</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>        (void)state;</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>        (void)channel_name;</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    }</div>
+</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span> </div>
+<div class="foldopen" id="foldopen01028" data-start="{" data-end="}">
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4e6ab72395627936258caa5a176654f9"> 1028</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4e6ab72395627936258caa5a176654f9">onMediaRelayEvent</a>(<a class="code hl_enumeration" href="namespacenertc.html#afa9cd00eec70185b8b6b861aa7f5d2a3">NERtcChannelMediaRelayEvent</a> event, <span class="keyword">const</span> <span class="keywordtype">char</span>* channel_name, <a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> error) {</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>        (void)event;</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>        (void)channel_name;</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>        (void)error;</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>    }</div>
+</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span> </div>
+<div class="foldopen" id="foldopen01054" data-start="{" data-end="}">
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a20e69e301bed98bf8737ef70c0596c3f"> 1054</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a20e69e301bed98bf8737ef70c0596c3f">onLocalPublishFallbackToAudioOnly</a>(<span class="keywordtype">bool</span> is_fallback, <a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> stream_type) {</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>        (void)is_fallback;</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>        (void)stream_type;</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    }</div>
+</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span> </div>
+<div class="foldopen" id="foldopen01081" data-start="{" data-end="}">
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3fe2c727e6dc4e23c1047f3e31718855"> 1081</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3fe2c727e6dc4e23c1047f3e31718855">onRemoteSubscribeFallbackToAudioOnly</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keywordtype">bool</span> is_fallback, <a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> stream_type) {</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>        (void)uid;</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>        (void)is_fallback;</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        (void)stream_type;</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>    }</div>
+</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span> </div>
+<div class="foldopen" id="foldopen01102" data-start="{" data-end="}">
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a0437260f6aace77a05441d691e27ae7e"> 1102</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a0437260f6aace77a05441d691e27ae7e">onLastmileQuality</a>(<a class="code hl_enumeration" href="namespacenertc.html#ad52f36084af53caa662c94d540aec88d">NERtcNetworkQualityType</a> quality) { </div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>        (void)quality;</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>    }</div>
+</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span> </div>
+<div class="foldopen" id="foldopen01122" data-start="{" data-end="}">
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4f7132c17875c27e6759a93aea67b939"> 1122</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4f7132c17875c27e6759a93aea67b939">onLastmileProbeResult</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structnertc_1_1_n_e_rtc_lastmile_probe_result.html">NERtcLastmileProbeResult</a>&amp; result) { </div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>        (void)result; </div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>    };</div>
+</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span> </div>
+<div class="foldopen" id="foldopen01148" data-start="{" data-end="}">
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a306d34928a341803fdd279e27f24fa66"> 1148</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a306d34928a341803fdd279e27f24fa66">onMediaRightChange</a>(<span class="keywordtype">bool</span> is_audio_banned, <span class="keywordtype">bool</span> is_video_banned) {</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>        (void)is_audio_banned;</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>        (void)is_video_banned;</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>    }</div>
+</div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>    </div>
+<div class="foldopen" id="foldopen01165" data-start="{" data-end="}">
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a662fa013d310d9782d07130bcaef9981"> 1165</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a662fa013d310d9782d07130bcaef9981">onCheckNECastAudioDriverResult</a>(<a class="code hl_enumeration" href="namespacenertc.html#ae888ac7ceef2170bfbdcac9f5bc32615">NERtcInstallCastAudioDriverResult</a> result) {</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>        (void)result;</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>    }</div>
+</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>    </div>
+<div class="foldopen" id="foldopen01194" data-start="{" data-end="}">
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a5a97f3127d454acee2cc24d91325308d"> 1194</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a5a97f3127d454acee2cc24d91325308d">onVirtualBackgroundSourceEnabled</a>(<span class="keywordtype">bool</span> enabled, <a class="code hl_enumeration" href="namespacenertc.html#ae41a3fbc14fc1f88f967f63d732580f6">NERtcVirtualBackgroundSourceStateReason</a> reason) {</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>      (void)enabled;</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>      (void)reason;</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>    }</div>
+</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>    </div>
+<div class="foldopen" id="foldopen01215" data-start="{" data-end="}">
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acff5c56e9b620b86d33db3a827783279"> 1215</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acff5c56e9b620b86d33db3a827783279">onLocalVideoWatermarkState</a>(<a class="code hl_enumeration" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> videoStreamType, <a class="code hl_enumeration" href="namespacenertc.html#a14a4bd97dafec1f6c2005e3898b4dad4">NERtcLocalVideoWatermarkState</a> state) {</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>        (void)videoStreamType;</div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>        (void)state;</div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>    }</div>
+</div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span> </div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4c21a3a69a9ad33e2b6fe3b4c7927ed2"> 1241</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4c21a3a69a9ad33e2b6fe3b4c7927ed2">onPermissionKeyWillExpire</a>() {}</div>
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span> </div>
+<div class="foldopen" id="foldopen01281" data-start="{" data-end="}">
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abbeaf66b26926389fef32eb6cb2ec4bc"> 1281</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abbeaf66b26926389fef32eb6cb2ec4bc">onUpdatePermissionKey</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key, <a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> error, <span class="keywordtype">int</span> timeout) {</div>
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>        (void)key;</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        (void)error;</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>        (void)timeout;</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>    }</div>
+</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>  </div>
+<div class="foldopen" id="foldopen01301" data-start="{" data-end="}">
+<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a620db38063c0589fa006c9cb9b085a8a"> 1301</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a620db38063c0589fa006c9cb9b085a8a">onUserDataReceiveMessage</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keywordtype">void</span>* pData, uint64_t size) {</div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>        (void)uid;</div>
+<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>        (void)pData;</div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>        (void)size;</div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>    };</div>
+</div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>      </div>
+<div class="foldopen" id="foldopen01319" data-start="{" data-end="}">
+<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a930d21feabc51faa24a18f03757b1753"> 1319</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a930d21feabc51faa24a18f03757b1753">onUserDataStart</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid){</div>
+<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span>        (void)uid;</div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>    };</div>
+</div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>    </div>
+<div class="foldopen" id="foldopen01333" data-start="{" data-end="}">
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a90017fb1ffa97b1545c4bb3c3e264452"> 1333</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a90017fb1ffa97b1545c4bb3c3e264452">onUserDataStop</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>        (void)uid;</div>
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>    };</div>
+</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span> </div>
+<div class="foldopen" id="foldopen01347" data-start="{" data-end="}">
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a60d718a50c283ed5af42be80daa4a40c"> 1347</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a60d718a50c283ed5af42be80daa4a40c">onUserDataStateChanged</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid) {</div>
+<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>        (void)uid;</div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>    };</div>
+</div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span> </div>
+<div class="foldopen" id="foldopen01363" data-start="{" data-end="}">
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae4105f8e752f4ee92e8d2d881ac829e5"> 1363</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae4105f8e752f4ee92e8d2d881ac829e5">onUserDataBufferedAmountChanged</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint64_t previousAmount) {</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>        (void)uid;</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>        (void)previousAmount;</div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>    };</div>
+</div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span> </div>
+<div class="foldopen" id="foldopen01376" data-start="{" data-end="}">
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acccba0b1d594a22ea2ed2654bf0cf3ed"> 1376</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acccba0b1d594a22ea2ed2654bf0cf3ed">onLabFeatureCallback</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keyword">const</span> <span class="keywordtype">char</span>* param) {</div>
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>        (void)key;</div>
+<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>        (void)param;</div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>    }</div>
+</div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  </div>
+<div class="foldopen" id="foldopen01389" data-start="{" data-end="}">
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a751d63d82944233eb1077ebce7c586eb"> 1389</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a751d63d82944233eb1077ebce7c586eb">onAiData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* type, <span class="keyword">const</span> <span class="keywordtype">char</span>* data) {</div>
+<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>        (void)type;</div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>        (void)data;</div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>    }</div>
+</div>
+<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>    </div>
+<div class="foldopen" id="foldopen01406" data-start="{" data-end="}">
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad69f92ef009fc490103c404ffa25f248"> 1406</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad69f92ef009fc490103c404ffa25f248">onNetworkConnectionTypeChanged</a>(<a class="code hl_enumeration" href="namespacenertc.html#a2483ed52faf5e197a9b78044ab3642a8">NERtcNetworkConnectionType</a> newConnectionType) {</div>
+<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>        (void)newConnectionType;</div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>    }</div>
+</div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>    </div>
+<div class="foldopen" id="foldopen01462" data-start="{" data-end="}">
+<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a380c5c1fb4b00b0f5deed74ec11c3e45"> 1462</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a380c5c1fb4b00b0f5deed74ec11c3e45">onStartPushStreaming</a>(<a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> result, <a class="code hl_typedef" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a> cid) {</div>
+<div class="line"><a id="l01463" name="l01463"></a><span class="lineno"> 1463</span>        (void)result;</div>
+<div class="line"><a id="l01464" name="l01464"></a><span class="lineno"> 1464</span>        (void)cid;</div>
+<div class="line"><a id="l01465" name="l01465"></a><span class="lineno"> 1465</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen01482" data-start="{" data-end="}">
+<div class="line"><a id="l01482" name="l01482"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a55ebdb8ff6260ab71900a80bf13defe1"> 1482</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a55ebdb8ff6260ab71900a80bf13defe1">onStopPushStreaming</a>(<a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> result) {</div>
+<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span>        (void)result;</div>
+<div class="line"><a id="l01484" name="l01484"></a><span class="lineno"> 1484</span>    }</div>
+</div>
+<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span> </div>
+<div class="foldopen" id="foldopen01502" data-start="{" data-end="}">
+<div class="line"><a id="l01502" name="l01502"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9a68c5f1b99c3f79e3fc06bfb00ab69f"> 1502</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9a68c5f1b99c3f79e3fc06bfb00ab69f">onPushStreamingChangeToReconnecting</a>(<a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> reason) {</div>
+<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>        (void)reason;</div>
+<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>    }</div>
+</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span> </div>
+<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3d7ffe02b45f0d60d9b077fdb7c412cb"> 1520</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3d7ffe02b45f0d60d9b077fdb7c412cb">onPushStreamingReconnectedSuccess</a>() {}</div>
+<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>        </div>
+<div class="foldopen" id="foldopen01542" data-start="{" data-end="}">
+<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4ece42f3a553202b188a542ba554153d"> 1542</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4ece42f3a553202b188a542ba554153d">onPlayStreamingStateChange</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* stream_id, <a class="code hl_enumeration" href="namespacenertc.html#a9429bf722d00ff713ef6a1127ea6dfe5">NERtcPlayStreamState</a> state, <a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> error) {</div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>        (void)stream_id;</div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>        (void)state;</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>        (void)error;</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>    }</div>
+</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span> </div>
+<div class="foldopen" id="foldopen01566" data-start="{" data-end="}">
+<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a6420c5b388e314a2933e7f33333d6a52"> 1566</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a6420c5b388e314a2933e7f33333d6a52">onPlayStreamingReceiveSeiMessage</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* stream_id, <span class="keyword">const</span> <span class="keywordtype">char</span>* message) {</div>
+<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>        (void)stream_id;</div>
+<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>        (void)message;</div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>    }</div>
+</div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span>        </div>
+<div class="foldopen" id="foldopen01593" data-start="{" data-end="}">
+<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad803d572bf43f61ab9e1e3d1adc032f3"> 1593</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad803d572bf43f61ab9e1e3d1adc032f3">onPlayStreamingFirstVideoFrameRender</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* stream_id, int64_t time_ms, uint32_t width, uint32_t height) {</div>
+<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>        (void)stream_id;</div>
+<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>        (void)time_ms;</div>
+<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span>        (void)width;</div>
+<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>        (void)height;</div>
+<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span>    }</div>
+</div>
+<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span> </div>
+<div class="foldopen" id="foldopen01611" data-start="{" data-end="}">
+<div class="line"><a id="l01611" name="l01611"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a75d69b0fcc3610e7f80728add644b0b4"> 1611</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a75d69b0fcc3610e7f80728add644b0b4">onPlayStreamingDuration</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* stream_id, int64_t total_duration_s, int64_t current_pts_s) {</div>
+<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>        (void)stream_id;</div>
+<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>        (void)total_duration_s;</div>
+<div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>        (void)current_pts_s;</div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>    }</div>
+</div>
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span> </div>
+<div class="foldopen" id="foldopen01635" data-start="{" data-end="}">
+<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac1418d6c90ad80c1b21781e75917528d"> 1635</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac1418d6c90ad80c1b21781e75917528d">onPlayStreamingFirstAudioFramePlayed</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* stream_id, int64_t time_ms) {</div>
+<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>        (void)stream_id;</div>
+<div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>        (void)time_ms;</div>
+<div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>    }</div>
+</div>
+<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span> </div>
+<div class="foldopen" id="foldopen01652" data-start="{" data-end="}">
+<div class="line"><a id="l01652" name="l01652"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a994346eafde57759295feccb224139b1"> 1652</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a994346eafde57759295feccb224139b1">onLocalRecorderStatus</a>(<a class="code hl_enumeration" href="namespacenertc.html#a1f491126bd2bb58be5912b9dff0759ad">NERtcLocalRecorderStatus</a> status, <span class="keyword">const</span> <span class="keywordtype">char</span>* task_id) {</div>
+<div class="line"><a id="l01653" name="l01653"></a><span class="lineno"> 1653</span>        (void)status;</div>
+<div class="line"><a id="l01654" name="l01654"></a><span class="lineno"> 1654</span>        (void)task_id;</div>
+<div class="line"><a id="l01655" name="l01655"></a><span class="lineno"> 1655</span>    }</div>
+</div>
+<div class="line"><a id="l01656" name="l01656"></a><span class="lineno"> 1656</span> </div>
+<div class="foldopen" id="foldopen01669" data-start="{" data-end="}">
+<div class="line"><a id="l01669" name="l01669"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae3edd5e3464a912e9a0e43c5f326fbf5"> 1669</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae3edd5e3464a912e9a0e43c5f326fbf5">onLocalRecorderError</a>(<a class="code hl_enumeration" href="namespacenertc.html#a1d870209bf11b70affea3891983a5bfc">NERtcLocalRecorderError</a> error, <span class="keyword">const</span> <span class="keywordtype">char</span>* task_id) {</div>
+<div class="line"><a id="l01670" name="l01670"></a><span class="lineno"> 1670</span>        (void)error;</div>
+<div class="line"><a id="l01671" name="l01671"></a><span class="lineno"> 1671</span>        (void)task_id;</div>
+<div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span>    }</div>
+</div>
+<div class="line"><a id="l01673" name="l01673"></a><span class="lineno"> 1673</span>  </div>
+<div class="foldopen" id="foldopen01705" data-start="{" data-end="}">
+<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a2b6b9377a15928ec24249278199e8d42"> 1705</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a2b6b9377a15928ec24249278199e8d42">onAsrCaptionStateChanged</a>(<a class="code hl_enumeration" href="namespacenertc.html#ac042e82e46edd17c73cb378979cb7435">NERtcAsrCaptionState</a> state, <span class="keywordtype">int</span> code, <span class="keyword">const</span> <span class="keywordtype">char</span>* message) {</div>
+<div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>      (void)state;</div>
+<div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span>      (void)code;</div>
+<div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>      (void)message;</div>
+<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>    }</div>
+</div>
+<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>  </div>
+<div class="foldopen" id="foldopen01740" data-start="{" data-end="}">
+<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#adf82bb032c38c1ce42ea7d8a663113ee"> 1740</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#adf82bb032c38c1ce42ea7d8a663113ee">onAsrCaptionResult</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structnertc_1_1_n_e_rtc_asr_caption_result.html">NERtcAsrCaptionResult</a> *results, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> result_count) {</div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>        (void)results;</div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>        (void)result_count;</div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>    }</div>
+</div>
+<div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>  </div>
+<div class="foldopen" id="foldopen01766" data-start="{" data-end="}">
+<div class="line"><a id="l01766" name="l01766"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9748bf9d8857e67ef82b0e409a3bd449"> 1766</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9748bf9d8857e67ef82b0e409a3bd449">onVoiceprintRegistrationResult</a>(<a class="code hl_enumeration" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> result, <span class="keyword">const</span> <a class="code hl_struct" href="structnertc_1_1_n_e_rtc_voiceprint_info.html">NERtcVoiceprintInfo</a>&amp; voiceprint_info) {</div>
+<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>      (void)result;</div>
+<div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>      (void)voiceprint_info;</div>
+<div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>    }</div>
+</div>
+<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>};</div>
+</div>
+<div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>} <span class="comment">// namespace nertc</span></div>
+<div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span> </div>
+<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html">nertc::IRtcEngineEventHandlerEx</a></div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:31</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a0437260f6aace77a05441d691e27ae7e"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a0437260f6aace77a05441d691e27ae7e">nertc::IRtcEngineEventHandlerEx::onLastmileQuality</a></div><div class="ttdeci">virtual void onLastmileQuality(NERtcNetworkQualityType quality)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1102</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a0e7a7260496fe6a10fabd5ecee1f2f07"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a0e7a7260496fe6a10fabd5ecee1f2f07">nertc::IRtcEngineEventHandlerEx::onFirstVideoFrameRender</a></div><div class="ttdeci">virtual void onFirstVideoFrameRender(NERtcVideoStreamType type, uid_t uid, uint32_t width, uint32_t height, uint64_t elapsed)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:587</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a1eabc3477df26bde007bcaf69bb19d0f"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a1eabc3477df26bde007bcaf69bb19d0f">nertc::IRtcEngineEventHandlerEx::onAudioRecording</a></div><div class="ttdeci">virtual void onAudioRecording(NERtcAudioRecordingCode code, const char *file_path)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:988</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a201d723da036d5d426c50e742f5525f0"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a201d723da036d5d426c50e742f5525f0">nertc::IRtcEngineEventHandlerEx::onFirstVideoFrameDecoded</a></div><div class="ttdeci">virtual void onFirstVideoFrameDecoded(uid_t uid, uint32_t width, uint32_t height)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:495</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a20e69e301bed98bf8737ef70c0596c3f"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a20e69e301bed98bf8737ef70c0596c3f">nertc::IRtcEngineEventHandlerEx::onLocalPublishFallbackToAudioOnly</a></div><div class="ttdeci">virtual void onLocalPublishFallbackToAudioOnly(bool is_fallback, NERtcVideoStreamType stream_type)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1054</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a2b6b9377a15928ec24249278199e8d42"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a2b6b9377a15928ec24249278199e8d42">nertc::IRtcEngineEventHandlerEx::onAsrCaptionStateChanged</a></div><div class="ttdeci">virtual void onAsrCaptionStateChanged(NERtcAsrCaptionState state, int code, const char *message)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1705</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a306d34928a341803fdd279e27f24fa66"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a306d34928a341803fdd279e27f24fa66">nertc::IRtcEngineEventHandlerEx::onMediaRightChange</a></div><div class="ttdeci">virtual void onMediaRightChange(bool is_audio_banned, bool is_video_banned)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1148</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a373a0d2e896ea07a4a727c7f9899f160"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a373a0d2e896ea07a4a727c7f9899f160">nertc::IRtcEngineEventHandlerEx::onRemoveLiveStreamTask</a></div><div class="ttdeci">virtual void onRemoveLiveStreamTask(const char *task_id, int error_code)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:895</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a37b650aac357124e1cf1626de38ad9f0"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a37b650aac357124e1cf1626de38ad9f0">nertc::IRtcEngineEventHandlerEx::onFirstAudioFrameDecoded</a></div><div class="ttdeci">virtual void onFirstAudioFrameDecoded(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:474</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a380c5c1fb4b00b0f5deed74ec11c3e45"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a380c5c1fb4b00b0f5deed74ec11c3e45">nertc::IRtcEngineEventHandlerEx::onStartPushStreaming</a></div><div class="ttdeci">virtual void onStartPushStreaming(NERtcErrorCode result, channel_id_t cid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1462</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a39351279a586979bc1ef25d10433894b"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a39351279a586979bc1ef25d10433894b">nertc::IRtcEngineEventHandlerEx::onAudioMixingStateChanged</a></div><div class="ttdeci">virtual void onAudioMixingStateChanged(NERtcAudioMixingState state, NERtcAudioMixingErrorCode error_code)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:674</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a396066fb82425ebf955e7956c625ca40"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a396066fb82425ebf955e7956c625ca40">nertc::IRtcEngineEventHandlerEx::onUserAudioMute</a></div><div class="ttdeci">virtual void onUserAudioMute(uid_t uid, bool mute)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:175</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a3d791701962ed5e7ebd81bda8fee1570"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3d791701962ed5e7ebd81bda8fee1570">nertc::IRtcEngineEventHandlerEx::onAudioHowling</a></div><div class="ttdeci">virtual void onAudioHowling(bool howling)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:950</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a3d7ffe02b45f0d60d9b077fdb7c412cb"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3d7ffe02b45f0d60d9b077fdb7c412cb">nertc::IRtcEngineEventHandlerEx::onPushStreamingReconnectedSuccess</a></div><div class="ttdeci">virtual void onPushStreamingReconnectedSuccess()</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1520</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a3fe2c727e6dc4e23c1047f3e31718855"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a3fe2c727e6dc4e23c1047f3e31718855">nertc::IRtcEngineEventHandlerEx::onRemoteSubscribeFallbackToAudioOnly</a></div><div class="ttdeci">virtual void onRemoteSubscribeFallbackToAudioOnly(uid_t uid, bool is_fallback, NERtcVideoStreamType stream_type)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1081</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4290cb9c42e73178ec5c8a5b6376c527"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4290cb9c42e73178ec5c8a5b6376c527">nertc::IRtcEngineEventHandlerEx::onFirstVideoFrameDecoded</a></div><div class="ttdeci">virtual void onFirstVideoFrameDecoded(NERtcVideoStreamType type, uid_t uid, uint32_t width, uint32_t height)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:540</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a43c7b0c38a3b0f2f08f7e6c9d249d972"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a43c7b0c38a3b0f2f08f7e6c9d249d972">nertc::IRtcEngineEventHandlerEx::onUserVideoMute</a></div><div class="ttdeci">virtual void onUserVideoMute(NERtcVideoStreamType videoStreamType, uid_t uid, bool mute)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:252</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4660af87cb062b1d5a238a61faf9a65e"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4660af87cb062b1d5a238a61faf9a65e">nertc::IRtcEngineEventHandlerEx::onFirstVideoDataReceived</a></div><div class="ttdeci">virtual void onFirstVideoDataReceived(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:346</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a48f88b74beb1db6d8ccbca5f079912ee"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a48f88b74beb1db6d8ccbca5f079912ee">nertc::IRtcEngineEventHandlerEx::onUserSubStreamVideoStart</a></div><div class="ttdeci">virtual void onUserSubStreamVideoStart(uid_t uid, NERtcVideoProfileType max_profile)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:48</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4c21a3a69a9ad33e2b6fe3b4c7927ed2"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4c21a3a69a9ad33e2b6fe3b4c7927ed2">nertc::IRtcEngineEventHandlerEx::onPermissionKeyWillExpire</a></div><div class="ttdeci">virtual void onPermissionKeyWillExpire()</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1241</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4e6ab72395627936258caa5a176654f9"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4e6ab72395627936258caa5a176654f9">nertc::IRtcEngineEventHandlerEx::onMediaRelayEvent</a></div><div class="ttdeci">virtual void onMediaRelayEvent(NERtcChannelMediaRelayEvent event, const char *channel_name, NERtcErrorCode error)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1028</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4ea2f5e0c01f66e0d37de838ce52437b"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4ea2f5e0c01f66e0d37de838ce52437b">nertc::IRtcEngineEventHandlerEx::onVideoDeviceStateChanged</a></div><div class="ttdeci">virtual void onVideoDeviceStateChanged(const char device_id[kNERtcMaxDeviceIDLength], NERtcVideoDeviceType device_type, NERtcVideoDeviceState device_state)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:312</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4ece42f3a553202b188a542ba554153d"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4ece42f3a553202b188a542ba554153d">nertc::IRtcEngineEventHandlerEx::onPlayStreamingStateChange</a></div><div class="ttdeci">virtual void onPlayStreamingStateChange(const char *stream_id, NERtcPlayStreamState state, NERtcErrorCode error)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1542</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a4f7132c17875c27e6759a93aea67b939"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a4f7132c17875c27e6759a93aea67b939">nertc::IRtcEngineEventHandlerEx::onLastmileProbeResult</a></div><div class="ttdeci">virtual void onLastmileProbeResult(const NERtcLastmileProbeResult &amp;result)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1122</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a51e871e3eb8f884f77e8f72001b0c6dd"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a51e871e3eb8f884f77e8f72001b0c6dd">nertc::IRtcEngineEventHandlerEx::onUpdateLiveStreamTask</a></div><div class="ttdeci">virtual void onUpdateLiveStreamTask(const char *task_id, const char *url, int error_code)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:871</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a55ebdb8ff6260ab71900a80bf13defe1"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a55ebdb8ff6260ab71900a80bf13defe1">nertc::IRtcEngineEventHandlerEx::onStopPushStreaming</a></div><div class="ttdeci">virtual void onStopPushStreaming(NERtcErrorCode result)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1482</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a5917377045d6151993c6866e28b40464"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a5917377045d6151993c6866e28b40464">nertc::IRtcEngineEventHandlerEx::onRemoteAudioVolumeIndication</a></div><div class="ttdeci">virtual void onRemoteAudioVolumeIndication(const NERtcAudioVolumeInfo *speakers, unsigned int speaker_number, int total_volume)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:819</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a59243fe41b7c71a9ea2daf1cc30f2fb0"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a59243fe41b7c71a9ea2daf1cc30f2fb0">nertc::IRtcEngineEventHandlerEx::onFirstVideoDataReceived</a></div><div class="ttdeci">virtual void onFirstVideoDataReceived(NERtcVideoStreamType type, uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:375</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a5a97f3127d454acee2cc24d91325308d"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a5a97f3127d454acee2cc24d91325308d">nertc::IRtcEngineEventHandlerEx::onVirtualBackgroundSourceEnabled</a></div><div class="ttdeci">virtual void onVirtualBackgroundSourceEnabled(bool enabled, NERtcVirtualBackgroundSourceStateReason reason)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1194</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a60d718a50c283ed5af42be80daa4a40c"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a60d718a50c283ed5af42be80daa4a40c">nertc::IRtcEngineEventHandlerEx::onUserDataStateChanged</a></div><div class="ttdeci">virtual void onUserDataStateChanged(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1347</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a61d841ebbd67b931baef7508b49ec467"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a61d841ebbd67b931baef7508b49ec467">nertc::IRtcEngineEventHandlerEx::onCaptureVideoFrame2</a></div><div class="ttdeci">virtual void onCaptureVideoFrame2(const NERtcVideoCallbackFrame &amp;frame)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:650</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a620db38063c0589fa006c9cb9b085a8a"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a620db38063c0589fa006c9cb9b085a8a">nertc::IRtcEngineEventHandlerEx::onUserDataReceiveMessage</a></div><div class="ttdeci">virtual void onUserDataReceiveMessage(uid_t uid, void *pData, uint64_t size)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1301</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a6420c5b388e314a2933e7f33333d6a52"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a6420c5b388e314a2933e7f33333d6a52">nertc::IRtcEngineEventHandlerEx::onPlayStreamingReceiveSeiMessage</a></div><div class="ttdeci">virtual void onPlayStreamingReceiveSeiMessage(const char *stream_id, const char *message)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1566</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a662fa013d310d9782d07130bcaef9981"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a662fa013d310d9782d07130bcaef9981">nertc::IRtcEngineEventHandlerEx::onCheckNECastAudioDriverResult</a></div><div class="ttdeci">virtual void onCheckNECastAudioDriverResult(NERtcInstallCastAudioDriverResult result)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1165</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a69ce2bfa8f0cec24dfabae2751cbf3d8"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a69ce2bfa8f0cec24dfabae2751cbf3d8">nertc::IRtcEngineEventHandlerEx::onAudioEffectFinished</a></div><div class="ttdeci">virtual void onAudioEffectFinished(uint32_t effect_id)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:746</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a751d63d82944233eb1077ebce7c586eb"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a751d63d82944233eb1077ebce7c586eb">nertc::IRtcEngineEventHandlerEx::onAiData</a></div><div class="ttdeci">virtual void onAiData(const char *type, const char *data)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1389</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a758b7b32a196ba57a1d658514fdc52a9"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a758b7b32a196ba57a1d658514fdc52a9">nertc::IRtcEngineEventHandlerEx::onLocalAudioVolumeIndication</a></div><div class="ttdeci">virtual void onLocalAudioVolumeIndication(int volume, bool enable_vad)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:790</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a75985ef198f86e40ee910d54ba192ca8"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a75985ef198f86e40ee910d54ba192ca8">nertc::IRtcEngineEventHandlerEx::onAudioDefaultDeviceChanged</a></div><div class="ttdeci">virtual void onAudioDefaultDeviceChanged(const char device_id[kNERtcMaxDeviceIDLength], NERtcAudioDeviceType device_type)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:292</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a75d69b0fcc3610e7f80728add644b0b4"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a75d69b0fcc3610e7f80728add644b0b4">nertc::IRtcEngineEventHandlerEx::onPlayStreamingDuration</a></div><div class="ttdeci">virtual void onPlayStreamingDuration(const char *stream_id, int64_t total_duration_s, int64_t current_pts_s)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1611</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a7649a71ffa815cecde17836facd0834a"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7649a71ffa815cecde17836facd0834a">nertc::IRtcEngineEventHandlerEx::onScreenCaptureStatus</a></div><div class="ttdeci">virtual void onScreenCaptureStatus(NERtcScreenCaptureStatus status)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:93</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a7a6c0e71fee59b50488367193581dcee"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7a6c0e71fee59b50488367193581dcee">nertc::IRtcEngineEventHandlerEx::onLocalAudioVolumeIndication</a></div><div class="ttdeci">virtual void onLocalAudioVolumeIndication(int volume)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:768</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a7ae085dd56871d5f27abc6498c02d6ac"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a7ae085dd56871d5f27abc6498c02d6ac">nertc::IRtcEngineEventHandlerEx::onRecvSEIMsg</a></div><div class="ttdeci">virtual void onRecvSEIMsg(uid_t uid, const char *data, uint32_t dataSize)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:970</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a8a48c702016e6a3c0d293f1ff0babd21"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a8a48c702016e6a3c0d293f1ff0babd21">nertc::IRtcEngineEventHandlerEx::onLocalVideoRenderSizeChanged</a></div><div class="ttdeci">virtual void onLocalVideoRenderSizeChanged(NERtcVideoStreamType type, uint32_t width, uint32_t height)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:458</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a90017fb1ffa97b1545c4bb3c3e264452"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a90017fb1ffa97b1545c4bb3c3e264452">nertc::IRtcEngineEventHandlerEx::onUserDataStop</a></div><div class="ttdeci">virtual void onUserDataStop(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1333</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a930d21feabc51faa24a18f03757b1753"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a930d21feabc51faa24a18f03757b1753">nertc::IRtcEngineEventHandlerEx::onUserDataStart</a></div><div class="ttdeci">virtual void onUserDataStart(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1319</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a9748bf9d8857e67ef82b0e409a3bd449"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9748bf9d8857e67ef82b0e409a3bd449">nertc::IRtcEngineEventHandlerEx::onVoiceprintRegistrationResult</a></div><div class="ttdeci">virtual void onVoiceprintRegistrationResult(NERtcErrorCode result, const NERtcVoiceprintInfo &amp;voiceprint_info)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1766</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a98d0770e5d6981422560185899cd63fd"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a98d0770e5d6981422560185899cd63fd">nertc::IRtcEngineEventHandlerEx::onAudioEffectTimestampUpdate</a></div><div class="ttdeci">virtual void onAudioEffectTimestampUpdate(uint32_t effect_id, uint64_t timestamp_ms)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:729</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a994346eafde57759295feccb224139b1"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a994346eafde57759295feccb224139b1">nertc::IRtcEngineEventHandlerEx::onLocalRecorderStatus</a></div><div class="ttdeci">virtual void onLocalRecorderStatus(NERtcLocalRecorderStatus status, const char *task_id)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1652</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a9a68c5f1b99c3f79e3fc06bfb00ab69f"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9a68c5f1b99c3f79e3fc06bfb00ab69f">nertc::IRtcEngineEventHandlerEx::onPushStreamingChangeToReconnecting</a></div><div class="ttdeci">virtual void onPushStreamingChangeToReconnecting(NERtcErrorCode reason)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1502</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_a9b712397ae3070f32b7c6e984a25be3f"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#a9b712397ae3070f32b7c6e984a25be3f">nertc::IRtcEngineEventHandlerEx::onAudioDeviceStateChanged</a></div><div class="ttdeci">virtual void onAudioDeviceStateChanged(const char device_id[kNERtcMaxDeviceIDLength], NERtcAudioDeviceType device_type, NERtcAudioDeviceState device_state)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:272</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ab8c4d3c3a2d3f695200694ab3805dd62"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ab8c4d3c3a2d3f695200694ab3805dd62">nertc::IRtcEngineEventHandlerEx::onMediaRelayStateChanged</a></div><div class="ttdeci">virtual void onMediaRelayStateChanged(NERtcChannelMediaRelayState state, const char *channel_name)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1007</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_aba53fc5c94b82af9f477b463584c6f2f"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aba53fc5c94b82af9f477b463584c6f2f">nertc::IRtcEngineEventHandlerEx::onLiveStreamState</a></div><div class="ttdeci">virtual void onLiveStreamState(const char *task_id, const char *url, NERtcLiveStreamStateCode state)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:922</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_abbeaf66b26926389fef32eb6cb2ec4bc"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abbeaf66b26926389fef32eb6cb2ec4bc">nertc::IRtcEngineEventHandlerEx::onUpdatePermissionKey</a></div><div class="ttdeci">virtual void onUpdatePermissionKey(const char *key, NERtcErrorCode error, int timeout)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1281</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_abee8de5ba478662532cdaeb97df0ce3f"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abee8de5ba478662532cdaeb97df0ce3f">nertc::IRtcEngineEventHandlerEx::onUserSubStreamAudioStop</a></div><div class="ttdeci">virtual void onUserSubStreamAudioStop(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:159</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_abf09442bb44e42d300bcae8a1b21aaa3"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#abf09442bb44e42d300bcae8a1b21aaa3">nertc::IRtcEngineEventHandlerEx::onUserSubStreamVideoStop</a></div><div class="ttdeci">virtual void onUserSubStreamVideoStop(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:69</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ac1418d6c90ad80c1b21781e75917528d"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac1418d6c90ad80c1b21781e75917528d">nertc::IRtcEngineEventHandlerEx::onPlayStreamingFirstAudioFramePlayed</a></div><div class="ttdeci">virtual void onPlayStreamingFirstAudioFramePlayed(const char *stream_id, int64_t time_ms)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1635</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ac25ac6d99552bad5df1230f95dd4fa41"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac25ac6d99552bad5df1230f95dd4fa41">nertc::IRtcEngineEventHandlerEx::onUserSubStreamAudioStart</a></div><div class="ttdeci">virtual void onUserSubStreamAudioStart(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:144</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ac62b4496eee82ab491a0a974817c9fc1"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac62b4496eee82ab491a0a974817c9fc1">nertc::IRtcEngineEventHandlerEx::onUserSubStreamAudioMute</a></div><div class="ttdeci">virtual void onUserSubStreamAudioMute(uid_t uid, bool mute)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:197</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ac7e5ac9ae38cd3299cc71a73e17f42ac"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac7e5ac9ae38cd3299cc71a73e17f42ac">nertc::IRtcEngineEventHandlerEx::onUserVideoMute</a></div><div class="ttdeci">virtual void onUserVideoMute(uid_t uid, bool mute)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:217</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ac87b9ec9ac76cec6583abb9bf8b121b2"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ac87b9ec9ac76cec6583abb9bf8b121b2">nertc::IRtcEngineEventHandlerEx::onAddLiveStreamTask</a></div><div class="ttdeci">virtual void onAddLiveStreamTask(const char *task_id, const char *url, int error_code)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:845</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_acccba0b1d594a22ea2ed2654bf0cf3ed"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acccba0b1d594a22ea2ed2654bf0cf3ed">nertc::IRtcEngineEventHandlerEx::onLabFeatureCallback</a></div><div class="ttdeci">virtual void onLabFeatureCallback(const char *key, const char *param)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1376</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_acfa16ac460dbc24ba702a6da705cb665"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acfa16ac460dbc24ba702a6da705cb665">nertc::IRtcEngineEventHandlerEx::onFirstAudioDataReceived</a></div><div class="ttdeci">virtual void onFirstAudioDataReceived(uid_t uid)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:330</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_acff5c56e9b620b86d33db3a827783279"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#acff5c56e9b620b86d33db3a827783279">nertc::IRtcEngineEventHandlerEx::onLocalVideoWatermarkState</a></div><div class="ttdeci">virtual void onLocalVideoWatermarkState(NERtcVideoStreamType videoStreamType, NERtcLocalVideoWatermarkState state)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1215</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ad0423dae090d924f82a8765bacca3365"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad0423dae090d924f82a8765bacca3365">nertc::IRtcEngineEventHandlerEx::onCaptureVideoFrame</a></div><div class="ttdeci">virtual void onCaptureVideoFrame(void *data, NERtcVideoType type, uint32_t width, uint32_t height, uint32_t count, uint32_t offset[kNERtcMaxPlaneCount], uint32_t stride[kNERtcMaxPlaneCount], NERtcVideoRotation rotation)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:621</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ad259b5769a5ba48b58643480faca79bc"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad259b5769a5ba48b58643480faca79bc">nertc::IRtcEngineEventHandlerEx::onAudioMixingTimestampUpdate</a></div><div class="ttdeci">virtual void onAudioMixingTimestampUpdate(uint64_t timestamp_ms)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:691</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ad69f92ef009fc490103c404ffa25f248"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad69f92ef009fc490103c404ffa25f248">nertc::IRtcEngineEventHandlerEx::onNetworkConnectionTypeChanged</a></div><div class="ttdeci">virtual void onNetworkConnectionTypeChanged(NERtcNetworkConnectionType newConnectionType)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1406</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ad803d572bf43f61ab9e1e3d1adc032f3"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ad803d572bf43f61ab9e1e3d1adc032f3">nertc::IRtcEngineEventHandlerEx::onPlayStreamingFirstVideoFrameRender</a></div><div class="ttdeci">virtual void onPlayStreamingFirstVideoFrameRender(const char *stream_id, int64_t time_ms, uint32_t width, uint32_t height)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1593</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_adf82bb032c38c1ce42ea7d8a663113ee"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#adf82bb032c38c1ce42ea7d8a663113ee">nertc::IRtcEngineEventHandlerEx::onAsrCaptionResult</a></div><div class="ttdeci">virtual void onAsrCaptionResult(const NERtcAsrCaptionResult *results, unsigned int result_count)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1740</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ae1258721f277ca0c39fc546bb595a50c"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae1258721f277ca0c39fc546bb595a50c">nertc::IRtcEngineEventHandlerEx::onRemoteVideoReceiveSizeChanged</a></div><div class="ttdeci">virtual void onRemoteVideoReceiveSizeChanged(uid_t uid, NERtcVideoStreamType type, uint32_t width, uint32_t height)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:418</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ae3edd5e3464a912e9a0e43c5f326fbf5"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae3edd5e3464a912e9a0e43c5f326fbf5">nertc::IRtcEngineEventHandlerEx::onLocalRecorderError</a></div><div class="ttdeci">virtual void onLocalRecorderError(NERtcLocalRecorderError error, const char *task_id)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1669</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_ae4105f8e752f4ee92e8d2d881ac829e5"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#ae4105f8e752f4ee92e8d2d881ac829e5">nertc::IRtcEngineEventHandlerEx::onUserDataBufferedAmountChanged</a></div><div class="ttdeci">virtual void onUserDataBufferedAmountChanged(uid_t uid, uint64_t previousAmount)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:1363</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_af2cfb6dffae443600117bd0602f37792"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#af2cfb6dffae443600117bd0602f37792">nertc::IRtcEngineEventHandlerEx::onUserVideoProfileUpdate</a></div><div class="ttdeci">virtual void onUserVideoProfileUpdate(uid_t uid, NERtcVideoProfileType max_profile)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:128</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_ex_html_aff907bc7b9ebd74f5f25656b6f3246f7"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aff907bc7b9ebd74f5f25656b6f3246f7">nertc::IRtcEngineEventHandlerEx::onScreenCaptureSourceDataUpdate</a></div><div class="ttdeci">virtual void onScreenCaptureSourceDataUpdate(NERtcScreenCaptureSourceData data)</div><div class="ttdef"><b>定义</b> nertc_engine_event_handler_ex.h:113</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_engine_event_handler_html"><div class="ttname"><a href="classnertc_1_1_i_rtc_engine_event_handler.html">nertc::IRtcEngineEventHandler</a></div><div class="ttdef"><b>定义</b> nertc_engine_event_handler.h:33</div></div>
+<div class="ttc" id="anamespacenertc_html"><div class="ttname"><a href="namespacenertc.html">nertc</a></div><div class="ttdoc">namespace nertc</div></div>
+<div class="ttc" id="anamespacenertc_html_a14a4bd97dafec1f6c2005e3898b4dad4"><div class="ttname"><a href="namespacenertc.html#a14a4bd97dafec1f6c2005e3898b4dad4">nertc::NERtcLocalVideoWatermarkState</a></div><div class="ttdeci">NERtcLocalVideoWatermarkState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:6794</div></div>
+<div class="ttc" id="anamespacenertc_html_a1bc71bd291b2e19f06880cbfb22afd54"><div class="ttname"><a href="namespacenertc.html#a1bc71bd291b2e19f06880cbfb22afd54">nertc::NERtcAudioDeviceState</a></div><div class="ttdeci">NERtcAudioDeviceState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:2118</div></div>
+<div class="ttc" id="anamespacenertc_html_a1d870209bf11b70affea3891983a5bfc"><div class="ttname"><a href="namespacenertc.html#a1d870209bf11b70affea3891983a5bfc">nertc::NERtcLocalRecorderError</a></div><div class="ttdeci">NERtcLocalRecorderError</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:9467</div></div>
+<div class="ttc" id="anamespacenertc_html_a1f491126bd2bb58be5912b9dff0759ad"><div class="ttname"><a href="namespacenertc.html#a1f491126bd2bb58be5912b9dff0759ad">nertc::NERtcLocalRecorderStatus</a></div><div class="ttdeci">NERtcLocalRecorderStatus</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:9406</div></div>
+<div class="ttc" id="anamespacenertc_html_a2483ed52faf5e197a9b78044ab3642a8"><div class="ttname"><a href="namespacenertc.html#a2483ed52faf5e197a9b78044ab3642a8">nertc::NERtcNetworkConnectionType</a></div><div class="ttdeci">NERtcNetworkConnectionType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:2768</div></div>
+<div class="ttc" id="anamespacenertc_html_a270ec48c1ecb1976d061b9c41f1b94d1"><div class="ttname"><a href="namespacenertc.html#a270ec48c1ecb1976d061b9c41f1b94d1">nertc::NERtcChannelMediaRelayState</a></div><div class="ttdeci">NERtcChannelMediaRelayState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:6567</div></div>
+<div class="ttc" id="anamespacenertc_html_a41429a38d9c4e87dad27dcebc0322264"><div class="ttname"><a href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">nertc::NERtcVideoStreamType</a></div><div class="ttdeci">NERtcVideoStreamType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:6430</div></div>
+<div class="ttc" id="anamespacenertc_html_a6a5a1e2b00ac2833758344938122b4c8"><div class="ttname"><a href="namespacenertc.html#a6a5a1e2b00ac2833758344938122b4c8">nertc::NERtcAudioDeviceType</a></div><div class="ttdeci">NERtcAudioDeviceType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:2080</div></div>
+<div class="ttc" id="anamespacenertc_html_a6af385d971f538ddd7b5ee227ca4a451"><div class="ttname"><a href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">nertc::uid_t</a></div><div class="ttdeci">uint64_t uid_t</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:192</div></div>
+<div class="ttc" id="anamespacenertc_html_a7ffb459b161a5d4ca72e6916d8d832ea"><div class="ttname"><a href="namespacenertc.html#a7ffb459b161a5d4ca72e6916d8d832ea">nertc::NERtcVideoRotation</a></div><div class="ttdeci">NERtcVideoRotation</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:5790</div></div>
+<div class="ttc" id="anamespacenertc_html_a80b32c4c5cf6f4a36dbe6650ae859058"><div class="ttname"><a href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">nertc::NERtcVideoProfileType</a></div><div class="ttdeci">NERtcVideoProfileType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:1966</div></div>
+<div class="ttc" id="anamespacenertc_html_a86b863a0b586ebd76802f7d7433ec68e"><div class="ttname"><a href="namespacenertc.html#a86b863a0b586ebd76802f7d7433ec68e">nertc::NERtcAudioMixingErrorCode</a></div><div class="ttdeci">NERtcAudioMixingErrorCode</div><div class="ttdef"><b>定义</b> nertc_error_code.h:968</div></div>
+<div class="ttc" id="anamespacenertc_html_a938170cf2c79b8c6c704665f6fb847a2"><div class="ttname"><a href="namespacenertc.html#a938170cf2c79b8c6c704665f6fb847a2">nertc::NERtcVideoDeviceState</a></div><div class="ttdeci">NERtcVideoDeviceState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:2412</div></div>
+<div class="ttc" id="anamespacenertc_html_a9429bf722d00ff713ef6a1127ea6dfe5"><div class="ttname"><a href="namespacenertc.html#a9429bf722d00ff713ef6a1127ea6dfe5">nertc::NERtcPlayStreamState</a></div><div class="ttdeci">NERtcPlayStreamState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:10054</div></div>
+<div class="ttc" id="anamespacenertc_html_aaaa4beba87563ce6db3aa78ee2acd2b9"><div class="ttname"><a href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">nertc::channel_id_t</a></div><div class="ttdeci">uint64_t channel_id_t</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:201</div></div>
+<div class="ttc" id="anamespacenertc_html_ab64601b9bac6ae15cdd9684d6febaf7d"><div class="ttname"><a href="namespacenertc.html#ab64601b9bac6ae15cdd9684d6febaf7d">nertc::NERtcScreenCaptureStatus</a></div><div class="ttdeci">NERtcScreenCaptureStatus</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:4441</div></div>
+<div class="ttc" id="anamespacenertc_html_ac042e82e46edd17c73cb378979cb7435"><div class="ttname"><a href="namespacenertc.html#ac042e82e46edd17c73cb378979cb7435">nertc::NERtcAsrCaptionState</a></div><div class="ttdeci">NERtcAsrCaptionState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:9870</div></div>
+<div class="ttc" id="anamespacenertc_html_acf948919b1f4d6c1b7b3e9508576eadc"><div class="ttname"><a href="namespacenertc.html#acf948919b1f4d6c1b7b3e9508576eadc">nertc::NERtcVideoType</a></div><div class="ttdeci">NERtcVideoType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:5716</div></div>
+<div class="ttc" id="anamespacenertc_html_ad3fe8df2fe00338ae7a4084f8d145d92"><div class="ttname"><a href="namespacenertc.html#ad3fe8df2fe00338ae7a4084f8d145d92">nertc::NERtcAudioRecordingCode</a></div><div class="ttdeci">NERtcAudioRecordingCode</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:7775</div></div>
+<div class="ttc" id="anamespacenertc_html_ad52f36084af53caa662c94d540aec88d"><div class="ttname"><a href="namespacenertc.html#ad52f36084af53caa662c94d540aec88d">nertc::NERtcNetworkQualityType</a></div><div class="ttdeci">NERtcNetworkQualityType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:3809</div></div>
+<div class="ttc" id="anamespacenertc_html_ade423c05860a21fe0186143d13aa4882"><div class="ttname"><a href="namespacenertc.html#ade423c05860a21fe0186143d13aa4882">nertc::NERtcLiveStreamStateCode</a></div><div class="ttdeci">NERtcLiveStreamStateCode</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:1132</div></div>
+<div class="ttc" id="anamespacenertc_html_ae41a3fbc14fc1f88f967f63d732580f6"><div class="ttname"><a href="namespacenertc.html#ae41a3fbc14fc1f88f967f63d732580f6">nertc::NERtcVirtualBackgroundSourceStateReason</a></div><div class="ttdeci">NERtcVirtualBackgroundSourceStateReason</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:8233</div></div>
+<div class="ttc" id="anamespacenertc_html_ae888ac7ceef2170bfbdcac9f5bc32615"><div class="ttname"><a href="namespacenertc.html#ae888ac7ceef2170bfbdcac9f5bc32615">nertc::NERtcInstallCastAudioDriverResult</a></div><div class="ttdeci">NERtcInstallCastAudioDriverResult</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:8193</div></div>
+<div class="ttc" id="anamespacenertc_html_ae9d6f38c518cda0c5fdf0d72f5cdcf67"><div class="ttname"><a href="namespacenertc.html#ae9d6f38c518cda0c5fdf0d72f5cdcf67">nertc::NERtcAudioMixingState</a></div><div class="ttdeci">NERtcAudioMixingState</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:6152</div></div>
+<div class="ttc" id="anamespacenertc_html_af062cfe332d58922ac8c020d55f9bb17"><div class="ttname"><a href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">nertc::NERtcErrorCode</a></div><div class="ttdeci">NERtcErrorCode</div><div class="ttdef"><b>定义</b> nertc_error_code.h:26</div></div>
+<div class="ttc" id="anamespacenertc_html_af2ffb8c688fb78e39d09d2a7ba56d91a"><div class="ttname"><a href="namespacenertc.html#af2ffb8c688fb78e39d09d2a7ba56d91a">nertc::NERtcVideoDeviceType</a></div><div class="ttdeci">NERtcVideoDeviceType</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:2383</div></div>
+<div class="ttc" id="anamespacenertc_html_afa9cd00eec70185b8b6b861aa7f5d2a3"><div class="ttname"><a href="namespacenertc.html#afa9cd00eec70185b8b6b861aa7f5d2a3">nertc::NERtcChannelMediaRelayEvent</a></div><div class="ttdeci">NERtcChannelMediaRelayEvent</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:6614</div></div>
+<div class="ttc" id="anertc__engine__defines_8h_html"><div class="ttname"><a href="nertc__engine__defines_8h.html">nertc_engine_defines.h</a></div><div class="ttdoc">NERtc SDK definitions.</div></div>
+<div class="ttc" id="anertc__engine__defines_8h_html_a76ef604eed659f0042b2f7814fee3500"><div class="ttname"><a href="nertc__engine__defines_8h.html#a76ef604eed659f0042b2f7814fee3500">kNERtcMaxPlaneCount</a></div><div class="ttdeci">#define kNERtcMaxPlaneCount</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:28</div></div>
+<div class="ttc" id="anertc__engine__defines_8h_html_a96b3556041bc59d27f5ad3e20579e473"><div class="ttname"><a href="nertc__engine__defines_8h.html#a96b3556041bc59d27f5ad3e20579e473">kNERtcMaxDeviceIDLength</a></div><div class="ttdeci">#define kNERtcMaxDeviceIDLength</div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:70</div></div>
+<div class="ttc" id="anertc__engine__event__handler_8h_html"><div class="ttname"><a href="nertc__engine__event__handler_8h.html">nertc_engine_event_handler.h</a></div><div class="ttdoc">The interface header file of expansion callback of the NERTC SDK. All parameter descriptions of the N...</div></div>
+<div class="ttc" id="astructnertc_1_1_n_e_rtc_asr_caption_result_html"><div class="ttname"><a href="structnertc_1_1_n_e_rtc_asr_caption_result.html">nertc::NERtcAsrCaptionResult</a></div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:9985</div></div>
+<div class="ttc" id="astructnertc_1_1_n_e_rtc_audio_volume_info_html"><div class="ttname"><a href="structnertc_1_1_n_e_rtc_audio_volume_info.html">nertc::NERtcAudioVolumeInfo</a></div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:2903</div></div>
+<div class="ttc" id="astructnertc_1_1_n_e_rtc_lastmile_probe_result_html"><div class="ttname"><a href="structnertc_1_1_n_e_rtc_lastmile_probe_result.html">nertc::NERtcLastmileProbeResult</a></div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:8125</div></div>
+<div class="ttc" id="astructnertc_1_1_n_e_rtc_screen_capture_source_data_html"><div class="ttname"><a href="structnertc_1_1_n_e_rtc_screen_capture_source_data.html">nertc::NERtcScreenCaptureSourceData</a></div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:4632</div></div>
+<div class="ttc" id="astructnertc_1_1_n_e_rtc_video_callback_frame_html"><div class="ttname"><a href="structnertc_1_1_n_e_rtc_video_callback_frame.html">nertc::NERtcVideoCallbackFrame</a></div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:4337</div></div>
+<div class="ttc" id="astructnertc_1_1_n_e_rtc_voiceprint_info_html"><div class="ttname"><a href="structnertc_1_1_n_e_rtc_voiceprint_info.html">nertc::NERtcVoiceprintInfo</a></div><div class="ttdef"><b>定义</b> nertc_engine_defines.h:10194</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
