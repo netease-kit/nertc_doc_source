@@ -1,6 +1,8 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
   "projectTitle": "NERTC SDK",
+  "url": "https://context7.com/mingyuanqi/nertc_doc_source",
+  "public_key": "loading...",
   "description": "NetEase Real-Time Communication SDK - Comprehensive guides for integrating audio/video communication into your applications across multiple platforms",
   "folders": [
     "guides/",
