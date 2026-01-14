@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IAudioDeviceNative类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.html">IAudioDeviceNative</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_audio_device_native-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IAudioDeviceNative类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 nertc.wwiseplugin.IAudioDeviceNative 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1wwiseplugin_1_1_i_audio_device_native.png" usemap="#nertc.wwiseplugin.IAudioDeviceNative_map" alt=""/>
+  <map id="nertc.wwiseplugin.IAudioDeviceNative_map" name="nertc.wwiseplugin.IAudioDeviceNative_map">
+<area href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager.html" alt="nertc.wwiseplugin.IAudioDeviceManager" shape="rect" coords="0,56,244,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a535bf858ca38a90d4132885ced58c211" id="r_a535bf858ca38a90d4132885ced58c211"><td class="memItemLeft" align="right" valign="top">static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a535bf858ca38a90d4132885ced58c211">enumerateRecordDevices</a> ()</td></tr>
+<tr class="separator:a535bf858ca38a90d4132885ced58c211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87263eb8d77937239dfd6692d92423d7" id="r_a87263eb8d77937239dfd6692d92423d7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87263eb8d77937239dfd6692d92423d7">setRecordDevice</a> (string device_id)</td></tr>
+<tr class="separator:a87263eb8d77937239dfd6692d92423d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253302b3e4affc9e4978098d7e008502" id="r_a253302b3e4affc9e4978098d7e008502"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a253302b3e4affc9e4978098d7e008502">getRecordDevice</a> ([MarshalAs(UnmanagedType.LPStr, SizeConst=256)]StringBuilder device_id)</td></tr>
+<tr class="separator:a253302b3e4affc9e4978098d7e008502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303c9a0679064eab4075ac8bf496af54" id="r_a303c9a0679064eab4075ac8bf496af54"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a303c9a0679064eab4075ac8bf496af54">setRecordDeviceVolume</a> (uint volume)</td></tr>
+<tr class="separator:a303c9a0679064eab4075ac8bf496af54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad918cd5106d3d7636893627bdd25b270" id="r_ad918cd5106d3d7636893627bdd25b270"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad918cd5106d3d7636893627bdd25b270">getRecordDeviceVolume</a> (ref uint volume)</td></tr>
+<tr class="separator:ad918cd5106d3d7636893627bdd25b270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f0e1d62c8528e1f5acef80ec577558" id="r_ab5f0e1d62c8528e1f5acef80ec577558"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f0e1d62c8528e1f5acef80ec577558">setRecordDeviceMute</a> (bool mute)</td></tr>
+<tr class="separator:ab5f0e1d62c8528e1f5acef80ec577558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8226dee4d560359254914c27a1d9e3a" id="r_ae8226dee4d560359254914c27a1d9e3a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8226dee4d560359254914c27a1d9e3a">getRecordDeviceMute</a> (ref bool mute)</td></tr>
+<tr class="separator:ae8226dee4d560359254914c27a1d9e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1bd8d78bca98725f9dae25102ba83f" id="r_abb1bd8d78bca98725f9dae25102ba83f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb1bd8d78bca98725f9dae25102ba83f">startRecordDeviceTest</a> (ulong indication_interval)</td></tr>
+<tr class="separator:abb1bd8d78bca98725f9dae25102ba83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4573c898d96226a8c5c60ed36a38c80" id="r_ad4573c898d96226a8c5c60ed36a38c80"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4573c898d96226a8c5c60ed36a38c80">stopRecordDeviceTest</a> ()</td></tr>
+<tr class="separator:ad4573c898d96226a8c5c60ed36a38c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8feb4a9805ae14db8d2c8e4683d1603" id="r_ae8feb4a9805ae14db8d2c8e4683d1603"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8feb4a9805ae14db8d2c8e4683d1603">startAudioDeviceLoopbackTest</a> (ulong indication_interval)</td></tr>
+<tr class="separator:ae8feb4a9805ae14db8d2c8e4683d1603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75993c131c4351801a51ff7f8626b08b" id="r_a75993c131c4351801a51ff7f8626b08b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75993c131c4351801a51ff7f8626b08b">stopAudioDeviceLoopbackTest</a> ()</td></tr>
+<tr class="separator:a75993c131c4351801a51ff7f8626b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a535bf858ca38a90d4132885ced58c211" name="a535bf858ca38a90d4132885ced58c211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535bf858ca38a90d4132885ced58c211">&#9670;&#160;</a></span>enumerateRecordDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IntPtr nertc.wwiseplugin.IAudioDeviceNative.enumerateRecordDevices </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a253302b3e4affc9e4978098d7e008502" name="a253302b3e4affc9e4978098d7e008502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253302b3e4affc9e4978098d7e008502">&#9670;&#160;</a></span>getRecordDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.getRecordDevice </td>
+          <td>(</td>
+          <td class="paramtype">[MarshalAs(UnmanagedType.LPStr, SizeConst=256)] StringBuilder</td>          <td class="paramname"><span class="paramname"><em>device_id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8226dee4d560359254914c27a1d9e3a" name="ae8226dee4d560359254914c27a1d9e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8226dee4d560359254914c27a1d9e3a">&#9670;&#160;</a></span>getRecordDeviceMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.getRecordDeviceMute </td>
+          <td>(</td>
+          <td class="paramtype">ref bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad918cd5106d3d7636893627bdd25b270" name="ad918cd5106d3d7636893627bdd25b270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad918cd5106d3d7636893627bdd25b270">&#9670;&#160;</a></span>getRecordDeviceVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.getRecordDeviceVolume </td>
+          <td>(</td>
+          <td class="paramtype">ref uint</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87263eb8d77937239dfd6692d92423d7" name="a87263eb8d77937239dfd6692d92423d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87263eb8d77937239dfd6692d92423d7">&#9670;&#160;</a></span>setRecordDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.setRecordDevice </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>device_id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5f0e1d62c8528e1f5acef80ec577558" name="ab5f0e1d62c8528e1f5acef80ec577558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f0e1d62c8528e1f5acef80ec577558">&#9670;&#160;</a></span>setRecordDeviceMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.setRecordDeviceMute </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a303c9a0679064eab4075ac8bf496af54" name="a303c9a0679064eab4075ac8bf496af54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303c9a0679064eab4075ac8bf496af54">&#9670;&#160;</a></span>setRecordDeviceVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.setRecordDeviceVolume </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8feb4a9805ae14db8d2c8e4683d1603" name="ae8feb4a9805ae14db8d2c8e4683d1603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8feb4a9805ae14db8d2c8e4683d1603">&#9670;&#160;</a></span>startAudioDeviceLoopbackTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.startAudioDeviceLoopbackTest </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>indication_interval</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb1bd8d78bca98725f9dae25102ba83f" name="abb1bd8d78bca98725f9dae25102ba83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1bd8d78bca98725f9dae25102ba83f">&#9670;&#160;</a></span>startRecordDeviceTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.startRecordDeviceTest </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>indication_interval</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75993c131c4351801a51ff7f8626b08b" name="a75993c131c4351801a51ff7f8626b08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75993c131c4351801a51ff7f8626b08b">&#9670;&#160;</a></span>stopAudioDeviceLoopbackTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.stopAudioDeviceLoopbackTest </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4573c898d96226a8c5c60ed36a38c80" name="ad4573c898d96226a8c5c60ed36a38c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4573c898d96226a8c5c60ed36a38c80">&#9670;&#160;</a></span>stopRecordDeviceTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IAudioDeviceNative.stopRecordDeviceTest </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/native/<a class="el" href="_rtc_engine_native_8cs.html">RtcEngineNative.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

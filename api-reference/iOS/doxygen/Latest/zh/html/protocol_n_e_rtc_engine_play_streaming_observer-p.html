@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: &lt;NERtcEnginePlayStreamingObserver&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">实例方法</a> &#124;
+<a href="protocol_n_e_rtc_engine_play_streaming_observer-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;NERtcEnginePlayStreamingObserver&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_delegate_8h_source.html">NERtcEngineDelegate.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;NERtcEnginePlayStreamingObserver&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_n_e_rtc_engine_play_streaming_observer-p.png" usemap="#_3CNERtcEnginePlayStreamingObserver_3E_map" alt=""/>
+  <map id="_3CNERtcEnginePlayStreamingObserver_3E_map" name="_3CNERtcEnginePlayStreamingObserver_3E_map">
+<area href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。" alt="&lt;NERtcEngineDelegateEx&gt;" shape="rect" coords="0,112,235,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+实例方法</h2></td></tr>
+<tr class="memitem:a98383615e0551a72aa48a99e74408a31" id="r_a98383615e0551a72aa48a99e74408a31"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a98383615e0551a72aa48a99e74408a31">onNERtcEnginePlayStreamingStateChange:state:error:</a></td></tr>
+<tr class="memdesc:a98383615e0551a72aa48a99e74408a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">拉流过程中拉流状态改变的回调。  <br /></td></tr>
+<tr class="separator:a98383615e0551a72aa48a99e74408a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b922e9fc6423cec2aa234476ad2800" id="r_ab9b922e9fc6423cec2aa234476ad2800"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ab9b922e9fc6423cec2aa234476ad2800">onNERtcEnginePlayStreamingReceiveSeiMessage:message:</a></td></tr>
+<tr class="memdesc:ab9b922e9fc6423cec2aa234476ad2800"><td class="mdescLeft">&#160;</td><td class="mdescRight">拉流过程中收到 SEI 消息的回调。  <br /></td></tr>
+<tr class="separator:ab9b922e9fc6423cec2aa234476ad2800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53032c1bef2fa1afeb19bfda1b9aeec5" id="r_a53032c1bef2fa1afeb19bfda1b9aeec5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a53032c1bef2fa1afeb19bfda1b9aeec5">onNERtcEnginePlayStreamingFirstVideoFrameRender:timeMs:width:height:</a></td></tr>
+<tr class="memdesc:a53032c1bef2fa1afeb19bfda1b9aeec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">拉流过程中首次渲染视频帧的回调。  <br /></td></tr>
+<tr class="separator:a53032c1bef2fa1afeb19bfda1b9aeec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac37a5e98b102ac1dea26b9b6abc4af43" id="r_ac37a5e98b102ac1dea26b9b6abc4af43"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac37a5e98b102ac1dea26b9b6abc4af43">onNERtcEnginePlayStreamingFirstAudioFramePlayed:timeMs:</a></td></tr>
+<tr class="memdesc:ac37a5e98b102ac1dea26b9b6abc4af43"><td class="mdescLeft">&#160;</td><td class="mdescRight">拉流过程中首次渲染音频帧的回调。  <br /></td></tr>
+<tr class="separator:ac37a5e98b102ac1dea26b9b6abc4af43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad14b47ff6d6802f0761b22aa31e4d7f" id="r_aad14b47ff6d6802f0761b22aa31e4d7f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aad14b47ff6d6802f0761b22aa31e4d7f">onNERtcEnginePlayStreamingDuration:totalDurationS:currentPtsS:</a></td></tr>
+<tr class="memdesc:aad14b47ff6d6802f0761b22aa31e4d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">拉流过程中播放时长改变的回调。  <br /></td></tr>
+<tr class="separator:aad14b47ff6d6802f0761b22aa31e4d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数文档</h2>
+<a id="aad14b47ff6d6802f0761b22aa31e4d7f" name="aad14b47ff6d6802f0761b22aa31e4d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad14b47ff6d6802f0761b22aa31e4d7f">&#9670;&#160;</a></span>onNERtcEnginePlayStreamingDuration:totalDurationS:currentPtsS:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEnginePlayStreamingDuration: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>streamId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">totalDurationS:</td>
+          <td></td>
+          <td class="paramtype">(int64_t)</td>          <td class="paramname"><span class="paramname"><em>total_duration_s</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">currentPtsS:</td>
+          <td></td>
+          <td class="paramtype">(int64_t)</td>          <td class="paramname"><span class="paramname"><em>current_pts_s</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拉流过程中播放时长改变的回调。 </p>
+<dl class="section user"><dt>触发时机</dt><dd>拉流过程中播放时长改变时会触发该回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamId</td><td>流 ID。 </td></tr>
+    <tr><td class="paramname">totalDurationS</td><td>拉流过程中播放的总时长。 </td></tr>
+    <tr><td class="paramname">currentPtsS</td><td>拉流过程中当前的 PTS。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>5.9.15  </dd></dl>
+
+</div>
+</div>
+<a id="ac37a5e98b102ac1dea26b9b6abc4af43" name="ac37a5e98b102ac1dea26b9b6abc4af43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37a5e98b102ac1dea26b9b6abc4af43">&#9670;&#160;</a></span>onNERtcEnginePlayStreamingFirstAudioFramePlayed:timeMs:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEnginePlayStreamingFirstAudioFramePlayed: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>streamId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">timeMs:</td>
+          <td></td>
+          <td class="paramtype">(int64_t)</td>          <td class="paramname"><span class="paramname"><em>time_ms</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拉流过程中首次渲染音频帧的回调。 </p>
+<dl class="section user"><dt>触发时机</dt><dd>拉流过程中首次渲染音频帧时会触发该回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamId</td><td>流 ID。 </td></tr>
+    <tr><td class="paramname">timeMs</td><td>音频帧的时间戳。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>5.9.10  </dd></dl>
+
+</div>
+</div>
+<a id="a53032c1bef2fa1afeb19bfda1b9aeec5" name="a53032c1bef2fa1afeb19bfda1b9aeec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53032c1bef2fa1afeb19bfda1b9aeec5">&#9670;&#160;</a></span>onNERtcEnginePlayStreamingFirstVideoFrameRender:timeMs:width:height:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEnginePlayStreamingFirstVideoFrameRender: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>streamId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">timeMs:</td>
+          <td></td>
+          <td class="paramtype">(int64_t)</td>          <td class="paramname"><span class="paramname"><em>time_ms</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">width:</td>
+          <td></td>
+          <td class="paramtype">(uint32_t)</td>          <td class="paramname"><span class="paramname"><em>width</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">height:</td>
+          <td></td>
+          <td class="paramtype">(uint32_t)</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拉流过程中首次渲染视频帧的回调。 </p>
+<dl class="section user"><dt>触发时机</dt><dd>拉流过程中首次渲染视频帧时会触发该回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamId</td><td>流 ID。 </td></tr>
+    <tr><td class="paramname">timeMs</td><td>视频帧的时间戳。 </td></tr>
+    <tr><td class="paramname">width</td><td>视频帧的宽度。 </td></tr>
+    <tr><td class="paramname">height</td><td>视频帧的高度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>5.9.10  </dd></dl>
+
+</div>
+</div>
+<a id="ab9b922e9fc6423cec2aa234476ad2800" name="ab9b922e9fc6423cec2aa234476ad2800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b922e9fc6423cec2aa234476ad2800">&#9670;&#160;</a></span>onNERtcEnginePlayStreamingReceiveSeiMessage:message:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEnginePlayStreamingReceiveSeiMessage: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>streamId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">message:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拉流过程中收到 SEI 消息的回调。 </p>
+<dl class="section user"><dt>触发时机</dt><dd>拉流过程中收到 SEI 消息时会触发该回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamId</td><td>流 ID。 </td></tr>
+    <tr><td class="paramname">message</td><td>SEI 消息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>5.8.25  </dd></dl>
+
+</div>
+</div>
+<a id="a98383615e0551a72aa48a99e74408a31" name="a98383615e0551a72aa48a99e74408a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98383615e0551a72aa48a99e74408a31">&#9670;&#160;</a></span>onNERtcEnginePlayStreamingStateChange:state:error:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNERtcEnginePlayStreamingStateChange: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)</td>          <td class="paramname"><span class="paramname"><em>streamId</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">state:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a1a826bb005b22f1909817ff5c140b75e">NERtcLivePlayStreamState</a>)</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>拉流过程中拉流状态改变的回调。 </p>
+<dl class="section user"><dt>触发时机</dt><dd>拉流过程中拉流状态改变时会触发该回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">streamId</td><td>流 ID。 </td></tr>
+    <tr><td class="paramname">state</td><td>拉流状态。详见 NERtcLivePlayStreamState。 </td></tr>
+    <tr><td class="paramname">error</td><td>状态改变的原因。详见 NERtcError。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>5.9.10  </dd></dl>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_delegate_8h_source.html">NERtcEngineDelegate.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

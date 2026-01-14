@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the setClientRole method from the NERtcEngine class, for the Dart programming language.">
+  <title>setClientRole method - NERtcEngine class - nertc library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc_core.dart</a></li>
+    <li><a href="../../nertc/NERtcEngine-class.html">NERtcEngine</a></li>
+    <li class="self-crumb">setClientRole abstract method</li>
+  </ol>
+  <div class="self-name">setClientRole</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="nertc&#47;NERtcEngine-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">setClientRole</span> abstract method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span>
+<span class="name ">setClientRole</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="setClientRole-param-role"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">role</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>设置直播场景下的用户角色。 通过本接口可以实现将用户角色在“主播”（broadcaster）和“观众“（audience）之间的切换，用户加入房间后默认为“主播”。</p>
+<p><strong>使用前提</strong></p>
+<p>该方法仅在通过 <a href="../../nertc/NERtcEngine/setChannelProfile.html">setChannelProfile</a> 方法设置房间场景为直播场景（liveBroadcasting）时调用有效。</p>
+<p><strong>调用时机</strong></p>
+<p>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。</p>
+<p><strong>业务场景</strong></p>
+<p>适用于观众上下麦与主播互动的互动直播场景。</p>
+<p><strong>说明</strong></p>
+<p>用户切换为观众角色时，SDK 会自动关闭音视频设备。</p>
+<p>在加入频道前或在频道中，用户可以通过setClientRole 接口设置本端模式为观众或主播模式。</p>
+<p><strong>参数说明</strong></p>
+<p><code>role</code> 用户角色，具体请参见 <a href="../../nertc/NERtcClientRole-class.html">NERtcClientRole</a>。用户角色包括：</p>
+<ul>
+<li>broadcaster（0）：设置用户角色为主播。主播可以开关摄像头等设备、可以发布流、可以操作互动直播推流相关接口、加入或退出房间状态对其他房间内用户可见。</li>
+<li>audience（1）：设置用户角色为观众。观众只能收流不能发流加入或退出房间状态对其他房间内用户不可见。</li>
+</ul>
+<p><strong>相关回调</strong></p>
+<ul>
+<li>加入房间前调用该方法设置用户角色，不会触发任何回调，在加入房间成功后角色自动生效：
+- 设置用户角色为主播：加入房间后，远端用户触发 <a href="../../nertc/NERtcChannelEventCallback/onUserJoined.html">NERtcChannelEventCallback.onUserJoined</a> 回调。
+       - 设置用户角色为观众：加入房间后，远端用户不触发任何回调。</li>
+<li>加入房间后调用该方法切换用户角色：
+- 从观众角色切为主播：本端用户触发<a href="../../nertc/NERtcChannelEventCallback/onClientRoleChange.html">NERtcChannelEventCallback.onClientRoleChange</a> 回调，远端用户触发 <code>onUserJoined</code> 回调。
+       - 从主播角色切为观众：本端用户触发 <a href="../../nertc/NERtcChannelEventCallback/onClientRoleChange.html">NERtcChannelEventCallback.onClientRoleChange</a> 回调，远端用户触发 <code>onUserLeave</code> 回调。</li>
+</ul>
+<p><strong>返回值</strong></p>
+<ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。
+<ul>
+<li>30001（errFatal）：内部错误，比如音频相关模块未初始化成功。</li>
+<li>30003（invalidParam）：参数错误，比如传入的 int 值不是观众或主播。</li>
+<li>30005（invalidState)：状态错误，比如引擎尚未初始化。</li>
+<li>30101（roomNotJoined): 尚未加入房间。</li>
+</ul>
+</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;int&gt; setClientRole(int role);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc</a></li>
+    <li><a href="../../nertc/NERtcEngine-class.html">NERtcEngine</a></li>
+    <li class="self-crumb">setClientRole abstract method</li>
+</ol>
+
+
+    <h5>NERtcEngine class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: include/NERtcEngineDelegate.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">NERtcEngineDelegate.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_n_e_rtc_engine_delegate_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright (c) 2021 NetEase, Inc. All rights reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_rtc_engine_error_code_8h.html">NERtcEngineErrorCode.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_rtc_engine_enum_8h.html">NERtcEngineEnum.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#import &quot;<a class="code" href="_n_e_rtc_engine_base_8h.html">NERtcEngineBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;CoreVideo/CoreVideo.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma clang diagnostic push</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma clang diagnostic ignored &quot;-Wdocumentation&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_delegate-p.html">   25</a></span><span class="keyword">@protocol </span>NERtcEngineDelegate &lt;NSObject&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>- (void)onNERtcEngineDidError:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)errCode;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>- (void)onNERtcEngineDidWarning:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#ae131893c2d363a3b9c507966fa56ee2b">NERtcWarning</a>)warnCode msg:(NSString *)msg;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>- (void)onNERtcEngineApiDidExecuted:(NSString *)apiName errCode:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)errCode msg:(NSString *)msg;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>- (void)onNERtcEngineConnectionStateChangeWithState:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a>)state</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                                             reason:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#adb687cd6be30f5bc2b52747ac0e029ab">NERtcReasonConnectionChangedType</a>)reason;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>- (void)onNERtcEngineDidLeaveChannelWithResult:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)result;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>- (void)onNERtcEngineDidDisconnectWithReason:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)reason;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  - (void)onNERtcEngineRejoinChannel:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)result;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  - (void)onNERtcEngineUserDidJoinWithUserID:(uint64_t)userID userName:(NSString *)userName;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>- (void)onNERtcEngineUserDidJoinWithUserID:(uint64_t)userID userName:(NSString *)userName joinExtraInfo:(nullable <a class="code hl_interface" href="interface_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a> *)joinExtraInfo;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>- (void)onNERtcEngineUserDidLeaveWithUserID:(uint64_t)userID reason:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553d">NERtcSessionLeaveReason</a>)reason;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>- (void)onNERtcEngineUserDidLeaveWithUserID:(uint64_t)userID reason:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553d">NERtcSessionLeaveReason</a>)reason  leaveExtraInfo:(nullable <a class="code hl_interface" href="interface_n_e_rtc_user_leave_extra_info.html">NERtcUserLeaveExtraInfo</a> *)leaveExtraInfo;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>- (void)onNERtcEngineDidClientRoleChanged:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a>)oldRole newRole:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a>)newRole;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>- (void)onNERtcEngineReconnectingStart;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>- (void)onNERtcEngineUserAudioDidStart:(uint64_t)userID;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>- (void)onNERtcEngineUserAudioDidStop:(uint64_t)userID;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>- (void)onNERtcEngineUserVideoDidStartWithUserID:(uint64_t)userID videoProfile:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)profile;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>- (void)onNERtcEngineUserVideoDidStop:(uint64_t)userID;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>- (void)onNERtcEngineUserSubStreamDidStartWithUserID:(uint64_t)userID subStreamProfile:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)profile;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>- (void)onNERtcEngineUserVideoStreamDidStart:(uint64_t)userID streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType streamProfile:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)profile;</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>- (void)onNERtcEngineUserSubStreamDidStop:(uint64_t)userID;</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>- (void)onNERtcEngineUserVideoStreamDidStop:(uint64_t)userID streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>- (void)onNERtcEngineMediaRightChangeWithAudio:(BOOL)isAudioBannedByServer</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>                                         video:(BOOL)isVideoBannedByServer;</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>- (void)onNERtcEngineUserSubStreamAudioDidStart:(uint64_t)userID;</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
+<div class="line"><a id="l00479" name="l00479"></a><span class="lineno">  479</span>- (void)onNERtcEngineUserSubStreamAudioDidStop:(uint64_t)userID;</div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>- (void)onNERtcEngineUser:(uint64_t)userID subStreamAudioMuted:(BOOL)muted;</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_live_stream_observer-p.html">  513</a></span><span class="keyword">@protocol </span>NERtcEngineLiveStreamObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>- (void)onNERTCEngineLiveStreamState:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ad7a378c4c75cedbc706762d01d4bf6b2">NERtcLiveStreamStateCode</a>)state taskID:(NSString *)taskID url:(NSString *)url;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span> </div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_video_frame_observer-p.html">  544</a></span><span class="keyword">@protocol </span>NERtcEngineVideoFrameObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>- (void)onNERtcEngineVideoFrameCaptured:(CVPixelBufferRef)bufferRef rotation:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a>)rotation;</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>- (void)onNERtcEngineRemoteVideoFrame:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)videoStreamType</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                               userId:(uint64_t)userId</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                                 data:(<span class="keywordtype">void</span> *)data</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                               format:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a>)format</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>                                width:(uint32_t)width</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                               height:(uint32_t)height</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>                           planeCount:(uint32_t)planeCount</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                               offset:(int64_t *)offset</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                               stride:(uint32_t *)stride</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                             rotation:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a>)rotation;</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>- (void)onNERtcEnginePlayStreamingVideoFrame:(<span class="keywordtype">void</span> *)data</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>                               format:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a>)format</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>                                width:(uint32_t)width</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>                               height:(uint32_t)height</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>                           planeCount:(uint32_t)planeCount</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>                               offset:(int64_t *)offset</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>                               stride:(uint32_t *)stride</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>                             rotation:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a>)rotation</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>                             streamId:(NSString *)streamId;</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_audio_session_observer-p.html">  657</a></span><span class="keyword">@protocol </span>NERtcEngineAudioSessionObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="comment">//</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="comment">//- (void)onNERtcEngineAudioDeviceInterruptionBegan;</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="comment">//</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="comment">//- (void)onNERtcEngineAudioDeviceInterruptionEnded;</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>- (void)onNERtcEngineAudioDeviceRoutingDidChange:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a6d8a84fbaa737e51993f9c9110b60ba8">NERtcAudioOutputRouting</a>)routing;</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_video_render_sink-p.html">  687</a></span><span class="keyword">@protocol </span>NERtcEngineVideoRenderSink &lt;NSObject&gt;</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>- (void)onNERtcEngineRenderFrame:(<a class="code hl_interface" href="interface_n_e_rtc_video_frame.html">NERtcVideoFrame</a> *_Nonnull)frame;</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span><span class="comment">// 渲染所需的 buffer 类型，默认为 NERtcVideoBufferTypeRawData</span></div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>- (<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a199dcbde9fbab3f2f5df2b7163b5fadb">NERtcVideoBufferType</a>)getFrameBufferType;</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_video_s_e_i_observer-p.html">  718</a></span><span class="keyword">@protocol </span>NERtcEngineVideoSEIObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>- (void)onNERtcEngineRecvSEIMsg:(uint64_t)userID message:(NSData *)message;</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_pre_decode_observer-p.html">  742</a></span><span class="keyword">@protocol </span>NERtcEnginePreDecodeObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span> <span class="keyword">@optional</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>- (void)onNERtcEnginePreDecoderFrame:(<a class="code hl_interface" href="interface_n_e_rtc_pre_decoder_frame_info.html">NERtcPreDecoderFrameInfo</a> *)preDecoderFrame;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_video_encoder_qos_observer-p.html">  770</a></span><span class="keyword">@protocol </span>NERtcEngineVideoEncoderQosObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span> </div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> <span class="keyword">@optional</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>- (void)onNERtcEngineRequestSendKeyFrame:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)videoStreamType;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>- (void)onNERtcEngineBitrateUpdated:(<span class="keywordtype">int</span>)bitrateBps</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>                    videoStreamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)videoStreamType;</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>- (void)onNERtcEngineVideoCodecUpdated:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a414b1420ecf83aca5d182019734fdf42">NERtcVideoCodecType</a>)videoCodecType</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>                       videoStreamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)videoStreamType;</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span> </div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_push_streaming_observer-p.html">  860</a></span><span class="keyword">@protocol </span>NERtcEnginePushStreamingObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> <span class="keyword">@optional</span></div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>- (void)onNERtcEngineStartPushStreamingWithResult:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)result channelId:(uint64_t)channelId;</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>- (void)onNERtcEngineStopPushStreaming:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)result;</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>- (void)onNERtcEnginePushStreamingChangeToReconnectingWithReason:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)reason;</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>- (void)onNERtcEnginePushStreamingReconnectedSuccess;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span> </div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span> </div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_play_streaming_observer-p.html">  972</a></span><span class="keyword">@protocol </span>NERtcEnginePlayStreamingObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> <span class="keyword">@optional</span></div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span> </div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>- (void)onNERtcEnginePlayStreamingStateChange:(NSString*)streamId state:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a1a826bb005b22f1909817ff5c140b75e">NERtcLivePlayStreamState</a>)state error:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)error;</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span> </div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>- (void)onNERtcEnginePlayStreamingReceiveSeiMessage:(NSString*)streamId message:(NSString*)message;</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span> </div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>- (void)onNERtcEnginePlayStreamingFirstVideoFrameRender:(NSString*)streamId timeMs:(int64_t)time_ms width:(uint32_t)width height:(uint32_t)height;</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span> </div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>- (void)onNERtcEnginePlayStreamingFirstAudioFramePlayed:(NSString*)streamId timeMs:(int64_t)time_ms;</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span> </div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>- (void)onNERtcEnginePlayStreamingDuration:(NSString*)streamId totalDurationS:(int64_t)total_duration_s currentPtsS:(int64_t)current_pts_s;</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span> </div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_delegate_ex-p.html"> 1093</a></span><span class="keyword">@protocol </span>NERtcEngineDelegateEx &lt;NERtcEngineDelegate,</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>NERtcEngineVideoFrameObserver, <span class="comment">// deprecated, USE setVideoFrameObserver:(id&lt;NERtcEngineVideoFrameObserver&gt;)videoframeObserver instead</span></div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>NERtcEngineAudioSessionObserver,</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>NERtcEngineLiveStreamObserver,</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>NERtcEngineVideoSEIObserver,</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>NERtcEnginePushStreamingObserver,</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>NERtcEnginePlayStreamingObserver&gt;</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span> </div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span> </div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>- (void)onNERtcEngineUserVideoProfileDidUpdate:(uint64_t)userID maxProfile:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a>)maxProfile;</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span> </div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>- (void)onNERtcEngineUser:(uint64_t)userID videoMuted:(BOOL)muted;</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span> </div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>- (void)onNERtcEngineUser:(uint64_t)userID videoMuted:(BOOL)muted streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span> </div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>- (void)onNERtcEngineUser:(uint64_t)userID audioMuted:(BOOL)muted;</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span> </div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>- (void)onNERtcEngineFirstVideoDataDidReceiveWithUserID:(uint64_t)userID;</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span> </div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>- (void)onNERtcEngineFirstVideoDataDidReceiveWithUserID:(uint64_t)userID streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span> </div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>- (void)onNERtcEngineRemoteVideoSizeDidChangedWithUserID:(uint64_t)userID width:(uint32_t)width height:(uint32_t)height streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span> </div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>- (void)onNERtcEngineLocalVideoRenderSizeChanged:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType width:(uint32_t)width height:(uint32_t)height;</div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span> </div>
+<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>- (void)onNERtcEngineFirstAudioDataDidReceiveWithUserID:(uint64_t)userID;</div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span> </div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>- (void)onEngineFirstAudioFrameDecoded:(uint64_t)userID;</div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>- (void)onNERtcEngineLocalFirstAudioPacketSent:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#af0eb8029030e25ac7ee3ac22fdfce844">NERtcAudioStreamType</a>)streamType;</div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>- (void)onEngineFirstVideoFrameDecoded:(uint64_t)userID width:(uint32_t)width height:(uint32_t)height;</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span> </div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>- (void)onEngineFirstVideoFrameDecoded:(uint64_t)userID width:(uint32_t)width height:(uint32_t)height streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span> </div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>- (void)onEngineFirstVideoFrameRender:(uint64_t)userID width:(uint32_t)width height:(uint32_t)height elapsed:(uint64_t)elapsed streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span> </div>
+<div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>- (void)onNERtcEngineAudioDeviceStateChangeWithDeviceID:(NSString *)deviceID deviceType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a532e103e50bc20df36196fa51958f22c">NERtcAudioDeviceType</a>)deviceType deviceState:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a132b7127d3303e8ed7e2ac3a182c486f">NERtcAudioDeviceState</a>)deviceState;</div>
+<div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span> </div>
+<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span>- (void)onNERtcEngineVideoDeviceStateChangeWithDeviceID:(NSString *)deviceID deviceType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#add96de8d114dd745e58f8f6ce90816a9">NERtcVideoDeviceType</a>)deviceType deviceState:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ac72ffdf2aa9e07031021db1cbf709529">NERtcVideoDeviceState</a>)deviceState;</div>
+<div class="line"><a id="l01487" name="l01487"></a><span class="lineno"> 1487</span> </div>
+<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span>- (void)onNERtcEngineNetworkConnectionTypeChanged:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#aaa1fc5b492549002f506a2ef4276cae4">NERtcNetworkConnectionType</a>)newConnectionType;</div>
+<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span> </div>
+<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>- (void)onAudioMixingStateChanged:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a6e28a3e9c696e596db1e7f73bdebc6d2">NERtcAudioMixingState</a>)state errorCode:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a0241d06f4933b30e61fc4df9b3524af0">NERtcAudioMixingErrorCode</a>)errorCode;</div>
+<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span> </div>
+<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>- (void)onAudioMixingTimestampUpdate:(uint64_t)timeStampMS;</div>
+<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span> </div>
+<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span> </div>
+<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>- (void)onAudioEffectFinished:(uint32_t)effectId;</div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span> </div>
+<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span>- (void)onAudioEffectTimestampUpdateWithId:(uint32_t)effectId timeStampMS:(uint64_t)timeStampMS;</div>
+<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span> </div>
+<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>- (void)onLocalAudioVolumeIndication:(<span class="keywordtype">int</span>)volume;</div>
+<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span> </div>
+<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span>- (void)onLocalAudioVolumeIndication:(<span class="keywordtype">int</span>)volume withVad:(BOOL)enableVad;</div>
+<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span> </div>
+<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span> </div>
+<div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span>-(void)onRemoteAudioVolumeIndication:(nullable NSArray&lt;<a class="code hl_interface" href="interface_n_e_rtc_audio_volume_info.html">NERtcAudioVolumeInfo</a>*&gt; *)speakers totalVolume:(<span class="keywordtype">int</span>)totalVolume;</div>
+<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span> </div>
+<div class="line"><a id="l01661" name="l01661"></a><span class="lineno"> 1661</span>- (void)onNERtcEngineHardwareResourceReleased:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)result;</div>
+<div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span> </div>
+<div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span>- (void)onNERtcCameraFocusChanged:(CGPoint)focusPoint;</div>
+<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span> </div>
+<div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>- (void)onNERtcCameraExposureChanged:(CGPoint)exposurePoint;</div>
+<div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span> </div>
+<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span> </div>
+<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span> </div>
+<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>- (void)onNERtcEngineAudioHasHowling;</div>
+<div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span> </div>
+<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>- (void)onNERtcEngineAudioHasHowling:(BOOL)flag;</div>
+<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span> </div>
+<div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>- (void)onNERtcEngineChannelMediaRelayStateDidChange:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a3fbfe868c4db43a87cc0d90d38912123">NERtcChannelMediaRelayState</a>)state channelName:(NSString *)channelName;</div>
+<div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span> </div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>- (void)onNERtcEngineDidReceiveChannelMediaRelayEvent:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a2c5130039943686c7740932d1d303a9f">NERtcChannelMediaRelayEvent</a>)event channelName:(NSString *)channelName error:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)error;</div>
+<div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span> </div>
+<div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>- (void)onNERtcEngineAudioRecording:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#aadb2b42da36ab039532ff4b80d4ae065">NERtcAudioRecordingCode</a>)code filePath:(NSString *)filePath;</div>
+<div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span> </div>
+<div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span> </div>
+<div class="line"><a id="l01796" name="l01796"></a><span class="lineno"> 1796</span>- (void)onNERtcEngineLocalPublishFallbackToAudioOnly:(BOOL)isFallback streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span> </div>
+<div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>- (void)onNERtcEngineRemoteSubscribeFallbackToAudioOnly:(uint64_t)uid isFallback:(BOOL)isFallback streamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)streamType;</div>
+<div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span> </div>
+<div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span>- (void)onNERtcEngineLastmileQuality:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#ab1fedbf7174dc3a0030263f81b167c7f">NERtcNetworkQuality</a>)quality;</div>
+<div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span> </div>
+<div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span>- (void)onNERtcEngineLastmileProbeTestResult:(<a class="code hl_interface" href="interface_n_e_rtc_lastmile_probe_result.html">NERtcLastmileProbeResult</a> *)result;</div>
+<div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span> </div>
+<div class="line"><a id="l01877" name="l01877"></a><span class="lineno"> 1877</span>- (void)onNERtcEngineVirtualBackgroundSourceEnabled:(BOOL)enabled reason:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a1447fe643f3a673ef5c4b9d9ff674405">NERtcVirtualBackgroundSourceStateReason</a>)reason;</div>
+<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span> </div>
+<div class="line"><a id="l01893" name="l01893"></a><span class="lineno"> 1893</span>- (void)onNERtcEngineLocalVideoWatermarkStateWithStreamType:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a>)type</div>
+<div class="line"><a id="l01894" name="l01894"></a><span class="lineno"> 1894</span>                                                      state:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a5d593c05e30a0eb42c784e00feb62424">NERtcLocalVideoWatermarkState</a>)state;</div>
+<div class="line"><a id="l01906" name="l01906"></a><span class="lineno"> 1906</span>- (void)onNERtcEnginePermissionKeyWillExpire;</div>
+<div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span> </div>
+<div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>- (void)onNERtcEngineUpdatePermissionKey:(NSString *)key error:(<a class="code hl_enumeration" href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a>)error timeout:(NSUInteger)timeout;</div>
+<div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span> </div>
+<div class="line"><a id="l01954" name="l01954"></a><span class="lineno"> 1954</span>- (void)onNERtcEngineUserDataDidStart:(uint64_t)userID;</div>
+<div class="line"><a id="l01955" name="l01955"></a><span class="lineno"> 1955</span> </div>
+<div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span>- (void)onNERtcEngineUserDataDidStop:(uint64_t)userID;</div>
+<div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span> </div>
+<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>- (void)onNERtcEngineUserDataReceiveMessage:(uint64_t)userID data:(NSData *)data;</div>
+<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span> </div>
+<div class="line"><a id="l01992" name="l01992"></a><span class="lineno"> 1992</span>- (void)onNERtcEngineUserDataStateChanged:(uint64_t)userID;</div>
+<div class="line"><a id="l01993" name="l01993"></a><span class="lineno"> 1993</span> </div>
+<div class="line"><a id="l02006" name="l02006"></a><span class="lineno"> 2006</span>- (void)onNERtcEngineUserDataBufferedAmountChanged:(uint64_t)userID previousAmount:(uint64_t)previousAmount;</div>
+<div class="line"><a id="l02007" name="l02007"></a><span class="lineno"> 2007</span> </div>
+<div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>- (void)onNERtcEngineLabFeatureDidCallbackWithKey:(NSString*)key param:(<span class="keywordtype">id</span>)param;</div>
+<div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span> </div>
+<div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span>- (void)onNERtcEngineAiDataWithType:(NSString*)type data:(NSString*)data;</div>
+<div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span> </div>
+<div class="line"><a id="l02039" name="l02039"></a><span class="lineno"> 2039</span>- (void)onNERtcEngineAsrCaptionStateChanged:(<a class="code hl_enumeration" href="_n_e_rtc_engine_enum_8h.html#a2bd108a58a952fcb24b5c748cd2ba624">NERtcAsrCaptionState</a>)state code:(<span class="keywordtype">int</span>)code message:(NSString *)message;</div>
+<div class="line"><a id="l02040" name="l02040"></a><span class="lineno"> 2040</span> </div>
+<div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span>- (void)onNERtcEngineAsrCaptionResult:(nullable NSArray&lt;<a class="code hl_interface" href="interface_n_e_rtc_asr_caption_result.html">NERtcAsrCaptionResult</a>*&gt; *)results;</div>
+<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span> </div>
+<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span> </div>
+<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html"> 2066</a></span><span class="keyword">@protocol </span>NERtcEngineAudioFrameObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span> </div>
+<div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span> </div>
+<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span>- (void)onNERtcEngineAudioFrameDidRecord:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame;</div>
+<div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span> </div>
+<div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span> </div>
+<div class="line"><a id="l02109" name="l02109"></a><span class="lineno"> 2109</span>- (void)onNERtcEngineAudioFrameWillPlayback:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame;</div>
+<div class="line"><a id="l02110" name="l02110"></a><span class="lineno"> 2110</span> </div>
+<div class="line"><a id="l02133" name="l02133"></a><span class="lineno"> 2133</span>- (void)onNERtcEnginePlaybackAudioFrameBeforeMixingWithUserID:(uint64_t)userID frame:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame;</div>
+<div class="line"><a id="l02134" name="l02134"></a><span class="lineno"> 2134</span> </div>
+<div class="line"><a id="l02155" name="l02155"></a><span class="lineno"> 2155</span>- (void)onNERtcEnginePlaybackAudioFrameBeforeMixingForPlayStreaming:(NSString*)playStreamId frame:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame;</div>
+<div class="line"><a id="l02156" name="l02156"></a><span class="lineno"> 2156</span> </div>
+<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span>- (void)onNERtcEnginePlaybackAudioFrameBeforeMixingWithUserID:(uint64_t)userID frame:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame channelId:(uint64_t)channelId;</div>
+<div class="line"><a id="l02182" name="l02182"></a><span class="lineno"> 2182</span> </div>
+<div class="line"><a id="l02203" name="l02203"></a><span class="lineno"> 2203</span>- (void)onNERtcEngineMixedAudioFrame:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame;</div>
+<div class="line"><a id="l02204" name="l02204"></a><span class="lineno"> 2204</span> </div>
+<div class="line"><a id="l02205" name="l02205"></a><span class="lineno"> 2205</span> </div>
+<div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span>- (void)onNERtcEngineSubStreamAudioFrameDidRecord:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame;</div>
+<div class="line"><a id="l02225" name="l02225"></a><span class="lineno"> 2225</span> </div>
+<div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span>- (void)onNERtcEnginePlaybackSubStreamAudioFrameBeforeMixingWithUserID:(uint64_t)userID frame:(<a class="code hl_interface" href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *)frame channelId:(uint64_t)channelId;</div>
+<div class="line"><a id="l02249" name="l02249"></a><span class="lineno"> 2249</span> </div>
+<div class="line"><a id="l02250" name="l02250"></a><span class="lineno"> 2250</span> </div>
+<div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l02252" name="l02252"></a><span class="lineno"> 2252</span> </div>
+<div class="line"><a id="l02253" name="l02253"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_packet_observer-p.html"> 2253</a></span><span class="keyword">@protocol </span>NERtcEnginePacketObserver &lt;NSObject&gt;</div>
+<div class="line"><a id="l02254" name="l02254"></a><span class="lineno"> 2254</span> </div>
+<div class="line"><a id="l02255" name="l02255"></a><span class="lineno"> 2255</span> <span class="keyword">@optional</span></div>
+<div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span>- (BOOL)onSendAudioPacket:(<a class="code hl_interface" href="interface_n_e_rtc_packet.html">NERtcPacket</a> *)packet;</div>
+<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span>- (BOOL)onSendVideoPacket:(<a class="code hl_interface" href="interface_n_e_rtc_packet.html">NERtcPacket</a> *)packet;</div>
+<div class="line"><a id="l02273" name="l02273"></a><span class="lineno"> 2273</span>- (BOOL)onReceiveAudioPacket:(<a class="code hl_interface" href="interface_n_e_rtc_packet.html">NERtcPacket</a> *)packet;</div>
+<div class="line"><a id="l02279" name="l02279"></a><span class="lineno"> 2279</span>- (BOOL)onReceiveVideoPacket:(<a class="code hl_interface" href="interface_n_e_rtc_packet.html">NERtcPacket</a> *)packet;</div>
+<div class="line"><a id="l02280" name="l02280"></a><span class="lineno"> 2280</span> </div>
+<div class="line"><a id="l02281" name="l02281"></a><span class="lineno"> 2281</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l02282" name="l02282"></a><span class="lineno"> 2282</span> </div>
+<div class="line"><a id="l02283" name="l02283"></a><span class="lineno"><a class="line" href="protocol_n_e_rtc_engine_video_render_sink-p.html#a0076670eed6ad19e6f27808a68b32daf"> 2283</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span> </div>
+<div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span><span class="preprocessor">#pragma clang diagnostic pop</span></div>
+<div class="ttc" id="a_n_e_rtc_engine_base_8h_html"><div class="ttname"><a href="_n_e_rtc_engine_base_8h.html">NERtcEngineBase.h</a></div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html">NERtcEngineEnum.h</a></div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a0241d06f4933b30e61fc4df9b3524af0"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a0241d06f4933b30e61fc4df9b3524af0">NERtcAudioMixingErrorCode</a></div><div class="ttdeci">NERtcAudioMixingErrorCode</div><div class="ttdoc">伴音错误码。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3231</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a132b7127d3303e8ed7e2ac3a182c486f"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a132b7127d3303e8ed7e2ac3a182c486f">NERtcAudioDeviceState</a></div><div class="ttdeci">NERtcAudioDeviceState</div><div class="ttdoc">音频设备状态。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3757</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a1447fe643f3a673ef5c4b9d9ff674405"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a1447fe643f3a673ef5c4b9d9ff674405">NERtcVirtualBackgroundSourceStateReason</a></div><div class="ttdeci">NERtcVirtualBackgroundSourceStateReason</div><div class="ttdoc">虚拟背景未成功启用的原因或确认成功的信息。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1184</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a199dcbde9fbab3f2f5df2b7163b5fadb"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a199dcbde9fbab3f2f5df2b7163b5fadb">NERtcVideoBufferType</a></div><div class="ttdeci">NERtcVideoBufferType</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1072</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a1a826bb005b22f1909817ff5c140b75e"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a1a826bb005b22f1909817ff5c140b75e">NERtcLivePlayStreamState</a></div><div class="ttdeci">NERtcLivePlayStreamState</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:4314</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a2bd108a58a952fcb24b5c748cd2ba624"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a2bd108a58a952fcb24b5c748cd2ba624">NERtcAsrCaptionState</a></div><div class="ttdeci">NERtcAsrCaptionState</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:4285</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a2c5130039943686c7740932d1d303a9f"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a2c5130039943686c7740932d1d303a9f">NERtcChannelMediaRelayEvent</a></div><div class="ttdeci">NERtcChannelMediaRelayEvent</div><div class="ttdoc">媒体流转发回调事件</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3973</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a3fbfe868c4db43a87cc0d90d38912123"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a3fbfe868c4db43a87cc0d90d38912123">NERtcChannelMediaRelayState</a></div><div class="ttdeci">NERtcChannelMediaRelayState</div><div class="ttdoc">媒体流转发状态</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3926</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a414b1420ecf83aca5d182019734fdf42"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a414b1420ecf83aca5d182019734fdf42">NERtcVideoCodecType</a></div><div class="ttdeci">NERtcVideoCodecType</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2834</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a4949b7bb8f308f708c4719c5679fef22"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a4949b7bb8f308f708c4719c5679fef22">NERtcVideoFormatType</a></div><div class="ttdeci">NERtcVideoFormatType</div><div class="ttdoc">视频格式类型</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1087</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a532e103e50bc20df36196fa51958f22c"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a532e103e50bc20df36196fa51958f22c">NERtcAudioDeviceType</a></div><div class="ttdeci">NERtcAudioDeviceType</div><div class="ttdoc">音频设备类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3689</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a5d593c05e30a0eb42c784e00feb62424"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a5d593c05e30a0eb42c784e00feb62424">NERtcLocalVideoWatermarkState</a></div><div class="ttdeci">NERtcLocalVideoWatermarkState</div><div class="ttdoc">视频水印状态。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1366</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a6d8a84fbaa737e51993f9c9110b60ba8"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a6d8a84fbaa737e51993f9c9110b60ba8">NERtcAudioOutputRouting</a></div><div class="ttdeci">NERtcAudioOutputRouting</div><div class="ttdoc">音频路由。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1983</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a6e28a3e9c696e596db1e7f73bdebc6d2"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a6e28a3e9c696e596db1e7f73bdebc6d2">NERtcAudioMixingState</a></div><div class="ttdeci">NERtcAudioMixingState</div><div class="ttdoc">伴音任务状态。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3202</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a76057ad60ac8948cd8dee8c270e7553d"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a76057ad60ac8948cd8dee8c270e7553d">NERtcSessionLeaveReason</a></div><div class="ttdeci">NERtcSessionLeaveReason</div><div class="ttdoc">用户离开房间的原因。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:121</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a83df70dcf09c77d882192bba999a743d"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a></div><div class="ttdeci">NERtcConnectionStateType</div><div class="ttdoc">当前房间的连接状态。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:45</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_a9fb644b8c2b9d99dc01b51f7ad1c7458"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#a9fb644b8c2b9d99dc01b51f7ad1c7458">NERtcVideoProfileType</a></div><div class="ttdeci">NERtcVideoProfileType</div><div class="ttdoc">视频 profile 类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:447</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_aaa1fc5b492549002f506a2ef4276cae4"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#aaa1fc5b492549002f506a2ef4276cae4">NERtcNetworkConnectionType</a></div><div class="ttdeci">NERtcNetworkConnectionType</div><div class="ttdoc">网络连接的类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3388</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_aadb2b42da36ab039532ff4b80d4ae065"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#aadb2b42da36ab039532ff4b80d4ae065">NERtcAudioRecordingCode</a></div><div class="ttdeci">NERtcAudioRecordingCode</div><div class="ttdoc">录音回调状态码。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2720</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ab1fedbf7174dc3a0030263f81b167c7f"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ab1fedbf7174dc3a0030263f81b167c7f">NERtcNetworkQuality</a></div><div class="ttdeci">NERtcNetworkQuality</div><div class="ttdoc">网络质量类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3852</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ac72ffdf2aa9e07031021db1cbf709529"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ac72ffdf2aa9e07031021db1cbf709529">NERtcVideoDeviceState</a></div><div class="ttdeci">NERtcVideoDeviceState</div><div class="ttdoc">视频设备状态无限制，SDK 可以完全控制 Audio Session。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3804</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ac92fefa5fc00ecadf669b09ec11ed5c9"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ac92fefa5fc00ecadf669b09ec11ed5c9">NERtcClientRole</a></div><div class="ttdeci">NERtcClientRole</div><div class="ttdoc">用户角色。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:206</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_acfea712a4ac06896174a67d88a9743e0"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#acfea712a4ac06896174a67d88a9743e0">NERtcStreamChannelType</a></div><div class="ttdeci">NERtcStreamChannelType</div><div class="ttdoc">SEI 发送的流通道类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1135</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_ad7a378c4c75cedbc706762d01d4bf6b2"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#ad7a378c4c75cedbc706762d01d4bf6b2">NERtcLiveStreamStateCode</a></div><div class="ttdeci">NERtcLiveStreamStateCode</div><div class="ttdoc">直播推流状态。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3598</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_adb687cd6be30f5bc2b52747ac0e029ab"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#adb687cd6be30f5bc2b52747ac0e029ab">NERtcReasonConnectionChangedType</a></div><div class="ttdeci">NERtcReasonConnectionChangedType</div><div class="ttdoc">当前 engine 连接状态变更的原因。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:255</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_add96de8d114dd745e58f8f6ce90816a9"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#add96de8d114dd745e58f8f6ce90816a9">NERtcVideoDeviceType</a></div><div class="ttdeci">NERtcVideoDeviceType</div><div class="ttdoc">视频设备类型。</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:3727</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_af0eb8029030e25ac7ee3ac22fdfce844"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#af0eb8029030e25ac7ee3ac22fdfce844">NERtcAudioStreamType</a></div><div class="ttdeci">NERtcAudioStreamType</div><div class="ttdoc">音频流类型，目前同时支持音频两路流：主流和辅流</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:2348</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_enum_8h_html_afd1fb635214e392af4d30bf90fe88bc5"><div class="ttname"><a href="_n_e_rtc_engine_enum_8h.html#afd1fb635214e392af4d30bf90fe88bc5">NERtcVideoRotationType</a></div><div class="ttdeci">NERtcVideoRotationType</div><div class="ttdoc">视频数据的旋转方向</div><div class="ttdef"><b>定义</b> NERtcEngineEnum.h:1033</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_error_code_8h_html"><div class="ttname"><a href="_n_e_rtc_engine_error_code_8h.html">NERtcEngineErrorCode.h</a></div></div>
+<div class="ttc" id="a_n_e_rtc_engine_error_code_8h_html_a6acba2a38effd359f11bf09a703aad15"><div class="ttname"><a href="_n_e_rtc_engine_error_code_8h.html#a6acba2a38effd359f11bf09a703aad15">NERtcError</a></div><div class="ttdeci">NERtcError</div><div class="ttdoc">Engine Error Code。</div><div class="ttdef"><b>定义</b> NERtcEngineErrorCode.h:17</div></div>
+<div class="ttc" id="a_n_e_rtc_engine_error_code_8h_html_ae131893c2d363a3b9c507966fa56ee2b"><div class="ttname"><a href="_n_e_rtc_engine_error_code_8h.html#ae131893c2d363a3b9c507966fa56ee2b">NERtcWarning</a></div><div class="ttdeci">NERtcWarning</div><div class="ttdef"><b>定义</b> NERtcEngineErrorCode.h:935</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_asr_caption_result_html"><div class="ttname"><a href="interface_n_e_rtc_asr_caption_result.html">NERtcAsrCaptionResult</a></div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:3394</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_audio_frame_html"><div class="ttname"><a href="interface_n_e_rtc_audio_frame.html">NERtcAudioFrame</a></div><div class="ttdoc">音频帧。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:1532</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_audio_volume_info_html"><div class="ttname"><a href="interface_n_e_rtc_audio_volume_info.html">NERtcAudioVolumeInfo</a></div><div class="ttdoc">声音音量信息。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:1577</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_lastmile_probe_result_html"><div class="ttname"><a href="interface_n_e_rtc_lastmile_probe_result.html">NERtcLastmileProbeResult</a></div><div class="ttdoc">上下行 Last mile 网络质量探测结果。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2536</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_packet_html"><div class="ttname"><a href="interface_n_e_rtc_packet.html">NERtcPacket</a></div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:3164</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_pre_decoder_frame_info_html"><div class="ttname"><a href="interface_n_e_rtc_pre_decoder_frame_info.html">NERtcPreDecoderFrameInfo</a></div><div class="ttdoc">编码完的媒体数据帧</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2914</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_user_join_extra_info_html"><div class="ttname"><a href="interface_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a></div><div class="ttdoc">onUserJoined 回调时的一些可选信息</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2848</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_user_leave_extra_info_html"><div class="ttname"><a href="interface_n_e_rtc_user_leave_extra_info.html">NERtcUserLeaveExtraInfo</a></div><div class="ttdoc">onUserLeave 回调时的一些可选信息</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:2860</div></div>
+<div class="ttc" id="ainterface_n_e_rtc_video_frame_html"><div class="ttname"><a href="interface_n_e_rtc_video_frame.html">NERtcVideoFrame</a></div><div class="ttdoc">视频帧信息。</div><div class="ttdef"><b>定义</b> NERtcEngineBase.h:1622</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

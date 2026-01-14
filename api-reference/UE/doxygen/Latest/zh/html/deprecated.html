@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Unreal Engine SDK: 弃用列表</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Unreal Engine SDK<span id="projectnumber">&#160;V5.4.128</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+  <div class="headertitle"><div class="title">弃用列表</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="reflist">
+<dt>成员 <a class="el" href="classnertc_1_1_i_n_e_rtc_audio_frame_observer.html#a2cac2ef6d25a77a1f5667d9ecfb23f46">nertc::INERtcAudioFrameObserver::onPlaybackAudioFrameBeforeMixing</a>  (uint64_t userID, <a class="el" href="structnertc_1_1_n_e_rtc_audio_frame.html">NERtcAudioFrame</a> *frame, channel_id_t cid)=0</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>即将废弃，请改用接口 <a class="el" href="classnertc_1_1_i_n_e_rtc_audio_frame_observer.html#a2cac2ef6d25a77a1f5667d9ecfb23f46">onPlaybackAudioFrameBeforeMixing</a>[2/2]。在多房间场景下，此接口可通过 cid 识别不同房间。  </dd>
+<dt>成员 <a class="el" href="classnertc_1_1_i_rtc_channel.html#a241d2f23c37a28c907fa9d2c291e8f1d">nertc::IRtcChannel::enableAudioVolumeIndication</a>  (bool enable, uint64_t interval, bool enable_vad)=0</dt>
+<dd><a class="anchor" id="_deprecated000001"></a>这个方法已废弃。 启用说话者音量提示。 <br  />
+通过此接口可以实现允许 SDK 定期向 App 反馈房间内发音频流的用户和瞬时音量最高的远端用户（最多 3 位，包括本端）的音量相关信息，即当前谁在说话以及说话者的音量。  </dd>
+<dt>成员 <a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html#ac139e30a91c60a331b6e20a7b709312b">nertc::IRtcChannelEventHandler::onLocalAudioVolumeIndication</a>  (int volume)</dt>
+<dd><a class="anchor" id="_deprecated000002"></a>该回调方法已废弃。 提示房间内本地用户瞬时音量的回调。<ul>
+<li>该回调默认禁用。可以通过 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#afc6ac753580afdfc61470684826ba9f4">enableAudioVolumeIndication</a> 方法开启。</li>
+<li>开启后，本地用户说话，SDK 会按 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#afc6ac753580afdfc61470684826ba9f4">enableAudioVolumeIndication</a> 方法中设置的时间间隔触发该回调。</li>
+<li>如果本地用户将自己静音（调用了 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ae5a9a1261702039d9d636997706de7e8">muteLocalAudioStream</a>），SDK 将音量设置为 0 后回调给应用层。 </li>
+</ul>
+</dd>
+</dl>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

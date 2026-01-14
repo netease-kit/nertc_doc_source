@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcLiveStreamUserTranscoding类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_rtc_live_stream_user_transcoding-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcLiveStreamUserTranscoding类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>直播成员布局。   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcLiveStreamUserTranscoding 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_live_stream_user_transcoding.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a148d3502308afee580cd7acf6a53e5bc" id="r_a148d3502308afee580cd7acf6a53e5bc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a148d3502308afee580cd7acf6a53e5bc">uid</a></td></tr>
+<tr class="memdesc:a148d3502308afee580cd7acf6a53e5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定 uid 对应用户的视频流拉入直播。如果添加多个 users，则 uid 不能重复。   <br /></td></tr>
+<tr class="separator:a148d3502308afee580cd7acf6a53e5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333171f1dd760753c8379258a70850bb" id="r_a333171f1dd760753c8379258a70850bb"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a333171f1dd760753c8379258a70850bb">videoPush</a></td></tr>
+<tr class="memdesc:a333171f1dd760753c8379258a70850bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在直播中向观看者播放该用户的对应视频流。可设置为：  <br /></td></tr>
+<tr class="separator:a333171f1dd760753c8379258a70850bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b14ca8eae9c67ee464bd1e7b7b1aa4" id="r_ac2b14ca8eae9c67ee464bd1e7b7b1aa4"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2b14ca8eae9c67ee464bd1e7b7b1aa4">x</a></td></tr>
+<tr class="memdesc:ac2b14ca8eae9c67ee464bd1e7b7b1aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+x 参数用于设置用户图像的横轴坐标值。通过 x 和 y 指定画布坐标中的一个点，该点将作为用户图像的左上角。 <br  />
+取值范围为 0~1920，若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。   <br /></td></tr>
+<tr class="separator:ac2b14ca8eae9c67ee464bd1e7b7b1aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d38d9eee9cb72d41877626fee52d33" id="r_a92d38d9eee9cb72d41877626fee52d33"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92d38d9eee9cb72d41877626fee52d33">y</a></td></tr>
+<tr class="memdesc:a92d38d9eee9cb72d41877626fee52d33"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+Y 参数用于设置用户图像的纵轴坐标值。通过 x 和 y 指定画布坐标中的一个点，该点将作为用户图像的左上角。 <br  />
+取值范围为 0~1920，若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。   <br /></td></tr>
+<tr class="separator:a92d38d9eee9cb72d41877626fee52d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a10af448c98da17a5f20f5e2d202e6" id="r_ab8a10af448c98da17a5f20f5e2d202e6"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8a10af448c98da17a5f20f5e2d202e6">width</a></td></tr>
+<tr class="memdesc:ab8a10af448c98da17a5f20f5e2d202e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">该用户图像在画布中的宽度。 <br  />
+取值范围为 0~1920，默认为 0。若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。   <br /></td></tr>
+<tr class="separator:ab8a10af448c98da17a5f20f5e2d202e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5863cf4ce1f0a39e183f1629565568c5" id="r_a5863cf4ce1f0a39e183f1629565568c5"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5863cf4ce1f0a39e183f1629565568c5">height</a></td></tr>
+<tr class="memdesc:a5863cf4ce1f0a39e183f1629565568c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">该用户图像在画布中的高度。 <br  />
+取值范围为 0~1920，默认为 0。若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。   <br /></td></tr>
+<tr class="separator:a5863cf4ce1f0a39e183f1629565568c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3da7a62b6e631c50f393faa97b2fdf" id="r_a5b3da7a62b6e631c50f393faa97b2fdf"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b3da7a62b6e631c50f393faa97b2fdf">audioPush</a></td></tr>
+<tr class="memdesc:a5b3da7a62b6e631c50f393faa97b2fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在直播中混流该用户的对应音频流。可设置为：  <br /></td></tr>
+<tr class="separator:a5b3da7a62b6e631c50f393faa97b2fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0232292f8ac437ed991a0e360e87c851" id="r_a0232292f8ac437ed991a0e360e87c851"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0232292f8ac437ed991a0e360e87c851">zOrder</a></td></tr>
+<tr class="memdesc:a0232292f8ac437ed991a0e360e87c851"><td class="mdescLeft">&#160;</td><td class="mdescRight">图层编号，用来决定渲染层级, 取值 0-100 , 0 位于最底层，100 位于最顶层，相同层级的渲染区域按照现有的覆盖逻辑实现（按照数组中顺序进行渲染，index 递增依次往上叠加）。   <br /></td></tr>
+<tr class="separator:a0232292f8ac437ed991a0e360e87c851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef9d1396e0d5c91d4837ba632f3f2d3" id="r_aaef9d1396e0d5c91d4837ba632f3f2d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_n_e_rtc_engine_enum_8h.html#a55cccf14f656ebaaef4a5005d32d3b14">NERtcLiveStreamVideoScaleMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaef9d1396e0d5c91d4837ba632f3f2d3">adaption</a></td></tr>
+<tr class="memdesc:aaef9d1396e0d5c91d4837ba632f3f2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">直播推流视频和画布的适应属性。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a55cccf14f656ebaaef4a5005d32d3b14">NERtcLiveStreamVideoScaleMode</a></code>。   <br /></td></tr>
+<tr class="separator:aaef9d1396e0d5c91d4837ba632f3f2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>直播成员布局。  </p>
+</div><h2 class="groupheader">属性说明</h2>
+<a id="aaef9d1396e0d5c91d4837ba632f3f2d3" name="aaef9d1396e0d5c91d4837ba632f3f2d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef9d1396e0d5c91d4837ba632f3f2d3">&#9670;&#160;</a></span>adaption</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="_n_e_rtc_engine_enum_8h.html#a55cccf14f656ebaaef4a5005d32d3b14">NERtcLiveStreamVideoScaleMode</a>) adaption</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直播推流视频和画布的适应属性。详细信息请参考 <code><a class="el" href="_n_e_rtc_engine_enum_8h.html#a55cccf14f656ebaaef4a5005d32d3b14">NERtcLiveStreamVideoScaleMode</a></code>。  </p>
+
+</div>
+</div>
+<a id="a5b3da7a62b6e631c50f393faa97b2fdf" name="a5b3da7a62b6e631c50f393faa97b2fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3da7a62b6e631c50f393faa97b2fdf">&#9670;&#160;</a></span>audioPush</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) audioPush</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否在直播中混流该用户的对应音频流。可设置为： </p>
+<ul>
+<li>YES：（默认）在直播中混流该用户的对应音频流。</li>
+<li>NO：在直播中将该用户设置为静音。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a5863cf4ce1f0a39e183f1629565568c5" name="a5863cf4ce1f0a39e183f1629565568c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5863cf4ce1f0a39e183f1629565568c5">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>该用户图像在画布中的高度。 <br  />
+取值范围为 0~1920，默认为 0。若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。  </p>
+
+</div>
+</div>
+<a id="a148d3502308afee580cd7acf6a53e5bc" name="a148d3502308afee580cd7acf6a53e5bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148d3502308afee580cd7acf6a53e5bc">&#9670;&#160;</a></span>uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) uid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将指定 uid 对应用户的视频流拉入直播。如果添加多个 users，则 uid 不能重复。  </p>
+
+</div>
+</div>
+<a id="a333171f1dd760753c8379258a70850bb" name="a333171f1dd760753c8379258a70850bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333171f1dd760753c8379258a70850bb">&#9670;&#160;</a></span>videoPush</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) videoPush</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否在直播中向观看者播放该用户的对应视频流。可设置为： </p>
+<ul>
+<li>YES：（默认）在直播中播放该用户的视频流。</li>
+<li>NO：在直播中不播放该用户的视频流。 <br  />
+推流模式为 kNERtcLsModeAudio 时无效。  </li>
+</ul>
+
+</div>
+</div>
+<a id="ab8a10af448c98da17a5f20f5e2d202e6" name="ab8a10af448c98da17a5f20f5e2d202e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8a10af448c98da17a5f20f5e2d202e6">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>该用户图像在画布中的宽度。 <br  />
+取值范围为 0~1920，默认为 0。若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。  </p>
+
+</div>
+</div>
+<a id="ac2b14ca8eae9c67ee464bd1e7b7b1aa4" name="ac2b14ca8eae9c67ee464bd1e7b7b1aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b14ca8eae9c67ee464bd1e7b7b1aa4">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) x</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><br  />
+x 参数用于设置用户图像的横轴坐标值。通过 x 和 y 指定画布坐标中的一个点，该点将作为用户图像的左上角。 <br  />
+取值范围为 0~1920，若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。  </p>
+
+</div>
+</div>
+<a id="a92d38d9eee9cb72d41877626fee52d33" name="a92d38d9eee9cb72d41877626fee52d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d38d9eee9cb72d41877626fee52d33">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><br  />
+Y 参数用于设置用户图像的纵轴坐标值。通过 x 和 y 指定画布坐标中的一个点，该点将作为用户图像的左上角。 <br  />
+取值范围为 0~1920，若设置为奇数值，会自动向下取偶。 <br  />
+用户图像范围如果超出超出画布，调用方法时会报错。  </p>
+
+</div>
+</div>
+<a id="a0232292f8ac437ed991a0e360e87c851" name="a0232292f8ac437ed991a0e360e87c851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0232292f8ac437ed991a0e360e87c851">&#9670;&#160;</a></span>zOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) zOrder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图层编号，用来决定渲染层级, 取值 0-100 , 0 位于最底层，100 位于最顶层，相同层级的渲染区域按照现有的覆盖逻辑实现（按照数组中顺序进行渲染，index 递增依次往上叠加）。  </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_base_8h_source.html">NERtcEngineBase.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

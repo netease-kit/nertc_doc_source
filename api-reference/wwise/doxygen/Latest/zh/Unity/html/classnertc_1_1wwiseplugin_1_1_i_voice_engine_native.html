@@ -1,0 +1,934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IVoiceEngineNative类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.html">IVoiceEngineNative</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IVoiceEngineNative类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 nertc.wwiseplugin.IVoiceEngineNative 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1wwiseplugin_1_1_i_voice_engine_native.png" usemap="#nertc.wwiseplugin.IVoiceEngineNative_map" alt=""/>
+  <map id="nertc.wwiseplugin.IVoiceEngineNative_map" name="nertc.wwiseplugin.IVoiceEngineNative_map">
+<area href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html" alt="nertc.wwiseplugin.IVoiceEngine" shape="rect" coords="0,56,228,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnertc_1_1wwiseplugin_1_1_i_voice_engine_native_1_1_native_voice_engine_event.html">NativeVoiceEngineEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a175ab83b99074771d41d47eb882cc21d" id="r_a175ab83b99074771d41d47eb882cc21d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a175ab83b99074771d41d47eb882cc21d">onAuth</a> (int error_code)</td></tr>
+<tr class="separator:a175ab83b99074771d41d47eb882cc21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0faa568d64523949f84ce651e0801d06" id="r_a0faa568d64523949f84ce651e0801d06"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0faa568d64523949f84ce651e0801d06">onRecordCompleted</a> (int error_code, string filePath)</td></tr>
+<tr class="separator:a0faa568d64523949f84ce651e0801d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02ee3ddae2e64dc534202ea9a25f5f6" id="r_ab02ee3ddae2e64dc534202ea9a25f5f6"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab02ee3ddae2e64dc534202ea9a25f5f6">onPlayCompleted</a> (int error_code, string filePath)</td></tr>
+<tr class="separator:ab02ee3ddae2e64dc534202ea9a25f5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5718074c261db7c8e4846de05b2333cb" id="r_a5718074c261db7c8e4846de05b2333cb"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5718074c261db7c8e4846de05b2333cb">onUploadCompleted</a> (int error_code, string filePath, string fileID)</td></tr>
+<tr class="separator:a5718074c261db7c8e4846de05b2333cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e051a2b7ebabfcd114e570db4f5a66" id="r_af7e051a2b7ebabfcd114e570db4f5a66"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7e051a2b7ebabfcd114e570db4f5a66">onDownloadCompleted</a> (int error_code, string filePath, string fileID, int auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:af7e051a2b7ebabfcd114e570db4f5a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab133d30801f8a8c8dcc92c5364dc1776" id="r_ab133d30801f8a8c8dcc92c5364dc1776"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab133d30801f8a8c8dcc92c5364dc1776">onSpeechToTextCompleted</a> (int error_code, string fileID, string text, int auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:ab133d30801f8a8c8dcc92c5364dc1776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8775e34d22675d9e9f18661fc2e70688" id="r_a8775e34d22675d9e9f18661fc2e70688"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8775e34d22675d9e9f18661fc2e70688">onRecordingVolume</a> (int volume)</td></tr>
+<tr class="separator:a8775e34d22675d9e9f18661fc2e70688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50ba70d0836cf6d9e934855abd06268" id="r_ae50ba70d0836cf6d9e934855abd06268"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae50ba70d0836cf6d9e934855abd06268">onPlayingVolume</a> (int volume)</td></tr>
+<tr class="separator:ae50ba70d0836cf6d9e934855abd06268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8118bad34bde9b520b125db11500f87" id="r_aa8118bad34bde9b520b125db11500f87"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8118bad34bde9b520b125db11500f87">setEvents</a> (ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_i_voice_engine_native_1_1_native_voice_engine_event.html">NativeVoiceEngineEvent</a> events)</td></tr>
+<tr class="separator:aa8118bad34bde9b520b125db11500f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ca1fdfd30aacf1e982e68baaa8a690" id="r_a55ca1fdfd30aacf1e982e68baaa8a690"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55ca1fdfd30aacf1e982e68baaa8a690">setAuth</a> (ulong userID, string token, int size)</td></tr>
+<tr class="separator:a55ca1fdfd30aacf1e982e68baaa8a690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17239fc9be7c973a304dd92e318bb089" id="r_a17239fc9be7c973a304dd92e318bb089"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17239fc9be7c973a304dd92e318bb089">setMaxMessageLength</a> (int timestamp)</td></tr>
+<tr class="separator:a17239fc9be7c973a304dd92e318bb089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53af7f6c2286dd495ad4f65985e1db6f" id="r_a53af7f6c2286dd495ad4f65985e1db6f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53af7f6c2286dd495ad4f65985e1db6f">startRecording</a> (string filePath)</td></tr>
+<tr class="separator:a53af7f6c2286dd495ad4f65985e1db6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae239b5f28ab6a844308982d5254d8cd2" id="r_ae239b5f28ab6a844308982d5254d8cd2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae239b5f28ab6a844308982d5254d8cd2">stopRecording</a> ()</td></tr>
+<tr class="separator:ae239b5f28ab6a844308982d5254d8cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad593f6f8b8581d986d7663aea2a43d30" id="r_ad593f6f8b8581d986d7663aea2a43d30"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad593f6f8b8581d986d7663aea2a43d30">pauseRecording</a> ()</td></tr>
+<tr class="separator:ad593f6f8b8581d986d7663aea2a43d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8254208b8f21b0d55cec15d6b50ddc54" id="r_a8254208b8f21b0d55cec15d6b50ddc54"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8254208b8f21b0d55cec15d6b50ddc54">resumeRecording</a> ()</td></tr>
+<tr class="separator:a8254208b8f21b0d55cec15d6b50ddc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33234a25398dea84eb6450af20cf45d" id="r_ac33234a25398dea84eb6450af20cf45d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac33234a25398dea84eb6450af20cf45d">cancelRecording</a> ()</td></tr>
+<tr class="separator:ac33234a25398dea84eb6450af20cf45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81863f6e46c52341f49864fb51207cfe" id="r_a81863f6e46c52341f49864fb51207cfe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81863f6e46c52341f49864fb51207cfe">uploadRecordedFile</a> (string filePath)</td></tr>
+<tr class="separator:a81863f6e46c52341f49864fb51207cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356cf322425b2ffc577ea29a4d2639ef" id="r_a356cf322425b2ffc577ea29a4d2639ef"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a356cf322425b2ffc577ea29a4d2639ef">downloadRecordedFile</a> (string fileID, string filePath)</td></tr>
+<tr class="separator:a356cf322425b2ffc577ea29a4d2639ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed784a9c114331813f875220b1480a7" id="r_a2ed784a9c114331813f875220b1480a7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ed784a9c114331813f875220b1480a7">playRecordedFile</a> (string filePath)</td></tr>
+<tr class="separator:a2ed784a9c114331813f875220b1480a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1183c0c361b3eac15c08ab901d4f993c" id="r_a1183c0c361b3eac15c08ab901d4f993c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1183c0c361b3eac15c08ab901d4f993c">stopPlayFile</a> ()</td></tr>
+<tr class="separator:a1183c0c361b3eac15c08ab901d4f993c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729b70de9a1839859c7669d335eb6c11" id="r_a729b70de9a1839859c7669d335eb6c11"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a729b70de9a1839859c7669d335eb6c11">speechToText</a> (string fileID)</td></tr>
+<tr class="separator:a729b70de9a1839859c7669d335eb6c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588738d9bb899a5e799ef09a264085bc" id="r_a588738d9bb899a5e799ef09a264085bc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a588738d9bb899a5e799ef09a264085bc">getFileSize</a> (string filePath)</td></tr>
+<tr class="separator:a588738d9bb899a5e799ef09a264085bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490e19ad4fcf95ef38dd777b48d99dd5" id="r_a490e19ad4fcf95ef38dd777b48d99dd5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a490e19ad4fcf95ef38dd777b48d99dd5">getVoiceFileDuration</a> (string filePath)</td></tr>
+<tr class="separator:a490e19ad4fcf95ef38dd777b48d99dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5060e9b5f0bb8589c51df1fd10a0e6c" id="r_aa5060e9b5f0bb8589c51df1fd10a0e6c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5060e9b5f0bb8589c51df1fd10a0e6c">setMicVolume</a> (int volume)</td></tr>
+<tr class="separator:aa5060e9b5f0bb8589c51df1fd10a0e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4fdd7bf43658aa14e450ee7b742233f" id="r_aa4fdd7bf43658aa14e450ee7b742233f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4fdd7bf43658aa14e450ee7b742233f">getMicVolume</a> ()</td></tr>
+<tr class="separator:aa4fdd7bf43658aa14e450ee7b742233f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadc57c74962aab1f4992c9b46ac9932" id="r_aaadc57c74962aab1f4992c9b46ac9932"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaadc57c74962aab1f4992c9b46ac9932">setSpeakerVolume</a> (int volume)</td></tr>
+<tr class="separator:aaadc57c74962aab1f4992c9b46ac9932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5539b00ab356094ede307c9f16fc83f8" id="r_a5539b00ab356094ede307c9f16fc83f8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5539b00ab356094ede307c9f16fc83f8">getSpeakerVolume</a> ()</td></tr>
+<tr class="separator:a5539b00ab356094ede307c9f16fc83f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ac33234a25398dea84eb6450af20cf45d" name="ac33234a25398dea84eb6450af20cf45d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33234a25398dea84eb6450af20cf45d">&#9670;&#160;</a></span>cancelRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.cancelRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a356cf322425b2ffc577ea29a4d2639ef" name="a356cf322425b2ffc577ea29a4d2639ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356cf322425b2ffc577ea29a4d2639ef">&#9670;&#160;</a></span>downloadRecordedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.downloadRecordedFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a588738d9bb899a5e799ef09a264085bc" name="a588738d9bb899a5e799ef09a264085bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588738d9bb899a5e799ef09a264085bc">&#9670;&#160;</a></span>getFileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.getFileSize </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4fdd7bf43658aa14e450ee7b742233f" name="aa4fdd7bf43658aa14e450ee7b742233f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4fdd7bf43658aa14e450ee7b742233f">&#9670;&#160;</a></span>getMicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.getMicVolume </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5539b00ab356094ede307c9f16fc83f8" name="a5539b00ab356094ede307c9f16fc83f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5539b00ab356094ede307c9f16fc83f8">&#9670;&#160;</a></span>getSpeakerVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.getSpeakerVolume </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a490e19ad4fcf95ef38dd777b48d99dd5" name="a490e19ad4fcf95ef38dd777b48d99dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a490e19ad4fcf95ef38dd777b48d99dd5">&#9670;&#160;</a></span>getVoiceFileDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.getVoiceFileDuration </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a175ab83b99074771d41d47eb882cc21d" name="a175ab83b99074771d41d47eb882cc21d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175ab83b99074771d41d47eb882cc21d">&#9670;&#160;</a></span>onAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onAuth </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7e051a2b7ebabfcd114e570db4f5a66" name="af7e051a2b7ebabfcd114e570db4f5a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e051a2b7ebabfcd114e570db4f5a66">&#9670;&#160;</a></span>onDownloadCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onDownloadCompleted </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditStatus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>auditDetail</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab02ee3ddae2e64dc534202ea9a25f5f6" name="ab02ee3ddae2e64dc534202ea9a25f5f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02ee3ddae2e64dc534202ea9a25f5f6">&#9670;&#160;</a></span>onPlayCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onPlayCompleted </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae50ba70d0836cf6d9e934855abd06268" name="ae50ba70d0836cf6d9e934855abd06268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50ba70d0836cf6d9e934855abd06268">&#9670;&#160;</a></span>onPlayingVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onPlayingVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0faa568d64523949f84ce651e0801d06" name="a0faa568d64523949f84ce651e0801d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0faa568d64523949f84ce651e0801d06">&#9670;&#160;</a></span>onRecordCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onRecordCompleted </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8775e34d22675d9e9f18661fc2e70688" name="a8775e34d22675d9e9f18661fc2e70688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8775e34d22675d9e9f18661fc2e70688">&#9670;&#160;</a></span>onRecordingVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onRecordingVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab133d30801f8a8c8dcc92c5364dc1776" name="ab133d30801f8a8c8dcc92c5364dc1776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab133d30801f8a8c8dcc92c5364dc1776">&#9670;&#160;</a></span>onSpeechToTextCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onSpeechToTextCompleted </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditStatus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>auditDetail</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5718074c261db7c8e4846de05b2333cb" name="a5718074c261db7c8e4846de05b2333cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5718074c261db7c8e4846de05b2333cb">&#9670;&#160;</a></span>onUploadCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">delegate void nertc.wwiseplugin.IVoiceEngineNative.onUploadCompleted </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad593f6f8b8581d986d7663aea2a43d30" name="ad593f6f8b8581d986d7663aea2a43d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad593f6f8b8581d986d7663aea2a43d30">&#9670;&#160;</a></span>pauseRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.pauseRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ed784a9c114331813f875220b1480a7" name="a2ed784a9c114331813f875220b1480a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed784a9c114331813f875220b1480a7">&#9670;&#160;</a></span>playRecordedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.playRecordedFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8254208b8f21b0d55cec15d6b50ddc54" name="a8254208b8f21b0d55cec15d6b50ddc54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8254208b8f21b0d55cec15d6b50ddc54">&#9670;&#160;</a></span>resumeRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.resumeRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55ca1fdfd30aacf1e982e68baaa8a690" name="a55ca1fdfd30aacf1e982e68baaa8a690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ca1fdfd30aacf1e982e68baaa8a690">&#9670;&#160;</a></span>setAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.setAuth </td>
+          <td>(</td>
+          <td class="paramtype">ulong</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8118bad34bde9b520b125db11500f87" name="aa8118bad34bde9b520b125db11500f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8118bad34bde9b520b125db11500f87">&#9670;&#160;</a></span>setEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void nertc.wwiseplugin.IVoiceEngineNative.setEvents </td>
+          <td>(</td>
+          <td class="paramtype">ref <a class="el" href="structnertc_1_1wwiseplugin_1_1_i_voice_engine_native_1_1_native_voice_engine_event.html">NativeVoiceEngineEvent</a></td>          <td class="paramname"><span class="paramname"><em>events</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17239fc9be7c973a304dd92e318bb089" name="a17239fc9be7c973a304dd92e318bb089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17239fc9be7c973a304dd92e318bb089">&#9670;&#160;</a></span>setMaxMessageLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.setMaxMessageLength </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timestamp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5060e9b5f0bb8589c51df1fd10a0e6c" name="aa5060e9b5f0bb8589c51df1fd10a0e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5060e9b5f0bb8589c51df1fd10a0e6c">&#9670;&#160;</a></span>setMicVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.setMicVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaadc57c74962aab1f4992c9b46ac9932" name="aaadc57c74962aab1f4992c9b46ac9932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaadc57c74962aab1f4992c9b46ac9932">&#9670;&#160;</a></span>setSpeakerVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.setSpeakerVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a729b70de9a1839859c7669d335eb6c11" name="a729b70de9a1839859c7669d335eb6c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729b70de9a1839859c7669d335eb6c11">&#9670;&#160;</a></span>speechToText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.speechToText </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53af7f6c2286dd495ad4f65985e1db6f" name="a53af7f6c2286dd495ad4f65985e1db6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53af7f6c2286dd495ad4f65985e1db6f">&#9670;&#160;</a></span>startRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.startRecording </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1183c0c361b3eac15c08ab901d4f993c" name="a1183c0c361b3eac15c08ab901d4f993c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1183c0c361b3eac15c08ab901d4f993c">&#9670;&#160;</a></span>stopPlayFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.stopPlayFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae239b5f28ab6a844308982d5254d8cd2" name="ae239b5f28ab6a844308982d5254d8cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae239b5f28ab6a844308982d5254d8cd2">&#9670;&#160;</a></span>stopRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.stopRecording </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81863f6e46c52341f49864fb51207cfe" name="a81863f6e46c52341f49864fb51207cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81863f6e46c52341f49864fb51207cfe">&#9670;&#160;</a></span>uploadRecordedFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int nertc.wwiseplugin.IVoiceEngineNative.uploadRecordedFile </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/native/<a class="el" href="_rtc_engine_native_8cs.html">RtcEngineNative.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

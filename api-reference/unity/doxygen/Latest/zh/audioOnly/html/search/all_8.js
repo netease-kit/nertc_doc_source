@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['iaudiodevicemanager_0',['IAudioDeviceManager',['../classnertc_1_1_i_audio_device_manager.html',1,'nertc']]],
+  ['iaudioframeobserver_1',['IAudioFrameObserver',['../interfacenertc_1_1_i_audio_frame_observer.html',1,'nertc']]],
+  ['idevicecollection_2',['IDeviceCollection',['../classnertc_1_1_i_device_collection.html',1,'nertc']]],
+  ['imagepaths_3',['imagePaths',['../structnertc_1_1_rtc_image_watermark_config.html#aa85e6d93441361938ae5492af5319c9b',1,'nertc::RtcImageWatermarkConfig']]],
+  ['imagewatermarks_4',['imageWatermarks',['../structnertc_1_1_rtc_video_watermark_config.html#a3c50bfa72dace191254b5c7b744c3da5',1,'nertc::RtcVideoWatermarkConfig']]],
+  ['imediastatsobserver_5',['IMediaStatsObserver',['../interfacenertc_1_1_i_media_stats_observer.html',1,'nertc']]],
+  ['initialize_6',['Initialize',['../classnertc_1_1_i_rtc_engine.html#a59ce201d37962d6788a12360d80d83b9',1,'nertc::IRtcEngine']]],
+  ['initspatializer_7',['InitSpatializer',['../classnertc_1_1_i_rtc_channel.html#a4b426d232b964e6791dc73b8be1c2b1d',1,'nertc.IRtcChannel.InitSpatializer()'],['../classnertc_1_1_i_rtc_engine.html#a5eacbe460233995e7aa33bd7a8712397',1,'nertc.IRtcEngine.InitSpatializer()']]],
+  ['ipredecodeframeobserver_8',['IPredecodeFrameObserver',['../interfacenertc_1_1_i_predecode_frame_observer.html',1,'nertc']]],
+  ['irtcchannel_9',['IRtcChannel',['../classnertc_1_1_i_rtc_channel.html',1,'nertc']]],
+  ['irtcengine_10',['IRtcEngine',['../classnertc_1_1_i_rtc_engine.html',1,'nertc']]],
+  ['irtcvoiceengine_11',['IRtcVoiceEngine',['../classnertc_1_1_i_rtc_voice_engine.html',1,'nertc']]],
+  ['iscameraexposurepositionsupported_12',['IsCameraExposurePositionSupported',['../classnertc_1_1_i_rtc_engine.html#a8d1eb5e9495971b34c862f7a5539ddb1',1,'nertc::IRtcEngine']]],
+  ['iscamerafocussupported_13',['IsCameraFocusSupported',['../classnertc_1_1_i_rtc_engine.html#a33e0e5549d52e5adfcb110cf9352071c',1,'nertc::IRtcEngine']]],
+  ['iscameratorchon_14',['IsCameraTorchOn',['../classnertc_1_1_i_rtc_engine.html#adca29ebe63b6b5c0156347ce63daafec',1,'nertc::IRtcEngine']]],
+  ['iscameratorchsupported_15',['IsCameraTorchSupported',['../classnertc_1_1_i_rtc_engine.html#a2a8309519cb0d73585282b1a7f2797d6',1,'nertc::IRtcEngine']]],
+  ['iscamerazoomsupported_16',['IsCameraZoomSupported',['../classnertc_1_1_i_rtc_engine.html#a1cbe22bf31b82964ba8b001f26e04363',1,'nertc::IRtcEngine']]],
+  ['isinchannel_17',['IsInChannel',['../classnertc_1_1_i_rtc_channel.html#a0870a2b5731fe7608ceff096baa793f9',1,'nertc.IRtcChannel.IsInChannel()'],['../classnertc_1_1_i_rtc_engine.html#a729bccbc09533f65e7342a55ef557dcf',1,'nertc.IRtcEngine.IsInChannel()']]],
+  ['ivideodevicemanager_18',['IVideoDeviceManager',['../classnertc_1_1_i_video_device_manager.html',1,'nertc']]],
+  ['ivideoencoderqosobserver_19',['IVideoEncoderQosObserver',['../interfacenertc_1_1_i_video_encoder_qos_observer.html',1,'nertc']]],
+  ['ivideoframecallback_20',['IVideoFrameCallback',['../interfacenertc_1_1_i_video_frame_callback.html',1,'nertc']]],
+  ['ivideoframerawdatacallback_21',['IVideoFrameRawDataCallback',['../interfacenertc_1_1_i_video_frame_raw_data_callback.html',1,'nertc']]],
+  ['ivoiceenginecallback_22',['IVoiceEngineCallback',['../interfacenertc_1_1_i_voice_engine_callback.html',1,'nertc']]]
+];

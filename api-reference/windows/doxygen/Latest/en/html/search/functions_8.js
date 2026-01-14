@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['mutelocalaudiostream_0',['muteLocalAudioStream',['../classnertc_1_1_i_rtc_channel.html#a5d276b222652330d9c88ec6d2f276ea9',1,'nertc::IRtcChannel::muteLocalAudioStream()'],['../classnertc_1_1_i_rtc_engine_ex.html#a440675d9c53376f2ed0b91b9b9a44623',1,'nertc::IRtcEngineEx::muteLocalAudioStream()']]],
+  ['mutelocalsubstreamaudio_1',['muteLocalSubStreamAudio',['../classnertc_1_1_i_rtc_channel.html#a7ff5640cea90d89b00d2403d5c09c45d',1,'nertc::IRtcChannel::muteLocalSubStreamAudio()'],['../classnertc_1_1_i_rtc_engine_ex.html#a6ee5eba011bd7d548559c3f35189294f',1,'nertc::IRtcEngineEx::muteLocalSubStreamAudio()']]],
+  ['mutelocalvideostream_2',['muteLocalVideoStream',['../classnertc_1_1_i_rtc_channel.html#a07092693bb41ff97f5c376d2b3700ed1',1,'nertc::IRtcChannel::muteLocalVideoStream(bool mute)=0'],['../classnertc_1_1_i_rtc_channel.html#a65a9d4a89d7d81419a1638af0a7e0be3',1,'nertc::IRtcChannel::muteLocalVideoStream(NERtcVideoStreamType type, bool mute)=0'],['../classnertc_1_1_i_rtc_engine_ex.html#a861135de48ec1adc1e8a590089940665',1,'nertc::IRtcEngineEx::muteLocalVideoStream(bool mute)=0'],['../classnertc_1_1_i_rtc_engine_ex.html#aedefd8d66a0239826db8d319a6a17f8c',1,'nertc::IRtcEngineEx::muteLocalVideoStream(NERtcVideoStreamType type, bool mute)=0']]]
+];

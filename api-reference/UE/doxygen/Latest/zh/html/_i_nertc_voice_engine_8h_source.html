@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Unreal Engine SDK: D:/Formatter/api-for-code/1-ToWarehouse/unreal-sdk/Plugins/NertcPlugin/Source/NertcPlugin/Public/INertcVoiceEngine.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Unreal Engine SDK<span id="projectnumber">&#160;V5.4.128</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0b4eaef40a1fe20bedafe9e8e719ce66.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_268be7e88673945a58c12f17c9153784.html">NertcPlugin</a></li><li class="navelem"><a class="el" href="dir_8eb0fe0ad378c4c9c014e4a93a05b0fe.html">Source</a></li><li class="navelem"><a class="el" href="dir_13e5f47451501311b3d9d2d918754d57.html">NertcPlugin</a></li><li class="navelem"><a class="el" href="dir_ed7606406f3558424d03f2108235674a.html">Public</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">INertcVoiceEngine.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_nertc_voice_engine_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_base_8h.html">NertcBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_base_types_8h.html">NertcBaseTypes.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_engine_defines_8h.html">NertcEngineDefines.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_error_code_8h.html">NertcErrorCode.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_warn_code_8h.html">NertcWarnCode.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_i_nertc_media_stats_observer_8h.html">INertcMediaStatsObserver.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_i_nertc_voice_engine_event_handler_8h.html">INertcVoiceEngineEventHandler.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacenertc.html">nertc</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html">   33</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classnertc_1_1_i_rtc_voice_engine.html">IRtcVoiceEngine</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#af2054ad76ddb0fb220e40d2dda2aa898">   36</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#af2054ad76ddb0fb220e40d2dda2aa898">~IRtcVoiceEngine</a>() {}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ad8c99ee3d10c4829c9331e1a8ad86177">   45</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ad8c99ee3d10c4829c9331e1a8ad86177">setEvent</a>(<a class="code hl_class" href="classnertc_1_1_i_rtc_voice_engine_event_handler.html">IRtcVoiceEngineEventHandler</a>* handler) = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ae4f240a951c4f52772f74c368638598e">   59</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ae4f240a951c4f52772f74c368638598e">applyAuth</a>(<a class="code hl_typedef" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <span class="keyword">const</span> <span class="keywordtype">char</span>* token, <span class="keywordtype">int</span> size) = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#a350f8277858df52c710605db0b5e6626">   71</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#a350f8277858df52c710605db0b5e6626">setMaxMessageLength</a>(<span class="keywordtype">int</span> msTime) = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ab01960c653f8c201a66bb03ae4a60151">   83</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ab01960c653f8c201a66bb03ae4a60151">startRecording</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) = 0;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ae3af64c934a1ee4e8cfd0b06d85000e1">   94</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ae3af64c934a1ee4e8cfd0b06d85000e1">stopRecording</a>() = 0;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#abd12b4574937089de7024d82ecdcbd5d">  105</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#abd12b4574937089de7024d82ecdcbd5d">pauseRecording</a>() = 0;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ae7ce646b0ec5eefc0aab66c9e39071ee">  116</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ae7ce646b0ec5eefc0aab66c9e39071ee">resumeRecording</a>() = 0;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#afeb555a66bf038cd1100ea4e0224f04e">  127</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#afeb555a66bf038cd1100ea4e0224f04e">cancelRecording</a>() = 0;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#a2edbbc60abb0f9f1f066bce02d94a3cc">  139</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#a2edbbc60abb0f9f1f066bce02d94a3cc">uploadRecordedFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) = 0;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#a5dcadfaed221c3f71287885c4925ab98">  152</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#a5dcadfaed221c3f71287885c4925ab98">downloadRecordedFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, <span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) = 0;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ab83fd134ea27cce60883b48c8035a609">  164</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ab83fd134ea27cce60883b48c8035a609">playRecordedFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) = 0;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#add284347e4b8eef85b331e55d6fc396a">  175</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#add284347e4b8eef85b331e55d6fc396a">stopPlayFile</a>() = 0;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ae46941514fa04d5ee5dce363a143cfa4">  189</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ae46941514fa04d5ee5dce363a143cfa4">speechToText</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id) = 0;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ae8f08142e76ff316448f75cc126ce98f">  201</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ae8f08142e76ff316448f75cc126ce98f">getFileSize</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) = 0;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#a625476c4b4a0a3189bddc7d796f37a44">  213</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#a625476c4b4a0a3189bddc7d796f37a44">getVoiceFileDuration</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_path) = 0;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#a20b9f6722c23f02f7c67eed8e177a60b">  225</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#a20b9f6722c23f02f7c67eed8e177a60b">setMicVolume</a>(<span class="keywordtype">int</span> volume) = 0;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ab44e9a43ee5a16f1a5eab74ce8dc4427">  236</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ab44e9a43ee5a16f1a5eab74ce8dc4427">getMicVolume</a>() = 0;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#a97b57dc508cda086cfbe346abc5bb10b">  248</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#a97b57dc508cda086cfbe346abc5bb10b">setSpeakerVolume</a>(<span class="keywordtype">int</span> volume) = 0;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classnertc_1_1_i_rtc_voice_engine.html#ae82da40f236d1740ff4222201425006c">  259</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1_i_rtc_voice_engine.html#ae82da40f236d1740ff4222201425006c">getSpeakerVolume</a>() = 0;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    };</div>
+</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>} <span class="comment">//namespace nertc</span></div>
+<div class="ttc" id="a_i_nertc_media_stats_observer_8h_html"><div class="ttname"><a href="_i_nertc_media_stats_observer_8h.html">INertcMediaStatsObserver.h</a></div></div>
+<div class="ttc" id="a_i_nertc_voice_engine_event_handler_8h_html"><div class="ttname"><a href="_i_nertc_voice_engine_event_handler_8h.html">INertcVoiceEngineEventHandler.h</a></div></div>
+<div class="ttc" id="a_nertc_base_8h_html"><div class="ttname"><a href="_nertc_base_8h.html">NertcBase.h</a></div></div>
+<div class="ttc" id="a_nertc_base_types_8h_html"><div class="ttname"><a href="_nertc_base_types_8h.html">NertcBaseTypes.h</a></div></div>
+<div class="ttc" id="a_nertc_engine_defines_8h_html"><div class="ttname"><a href="_nertc_engine_defines_8h.html">NertcEngineDefines.h</a></div></div>
+<div class="ttc" id="a_nertc_error_code_8h_html"><div class="ttname"><a href="_nertc_error_code_8h.html">NertcErrorCode.h</a></div><div class="ttdoc">The definition of error codes of NERtc SDK.</div></div>
+<div class="ttc" id="a_nertc_warn_code_8h_html"><div class="ttname"><a href="_nertc_warn_code_8h.html">NertcWarnCode.h</a></div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_event_handler_html"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine_event_handler.html">nertc::IRtcVoiceEngineEventHandler</a></div><div class="ttdef"><b>定义</b> INertcVoiceEngineEventHandler.h:34</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html">nertc::IRtcVoiceEngine</a></div><div class="ttdef"><b>定义</b> INertcVoiceEngine.h:34</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_a20b9f6722c23f02f7c67eed8e177a60b"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#a20b9f6722c23f02f7c67eed8e177a60b">nertc::IRtcVoiceEngine::setMicVolume</a></div><div class="ttdeci">virtual int setMicVolume(int volume)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_a2edbbc60abb0f9f1f066bce02d94a3cc"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#a2edbbc60abb0f9f1f066bce02d94a3cc">nertc::IRtcVoiceEngine::uploadRecordedFile</a></div><div class="ttdeci">virtual int uploadRecordedFile(const char *file_path)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_a350f8277858df52c710605db0b5e6626"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#a350f8277858df52c710605db0b5e6626">nertc::IRtcVoiceEngine::setMaxMessageLength</a></div><div class="ttdeci">virtual int setMaxMessageLength(int msTime)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_a5dcadfaed221c3f71287885c4925ab98"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#a5dcadfaed221c3f71287885c4925ab98">nertc::IRtcVoiceEngine::downloadRecordedFile</a></div><div class="ttdeci">virtual int downloadRecordedFile(const char *file_id, const char *file_path)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_a625476c4b4a0a3189bddc7d796f37a44"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#a625476c4b4a0a3189bddc7d796f37a44">nertc::IRtcVoiceEngine::getVoiceFileDuration</a></div><div class="ttdeci">virtual int getVoiceFileDuration(const char *file_path)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_a97b57dc508cda086cfbe346abc5bb10b"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#a97b57dc508cda086cfbe346abc5bb10b">nertc::IRtcVoiceEngine::setSpeakerVolume</a></div><div class="ttdeci">virtual int setSpeakerVolume(int volume)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ab01960c653f8c201a66bb03ae4a60151"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ab01960c653f8c201a66bb03ae4a60151">nertc::IRtcVoiceEngine::startRecording</a></div><div class="ttdeci">virtual int startRecording(const char *file_path)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ab44e9a43ee5a16f1a5eab74ce8dc4427"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ab44e9a43ee5a16f1a5eab74ce8dc4427">nertc::IRtcVoiceEngine::getMicVolume</a></div><div class="ttdeci">virtual int getMicVolume()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ab83fd134ea27cce60883b48c8035a609"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ab83fd134ea27cce60883b48c8035a609">nertc::IRtcVoiceEngine::playRecordedFile</a></div><div class="ttdeci">virtual int playRecordedFile(const char *file_path)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_abd12b4574937089de7024d82ecdcbd5d"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#abd12b4574937089de7024d82ecdcbd5d">nertc::IRtcVoiceEngine::pauseRecording</a></div><div class="ttdeci">virtual int pauseRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ad8c99ee3d10c4829c9331e1a8ad86177"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ad8c99ee3d10c4829c9331e1a8ad86177">nertc::IRtcVoiceEngine::setEvent</a></div><div class="ttdeci">virtual void setEvent(IRtcVoiceEngineEventHandler *handler)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_add284347e4b8eef85b331e55d6fc396a"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#add284347e4b8eef85b331e55d6fc396a">nertc::IRtcVoiceEngine::stopPlayFile</a></div><div class="ttdeci">virtual int stopPlayFile()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ae3af64c934a1ee4e8cfd0b06d85000e1"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ae3af64c934a1ee4e8cfd0b06d85000e1">nertc::IRtcVoiceEngine::stopRecording</a></div><div class="ttdeci">virtual int stopRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ae46941514fa04d5ee5dce363a143cfa4"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ae46941514fa04d5ee5dce363a143cfa4">nertc::IRtcVoiceEngine::speechToText</a></div><div class="ttdeci">virtual int speechToText(const char *file_id)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ae4f240a951c4f52772f74c368638598e"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ae4f240a951c4f52772f74c368638598e">nertc::IRtcVoiceEngine::applyAuth</a></div><div class="ttdeci">virtual int applyAuth(uid_t uid, const char *token, int size)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ae7ce646b0ec5eefc0aab66c9e39071ee"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ae7ce646b0ec5eefc0aab66c9e39071ee">nertc::IRtcVoiceEngine::resumeRecording</a></div><div class="ttdeci">virtual int resumeRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ae82da40f236d1740ff4222201425006c"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ae82da40f236d1740ff4222201425006c">nertc::IRtcVoiceEngine::getSpeakerVolume</a></div><div class="ttdeci">virtual int getSpeakerVolume()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_ae8f08142e76ff316448f75cc126ce98f"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#ae8f08142e76ff316448f75cc126ce98f">nertc::IRtcVoiceEngine::getFileSize</a></div><div class="ttdeci">virtual int getFileSize(const char *file_path)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_af2054ad76ddb0fb220e40d2dda2aa898"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#af2054ad76ddb0fb220e40d2dda2aa898">nertc::IRtcVoiceEngine::~IRtcVoiceEngine</a></div><div class="ttdeci">virtual ~IRtcVoiceEngine()</div><div class="ttdef"><b>定义</b> INertcVoiceEngine.h:36</div></div>
+<div class="ttc" id="aclassnertc_1_1_i_rtc_voice_engine_html_afeb555a66bf038cd1100ea4e0224f04e"><div class="ttname"><a href="classnertc_1_1_i_rtc_voice_engine.html#afeb555a66bf038cd1100ea4e0224f04e">nertc::IRtcVoiceEngine::cancelRecording</a></div><div class="ttdeci">virtual int cancelRecording()=0</div></div>
+<div class="ttc" id="anamespacenertc_html"><div class="ttname"><a href="namespacenertc.html">nertc</a></div><div class="ttdoc">namespace nertc</div><div class="ttdef"><b>定义</b> INertcAudioDeviceManager.h:11</div></div>
+<div class="ttc" id="anamespacenertc_html_a6af385d971f538ddd7b5ee227ca4a451"><div class="ttname"><a href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">nertc::uid_t</a></div><div class="ttdeci">uint64_t uid_t</div><div class="ttdef"><b>定义</b> NertcEngineDefines.h:138</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

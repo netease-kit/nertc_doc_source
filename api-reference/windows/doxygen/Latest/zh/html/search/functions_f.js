@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['updatechannelmediarelay_0',['updateChannelMediaRelay',['../classnertc_1_1_i_rtc_channel.html#ade5d3a58a6fa18a2e43c6b7cc3537fe2',1,'nertc::IRtcChannel::updateChannelMediaRelay()'],['../classnertc_1_1_i_rtc_engine_ex.html#a4a1a35c122cd0bba634b312fd00399eb',1,'nertc::IRtcEngineEx::updateChannelMediaRelay()']]],
+  ['updatelivestreamtask_1',['updateLiveStreamTask',['../classnertc_1_1_i_rtc_channel.html#a2570d5b8ed903d0bd086a619f4c84fe5',1,'nertc::IRtcChannel::updateLiveStreamTask()'],['../classnertc_1_1_i_rtc_engine_ex.html#abba8d7c5094509960589e9b6e56c0ef6',1,'nertc::IRtcEngineEx::updateLiveStreamTask(const NERtcLiveStreamTaskInfo &amp;info)=0']]],
+  ['updatelocalrecorderstreamlayoutfortask_2',['updateLocalRecorderStreamLayoutForTask',['../classnertc_1_1_i_rtc_engine_ex.html#aa019c3fedfd6a1c616a073bd2ef828fa',1,'nertc::IRtcEngineEx']]],
+  ['updatelocalrecorderwatermarksfortask_3',['updateLocalRecorderWaterMarksForTask',['../classnertc_1_1_i_rtc_engine_ex.html#a68d92f8c19c875f488265e102382d90e',1,'nertc::IRtcEngineEx']]],
+  ['updatepermissionkey_4',['updatePermissionKey',['../classnertc_1_1_i_rtc_channel.html#ab75a680086ecade7d05f971e516409c4',1,'nertc::IRtcChannel::updatePermissionKey()'],['../classnertc_1_1_i_rtc_engine_ex.html#a75a8d89af8302e1c2ad9eb02e286174a',1,'nertc::IRtcEngineEx::updatePermissionKey()']]],
+  ['updatescreencaptureparameters_5',['updateScreenCaptureParameters',['../classnertc_1_1_i_rtc_channel.html#a6b3b133b7f0d76965eb098f895a69814',1,'nertc::IRtcChannel::updateScreenCaptureParameters()'],['../classnertc_1_1_i_rtc_engine_ex.html#a62d647ee76d11d5790f314e652030878',1,'nertc::IRtcEngineEx::updateScreenCaptureParameters()']]],
+  ['updatescreencaptureregion_6',['updateScreenCaptureRegion',['../classnertc_1_1_i_rtc_channel.html#ae0e9d14fd2c5db3b1544f18a5bb67a02',1,'nertc::IRtcChannel::updateScreenCaptureRegion()'],['../classnertc_1_1_i_rtc_engine_ex.html#a53d4152c3770a262e244752dfaf19801',1,'nertc::IRtcEngineEx::updateScreenCaptureRegion()']]],
+  ['updateselfposition_7',['updateSelfPosition',['../classnertc_1_1_i_rtc_channel.html#a8a4e7c404d47e33f4a1cbff1f1284dfb',1,'nertc::IRtcChannel::updateSelfPosition()'],['../classnertc_1_1_i_rtc_engine_ex.html#a7d1e68f02ce3128fd85837bd431cce1f',1,'nertc::IRtcEngineEx::updateSelfPosition(const NERtcPositionInfo &amp;info)=0']]],
+  ['uploadsdkinfo_8',['uploadSdkInfo',['../classnertc_1_1_i_rtc_engine_ex.html#a62ef828e8411f6b50f6d2b47db9e738b',1,'nertc::IRtcEngineEx']]]
+];

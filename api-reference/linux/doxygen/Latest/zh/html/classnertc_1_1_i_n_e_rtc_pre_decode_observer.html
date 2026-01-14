@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC macOS/Windows SDK: nertc::INERtcPreDecodeObserver类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC macOS/Windows SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="classnertc_1_1_i_n_e_rtc_pre_decode_observer.html">INERtcPreDecodeObserver</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1_i_n_e_rtc_pre_decode_observer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc::INERtcPreDecodeObserver类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="nertc__engine__predecode__observer_8h_source.html">nertc_engine_predecode_observer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac6012e89321a7678e3c1f192c26a0b89" id="r_ac6012e89321a7678e3c1f192c26a0b89"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6012e89321a7678e3c1f192c26a0b89">onFrame</a> (<a class="el" href="structnertc_1_1_n_e_rtc_pre_decode_frame_info.html">NERtcPreDecodeFrameInfo</a> *pre_decode_frame)=0</td></tr>
+<tr class="separator:ac6012e89321a7678e3c1f192c26a0b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>解码前媒体数据观测器。  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ac6012e89321a7678e3c1f192c26a0b89" name="ac6012e89321a7678e3c1f192c26a0b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6012e89321a7678e3c1f192c26a0b89">&#9670;&#160;</a></span>onFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::INERtcPreDecodeObserver::onFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_pre_decode_frame_info.html">NERtcPreDecodeFrameInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>pre_decode_frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>解码前媒体数据回调。</p><ul>
+<li>调用 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a6bf490923f8a8ebbdfdcaa76578dc5cd">setPreDecodeObserver</a> 方法注册解码前媒体数据观测器后，SDK 会触发该回调，可以通过返回的用户 UID、媒体数据类型、数据长度等信息对媒体数据自行编码。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请通过 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a6bf490923f8a8ebbdfdcaa76578dc5cd">setPreDecodeObserver</a> 接口设置回调监听。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>pre_decode_frame </td><td>NERtcPreDecodeFrameInfo* </td><td>解码前媒体数据。  </td></tr>
+</table>
+<br  />
+  </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="nertc__engine__predecode__observer_8h_source.html">nertc_engine_predecode_observer.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

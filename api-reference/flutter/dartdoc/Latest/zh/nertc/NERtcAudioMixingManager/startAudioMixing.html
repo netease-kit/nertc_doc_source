@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the startAudioMixing method from the NERtcAudioMixingManager class, for the Dart programming language.">
+  <title>startAudioMixing method - NERtcAudioMixingManager class - nertc library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc_core.dart</a></li>
+    <li><a href="../../nertc/NERtcAudioMixingManager-class.html">NERtcAudioMixingManager</a></li>
+    <li class="self-crumb">startAudioMixing abstract method</li>
+  </ol>
+  <div class="self-name">startAudioMixing</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="nertc&#47;NERtcAudioMixingManager-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">startAudioMixing</span> abstract method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span>
+<span class="name ">startAudioMixing</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="startAudioMixing-param-options"><span class="type-annotation"><a href="../../nertc/NERtcAudioMixingOptions-class.html">NERtcAudioMixingOptions</a></span> <span class="parameter-name">options</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>开始播放音乐文件</p>
+<p>该方法指定本地或在线音频文件来和录音设备采集的音频流进行混音。</p>
+<ul>
+<li>支持的音乐文件类型包括 MP3、M4A、AAC、3GP、WMA 和 WAV 格式，支持本地文件或在线 URL。</li>
+<li>成功调用该方法后，如果播放状态改变，本地会触发 onAudioMixingStateChanged 回调。</li>
+</ul>
+<p><strong>使用前提</strong></p>
+<p>发送伴音前必须调用 <a href="../../nertc/NERtcEngine/enableLocalAudio.html">NERtcEngine.enableLocalAudio</a> 方法开启本地音频采集。</p>
+<p><strong>调用时机</strong></p>
+<p>请在引擎初始化之后调用此接口，该方法在加入房间前后均可调用。</p>
+<p><strong>说明</strong></p>
+<ul>
+<li>
+<p>若您在通话中途调用此接口播放音乐文件时，手动设置了伴音播放音量或发送音量，则当前通话中再次调用时默认沿用此设置。</p>
+</li>
+<li>
+<p>开启或关闭本地音频采集的操作不再影响音乐文件播放，即 enableLocalAudio(false) 后仍旧可以播放音乐文件。</p>
+</li>
+</ul>
+<p><strong>参数说明</strong></p>
+<p><code>options</code> 创建混音任务配置的选项，包括混音任务类型、混音文件全路径或 URL 等，详细信息请参考 <a href="../../nertc/NERtcAudioMixingOptions-class.html">NERtcAudioMixingOptions</a>。</p>
+<p><strong>相关回调</strong></p>
+<ul>
+<li><a href="../../nertc/NERtcAudioMixingEventCallback/onAudioMixingStateChanged.html">NERtcAudioMixingEventCallback.onAudioMixingStateChanged</a>：本地用户的伴音文件播放状态改变时，本地会触发此回调；可通过此回调接收伴音文件播放状态改变的相关信息，若播放出错，可通过对应错误码排查故障，详细信息请参考 <code>AudioMixingError</code>。</li>
+<li><a href="../../nertc/NERtcAudioMixingEventCallback/onAudioMixingTimestampUpdate.html">NERtcAudioMixingEventCallback.onAudioMixingTimestampUpdate</a>：本地用户的伴音文件播放进度回调。</li>
+</ul>
+<p><strong>返回值</strong></p>
+<ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。
+<ul>
+<li>30003（invalidParam）：参数错误。</li>
+<li>30005（invalidState)：状态错误，比如引擎尚未初始化。</li>
+</ul>
+</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;int&gt; startAudioMixing(NERtcAudioMixingOptions options);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc</a></li>
+    <li><a href="../../nertc/NERtcAudioMixingManager-class.html">NERtcAudioMixingManager</a></li>
+    <li class="self-crumb">startAudioMixing abstract method</li>
+</ol>
+
+
+    <h5>NERtcAudioMixingManager class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

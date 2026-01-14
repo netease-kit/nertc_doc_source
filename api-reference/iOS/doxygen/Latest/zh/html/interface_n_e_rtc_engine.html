@@ -1,0 +1,1011 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcEngine类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">类方法</a> &#124;
+<a href="interface_n_e_rtc_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcEngine类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_8h_source.html">NERtcEngine.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_engine.png" usemap="#NERtcEngine_map" alt=""/>
+  <map id="NERtcEngine_map" name="NERtcEngine_map">
+<area href="protocol_i_n_e_rtc_engine_ex-p.html" title="NERtcEngine 扩展接口" alt="&lt;INERtcEngineEx&gt;" shape="rect" coords="127,112,244,136"/>
+<area href="protocol_i_n_e_rtc_engine-p.html" title="NERtcEngine 的常用接口。" alt="&lt;INERtcEngine&gt;" shape="rect" coords="127,56,244,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+类方法</h2></td></tr>
+<tr class="memitem:aec6fb5c0d067f7c3c159a97f7b6e4bd0" id="r_aec6fb5c0d067f7c3c159a97f7b6e4bd0"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="#aec6fb5c0d067f7c3c159a97f7b6e4bd0">sharedEngine</a></td></tr>
+<tr class="memdesc:aec6fb5c0d067f7c3c159a97f7b6e4bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例 <br  />
+获取之后一直到调用 destroyEngine 之前，返回的实例都将是同一个  <br /></td></tr>
+<tr class="separator:aec6fb5c0d067f7c3c159a97f7b6e4bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ce64655a2033a6e0d25f7308a7f0cc" id="r_a48ce64655a2033a6e0d25f7308a7f0cc"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="#a48ce64655a2033a6e0d25f7308a7f0cc">destroyEngine</a></td></tr>
+<tr class="memdesc:a48ce64655a2033a6e0d25f7308a7f0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例，并释放资源。 <br  />
+该方法释放 NERTC SDK 使用的所有资源。有些 App 只在用户需要时才进行实时音视频通信，完成音视频通话后，则将资源释放出来用于其他操作，该方法适用于此类情况。  <br /></td></tr>
+<tr class="separator:a48ce64655a2033a6e0d25f7308a7f0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8801c83fdcc0c57012466bf811ad63" id="r_a0d8801c83fdcc0c57012466bf811ad63"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="#a0d8801c83fdcc0c57012466bf811ad63">getVersion</a></td></tr>
+<tr class="memdesc:a0d8801c83fdcc0c57012466bf811ad63"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询 SDK 版本号， 该方法在加入房间前后都能调用  <br /></td></tr>
+<tr class="separator:a0d8801c83fdcc0c57012466bf811ad63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_protocol_i_n_e_rtc_engine_ex-p')"><img src="closed.png" alt="-"/>&#160;实例方法 继承自 <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html">&lt;INERtcEngineEx&gt;</a></td></tr>
+<tr class="memitem:a8babba2cbaa5bc82be35136b633d28f7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8babba2cbaa5bc82be35136b633d28f7"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8babba2cbaa5bc82be35136b633d28f7">enableDualStreamMode:</a></td></tr>
+<tr class="memdesc:a8babba2cbaa5bc82be35136b633d28f7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否开启视频大小流模式。 <br  />
+ 通过本接口可以实现设置单流或者双流模式。发送端开启双流模式后，接收端可以选择接收大流还是小流。其中，大流指高分辨率、高码率的视频流，小流指低分辨率、低码率的视频流。  <br /></td></tr>
+<tr class="separator:a8babba2cbaa5bc82be35136b633d28f7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4e5a4f47654867fffbc11530b5853e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a3c4e5a4f47654867fffbc11530b5853e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a3c4e5a4f47654867fffbc11530b5853e">setVideoStreamLayerCount:</a></td></tr>
+<tr class="memdesc:a3c4e5a4f47654867fffbc11530b5853e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是视频流的模式。 <br  />
+ 通过本接口可以实现设置视频流的模式：单流、双流或者三流。发送端开启多流模式后，接收端可以选择接收对应的流。其中，大流指高分辨率、高码率的视频流，中流指标清分辨率、中码率的视频流，小流指低分辨率、低码率的视频流。  <br /></td></tr>
+<tr class="separator:a3c4e5a4f47654867fffbc11530b5853e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bb62778b2d4e27f0ab2c7e725dde05 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a18bb62778b2d4e27f0ab2c7e725dde05"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a18bb62778b2d4e27f0ab2c7e725dde05">setLocalMediaPriority:preemptive:</a></td></tr>
+<tr class="memdesc:a18bb62778b2d4e27f0ab2c7e725dde05 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地用户的媒体流优先级。 <br  />
+ 通过此接口可以实现设置某用户的媒体流优先级为高，从而弱网环境下 SDK 会优先保证其他用户收到的该用户媒体流的质量。  <br /></td></tr>
+<tr class="separator:a18bb62778b2d4e27f0ab2c7e725dde05 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366061054a155dbba3af4037680c1df8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a366061054a155dbba3af4037680c1df8"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a366061054a155dbba3af4037680c1df8">setLocalPublishFallbackOption:</a></td></tr>
+<tr class="memdesc:a366061054a155dbba3af4037680c1df8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置弱网条件下发布的音视频流回退选项。 <br  />
+在网络不理想的环境下，发布的音视频质量都会下降。使用该接口并将 option 设置为 kNERtcStreamFallbackOptionAudioOnly 后:  <br /></td></tr>
+<tr class="separator:a366061054a155dbba3af4037680c1df8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bf45001f53e879713b336c2a16e72a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a76bf45001f53e879713b336c2a16e72a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a76bf45001f53e879713b336c2a16e72a">setRemoteSubscribeFallbackOption:</a></td></tr>
+<tr class="memdesc:a76bf45001f53e879713b336c2a16e72a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置弱网条件下订阅的音视频流回退选项。 <br  />
+弱网环境下，订阅的音视频质量会下降。通过该接口设置订阅音视频流的回退选项后：  <br /></td></tr>
+<tr class="separator:a76bf45001f53e879713b336c2a16e72a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eac5c00babe5ab2dcc8127c5c01abb7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6eac5c00babe5ab2dcc8127c5c01abb7"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6eac5c00babe5ab2dcc8127c5c01abb7">muteLocalAudio:</a></td></tr>
+<tr class="memdesc:a6eac5c00babe5ab2dcc8127c5c01abb7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地音频主流的发送。 <br  />
+该方法用于向网络发送或取消发送本地音频数据，不影响本地音频的采集状态，也不影响接收或播放远端音频流。  <br /></td></tr>
+<tr class="separator:a6eac5c00babe5ab2dcc8127c5c01abb7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c42beb5b7bf460c97f34644e5f4c218 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4c42beb5b7bf460c97f34644e5f4c218"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4c42beb5b7bf460c97f34644e5f4c218">subscribeRemoteAudio:forUserID:</a></td></tr>
+<tr class="memdesc:a4c42beb5b7bf460c97f34644e5f4c218 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消或恢复订阅指定远端用户的音频主流。 <br  />
+加入房间时，默认订阅所有远端用户的音频主流，您也可以通过此方法取消或恢复订阅指定远端用户的音频主流。  <br /></td></tr>
+<tr class="separator:a4c42beb5b7bf460c97f34644e5f4c218 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f040ccab7c039c8e581febdfb80037 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ad1f040ccab7c039c8e581febdfb80037"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ad1f040ccab7c039c8e581febdfb80037">subscribeAllRemoteAudio:</a></td></tr>
+<tr class="memdesc:ad1f040ccab7c039c8e581febdfb80037 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消或恢复订阅所有远端用户的音频主流。 <br  />
+加入房间时，默认订阅所有远端用户的音频主流，即 <code><a class="el" href="protocol_i_n_e_rtc_engine-p.html#a2a674564c41bbd4b5556f08a9d65a558">INERtcEngine#setParameters:</a></code> 方法的 kNERtcKeyAutoSubscribeAudio 参数默认设置为 YES；只有当该参数的设置为 NO 时，此接口的调用才会生效。  <br /></td></tr>
+<tr class="separator:ad1f040ccab7c039c8e581febdfb80037 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2d6ab6408184113ecfd89dc346bbcf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2f2d6ab6408184113ecfd89dc346bbcf"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2f2d6ab6408184113ecfd89dc346bbcf">setAudioSubscribeOnlyBy:</a></td></tr>
+<tr class="memdesc:a2f2d6ab6408184113ecfd89dc346bbcf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置自己的音频只能被房间内指定的人订阅。 <br  />
+默认房间所有其他人都可以订阅自己的音频。  <br /></td></tr>
+<tr class="separator:a2f2d6ab6408184113ecfd89dc346bbcf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaba86b871e0740fd1316b9011c998a1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_adaba86b871e0740fd1316b9011c998a1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adaba86b871e0740fd1316b9011c998a1">enableLocalSubStreamAudio:</a></td></tr>
+<tr class="memdesc:adaba86b871e0740fd1316b9011c998a1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭音频辅流。 <br  />
+开启时远端会收到 <code><a class="el" href="protocol_n_e_rtc_channel_delegate-p.html#ae87f73890f67e3670db311ca8bcd3e09">NERtcChannelDelegate#onNERtcChannelUserSubStreamAudioDidStart:</a></code> 回调，关闭时远端会收到 <code><a class="el" href="protocol_n_e_rtc_channel_delegate-p.html#a97ee288f0abd3bd20cb93c66aa3a53b6">NERtcChannelDelegate#onNERtcChannelUserSubStreamAudioDidStop:</a></code> 回调。  <br /></td></tr>
+<tr class="separator:adaba86b871e0740fd1316b9011c998a1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca25755973f8cecc5d0160a626087201 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aca25755973f8cecc5d0160a626087201"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aca25755973f8cecc5d0160a626087201">subscribeRemoteSubStreamAudio:forUserID:</a></td></tr>
+<tr class="memdesc:aca25755973f8cecc5d0160a626087201 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否订阅指定远端用户的音频辅流。  <br /></td></tr>
+<tr class="separator:aca25755973f8cecc5d0160a626087201 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b7d41cb055127f3f45228af0c6f204 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a69b7d41cb055127f3f45228af0c6f204"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a69b7d41cb055127f3f45228af0c6f204">muteLocalSubStreamAudio:</a></td></tr>
+<tr class="memdesc:a69b7d41cb055127f3f45228af0c6f204 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">静音或解除静音本地上行的音频辅流。  <br /></td></tr>
+<tr class="separator:a69b7d41cb055127f3f45228af0c6f204 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5711b8888f59a172dd1dae5ecac9f210 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5711b8888f59a172dd1dae5ecac9f210"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5711b8888f59a172dd1dae5ecac9f210">setExternalSubStreamAudioSource:sampleRate:channels:</a></td></tr>
+<tr class="memdesc:a5711b8888f59a172dd1dae5ecac9f210 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭外部音频辅流数据源输入。 <br  />
+通过本接口可以实现创建自定义的外部音频源，并通过辅流通道传输该外部音频源的数据。  <br /></td></tr>
+<tr class="separator:a5711b8888f59a172dd1dae5ecac9f210 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5176e4b9526c8a928c900bc98df585cb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5176e4b9526c8a928c900bc98df585cb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5176e4b9526c8a928c900bc98df585cb">pushExternalSubStreamAudioFrame:</a></td></tr>
+<tr class="memdesc:a5176e4b9526c8a928c900bc98df585cb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部音频辅流数据帧。 <br  />
+将外部音频辅流帧数据帧主动推送给内部引擎。通过 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adaba86b871e0740fd1316b9011c998a1">INERtcEngineEx.enableLocalSubStreamAudio:</a></code> 启用音频辅流后，可以调用此接口发送音频辅流 PCM 数据。  <br /></td></tr>
+<tr class="separator:a5176e4b9526c8a928c900bc98df585cb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b8bf74c51be46e6ed1f901a65cebfb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a93b8bf74c51be46e6ed1f901a65cebfb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a93b8bf74c51be46e6ed1f901a65cebfb">subscribeRemoteVideo:forUserID:streamType:</a></td></tr>
+<tr class="memdesc:a93b8bf74c51be46e6ed1f901a65cebfb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">订阅或取消订阅指定远端用户的视频主流。 <br  />
+加入房间后，默认不订阅所有远端用户的视频主流；若您希望看到指定远端用户的视频，可以在监听到对方加入房间或发布视频流之后，通过此方法订阅该用户的视频主流。  <br /></td></tr>
+<tr class="separator:a93b8bf74c51be46e6ed1f901a65cebfb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35756f0c51ee4c5cf1b193e4a1243c99 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a35756f0c51ee4c5cf1b193e4a1243c99"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a35756f0c51ee4c5cf1b193e4a1243c99">startPreview</a></td></tr>
+<tr class="memdesc:a35756f0c51ee4c5cf1b193e4a1243c99 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启视频预览。 <br  />
+通过本接口可以实现在加入房间前启动本地视频预览，支持预览本地摄像头或外部输入视频。  <br /></td></tr>
+<tr class="separator:a35756f0c51ee4c5cf1b193e4a1243c99 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39334f2aeb02faba230d81afcda1e807 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a39334f2aeb02faba230d81afcda1e807"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a39334f2aeb02faba230d81afcda1e807">startPreview:</a></td></tr>
+<tr class="memdesc:a39334f2aeb02faba230d81afcda1e807 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启视频预览。 <br  />
+通过本接口可以实现在加入房间前启动本地视频预览，支持预览本地摄像头或外部输入视频。  <br /></td></tr>
+<tr class="separator:a39334f2aeb02faba230d81afcda1e807 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c86000deb5b55ec388837a51a5a3f3d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a0c86000deb5b55ec388837a51a5a3f3d"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a0c86000deb5b55ec388837a51a5a3f3d">stopPreview</a></td></tr>
+<tr class="memdesc:a0c86000deb5b55ec388837a51a5a3f3d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止视频预览。 <br  />
+通过此接口可以实现在预览本地视频后关闭预览。  <br /></td></tr>
+<tr class="separator:a0c86000deb5b55ec388837a51a5a3f3d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b29417a16144da5894cb606bfef47cb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a1b29417a16144da5894cb606bfef47cb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a1b29417a16144da5894cb606bfef47cb">stopPreview:</a></td></tr>
+<tr class="memdesc:a1b29417a16144da5894cb606bfef47cb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止视频预览。 <br  />
+通过本接口可以实现在预览本地视频后关闭预览。  <br /></td></tr>
+<tr class="separator:a1b29417a16144da5894cb606bfef47cb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18b6a92ccca204b2a6caa87b412d9bc inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa18b6a92ccca204b2a6caa87b412d9bc"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa18b6a92ccca204b2a6caa87b412d9bc">setLocalRenderScaleMode:</a></td></tr>
+<tr class="memdesc:aa18b6a92ccca204b2a6caa87b412d9bc inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画布中本地视频画面的显示模式。 <br  />
+ 通过本接口可以实现设置本地视频画面的适应性，即是否裁剪或缩放。  <br /></td></tr>
+<tr class="separator:aa18b6a92ccca204b2a6caa87b412d9bc inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc786bcf74a9ef13370250ed5a7cc60 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4cc786bcf74a9ef13370250ed5a7cc60"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4cc786bcf74a9ef13370250ed5a7cc60">setLocalRenderScaleMode:streamType:</a></td></tr>
+<tr class="memdesc:a4cc786bcf74a9ef13370250ed5a7cc60 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画布中本地视频画面的显示模式。 <br  />
+ 通过本接口可以实现设置本地视频画面的适应性，即是否裁剪或缩放。  <br /></td></tr>
+<tr class="separator:a4cc786bcf74a9ef13370250ed5a7cc60 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62008220788ca800b93437f8def39085 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a62008220788ca800b93437f8def39085"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a62008220788ca800b93437f8def39085">setRemoteRenderScaleMode:forUserID:</a></td></tr>
+<tr class="memdesc:a62008220788ca800b93437f8def39085 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画布中远端视频画面的显示模式。 <br  />
+ 通过本接口可以实现设置远端视频画面的适应性，即是否裁剪或缩放。  <br /></td></tr>
+<tr class="separator:a62008220788ca800b93437f8def39085 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9c0bb289dc4ac9acbcba82a16eeedf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2c9c0bb289dc4ac9acbcba82a16eeedf"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2c9c0bb289dc4ac9acbcba82a16eeedf">setRemoteRenderScaleMode:forUserID:streamType:</a></td></tr>
+<tr class="memdesc:a2c9c0bb289dc4ac9acbcba82a16eeedf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画布中远端视频画面的显示模式。 <br  />
+ 通过本接口可以实现设置远端视频画面的适应性，即是否裁剪或缩放。  <br /></td></tr>
+<tr class="separator:a2c9c0bb289dc4ac9acbcba82a16eeedf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90484ac4ca070074c79e324d3ce55a28 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a90484ac4ca070074c79e324d3ce55a28"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a90484ac4ca070074c79e324d3ce55a28">setVideoRotationMode:</a></td></tr>
+<tr class="memdesc:a90484ac4ca070074c79e324d3ce55a28 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地视频画面的旋转模式。 <br  />
+该接口用于设置本地视频画面在本地和远端设备上的旋转模式，可以指定本地画面和系统设备的横屏/竖屏模式一致、或者和 App UI 的横屏/竖屏模式一致。  <br /></td></tr>
+<tr class="separator:a90484ac4ca070074c79e324d3ce55a28 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7df3e4f527f4cd3ec9d3d69bcd62ba inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aeb7df3e4f527f4cd3ec9d3d69bcd62ba"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aeb7df3e4f527f4cd3ec9d3d69bcd62ba">muteLocalVideo:</a></td></tr>
+<tr class="memdesc:aeb7df3e4f527f4cd3ec9d3d69bcd62ba inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消或恢复发布本端视频主流。 <br  />
+调用该方法取消发布本地视频主流后，SDK 不再发送本地视频主流。  <br /></td></tr>
+<tr class="separator:aeb7df3e4f527f4cd3ec9d3d69bcd62ba inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5814aba81cffa121f8f418aad1d5784c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5814aba81cffa121f8f418aad1d5784c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5814aba81cffa121f8f418aad1d5784c">muteLocalVideo:streamType:</a></td></tr>
+<tr class="memdesc:a5814aba81cffa121f8f418aad1d5784c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消或恢复发布本地视频。 <br  />
+调用该方法取消发布本地视频主流或辅流后，SDK 不再发送本地视频流。  <br /></td></tr>
+<tr class="separator:a5814aba81cffa121f8f418aad1d5784c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06bc1f897a55d4409def2425edd07117 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a06bc1f897a55d4409def2425edd07117"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a06bc1f897a55d4409def2425edd07117">setLoudspeakerMode:</a></td></tr>
+<tr class="memdesc:a06bc1f897a55d4409def2425edd07117 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否由扬声器播放声音。 <br  />
+ 通过本接口可以实现设置是否将语音路由到扬声器，即设备外放。  <br /></td></tr>
+<tr class="separator:a06bc1f897a55d4409def2425edd07117 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e18ff0850374423b0db987656487fc inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a37e18ff0850374423b0db987656487fc"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a37e18ff0850374423b0db987656487fc">getLoudspeakerMode:</a></td></tr>
+<tr class="memdesc:a37e18ff0850374423b0db987656487fc inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查扬声器状态启用状态。  <br /></td></tr>
+<tr class="separator:a37e18ff0850374423b0db987656487fc inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f140c7ae8b9b1cdc8c2005bd09cfea4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a9f140c7ae8b9b1cdc8c2005bd09cfea4"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a9f140c7ae8b9b1cdc8c2005bd09cfea4">startAudioDump</a></td></tr>
+<tr class="memdesc:a9f140c7ae8b9b1cdc8c2005bd09cfea4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始记录音频 dump。 <br  />
+音频 dump 可用于分析音频问题。  <br /></td></tr>
+<tr class="separator:a9f140c7ae8b9b1cdc8c2005bd09cfea4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6719f39a56734ed36122f0e54de3ef13 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6719f39a56734ed36122f0e54de3ef13"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6719f39a56734ed36122f0e54de3ef13">startAudioDumpWithType:</a></td></tr>
+<tr class="memdesc:a6719f39a56734ed36122f0e54de3ef13 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始进行音频 dump。  <br /></td></tr>
+<tr class="separator:a6719f39a56734ed36122f0e54de3ef13 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffe30ef9f592adb803c6277909cdf80 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a1ffe30ef9f592adb803c6277909cdf80"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a1ffe30ef9f592adb803c6277909cdf80">stopAudioDump</a></td></tr>
+<tr class="memdesc:a1ffe30ef9f592adb803c6277909cdf80 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束记录音频 dump。  <br /></td></tr>
+<tr class="separator:a1ffe30ef9f592adb803c6277909cdf80 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1d7da3489b372ed140d918f1905bd9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aea1d7da3489b372ed140d918f1905bd9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aea1d7da3489b372ed140d918f1905bd9">setVideoDump:</a></td></tr>
+<tr class="memdesc:aea1d7da3489b372ed140d918f1905bd9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频 dump 类型。  <br /></td></tr>
+<tr class="separator:aea1d7da3489b372ed140d918f1905bd9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c389139342e62b2ee28a3e59e6d177e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6c389139342e62b2ee28a3e59e6d177e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6c389139342e62b2ee28a3e59e6d177e">setRemoteHighPriorityAudioStream:forUserID:streamType:</a></td></tr>
+<tr class="memdesc:a6c389139342e62b2ee28a3e59e6d177e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远端用户音频流的高优先级。 支持在音频自动订阅的情况下，设置某一个远端用户的音频为最高优先级，可以优先听到该用户的音频。  <br /></td></tr>
+<tr class="separator:a6c389139342e62b2ee28a3e59e6d177e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a2d466870a39e06a513544731c33ec inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa1a2d466870a39e06a513544731c33ec"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa1a2d466870a39e06a513544731c33ec">switchCameraWithPosition:</a></td></tr>
+<tr class="memdesc:aa1a2d466870a39e06a513544731c33ec inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定前置/后置摄像头。 <br  />
+该方法需要在相机启动后调用，例如调用 startPreview 或 joinChannel 后。  <br /></td></tr>
+<tr class="separator:aa1a2d466870a39e06a513544731c33ec inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501d6269231b2efd465455f6e103a147 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a501d6269231b2efd465455f6e103a147"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a501d6269231b2efd465455f6e103a147">updatePermissionKey:</a></td></tr>
+<tr class="memdesc:a501d6269231b2efd465455f6e103a147 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新权限密钥。  <br /></td></tr>
+<tr class="separator:a501d6269231b2efd465455f6e103a147 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2608a6524df8a49f27aeef2a7473793 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab2608a6524df8a49f27aeef2a7473793"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab2608a6524df8a49f27aeef2a7473793">isFeatureSupportedWithType:</a></td></tr>
+<tr class="memdesc:ab2608a6524df8a49f27aeef2a7473793 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询当前设备是否支持 SDK 中的某项功能  <br /></td></tr>
+<tr class="separator:ab2608a6524df8a49f27aeef2a7473793 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbd19de281ca06629c15a7a65a0ca5c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aecbd19de281ca06629c15a7a65a0ca5c"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#aa365b5cad5e4f8c3812c6dce15c9e2cb">NERtcFeatureSupportType</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aecbd19de281ca06629c15a7a65a0ca5c">getFeatureSupportedType:</a></td></tr>
+<tr class="memdesc:aecbd19de281ca06629c15a7a65a0ca5c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询当前设备支持的 NERtc SDK 的某项功能的级别。  <br /></td></tr>
+<tr class="separator:aecbd19de281ca06629c15a7a65a0ca5c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c75c1ab5c5a76a9beb4b1561e972ad5 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4c75c1ab5c5a76a9beb4b1561e972ad5"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#aaa1fc5b492549002f506a2ef4276cae4">NERtcNetworkConnectionType</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4c75c1ab5c5a76a9beb4b1561e972ad5">getNetworkType</a></td></tr>
+<tr class="memdesc:a4c75c1ab5c5a76a9beb4b1561e972ad5 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本地网络连接类型。  <br /></td></tr>
+<tr class="separator:a4c75c1ab5c5a76a9beb4b1561e972ad5 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6793ef42ba14e628816729ad9b52ce27 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6793ef42ba14e628816729ad9b52ce27"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6793ef42ba14e628816729ad9b52ce27">setMultiPathOption:</a></td></tr>
+<tr class="memdesc:a6793ef42ba14e628816729ad9b52ce27 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置多路径选项。 <br  />
+该方法用于设置是否开启多路径功能，开启多路径功能后，SDK 可以使用多条网络路径传输媒体数据，从而提升媒体传输的质量和可靠性。  <br /></td></tr>
+<tr class="separator:a6793ef42ba14e628816729ad9b52ce27 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ebb802c1d6e84430645026c402352f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a64ebb802c1d6e84430645026c402352f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a64ebb802c1d6e84430645026c402352f">setExternalVideoSource:isScreen:</a></td></tr>
+<tr class="separator:a64ebb802c1d6e84430645026c402352f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec9a0d2e9018b2c5feee77eda3c54b6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_abec9a0d2e9018b2c5feee77eda3c54b6"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abec9a0d2e9018b2c5feee77eda3c54b6">setExternalVideoSource:streamType:</a></td></tr>
+<tr class="memdesc:abec9a0d2e9018b2c5feee77eda3c54b6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭外部视频源数据输入。 <br  />
+通过本接口可以实现创建自定义的外部视频源，您可以选择通过主流或辅流通道传输该外部视频源的数据，但暂不支持同时开启。  <br /></td></tr>
+<tr class="separator:abec9a0d2e9018b2c5feee77eda3c54b6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66673915d07935534c6bac6fbc086f2a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a66673915d07935534c6bac6fbc086f2a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a66673915d07935534c6bac6fbc086f2a">pushExternalVideoFrame:</a></td></tr>
+<tr class="separator:a66673915d07935534c6bac6fbc086f2a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0468916ef88b38b0dc1c00a0874a015a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a0468916ef88b38b0dc1c00a0874a015a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a0468916ef88b38b0dc1c00a0874a015a">pushExternalVideoFrame:streamType:</a></td></tr>
+<tr class="memdesc:a0468916ef88b38b0dc1c00a0874a015a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部视频帧。 <br  />
+该方法主动将视频帧数据用 <a class="el" href="interface_n_e_rtc_video_frame.html" title="视频帧信息。">NERtcVideoFrame</a> 类封装后传递给 SDK。  <br /></td></tr>
+<tr class="separator:a0468916ef88b38b0dc1c00a0874a015a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e82f77fc85b78954af9f78524f7a16 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a46e82f77fc85b78954af9f78524f7a16"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a46e82f77fc85b78954af9f78524f7a16">setupLocalSubStreamVideoCanvas:</a></td></tr>
+<tr class="memdesc:a46e82f77fc85b78954af9f78524f7a16 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本端用户的视频辅流画布。 <br  />
+通过此接口可以实现设置本端用户的辅流显示视图。  <br /></td></tr>
+<tr class="separator:a46e82f77fc85b78954af9f78524f7a16 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0190d059279273f43e27d8cc744ee7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6e0190d059279273f43e27d8cc744ee7"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6e0190d059279273f43e27d8cc744ee7">setupLocalVideoCanvas:streamType:</a></td></tr>
+<tr class="memdesc:a6e0190d059279273f43e27d8cc744ee7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地用户视图。 <br  />
+通过本接口可以实现绑定本地用户和显示视图，并设置本地用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。  <br /></td></tr>
+<tr class="separator:a6e0190d059279273f43e27d8cc744ee7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c7be1553ff31a7a79d8ac314834601 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a25c7be1553ff31a7a79d8ac314834601"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a25c7be1553ff31a7a79d8ac314834601">startScreenCapture:</a></td></tr>
+<tr class="memdesc:a25c7be1553ff31a7a79d8ac314834601 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启屏幕共享。 <br  />
+ 通过此接口开启屏幕共享后，屏幕共享内容以视频辅流的形式发送。  <br /></td></tr>
+<tr class="separator:a25c7be1553ff31a7a79d8ac314834601 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9bb37874b11f11b633d431d6bb5f2b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7c9bb37874b11f11b633d431d6bb5f2b"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7c9bb37874b11f11b633d431d6bb5f2b">stopScreenCapture</a></td></tr>
+<tr class="memdesc:a7c9bb37874b11f11b633d431d6bb5f2b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭屏幕共享。 <br  />
+ 通过此接口可以实现关闭屏幕共享辅流。  <br /></td></tr>
+<tr class="separator:a7c9bb37874b11f11b633d431d6bb5f2b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a300ebbfd3340880d46c49c56f9a593 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a3a300ebbfd3340880d46c49c56f9a593"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a3a300ebbfd3340880d46c49c56f9a593">setLocalRenderSubStreamScaleMode:</a></td></tr>
+<tr class="memdesc:a3a300ebbfd3340880d46c49c56f9a593 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画布中本地屏幕共享辅流视频画面的显示模式。 <br  />
+ 通过本接口可以实现设置本地发布的屏幕共享视频画面的适应性，即是否裁剪或缩放。  <br /></td></tr>
+<tr class="separator:a3a300ebbfd3340880d46c49c56f9a593 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd77ecb11d041fad359fcf47ad030c2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_acdd77ecb11d041fad359fcf47ad030c2"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#acdd77ecb11d041fad359fcf47ad030c2">setupRemoteSubStreamVideoCanvas:forUserID:</a></td></tr>
+<tr class="memdesc:acdd77ecb11d041fad359fcf47ad030c2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远端用户的视频辅流画布。 <br  />
+通过此接口可以实现绑定远端用户和对应辅流的显示视图，即指定某个 uid 使用对应的画布显示。  <br /></td></tr>
+<tr class="separator:acdd77ecb11d041fad359fcf47ad030c2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06890441d5df9a216230bda81829d680 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a06890441d5df9a216230bda81829d680"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a06890441d5df9a216230bda81829d680">setupRemoteVideoCanvas:forUserID:streamType:</a></td></tr>
+<tr class="memdesc:a06890441d5df9a216230bda81829d680 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远端用户的视频辅流画布。 <br  />
+通过此接口可以实现绑定远端用户和对应辅流的显示视图，即指定某个 uid 使用对应的画布显示。  <br /></td></tr>
+<tr class="separator:a06890441d5df9a216230bda81829d680 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4ad0aa9b492ca4784ab7d640f2250b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7b4ad0aa9b492ca4784ab7d640f2250b"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7b4ad0aa9b492ca4784ab7d640f2250b">subscribeRemoteSubStreamVideo:forUserID:</a></td></tr>
+<tr class="memdesc:a7b4ad0aa9b492ca4784ab7d640f2250b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">订阅或取消订阅远端用户的视频辅流。  <br /></td></tr>
+<tr class="separator:a7b4ad0aa9b492ca4784ab7d640f2250b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d11158e0d810a13311056d9d3c8d0d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a76d11158e0d810a13311056d9d3c8d0d"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a76d11158e0d810a13311056d9d3c8d0d">subscribeRemoteVideo:forUserID:streamType:subscribeType:</a></td></tr>
+<tr class="memdesc:a76d11158e0d810a13311056d9d3c8d0d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">订阅或取消订阅指定远端用户的视频主流。 <br  />
+加入房间后，默认不订阅所有远端用户的视频主流；若您希望看到指定远端用户的视频，可以在监听到对方加入房间或发布视频流之后，通过此方法订阅该用户的视频主流。  <br /></td></tr>
+<tr class="separator:a76d11158e0d810a13311056d9d3c8d0d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b06dbd55b623de1d9ee797337744133 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6b06dbd55b623de1d9ee797337744133"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6b06dbd55b623de1d9ee797337744133">setRemoteRenderSubStreamVideoScaleMode:forUserID:</a></td></tr>
+<tr class="memdesc:a6b06dbd55b623de1d9ee797337744133 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置画布中远端屏幕共享视频画面的显示模式。 <br  />
+ 通过本接口可以实现设置远端发布的屏幕共享视频画面的适应性，即是否裁剪或缩放。  <br /></td></tr>
+<tr class="separator:a6b06dbd55b623de1d9ee797337744133 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037df8f9a46eb2687a2699fcebfd5d92 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a037df8f9a46eb2687a2699fcebfd5d92"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a037df8f9a46eb2687a2699fcebfd5d92">setAudioSessionOperationRestriction:</a></td></tr>
+<tr class="memdesc:a037df8f9a46eb2687a2699fcebfd5d92 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 SDK 对 Audio Session 的控制权限。 <br  />
+该方法仅适用于 iOS 平台。 <br  />
+该方法限制 SDK 对 Audio Session 的操作权限。在默认情况下，SDK 和 App 对 Audio Session 都有控制权，但某些场景下，App 会希望限制 SDK 对 Audio Session 的控制权限，而使用其他应用或第三方组件对 Audio Session 进行操控。调用该方法可以实现该功能。 <br  />
+该接口只能在入会之前调用。  <br /></td></tr>
+<tr class="separator:a037df8f9a46eb2687a2699fcebfd5d92 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad7516261a0c05130f08b5e8a2f758e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5ad7516261a0c05130f08b5e8a2f758e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5ad7516261a0c05130f08b5e8a2f758e">setPlayoutDeviceMute:</a></td></tr>
+<tr class="memdesc:a5ad7516261a0c05130f08b5e8a2f758e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否静音音频播放设备。  <br /></td></tr>
+<tr class="separator:a5ad7516261a0c05130f08b5e8a2f758e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f8b72e8ca292fbd4db93406ea8e87 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a539f8b72e8ca292fbd4db93406ea8e87"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a539f8b72e8ca292fbd4db93406ea8e87">getPlayoutDeviceMute:</a></td></tr>
+<tr class="memdesc:a539f8b72e8ca292fbd4db93406ea8e87 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音频播放设备的静音状态。  <br /></td></tr>
+<tr class="separator:a539f8b72e8ca292fbd4db93406ea8e87 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fafb9e115bf5adc2d7d886f680438b1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a3fafb9e115bf5adc2d7d886f680438b1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a3fafb9e115bf5adc2d7d886f680438b1">setRecordDeviceMute:</a></td></tr>
+<tr class="memdesc:a3fafb9e115bf5adc2d7d886f680438b1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否静音音频采集设备。  <br /></td></tr>
+<tr class="separator:a3fafb9e115bf5adc2d7d886f680438b1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c539b99cad03a7a40b6b7af5bf482fe inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4c539b99cad03a7a40b6b7af5bf482fe"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4c539b99cad03a7a40b6b7af5bf482fe">getRecordDeviceMute:</a></td></tr>
+<tr class="memdesc:a4c539b99cad03a7a40b6b7af5bf482fe inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询当前音频采集设备是否静音。  <br /></td></tr>
+<tr class="separator:a4c539b99cad03a7a40b6b7af5bf482fe inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c40f0f97f66fba3d89296f9d0d799c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a00c40f0f97f66fba3d89296f9d0d799c"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a00c40f0f97f66fba3d89296f9d0d799c">isCameraZoomSupported</a></td></tr>
+<tr class="memdesc:a00c40f0f97f66fba3d89296f9d0d799c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测设备当前使用的摄像头是否支持缩放功能。 <br  />
+该方法需要在相机启动后调用，例如调用 startPreview 或 joinChannel 后。  <br /></td></tr>
+<tr class="separator:a00c40f0f97f66fba3d89296f9d0d799c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d38e638fcab88388e66deef1db5eda3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6d38e638fcab88388e66deef1db5eda3"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6d38e638fcab88388e66deef1db5eda3">isCameraTorchSupported</a></td></tr>
+<tr class="memdesc:a6d38e638fcab88388e66deef1db5eda3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测设备是否支持闪光灯常亮。  <br /></td></tr>
+<tr class="separator:a6d38e638fcab88388e66deef1db5eda3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e69b6b9e7aa0cf12b60a0125ce912c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a35e69b6b9e7aa0cf12b60a0125ce912c"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a35e69b6b9e7aa0cf12b60a0125ce912c">isCameraFocusSupported</a></td></tr>
+<tr class="memdesc:a35e69b6b9e7aa0cf12b60a0125ce912c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测设备是否支持手动对焦功能。  <br /></td></tr>
+<tr class="separator:a35e69b6b9e7aa0cf12b60a0125ce912c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8851dd04304f2c68765d63b249d04f9c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8851dd04304f2c68765d63b249d04f9c"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8851dd04304f2c68765d63b249d04f9c">isCameraExposurePositionSupported</a></td></tr>
+<tr class="memdesc:a8851dd04304f2c68765d63b249d04f9c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">检测设备是否支持手动曝光功能。  <br /></td></tr>
+<tr class="separator:a8851dd04304f2c68765d63b249d04f9c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a629ed7aac32c4a679c1ba635cbc665 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5a629ed7aac32c4a679c1ba635cbc665"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5a629ed7aac32c4a679c1ba635cbc665">setCameraExposurePosition:</a></td></tr>
+<tr class="memdesc:a5a629ed7aac32c4a679c1ba635cbc665 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置摄像头的手动曝光位置。 <br  />
+ 通过此接口实现设置摄像头的手动曝光位置前，建议先通过 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8851dd04304f2c68765d63b249d04f9c">INERtcEngineEx#isCameraExposurePositionSupported</a></code> 接口检测设备是否支持手动曝光功能。  <br /></td></tr>
+<tr class="separator:a5a629ed7aac32c4a679c1ba635cbc665 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af635f1db2ac36ef2f05dc2a3d69cd621 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_af635f1db2ac36ef2f05dc2a3d69cd621"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#af635f1db2ac36ef2f05dc2a3d69cd621">setCameraTorchOn:</a></td></tr>
+<tr class="memdesc:af635f1db2ac36ef2f05dc2a3d69cd621 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否打开闪光灯。  <br /></td></tr>
+<tr class="separator:af635f1db2ac36ef2f05dc2a3d69cd621 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687e589c81f20d696221dbb63c51885d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a687e589c81f20d696221dbb63c51885d"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a687e589c81f20d696221dbb63c51885d">isCameraTorchOn</a></td></tr>
+<tr class="memdesc:a687e589c81f20d696221dbb63c51885d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备是否开启了闪光灯。  <br /></td></tr>
+<tr class="separator:a687e589c81f20d696221dbb63c51885d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3478af2e000b4d538d57f297e1ef1e32 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a3478af2e000b4d538d57f297e1ef1e32"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a3478af2e000b4d538d57f297e1ef1e32">setCameraZoomFactor:</a></td></tr>
+<tr class="memdesc:a3478af2e000b4d538d57f297e1ef1e32 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置摄像头缩放比例。 <br  />
+ 通过此接口实现设置摄像头缩放比例前，建议先通过 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#acb04287a7c8606f971ae7fafe1430dac">INERtcEngineEx#maxCameraZoomScale</a></code> 接口查看摄像头支持的最大缩放比例，并根据实际需求合理设置需要的缩放比例。  <br /></td></tr>
+<tr class="separator:a3478af2e000b4d538d57f297e1ef1e32 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb04287a7c8606f971ae7fafe1430dac inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_acb04287a7c8606f971ae7fafe1430dac"><td class="memItemLeft" align="right" valign="top">(float)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#acb04287a7c8606f971ae7fafe1430dac">maxCameraZoomScale</a></td></tr>
+<tr class="memdesc:acb04287a7c8606f971ae7fafe1430dac inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取摄像头支持最大缩放比例。  <br /></td></tr>
+<tr class="separator:acb04287a7c8606f971ae7fafe1430dac inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adb9974317a178f724e51d43e645b2f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4adb9974317a178f724e51d43e645b2f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4adb9974317a178f724e51d43e645b2f">setCameraFocusPositionX:Y:</a></td></tr>
+<tr class="memdesc:a4adb9974317a178f724e51d43e645b2f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置摄像头的手动曝光位置。 <br  />
+ 通过此接口实现设置摄像头的手动曝光位置前，建议先通过 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a35e69b6b9e7aa0cf12b60a0125ce912c">INERtcEngineEx#isCameraFocusSupported</a></code> 接口检测设备是否支持手动曝光功能。  <br /></td></tr>
+<tr class="separator:a4adb9974317a178f724e51d43e645b2f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e99eeb2352eab6269de09df46c959e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a33e99eeb2352eab6269de09df46c959e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a33e99eeb2352eab6269de09df46c959e">setCameraCaptureConfig:</a></td></tr>
+<tr class="memdesc:a33e99eeb2352eab6269de09df46c959e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地摄像头的视频主流采集配置。 <br  />
+通过此接口可以设置本地摄像头采集的主流视频宽度、高度、旋转角度等。  <br /></td></tr>
+<tr class="separator:a33e99eeb2352eab6269de09df46c959e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef85d2b08a6c8bd56116b744614dfdf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8ef85d2b08a6c8bd56116b744614dfdf"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8ef85d2b08a6c8bd56116b744614dfdf">setCameraCaptureConfig:streamType:</a></td></tr>
+<tr class="memdesc:a8ef85d2b08a6c8bd56116b744614dfdf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地摄像头的视频主流或辅流采集配置。 <br  />
+通过此接口可以设置本地摄像头采集的主流或辅流视频宽度、高度、旋转角度等。  <br /></td></tr>
+<tr class="separator:a8ef85d2b08a6c8bd56116b744614dfdf inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d69ad7016f3a7bb00cae1af4f91c2e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a88d69ad7016f3a7bb00cae1af4f91c2e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a88d69ad7016f3a7bb00cae1af4f91c2e">startAudioMixingWithOption:</a></td></tr>
+<tr class="memdesc:a88d69ad7016f3a7bb00cae1af4f91c2e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启伴音。 <br  />
+通过本接口可以实现指定本地或在线音频文件和录音设备采集的音频流进行混音。  <br /></td></tr>
+<tr class="separator:a88d69ad7016f3a7bb00cae1af4f91c2e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16605f60b0a29e51efeadabc3e84540 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ac16605f60b0a29e51efeadabc3e84540"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ac16605f60b0a29e51efeadabc3e84540">stopAudioMixing</a></td></tr>
+<tr class="memdesc:ac16605f60b0a29e51efeadabc3e84540 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止伴音。 <br  />
+ 通过本接口可以实现停止播放本地或在线音频文件，或者录音设备采集的混音音频流。  <br /></td></tr>
+<tr class="separator:ac16605f60b0a29e51efeadabc3e84540 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cd9002c8ed4835fb4b45c6e6728a84 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a72cd9002c8ed4835fb4b45c6e6728a84"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a72cd9002c8ed4835fb4b45c6e6728a84">pauseAudioMixing</a></td></tr>
+<tr class="memdesc:a72cd9002c8ed4835fb4b45c6e6728a84 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停伴音。 <br  />
+ 通过此接口可以实现暂停播放伴音文件。  <br /></td></tr>
+<tr class="separator:a72cd9002c8ed4835fb4b45c6e6728a84 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ed4a3bac62e7a0759910440c2c8437 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ac5ed4a3bac62e7a0759910440c2c8437"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ac5ed4a3bac62e7a0759910440c2c8437">resumeAudioMixing</a></td></tr>
+<tr class="memdesc:ac5ed4a3bac62e7a0759910440c2c8437 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复伴音。 <br  />
+ 通过此接口可以实现恢复播放伴音文件。  <br /></td></tr>
+<tr class="separator:ac5ed4a3bac62e7a0759910440c2c8437 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70f711961f0d8806961d77eb8588cfe inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ac70f711961f0d8806961d77eb8588cfe"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ac70f711961f0d8806961d77eb8588cfe">setAudioMixingSendVolume:</a></td></tr>
+<tr class="memdesc:ac70f711961f0d8806961d77eb8588cfe inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置伴奏的发送音量。  <br /></td></tr>
+<tr class="separator:ac70f711961f0d8806961d77eb8588cfe inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4859f1271b7882283ac05e63a1c64325 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4859f1271b7882283ac05e63a1c64325"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4859f1271b7882283ac05e63a1c64325">getAudioMixingSendVolume:</a></td></tr>
+<tr class="memdesc:a4859f1271b7882283ac05e63a1c64325 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取伴奏发送音量。 <br  />
+该方法获取混音里伴奏的发送音量大小。请在房间内调用该方法。  <br /></td></tr>
+<tr class="separator:a4859f1271b7882283ac05e63a1c64325 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a90985c2664c32f74d4e798aa805fd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ae3a90985c2664c32f74d4e798aa805fd"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ae3a90985c2664c32f74d4e798aa805fd">setAudioMixingPlaybackVolume:</a></td></tr>
+<tr class="memdesc:ae3a90985c2664c32f74d4e798aa805fd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">调节伴奏播放音量。 <br  />
+该方法调节混音里伴奏的播放音量大小。请在房间内调用该方法。  <br /></td></tr>
+<tr class="separator:ae3a90985c2664c32f74d4e798aa805fd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38d3a1399b7872f8627e4888c06fd51 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ae38d3a1399b7872f8627e4888c06fd51"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ae38d3a1399b7872f8627e4888c06fd51">getAudioMixingPlaybackVolume:</a></td></tr>
+<tr class="memdesc:ae38d3a1399b7872f8627e4888c06fd51 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取伴奏播放音量。 <br  />
+该方法获取混音里伴奏的播放音量大小。请在房间内调用该方法。  <br /></td></tr>
+<tr class="separator:ae38d3a1399b7872f8627e4888c06fd51 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1426d6684fea766d8effbe2bbd889e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7c1426d6684fea766d8effbe2bbd889e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7c1426d6684fea766d8effbe2bbd889e">getAudioMixingDuration:</a></td></tr>
+<tr class="memdesc:a7c1426d6684fea766d8effbe2bbd889e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取伴奏时长。 <br  />
+该方法获取伴奏时长，单位为毫秒。请在房间内调用该方法。  <br /></td></tr>
+<tr class="separator:a7c1426d6684fea766d8effbe2bbd889e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6605ed76e0013efd3002bd614d29f5 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a9e6605ed76e0013efd3002bd614d29f5"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a9e6605ed76e0013efd3002bd614d29f5">getAudioMixingCurrentPosition:</a></td></tr>
+<tr class="memdesc:a9e6605ed76e0013efd3002bd614d29f5 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音乐文件的播放进度。 <br  />
+该方法获取当前伴奏播放进度，单位为毫秒。请在房间内调用该方法。  <br /></td></tr>
+<tr class="separator:a9e6605ed76e0013efd3002bd614d29f5 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe96939419d17726feb60c337c057b0c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_abe96939419d17726feb60c337c057b0c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abe96939419d17726feb60c337c057b0c">setAudioMixingPosition:</a></td></tr>
+<tr class="memdesc:abe96939419d17726feb60c337c057b0c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音乐文件的播放位置。 <br  />
+该方法可以设置音频文件的播放位置，这样您可以根据实际情况播放文件，而非从头到尾播放整个文件。  <br /></td></tr>
+<tr class="separator:abe96939419d17726feb60c337c057b0c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3045c73ffaaf646075caa4880869b40b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a3045c73ffaaf646075caa4880869b40b"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a3045c73ffaaf646075caa4880869b40b">setAudioMixingPitch:</a></td></tr>
+<tr class="memdesc:a3045c73ffaaf646075caa4880869b40b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置当前伴音文件的音调。  <br /></td></tr>
+<tr class="separator:a3045c73ffaaf646075caa4880869b40b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f98e6d9d1888f336754c4edca2c0767 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a3f98e6d9d1888f336754c4edca2c0767"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a3f98e6d9d1888f336754c4edca2c0767">getAudioMixingPitch:</a></td></tr>
+<tr class="memdesc:a3f98e6d9d1888f336754c4edca2c0767 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前伴音文件的音调。  <br /></td></tr>
+<tr class="separator:a3f98e6d9d1888f336754c4edca2c0767 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c8f67940de3664677319f44ddad14c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a97c8f67940de3664677319f44ddad14c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a97c8f67940de3664677319f44ddad14c">playEffectWitdId:effectOption:</a></td></tr>
+<tr class="memdesc:a97c8f67940de3664677319f44ddad14c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放指定音效文件。 通过此接口可以实现播放指定的本地或在线音效文件。  <br /></td></tr>
+<tr class="separator:a97c8f67940de3664677319f44ddad14c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6726d78c04ca9d2887f16aaaf7d541 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ace6726d78c04ca9d2887f16aaaf7d541"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ace6726d78c04ca9d2887f16aaaf7d541">stopEffectWitdId:</a></td></tr>
+<tr class="memdesc:ace6726d78c04ca9d2887f16aaaf7d541 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止播放指定音效文件。  <br /></td></tr>
+<tr class="separator:ace6726d78c04ca9d2887f16aaaf7d541 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcd13ffb21744c3546ec8a8480348a7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_afbcd13ffb21744c3546ec8a8480348a7"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#afbcd13ffb21744c3546ec8a8480348a7">stopAllEffects</a></td></tr>
+<tr class="memdesc:afbcd13ffb21744c3546ec8a8480348a7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止播放所有音效文件。 通过此接口可以实现在同时播放多个音效文件时，可以一次性停止播放所有文件（含暂停播放的文件）。  <br /></td></tr>
+<tr class="separator:afbcd13ffb21744c3546ec8a8480348a7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb25633a80cde0742a9f29afc796f845 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_adb25633a80cde0742a9f29afc796f845"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adb25633a80cde0742a9f29afc796f845">pauseEffectWitdId:</a></td></tr>
+<tr class="memdesc:adb25633a80cde0742a9f29afc796f845 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停播放指定音效文件。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:adb25633a80cde0742a9f29afc796f845 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b942e94336cd593d467263c1e0acd0e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6b942e94336cd593d467263c1e0acd0e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6b942e94336cd593d467263c1e0acd0e">resumeEffectWitdId:</a></td></tr>
+<tr class="memdesc:a6b942e94336cd593d467263c1e0acd0e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复播放指定音效文件。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:a6b942e94336cd593d467263c1e0acd0e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf23bf2065d79fcd2dd3d3748414bcb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_acbf23bf2065d79fcd2dd3d3748414bcb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#acbf23bf2065d79fcd2dd3d3748414bcb">pauseAllEffects</a></td></tr>
+<tr class="memdesc:acbf23bf2065d79fcd2dd3d3748414bcb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停播放所有音效文件。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:acbf23bf2065d79fcd2dd3d3748414bcb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41b74fcf46fe8941ecef51fb3659f84 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa41b74fcf46fe8941ecef51fb3659f84"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa41b74fcf46fe8941ecef51fb3659f84">resumeAllEffects</a></td></tr>
+<tr class="memdesc:aa41b74fcf46fe8941ecef51fb3659f84 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复播放所有音效文件。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:aa41b74fcf46fe8941ecef51fb3659f84 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7447cd7beb928e84b5b41ae1e061a1e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab7447cd7beb928e84b5b41ae1e061a1e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab7447cd7beb928e84b5b41ae1e061a1e">setEffectSendVolumeWithId:volume:</a></td></tr>
+<tr class="memdesc:ab7447cd7beb928e84b5b41ae1e061a1e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音效文件发送音量。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:ab7447cd7beb928e84b5b41ae1e061a1e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14acfef8d29e35a3691b3c5d7ac75e42 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a14acfef8d29e35a3691b3c5d7ac75e42"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a14acfef8d29e35a3691b3c5d7ac75e42">getEffectSendVolumeWithId:volume:</a></td></tr>
+<tr class="memdesc:a14acfef8d29e35a3691b3c5d7ac75e42 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定音效文件发送音量。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:a14acfef8d29e35a3691b3c5d7ac75e42 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8772100d22231aeaec6631ee8ef30d35 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8772100d22231aeaec6631ee8ef30d35"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8772100d22231aeaec6631ee8ef30d35">setEffectPlaybackVolumeWithId:volume:</a></td></tr>
+<tr class="memdesc:a8772100d22231aeaec6631ee8ef30d35 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音效文件播放音量。 <br  />
+请在加入房间后调用该方法。  <br /></td></tr>
+<tr class="separator:a8772100d22231aeaec6631ee8ef30d35 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52cdfdcf8ef99cad309a88d034080c9a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a52cdfdcf8ef99cad309a88d034080c9a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a52cdfdcf8ef99cad309a88d034080c9a">getEffectPlaybackVolumeWithId:volume:</a></td></tr>
+<tr class="memdesc:a52cdfdcf8ef99cad309a88d034080c9a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音效的回放音量  <br /></td></tr>
+<tr class="separator:a52cdfdcf8ef99cad309a88d034080c9a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57c7c2e2c035baea273b768079a9ef9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ae57c7c2e2c035baea273b768079a9ef9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ae57c7c2e2c035baea273b768079a9ef9">getEffectDurationWithId:duration:</a></td></tr>
+<tr class="memdesc:ae57c7c2e2c035baea273b768079a9ef9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音效文件时长。  <br /></td></tr>
+<tr class="separator:ae57c7c2e2c035baea273b768079a9ef9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741eeb7f1182c843bba3ff384c74b786 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a741eeb7f1182c843bba3ff384c74b786"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a741eeb7f1182c843bba3ff384c74b786">getEffectCurrentPositionWithId:position:</a></td></tr>
+<tr class="memdesc:a741eeb7f1182c843bba3ff384c74b786 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取音效的播放进度。  <br /></td></tr>
+<tr class="separator:a741eeb7f1182c843bba3ff384c74b786 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bd714494f44c4eb56b6eef0efd8b77 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a71bd714494f44c4eb56b6eef0efd8b77"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a71bd714494f44c4eb56b6eef0efd8b77">setEffectPositionWithId:position:</a></td></tr>
+<tr class="memdesc:a71bd714494f44c4eb56b6eef0efd8b77 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定音效文件的播放位置。  <br /></td></tr>
+<tr class="separator:a71bd714494f44c4eb56b6eef0efd8b77 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2808eda8a838f15c298eec1fe9ddc930 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2808eda8a838f15c298eec1fe9ddc930"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2808eda8a838f15c298eec1fe9ddc930">setEffectPitchWithId:pitch:</a></td></tr>
+<tr class="memdesc:a2808eda8a838f15c298eec1fe9ddc930 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置指定音效文件的音调。  <br /></td></tr>
+<tr class="separator:a2808eda8a838f15c298eec1fe9ddc930 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac139baf9ad03d8aaa04e0f1ae8fff1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_abac139baf9ad03d8aaa04e0f1ae8fff1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abac139baf9ad03d8aaa04e0f1ae8fff1">getEffectPitchWithId:pitch:</a></td></tr>
+<tr class="memdesc:abac139baf9ad03d8aaa04e0f1ae8fff1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定音效文件的音调。  <br /></td></tr>
+<tr class="separator:abac139baf9ad03d8aaa04e0f1ae8fff1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3e4fa1eaf0d481d5cd708dd48a599d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4a3e4fa1eaf0d481d5cd708dd48a599d"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4a3e4fa1eaf0d481d5cd708dd48a599d">enableEarback:volume:</a></td></tr>
+<tr class="memdesc:a4a3e4fa1eaf0d481d5cd708dd48a599d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否开启耳返功能。 <br  />
+  <br /></td></tr>
+<tr class="separator:a4a3e4fa1eaf0d481d5cd708dd48a599d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9669de841a5c3959c8d099bbf3993ca inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ad9669de841a5c3959c8d099bbf3993ca"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ad9669de841a5c3959c8d099bbf3993ca">setEarbackVolume:</a></td></tr>
+<tr class="memdesc:ad9669de841a5c3959c8d099bbf3993ca inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置耳返音量。  <br /></td></tr>
+<tr class="separator:ad9669de841a5c3959c8d099bbf3993ca inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade22f60fac589548e18416b1634ecadb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ade22f60fac589548e18416b1634ecadb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ade22f60fac589548e18416b1634ecadb">startAudioRecording:sampleRate:quality:</a></td></tr>
+<tr class="memdesc:ade22f60fac589548e18416b1634ecadb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启客户端本地录音。 通过此接口可以实现录制客户端房间内所有用户混音后的音频流，并将其保存在一个本地录音文件中。  <br /></td></tr>
+<tr class="separator:ade22f60fac589548e18416b1634ecadb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b604a784016af3f2e09f8b3ef372d74 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4b604a784016af3f2e09f8b3ef372d74"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4b604a784016af3f2e09f8b3ef372d74">startAudioRecordingWithConfig:</a></td></tr>
+<tr class="memdesc:a4b604a784016af3f2e09f8b3ef372d74 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始客户端录音。 调用该方法后，客户端会录制房间内所有用户混音后的音频流，并将其保存在本地一个录音文件中。录制开始或结束时，自动触发 onAudioRecording() 回调。 指定的录音音质不同，录音文件会保存为不同格式：  <br /></td></tr>
+<tr class="separator:a4b604a784016af3f2e09f8b3ef372d74 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111dd051d17a6ad838b33068910644e4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a111dd051d17a6ad838b33068910644e4"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a111dd051d17a6ad838b33068910644e4">stopAudioRecording</a></td></tr>
+<tr class="memdesc:a111dd051d17a6ad838b33068910644e4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止客户端本地录音。 本端用户离开房间时会自动停止本地录音，也可以通过此接口实现在通话过程中随时停止录音。  <br /></td></tr>
+<tr class="separator:a111dd051d17a6ad838b33068910644e4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cdc885059f44ed69d5133739b11e20 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a06cdc885059f44ed69d5133739b11e20"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a06cdc885059f44ed69d5133739b11e20">setExternalAudioSource:sampleRate:channels:</a></td></tr>
+<tr class="memdesc:a06cdc885059f44ed69d5133739b11e20 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭外部音频源数据输入。 <br  />
+通过本接口可以实现创建自定义的外部音频源，并通过主流通道传输该外部音频源的数据。  <br /></td></tr>
+<tr class="separator:a06cdc885059f44ed69d5133739b11e20 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c7c1e75142c80c4cbae5d2c4049d49 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a85c7c1e75142c80c4cbae5d2c4049d49"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a85c7c1e75142c80c4cbae5d2c4049d49">pushExternalAudioFrame:</a></td></tr>
+<tr class="memdesc:a85c7c1e75142c80c4cbae5d2c4049d49 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部音频帧。 <br  />
+将外部音频数据帧推送给内部引擎。 通过 setExternalAudioSource 启用外部音频数据输入功能成功后，可以使用 pushExternalAudioFrame 接口发送音频 PCM 数据。  <br /></td></tr>
+<tr class="separator:a85c7c1e75142c80c4cbae5d2c4049d49 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551f4e3cc45976cc1a599275cd89e6d7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a551f4e3cc45976cc1a599275cd89e6d7"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a551f4e3cc45976cc1a599275cd89e6d7">setExternalAudioRender:sampleRate:channels:</a></td></tr>
+<tr class="memdesc:a551f4e3cc45976cc1a599275cd89e6d7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置外部音频渲染。 <br  />
+通过此接口可以实现启用外部音频渲染，并设置音频渲染的采样率、声道数等。  <br /></td></tr>
+<tr class="separator:a551f4e3cc45976cc1a599275cd89e6d7 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1499571dfbbd8505bc1353517d6b1536 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a1499571dfbbd8505bc1353517d6b1536"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a1499571dfbbd8505bc1353517d6b1536">pullExternalAudioFrame:length:</a></td></tr>
+<tr class="memdesc:a1499571dfbbd8505bc1353517d6b1536 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">拉取外部音频数据。 <br  />
+该方法将从内部引擎拉取音频数据。 通过 setExternalAudioRender 启用外部音频数据渲染功能成功后，可以使用 pullExternalAudioFrame 接口获取音频 PCM 数据。  <br /></td></tr>
+<tr class="separator:a1499571dfbbd8505bc1353517d6b1536 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc998d0ed2172ab456ccabeb52ba6083 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_adc998d0ed2172ab456ccabeb52ba6083"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adc998d0ed2172ab456ccabeb52ba6083">setRangeAudioMode:</a></td></tr>
+<tr class="memdesc:adc998d0ed2172ab456ccabeb52ba6083 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置玩家本人在房间中的范围语音模式，该设置不影响其他人。  <br /></td></tr>
+<tr class="separator:adc998d0ed2172ab456ccabeb52ba6083 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f13575e5564e5f94489c3cf4882827 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ae5f13575e5564e5f94489c3cf4882827"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ae5f13575e5564e5f94489c3cf4882827">setRangeAudioTeamID:</a></td></tr>
+<tr class="memdesc:ae5f13575e5564e5f94489c3cf4882827 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置范围语音的小队 ID。  <br /></td></tr>
+<tr class="separator:ae5f13575e5564e5f94489c3cf4882827 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a7a8ed8abe2ee92be3d7a67c855e1f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a52a7a8ed8abe2ee92be3d7a67c855e1f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a52a7a8ed8abe2ee92be3d7a67c855e1f">setAudioRecvRange:conversationalDistance:rollOff:</a></td></tr>
+<tr class="memdesc:a52a7a8ed8abe2ee92be3d7a67c855e1f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置空间音效的距离衰减属性和语音范围。  <br /></td></tr>
+<tr class="separator:a52a7a8ed8abe2ee92be3d7a67c855e1f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a7c30c6a9ecc3ed20092af3fee7410 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a35a7c30c6a9ecc3ed20092af3fee7410"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a35a7c30c6a9ecc3ed20092af3fee7410">updateSelfPosition:</a></td></tr>
+<tr class="memdesc:a35a7c30c6a9ecc3ed20092af3fee7410 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置空间音效中说话者和接收者的空间位置信息。SDK 会根据该方法中的参数计算接收者和说话者之间的相对位置，进而渲染出空间音效。  <br /></td></tr>
+<tr class="separator:a35a7c30c6a9ecc3ed20092af3fee7410 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cd94d5768f789d3d623d654a771057 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ac9cd94d5768f789d3d623d654a771057"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ac9cd94d5768f789d3d623d654a771057">enableSpatializerRoomEffects:</a></td></tr>
+<tr class="memdesc:ac9cd94d5768f789d3d623d654a771057 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭空间音效的房间混响效果  <br /></td></tr>
+<tr class="separator:ac9cd94d5768f789d3d623d654a771057 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922ee5cd068c8bcb1a358039be325293 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a922ee5cd068c8bcb1a358039be325293"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a922ee5cd068c8bcb1a358039be325293">setSpatializerRoomProperty:</a></td></tr>
+<tr class="memdesc:a922ee5cd068c8bcb1a358039be325293 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置空间音效的房间混响属性  <br /></td></tr>
+<tr class="separator:a922ee5cd068c8bcb1a358039be325293 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91962b616254bc447297d175ffe516d9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a91962b616254bc447297d175ffe516d9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a91962b616254bc447297d175ffe516d9">setSpatializerRenderMode:</a></td></tr>
+<tr class="memdesc:a91962b616254bc447297d175ffe516d9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置空间音效的渲染模式  <br /></td></tr>
+<tr class="separator:a91962b616254bc447297d175ffe516d9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d804561873d6e7916af1dd01222f512 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2d804561873d6e7916af1dd01222f512"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2d804561873d6e7916af1dd01222f512">initSpatializer</a></td></tr>
+<tr class="memdesc:a2d804561873d6e7916af1dd01222f512 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化引擎 3D 音效算法  <br /></td></tr>
+<tr class="separator:a2d804561873d6e7916af1dd01222f512 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4439f9e0cabe9fe18d42bbece1bb4ee inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab4439f9e0cabe9fe18d42bbece1bb4ee"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab4439f9e0cabe9fe18d42bbece1bb4ee">enableSpatializer:applyToTeam:</a></td></tr>
+<tr class="memdesc:ab4439f9e0cabe9fe18d42bbece1bb4ee inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭空间音效  <br /></td></tr>
+<tr class="separator:ab4439f9e0cabe9fe18d42bbece1bb4ee inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848310f6d05992778ed924e187a62d5a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a848310f6d05992778ed924e187a62d5a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a848310f6d05992778ed924e187a62d5a">setSubscribeAudioBlocklist:uidArray:</a></td></tr>
+<tr class="memdesc:a848310f6d05992778ed924e187a62d5a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">您可以调用该方法指定不订阅的音频流。  <br /></td></tr>
+<tr class="separator:a848310f6d05992778ed924e187a62d5a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5755919848333304e3badbf0009e5b34 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5755919848333304e3badbf0009e5b34"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5755919848333304e3badbf0009e5b34">setSubscribeAudioAllowlist:</a></td></tr>
+<tr class="memdesc:a5755919848333304e3badbf0009e5b34 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">您可以调用该方法指定只订阅的音频流。  <br /></td></tr>
+<tr class="separator:a5755919848333304e3badbf0009e5b34 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2786e87fa699e1348aa83c075aaa9e3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ad2786e87fa699e1348aa83c075aaa9e3"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ad2786e87fa699e1348aa83c075aaa9e3">enableLocalData:</a></td></tr>
+<tr class="memdesc:ad2786e87fa699e1348aa83c075aaa9e3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地数据通道。  <br /></td></tr>
+<tr class="separator:ad2786e87fa699e1348aa83c075aaa9e3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ab9e2b909b8855fd41f3a361b541e9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a70ab9e2b909b8855fd41f3a361b541e9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a70ab9e2b909b8855fd41f3a361b541e9">subscribeRemoteData:forUserID:</a></td></tr>
+<tr class="memdesc:a70ab9e2b909b8855fd41f3a361b541e9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消或恢复订阅指定远端用户数据通道流。 <br  />
+加入房间时，默认订阅所有远端用户的数据通道流，您可以通过此方法取消或恢复订阅指定远端用户的数据通道流。  <br /></td></tr>
+<tr class="separator:a70ab9e2b909b8855fd41f3a361b541e9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa22c24ead56c6da570cb6cca4dbc2a6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_afa22c24ead56c6da570cb6cca4dbc2a6"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#afa22c24ead56c6da570cb6cca4dbc2a6">sendData:</a></td></tr>
+<tr class="memdesc:afa22c24ead56c6da570cb6cca4dbc2a6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过数据通道发送数据。  <br /></td></tr>
+<tr class="separator:afa22c24ead56c6da570cb6cca4dbc2a6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e692c9bd10df6ee470294f7589f0cc2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a9e692c9bd10df6ee470294f7589f0cc2"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a9e692c9bd10df6ee470294f7589f0cc2">addEngineMediaStatsObserver:</a></td></tr>
+<tr class="memdesc:a9e692c9bd10df6ee470294f7589f0cc2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册媒体统计信息观测器。  <br /></td></tr>
+<tr class="separator:a9e692c9bd10df6ee470294f7589f0cc2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb298ac23729a6c618ba99d710c51c99 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_adb298ac23729a6c618ba99d710c51c99"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adb298ac23729a6c618ba99d710c51c99">removeEngineMediaStatsObserver:</a></td></tr>
+<tr class="memdesc:adb298ac23729a6c618ba99d710c51c99 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除指定媒体统计信息观测器。  <br /></td></tr>
+<tr class="separator:adb298ac23729a6c618ba99d710c51c99 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68703f2bf2e977447dd9265feeb10d9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab68703f2bf2e977447dd9265feeb10d9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab68703f2bf2e977447dd9265feeb10d9">cleanupEngineMediaStatsObserver</a></td></tr>
+<tr class="memdesc:ab68703f2bf2e977447dd9265feeb10d9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除全部媒体统计信息观测器。  <br /></td></tr>
+<tr class="separator:ab68703f2bf2e977447dd9265feeb10d9 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb07bf756073c68f8625ce5dbc51792 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2fb07bf756073c68f8625ce5dbc51792"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2fb07bf756073c68f8625ce5dbc51792">addLiveStreamTask:compeltion:</a></td></tr>
+<tr class="memdesc:a2fb07bf756073c68f8625ce5dbc51792 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加房间内推流任务。 通过此接口可以实现增加一路旁路推流任务；若需推送多路流，则需多次调用该方法。  <br /></td></tr>
+<tr class="separator:a2fb07bf756073c68f8625ce5dbc51792 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c548c7ce5ffe86760623a11ca88993 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa4c548c7ce5ffe86760623a11ca88993"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa4c548c7ce5ffe86760623a11ca88993">updateLiveStreamTask:compeltion:</a></td></tr>
+<tr class="memdesc:aa4c548c7ce5ffe86760623a11ca88993 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新房间内指定推流任务。 通过此接口可以实现调整指定推流任务的编码参数、画布布局、推流模式等。  <br /></td></tr>
+<tr class="separator:aa4c548c7ce5ffe86760623a11ca88993 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f98e936a96622664b425c0d78f7c0c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab2f98e936a96622664b425c0d78f7c0c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab2f98e936a96622664b425c0d78f7c0c">removeLiveStreamTask:compeltion:</a></td></tr>
+<tr class="memdesc:ab2f98e936a96622664b425c0d78f7c0c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除房间内指定推流任务。  <br /></td></tr>
+<tr class="separator:ab2f98e936a96622664b425c0d78f7c0c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea413208d7c250a1f700dd5f85c5904 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aeea413208d7c250a1f700dd5f85c5904"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aeea413208d7c250a1f700dd5f85c5904">setRecordingAudioFrameParameters:</a></td></tr>
+<tr class="memdesc:aeea413208d7c250a1f700dd5f85c5904 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置采集的音频格式。 <br  />
+通过本接口可以实现设置 <code><a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#a5dfe952459d840f86eb3851bf95666e0">NERtcEngineAudioFrameObserver#onNERtcEngineAudioFrameDidRecord:</a></code> 回调的录制声音格式。  <br /></td></tr>
+<tr class="separator:aeea413208d7c250a1f700dd5f85c5904 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7e9a66f2938e8f1fe8d941bbc5869e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8a7e9a66f2938e8f1fe8d941bbc5869e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8a7e9a66f2938e8f1fe8d941bbc5869e">setPlaybackAudioFrameParameters:</a></td></tr>
+<tr class="memdesc:a8a7e9a66f2938e8f1fe8d941bbc5869e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频播放回调的声音格式。 <br  />
+ 通过此接口可以实现设置 SDK 播放音频 PCM 回调 <code><a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#a6de538aa534820f67b002ed1e8a84dc6">NERtcEngineAudioFrameObserver#onNERtcEngineAudioFrameWillPlayback:</a></code> 的采样率及声道数，同时还可以设置读写模式。在写模式下，您可以通过 <code><a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#a6de538aa534820f67b002ed1e8a84dc6">NERtcEngineAudioFrameObserver#onNERtcEngineAudioFrameWillPlayback:</a></code> 回调修改 PCM 数据，后续将播放修改后的音频数据。  <br /></td></tr>
+<tr class="separator:a8a7e9a66f2938e8f1fe8d941bbc5869e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10bdab05e8f954c5fa25cc3920f6f93 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab10bdab05e8f954c5fa25cc3920f6f93"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab10bdab05e8f954c5fa25cc3920f6f93">setMixedAudioFrameParameters:</a></td></tr>
+<tr class="memdesc:ab10bdab05e8f954c5fa25cc3920f6f93 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置采集和播放声音混音后的音频数据格式。 <br  />
+ 通过本接口可以实现设置 <code><a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#aebbdb9feccf532c3bd8d464ba268ad6a">NERtcEngineAudioFrameObserver#onNERtcEngineMixedAudioFrame:</a></code> 回调的混音音频格式。  <br /></td></tr>
+<tr class="separator:ab10bdab05e8f954c5fa25cc3920f6f93 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85be01d1e529df4e11317204243e3699 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a85be01d1e529df4e11317204243e3699"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a85be01d1e529df4e11317204243e3699">setPlaybackBeforeMixingAudioFrameParameters:</a></td></tr>
+<tr class="memdesc:a85be01d1e529df4e11317204243e3699 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置录制和播放声音混音后的数据格式。 <br  />
+该方法设置 <code><a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#aba6cf3b97efe66f4d712972e4c0c95e4">NERtcEngineAudioFrameObserver#onNERtcEnginePlaybackAudioFrameBeforeMixingWithUserID:frame:channelId:</a></code> 回调的声音格式。  <br /></td></tr>
+<tr class="separator:a85be01d1e529df4e11317204243e3699 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb3c336144da3aeedd4309501cff73c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_abcb3c336144da3aeedd4309501cff73c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abcb3c336144da3aeedd4309501cff73c">setAudioFrameObserver:</a></td></tr>
+<tr class="memdesc:abcb3c336144da3aeedd4309501cff73c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册语音观测器对象。 <br  />
+通过此接口可以设置音频采集/播放 PCM 回调，可用于声音处理等操作。  <br /></td></tr>
+<tr class="separator:abcb3c336144da3aeedd4309501cff73c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d903300d1041bb0b5ab5bdae23b545f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a9d903300d1041bb0b5ab5bdae23b545f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a9d903300d1041bb0b5ab5bdae23b545f">setVideoFrameObserver:</a></td></tr>
+<tr class="memdesc:a9d903300d1041bb0b5ab5bdae23b545f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册视频数据观察对象。 <br  />
+通过此接口可以设置视频数据采集回调对象，可以用于第三方美颜等操作。 <br  />
+设置空指针，表示不再监听视频数据采集回调。  <br /></td></tr>
+<tr class="separator:a9d903300d1041bb0b5ab5bdae23b545f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbb8c5f0fe93f075fc49015455e048a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7dbb8c5f0fe93f075fc49015455e048a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7dbb8c5f0fe93f075fc49015455e048a">addRemoteVideoFrameObserver:</a></td></tr>
+<tr class="memdesc:a7dbb8c5f0fe93f075fc49015455e048a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加远端视频帧观察者。 <br  />
+通过此接口可以实现设置远端用户的视频帧回调。  <br /></td></tr>
+<tr class="separator:a7dbb8c5f0fe93f075fc49015455e048a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8d31798d751b42c674354346bc12fd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_acb8d31798d751b42c674354346bc12fd"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#acb8d31798d751b42c674354346bc12fd">enableAudioVolumeIndication:interval:</a></td></tr>
+<tr class="memdesc:acb8d31798d751b42c674354346bc12fd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用说话者音量提示。 <br  />
+通过此接口可以实现允许 SDK 定期向 App 反馈房间内发音频流的用户和瞬时音量最高的远端用户（最多 3 位，包括本端）的音量相关信息，即当前谁在说话以及说话者的音量。  <br /></td></tr>
+<tr class="separator:acb8d31798d751b42c674354346bc12fd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa909cc34093bab5264b508b4724aed51 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa909cc34093bab5264b508b4724aed51"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa909cc34093bab5264b508b4724aed51">enableAudioVolumeIndication:interval:vad:</a></td></tr>
+<tr class="memdesc:aa909cc34093bab5264b508b4724aed51 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用说话者音量提示。 <br  />
+通过此接口可以实现允许 SDK 定期向 App 反馈房间内发音频流的用户和瞬时音量最高的远端用户（最多 3 位，包括本端）的音量相关信息，即当前谁在说话以及说话者的音量。  <br /></td></tr>
+<tr class="separator:aa909cc34093bab5264b508b4724aed51 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6a00050b9e45e39f5d7b536d3a4e4c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a0b6a00050b9e45e39f5d7b536d3a4e4c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a0b6a00050b9e45e39f5d7b536d3a4e4c">adjustRecordingSignalVolume:</a></td></tr>
+<tr class="memdesc:a0b6a00050b9e45e39f5d7b536d3a4e4c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">调节采集信号音量。 通过本接口可以实现设置录制声音的信号幅度，从而达到调节采集音量的目的。  <br /></td></tr>
+<tr class="separator:a0b6a00050b9e45e39f5d7b536d3a4e4c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c92d4e91da3038411c86439f57283d3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7c92d4e91da3038411c86439f57283d3"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7c92d4e91da3038411c86439f57283d3">adjustPlaybackSignalVolume:</a></td></tr>
+<tr class="memdesc:a7c92d4e91da3038411c86439f57283d3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">调节本地播放的所有远端用户的信号音量。 <br  />
+通过此接口可以实现调节所有远端用户在本地播放的混音音量。  <br /></td></tr>
+<tr class="separator:a7c92d4e91da3038411c86439f57283d3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18e835c5a7b2123e25eff15de54f825 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ac18e835c5a7b2123e25eff15de54f825"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ac18e835c5a7b2123e25eff15de54f825">adjustUserPlaybackSignalVolume:forUserID:</a></td></tr>
+<tr class="memdesc:ac18e835c5a7b2123e25eff15de54f825 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">调节本地播放的指定远端用户的信号音量。 <br  />
+通过此接口可以实现在通话过程中随时调节指定远端用户在本地播放的混音音量。  <br /></td></tr>
+<tr class="separator:ac18e835c5a7b2123e25eff15de54f825 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66730e8958e4a07938512fb638be55e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa66730e8958e4a07938512fb638be55e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa66730e8958e4a07938512fb638be55e">adjustChannelPlaybackSignalVolume:</a></td></tr>
+<tr class="memdesc:aa66730e8958e4a07938512fb638be55e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">调节本地播放的指定房间的所有远端用户的信号音量。 <br  />
+通过此接口可以实现在通话过程中随时调节本地播放的指定房间内所有用户的混音音量。  <br /></td></tr>
+<tr class="separator:aa66730e8958e4a07938512fb638be55e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257c04520c22f1f03e1f19747d9d6c63 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a257c04520c22f1f03e1f19747d9d6c63"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a257c04520c22f1f03e1f19747d9d6c63">setLocalVoicePitch:</a></td></tr>
+<tr class="memdesc:a257c04520c22f1f03e1f19747d9d6c63 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地语音音调。 <br  />
+该方法改变本地说话人声音的音调。  <br /></td></tr>
+<tr class="separator:a257c04520c22f1f03e1f19747d9d6c63 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698fdf5ab3a5331bce08f9fab93218fb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a698fdf5ab3a5331bce08f9fab93218fb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a698fdf5ab3a5331bce08f9fab93218fb">setLocalVoiceEqualizationOfBandFrequency:withGain:</a></td></tr>
+<tr class="memdesc:a698fdf5ab3a5331bce08f9fab93218fb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地语音音效均衡，即自定义设置本地人声均衡波段的中心频率。  <br /></td></tr>
+<tr class="separator:a698fdf5ab3a5331bce08f9fab93218fb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2206c82e4df73a46555b0f0aa8d6c76 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ac2206c82e4df73a46555b0f0aa8d6c76"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ac2206c82e4df73a46555b0f0aa8d6c76">setVoiceBeautifierPreset:</a></td></tr>
+<tr class="memdesc:ac2206c82e4df73a46555b0f0aa8d6c76 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">预设美声效果。 通过此接口可以实现为本地发流用户设置 SDK 预设的人声美声效果。  <br /></td></tr>
+<tr class="separator:ac2206c82e4df73a46555b0f0aa8d6c76 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf4769f94c11858794adc5b6b7e0b6d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_adaf4769f94c11858794adc5b6b7e0b6d"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adaf4769f94c11858794adc5b6b7e0b6d">setAudioEffectPreset:</a></td></tr>
+<tr class="memdesc:adaf4769f94c11858794adc5b6b7e0b6d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">预设变声效果。 <br  />
+通过此接口可以实现将人声原音调整为多种特殊效果，改变声音特性。  <br /></td></tr>
+<tr class="separator:adaf4769f94c11858794adc5b6b7e0b6d inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4df8bd007607088f14609b679fe1a130 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4df8bd007607088f14609b679fe1a130"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4df8bd007607088f14609b679fe1a130">setLocalVoiceReverbParam:</a></td></tr>
+<tr class="memdesc:a4df8bd007607088f14609b679fe1a130 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地语音混响效果。  <br /></td></tr>
+<tr class="separator:a4df8bd007607088f14609b679fe1a130 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1888b44bee053175ac294d2db758dd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aee1888b44bee053175ac294d2db758dd"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aee1888b44bee053175ac294d2db758dd">setLocalVideoWatermarkConfigs:withStreamType:</a></td></tr>
+<tr class="memdesc:aee1888b44bee053175ac294d2db758dd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频水印。水印在本地预览及发送过程中均生效。  <br /></td></tr>
+<tr class="separator:aee1888b44bee053175ac294d2db758dd inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893c16a3792b3a694c7317860c994aa8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a893c16a3792b3a694c7317860c994aa8"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a893c16a3792b3a694c7317860c994aa8">takeLocalSnapshot:callback:</a></td></tr>
+<tr class="memdesc:a893c16a3792b3a694c7317860c994aa8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地视频画面截图。 <br  />
+调用 takeLocalSnapshot 截取本地主流或本地辅流的视频画面，并通过 NERtcTakeSnapshotCallback 的回调返回截图画面的数据。  <br /></td></tr>
+<tr class="separator:a893c16a3792b3a694c7317860c994aa8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e239c92b90284905d103a601419fa6c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2e239c92b90284905d103a601419fa6c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2e239c92b90284905d103a601419fa6c">takeRemoteSnapshot:forUserID:callback:</a></td></tr>
+<tr class="memdesc:a2e239c92b90284905d103a601419fa6c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">远端视频画面截图。 <br  />
+调用 takeRemoteSnapshot 截取指定 uid 远端主流和远端辅流的视频画面，并通过 NERtcTakeSnapshotCallback 的回调返回截图画面的数据。  <br /></td></tr>
+<tr class="separator:a2e239c92b90284905d103a601419fa6c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba72676c19da6c212b17978ad5666fb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7ba72676c19da6c212b17978ad5666fb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7ba72676c19da6c212b17978ad5666fb">uploadSdkInfo</a></td></tr>
+<tr class="memdesc:a7ba72676c19da6c212b17978ad5666fb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">上传 SDK 信息。 <br  />
+上传的信息包括 log 和 Audio dump 等文件。  <br /></td></tr>
+<tr class="separator:a7ba72676c19da6c212b17978ad5666fb inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8026d7d168579305868aa1b8020ee3c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ad8026d7d168579305868aa1b8020ee3c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ad8026d7d168579305868aa1b8020ee3c">reportCustomEvent:customIdentify:param:</a></td></tr>
+<tr class="memdesc:ad8026d7d168579305868aa1b8020ee3c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">上报自定义事件  <br /></td></tr>
+<tr class="separator:ad8026d7d168579305868aa1b8020ee3c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cef4a0c5776cb9b5c0accf13e5a2862 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4cef4a0c5776cb9b5c0accf13e5a2862"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4cef4a0c5776cb9b5c0accf13e5a2862">sendSEIMsg:streamChannelType:</a></td></tr>
+<tr class="memdesc:a4cef4a0c5776cb9b5c0accf13e5a2862 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定主流或辅流通道发送媒体增强补充信息（SEI）。 <br  />
+在本端推流传输音视频流数据同时，发送流媒体补充增强信息来同步一些其他附加信息。当推流方发送 SEI 后，拉流方可通过监听 onRecvSEIMsg 的回调获取 SEI 内容。  <br /></td></tr>
+<tr class="separator:a4cef4a0c5776cb9b5c0accf13e5a2862 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5493cee10269612253127e542817f836 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5493cee10269612253127e542817f836"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5493cee10269612253127e542817f836">sendSEIMsg:</a></td></tr>
+<tr class="memdesc:a5493cee10269612253127e542817f836 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">通过主流通道发送媒体增强补充信息（SEI）。 <br  />
+在本端推流传输音视频流数据同时，发送流媒体补充增强信息来同步一些其他附加信息。当推流方发送 SEI 后，拉流方可通过监听 onRecvSEIMsg 的回调获取 SEI 内容。  <br /></td></tr>
+<tr class="separator:a5493cee10269612253127e542817f836 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d653209bd00c180dbe4b12104095b4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab3d653209bd00c180dbe4b12104095b4"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab3d653209bd00c180dbe4b12104095b4">startChannelMediaRelay:</a></td></tr>
+<tr class="memdesc:ab3d653209bd00c180dbe4b12104095b4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始跨房间媒体流转发。  <br /></td></tr>
+<tr class="separator:ab3d653209bd00c180dbe4b12104095b4 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf62167dd122c8ccaf0e9f65ac662a79 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_abf62167dd122c8ccaf0e9f65ac662a79"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abf62167dd122c8ccaf0e9f65ac662a79">updateChannelMediaRelay:</a></td></tr>
+<tr class="memdesc:abf62167dd122c8ccaf0e9f65ac662a79 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新媒体流转发的目标房间。 <br  />
+成功开始跨房间转发媒体流后，如果您希望将流转发到多个目标房间，或退出当前的转发房间，可以调用该方法。  <br /></td></tr>
+<tr class="separator:abf62167dd122c8ccaf0e9f65ac662a79 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613db50db64a1d10e7341ff34a47e40f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a613db50db64a1d10e7341ff34a47e40f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a613db50db64a1d10e7341ff34a47e40f">stopChannelMediaRelay</a></td></tr>
+<tr class="memdesc:a613db50db64a1d10e7341ff34a47e40f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止跨房间媒体流转发。 <br  />
+ 通常在主播离开房间时，跨房间媒体流转发会自动停止；您也可以根据需要随时调用该方法，此时主播会退出所有目标房间。  <br /></td></tr>
+<tr class="separator:a613db50db64a1d10e7341ff34a47e40f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d975e7e656bea389a42767d7850aba inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a68d975e7e656bea389a42767d7850aba"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a68d975e7e656bea389a42767d7850aba">pauseChannelMediaRelay</a></td></tr>
+<tr class="memdesc:a68d975e7e656bea389a42767d7850aba inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停跨房间媒体流转发。  <br /></td></tr>
+<tr class="separator:a68d975e7e656bea389a42767d7850aba inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a14ce371e620bc06622e93b798052b0 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a2a14ce371e620bc06622e93b798052b0"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a2a14ce371e620bc06622e93b798052b0">resumeChannelMediaRelay</a></td></tr>
+<tr class="memdesc:a2a14ce371e620bc06622e93b798052b0 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">恢复跨房间媒体流转发。  <br /></td></tr>
+<tr class="separator:a2a14ce371e620bc06622e93b798052b0 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6826cac2d3166821d3a8cf0446a56c5e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a6826cac2d3166821d3a8cf0446a56c5e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a6826cac2d3166821d3a8cf0446a56c5e">enableSuperResolution:</a></td></tr>
+<tr class="memdesc:a6826cac2d3166821d3a8cf0446a56c5e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">启用或停止 AI 超分。  <br /></td></tr>
+<tr class="separator:a6826cac2d3166821d3a8cf0446a56c5e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fec9e25c3476b74e05f713380c27dd1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5fec9e25c3476b74e05f713380c27dd1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5fec9e25c3476b74e05f713380c27dd1">enableEncryption:config:</a></td></tr>
+<tr class="memdesc:a5fec9e25c3476b74e05f713380c27dd1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭媒体流加密。  <br /></td></tr>
+<tr class="separator:a5fec9e25c3476b74e05f713380c27dd1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b32704fc26f390f82fc600e0765f0b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a75b32704fc26f390f82fc600e0765f0b"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a75b32704fc26f390f82fc600e0765f0b">startLastmileProbeTest:</a></td></tr>
+<tr class="memdesc:a75b32704fc26f390f82fc600e0765f0b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始通话前网络质量探测。 <br  />
+启用该方法后，SDK 会通过回调方式反馈上下行网络的质量状态与质量探测报告，包括带宽、丢包率、网络抖动和往返时延等数据。一般用于通话前的网络质量探测场景，用户加入房间之前可以通过该方法预估音视频通话中本地用户的主观体验和客观网络状态。 <br  />
+相关回调如下：  <br /></td></tr>
+<tr class="separator:a75b32704fc26f390f82fc600e0765f0b inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c8f4b7d9915a532dead3b4c5fad4f3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a82c8f4b7d9915a532dead3b4c5fad4f3"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a82c8f4b7d9915a532dead3b4c5fad4f3">stopLastmileProbeTest</a></td></tr>
+<tr class="memdesc:a82c8f4b7d9915a532dead3b4c5fad4f3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止通话前网络质量探测。  <br /></td></tr>
+<tr class="separator:a82c8f4b7d9915a532dead3b4c5fad4f3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb25ba1cb1d7eea1ccfcbcd11d83cf68 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_abb25ba1cb1d7eea1ccfcbcd11d83cf68"><td class="memItemLeft" align="right" valign="top">(nullable <a class="el" href="interface_n_e_rtc_channel.html">NERtcChannel</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abb25ba1cb1d7eea1ccfcbcd11d83cf68">createChannel:</a></td></tr>
+<tr class="memdesc:abb25ba1cb1d7eea1ccfcbcd11d83cf68 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建一个 IRtcChannel 对象  <br /></td></tr>
+<tr class="separator:abb25ba1cb1d7eea1ccfcbcd11d83cf68 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ade26de4e4c54924d91751f674c16e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a09ade26de4e4c54924d91751f674c16e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a09ade26de4e4c54924d91751f674c16e">enableVideoCorrection:</a></td></tr>
+<tr class="memdesc:a09ade26de4e4c54924d91751f674c16e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用视频图像畸变矫正。  <br /></td></tr>
+<tr class="separator:a09ade26de4e4c54924d91751f674c16e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c5bf8057881554726761bea682c78f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ae6c5bf8057881554726761bea682c78f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ae6c5bf8057881554726761bea682c78f">setVideoCorrectionConfig:</a></td></tr>
+<tr class="memdesc:ae6c5bf8057881554726761bea682c78f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频图像矫正参数。  <br /></td></tr>
+<tr class="separator:ae6c5bf8057881554726761bea682c78f inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592b33b87698acc9474c6c9fece394c2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a592b33b87698acc9474c6c9fece394c2"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a592b33b87698acc9474c6c9fece394c2">enableVirtualBackground:backData:</a></td></tr>
+<tr class="memdesc:a592b33b87698acc9474c6c9fece394c2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭虚拟背景。 <br  />
+启用虚拟背景功能后，您可以使用自定义背景图片替换本地用户的原始背景图片。 <br  />
+替换后，频道内所有用户都可以看到自定义背景图片。  <br /></td></tr>
+<tr class="separator:a592b33b87698acc9474c6c9fece394c2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff3315fd8e5ed647e8c46fac1de7b96 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a9ff3315fd8e5ed647e8c46fac1de7b96"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a9ff3315fd8e5ed647e8c46fac1de7b96">enableVirtualBackground:backData:force:</a></td></tr>
+<tr class="memdesc:a9ff3315fd8e5ed647e8c46fac1de7b96 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭虚拟背景。  <br /></td></tr>
+<tr class="separator:a9ff3315fd8e5ed647e8c46fac1de7b96 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935fede5cf099d6cdefb4990182def07 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a935fede5cf099d6cdefb4990182def07"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a935fede5cf099d6cdefb4990182def07">setCloudProxy:</a></td></tr>
+<tr class="memdesc:a935fede5cf099d6cdefb4990182def07 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启并设置云代理服务。 <br  />
+在内网环境下，如果用户防火墙开启了网络限制，请参考《使用云代理》将指定 IP 地址和端口号加入防火墙白名单，然后调用此方法开启云代理，并将 proxyType 参数设置为 <a class="el" href="_n_e_rtc_engine_enum_8h.html#ad975c8874d1cf7e370e25bd27e89f168a59a4994eb192fae4c6a2271a811920b3" title="1: 开启 UDP 协议的云代理。">NERtcTransportTypeUDPProxy(1)</a>，即指定使用 UDP 协议的云代理。  <br /></td></tr>
+<tr class="separator:a935fede5cf099d6cdefb4990182def07 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b96f66383196b8ab202a93796bf894 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a61b96f66383196b8ab202a93796bf894"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a61b96f66383196b8ab202a93796bf894">setStreamAlignmentProperty:</a></td></tr>
+<tr class="memdesc:a61b96f66383196b8ab202a93796bf894 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启精准对齐。 通过此接口可以实现精准对齐功能，对齐本地系统与服务端的时间。  <br /></td></tr>
+<tr class="separator:a61b96f66383196b8ab202a93796bf894 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e8fe460fd8f8a586de37b9c298c4b6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a42e8fe460fd8f8a586de37b9c298c4b6"><td class="memItemLeft" align="right" valign="top">(int64_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a42e8fe460fd8f8a586de37b9c298c4b6">getNtpTimeOffset</a></td></tr>
+<tr class="memdesc:a42e8fe460fd8f8a586de37b9c298c4b6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取本地系统时间与服务端时间差值。 <br  />
+可以用于做时间对齐，通过 (毫秒级系统时间 - offset) 可能得到当前服务端时间。  <br /></td></tr>
+<tr class="separator:a42e8fe460fd8f8a586de37b9c298c4b6 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87ad6f859a3a768e58d56485a9c2278 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa87ad6f859a3a768e58d56485a9c2278"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa87ad6f859a3a768e58d56485a9c2278">setPreDecodeObserver:</a></td></tr>
+<tr class="memdesc:aa87ad6f859a3a768e58d56485a9c2278 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册解码前媒体数据观测器。  <br /></td></tr>
+<tr class="separator:aa87ad6f859a3a768e58d56485a9c2278 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e54bf4917a95cc77d254fe71711d9e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ae3e54bf4917a95cc77d254fe71711d9e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ae3e54bf4917a95cc77d254fe71711d9e">setVideoEncoderQosObserver:</a></td></tr>
+<tr class="memdesc:ae3e54bf4917a95cc77d254fe71711d9e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册视频编码 QoS 信息监听器。  <br /></td></tr>
+<tr class="separator:ae3e54bf4917a95cc77d254fe71711d9e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4546ec186a2d443a8ffa4200fc52a11e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a4546ec186a2d443a8ffa4200fc52a11e"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a4546ec186a2d443a8ffa4200fc52a11e">pushExternalAudioEncodedFrame:</a></td></tr>
+<tr class="memdesc:a4546ec186a2d443a8ffa4200fc52a11e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部音频主流编码帧。  <br /></td></tr>
+<tr class="separator:a4546ec186a2d443a8ffa4200fc52a11e inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a5c464186921ab8f1d3e47d6cdcb72 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab7a5c464186921ab8f1d3e47d6cdcb72"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab7a5c464186921ab8f1d3e47d6cdcb72">pushExternalSubStreamAudioEncodedFrame:</a></td></tr>
+<tr class="memdesc:ab7a5c464186921ab8f1d3e47d6cdcb72 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部音频辅流编码帧。  <br /></td></tr>
+<tr class="separator:ab7a5c464186921ab8f1d3e47d6cdcb72 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7a5747cf65f8b3e460615eb1ef6802 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5d7a5747cf65f8b3e460615eb1ef6802"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5d7a5747cf65f8b3e460615eb1ef6802">pushExternalVideoEncodedFrame:</a></td></tr>
+<tr class="memdesc:a5d7a5747cf65f8b3e460615eb1ef6802 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部视频编码帧。  <br /></td></tr>
+<tr class="separator:a5d7a5747cf65f8b3e460615eb1ef6802 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255026994590662f19e079a0446c6292 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a255026994590662f19e079a0446c6292"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a255026994590662f19e079a0446c6292">pushExternalSubStreamVideoEncodedFrame:</a></td></tr>
+<tr class="memdesc:a255026994590662f19e079a0446c6292 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部视频编码帧。  <br /></td></tr>
+<tr class="separator:a255026994590662f19e079a0446c6292 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56487379a9f24480c550f7635ed7581 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab56487379a9f24480c550f7635ed7581"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab56487379a9f24480c550f7635ed7581">startPushStreaming:</a></td></tr>
+<tr class="memdesc:ab56487379a9f24480c550f7635ed7581 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始推流。 <br  />
+ 通过本接口可以实现将 RTMP 流推到指定的地址。  <br /></td></tr>
+<tr class="separator:ab56487379a9f24480c550f7635ed7581 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d6a75c91de83dd1e07bddc375a3e2a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a09d6a75c91de83dd1e07bddc375a3e2a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a09d6a75c91de83dd1e07bddc375a3e2a">stopPushStreaming</a></td></tr>
+<tr class="memdesc:a09d6a75c91de83dd1e07bddc375a3e2a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止推流。 <br  />
+通过此接口可以停止当前正在进行的 rtmp 推流。  <br /></td></tr>
+<tr class="separator:a09d6a75c91de83dd1e07bddc375a3e2a inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4c147eaf46b18c48fffb59861eadf3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_adb4c147eaf46b18c48fffb59861eadf3"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#adb4c147eaf46b18c48fffb59861eadf3">setupPlayStreamingCanvas:canvas:</a></td></tr>
+<tr class="separator:adb4c147eaf46b18c48fffb59861eadf3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79576b775137b0c076a4d8345190b03 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ab79576b775137b0c076a4d8345190b03"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ab79576b775137b0c076a4d8345190b03">startPlayStreaming:playConfig:</a></td></tr>
+<tr class="memdesc:ab79576b775137b0c076a4d8345190b03 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始播放rtmp流。 <br  />
+通过此接口可以开始rtmp拉流。  <br /></td></tr>
+<tr class="separator:ab79576b775137b0c076a4d8345190b03 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20984b509996873f1adae0ae6ae59700 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a20984b509996873f1adae0ae6ae59700"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a20984b509996873f1adae0ae6ae59700">stopPlayStreaming:</a></td></tr>
+<tr class="memdesc:a20984b509996873f1adae0ae6ae59700 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止播放rtmp流。 <br  />
+通过此接口可以停止当前正在播放的rtmp流。  <br /></td></tr>
+<tr class="separator:a20984b509996873f1adae0ae6ae59700 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5230d24eab2713022aace98dc1900e34 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5230d24eab2713022aace98dc1900e34"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5230d24eab2713022aace98dc1900e34">pausePlayStreaming:</a></td></tr>
+<tr class="memdesc:a5230d24eab2713022aace98dc1900e34 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause RTMP stream playing.  <br /></td></tr>
+<tr class="separator:a5230d24eab2713022aace98dc1900e34 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee90027e91cfd626e102469ad8416b1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8ee90027e91cfd626e102469ad8416b1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8ee90027e91cfd626e102469ad8416b1">resumePlayStreaming:</a></td></tr>
+<tr class="memdesc:a8ee90027e91cfd626e102469ad8416b1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume RTMP stream playing  <br /></td></tr>
+<tr class="separator:a8ee90027e91cfd626e102469ad8416b1 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc0542bf582a05c239158133f401af3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aacc0542bf582a05c239158133f401af3"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aacc0542bf582a05c239158133f401af3">muteVideoForPlayStreaming:mute:</a></td></tr>
+<tr class="memdesc:aacc0542bf582a05c239158133f401af3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭直播拉流视频播放  <br /></td></tr>
+<tr class="separator:aacc0542bf582a05c239158133f401af3 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c92372276e9ba41ac9c1a343e7c232 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a76c92372276e9ba41ac9c1a343e7c232"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a76c92372276e9ba41ac9c1a343e7c232">muteAudioForPlayStreaming:mute:</a></td></tr>
+<tr class="memdesc:a76c92372276e9ba41ac9c1a343e7c232 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭直播拉流音频播放  <br /></td></tr>
+<tr class="separator:a76c92372276e9ba41ac9c1a343e7c232 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8703a0d1c023fedc0f77b26ed0d02f10 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a8703a0d1c023fedc0f77b26ed0d02f10"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a8703a0d1c023fedc0f77b26ed0d02f10">seekPlayStreaming:positionMs:</a></td></tr>
+<tr class="memdesc:a8703a0d1c023fedc0f77b26ed0d02f10 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">直播拉流跳转播放位置  <br /></td></tr>
+<tr class="separator:a8703a0d1c023fedc0f77b26ed0d02f10 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7706561b76cfc84ca6da9b83fb3b05f2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a7706561b76cfc84ca6da9b83fb3b05f2"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a7706561b76cfc84ca6da9b83fb3b05f2">startASRCaption:</a></td></tr>
+<tr class="memdesc:a7706561b76cfc84ca6da9b83fb3b05f2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启实时字幕。 <br  />
+ 通过本接口可以开启实时字幕。  <br /></td></tr>
+<tr class="separator:a7706561b76cfc84ca6da9b83fb3b05f2 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d0c0b703406998f70378ae3b511864 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a64d0c0b703406998f70378ae3b511864"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a64d0c0b703406998f70378ae3b511864">stopASRCaption</a></td></tr>
+<tr class="memdesc:a64d0c0b703406998f70378ae3b511864 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止实时字幕。 <br  />
+通过此接口可以停止实时字幕。  <br /></td></tr>
+<tr class="separator:a64d0c0b703406998f70378ae3b511864 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e4c9c7386fa4814c8b2922b3745cc8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_af3e4c9c7386fa4814c8b2922b3745cc8"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#af3e4c9c7386fa4814c8b2922b3745cc8">aiManualInterrupt:</a></td></tr>
+<tr class="memdesc:af3e4c9c7386fa4814c8b2922b3745cc8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">AI 手动打断。 <br  />
+通过此接口可以触发手动打断。  <br /></td></tr>
+<tr class="separator:af3e4c9c7386fa4814c8b2922b3745cc8 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02014e78327b5fb35e6a91907f25dd24 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a02014e78327b5fb35e6a91907f25dd24"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a02014e78327b5fb35e6a91907f25dd24">setLocalVideoMosaic:streamType:rect:</a></td></tr>
+<tr class="memdesc:a02014e78327b5fb35e6a91907f25dd24 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地视频马赛克效果。 <br  />
+通过此接口可以对本地视频流指定区域开启或关闭马赛克（像素化）效果。  <br /></td></tr>
+<tr class="separator:a02014e78327b5fb35e6a91907f25dd24 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bf977c48c7547aff3c39331ccf4b65 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aa0bf977c48c7547aff3c39331ccf4b65"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aa0bf977c48c7547aff3c39331ccf4b65">setRemoteVideoMosaic:userId:streamType:rect:</a></td></tr>
+<tr class="memdesc:aa0bf977c48c7547aff3c39331ccf4b65 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远端视频马赛克效果。 <br  />
+通过此接口可以对指定远端用户的视频流指定区域开启或关闭马赛克（像素化）效果。  <br /></td></tr>
+<tr class="separator:aa0bf977c48c7547aff3c39331ccf4b65 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9b20bf39c1de0128772dc6d6ca7e89 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_aff9b20bf39c1de0128772dc6d6ca7e89"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#aff9b20bf39c1de0128772dc6d6ca7e89">startBlendExternalVideo:blendConfig:</a></td></tr>
+<tr class="memdesc:aff9b20bf39c1de0128772dc6d6ca7e89 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始外部视频混合处理。 <br  />
+通过本方法可在指定视频流通道类型上开启外部视频混合流程，需要传入混合参数配置。  <br /></td></tr>
+<tr class="separator:aff9b20bf39c1de0128772dc6d6ca7e89 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18f62483a7b0b2afcdace1a6b12232c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_ad18f62483a7b0b2afcdace1a6b12232c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#ad18f62483a7b0b2afcdace1a6b12232c">stopBlendExternalVideo:</a></td></tr>
+<tr class="memdesc:ad18f62483a7b0b2afcdace1a6b12232c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止外部视频混合处理。 <br  />
+调用此方法结束指定视频流通道类型的外部视频混合流程。  <br /></td></tr>
+<tr class="separator:ad18f62483a7b0b2afcdace1a6b12232c inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd85e6ba7d560fd82975115d2d705af inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a9cd85e6ba7d560fd82975115d2d705af"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a9cd85e6ba7d560fd82975115d2d705af">pushBlendExternalVideoFrame:frame:</a></td></tr>
+<tr class="memdesc:a9cd85e6ba7d560fd82975115d2d705af inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">推送外部要混合的视频帧到混合流程中。 <br  />
+用于在已开启外部视频混合处理的流程中持续推送待混合的视频帧。  <br /></td></tr>
+<tr class="separator:a9cd85e6ba7d560fd82975115d2d705af inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb71536fabf16ad95d0b964f3ca0bc0 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5cb71536fabf16ad95d0b964f3ca0bc0"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5cb71536fabf16ad95d0b964f3ca0bc0">enableVideoDenoise:streamType:</a></td></tr>
+<tr class="memdesc:a5cb71536fabf16ad95d0b964f3ca0bc0 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启视频降噪  <br /></td></tr>
+<tr class="separator:a5cb71536fabf16ad95d0b964f3ca0bc0 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a45718df51be3eeac0657617e04ee42 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p" id="r_a5a45718df51be3eeac0657617e04ee42"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a5a45718df51be3eeac0657617e04ee42">enableVideoLowlightEnhance:level:streamType:</a></td></tr>
+<tr class="memdesc:a5a45718df51be3eeac0657617e04ee42 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启视频低光环境增强  <br /></td></tr>
+<tr class="separator:a5a45718df51be3eeac0657617e04ee42 inherit pub_methods_protocol_i_n_e_rtc_engine_ex-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_protocol_i_n_e_rtc_engine-p"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_protocol_i_n_e_rtc_engine-p')"><img src="closed.png" alt="-"/>&#160;实例方法 继承自 <a class="el" href="protocol_i_n_e_rtc_engine-p.html">&lt;INERtcEngine&gt;</a></td></tr>
+<tr class="memitem:a2bc8a0d82bdd1ae2a98e64ae42909f9a inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a2bc8a0d82bdd1ae2a98e64ae42909f9a"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="_n_e_rtc_engine_enum_8h.html#a83df70dcf09c77d882192bba999a743d">NERtcConnectionStateType</a>)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a2bc8a0d82bdd1ae2a98e64ae42909f9a">connectionState</a></td></tr>
+<tr class="memdesc:a2bc8a0d82bdd1ae2a98e64ae42909f9a inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前房间连接状态。  <br /></td></tr>
+<tr class="separator:a2bc8a0d82bdd1ae2a98e64ae42909f9a inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0b59418e236407489b3a5cb7abdd9e1 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_aa0b59418e236407489b3a5cb7abdd9e1"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#aa0b59418e236407489b3a5cb7abdd9e1">setupEngineWithContext:</a></td></tr>
+<tr class="memdesc:aa0b59418e236407489b3a5cb7abdd9e1 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建 NERtc 实例。 <br  />
+通过本接口可以实现创建 NERtc 实例并初始化 NERTC SDK 服务。  <br /></td></tr>
+<tr class="separator:aa0b59418e236407489b3a5cb7abdd9e1 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fde302a4f93e0eafd5612ee8398ee4f inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a8fde302a4f93e0eafd5612ee8398ee4f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a8fde302a4f93e0eafd5612ee8398ee4f">setEngineEventDelegate:</a></td></tr>
+<tr class="memdesc:a8fde302a4f93e0eafd5612ee8398ee4f inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 SDK 主回调，调用此方法后会更新之前 setupEngineWithContext 及 setEngineEventDelegate 设置的回调。 如果设置为空指针， 那么表示清空回调。 注意： 需要在初始化之后调用， destroyEngine 之后自动失效。  <br /></td></tr>
+<tr class="separator:a8fde302a4f93e0eafd5612ee8398ee4f inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac498cf194c649015a2b82b53c0112f03 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_ac498cf194c649015a2b82b53c0112f03"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#ac498cf194c649015a2b82b53c0112f03">setDelegateQueue:</a></td></tr>
+<tr class="memdesc:ac498cf194c649015a2b82b53c0112f03 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置驱动 <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html" title="NERtcEngine 扩展回调。">NERtcEngineDelegateEx</a> 事件回调队列  <br /></td></tr>
+<tr class="separator:ac498cf194c649015a2b82b53c0112f03 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf60d9392e4b50ff73872138965f022f inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_adf60d9392e4b50ff73872138965f022f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#adf60d9392e4b50ff73872138965f022f">joinChannelWithToken:channelName:myUid:completion:</a></td></tr>
+<tr class="memdesc:adf60d9392e4b50ff73872138965f022f inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。  <br /></td></tr>
+<tr class="separator:adf60d9392e4b50ff73872138965f022f inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4876b67191a8e51488fc0d0ef14fc724 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a4876b67191a8e51488fc0d0ef14fc724"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a4876b67191a8e51488fc0d0ef14fc724">joinChannelWithToken:channelName:myUid:channelOptions:completion:</a></td></tr>
+<tr class="memdesc:a4876b67191a8e51488fc0d0ef14fc724 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。  <br /></td></tr>
+<tr class="separator:a4876b67191a8e51488fc0d0ef14fc724 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810e41b2be7de2b00458ee786302631c inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a810e41b2be7de2b00458ee786302631c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a810e41b2be7de2b00458ee786302631c">leaveChannel</a></td></tr>
+<tr class="memdesc:a810e41b2be7de2b00458ee786302631c inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">离开音视频房间。 <br  />
+通过本接口可以实现挂断或退出通话，并释放本房间内的相关资源。  <br /></td></tr>
+<tr class="separator:a810e41b2be7de2b00458ee786302631c inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9819e1ecad009c45f933f77c14db75f inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_ac9819e1ecad009c45f933f77c14db75f"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#ac9819e1ecad009c45f933f77c14db75f">switchChannelWithToken:channelName:completion:</a></td></tr>
+<tr class="memdesc:ac9819e1ecad009c45f933f77c14db75f inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速切换音视频房间。 通过此接口可以实现当房间场景为直播场景时，用户从当前房间快速切换至另一个房间。  <br /></td></tr>
+<tr class="separator:ac9819e1ecad009c45f933f77c14db75f inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f6b81e234fe70c715eb35c7665bbcd inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_ae8f6b81e234fe70c715eb35c7665bbcd"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#ae8f6b81e234fe70c715eb35c7665bbcd">switchChannelWithToken:channelName:channelOptions:completion:</a></td></tr>
+<tr class="memdesc:ae8f6b81e234fe70c715eb35c7665bbcd inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速切换音视频房间。 <br  />
+房间场景为直播场景时，房间中角色为观众的成员可以调用该方法从当前房间快速切换至另一个房间。 <br  />
+成功调用该方切换房间后，本端会收到离开房间的回调 onNERtcEngineDidLeaveChannelWithResult；远端用户会收到 onNERtcEngineUserDidLeaveWithUserID 和 onNERtcEngineUserDidJoinWithUserID 的回调。  <br /></td></tr>
+<tr class="separator:ae8f6b81e234fe70c715eb35c7665bbcd inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1370eda8c43b36f5764cb96ed927f98d inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a1370eda8c43b36f5764cb96ed927f98d"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a1370eda8c43b36f5764cb96ed927f98d">enableLocalAudio:</a></td></tr>
+<tr class="memdesc:a1370eda8c43b36f5764cb96ed927f98d inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启/关闭本地音频采集和发送。 <br  />
+通过本接口可以实现开启或关闭本地语音功能，进行本地音频采集及处理。  <br /></td></tr>
+<tr class="separator:a1370eda8c43b36f5764cb96ed927f98d inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea18a0b1c2fc5eb7f175dd24cdf0f2a inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a2ea18a0b1c2fc5eb7f175dd24cdf0f2a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a2ea18a0b1c2fc5eb7f175dd24cdf0f2a">enableLocalVideo:</a></td></tr>
+<tr class="memdesc:a2ea18a0b1c2fc5eb7f175dd24cdf0f2a inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地视频的采集与发送。 <br  />
+通过本接口可以实现开启或关闭本地视频，不影响接收远端视频。  <br /></td></tr>
+<tr class="separator:a2ea18a0b1c2fc5eb7f175dd24cdf0f2a inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f13beb56a8b9fdfbc856d304c0d10cb inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a9f13beb56a8b9fdfbc856d304c0d10cb"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a9f13beb56a8b9fdfbc856d304c0d10cb">enableLocalVideo:streamType:</a></td></tr>
+<tr class="memdesc:a9f13beb56a8b9fdfbc856d304c0d10cb inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地视频的采集与发送。 <br  />
+通过主流或辅流视频通道进行本地视频流的采集与发送。  <br /></td></tr>
+<tr class="separator:a9f13beb56a8b9fdfbc856d304c0d10cb inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6f693d05adcb847ddf8e268f9d3e7c inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_aad6f693d05adcb847ddf8e268f9d3e7c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#aad6f693d05adcb847ddf8e268f9d3e7c">enableMediaPub:withMediaType:</a></td></tr>
+<tr class="memdesc:aad6f693d05adcb847ddf8e268f9d3e7c inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启或关闭本地媒体流（主流）的发送。 <br  />
+该方法用于开始或停止向网络发送本地音频或视频数据。 <br  />
+该方法不影响接收或播放远端媒体流，也不会影响本地音频或视频的采集状态。  <br /></td></tr>
+<tr class="separator:aad6f693d05adcb847ddf8e268f9d3e7c inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1ddb3e3ea5c8ddd6c2a9052a596410 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_aeb1ddb3e3ea5c8ddd6c2a9052a596410"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#aeb1ddb3e3ea5c8ddd6c2a9052a596410">setChannelProfile:</a></td></tr>
+<tr class="memdesc:aeb1ddb3e3ea5c8ddd6c2a9052a596410 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置房间场景。 <br  />
+ 通过此接口可以实现设置房间场景为通话（默认）、直播场景、视频 1 对 1 呼叫场景、语聊房场景等。针对不同场景采取的优化策略不同，如通话场景侧重语音流畅度，直播场景侧重视频清晰度。  <br /></td></tr>
+<tr class="separator:aeb1ddb3e3ea5c8ddd6c2a9052a596410 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040ee549ad4a2b1d74d275defda38140 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a040ee549ad4a2b1d74d275defda38140"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a040ee549ad4a2b1d74d275defda38140">setLocalVideoConfig:</a></td></tr>
+<tr class="memdesc:a040ee549ad4a2b1d74d275defda38140 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频编码属性。 <br  />
+通过此接口可以设置视频主流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数，详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zcwMTY4MzM">设置视频属性</a>。  <br /></td></tr>
+<tr class="separator:a040ee549ad4a2b1d74d275defda38140 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eeaa48e5900c00f408182b38c56b58 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a96eeaa48e5900c00f408182b38c56b58"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a96eeaa48e5900c00f408182b38c56b58">setLocalVideoConfig:streamType:</a></td></tr>
+<tr class="memdesc:a96eeaa48e5900c00f408182b38c56b58 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置视频编码属性。 <br  />
+通过此接口可以设置视频主流或辅流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数。  <br /></td></tr>
+<tr class="separator:a96eeaa48e5900c00f408182b38c56b58 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79daa01fb308cf2b70d27fb7f73cab01 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a79daa01fb308cf2b70d27fb7f73cab01"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a79daa01fb308cf2b70d27fb7f73cab01">setAudioProfile:scenario:</a></td></tr>
+<tr class="memdesc:a79daa01fb308cf2b70d27fb7f73cab01 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等，也可以设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景等。  <br /></td></tr>
+<tr class="separator:a79daa01fb308cf2b70d27fb7f73cab01 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe79c3a3439b464314046d9638006ae inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_acbe79c3a3439b464314046d9638006ae"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#acbe79c3a3439b464314046d9638006ae">setAudioProfile:</a></td></tr>
+<tr class="memdesc:acbe79c3a3439b464314046d9638006ae inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等。  <br /></td></tr>
+<tr class="separator:acbe79c3a3439b464314046d9638006ae inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b66092b4107ffc3a1f8226cbc05b0ce inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a0b66092b4107ffc3a1f8226cbc05b0ce"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a0b66092b4107ffc3a1f8226cbc05b0ce">setAudioScenario:</a></td></tr>
+<tr class="memdesc:a0b66092b4107ffc3a1f8226cbc05b0ce inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频应用场景 <br  />
+通过此接口可以实现设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景。也可以使用 通过 <code><a class="el" href="protocol_i_n_e_rtc_engine-p.html#aeb1ddb3e3ea5c8ddd6c2a9052a596410">INERtcEngine#setChannelProfile:</a></code> 设置其他场景，包括 1v1 呼叫场景、清晰度较高的 1v1 呼叫场景、语聊房场景、清晰度较高的语聊房场景、会议场景。  <br /></td></tr>
+<tr class="separator:a0b66092b4107ffc3a1f8226cbc05b0ce inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b1b7c15de0bb8e0ccfeee1b6c6874c inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_aa8b1b7c15de0bb8e0ccfeee1b6c6874c"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#aa8b1b7c15de0bb8e0ccfeee1b6c6874c">setAINSMode:</a></td></tr>
+<tr class="memdesc:aa8b1b7c15de0bb8e0ccfeee1b6c6874c inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音频 AI 降噪模式  <br /></td></tr>
+<tr class="separator:aa8b1b7c15de0bb8e0ccfeee1b6c6874c inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461d8173cd13f4370f7eff01bb48d9dc inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a461d8173cd13f4370f7eff01bb48d9dc"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a461d8173cd13f4370f7eff01bb48d9dc">setupLocalVideoCanvas:</a></td></tr>
+<tr class="memdesc:a461d8173cd13f4370f7eff01bb48d9dc inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置本地用户视图。 <br  />
+通过本接口可以实现绑定本地用户和显示视图，并设置本地用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。  <br /></td></tr>
+<tr class="separator:a461d8173cd13f4370f7eff01bb48d9dc inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56db50d6e25fac43db491fbfcf9a03a inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_ae56db50d6e25fac43db491fbfcf9a03a"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#ae56db50d6e25fac43db491fbfcf9a03a">setupRemoteVideoCanvas:forUserID:</a></td></tr>
+<tr class="memdesc:ae56db50d6e25fac43db491fbfcf9a03a inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置远端用户视图。 <br  />
+通过本接口可以实现绑定远端用户和显示视图，并设置远端用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。  <br /></td></tr>
+<tr class="separator:ae56db50d6e25fac43db491fbfcf9a03a inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34309b13dc0107b607cf6e93c8b7f6b9 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a34309b13dc0107b607cf6e93c8b7f6b9"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a34309b13dc0107b607cf6e93c8b7f6b9">switchCamera</a></td></tr>
+<tr class="memdesc:a34309b13dc0107b607cf6e93c8b7f6b9 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换前置或后置摄像头。  <br /></td></tr>
+<tr class="separator:a34309b13dc0107b607cf6e93c8b7f6b9 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcc34bb7200daa27c7d2adc4c624fc0 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a7fcc34bb7200daa27c7d2adc4c624fc0"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a7fcc34bb7200daa27c7d2adc4c624fc0">setClientRole:</a></td></tr>
+<tr class="memdesc:a7fcc34bb7200daa27c7d2adc4c624fc0 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置直播场景下的用户角色。 <br  />
+通过本接口可以实现将用户角色在“主播”（kNERtcClientRoleBroadcaster）和“观众“（kNERtcClientRoleAudience）之间的切换，用户加入房间后默认为“主播”。  <br /></td></tr>
+<tr class="separator:a7fcc34bb7200daa27c7d2adc4c624fc0 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a674564c41bbd4b5556f08a9d65a558 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a2a674564c41bbd4b5556f08a9d65a558"><td class="memItemLeft" align="right" valign="top">(int)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a2a674564c41bbd4b5556f08a9d65a558">setParameters:</a></td></tr>
+<tr class="memdesc:a2a674564c41bbd4b5556f08a9d65a558 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置音视频通话的相关参数。 <br  />
+ 此接口提供技术预览或特别定制功能，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。  <br /></td></tr>
+<tr class="separator:a2a674564c41bbd4b5556f08a9d65a558 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d80c25be96e3f70eebf7b3ac45a3e85 inherit pub_methods_protocol_i_n_e_rtc_engine-p" id="r_a3d80c25be96e3f70eebf7b3ac45a3e85"><td class="memItemLeft" align="right" valign="top">(NSString *_Nullable)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_n_e_rtc_engine-p.html#a3d80c25be96e3f70eebf7b3ac45a3e85">getParameter:extraInfo:</a></td></tr>
+<tr class="memdesc:a3d80c25be96e3f70eebf7b3ac45a3e85 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">以 String 的形式获取一些内部参数，此接口为隐藏接口，需要特定参数及特定时机，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。  <br /></td></tr>
+<tr class="separator:a3d80c25be96e3f70eebf7b3ac45a3e85 inherit pub_methods_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_protocol_i_n_e_rtc_engine-p"><td colspan="2" onclick="javascript:dynsection.toggleInherit('properties_protocol_i_n_e_rtc_engine-p')"><img src="closed.png" alt="-"/>&#160;属性 继承自 <a class="el" href="protocol_i_n_e_rtc_engine-p.html">&lt;INERtcEngine&gt;</a></td></tr>
+<tr class="memitem:a44c13fabaa16fc7ec6f7c39fb86ba975 inherit properties_protocol_i_n_e_rtc_engine-p" id="r_a44c13fabaa16fc7ec6f7c39fb86ba975"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html">NERtcEngineDelegateEx</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_i_n_e_rtc_engine-p.html#a44c13fabaa16fc7ec6f7c39fb86ba975">engineDelegate</a></td></tr>
+<tr class="separator:a44c13fabaa16fc7ec6f7c39fb86ba975 inherit properties_protocol_i_n_e_rtc_engine-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 类 </p>
+</div><h2 class="groupheader">成员函数文档</h2>
+<a id="a48ce64655a2033a6e0d25f7308a7f0cc" name="a48ce64655a2033a6e0d25f7308a7f0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ce64655a2033a6e0d25f7308a7f0cc">&#9670;&#160;</a></span>destroyEngine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (int) destroyEngine </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例，并释放资源。 <br  />
+该方法释放 NERTC SDK 使用的所有资源。有些 App 只在用户需要时才进行实时音视频通信，完成音视频通话后，则将资源释放出来用于其他操作，该方法适用于此类情况。 </p>
+<ul>
+<li>该接口需要在调用 <code>leaveChannel</code>、并收到本端离开房间的回调后调用。或收到 <code>onNERtcEngineDidDisconnectWithReason:</code> 回调、重连失败时调用此接口销毁实例，并释放资源。</li>
+<li>调用 <code>destroyEngine</code> 方法后，您将无法再使用 SDK 的其它方法和回调。如需再次使用实时音视频通话功能，您必须等待 <code>destroyEngine</code> 方法执行结束后，重新创建一个新的 NERtc 实例。</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法为同步调用，需要等待 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例资源释放后才能执行其他操作。</li>
+<li>该接口不得在 SDK 的回调中调用，在接口返回前也不允许调用 SDK 的其他任何接口。</li>
+<li>如需在销毁后再次创建 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例、调用 SDK 接口，需要等待 <code>destroyEngine</code> 方法执行结束后，调用<code>sharedEngine</code> 获取一个新的 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例，再调用 <code>setupEngineWithContext</code> 初始化 SDK。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a0d8801c83fdcc0c57012466bf811ad63" name="a0d8801c83fdcc0c57012466bf811ad63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8801c83fdcc0c57012466bf811ad63">&#9670;&#160;</a></span>getVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (NSString *) getVersion </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询 SDK 版本号， 该方法在加入房间前后都能调用 </p>
+<dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>版本号，格式为字符串，如 1.0.0。  </dd></dl>
+
+</div>
+</div>
+<a id="aec6fb5c0d067f7c3c159a97f7b6e4bd0" name="aec6fb5c0d067f7c3c159a97f7b6e4bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6fb5c0d067f7c3c159a97f7b6e4bd0">&#9670;&#160;</a></span>sharedEngine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (instancetype) sharedEngine </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取 <a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例 <br  />
+获取之后一直到调用 destroyEngine 之前，返回的实例都将是同一个 </p>
+<dl class="section return"><dt>返回</dt><dd><a class="el" href="interface_n_e_rtc_engine.html" title="NERtcEngine 类">NERtcEngine</a> 实例  </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_8h_source.html">NERtcEngine.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

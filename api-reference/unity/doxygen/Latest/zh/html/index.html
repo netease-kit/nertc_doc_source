@@ -1,0 +1,740 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Unity SDK: Introduction</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">NERtc Unity SDK
+   &#160;<span id="projectnumber">V5.4.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Introduction </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>网易云信 NERtc SDK 提供完善的音视频通话开发框架，提供基于网络的点对点视频通话和语音通话功能，还提供多人视频和音频会议功能，支持通话中音视频设备控制和实时音视频模式切换，支持视频采集数据回调以实现美颜等自定义功能。</p>
+<ul>
+<li><a class="el" href="classnertc_1_1_i_rtc_engine.html">IRtcEngine</a> 接口类包含应用程序调用的主要方法。</li>
+<li><a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> 类在指定房间中实现实时音视频功能。通过创建多个 IRtcChannel 对象，用户可以同时加入多个房间。</li>
+</ul>
+<h2 id="房间管理">房间管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a1b6051f932c5b3b67cae576008d26bc0">Initialize</a> </td><td>初始化 NERtc SDK 服务。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a274b232b2aab39cd5ecb41fb6c052e95">Release</a> </td><td>销毁 IRtcEngine 对象。 </td><td>V4.5.907  <br  />
+ </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6749a40e2ba08cc2d00b9ba0913ee7c3">CreateChannel</a> </td><td>创建 RTC channel 对象。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_channel.html#a4ab551723e997617fd51f0ebe2345953">Destroy</a> </td><td>销毁 RTC channel对象。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad348742a25795bc95de71ce2130bc1b4">SetChannelProfile</a> </td><td>设置房间场景。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a5180c7d189eaa3543f7d8773ff475a53">SetClientRole</a> </td><td>设置用户角色。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ac2389c30485d409489442caf4268b246">JoinChannel</a> </td><td>加入房间。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aecc20656761a5c86188dca6aa8f1c433">SwitchChannel</a> </td><td>切换房间。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a06184dbc75f0d4742e69dc79ebdf3a26">LeaveChannel</a> </td><td>离开房间。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ae15cf39a9ec38ff8ecab5af218ee0e5f">GetConnectionState</a> </td><td>获取房间连接状态。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a524e4885bcce14e40f7f136000086554">SetParameters</a> </td><td>设置音视频通话的相关参数。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab9316c7246319422fdf34ae313765b75">UpdatePermissionKey</a> </td><td>更新权限密钥。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ae384e63577e1f02a59accb1505909d39">ReportCustomEvent</a> </td><td>上报自定义事件。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2>房间事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a2db21f710a89d4231f784f6ea5cf3157">OnClientRoleChanged</a> </td><td>用户角色已切换回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a365369ba3f709880584158e81679ecc5">OnJoinChannel</a> </td><td>加入房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#aba154662947c70e0346a9c376229b060">OnRejoinChannel</a> </td><td>重新加入房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a008bb2d515acd62c4cd3e581a4e02b69">OnLeaveChannel</a> </td><td>离开房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a3d6b19ab55441cfac7b391184d943d82">OnUserJoined</a> </td><td>远端用户加入当前房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a067d22dd7dae5973ce3845232acbc6e9">OnUserLeft</a> </td><td>远端用户离开当前房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#add53701a818d4826aa639b2c1655ab94">OnDisconnect</a> </td><td>服务器连接断开回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a2119382bff3cb82e304031b495ad7917">OnReconnectingStart</a> </td><td>开始重连回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a24e82dd9a12a77f83a97754ccc6bd5e5">OnConnectionStateChanged</a> </td><td>房间连接状态已改变回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a2ba28ad0117fac03dbb235ac67261800">OnPermissionKeyWillExpire</a> </td><td>权限密钥即将过期事件回调。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a0edcf842b0c1ac8147920be462c49b3f">OnUpdatePermissionKey</a> </td><td>更新权限密钥事件回调。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2>音频管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a5eb61ba456845c3fd3755e82ff5c8f76">SetAudioProfile</a> </td><td>设置音频编码配置 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab241cdaf41dc449207c1c0ff6b60b43c">AdjustRecordingSignalVolume</a> </td><td>调节采集信号音量。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab14b2e366082aacc3adb361deee768c0">AdjustPlaybackSignalVolume</a> </td><td>调节本地播放音量。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad7ccd272738179b8223d7a30f059f246">AdjustUserPlaybackSignalVolume</a> </td><td>调节本地播放的指定远端用户的信号音量。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad77d62e1f5239937035820f557cb84f4">EnableLocalAudio</a> </td><td>开关本地音频采集 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a958b1e470c5e9697dac3fcbba8b5ead6">MuteLocalAudioStream</a> </td><td>开关本地音频发送 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a54a1599a02614e18d24ebd3f024ce697">SubscribeRemoteAudioStream</a> </td><td>订阅／取消订阅指定音频流。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ac0ace276d82b4cc511b739da02177ef6">SubscribeAllRemoteAudioStream</a> </td><td>订阅或取消订阅所有音频流。  </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a973cf2b01d0c0aea1b9ad2783e622036">EnableLoopbackRecording</a> </td><td>开启声卡采集。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ade3ca0dc60fba7adae9412d5e1c6aeec">AdjustLoopbackRecordingSignalVolume</a> </td><td>调节声卡采集信号音量。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab737009fd426e96044c468e83819e182">SetRemoteHighPriorityAudioStream</a> </td><td>设置远端用户音频流为高优先级。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a0b26844456d2f52b98c9a9b79fc6e846">SetAudioSubscribeOnlyBy</a>  </td><td>设置本地用户音频只能被房间内其他指定用户订阅 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad7e8b4667cb75bbb52fecd2dc71d8218">EnableMediaPublish</a>  </td><td>发布或停止发布本地音频 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ae87ea1feb0a95433dfcf1c15037b224a">AdjustChannelPlaybackSignalVolume</a>  </td><td>调节本地播放的指定房间的所有远端用户的信号音量 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a93c24ea62b76185a5056e7f55e2d010e">SetAudioSessionOperationRestriction</a>  </td><td>设置 SDK 对 Audio Session 的控制权限 </td><td>V5.4.5  </td></tr>
+</table>
+<h2>视频管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ae15a3fe3f0010004fa5126c22f6df11d">EnableLocalVideo</a> </td><td>开关本地视频 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a716b074e1e183b51dc27f12dac5e54ae">SetCameraCaptureConfig</a> </td><td>设置摄像头采集配置 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a5fecdd8b272a7f7971de4c7b75be956a">SetVideoConfig</a> </td><td>设置视频发送配置 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a8ead355ec43d9860bdc479fadbb6f918">SetupLocalVideoCanvas</a> </td><td>设置本地用户视图 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a518ec722d418cd0748343326e5de3709">SetupRemoteVideoCanvas</a> </td><td>设置远端用户视图 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#acbd0d393492dc587a00428bbf8d9d0b3">SetLocalRenderMode</a> </td><td>设置本地视图显示模式 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab983d8e7715314d38d3d72f204c906b8">SetRemoteRenderMode</a> </td><td>设置远端视图显示模式 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6850c16778e7f1f71c4a754a59b75546">StartVideoPreview</a> </td><td>开启视频预览 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a168b90e5cb6c29ace9fcc1801ad2050e">StopVideoPreview</a> </td><td>停止视频预览 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a8ecf210d6aace2112edb5ff226ff7442">MuteLocalVideoStream</a> </td><td>停止或恢复发送本地视频流 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af4d3a71deec9586e95603a9dd9e0bffc">SubscribeRemoteVideoStream</a> </td><td>订阅 / 取消订阅指定远端用户的视频流 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#abecd699aa7b6e5049f49d3832f18e8f0">SetLocalVideoMirrorMode</a> </td><td>设置本地视频镜像模式 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a2da3418c60937de3a2d4d8205787d405">EnableSuperResolution </a> </td><td>启用或停止 AI 超分。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="本地媒体事件">本地媒体事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a81ada73d9ab6dc5d01e725f66f301004">OnFirstVideoDataReceived</a> </td><td>已显示首帧远端视频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#af7a129e574ff94af2c15287163fdd575">OnFirstAudioDataReceived</a> </td><td>已接收到远端音频首帧回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ae1c58695d26a0b97f2b298e009b4255b">OnFirstAudioFrameDecoded</a> </td><td>已解码远端音频首帧的回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#af40d2a71baf3f10c46a2a9125f4102c1">OnFirstVideoFrameDecoded</a> </td><td>已接收到远端视频并完成解码回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a870a317fea493e450f7d5fd03844b010">OnMediaRightChanged</a> </td><td>服务端禁言音视频权限变化回调 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_audio_frame_observer.html#afdf489f38f502d33a6d7f9a1805c08a2">OnSubstreamAudioFrameDidRecord</a> </td><td>辅流采集音频数据回调 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="远端媒体事件">远端媒体事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a12986bf06e2385188c6b01baedb273e5">OnUserAudioStart</a> </td><td>远端用户开启音频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a82158c9b972115717db87fb91be2bb5a">OnUserAudioStop</a> </td><td>远端用户停用音频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a4afa7fc6fcd9b6f9cd82ec498074d2e2">OnUserVideoStart</a> </td><td>远端用户开启视频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a3e42f96e007d17f1601f7adef93469ca">OnUserVideoStop</a> </td><td>远端用户停用视频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ae6e88cbf70ff07783759ff09560c9515">OnUserVideoProfileUpdate</a> </td><td>远端用户视频配置更新回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a51317dd2eddb3af3f6c66f38d7e98b4a">OnUserAudioMute</a> </td><td>远端用户是否静音回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a9d2a25fe2c8bcf4ec1e0e599afb5aa50">OnUserVideoMute</a> </td><td>远端用户是否禁视频流回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_audio_frame_observer.html#afb42243b1662082209cb88c7aebd1967">OnSubstreamPlaybackAudioFrameBeforeMixing</a> </td><td>获取指定远端用户混音前的辅流音频数据 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="屏幕共享">屏幕共享</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab0a481cbb2d188af32073124f66cf208">StartScreenCaptureByDisplayId</a> </td><td>开启屏幕共享，共享范围为指定屏幕的指定区域。该方法仅适用于 macOS 平台。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ada31148e26605df3523550d3a0d9806f">StartScreenCaptureByScreenRect</a> </td><td>开启屏幕共享，共享范围为指定屏幕的指定区域。该方法仅适用于 Windows 平台。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ac9607a5c0fa24324ca141caae01502bb">StartScreenCaptureByWindowId</a> </td><td>开启屏幕共享，共享范围为指定窗口的指定区域。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a86295f6e298b5294c53a98fcab65eb66">SetExcludeWindowList</a> </td><td>设置共享指定屏幕或屏幕区域时，需要屏蔽的窗口列表。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#abcbaffe6fc3d35b9bdf0417930d09ce9">UpdateScreenCaptureRegion</a> </td><td>更新屏幕共享区域。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a3cd3945641ccd3a2f1fa8cd8c0c04a92">PauseScreenCapture</a> </td><td>暂停屏幕共享。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad0065d5e02af43213fd0342b288c588e">ResumeScreenCapture</a> </td><td>恢复屏幕共享。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a354dcbf8427771c61b59b6f94473c09e">StopScreenCapture</a> </td><td>停止屏幕共享。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a1dfa8f54bce9f495bd046ff853c80633">SetScreenCaptureMouseCursor</a> </td><td>设置共享屏幕时是否显示鼠标 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a1d91ebbe41d90adc49370565863f6bdf">UpdateScreenCaptureParameters</a> </td><td>更新屏幕共享参数 </td><td>V5.4.5  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a4d30def502a9d3fe18c1cf37b9f84f2b">OnScreenCaptureStatusChanged</a> </td><td>屏幕共享状态变化回调。该方法仅适用于 Windows 平台。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2>多房间管理</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><div style="width:400px">方法</div>   </th><th class="markdownTableHeadNone"><div style="width:400px">功能</div>   </th><th class="markdownTableHeadLeft"><div style="width:200px">起始版本</div>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6749a40e2ba08cc2d00b9ba0913ee7c3">CreateChannel</a>   </td><td class="markdownTableBodyNone">创建并获取一个 NERtcChannel 对象。通过创建多个对象，用户可以同时加入多个频道。   </td><td class="markdownTableBodyLeft">V4.5.907    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a>   </td><td class="markdownTableBodyNone">该类提供在指定频道内实现实时音视频功能的方法。   </td><td class="markdownTableBodyLeft">V4.5.907   </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a118e036ca09e99379ad2776469bf7fe7">ChannelOnClientRoleChanged</a> </td><td>用户角色已切换回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a270472e4e8062f3d7741b25a339fe7d2">ChannelOnJoinChannel</a> </td><td>加入房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#aecafdb87232a60b3b2adb4f482c28ea6">ChannelOnRejoinChannel</a> </td><td>重新加入房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#abf46d0073e6ed2642334d8a6d091c1b2">ChannelOnLeaveChannel</a> </td><td>离开房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a169dbddf5132154a845050781a6c8682">ChannelOnUserJoined</a> </td><td>远端用户加入当前房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a0991f6e73022137888baa1a81e04314a">ChannelOnUserLeft</a> </td><td>远端用户离开当前房间回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#abeef12ef123c67d97cc80d0f5a8dd223">ChannelOnDisconnect</a> </td><td>服务器连接断开回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a8b32539837c2c3b4f40fdb721a5f9de4">ChannelOnReconnectingStart</a> </td><td>开始重连回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a827275d8a81f2c60ae0234a90a6de89a">ChannelOnConnectionStateChanged</a> </td><td>房间连接状态已改变回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a659f9c0a087ce4d0cc00111c7e801c5d">ChannelOnFirstVideoDataReceived</a> </td><td>已显示首帧远端视频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a9ade9b7bf0a01e4bac496ed515222b90">ChannelOnFirstAudioDataReceived</a> </td><td>已接收到远端音频首帧回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ad352205e8d29430cc04f7af4f9187db7">ChannelOnFirstAudioFrameDecoded</a> </td><td>已解码远端音频首帧的回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a7f315f9c23aaabf10bedf9025cb37722">ChannelOnFirstVideoFrameDecoded</a> </td><td>已接收到远端视频并完成解码回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a12986bf06e2385188c6b01baedb273e5">OnUserAudioStart</a> </td><td>远端用户开启音频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a82158c9b972115717db87fb91be2bb5a">OnUserAudioStop</a> </td><td>远端用户停用音频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a4afa7fc6fcd9b6f9cd82ec498074d2e2">OnUserVideoStart</a> </td><td>远端用户开启视频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a3e42f96e007d17f1601f7adef93469ca">OnUserVideoStop</a> </td><td>远端用户停用视频回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ae6e88cbf70ff07783759ff09560c9515">OnUserVideoProfileUpdate</a> </td><td>远端用户视频配置更新回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a51317dd2eddb3af3f6c66f38d7e98b4a">OnUserAudioMute</a> </td><td>远端用户是否静音回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a9d2a25fe2c8bcf4ec1e0e599afb5aa50">OnUserVideoMute</a> </td><td>远端用户是否禁视频流回调 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="音乐文件播放及混音">音乐文件播放及混音(伴音)</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6fdf5cb89e0d44b75ba509b89533b88a">StartAudioMixing</a> </td><td>开始播放音乐文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a9a6572dfca1f4d198d8be7ce88c66fc2">StopAudioMixing</a> </td><td>停止播放音乐文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a292e82d26b561cca0316251033bf8a49">PauseAudioMixing</a> </td><td>暂停播放音乐文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad9e26302a02470577512a4f5b25b8cde">ResumeAudioMixing</a> </td><td>恢复播放音乐文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a8946b4fec0811154363c4aa90d83c6aa">SetAudioMixingPlaybackVolume</a> </td><td>设置音乐文件播放音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a646d9703c71356c5b3c2ac2b9ecc9dcc">SetAudioMixingSendVolume</a> </td><td>设置音乐文件的发送音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad17a8b09fc33de2453433ffc1212b98e">GetAudioMixingPlaybackVolume</a> </td><td>获取音乐文件的播放音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a75c2cc517d53e545d901ba2057a3823a">GetAudioMixingSendVolume</a> </td><td>获取音乐文件的发送音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af09767d2e9a7f44993aeb1d86ab95165">GetAudioMixingDuration</a> </td><td>获取音乐文件的总长度 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a1b4142d3b5695e4c3e2ffc5621b4a753">GetAudioMixingCurrentPosition</a> </td><td>获取音乐文件的播放进度 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a59deddcafd92f81c0bba9a29cb5bede6">SetAudioMixingPosition</a> </td><td>设置音乐文件的播放进度 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a29a4febf3dccbe08301496a679d43f8a">SetAudioMixingPitch</a> </td><td>设置伴音的音调 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#afad8b86e929fa4c577bd49e185c1adc0">GetAudioMixingPitch</a> </td><td>获取伴音的音调 </td><td>V5.4.5  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#afa4e132abdcef1d23530289de6a08797">OnAudioMixingStateChanged</a> </td><td>本地用户的音乐文件播放状态改变回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a9c9525a22e64f6a4699418c0cd78d729">OnAudioMixingTimestampUpdate</a> </td><td>本地用户的音乐文件播放进度回调 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="音效文件播放管理">音效文件播放管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a56f2a3c23240244530dc86e888f02b4c">GetEffectPlaybackVolume</a> </td><td>获取音效文件播放音量。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aaa393e72a8aa306072b2636b8eba66c5">SetEffectPlaybackVolume</a> </td><td>设置音效文件播放音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a17ecbcde0460bec9c530ea0608cf8da4">PlayEffect</a> </td><td>播放指定音效文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa3108885fe1d9e63ce154d363e013f49">StopEffect</a> </td><td>停止播放指定音效文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a70df8196e8ffed03f96e6cd53b9c646d">StopAllEffects</a> </td><td>停止播放所有音效文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a94112d68121107bea0ba2e20d9446c57">PauseEffect</a> </td><td>暂停音效文件播放 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa416c0c3c71f0d8b2719aff88d62b4e3">PauseAllEffects</a> </td><td>暂停所有音效文件播放 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af285f7c8223fc13435164525192cde5f">ResumeEffect</a> </td><td>恢复播放指定音效文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ac9ed947880055042012f0b36d55068d6">ResumeAllEffects</a> </td><td>恢复播放所有音效文件 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa83098b642859a13b820fd3cafac7e98">SetEffectSendVolume</a> </td><td>调节音效文件发送音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a4cf8821e26ea90024cbdff09a4019e06">GetEffectSendVolume</a> </td><td>获取音效文件发送音量 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab3b5459e745cc36c713fd900c4463aee">SetEffectPitch</a> </td><td>设置音效文件音调 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a2ea1217c7d8d629abceb3b9555249012">GetEffectPitch</a> </td><td>获取音效文件音调 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a4e85bb693ad5c3cad6ac4e8273ea6302">GetEffectDuration</a> </td><td>获取音效文件的总长度 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a5fedb3d1f573a941762140a3e4200a80">GetEffectCurrentPosition</a> </td><td>获取音效文件的播放进度 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a8d13d01f0a590bc2d9be0034849049ff">SetEffectPosition</a> </td><td>设置音效文件的播放进度 </td><td>V5.4.5  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a3ee8f1a7732a3fd254d42cdcc3b6e0a6">OnAudioEffectFinished</a> </td><td>本地音效文件播放已结束回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a3e21c91c43d5f423de1a3d898ca09d2d">OnAudioEffectTimestampUpdate</a> </td><td>本地音效文件播放进度回调 </td><td>V4.6.29  </td></tr>
+</table>
+<h2 id="变声与混响">变声与混响</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a10f9af5e23411cec14b4ed94e18d7fad">SetAudioEffectPreset</a> </td><td>设置 SDK 预设的人声的变声音效。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aba55d4b3ebb5a99643509d96c61abcb2">SetVoiceBeautifierPreset</a> </td><td>设置 SDK 预设的美声效果。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af5a91b655ef76e4ffa11ca2e6a4487c8">SetLocalVoiceEqualization</a> </td><td>设置本地语音音效均衡，即自定义设置本地人声均衡波段的中心频率。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a4d7f1ba41cdc2397129f29e78e7d5be8">SetLocalVoicePitch</a> </td><td>设置本地语音音调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6ab49254a4dd0a0aa7261a8763e8d221">SetLocalVoiceReverbParam</a> </td><td>开启本地语音混响效果。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="旁路推流">旁路推流</h2>
+<p>注意：该组方法仅适用于互动直播 2.0。</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a977fb7423d7b6559ffa10429c7199b25">AddLiveStreamTask</a> </td><td>添加房间推流任务 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a0a76ad4fe6c11a8085c834b5f622e26d">UpdateLiveStreamTask</a> </td><td>更新修改房间推流任务 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a38d0a4e880f13fa3dfd3dd41adef2d6c">RemoveLiveStreamTask</a> </td><td>删除房间推流任务 </td><td>V4.5.907  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a78641dedb33d0396ae282ec3ccbd00e4">OnAddLiveStreamTask</a> </td><td>通知添加直播任务结果 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a1930a4f7faa893630f73b8503b9b80ac">OnUpdateLiveStreamTask</a> </td><td>通知更新直播任务结果 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ab35bb31deedb520910b68eaa2a96d8ef">OnRemoveLiveStreamTask</a> </td><td>通知删除直播任务结果 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a4a96a22663564ff9b466826c144c410b">OnLiveStreamStateChanged</a> </td><td>通知直播推流状态 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="跨房间流媒体转发">跨房间流媒体转发</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a1dd8c6a8841aa46b279bbddc511c693b">StartChannelMediaRelay</a>  </td><td>开始跨房间媒体流转发。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a30dc08842fe5a0ca0c06b4f410a0f1d4">UpdateChannelMediaRelay</a> </td><td>更新媒体流转发的目标房间。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a5ac45d6eeb35b6572437b5fe7ef8259a">StopChannelMediaRelay</a> </td><td>停止跨房间媒体流转发。 </td><td>V4.5.907  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ab53e9058e4035d9f269483b671aa9fb3">OnMediaRelayStateChanged</a> </td><td>跨房间媒体流转发状态发生改变回调。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a5d297749886f345e11083cec61b57ded">OnMediaRelayEvent</a>  </td><td>媒体流相关转发事件回调。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="媒体补充增强信息">媒体补充增强信息</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a3d05758d696b956a9a9fa116b08f088e">SendSEIMsg</a> </td><td>通过主流通道发送媒体补充增强信息。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="音量提示">音量提示</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa07f92398ea5349724c05f997e1a3afa">EnableAudioVolumeIndication</a> </td><td>启用说话者音量提示 </td><td>V4.5.907  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a1dd69b9b8bc16b6cecfa13bcae4747d0">OnRemoteAudioVolumeIndication</a> </td><td>提示房间内谁正在说话及说话者音量的回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a2a0663c4ce650e5bfced40e40a0ae805">OnLocalAudioVolumeIndication</a> </td><td>提示房间内本地用户瞬时音量的回调 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="耳返">耳返</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab928f038d03b61d65e21b926f376996d">EnableEarback</a> </td><td>开启耳返功能 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6ec046dc71d9e90dbb499ab6943329a7">SetEarbackVolume</a> </td><td>设置耳返音量 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="视频大小流">视频大小流</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a754c8049a7872c4bd0d9cecb0117958f">EnableDualStreamMode</a> </td><td>设置是否开启视频大小流模式。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="音视频流回退">音视频流回退</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a5cac70b6157c422972b072e7f4a3824e">SetLocalPublishFallbackOption</a> </td><td>设置弱网条件下发布的音视频流回退选项。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab014ef53dcf8b54b4037756677238a01">SetRemoteSubscribeFallbackOption</a> </td><td>设置弱网条件下订阅的音视频流回退选项。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad024aacdfe7bbd21aeed398b9157da27">SetLocalMediaPriority</a> </td><td>设置本地用户的媒体流优先级。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2>通话前网络测试</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><div style="width:400px">方法</div>   </th><th class="markdownTableHeadNone"><div style="width:400px">功能</div>   </th><th class="markdownTableHeadCenter"><div style="width:200px">起始版本</div>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classnertc_1_1_i_rtc_engine.html#ac4bcc5fc2284b65b7ed709bcdef8d0ad">StartLastmileProbeTest</a>   </td><td class="markdownTableBodyNone">开始通话前网络质量探测。   </td><td class="markdownTableBodyCenter">V4.5.907    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classnertc_1_1_i_rtc_engine.html#aeb0d5dea6dcbe9ae0aab61c3767371f3">StopLastmileProbeTest</a>   </td><td class="markdownTableBodyNone">停止通话前网络质量探测。   </td><td class="markdownTableBodyCenter">V4.5.907   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><div style="width:400px">事件</div>   </th><th class="markdownTableHeadNone"><div style="width:400px">描述</div>   </th><th class="markdownTableHeadCenter"><div style="width:200px">起始版本</div>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="namespacenertc.html#ae446a9588d23ad41fe7d9958d49f035a">OnLastmileQuality</a>   </td><td class="markdownTableBodyNone">报告本地用户的网络质量。   </td><td class="markdownTableBodyCenter">V4.5.907    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="namespacenertc.html#a67e6fc033e92eb7f06efab44e4f9846a">OnLastmileProbeResult</a>   </td><td class="markdownTableBodyNone">报告通话前网络上下行 last mile 质量。   </td><td class="markdownTableBodyCenter">V4.5.907   </td></tr>
+</table>
+<h2 id="自定义音频采集与渲染">自定义音频采集与渲染</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#adcf058872a35042cd4e6d13685f17746">SetExternalAudioSource</a> </td><td>启用外部自定义音频数据输入功能，并设置采集参数。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a3848f9b7417b4cc9050f4d2b2d2426a8">PushExternalAudioFrame</a> </td><td>将外部音频数据帧推送给内部引擎 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a919cbc7e64f2aff6d3595303e7831aa2">SetExternalAudioRender</a> </td><td>设置外部音频渲染 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af2a699daad176f38f3f0ad183f5e419c">PullExternalAudioFrame</a> </td><td>拉取外部音频数据 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa372d99ed512215201fef21bb6826177">SetStreamAlignmentProperty</a> </td><td>对齐本地系统时间与服务端时间。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a3326637128b7b72bec888dcdc8af68b8">GetNtpTimeOffset</a>  </td><td>获取本地系统时间与服务端时间的差值。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="自定义视频采集">自定义视频采集</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa09a592766efd03854c076d6316f5b9d">SetExternalVideoSource</a> </td><td>配置外部视频源 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a63da8b0d2d6c10bc6c2f4b977dd1a847">PushExternalVideoFrame</a> </td><td>推送外部视频帧 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="音视频裸流传输">音视频裸流传输</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ab12fc5912f5474b1672acab95317ac97">SetPreDecodeObserver</a>  </td><td>注册解码前媒体数据观测器。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aeb469e5f4654bf98c7126525d4e7cc7e">PushExternalAudioEncodedFrame</a>  </td><td>推送外部音频主流编码帧。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a808bddfe35756123d4318bc8bed5390b">PushExternalVideoEncodedFrame</a>  </td><td>推送外部视频编码帧。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a0a5077ecb4baf54670b68f55bfd01733">SetVideoEncoderQosObserver</a> </td><td>注册视频编码 QoS 信息监听器。 </td><td>V5.4.5  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_predecode_frame_observer.html#ad6cc1bd1b142a03b1f55ccf19a1fd8f0">OnFrame</a>  </td><td>解码前媒体数据回调。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_video_encoder_qos_observer.html#af948f66839f6c97da843201a41b35b92">OnRequestSendKeyFrame</a>  </td><td>I 帧请求事件回调。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_video_encoder_qos_observer.html#a55df6d3b57e34d8411a45e01e417798b">OnVideoCodecUpdated</a>  </td><td>视频编码器类型信息回调。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_video_encoder_qos_observer.html#a3217d803d232858e5648f2610b990bc1">OnBitrateUpdated</a>  </td><td>码率信息回调。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="原始音频数据">原始音频数据</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a91c7d88193cbc354e9ba3352e42fc1af">SetRecordingAudioFrameParameters</a> </td><td>设置录制的声音格式 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af0c72c86a6eb492b4bac10374b52aac8">SetPlaybackAudioFrameParameters</a> </td><td>设置播放的声音格式 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#abb5f3d0ee4660fa61dbd1a9c21de2f9a">SetAudioFrameObserver</a> </td><td>注册语音观测器对象 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a11dc87f665161365301f2f97b8d3c2ca">SetMixedAudioFrameParameters</a> </td><td>设置采集和播放后的混合后的采样率。需要在加入房间之前调用该接口 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="原始视频数据">原始视频数据</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="interfacenertc_1_1_i_capture_video_frame_observer.html#a6c05e8e5dc404e1d5a990fd1d6e86ee9">OnCaptureVideoFrame</a> </td><td>采集视频数据回调。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="水印">水印</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a90d7f85d629abda8b5c29edd5e04b203">SetLocalVideoWatermarkConfigs</a> </td><td>添加本地视频水印。 </td><td>V5.4.5  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ad7b236c08e455fab91fca4c62ff2cc6e">OnLocalVideoWatermarkState</a> </td><td>水印结果回调。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="加密">加密</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#af76b8c1cccd99d9deb60fd360f382cf6">EnableEncryption</a> </td><td>开启或关闭媒体流加密。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="客户端音频录制">客户端音频录制</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a66e9dab80807f2fe8d61968975fec383">StartAudioRecording</a> </td><td>开始客户端录音。 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a4526bb6a0518ecf200935acdf3a69c91">StartAudioRecordingWithConfig</a> </td><td>开始客户端录音。 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a099df7a5322b6f1665d8364e262c5020">StopAudioRecording</a> </td><td>停止客户端录音。 </td><td>V4.5.907  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ae4ed0926355f125de5f86e997df8c160">OnAudioRecording</a> </td><td>音频录制状态回调。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="音频设备管理">音频设备管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad8ef19385e3348109af7fec1b1788f22">SetPlayoutDeviceMute</a> </td><td>设置当前播放设备静音状态 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a73c21c13b7bd90a2852a646d36942bd0">GetPlayoutDeviceMute</a> </td><td>获取当前播放设备静音状态 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a58157b5956bb532105c5766ebe7eb1cc">SetRecordDeviceMute</a> </td><td>设置当前采集设备静音状态 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a211d268de0ef7504723beedd7b8430a3">GetRecordDeviceMute</a> </td><td>获取当前采集设备静音状态 </td><td>V4.5.907  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#acfad73d0e99c4e0b1aa34b8b360488ed">OnAudioHowling</a> </td><td>检测到啸叫回调。 </td><td>V4.5.907  </td></tr>
+</table>
+<h2 id="设备管理事件">设备管理事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a78bece72ad41531f3023ee7cb3bd60cb">OnAudioDeviceStateChanged</a> </td><td>音频设备状态更改回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ad310f9a26e01ec73e3ea96ee6b545909">OnAudioDefaultDeviceChanged</a> </td><td>音频默认设备更改回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a5b3f988157ba23a5f34315d4e8096dca">OnVideoDeviceStateChanged</a> </td><td>视频设备状态更改回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#adec347e5f47bca56c4d263296e4abf40">OnCheckNECastAudioDriverResult</a> </td><td>安装虚拟声卡的结果回调（仅适用于 Mac 系统） </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="美颜">美颜</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a4128181bef461fc85048f589dc99572b">StartBeauty</a>  </td><td>开启美颜功能模块 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a728d41176da72d63a03be82cb36d04f3">StopBeauty</a>  </td><td>结束美颜功能模块 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a42c82bfb2f928e850a40c454fe24e051">EnableBeauty</a>  </td><td>暂停或恢复美颜效果 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#ad1ca3e648428fcbfd306edb46d30b085">SetBeautyEffect</a>  </td><td>设置美颜效果 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a0d7531b8acdd5068d9a146e0d4e5a8b6">GetBeautyEffect</a>  </td><td>获取指定美颜类型的强度设置 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a2958ba9750a833a1459572204ab8c1b2">AddBeautyFilter</a>  </td><td>添加滤镜效果 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aaec22bdfb8522c8cc1375495bcdaed2d">RemoveBeautyFilter</a>  </td><td>移除滤镜 </td><td>V5.4.5  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a629c21d1048c25fe2bfa24d2801f8ee4">SetBeautyFilterLevel</a>  </td><td>设置滤镜强度 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="虚拟背景">虚拟背景</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a55d0871e8f947966dd7268609843a408">EnableVirtualBackground</a> </td><td>开启或关闭虚拟背景。 </td><td>V5.4.5  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#ae88e1dd94ec2a8ae87fb9e8dfb29a46d">OnVirtualBackgroundSourceEnabled</a> </td><td>通知虚拟背景功能是否成功启用的回调。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="云代理">云代理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a693f01df30f2509b1bfd977bc1771a31">SetCloudProxy</a> </td><td>开启并设置云代理服务。 </td><td>V5.4.5  </td></tr>
+</table>
+<h2 id="故障排查">故障排查</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a6e2fcf5a5eb5699313c75020e4803420">StartAudioDump</a> </td><td>开始记录音频 dump 音频 dump 可用于分析音频问题 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#a3c15bbd0b2b5cc24799aaeab1b05569d">StopAudioDump</a> </td><td>结束记录音频 dump </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="classnertc_1_1_i_rtc_engine.html#aa1cda0828de5fbe317f6e0a65bf90de2">UploadSdkInfo</a> </td><td>上传SDK日志信息 </td><td>V4.5.907  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a854424eafe7f51647486e3dd7f99b7d1">OnError</a> </td><td>发生错误回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a1e724ad013a3b1dc20de0231a5e4bff4">ChannelOnError</a> </td><td>发生错误回调 </td><td>V4.5.907  </td></tr>
+<tr>
+<td><a class="el" href="namespacenertc.html#a8c64327e775519e7a822dd3ead2cc51d">OnWarning</a> </td><td>发生警告回调 </td><td>V4.5.907  </td></tr>
+</table>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

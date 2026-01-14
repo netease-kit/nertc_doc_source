@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the enableLocalAudio method from the NERtcEngine class, for the Dart programming language.">
+  <title>enableLocalAudio method - NERtcEngine class - nertc library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc_core.dart</a></li>
+    <li><a href="../../nertc/NERtcEngine-class.html">NERtcEngine</a></li>
+    <li class="self-crumb">enableLocalAudio abstract method</li>
+  </ol>
+  <div class="self-name">enableLocalAudio</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="nertc&#47;NERtcEngine-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">enableLocalAudio</span> abstract method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span>&gt;</span></span>
+<span class="name ">enableLocalAudio</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="enableLocalAudio-param-enable"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">enable</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+<section class="desc markdown">
+  <p>开启或关闭本地音频的采集和发送。 通过本接口可以实现开启或关闭本地语音功能，进行本地音频采集及处理。</p>
+<p><strong>调用时机</strong></p>
+<p>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。</p>
+<p><strong>说明</strong></p>
+<ul>
+<li>加入房间后，语音功能默认为开启状态。</li>
+<li>该方法设置内部引擎为启用状态，在 <a href="../../nertc/NERtcEngine/leaveChannel.html">leaveChannel</a> 后仍然有效。</li>
+<li>该方法不影响接收或播放远端音频流，enableLocalAudio(false) 适用于只下行不上行音频流的场景。</li>
+<li>开启或关闭本地音频采集的操作不会影响伴音/音效接口的使用，比如 enableLocalAudio(false) 后仍可以调用 <a href="../../nertc/NERtcAudioMixingManager/startAudioMixing.html">NERtcAudioMixingManager.startAudioMixing</a> 方法播放音乐文件。</li>
+<li>该方法会操作音频硬件设备，建议避免频繁开关，否则可能导致设备异常。</li>
+</ul>
+<p><strong>参数说明</strong></p>
+<p><code>enable</code> 是否启用本地音频的采集和发送：</p>
+<ul>
+<li>true: 开启本地音频采集。</li>
+<li>false : 关闭本地音频采集。关闭后，远端用户会接收不到本地用户的音频流；但本地用户依然可以接收到远端用户的音频流。</li>
+</ul>
+<p><strong>相关回调</strong></p>
+<ul>
+<li>开启音频采集后，远端会触发 <a href="../../nertc/NERtcChannelEventCallback/onUserAudioStart.html">NERtcChannelEventCallback.onUserAudioStart</a> 回调。</li>
+<li>关闭音频采集后，远端会触发 <a href="../../nertc/NERtcChannelEventCallback/onUserAudioStop.html">NERtcChannelEventCallback.onUserAudioStop</a> 回调。</li>
+</ul>
+<p><strong>相关接口</strong></p>
+<p><a href="../../nertc/NERtcEngine/muteLocalAudioStream.html">muteLocalAudioStream</a>：两者的差异在于，<a href="../../nertc/NERtcEngine/enableLocalAudio.html">enableLocalAudio</a> 用于开启本地语音采集及处理，而 <a href="../../nertc/NERtcEngine/muteLocalAudioStream.html">muteLocalAudioStream</a> 用于停止或继续发送本地音频流。</p>
+<ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;int&gt; enableLocalAudio(bool enable);</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">nertc_core</a></li>
+    <li><a href="../../nertc/nertc-library.html">nertc</a></li>
+    <li><a href="../../nertc/NERtcEngine-class.html">NERtcEngine</a></li>
+    <li class="self-crumb">enableLocalAudio abstract method</li>
+</ol>
+
+
+    <h5>NERtcEngine class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

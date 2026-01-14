@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine_native.html">IRtcEngineNative</a></li><li class="navelem"><a class="el" href="structnertc_1_1wwiseplugin_1_1_i_rtc_engine_native_1_1_native_engine_event.html">NativeEngineEvent</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="structnertc_1_1wwiseplugin_1_1_i_rtc_engine_native_1_1_native_engine_event-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9fed615a60a692c7b76770226be00039" id="r_a9fed615a60a692c7b76770226be00039"><td class="memItemLeft" align="right" valign="top">onError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fed615a60a692c7b76770226be00039">onError</a></td></tr>
+<tr class="separator:a9fed615a60a692c7b76770226be00039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6609bd3b528cdb72eb65d1055fb4d3a" id="r_ae6609bd3b528cdb72eb65d1055fb4d3a"><td class="memItemLeft" align="right" valign="top">onWarning&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6609bd3b528cdb72eb65d1055fb4d3a">onWarning</a></td></tr>
+<tr class="separator:ae6609bd3b528cdb72eb65d1055fb4d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897f913c5e84a64e7d929b83922de118" id="r_a897f913c5e84a64e7d929b83922de118"><td class="memItemLeft" align="right" valign="top">onJoinChannel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a897f913c5e84a64e7d929b83922de118">onJoinChannel</a></td></tr>
+<tr class="separator:a897f913c5e84a64e7d929b83922de118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3910bbbf0606f6be9c66c4a671d341e" id="r_ae3910bbbf0606f6be9c66c4a671d341e"><td class="memItemLeft" align="right" valign="top">onReconnectingStart&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3910bbbf0606f6be9c66c4a671d341e">onReconnectingStart</a></td></tr>
+<tr class="separator:ae3910bbbf0606f6be9c66c4a671d341e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e206e75f6e0095a95f8446fb0f4e5ec" id="r_a1e206e75f6e0095a95f8446fb0f4e5ec"><td class="memItemLeft" align="right" valign="top">onConnectionStateChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e206e75f6e0095a95f8446fb0f4e5ec">onConnectionStateChanged</a></td></tr>
+<tr class="separator:a1e206e75f6e0095a95f8446fb0f4e5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b744676e966f3e060dfa2682fd4a2b" id="r_ad7b744676e966f3e060dfa2682fd4a2b"><td class="memItemLeft" align="right" valign="top">onNetworkTypeChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b744676e966f3e060dfa2682fd4a2b">onNetworkTypeChanged</a></td></tr>
+<tr class="separator:ad7b744676e966f3e060dfa2682fd4a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e5f6653aa7f6a76d51565027bfd085" id="r_a50e5f6653aa7f6a76d51565027bfd085"><td class="memItemLeft" align="right" valign="top">onRejoinChannel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50e5f6653aa7f6a76d51565027bfd085">onRejoinChannel</a></td></tr>
+<tr class="separator:a50e5f6653aa7f6a76d51565027bfd085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad525bd061058abaefb85832e087cba87" id="r_ad525bd061058abaefb85832e087cba87"><td class="memItemLeft" align="right" valign="top">onLeaveChannel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad525bd061058abaefb85832e087cba87">onLeaveChannel</a></td></tr>
+<tr class="separator:ad525bd061058abaefb85832e087cba87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8388e3c727b0ad902b2d66bf37d84f89" id="r_a8388e3c727b0ad902b2d66bf37d84f89"><td class="memItemLeft" align="right" valign="top">onDisconnect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8388e3c727b0ad902b2d66bf37d84f89">onDisconnect</a></td></tr>
+<tr class="separator:a8388e3c727b0ad902b2d66bf37d84f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3e60fa21bdcadcf8d4508d722cabce" id="r_a8f3e60fa21bdcadcf8d4508d722cabce"><td class="memItemLeft" align="right" valign="top">onClientRoleChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3e60fa21bdcadcf8d4508d722cabce">onClientRoleChanged</a></td></tr>
+<tr class="separator:a8f3e60fa21bdcadcf8d4508d722cabce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e657900cbc08b2445f5b1d1587b43a3" id="r_a1e657900cbc08b2445f5b1d1587b43a3"><td class="memItemLeft" align="right" valign="top">onUserJoined&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e657900cbc08b2445f5b1d1587b43a3">onUserJoined</a></td></tr>
+<tr class="separator:a1e657900cbc08b2445f5b1d1587b43a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac7571b3b3c4579401f16066c7df4fb" id="r_a6ac7571b3b3c4579401f16066c7df4fb"><td class="memItemLeft" align="right" valign="top">onUserLeft&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac7571b3b3c4579401f16066c7df4fb">onUserLeft</a></td></tr>
+<tr class="separator:a6ac7571b3b3c4579401f16066c7df4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad14f33d540e6a144c31ca9502df6a3f" id="r_aad14f33d540e6a144c31ca9502df6a3f"><td class="memItemLeft" align="right" valign="top">onUserAudioStart&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad14f33d540e6a144c31ca9502df6a3f">onUserAudioStart</a></td></tr>
+<tr class="separator:aad14f33d540e6a144c31ca9502df6a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4fcd0e340889500c91c860c5ca1284" id="r_a2e4fcd0e340889500c91c860c5ca1284"><td class="memItemLeft" align="right" valign="top">onUserAudioStop&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e4fcd0e340889500c91c860c5ca1284">onUserAudioStop</a></td></tr>
+<tr class="separator:a2e4fcd0e340889500c91c860c5ca1284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4ce53eb12b26bfc2ff6f5c0e36dd76" id="r_afa4ce53eb12b26bfc2ff6f5c0e36dd76"><td class="memItemLeft" align="right" valign="top">onUserAudioMute&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa4ce53eb12b26bfc2ff6f5c0e36dd76">onUserAudioMute</a></td></tr>
+<tr class="separator:afa4ce53eb12b26bfc2ff6f5c0e36dd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a72f0d511d0c3eac3f70ae0ddfb5cb" id="r_ac4a72f0d511d0c3eac3f70ae0ddfb5cb"><td class="memItemLeft" align="right" valign="top">onAudioDeviceRoutingDidChange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a72f0d511d0c3eac3f70ae0ddfb5cb">onAudioDeviceRoutingDidChange</a></td></tr>
+<tr class="separator:ac4a72f0d511d0c3eac3f70ae0ddfb5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2ca3439c0129647531d052c6e7c472" id="r_a6d2ca3439c0129647531d052c6e7c472"><td class="memItemLeft" align="right" valign="top">onAudioDeviceStateChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d2ca3439c0129647531d052c6e7c472">onAudioDeviceStateChanged</a></td></tr>
+<tr class="separator:a6d2ca3439c0129647531d052c6e7c472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae1cf36f8e91aaa05b8545c97f87a7d" id="r_acae1cf36f8e91aaa05b8545c97f87a7d"><td class="memItemLeft" align="right" valign="top">onAudioDefaultDeviceChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acae1cf36f8e91aaa05b8545c97f87a7d">onAudioDefaultDeviceChanged</a></td></tr>
+<tr class="separator:acae1cf36f8e91aaa05b8545c97f87a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf44786318f32ed53c36a66921762e1" id="r_a8bf44786318f32ed53c36a66921762e1"><td class="memItemLeft" align="right" valign="top">onFirstAudioDataReceived&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bf44786318f32ed53c36a66921762e1">onFirstAudioDataReceived</a></td></tr>
+<tr class="separator:a8bf44786318f32ed53c36a66921762e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ce6a93a909eedffd33fdad9fac7cef" id="r_a36ce6a93a909eedffd33fdad9fac7cef"><td class="memItemLeft" align="right" valign="top">onFirstAudioFrameDecoded&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36ce6a93a909eedffd33fdad9fac7cef">onFirstAudioFrameDecoded</a></td></tr>
+<tr class="separator:a36ce6a93a909eedffd33fdad9fac7cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6fdd0abb7083a3567fec2f6d3fb895d" id="r_ad6fdd0abb7083a3567fec2f6d3fb895d"><td class="memItemLeft" align="right" valign="top">onLocalAudioVolumeIndication&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6fdd0abb7083a3567fec2f6d3fb895d">onLocalAudioVolumeIndication</a></td></tr>
+<tr class="separator:ad6fdd0abb7083a3567fec2f6d3fb895d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e9b0fe910f1db2793b517af4199e8c" id="r_ab3e9b0fe910f1db2793b517af4199e8c"><td class="memItemLeft" align="right" valign="top">onRemoteAudioVolumeIndication&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3e9b0fe910f1db2793b517af4199e8c">onRemoteAudioVolumeIndication</a></td></tr>
+<tr class="separator:ab3e9b0fe910f1db2793b517af4199e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="acae1cf36f8e91aaa05b8545c97f87a7d" name="acae1cf36f8e91aaa05b8545c97f87a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae1cf36f8e91aaa05b8545c97f87a7d">&#9670;&#160;</a></span>onAudioDefaultDeviceChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onAudioDefaultDeviceChanged nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onAudioDefaultDeviceChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4a72f0d511d0c3eac3f70ae0ddfb5cb" name="ac4a72f0d511d0c3eac3f70ae0ddfb5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a72f0d511d0c3eac3f70ae0ddfb5cb">&#9670;&#160;</a></span>onAudioDeviceRoutingDidChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onAudioDeviceRoutingDidChange nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onAudioDeviceRoutingDidChange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d2ca3439c0129647531d052c6e7c472" name="a6d2ca3439c0129647531d052c6e7c472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d2ca3439c0129647531d052c6e7c472">&#9670;&#160;</a></span>onAudioDeviceStateChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onAudioDeviceStateChanged nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onAudioDeviceStateChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f3e60fa21bdcadcf8d4508d722cabce" name="a8f3e60fa21bdcadcf8d4508d722cabce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3e60fa21bdcadcf8d4508d722cabce">&#9670;&#160;</a></span>onClientRoleChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onClientRoleChanged nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onClientRoleChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e206e75f6e0095a95f8446fb0f4e5ec" name="a1e206e75f6e0095a95f8446fb0f4e5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e206e75f6e0095a95f8446fb0f4e5ec">&#9670;&#160;</a></span>onConnectionStateChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onConnectionStateChanged nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onConnectionStateChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8388e3c727b0ad902b2d66bf37d84f89" name="a8388e3c727b0ad902b2d66bf37d84f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8388e3c727b0ad902b2d66bf37d84f89">&#9670;&#160;</a></span>onDisconnect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onDisconnect nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onDisconnect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fed615a60a692c7b76770226be00039" name="a9fed615a60a692c7b76770226be00039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fed615a60a692c7b76770226be00039">&#9670;&#160;</a></span>onError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onError nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bf44786318f32ed53c36a66921762e1" name="a8bf44786318f32ed53c36a66921762e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf44786318f32ed53c36a66921762e1">&#9670;&#160;</a></span>onFirstAudioDataReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onFirstAudioDataReceived nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onFirstAudioDataReceived</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36ce6a93a909eedffd33fdad9fac7cef" name="a36ce6a93a909eedffd33fdad9fac7cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ce6a93a909eedffd33fdad9fac7cef">&#9670;&#160;</a></span>onFirstAudioFrameDecoded</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onFirstAudioFrameDecoded nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onFirstAudioFrameDecoded</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a897f913c5e84a64e7d929b83922de118" name="a897f913c5e84a64e7d929b83922de118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897f913c5e84a64e7d929b83922de118">&#9670;&#160;</a></span>onJoinChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onJoinChannel nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onJoinChannel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad525bd061058abaefb85832e087cba87" name="ad525bd061058abaefb85832e087cba87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad525bd061058abaefb85832e087cba87">&#9670;&#160;</a></span>onLeaveChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onLeaveChannel nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onLeaveChannel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6fdd0abb7083a3567fec2f6d3fb895d" name="ad6fdd0abb7083a3567fec2f6d3fb895d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6fdd0abb7083a3567fec2f6d3fb895d">&#9670;&#160;</a></span>onLocalAudioVolumeIndication</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onLocalAudioVolumeIndication nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onLocalAudioVolumeIndication</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7b744676e966f3e060dfa2682fd4a2b" name="ad7b744676e966f3e060dfa2682fd4a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b744676e966f3e060dfa2682fd4a2b">&#9670;&#160;</a></span>onNetworkTypeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onNetworkTypeChanged nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onNetworkTypeChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3910bbbf0606f6be9c66c4a671d341e" name="ae3910bbbf0606f6be9c66c4a671d341e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3910bbbf0606f6be9c66c4a671d341e">&#9670;&#160;</a></span>onReconnectingStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onReconnectingStart nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onReconnectingStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50e5f6653aa7f6a76d51565027bfd085" name="a50e5f6653aa7f6a76d51565027bfd085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50e5f6653aa7f6a76d51565027bfd085">&#9670;&#160;</a></span>onRejoinChannel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onRejoinChannel nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onRejoinChannel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3e9b0fe910f1db2793b517af4199e8c" name="ab3e9b0fe910f1db2793b517af4199e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e9b0fe910f1db2793b517af4199e8c">&#9670;&#160;</a></span>onRemoteAudioVolumeIndication</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onRemoteAudioVolumeIndication nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onRemoteAudioVolumeIndication</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa4ce53eb12b26bfc2ff6f5c0e36dd76" name="afa4ce53eb12b26bfc2ff6f5c0e36dd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4ce53eb12b26bfc2ff6f5c0e36dd76">&#9670;&#160;</a></span>onUserAudioMute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onUserAudioMute nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onUserAudioMute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad14f33d540e6a144c31ca9502df6a3f" name="aad14f33d540e6a144c31ca9502df6a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad14f33d540e6a144c31ca9502df6a3f">&#9670;&#160;</a></span>onUserAudioStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onUserAudioStart nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onUserAudioStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e4fcd0e340889500c91c860c5ca1284" name="a2e4fcd0e340889500c91c860c5ca1284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e4fcd0e340889500c91c860c5ca1284">&#9670;&#160;</a></span>onUserAudioStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onUserAudioStop nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onUserAudioStop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e657900cbc08b2445f5b1d1587b43a3" name="a1e657900cbc08b2445f5b1d1587b43a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e657900cbc08b2445f5b1d1587b43a3">&#9670;&#160;</a></span>onUserJoined</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onUserJoined nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onUserJoined</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ac7571b3b3c4579401f16066c7df4fb" name="a6ac7571b3b3c4579401f16066c7df4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac7571b3b3c4579401f16066c7df4fb">&#9670;&#160;</a></span>onUserLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onUserLeft nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onUserLeft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6609bd3b528cdb72eb65d1055fb4d3a" name="ae6609bd3b528cdb72eb65d1055fb4d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6609bd3b528cdb72eb65d1055fb4d3a">&#9670;&#160;</a></span>onWarning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">onWarning nertc.wwiseplugin.IRtcEngineNative.NativeEngineEvent.onWarning</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/native/<a class="el" href="_rtc_engine_native_8cs.html">RtcEngineNative.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

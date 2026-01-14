@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: NERtcStats类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#properties">属性</a> &#124;
+<a href="interface_n_e_rtc_stats-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">NERtcStats类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>通话相关的统计信息   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_statistics_8h_source.html">NERtcEngineStatistics.h</a>&gt;</code></p>
+<div class="dynheader">
+类 NERtcStats 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_n_e_rtc_stats.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a6a347e841d265267827eb6115cd2f026" id="r_a6a347e841d265267827eb6115cd2f026"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a347e841d265267827eb6115cd2f026">txBytes</a></td></tr>
+<tr class="memdesc:a6a347e841d265267827eb6115cd2f026"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送字节数（bytes），累计值   <br /></td></tr>
+<tr class="separator:a6a347e841d265267827eb6115cd2f026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31beeac69cd6368f28fde4c41f4a1f14" id="r_a31beeac69cd6368f28fde4c41f4a1f14"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31beeac69cd6368f28fde4c41f4a1f14">rxBytes</a></td></tr>
+<tr class="memdesc:a31beeac69cd6368f28fde4c41f4a1f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收字节数（bytes），累计值   <br /></td></tr>
+<tr class="separator:a31beeac69cd6368f28fde4c41f4a1f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e14dcc23106f964ad65176d600d668" id="r_a58e14dcc23106f964ad65176d600d668"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58e14dcc23106f964ad65176d600d668">cpuAppUsage</a></td></tr>
+<tr class="memdesc:a58e14dcc23106f964ad65176d600d668"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前 App 的 CPU 使用率 (%)   <br /></td></tr>
+<tr class="separator:a58e14dcc23106f964ad65176d600d668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68200b8ce8fb40da1bf4641902ef8a18" id="r_a68200b8ce8fb40da1bf4641902ef8a18"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68200b8ce8fb40da1bf4641902ef8a18">cpuTotalUsage</a></td></tr>
+<tr class="memdesc:a68200b8ce8fb40da1bf4641902ef8a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前系统的 CPU 使用率 (%)   <br /></td></tr>
+<tr class="separator:a68200b8ce8fb40da1bf4641902ef8a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12afe89cb3eb62544badb3ceaba92be9" id="r_a12afe89cb3eb62544badb3ceaba92be9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12afe89cb3eb62544badb3ceaba92be9">memoryAppUsageRatio</a></td></tr>
+<tr class="memdesc:a12afe89cb3eb62544badb3ceaba92be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前 App 的内存占比 (%) , 占最大可用内存   <br /></td></tr>
+<tr class="separator:a12afe89cb3eb62544badb3ceaba92be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1eba8f2d461d899a57a30a6aea3fdf" id="r_afc1eba8f2d461d899a57a30a6aea3fdf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc1eba8f2d461d899a57a30a6aea3fdf">memoryTotalUsageRatio</a></td></tr>
+<tr class="memdesc:afc1eba8f2d461d899a57a30a6aea3fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前系统的内存占比 (%)   <br /></td></tr>
+<tr class="separator:afc1eba8f2d461d899a57a30a6aea3fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a998f14690cc8e111dd228988d25b01" id="r_a5a998f14690cc8e111dd228988d25b01"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a998f14690cc8e111dd228988d25b01">memoryAppUsageInKBytes</a></td></tr>
+<tr class="memdesc:a5a998f14690cc8e111dd228988d25b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前 App 的内存大小 (KB)   <br /></td></tr>
+<tr class="separator:a5a998f14690cc8e111dd228988d25b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b63cd0d7f94eeb08eb3575aa0e6350c" id="r_a8b63cd0d7f94eeb08eb3575aa0e6350c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b63cd0d7f94eeb08eb3575aa0e6350c">totalDuration</a></td></tr>
+<tr class="memdesc:a8b63cd0d7f94eeb08eb3575aa0e6350c"><td class="mdescLeft">&#160;</td><td class="mdescRight">自加入房间的通话时长， 退出后再加入重新计时 ( 单位：S)   <br /></td></tr>
+<tr class="separator:a8b63cd0d7f94eeb08eb3575aa0e6350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979bcd8c9369c13bde6fbfeb6855a113" id="r_a979bcd8c9369c13bde6fbfeb6855a113"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a979bcd8c9369c13bde6fbfeb6855a113">txAudioBytes</a></td></tr>
+<tr class="memdesc:a979bcd8c9369c13bde6fbfeb6855a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">自加入房间后累计的发送的音频字节数（Byte）   <br /></td></tr>
+<tr class="separator:a979bcd8c9369c13bde6fbfeb6855a113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413216aef7ada57b7234365518b64ed9" id="r_a413216aef7ada57b7234365518b64ed9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a413216aef7ada57b7234365518b64ed9">txVideoBytes</a></td></tr>
+<tr class="memdesc:a413216aef7ada57b7234365518b64ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">自加入房间后累计的发送的视频字节数（Byte）   <br /></td></tr>
+<tr class="separator:a413216aef7ada57b7234365518b64ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720f8991f8b61bc3a6b35df04a0bba47" id="r_a720f8991f8b61bc3a6b35df04a0bba47"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a720f8991f8b61bc3a6b35df04a0bba47">rxAudioBytes</a></td></tr>
+<tr class="memdesc:a720f8991f8b61bc3a6b35df04a0bba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">自加入房间后累计的接收的音频字节数（Byte）   <br /></td></tr>
+<tr class="separator:a720f8991f8b61bc3a6b35df04a0bba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295f959da1c74919ee58d8a5d6f48c05" id="r_a295f959da1c74919ee58d8a5d6f48c05"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295f959da1c74919ee58d8a5d6f48c05">rxVideoBytes</a></td></tr>
+<tr class="memdesc:a295f959da1c74919ee58d8a5d6f48c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">自加入房间后累计的接收的视频字节数（Byte）   <br /></td></tr>
+<tr class="separator:a295f959da1c74919ee58d8a5d6f48c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0dec88b4a84d817c558c217f34f9fe" id="r_a8d0dec88b4a84d817c558c217f34f9fe"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d0dec88b4a84d817c558c217f34f9fe">rxAudioKBitRate</a></td></tr>
+<tr class="memdesc:a8d0dec88b4a84d817c558c217f34f9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频接收码率（kbps）   <br /></td></tr>
+<tr class="separator:a8d0dec88b4a84d817c558c217f34f9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae03a0f6541438b8d406f70e9a172e9" id="r_abae03a0f6541438b8d406f70e9a172e9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abae03a0f6541438b8d406f70e9a172e9">rxVideoKBitRate</a></td></tr>
+<tr class="memdesc:abae03a0f6541438b8d406f70e9a172e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频接收码率（kbps）   <br /></td></tr>
+<tr class="separator:abae03a0f6541438b8d406f70e9a172e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19606c2b5ecfbe07b02db204f9b8d265" id="r_a19606c2b5ecfbe07b02db204f9b8d265"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19606c2b5ecfbe07b02db204f9b8d265">txAudioKBitRate</a></td></tr>
+<tr class="memdesc:a19606c2b5ecfbe07b02db204f9b8d265"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频发送码率（kbps）   <br /></td></tr>
+<tr class="separator:a19606c2b5ecfbe07b02db204f9b8d265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34822e3808915e4e32a1a3cdcc03132" id="r_aa34822e3808915e4e32a1a3cdcc03132"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa34822e3808915e4e32a1a3cdcc03132">txVideoKBitRate</a></td></tr>
+<tr class="memdesc:aa34822e3808915e4e32a1a3cdcc03132"><td class="mdescLeft">&#160;</td><td class="mdescRight">视频发送码率（kbps）   <br /></td></tr>
+<tr class="separator:aa34822e3808915e4e32a1a3cdcc03132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0ced3cbc48aa59a9e458f07a8af524" id="r_aad0ced3cbc48aa59a9e458f07a8af524"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad0ced3cbc48aa59a9e458f07a8af524">upRtt</a></td></tr>
+<tr class="memdesc:aad0ced3cbc48aa59a9e458f07a8af524"><td class="mdescLeft">&#160;</td><td class="mdescRight">上行平均往返时延(ms)   <br /></td></tr>
+<tr class="separator:aad0ced3cbc48aa59a9e458f07a8af524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa754b2afeeeed1d4c487892b44cc00" id="r_a8aa754b2afeeeed1d4c487892b44cc00"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8aa754b2afeeeed1d4c487892b44cc00">downRtt</a></td></tr>
+<tr class="memdesc:a8aa754b2afeeeed1d4c487892b44cc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">下行平均往返时延(ms)   <br /></td></tr>
+<tr class="separator:a8aa754b2afeeeed1d4c487892b44cc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376bad24d88c7629fa7b6b02d7004b67" id="r_a376bad24d88c7629fa7b6b02d7004b67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a376bad24d88c7629fa7b6b02d7004b67">txAudioPacketLossRate</a></td></tr>
+<tr class="memdesc:a376bad24d88c7629fa7b6b02d7004b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地上行音频丢包率(%)   <br /></td></tr>
+<tr class="separator:a376bad24d88c7629fa7b6b02d7004b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260baef5c07f3e0ad95c100fe8797082" id="r_a260baef5c07f3e0ad95c100fe8797082"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a260baef5c07f3e0ad95c100fe8797082">txVideoPacketLossRate</a></td></tr>
+<tr class="memdesc:a260baef5c07f3e0ad95c100fe8797082"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地上行视频实际丢包率(%)   <br /></td></tr>
+<tr class="separator:a260baef5c07f3e0ad95c100fe8797082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f063d9b56e2cfeff1695cc6d2a4ecf7" id="r_a0f063d9b56e2cfeff1695cc6d2a4ecf7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f063d9b56e2cfeff1695cc6d2a4ecf7">txAudioPacketLossSum</a></td></tr>
+<tr class="memdesc:a0f063d9b56e2cfeff1695cc6d2a4ecf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地上行音频丢包数   <br /></td></tr>
+<tr class="separator:a0f063d9b56e2cfeff1695cc6d2a4ecf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5910ebddba0626e6f275d208f22bb61e" id="r_a5910ebddba0626e6f275d208f22bb61e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5910ebddba0626e6f275d208f22bb61e">txVideoPacketLossSum</a></td></tr>
+<tr class="memdesc:a5910ebddba0626e6f275d208f22bb61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地上行视频丢包数   <br /></td></tr>
+<tr class="separator:a5910ebddba0626e6f275d208f22bb61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06edc5f61af578d6ed36301c2fb50b20" id="r_a06edc5f61af578d6ed36301c2fb50b20"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06edc5f61af578d6ed36301c2fb50b20">txAudioJitter</a></td></tr>
+<tr class="memdesc:a06edc5f61af578d6ed36301c2fb50b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地上行音频抖动 (ms)   <br /></td></tr>
+<tr class="separator:a06edc5f61af578d6ed36301c2fb50b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a0f5395ef8e4fbf0f34714c9b5ca2d" id="r_ad0a0f5395ef8e4fbf0f34714c9b5ca2d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0a0f5395ef8e4fbf0f34714c9b5ca2d">txVideoJitter</a></td></tr>
+<tr class="memdesc:ad0a0f5395ef8e4fbf0f34714c9b5ca2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地上行视频抖动 (ms)   <br /></td></tr>
+<tr class="separator:ad0a0f5395ef8e4fbf0f34714c9b5ca2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad272177737f70e48a678e6dadb52df49" id="r_ad272177737f70e48a678e6dadb52df49"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad272177737f70e48a678e6dadb52df49">rxAudioPacketLossRate</a></td></tr>
+<tr class="memdesc:ad272177737f70e48a678e6dadb52df49"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地下行音频丢包率(%)   <br /></td></tr>
+<tr class="separator:ad272177737f70e48a678e6dadb52df49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2e48a42e16697aeea6d65a0916c62c" id="r_a3e2e48a42e16697aeea6d65a0916c62c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e2e48a42e16697aeea6d65a0916c62c">rxVideoPacketLossRate</a></td></tr>
+<tr class="memdesc:a3e2e48a42e16697aeea6d65a0916c62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地下行视频丢包率(%)   <br /></td></tr>
+<tr class="separator:a3e2e48a42e16697aeea6d65a0916c62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817c9c997681df46c7d0110f29006e48" id="r_a817c9c997681df46c7d0110f29006e48"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a817c9c997681df46c7d0110f29006e48">rxAudioPacketLossSum</a></td></tr>
+<tr class="memdesc:a817c9c997681df46c7d0110f29006e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地下行音频丢包数   <br /></td></tr>
+<tr class="separator:a817c9c997681df46c7d0110f29006e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b8a069f90b639d2a062d238da4a17cb" id="r_a0b8a069f90b639d2a062d238da4a17cb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b8a069f90b639d2a062d238da4a17cb">rxVideoPacketLossSum</a></td></tr>
+<tr class="memdesc:a0b8a069f90b639d2a062d238da4a17cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地下行视频丢包数   <br /></td></tr>
+<tr class="separator:a0b8a069f90b639d2a062d238da4a17cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54a4b39db9ae21c596f3f9ee20c8d04" id="r_aa54a4b39db9ae21c596f3f9ee20c8d04"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54a4b39db9ae21c596f3f9ee20c8d04">rxAudioJitter</a></td></tr>
+<tr class="memdesc:aa54a4b39db9ae21c596f3f9ee20c8d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地下行音频抖动 (ms)   <br /></td></tr>
+<tr class="separator:aa54a4b39db9ae21c596f3f9ee20c8d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1429e7d194b1343e9e23bb23ffac8577" id="r_a1429e7d194b1343e9e23bb23ffac8577"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1429e7d194b1343e9e23bb23ffac8577">rxVideoJitter</a></td></tr>
+<tr class="memdesc:a1429e7d194b1343e9e23bb23ffac8577"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地下行视频抖动 (ms)   <br /></td></tr>
+<tr class="separator:a1429e7d194b1343e9e23bb23ffac8577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>通话相关的统计信息  </p>
+</div><h2 class="groupheader">属性说明</h2>
+<a id="a58e14dcc23106f964ad65176d600d668" name="a58e14dcc23106f964ad65176d600d668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e14dcc23106f964ad65176d600d668">&#9670;&#160;</a></span>cpuAppUsage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) cpuAppUsage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前 App 的 CPU 使用率 (%)  </p>
+
+</div>
+</div>
+<a id="a68200b8ce8fb40da1bf4641902ef8a18" name="a68200b8ce8fb40da1bf4641902ef8a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68200b8ce8fb40da1bf4641902ef8a18">&#9670;&#160;</a></span>cpuTotalUsage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) cpuTotalUsage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前系统的 CPU 使用率 (%)  </p>
+
+</div>
+</div>
+<a id="a8aa754b2afeeeed1d4c487892b44cc00" name="a8aa754b2afeeeed1d4c487892b44cc00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa754b2afeeeed1d4c487892b44cc00">&#9670;&#160;</a></span>downRtt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) downRtt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>下行平均往返时延(ms)  </p>
+
+</div>
+</div>
+<a id="a5a998f14690cc8e111dd228988d25b01" name="a5a998f14690cc8e111dd228988d25b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a998f14690cc8e111dd228988d25b01">&#9670;&#160;</a></span>memoryAppUsageInKBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) memoryAppUsageInKBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前 App 的内存大小 (KB)  </p>
+
+</div>
+</div>
+<a id="a12afe89cb3eb62544badb3ceaba92be9" name="a12afe89cb3eb62544badb3ceaba92be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12afe89cb3eb62544badb3ceaba92be9">&#9670;&#160;</a></span>memoryAppUsageRatio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) memoryAppUsageRatio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前 App 的内存占比 (%) , 占最大可用内存  </p>
+
+</div>
+</div>
+<a id="afc1eba8f2d461d899a57a30a6aea3fdf" name="afc1eba8f2d461d899a57a30a6aea3fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1eba8f2d461d899a57a30a6aea3fdf">&#9670;&#160;</a></span>memoryTotalUsageRatio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) memoryTotalUsageRatio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前系统的内存占比 (%)  </p>
+
+</div>
+</div>
+<a id="a720f8991f8b61bc3a6b35df04a0bba47" name="a720f8991f8b61bc3a6b35df04a0bba47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720f8991f8b61bc3a6b35df04a0bba47">&#9670;&#160;</a></span>rxAudioBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) rxAudioBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自加入房间后累计的接收的音频字节数（Byte）  </p>
+
+</div>
+</div>
+<a id="aa54a4b39db9ae21c596f3f9ee20c8d04" name="aa54a4b39db9ae21c596f3f9ee20c8d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54a4b39db9ae21c596f3f9ee20c8d04">&#9670;&#160;</a></span>rxAudioJitter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) rxAudioJitter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地下行音频抖动 (ms)  </p>
+
+</div>
+</div>
+<a id="a8d0dec88b4a84d817c558c217f34f9fe" name="a8d0dec88b4a84d817c558c217f34f9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0dec88b4a84d817c558c217f34f9fe">&#9670;&#160;</a></span>rxAudioKBitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) rxAudioKBitRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>音频接收码率（kbps）  </p>
+
+</div>
+</div>
+<a id="ad272177737f70e48a678e6dadb52df49" name="ad272177737f70e48a678e6dadb52df49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad272177737f70e48a678e6dadb52df49">&#9670;&#160;</a></span>rxAudioPacketLossRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) rxAudioPacketLossRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地下行音频丢包率(%)  </p>
+
+</div>
+</div>
+<a id="a817c9c997681df46c7d0110f29006e48" name="a817c9c997681df46c7d0110f29006e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817c9c997681df46c7d0110f29006e48">&#9670;&#160;</a></span>rxAudioPacketLossSum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) rxAudioPacketLossSum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地下行音频丢包数  </p>
+
+</div>
+</div>
+<a id="a31beeac69cd6368f28fde4c41f4a1f14" name="a31beeac69cd6368f28fde4c41f4a1f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31beeac69cd6368f28fde4c41f4a1f14">&#9670;&#160;</a></span>rxBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int64_t) rxBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>接收字节数（bytes），累计值  </p>
+
+</div>
+</div>
+<a id="a295f959da1c74919ee58d8a5d6f48c05" name="a295f959da1c74919ee58d8a5d6f48c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295f959da1c74919ee58d8a5d6f48c05">&#9670;&#160;</a></span>rxVideoBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) rxVideoBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自加入房间后累计的接收的视频字节数（Byte）  </p>
+
+</div>
+</div>
+<a id="a1429e7d194b1343e9e23bb23ffac8577" name="a1429e7d194b1343e9e23bb23ffac8577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1429e7d194b1343e9e23bb23ffac8577">&#9670;&#160;</a></span>rxVideoJitter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) rxVideoJitter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地下行视频抖动 (ms)  </p>
+
+</div>
+</div>
+<a id="abae03a0f6541438b8d406f70e9a172e9" name="abae03a0f6541438b8d406f70e9a172e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae03a0f6541438b8d406f70e9a172e9">&#9670;&#160;</a></span>rxVideoKBitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) rxVideoKBitRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频接收码率（kbps）  </p>
+
+</div>
+</div>
+<a id="a3e2e48a42e16697aeea6d65a0916c62c" name="a3e2e48a42e16697aeea6d65a0916c62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2e48a42e16697aeea6d65a0916c62c">&#9670;&#160;</a></span>rxVideoPacketLossRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) rxVideoPacketLossRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地下行视频丢包率(%)  </p>
+
+</div>
+</div>
+<a id="a0b8a069f90b639d2a062d238da4a17cb" name="a0b8a069f90b639d2a062d238da4a17cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8a069f90b639d2a062d238da4a17cb">&#9670;&#160;</a></span>rxVideoPacketLossSum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) rxVideoPacketLossSum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地下行视频丢包数  </p>
+
+</div>
+</div>
+<a id="a8b63cd0d7f94eeb08eb3575aa0e6350c" name="a8b63cd0d7f94eeb08eb3575aa0e6350c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b63cd0d7f94eeb08eb3575aa0e6350c">&#9670;&#160;</a></span>totalDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) totalDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自加入房间的通话时长， 退出后再加入重新计时 ( 单位：S)  </p>
+
+</div>
+</div>
+<a id="a979bcd8c9369c13bde6fbfeb6855a113" name="a979bcd8c9369c13bde6fbfeb6855a113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979bcd8c9369c13bde6fbfeb6855a113">&#9670;&#160;</a></span>txAudioBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) txAudioBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自加入房间后累计的发送的音频字节数（Byte）  </p>
+
+</div>
+</div>
+<a id="a06edc5f61af578d6ed36301c2fb50b20" name="a06edc5f61af578d6ed36301c2fb50b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06edc5f61af578d6ed36301c2fb50b20">&#9670;&#160;</a></span>txAudioJitter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) txAudioJitter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地上行音频抖动 (ms)  </p>
+
+</div>
+</div>
+<a id="a19606c2b5ecfbe07b02db204f9b8d265" name="a19606c2b5ecfbe07b02db204f9b8d265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19606c2b5ecfbe07b02db204f9b8d265">&#9670;&#160;</a></span>txAudioKBitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) txAudioKBitRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>音频发送码率（kbps）  </p>
+
+</div>
+</div>
+<a id="a376bad24d88c7629fa7b6b02d7004b67" name="a376bad24d88c7629fa7b6b02d7004b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376bad24d88c7629fa7b6b02d7004b67">&#9670;&#160;</a></span>txAudioPacketLossRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) txAudioPacketLossRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地上行音频丢包率(%)  </p>
+
+</div>
+</div>
+<a id="a0f063d9b56e2cfeff1695cc6d2a4ecf7" name="a0f063d9b56e2cfeff1695cc6d2a4ecf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f063d9b56e2cfeff1695cc6d2a4ecf7">&#9670;&#160;</a></span>txAudioPacketLossSum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) txAudioPacketLossSum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地上行音频丢包数  </p>
+
+</div>
+</div>
+<a id="a6a347e841d265267827eb6115cd2f026" name="a6a347e841d265267827eb6115cd2f026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a347e841d265267827eb6115cd2f026">&#9670;&#160;</a></span>txBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int64_t) txBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送字节数（bytes），累计值  </p>
+
+</div>
+</div>
+<a id="a413216aef7ada57b7234365518b64ed9" name="a413216aef7ada57b7234365518b64ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413216aef7ada57b7234365518b64ed9">&#9670;&#160;</a></span>txVideoBytes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) txVideoBytes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自加入房间后累计的发送的视频字节数（Byte）  </p>
+
+</div>
+</div>
+<a id="ad0a0f5395ef8e4fbf0f34714c9b5ca2d" name="ad0a0f5395ef8e4fbf0f34714c9b5ca2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a0f5395ef8e4fbf0f34714c9b5ca2d">&#9670;&#160;</a></span>txVideoJitter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) txVideoJitter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地上行视频抖动 (ms)  </p>
+
+</div>
+</div>
+<a id="aa34822e3808915e4e32a1a3cdcc03132" name="aa34822e3808915e4e32a1a3cdcc03132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34822e3808915e4e32a1a3cdcc03132">&#9670;&#160;</a></span>txVideoKBitRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) txVideoKBitRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>视频发送码率（kbps）  </p>
+
+</div>
+</div>
+<a id="a260baef5c07f3e0ad95c100fe8797082" name="a260baef5c07f3e0ad95c100fe8797082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260baef5c07f3e0ad95c100fe8797082">&#9670;&#160;</a></span>txVideoPacketLossRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) txVideoPacketLossRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地上行视频实际丢包率(%)  </p>
+
+</div>
+</div>
+<a id="a5910ebddba0626e6f275d208f22bb61e" name="a5910ebddba0626e6f275d208f22bb61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5910ebddba0626e6f275d208f22bb61e">&#9670;&#160;</a></span>txVideoPacketLossSum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint32_t) txVideoPacketLossSum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地上行视频丢包数  </p>
+
+</div>
+</div>
+<a id="aad0ced3cbc48aa59a9e458f07a8af524" name="aad0ced3cbc48aa59a9e458f07a8af524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0ced3cbc48aa59a9e458f07a8af524">&#9670;&#160;</a></span>upRtt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint64_t) upRtt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上行平均往返时延(ms)  </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_statistics_8h_source.html">NERtcEngineStatistics.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

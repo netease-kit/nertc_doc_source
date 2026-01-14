@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unreal Engine: nertc::wwiseplugin::IAudioDeviceManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unreal Engine<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager.html">IAudioDeviceManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc::wwiseplugin::IAudioDeviceManager类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_i_audio_device_manager_8h_source.html">IAudioDeviceManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3518e303edc68c99cb237e8111d5a1f9" id="r_a3518e303edc68c99cb237e8111d5a1f9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3518e303edc68c99cb237e8111d5a1f9">~IAudioDeviceManager</a> ()=default</td></tr>
+<tr class="separator:a3518e303edc68c99cb237e8111d5a1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442df9c429ec172d71d721da59608fdd" id="r_a442df9c429ec172d71d721da59608fdd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a442df9c429ec172d71d721da59608fdd">enumerateRecordDevices</a> ()=0</td></tr>
+<tr class="separator:a442df9c429ec172d71d721da59608fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593c0bb0f052d88dddd3faad01ea30f1" id="r_a593c0bb0f052d88dddd3faad01ea30f1"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a593c0bb0f052d88dddd3faad01ea30f1">setRecordDevice</a> (const char deviceId[<a class="el" href="_nertc_base_8h.html#ade7cde04d0f11e62efe6d57307bbb2ff">kWWISEPLUGINMaxDeviceIDLength</a>])=0</td></tr>
+<tr class="separator:a593c0bb0f052d88dddd3faad01ea30f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd81177b2480f3645289bf62625eadc4" id="r_abd81177b2480f3645289bf62625eadc4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd81177b2480f3645289bf62625eadc4">getRecordDevice</a> (char deviceId[<a class="el" href="_nertc_base_8h.html#ade7cde04d0f11e62efe6d57307bbb2ff">kWWISEPLUGINMaxDeviceIDLength</a>])=0</td></tr>
+<tr class="separator:abd81177b2480f3645289bf62625eadc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64757b02d0bee69011c4ad474b1c032" id="r_ad64757b02d0bee69011c4ad474b1c032"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad64757b02d0bee69011c4ad474b1c032">setRecordDeviceVolume</a> (uint32_t volume)=0</td></tr>
+<tr class="separator:ad64757b02d0bee69011c4ad474b1c032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990167c2a2321490b304bbee043d8455" id="r_a990167c2a2321490b304bbee043d8455"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a990167c2a2321490b304bbee043d8455">getRecordDeviceVolume</a> (uint32_t *volume)=0</td></tr>
+<tr class="separator:a990167c2a2321490b304bbee043d8455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46c0c0fefefbb1c4dcd9443c35d61b9" id="r_ad46c0c0fefefbb1c4dcd9443c35d61b9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad46c0c0fefefbb1c4dcd9443c35d61b9">setRecordDeviceMute</a> (bool mute)=0</td></tr>
+<tr class="separator:ad46c0c0fefefbb1c4dcd9443c35d61b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0777aa046151fd60734fa31ca5c24b35" id="r_a0777aa046151fd60734fa31ca5c24b35"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0777aa046151fd60734fa31ca5c24b35">getRecordDeviceMute</a> (bool *mute)=0</td></tr>
+<tr class="separator:a0777aa046151fd60734fa31ca5c24b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d40ec66a41135bf1502af59db25bbe" id="r_a45d40ec66a41135bf1502af59db25bbe"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45d40ec66a41135bf1502af59db25bbe">startRecordDeviceTest</a> (uint64_t indicationInterval)=0</td></tr>
+<tr class="separator:a45d40ec66a41135bf1502af59db25bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8974349c9161465696260f7f3e8fa976" id="r_a8974349c9161465696260f7f3e8fa976"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8974349c9161465696260f7f3e8fa976">stopRecordDeviceTest</a> ()=0</td></tr>
+<tr class="separator:a8974349c9161465696260f7f3e8fa976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c22a165ac8c9fe960ca3f5c7ade435c" id="r_a3c22a165ac8c9fe960ca3f5c7ade435c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c22a165ac8c9fe960ca3f5c7ade435c">startAudioDeviceLoopbackTest</a> (uint64_t indicationInterval)=0</td></tr>
+<tr class="separator:a3c22a165ac8c9fe960ca3f5c7ade435c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9795a7c67aaebce4132ab296d4176821" id="r_a9795a7c67aaebce4132ab296d4176821"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9795a7c67aaebce4132ab296d4176821">stopAudioDeviceLoopbackTest</a> ()=0</td></tr>
+<tr class="separator:a9795a7c67aaebce4132ab296d4176821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>音频设备管理方法。 <br  />
+<a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager.html">IAudioDeviceManager</a> 接口类提供用于管理音频设备的相关接口。  </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3518e303edc68c99cb237e8111d5a1f9" name="a3518e303edc68c99cb237e8111d5a1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3518e303edc68c99cb237e8111d5a1f9">&#9670;&#160;</a></span>~IAudioDeviceManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nertc::wwiseplugin::IAudioDeviceManager::~IAudioDeviceManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a442df9c429ec172d71d721da59608fdd" name="a442df9c429ec172d71d721da59608fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442df9c429ec172d71d721da59608fdd">&#9670;&#160;</a></span>enumerateRecordDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a> * nertc::wwiseplugin::IAudioDeviceManager::enumerateRecordDevices </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取系统中所有的音频采集设备列表。 <br  />
+该方法返回一个 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a> 对象，包含系统中所有的音频采集设备。通过IDeviceCollection 对象，App 可以枚举音频采集设备。 </p><dl class="section note"><dt>注解</dt><dd>在使用结束后，App 需调用 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html#afabc5532d86b9472bbfe9f4db11005b8">destroy</a> 方法销毁返回的对象。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>方法调用成功：一个 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_device_collection.html">IDeviceCollection</a> 对象，包含所有的音频采集设备。</li>
+<li>方法调用失败：NULL。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="abd81177b2480f3645289bf62625eadc4" name="abd81177b2480f3645289bf62625eadc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd81177b2480f3645289bf62625eadc4">&#9670;&#160;</a></span>getRecordDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::getRecordDevice </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>deviceId</em></span>[kWWISEPLUGINMaxDeviceIDLength]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取当前使用的音频采集设备 ID。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceId</td><td>音频采集设备的设备 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a0777aa046151fd60734fa31ca5c24b35" name="a0777aa046151fd60734fa31ca5c24b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0777aa046151fd60734fa31ca5c24b35">&#9670;&#160;</a></span>getRecordDeviceMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::getRecordDeviceMute </td>
+          <td>(</td>
+          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>mute</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取音频采集设备静音状态。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mute</td><td>音频采集设备静音状态。<ul>
+<li>true: 静音状态。</li>
+<li>false: 非静音状态。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a990167c2a2321490b304bbee043d8455" name="a990167c2a2321490b304bbee043d8455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990167c2a2321490b304bbee043d8455">&#9670;&#160;</a></span>getRecordDeviceVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::getRecordDeviceVolume </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取音频采集设备音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音频采集设备音量。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a593c0bb0f052d88dddd3faad01ea30f1" name="a593c0bb0f052d88dddd3faad01ea30f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593c0bb0f052d88dddd3faad01ea30f1">&#9670;&#160;</a></span>setRecordDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::setRecordDevice </td>
+          <td>(</td>
+          <td class="paramtype">const char</td>          <td class="paramname"><span class="paramname"><em>deviceId</em></span>[kWWISEPLUGINMaxDeviceIDLength]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>指定音频采集设备。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceId</td><td>音频采集设备的设备 ID。可通过 enumerateRecordDevices 获取。插拔设备不会影响 deviceId。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad46c0c0fefefbb1c4dcd9443c35d61b9" name="ad46c0c0fefefbb1c4dcd9443c35d61b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46c0c0fefefbb1c4dcd9443c35d61b9">&#9670;&#160;</a></span>setRecordDeviceMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::setRecordDeviceMute </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>静音或取消静音音频采集设备。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mute</td><td>是否静音音频采集设备。<ul>
+<li>true：静音音频采集设备。</li>
+<li>false：取消静音音频采集设备。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad64757b02d0bee69011c4ad474b1c032" name="ad64757b02d0bee69011c4ad474b1c032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64757b02d0bee69011c4ad474b1c032">&#9670;&#160;</a></span>setRecordDeviceVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::setRecordDeviceVolume </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置音频采集设备音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音频采集设备音量。取值范围为 0~255。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a3c22a165ac8c9fe960ca3f5c7ade435c" name="a3c22a165ac8c9fe960ca3f5c7ade435c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c22a165ac8c9fe960ca3f5c7ade435c">&#9670;&#160;</a></span>startAudioDeviceLoopbackTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::startAudioDeviceLoopbackTest </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>indicationInterval</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开始音频设备回路测试。 <br  />
+该方法测试音频采集和播放设备是否能正常工作。一旦测试开始，音频采集设备会采集本地音频，然后使用音频播放设备播放出来。 SDK 会按设置的时间间隔触发 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">OnLocalAudioVolumeIndication</a> 回调， 报告音量信息。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法需在加入房间前调用。</li>
+<li>音频设备回路测试会在通话开始后自动结束，您也可以手动调用 stopAudioDeviceLoopbackTest 停止音频设备回路测试。</li>
+<li>该方法仅在本地进行音频设备测试，不涉及网络连接。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indicationInterval</td><td>SDK 返回 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">OnLocalAudioVolumeIndication</a> 回调的 时间间隔，单位为毫秒。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a45d40ec66a41135bf1502af59db25bbe" name="a45d40ec66a41135bf1502af59db25bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d40ec66a41135bf1502af59db25bbe">&#9670;&#160;</a></span>startRecordDeviceTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::startRecordDeviceTest </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>indicationInterval</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>启动音频采集设备测试。 <br  />
+该方法测试音频采集设备是否能正常工作。 <br  />
+调用该方法后，SDK 会按设置的时间间隔触发 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">OnLocalAudioVolumeIndication</a> 回调， 报告采集设备的音量信息。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法需在加入房间前调用。</li>
+<li>音频采集设备测试会在通话开始后自动结束，您也可以手动调用 stopRecordDeviceTest 停止音频采集设备测试。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indicationInterval</td><td>SDK 返回 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">OnLocalAudioVolumeIndication</a> 回调的时间间隔，单位为毫秒。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: Success.</li>
+<li>other: Failure.  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a9795a7c67aaebce4132ab296d4176821" name="a9795a7c67aaebce4132ab296d4176821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9795a7c67aaebce4132ab296d4176821">&#9670;&#160;</a></span>stopAudioDeviceLoopbackTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::stopAudioDeviceLoopbackTest </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>停止音频设备回路测试。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法需在加入房间前调用。</li>
+<li>音频设备回路测试会在通话开始后自动结束，您也可以手动调用 stopAudioDeviceLoopbackTest 停止音频设备回路测试。 </li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a8974349c9161465696260f7f3e8fa976" name="a8974349c9161465696260f7f3e8fa976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8974349c9161465696260f7f3e8fa976">&#9670;&#160;</a></span>stopRecordDeviceTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IAudioDeviceManager::stopRecordDeviceTest </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>停止音频采集设备测试。 <br  />
+该方法停止音频采集设备测试。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>该方法需在加入房间前调用。</li>
+<li>音频采集设备测试会在通话开始后自动结束，您也可以手动调用 stopRecordDeviceTest 停止音频采集设备测试。 </li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unreal/GMEWwiseDemo/Plugins/NertcPlugin/Source/NertcPlugin/Public/<a class="el" href="_i_audio_device_manager_8h_source.html">IAudioDeviceManager.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

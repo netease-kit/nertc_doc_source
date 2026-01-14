@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unreal Engine: D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unreal/GMEWwiseDemo/Plugins/NertcPlugin/Source/NertcPlugin/Public/IRtcCallback.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unreal Engine<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3ae03dd1bfac64915440c3b7733b5137.html">GMEWwiseDemo</a></li><li class="navelem"><a class="el" href="dir_0ff0f731b7697a7a52724cc8a4c11b27.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_1ba7764201c75fbb2a806e5b4c5f9376.html">NertcPlugin</a></li><li class="navelem"><a class="el" href="dir_c967bcd428aee9a6c0f51b5d7f4ed013.html">Source</a></li><li class="navelem"><a class="el" href="dir_04d48f4920d11fa3cbb3ceb4cf8e2b45.html">NertcPlugin</a></li><li class="navelem"><a class="el" href="dir_9d0f1630ccad951451aeb6d3a3a52d80.html">Public</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">IRtcCallback.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_rtc_callback_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef IRtcCallback_h</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define IRtcCallback_h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_base_8h.html">NertcBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacenertc.html">nertc</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>wwiseplugin {</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_define" href="_nertc_base_8h.html#aa923922ebe5cedf55647bda637130714">NERTC_PLUGIN_API</a> <a class="code hl_class" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">IRtcCallback</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#acf28e7698231deb4b9357c06a3a8035d">   17</a></span>            <span class="keyword">virtual</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#acf28e7698231deb4b9357c06a3a8035d">~IRtcCallback</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ae5021a286c19b16560e7b2bbc14e8fe0">   36</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ae5021a286c19b16560e7b2bbc14e8fe0">OnError</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> errorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg) { }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a82478f258c55795d4f99ab228f73d8f2">   54</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a82478f258c55795d4f99ab228f73d8f2">OnWarning</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> warnCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg) { }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#aa4e3d8a33e790826d4263800c6aecbd4">   75</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#aa4e3d8a33e790826d4263800c6aecbd4">OnJoinChannel</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, uint64_t cid, uint64_t uid, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> result, uint64_t elapsed) { }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a080ac10870de8c045229a927ada1dbb6">   92</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a080ac10870de8c045229a927ada1dbb6">OnLeaveChannel</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> result, uint64_t channelId) { }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a22348b116c0aa25bbb4da7442f089f9a">  122</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a22348b116c0aa25bbb4da7442f089f9a">OnClientRoleChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a961f13fb707c197b9835d2c6ff9712a7">RtcClientRole</a> oldRole, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a961f13fb707c197b9835d2c6ff9712a7">RtcClientRole</a> newRole) { }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a651c381b52d230a15cd415aa566676a5">  140</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a651c381b52d230a15cd415aa566676a5">OnConnectionStateChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> state, <span class="keywordtype">int</span> reason) { }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ac2e54903b6d394c2cba0c83a9542db14">  161</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ac2e54903b6d394c2cba0c83a9542db14">OnDisconnect</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> reason) { }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ac4ad658f74145b487ee4d80ded75b600">  174</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ac4ad658f74145b487ee4d80ded75b600">OnNetworkTypeChanged</a>(<span class="keywordtype">int</span> newType) { }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a08da28fd7c2edaea87039c235a96f835">  192</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a08da28fd7c2edaea87039c235a96f835">OnReconnectingStart</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, uint64_t cid, uint64_t uid) { }</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1678906db97fbc160a7fe0e61bac221a">  214</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1678906db97fbc160a7fe0e61bac221a">OnRejoinChannel</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, uint64_t cid, uint64_t uid, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> result, uint64_t elapsed) { }</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ad4ac4892145077b99050832252bc96ce">  234</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ad4ac4892145077b99050832252bc96ce">OnUserJoined</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, uint64_t uid, <span class="keyword">const</span> <span class="keywordtype">char</span>* userName) { }</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a9016057815f9a65ec99bf68292b182aa">  258</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a9016057815f9a65ec99bf68292b182aa">OnUserLeft</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, uint64_t uid, <span class="keywordtype">int</span> reason) { }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a412461bc7eb986169a945975121d376d">  273</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a412461bc7eb986169a945975121d376d">OnUserAudioStart</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> streamType, uint64_t uid) { }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a873d2b90c0aa132f84bb108644a3b745">  288</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a873d2b90c0aa132f84bb108644a3b745">OnUserAudioStop</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> streamType, uint64_t uid) { }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ab3752f1c467b5467df9a6a8cec1ffaa5">  305</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ab3752f1c467b5467df9a6a8cec1ffaa5">OnUserAudioMute</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> streamType, uint64_t uid, <span class="keywordtype">bool</span> enable) { }</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#af72d687c105961c13f2d797f96675c19">  316</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#af72d687c105961c13f2d797f96675c19">OnAudioDeviceRoutingDidChange</a>(<span class="keywordtype">int</span> routing) { }</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a7b1aba8677b40be9ed0bffd789b05390">  331</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a7b1aba8677b40be9ed0bffd789b05390">OnAudioDeviceStateChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* deviceID, <span class="keywordtype">int</span> deviceType, <span class="keywordtype">int</span> deviceState) { }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a9b26d52d74af0be77e99d67a1189cfa8">  344</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a9b26d52d74af0be77e99d67a1189cfa8">OnAudioDefaultDeviceChanged</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* deviceID, <span class="keywordtype">int</span> deviceType) { }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a853f7b04f4d8ec049550a8d5e8212182">  359</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a853f7b04f4d8ec049550a8d5e8212182">OnFirstAudioDataReceived</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> streamType, uint64_t uid) { }</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a316e63322a4d85089e99411adbfdb086">  374</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a316e63322a4d85089e99411adbfdb086">OnFirstAudioFrameDecoded</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> streamType, uint64_t uid) { }</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">  394</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">OnLocalAudioVolumeIndication</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <span class="keywordtype">int</span> volume, <span class="keywordtype">bool</span> enableVad) { }</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1e0be887583234a8dac977fa51a7c194">  423</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1e0be887583234a8dac977fa51a7c194">OnRemoteAudioVolumeIndication</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* channelName, <a class="code hl_struct" href="structnertc_1_1wwiseplugin_1_1_rtc_audio_volume_info.html">RtcAudioVolumeInfo</a>* speakers, <span class="keywordtype">int</span> speakerNumber, <span class="keywordtype">int</span> totalVolume) { }</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    };</div>
+</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>}</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>}</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="preprocessor">#endif </span><span class="comment">/* IRtcCallback_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_nertc_base_8h_html"><div class="ttname"><a href="_nertc_base_8h.html">NertcBase.h</a></div></div>
+<div class="ttc" id="a_nertc_base_8h_html_aa923922ebe5cedf55647bda637130714"><div class="ttname"><a href="_nertc_base_8h.html#aa923922ebe5cedf55647bda637130714">NERTC_PLUGIN_API</a></div><div class="ttdeci">#define NERTC_PLUGIN_API</div><div class="ttdef"><b>定义</b> NertcBase.h:19</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">nertc::wwiseplugin::IRtcCallback</a></div><div class="ttdef"><b>定义</b> IRtcCallback.h:15</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a080ac10870de8c045229a927ada1dbb6"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a080ac10870de8c045229a927ada1dbb6">nertc::wwiseplugin::IRtcCallback::OnLeaveChannel</a></div><div class="ttdeci">virtual void OnLeaveChannel(const char *channelName, RtcErrorCode result, uint64_t channelId)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:92</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a08da28fd7c2edaea87039c235a96f835"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a08da28fd7c2edaea87039c235a96f835">nertc::wwiseplugin::IRtcCallback::OnReconnectingStart</a></div><div class="ttdeci">virtual void OnReconnectingStart(const char *channelName, uint64_t cid, uint64_t uid)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:192</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a1678906db97fbc160a7fe0e61bac221a"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1678906db97fbc160a7fe0e61bac221a">nertc::wwiseplugin::IRtcCallback::OnRejoinChannel</a></div><div class="ttdeci">virtual void OnRejoinChannel(const char *channelName, uint64_t cid, uint64_t uid, RtcErrorCode result, uint64_t elapsed)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:214</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a1e0be887583234a8dac977fa51a7c194"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1e0be887583234a8dac977fa51a7c194">nertc::wwiseplugin::IRtcCallback::OnRemoteAudioVolumeIndication</a></div><div class="ttdeci">virtual void OnRemoteAudioVolumeIndication(const char *channelName, RtcAudioVolumeInfo *speakers, int speakerNumber, int totalVolume)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:423</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a22348b116c0aa25bbb4da7442f089f9a"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a22348b116c0aa25bbb4da7442f089f9a">nertc::wwiseplugin::IRtcCallback::OnClientRoleChanged</a></div><div class="ttdeci">virtual void OnClientRoleChanged(const char *channelName, RtcClientRole oldRole, RtcClientRole newRole)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:122</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a316e63322a4d85089e99411adbfdb086"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a316e63322a4d85089e99411adbfdb086">nertc::wwiseplugin::IRtcCallback::OnFirstAudioFrameDecoded</a></div><div class="ttdeci">virtual void OnFirstAudioFrameDecoded(const char *channelName, int streamType, uint64_t uid)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:374</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a31b3ac0adbb54dca6be731aea9b9569a"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a31b3ac0adbb54dca6be731aea9b9569a">nertc::wwiseplugin::IRtcCallback::OnLocalAudioVolumeIndication</a></div><div class="ttdeci">virtual void OnLocalAudioVolumeIndication(const char *channelName, int volume, bool enableVad)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:394</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a412461bc7eb986169a945975121d376d"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a412461bc7eb986169a945975121d376d">nertc::wwiseplugin::IRtcCallback::OnUserAudioStart</a></div><div class="ttdeci">virtual void OnUserAudioStart(const char *channelName, int streamType, uint64_t uid)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:273</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a651c381b52d230a15cd415aa566676a5"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a651c381b52d230a15cd415aa566676a5">nertc::wwiseplugin::IRtcCallback::OnConnectionStateChanged</a></div><div class="ttdeci">virtual void OnConnectionStateChanged(const char *channelName, int state, int reason)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:140</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a7b1aba8677b40be9ed0bffd789b05390"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a7b1aba8677b40be9ed0bffd789b05390">nertc::wwiseplugin::IRtcCallback::OnAudioDeviceStateChanged</a></div><div class="ttdeci">virtual void OnAudioDeviceStateChanged(const char *deviceID, int deviceType, int deviceState)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:331</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a82478f258c55795d4f99ab228f73d8f2"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a82478f258c55795d4f99ab228f73d8f2">nertc::wwiseplugin::IRtcCallback::OnWarning</a></div><div class="ttdeci">virtual void OnWarning(const char *channelName, int warnCode, const char *msg)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:54</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a853f7b04f4d8ec049550a8d5e8212182"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a853f7b04f4d8ec049550a8d5e8212182">nertc::wwiseplugin::IRtcCallback::OnFirstAudioDataReceived</a></div><div class="ttdeci">virtual void OnFirstAudioDataReceived(const char *channelName, int streamType, uint64_t uid)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:359</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a873d2b90c0aa132f84bb108644a3b745"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a873d2b90c0aa132f84bb108644a3b745">nertc::wwiseplugin::IRtcCallback::OnUserAudioStop</a></div><div class="ttdeci">virtual void OnUserAudioStop(const char *channelName, int streamType, uint64_t uid)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:288</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a9016057815f9a65ec99bf68292b182aa"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a9016057815f9a65ec99bf68292b182aa">nertc::wwiseplugin::IRtcCallback::OnUserLeft</a></div><div class="ttdeci">virtual void OnUserLeft(const char *channelName, uint64_t uid, int reason)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:258</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_a9b26d52d74af0be77e99d67a1189cfa8"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a9b26d52d74af0be77e99d67a1189cfa8">nertc::wwiseplugin::IRtcCallback::OnAudioDefaultDeviceChanged</a></div><div class="ttdeci">virtual void OnAudioDefaultDeviceChanged(const char *deviceID, int deviceType)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:344</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_aa4e3d8a33e790826d4263800c6aecbd4"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#aa4e3d8a33e790826d4263800c6aecbd4">nertc::wwiseplugin::IRtcCallback::OnJoinChannel</a></div><div class="ttdeci">virtual void OnJoinChannel(const char *channelName, uint64_t cid, uint64_t uid, RtcErrorCode result, uint64_t elapsed)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:75</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_ab3752f1c467b5467df9a6a8cec1ffaa5"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ab3752f1c467b5467df9a6a8cec1ffaa5">nertc::wwiseplugin::IRtcCallback::OnUserAudioMute</a></div><div class="ttdeci">virtual void OnUserAudioMute(const char *channelName, int streamType, uint64_t uid, bool enable)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:305</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_ac2e54903b6d394c2cba0c83a9542db14"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ac2e54903b6d394c2cba0c83a9542db14">nertc::wwiseplugin::IRtcCallback::OnDisconnect</a></div><div class="ttdeci">virtual void OnDisconnect(const char *channelName, int reason)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:161</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_ac4ad658f74145b487ee4d80ded75b600"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ac4ad658f74145b487ee4d80ded75b600">nertc::wwiseplugin::IRtcCallback::OnNetworkTypeChanged</a></div><div class="ttdeci">virtual void OnNetworkTypeChanged(int newType)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:174</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_acf28e7698231deb4b9357c06a3a8035d"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#acf28e7698231deb4b9357c06a3a8035d">nertc::wwiseplugin::IRtcCallback::~IRtcCallback</a></div><div class="ttdeci">virtual ~IRtcCallback()=default</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_ad4ac4892145077b99050832252bc96ce"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ad4ac4892145077b99050832252bc96ce">nertc::wwiseplugin::IRtcCallback::OnUserJoined</a></div><div class="ttdeci">virtual void OnUserJoined(const char *channelName, uint64_t uid, const char *userName)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:234</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_ae5021a286c19b16560e7b2bbc14e8fe0"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#ae5021a286c19b16560e7b2bbc14e8fe0">nertc::wwiseplugin::IRtcCallback::OnError</a></div><div class="ttdeci">virtual void OnError(const char *channelName, int errorCode, const char *msg)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:36</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_rtc_callback_html_af72d687c105961c13f2d797f96675c19"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#af72d687c105961c13f2d797f96675c19">nertc::wwiseplugin::IRtcCallback::OnAudioDeviceRoutingDidChange</a></div><div class="ttdeci">virtual void OnAudioDeviceRoutingDidChange(int routing)</div><div class="ttdef"><b>定义</b> IRtcCallback.h:316</div></div>
+<div class="ttc" id="anamespacenertc_1_1wwiseplugin_html_a096932b4e09519b143f8aa9380e52b53"><div class="ttname"><a href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">nertc::wwiseplugin::RtcErrorCode</a></div><div class="ttdeci">RtcErrorCode</div><div class="ttdef"><b>定义</b> NertcBase.h:762</div></div>
+<div class="ttc" id="anamespacenertc_1_1wwiseplugin_html_a961f13fb707c197b9835d2c6ff9712a7"><div class="ttname"><a href="namespacenertc_1_1wwiseplugin.html#a961f13fb707c197b9835d2c6ff9712a7">nertc::wwiseplugin::RtcClientRole</a></div><div class="ttdeci">RtcClientRole</div><div class="ttdef"><b>定义</b> NertcBase.h:523</div></div>
+<div class="ttc" id="anamespacenertc_html"><div class="ttname"><a href="namespacenertc.html">nertc</a></div><div class="ttdef"><b>定义</b> IAudioDeviceManager.h:7</div></div>
+<div class="ttc" id="astructnertc_1_1wwiseplugin_1_1_rtc_audio_volume_info_html"><div class="ttname"><a href="structnertc_1_1wwiseplugin_1_1_rtc_audio_volume_info.html">nertc::wwiseplugin::RtcAudioVolumeInfo</a></div><div class="ttdef"><b>定义</b> NertcBase.h:697</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

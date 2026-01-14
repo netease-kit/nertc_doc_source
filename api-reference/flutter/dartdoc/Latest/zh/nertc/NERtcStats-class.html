@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the NERtcStats class from the nertc library, for the Dart programming language.">
+  <title>NERtcStats class - nertc library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">nertc_core</a></li>
+    <li><a href="../nertc/nertc-library.html">nertc_core.dart</a></li>
+    <li class="self-crumb">NERtcStats class</li>
+  </ol>
+  <div class="self-name">NERtcStats</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="nertc&#47;nertc-library-sidebar.html"
+      data-below-sidebar="nertc&#47;NERtcStats-class-sidebar.html">
+      <div>
+<h1><span class="kind-class">NERtcStats</span> class 
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>通话相关的统计信息</p>
+</section>
+
+
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="NERtcStats" class="callable">
+          <span class="name"><a href="../nertc/NERtcStats/NERtcStats.html">NERtcStats</a></span><span class="signature">(<span class="parameter" id="-param-rxAudioBytes">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxAudioBytes</span>, </span><span class="parameter" id="-param-rxAudioKBitRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxAudioKBitRate</span>, </span><span class="parameter" id="-param-rxAudioJitter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxAudioJitter</span>, </span><span class="parameter" id="-param-rxAudioPacketLossRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxAudioPacketLossRate</span>, </span><span class="parameter" id="-param-rxAudioPacketLossSum"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxAudioPacketLossSum</span>, </span><span class="parameter" id="-param-rxVideoBytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxVideoBytes</span>, </span><span class="parameter" id="-param-rxBytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxBytes</span>, </span><span class="parameter" id="-param-rxVideoJitter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxVideoJitter</span>, </span><span class="parameter" id="-param-rxVideoKBitRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxVideoKBitRate</span>, </span><span class="parameter" id="-param-rxVideoPacketLossRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxVideoPacketLossRate</span>, </span><span class="parameter" id="-param-rxVideoPacketLossSum"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">rxVideoPacketLossSum</span>, </span><span class="parameter" id="-param-cpuAppUsage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">cpuAppUsage</span>, </span><span class="parameter" id="-param-cpuTotalUsage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">cpuTotalUsage</span>, </span><span class="parameter" id="-param-memoryAppUsageInKBytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">memoryAppUsageInKBytes</span>, </span><span class="parameter" id="-param-memoryAppUsageRatio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">memoryAppUsageRatio</span>, </span><span class="parameter" id="-param-memoryTotalUsageRatio"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">memoryTotalUsageRatio</span>, </span><span class="parameter" id="-param-totalDuration"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">totalDuration</span>, </span><span class="parameter" id="-param-txAudioBytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txAudioBytes</span>, </span><span class="parameter" id="-param-txAudioJitter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txAudioJitter</span>, </span><span class="parameter" id="-param-txAudioKBitRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txAudioKBitRate</span>, </span><span class="parameter" id="-param-txAudioPacketLossRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txAudioPacketLossRate</span>, </span><span class="parameter" id="-param-txAudioPacketLossSum"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txAudioPacketLossSum</span>, </span><span class="parameter" id="-param-txBytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txBytes</span>, </span><span class="parameter" id="-param-txVideoBytes"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txVideoBytes</span>, </span><span class="parameter" id="-param-txVideoJitter"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txVideoJitter</span>, </span><span class="parameter" id="-param-txVideoKBitRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txVideoKBitRate</span>, </span><span class="parameter" id="-param-txVideoPacketLossRate"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txVideoPacketLossRate</span>, </span><span class="parameter" id="-param-txVideoPacketLossSum"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">txVideoPacketLossSum</span>, </span><span class="parameter" id="-param-upRtt"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">upRtt</span>, </span><span class="parameter" id="-param-downRtt"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">downRtt</span>}</span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="NERtcStats.fromMap" class="callable">
+          <span class="name"><a href="../nertc/NERtcStats/NERtcStats.fromMap.html">NERtcStats.fromMap</a></span><span class="signature">(<span class="parameter" id="fromMap-param-stats"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a></span> <span class="parameter-name">stats</span></span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="cpuAppUsage" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/cpuAppUsage.html">cpuAppUsage</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  当前 App 的 CPU 使用率 (%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="cpuTotalUsage" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/cpuTotalUsage.html">cpuTotalUsage</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  当前系统的 CPU 使用率 (%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="downRtt" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/downRtt.html">downRtt</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  下行平均往返时延(ms)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="memoryAppUsageInKBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/memoryAppUsageInKBytes.html">memoryAppUsageInKBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  当前 App 的内存大小 (KB)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="memoryAppUsageRatio" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/memoryAppUsageRatio.html">memoryAppUsageRatio</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  当前 App 的内存占比 (%) , 占最大可用内存
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="memoryTotalUsageRatio" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/memoryTotalUsageRatio.html">memoryTotalUsageRatio</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  当前系统的内存占比 (%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="rxAudioBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxAudioBytes.html">rxAudioBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  自加入频道后累计的接收的音频字节数（Byte）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxAudioJitter" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxAudioJitter.html">rxAudioJitter</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地下行音频抖动 (ms)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxAudioKBitRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxAudioKBitRate.html">rxAudioKBitRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  音频接收码率（kbps）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxAudioPacketLossRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxAudioPacketLossRate.html">rxAudioPacketLossRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地下行音频丢包率(%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxAudioPacketLossSum" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxAudioPacketLossSum.html">rxAudioPacketLossSum</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地下行音频丢包数
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxBytes.html">rxBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  接收字节数（Byte），累计值
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxVideoBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxVideoBytes.html">rxVideoBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  自加入频道后累计的接收的视频字节数（Byte）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxVideoJitter" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxVideoJitter.html">rxVideoJitter</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地下行视频抖动 (ms)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxVideoKBitRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxVideoKBitRate.html">rxVideoKBitRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  视频接收码率（kbps）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxVideoPacketLossRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxVideoPacketLossRate.html">rxVideoPacketLossRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地下行视频丢包率(%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="rxVideoPacketLossSum" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/rxVideoPacketLossSum.html">rxVideoPacketLossSum</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地下行视频丢包数
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="totalDuration" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/totalDuration.html">totalDuration</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  自加入频道的通话时长， 退出后再加入重新计时 ( 单位：S)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txAudioBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txAudioBytes.html">txAudioBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  自加入频道后累计的发送的音频字节数（Byte）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txAudioJitter" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txAudioJitter.html">txAudioJitter</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地上行音频抖动 (ms)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txAudioKBitRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txAudioKBitRate.html">txAudioKBitRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  音频发送码率（kbps）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txAudioPacketLossRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txAudioPacketLossRate.html">txAudioPacketLossRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地上行音频丢包率(%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txAudioPacketLossSum" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txAudioPacketLossSum.html">txAudioPacketLossSum</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地上行音频丢包数
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txBytes.html">txBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  发送字节数（Byte），累计值
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txVideoBytes" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txVideoBytes.html">txVideoBytes</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  自加入频道后累计的发送的视频字节数（Byte）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txVideoJitter" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txVideoJitter.html">txVideoJitter</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地上行视频抖动 (ms)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txVideoKBitRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txVideoKBitRate.html">txVideoKBitRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  视频发送码率（kbps）
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txVideoPacketLossRate" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txVideoPacketLossRate.html">txVideoPacketLossRate</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地上行视频实际丢包率(%)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="txVideoPacketLossSum" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/txVideoPacketLossSum.html">txVideoPacketLossSum</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  本地上行视频丢包数
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="upRtt" class="property">
+  <span class="name"><a href="../nertc/NERtcStats/upRtt.html">upRtt</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  上行平均往返时延(ms)
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable">
+  <span class="name"><a href="../nertc/NERtcStats/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  A string representation of this object.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../index.html">nertc_core</a></li>
+    <li><a href="../nertc/nertc-library.html">nertc</a></li>
+    <li class="self-crumb">NERtcStats class</li>
+</ol>
+
+
+    <h5>nertc library</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    nertc_core
+      5.5.101
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

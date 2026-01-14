@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['damping_0',['damping',['../structnertc_1_1_rtc_reverb_param.html#a7bcb7317adbbe7d3ecaa4ef65ee2f936',1,'nertc::RtcReverbParam']]],
+  ['data_1',['data',['../structnertc_1_1_rtc_predecode_frame_info.html#a09f0ceecf83c97f7f50881edbd0260c9',1,'nertc.RtcPredecodeFrameInfo.data'],['../structnertc_1_1_rtc_audio_frame.html#a252798890da52c312d75160ed1ed1645',1,'nertc.RtcAudioFrame.data'],['../structnertc_1_1_rtc_audio_encoded_frame.html#a62e603d220922c7858e28e63a1fac58b',1,'nertc.RtcAudioEncodedFrame.data']]],
+  ['decaytime_2',['decayTime',['../structnertc_1_1_rtc_reverb_param.html#aa8aac498ec941279fb1d1b6c5c478324',1,'nertc::RtcReverbParam']]],
+  ['decoderframerate_3',['decoderFrameRate',['../structnertc_1_1_rtc_video_layer_recv_stats.html#a0cbb05fc9a2cb6be69705d3807043593',1,'nertc::RtcVideoLayerRecvStats']]],
+  ['degradationpreference_4',['degradationPreference',['../structnertc_1_1_rtc_video_config.html#aa41aadfe050433848e637d6cf35c77b2',1,'nertc.RtcVideoConfig.degradationPreference'],['../classnertc_1_1_rtc_screen_capture_parameters.html#a9e508608109007f35bb415563c0fb8a0',1,'nertc.RtcScreenCaptureParameters.degradationPreference']]],
+  ['destinfos_5',['destInfos',['../classnertc_1_1_rtc_channel_media_relay_config.html#ac4a68459b5e7cbbf17b4d6cbbaf4fff4',1,'nertc::RtcChannelMediaRelayConfig']]],
+  ['destroy_6',['Destroy',['../classnertc_1_1_i_device_collection.html#af2d90b0d50aa865d91126c753492e5af',1,'nertc.IDeviceCollection.Destroy()'],['../classnertc_1_1_i_rtc_channel.html#a19e3b3c6fef50a315a8927ac64548f46',1,'nertc.IRtcChannel.Destroy()']]],
+  ['devicecollection_2ecs_7',['DeviceCollection.cs',['../_device_collection_8cs.html',1,'']]],
+  ['deviceid_8',['deviceId',['../structnertc_1_1_rtc_device_info.html#a40199dee3a85665581d336cfdb9b25e1',1,'nertc::RtcDeviceInfo']]],
+  ['devicename_9',['deviceName',['../structnertc_1_1_rtc_device_info.html#a43d219d03890cd2a675e0ce116d15a86',1,'nertc::RtcDeviceInfo']]],
+  ['dimensions_10',['dimensions',['../classnertc_1_1_rtc_screen_capture_parameters.html#a9e0d6403c8e8bd073ae7477c54c88519',1,'nertc::RtcScreenCaptureParameters']]],
+  ['dispatcher_2ecs_11',['Dispatcher.cs',['../_dispatcher_8cs.html',1,'']]],
+  ['downlinkreport_12',['downlinkReport',['../structnertc_1_1_rtc_lastmile_probe_result.html#a4f10db790f86440d69850fc03cb00074',1,'nertc::RtcLastmileProbeResult']]],
+  ['downloadrecordedfile_13',['DownloadRecordedFile',['../classnertc_1_1_i_rtc_voice_engine.html#a5a70d5cdae1284ee8f06c59095b3526e',1,'nertc::IRtcVoiceEngine']]],
+  ['downrtt_14',['downRtt',['../structnertc_1_1_rtc_stats.html#ae7bfa9bc96724c3592aa92390920ca42',1,'nertc::RtcStats']]],
+  ['drygain_15',['dryGain',['../structnertc_1_1_rtc_reverb_param.html#ab9f4d7afcf42dd0089be2b8d7961a77c',1,'nertc::RtcReverbParam']]]
+];

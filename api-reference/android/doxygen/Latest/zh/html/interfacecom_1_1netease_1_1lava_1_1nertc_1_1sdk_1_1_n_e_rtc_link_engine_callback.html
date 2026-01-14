@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC Android SDK: com.netease.lava.nertc.sdk.NERtcLinkEngineCallback接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC Android SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>netease</b></li><li class="navelem"><b>lava</b></li><li class="navelem"><b>nertc</b></li><li class="navelem"><a class="el" href="namespacecom_1_1netease_1_1lava_1_1nertc_1_1sdk.html">sdk</a></li><li class="navelem"><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_link_engine_callback.html">NERtcLinkEngineCallback</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_link_engine_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">com.netease.lava.nertc.sdk.NERtcLinkEngineCallback接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac751baa50fa129adec0ef62240c57f50" id="r_ac751baa50fa129adec0ef62240c57f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac751baa50fa129adec0ef62240c57f50">onDirectStartCall</a> (int code, String errMsg)</td></tr>
+<tr class="separator:ac751baa50fa129adec0ef62240c57f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39ee8060fc0f4dae61b02cbd3f2e3d1" id="r_aa39ee8060fc0f4dae61b02cbd3f2e3d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa39ee8060fc0f4dae61b02cbd3f2e3d1">onDirectCallRing</a> (int code)</td></tr>
+<tr class="separator:aa39ee8060fc0f4dae61b02cbd3f2e3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901d4b88b13bf6b8c018f4d49dcfcb9c" id="r_a901d4b88b13bf6b8c018f4d49dcfcb9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901d4b88b13bf6b8c018f4d49dcfcb9c">onDirectCallAccept</a> (int code)</td></tr>
+<tr class="separator:a901d4b88b13bf6b8c018f4d49dcfcb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae404fb45b6416d2c749e573f6ac847ea" id="r_ae404fb45b6416d2c749e573f6ac847ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae404fb45b6416d2c749e573f6ac847ea">onDirectCallAccept</a> (int callType, int code)</td></tr>
+<tr class="separator:ae404fb45b6416d2c749e573f6ac847ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c6f0a927439e1df3e7e3e378d02ab0" id="r_a24c6f0a927439e1df3e7e3e378d02ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24c6f0a927439e1df3e7e3e378d02ab0">onDirectCallHangupWithReason</a> (int reason, int code, String errMsg, boolean isCallEstablished)</td></tr>
+<tr class="separator:a24c6f0a927439e1df3e7e3e378d02ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bef2190c0486704bd41d6b3b6ca718" id="r_a20bef2190c0486704bd41d6b3b6ca718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20bef2190c0486704bd41d6b3b6ca718">onDirectCallDisconnectWithError</a> (int code, String errMsg)</td></tr>
+<tr class="separator:a20bef2190c0486704bd41d6b3b6ca718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae404fb45b6416d2c749e573f6ac847ea" name="ae404fb45b6416d2c749e573f6ac847ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae404fb45b6416d2c749e573f6ac847ea">&#9670;&#160;</a></span>onDirectCallAccept() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.NERtcLinkEngineCallback.onDirectCallAccept </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>callType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>code</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>直呼时，对端已接听回调。 <br  />
+主叫方发起直呼后，如果对端接听通话，会触发此回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callType</td><td>呼叫的媒体类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><code><a class="el" href="">com.netease.lava.nertc.pstn.NERtcLinkMediaType</a></code> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>预留参数，无需关注。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a901d4b88b13bf6b8c018f4d49dcfcb9c" name="a901d4b88b13bf6b8c018f4d49dcfcb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901d4b88b13bf6b8c018f4d49dcfcb9c">&#9670;&#160;</a></span>onDirectCallAccept() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.NERtcLinkEngineCallback.onDirectCallAccept </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>直呼时，对端已接听回调。 <br  />
+主叫方发起直呼后，如果对端接听通话，会触发此回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>预留参数，无需关注。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20bef2190c0486704bd41d6b3b6ca718" name="a20bef2190c0486704bd41d6b3b6ca718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bef2190c0486704bd41d6b3b6ca718">&#9670;&#160;</a></span>onDirectCallDisconnectWithError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.NERtcLinkEngineCallback.onDirectCallDisconnectWithError </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>errMsg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>直呼时，通话断开连接回调。 <br  />
+呼叫接通后，对方断开连接时会触发此回调。</p><ul>
+<li>主叫方被 PSTN 服务端踢出通话。</li>
+<li>由于网络状态或其他原因导致的通话中断。 <br  />
+详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zg1MDI4MzE">融合呼叫状态码</a> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>状态码，表示通话连接断开的原因。99999 表示被踢导致断开链接，详细信息参考 errMsg 中的 kickout_reason 字段。 </td></tr>
+    <tr><td class="paramname">errMsg</td><td>被踢原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a24c6f0a927439e1df3e7e3e378d02ab0" name="a24c6f0a927439e1df3e7e3e378d02ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c6f0a927439e1df3e7e3e378d02ab0">&#9670;&#160;</a></span>onDirectCallHangupWithReason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.NERtcLinkEngineCallback.onDirectCallHangupWithReason </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reason</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>errMsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>isCallEstablished</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>直呼时，通话已挂断回调。 <br  />
+以下场景会触发此回调：</p><ul>
+<li>主叫方发起直呼后，取消呼叫。此时 reason 为 1000。</li>
+<li>主叫方发起直呼后，被叫方拒接。</li>
+<li>主叫方发起直呼，呼叫接通后，任意一方挂断通话。</li>
+<li>由于运营商信号或其他原因导致的通话中断。 <br  />
+详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zg1MDI4MzE">融合呼叫状态码</a> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>挂断原因。 </td></tr>
+    <tr><td class="paramname">code</td><td>运营商返回的直呼状态码。 </td></tr>
+    <tr><td class="paramname">errMsg</td><td>错误信息，若状态正常则不返回 errMsg。 </td></tr>
+    <tr><td class="paramname">isCallEstablished</td><td>呼叫是否已接通。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aa39ee8060fc0f4dae61b02cbd3f2e3d1" name="aa39ee8060fc0f4dae61b02cbd3f2e3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39ee8060fc0f4dae61b02cbd3f2e3d1">&#9670;&#160;</a></span>onDirectCallRing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.NERtcLinkEngineCallback.onDirectCallRing </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>直呼时，对端开始振铃回调。 <br  />
+主叫方发起直呼后，如果对端开始振铃，会触发此回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>预留参数，无需关注。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac751baa50fa129adec0ef62240c57f50" name="ac751baa50fa129adec0ef62240c57f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac751baa50fa129adec0ef62240c57f50">&#9670;&#160;</a></span>onDirectStartCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.netease.lava.nertc.sdk.NERtcLinkEngineCallback.onDirectStartCall </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>errMsg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>呼叫已开始回调。 <br  />
+主叫方发起直呼后，会收到此回调。回调中报告直呼的状态信息。详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zg1MDI4MzE">融合呼叫状态码</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>运营商返回的直呼状态码。 </td></tr>
+    <tr><td class="paramname">errMsg</td><td>直呼状态码错误信息。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li><b>NERtcLinkEngineCallback.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

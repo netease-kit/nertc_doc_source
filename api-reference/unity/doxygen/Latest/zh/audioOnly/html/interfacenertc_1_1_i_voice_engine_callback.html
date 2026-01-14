@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Unity SDK: nertc.IVoiceEngineCallback接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Unity SDK<span id="projectnumber">&#160;V.5.4.128</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="interfacenertc_1_1_i_voice_engine_callback.html">IVoiceEngineCallback</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacenertc_1_1_i_voice_engine_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.IVoiceEngineCallback接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a68df2db896be8929bb6b419b8df1a89d" id="r_a68df2db896be8929bb6b419b8df1a89d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68df2db896be8929bb6b419b8df1a89d">OnAuth</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode)</td></tr>
+<tr class="separator:a68df2db896be8929bb6b419b8df1a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187b84cbbdd65798af5cc3b3b6f29bc4" id="r_a187b84cbbdd65798af5cc3b3b6f29bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a187b84cbbdd65798af5cc3b3b6f29bc4">OnRecordCompleted</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string filePath)</td></tr>
+<tr class="separator:a187b84cbbdd65798af5cc3b3b6f29bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddbcbe2e85cbd6beca69a8cd15eee72" id="r_a9ddbcbe2e85cbd6beca69a8cd15eee72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ddbcbe2e85cbd6beca69a8cd15eee72">OnPlayCompleted</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string filePath)</td></tr>
+<tr class="separator:a9ddbcbe2e85cbd6beca69a8cd15eee72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a5d31ca92cbc903aca8e351a70c243" id="r_a68a5d31ca92cbc903aca8e351a70c243"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68a5d31ca92cbc903aca8e351a70c243">OnUploadCompleted</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string filePath, string fileID)</td></tr>
+<tr class="separator:a68a5d31ca92cbc903aca8e351a70c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ffb57a161b054d289a68a1831db220f" id="r_a4ffb57a161b054d289a68a1831db220f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ffb57a161b054d289a68a1831db220f">OnDownloadCompleted</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string filePath, string fileID, <a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2">RtcVoiceAuditStatus</a> auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:a4ffb57a161b054d289a68a1831db220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0047fcfa03e54135daafcff2fb962ca" id="r_ac0047fcfa03e54135daafcff2fb962ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0047fcfa03e54135daafcff2fb962ca">OnSpeechToTextCompleted</a> (<a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string fileID, string text, <a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2">RtcVoiceAuditStatus</a> auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:ac0047fcfa03e54135daafcff2fb962ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084e7359162107c2da082bae3726e218" id="r_a084e7359162107c2da082bae3726e218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a084e7359162107c2da082bae3726e218">OnRecordingVolume</a> (int volume)</td></tr>
+<tr class="separator:a084e7359162107c2da082bae3726e218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360ddb4fe2f033af2ee50b31710d61c8" id="r_a360ddb4fe2f033af2ee50b31710d61c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a360ddb4fe2f033af2ee50b31710d61c8">OnPlayingVolume</a> (int volume)</td></tr>
+<tr class="separator:a360ddb4fe2f033af2ee50b31710d61c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>语音消息事件接口。 <br  />
+此接口类监听语音消息相关接口的事件。  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a68df2db896be8929bb6b419b8df1a89d" name="a68df2db896be8929bb6b419b8df1a89d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68df2db896be8929bb6b419b8df1a89d">&#9670;&#160;</a></span>OnAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnAuth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>鉴权回调。 <br  />
+该回调方法表示音频模块的鉴权结果，如果出现错误需要重新鉴权。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a187b84cbbdd65798af5cc3b3b6f29bc4" name="a187b84cbbdd65798af5cc3b3b6f29bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187b84cbbdd65798af5cc3b3b6f29bc4">&#9670;&#160;</a></span>OnRecordCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnRecordCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>录制结果回调。 <br  />
+该回调方法表示音频模块语音录制结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>录制文件路径。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ddbcbe2e85cbd6beca69a8cd15eee72" name="a9ddbcbe2e85cbd6beca69a8cd15eee72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddbcbe2e85cbd6beca69a8cd15eee72">&#9670;&#160;</a></span>OnPlayCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnPlayCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>播放结果回调。 <br  />
+该回调方法表示音频模块语音播放结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>播放文件路径。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68a5d31ca92cbc903aca8e351a70c243" name="a68a5d31ca92cbc903aca8e351a70c243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a5d31ca92cbc903aca8e351a70c243">&#9670;&#160;</a></span>OnUploadCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnUploadCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上传结果回调。 <br  />
+该回调方法表示音频模块上传文件结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+    <tr><td class="paramname">fileID</td><td>上传成功后的文件 ID，用于下载和其他文件映射时使用。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ffb57a161b054d289a68a1831db220f" name="a4ffb57a161b054d289a68a1831db220f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ffb57a161b054d289a68a1831db220f">&#9670;&#160;</a></span>OnDownloadCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnDownloadCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2">RtcVoiceAuditStatus</a></td>          <td class="paramname"><span class="paramname"><em>auditStatus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>auditDetail</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>下载结果回调。 <br  />
+该回调方法表示音频模块下载文件结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+    <tr><td class="paramname">fileID</td><td>文件 ID。 <br  />
+ </td></tr>
+    <tr><td class="paramname">auditStatus</td><td>语音转文字审核状态。参考 {@RtcVoiceAuditStatus}。 </td></tr>
+    <tr><td class="paramname">auditResult</td><td>语音转文字审核结果，仅审核完成后有效。 </td></tr>
+    <tr><td class="paramname">auditDetail</td><td>语音转文字审核详情，参见审核服务说明。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac0047fcfa03e54135daafcff2fb962ca" name="ac0047fcfa03e54135daafcff2fb962ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0047fcfa03e54135daafcff2fb962ca">&#9670;&#160;</a></span>OnSpeechToTextCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnSpeechToTextCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a5b549e840db271ed0bd826de6c648bf2">RtcVoiceAuditStatus</a></td>          <td class="paramname"><span class="paramname"><em>auditStatus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>auditDetail</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>语音转文字结果回调。 <br  />
+该回调方法表示音频模块语音转文字结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">fileID</td><td>文件 ID。 </td></tr>
+    <tr><td class="paramname">text</td><td>语音转文字结果。 </td></tr>
+    <tr><td class="paramname">auditStatus</td><td>语音转文字审核状态。参考 {@RtcVoiceAuditStatus}。 </td></tr>
+    <tr><td class="paramname">auditResult</td><td>语音转文字审核结果，仅审核完成后有效。 </td></tr>
+    <tr><td class="paramname">auditDetail</td><td>语音转文字审核详情，参见审核服务说明。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a084e7359162107c2da082bae3726e218" name="a084e7359162107c2da082bae3726e218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084e7359162107c2da082bae3726e218">&#9670;&#160;</a></span>OnRecordingVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnRecordingVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>实时采集音量回调。 <br  />
+该回调方法返回当前正在录制的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音量值，范围 0-100。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a360ddb4fe2f033af2ee50b31710d61c8" name="a360ddb4fe2f033af2ee50b31710d61c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360ddb4fe2f033af2ee50b31710d61c8">&#9670;&#160;</a></span>OnPlayingVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.IVoiceEngineCallback.OnPlayingVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>实时播放音量回调。 <br  />
+该回调方法返回当前正在播放的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音量值，范围 0-100。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li><a class="el" href="_rtc_voice_engine_callback_8cs.html">RtcVoiceEngineCallback.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

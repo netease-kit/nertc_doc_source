@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unreal Engine: D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unreal/GMEWwiseDemo/Plugins/NertcPlugin/Source/NertcPlugin/Public/IVoiceEngine.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unreal Engine<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3ae03dd1bfac64915440c3b7733b5137.html">GMEWwiseDemo</a></li><li class="navelem"><a class="el" href="dir_0ff0f731b7697a7a52724cc8a4c11b27.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_1ba7764201c75fbb2a806e5b4c5f9376.html">NertcPlugin</a></li><li class="navelem"><a class="el" href="dir_c967bcd428aee9a6c0f51b5d7f4ed013.html">Source</a></li><li class="navelem"><a class="el" href="dir_04d48f4920d11fa3cbb3ceb4cf8e2b45.html">NertcPlugin</a></li><li class="navelem"><a class="el" href="dir_9d0f1630ccad951451aeb6d3a3a52d80.html">Public</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">IVoiceEngine.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_voice_engine_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef IVoiceEngine_h</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define IVoiceEngine_h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_nertc_base_8h.html">NertcBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacenertc.html">nertc</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>wwiseplugin {</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_define" href="_nertc_base_8h.html#aa923922ebe5cedf55647bda637130714">NERTC_PLUGIN_API</a> <a class="code hl_class" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">IVoiceEngineCallback</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a5871e905f4ea8a7bb00389b67c3e4c66">   17</a></span>            <span class="keyword">virtual</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a5871e905f4ea8a7bb00389b67c3e4c66">~IVoiceEngineCallback</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a30e7ce4b2fc9f7f995f5313419bdb865">   26</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a30e7ce4b2fc9f7f995f5313419bdb865">onAuth</a>(<a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> errorCode) = 0;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a8745808c192c4c22d08b797d617552e5">   36</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a8745808c192c4c22d08b797d617552e5">onRecordCompleted</a>(<a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> errorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ac16fb413ac8f39ab5bd70317598f7f97">   46</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ac16fb413ac8f39ab5bd70317598f7f97">onPlayCompleted</a>(<a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> errorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a05ed2df300b3b7f3db76f3775311c9a2">   57</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a05ed2df300b3b7f3db76f3775311c9a2">onUploadCompleted</a>(<a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> errorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* filePath, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileID) = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae2a21682751a6fee4334b4fd8920f991">   71</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae2a21682751a6fee4334b4fd8920f991">onDownloadCompleted</a>(<a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> errorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* filePath, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileID, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a519511e201ae294c89b4eb2a27762d6a">RtcVoiceAuditStatus</a> auditStatus, <span class="keywordtype">int</span> auditResult, <span class="keyword">const</span> <span class="keywordtype">char</span>* auditDetail) = 0;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aee515ab5648338c1fece4b7dd5396444">   85</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aee515ab5648338c1fece4b7dd5396444">onSpeechToTextCompleted</a>(<a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">RtcErrorCode</a> errorCode, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileID, <span class="keyword">const</span> <span class="keywordtype">char</span>* text, <a class="code hl_enumeration" href="namespacenertc_1_1wwiseplugin.html#a519511e201ae294c89b4eb2a27762d6a">RtcVoiceAuditStatus</a> auditStatus, <span class="keywordtype">int</span> auditResult, <span class="keyword">const</span> <span class="keywordtype">char</span>* auditDetail) = 0;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a6abe4f8e595e9df507f454280ce71137">   94</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a6abe4f8e595e9df507f454280ce71137">onRecordingVolume</a>(<span class="keywordtype">int</span> volume) = 0;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a9a3e14d46cc1e19ddea5872b82c546e5">  103</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a9a3e14d46cc1e19ddea5872b82c546e5">onPlayingVolume</a>(<span class="keywordtype">int</span> volume) = 0;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    };</div>
+</div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="};">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">  110</a></span>    <span class="keyword">class </span><a class="code hl_define" href="_nertc_base_8h.html#aa923922ebe5cedf55647bda637130714">NERTC_PLUGIN_API</a> <a class="code hl_class" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">IVoiceEngine</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ab3257f44d476b362dd4e05f9a9d5f2d0">  113</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ab3257f44d476b362dd4e05f9a9d5f2d0">~IVoiceEngine</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a51faaf756402c50d9d5afbcd2ff27770">  121</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a51faaf756402c50d9d5afbcd2ff27770">setEvents</a>(<a class="code hl_class" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">IVoiceEngineCallback</a>* callbacks) = 0;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a3e49399c4a33e6cb6e472f00cab7f5f1">  135</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a3e49399c4a33e6cb6e472f00cab7f5f1">setAuth</a>(uint64_t userID, <span class="keyword">const</span> <span class="keywordtype">char</span>* token, <span class="keywordtype">int</span> size) = 0;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a65bcf2f4ddf94308612af3d52fce3119">  147</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a65bcf2f4ddf94308612af3d52fce3119">setMaxMessageLength</a>(<span class="keywordtype">int</span> timestamp) = 0;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#aaabc9454fb0b94ea5ad80fcfa5adf9f3">  159</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#aaabc9454fb0b94ea5ad80fcfa5adf9f3">startRecording</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a57911a4dc265207fe37eecd032f0bc94">  170</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a57911a4dc265207fe37eecd032f0bc94">stopRecording</a>() = 0;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a8bcb72a31164a302febfda17a41ea0b9">  181</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a8bcb72a31164a302febfda17a41ea0b9">pauseRecording</a>() = 0;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a666d4740d4f564e4858b4eb10ff81961">  192</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a666d4740d4f564e4858b4eb10ff81961">resumeRecording</a>() = 0;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ad067b065d8e845718280cac3b3ff2a75">  203</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ad067b065d8e845718280cac3b3ff2a75">cancelRecording</a>() = 0;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#af4b3b9ceeb1362d6f626c0ebe848a59d">  215</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#af4b3b9ceeb1362d6f626c0ebe848a59d">uploadRecordedFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a3e8dda463366973b4ced7e4a8452bee8">  228</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a3e8dda463366973b4ced7e4a8452bee8">downloadRecordedFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileID, <span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#aab6f77a1109537f8b6cd469e18d60753">  240</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#aab6f77a1109537f8b6cd469e18d60753">playRecordeFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a4896c3cffcb151966e0f159a620f155b">  251</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a4896c3cffcb151966e0f159a620f155b">stopPlayFile</a>() = 0;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ad8746bc1f2f9a0a5fa9be40d2802a37b">  265</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ad8746bc1f2f9a0a5fa9be40d2802a37b">speechToText</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* fileID) = 0;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a45b2a95230ab1331739404585deff838">  277</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a45b2a95230ab1331739404585deff838">getFileSize</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ab587e337b230accd5203cf3db95647ef">  289</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ab587e337b230accd5203cf3db95647ef">getVoiceFileDuration</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filePath) = 0;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a810665cf2de128c06fc27ebae6a82110">  301</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a810665cf2de128c06fc27ebae6a82110">setMicVolume</a>(<span class="keywordtype">int</span> volume) = 0;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a1c4dac0ffd904fb080502154c3073d8a">  312</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a1c4dac0ffd904fb080502154c3073d8a">getMicVolume</a>() = 0;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a1f375f052a01c66f7eea33c22efd09ab">  324</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a1f375f052a01c66f7eea33c22efd09ab">setSpeakerVolume</a>(<span class="keywordtype">int</span> volume) = 0;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a2c611ef4723ae34ac7dbd481f215870f">  335</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a2c611ef4723ae34ac7dbd481f215870f">getSpeakerVolume</a>() = 0;</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    };</div>
+</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>}</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>}</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="preprocessor">#endif </span><span class="comment">/* IVoiceEngine_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_nertc_base_8h_html"><div class="ttname"><a href="_nertc_base_8h.html">NertcBase.h</a></div></div>
+<div class="ttc" id="a_nertc_base_8h_html_aa923922ebe5cedf55647bda637130714"><div class="ttname"><a href="_nertc_base_8h.html#aa923922ebe5cedf55647bda637130714">NERTC_PLUGIN_API</a></div><div class="ttdeci">#define NERTC_PLUGIN_API</div><div class="ttdef"><b>定义</b> NertcBase.h:19</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">nertc::wwiseplugin::IVoiceEngineCallback</a></div><div class="ttdef"><b>定义</b> IVoiceEngine.h:15</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_a05ed2df300b3b7f3db76f3775311c9a2"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a05ed2df300b3b7f3db76f3775311c9a2">nertc::wwiseplugin::IVoiceEngineCallback::onUploadCompleted</a></div><div class="ttdeci">virtual void onUploadCompleted(RtcErrorCode errorCode, const char *filePath, const char *fileID)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_a30e7ce4b2fc9f7f995f5313419bdb865"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a30e7ce4b2fc9f7f995f5313419bdb865">nertc::wwiseplugin::IVoiceEngineCallback::onAuth</a></div><div class="ttdeci">virtual void onAuth(RtcErrorCode errorCode)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_a5871e905f4ea8a7bb00389b67c3e4c66"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a5871e905f4ea8a7bb00389b67c3e4c66">nertc::wwiseplugin::IVoiceEngineCallback::~IVoiceEngineCallback</a></div><div class="ttdeci">virtual ~IVoiceEngineCallback()=default</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_a6abe4f8e595e9df507f454280ce71137"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a6abe4f8e595e9df507f454280ce71137">nertc::wwiseplugin::IVoiceEngineCallback::onRecordingVolume</a></div><div class="ttdeci">virtual void onRecordingVolume(int volume)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_a8745808c192c4c22d08b797d617552e5"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a8745808c192c4c22d08b797d617552e5">nertc::wwiseplugin::IVoiceEngineCallback::onRecordCompleted</a></div><div class="ttdeci">virtual void onRecordCompleted(RtcErrorCode errorCode, const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_a9a3e14d46cc1e19ddea5872b82c546e5"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#a9a3e14d46cc1e19ddea5872b82c546e5">nertc::wwiseplugin::IVoiceEngineCallback::onPlayingVolume</a></div><div class="ttdeci">virtual void onPlayingVolume(int volume)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_ac16fb413ac8f39ab5bd70317598f7f97"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ac16fb413ac8f39ab5bd70317598f7f97">nertc::wwiseplugin::IVoiceEngineCallback::onPlayCompleted</a></div><div class="ttdeci">virtual void onPlayCompleted(RtcErrorCode errorCode, const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_ae2a21682751a6fee4334b4fd8920f991"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#ae2a21682751a6fee4334b4fd8920f991">nertc::wwiseplugin::IVoiceEngineCallback::onDownloadCompleted</a></div><div class="ttdeci">virtual void onDownloadCompleted(RtcErrorCode errorCode, const char *filePath, const char *fileID, RtcVoiceAuditStatus auditStatus, int auditResult, const char *auditDetail)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_callback_html_aee515ab5648338c1fece4b7dd5396444"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html#aee515ab5648338c1fece4b7dd5396444">nertc::wwiseplugin::IVoiceEngineCallback::onSpeechToTextCompleted</a></div><div class="ttdeci">virtual void onSpeechToTextCompleted(RtcErrorCode errorCode, const char *fileID, const char *text, RtcVoiceAuditStatus auditStatus, int auditResult, const char *auditDetail)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">nertc::wwiseplugin::IVoiceEngine</a></div><div class="ttdef"><b>定义</b> IVoiceEngine.h:111</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a1c4dac0ffd904fb080502154c3073d8a"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a1c4dac0ffd904fb080502154c3073d8a">nertc::wwiseplugin::IVoiceEngine::getMicVolume</a></div><div class="ttdeci">virtual int getMicVolume()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a1f375f052a01c66f7eea33c22efd09ab"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a1f375f052a01c66f7eea33c22efd09ab">nertc::wwiseplugin::IVoiceEngine::setSpeakerVolume</a></div><div class="ttdeci">virtual int setSpeakerVolume(int volume)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a2c611ef4723ae34ac7dbd481f215870f"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a2c611ef4723ae34ac7dbd481f215870f">nertc::wwiseplugin::IVoiceEngine::getSpeakerVolume</a></div><div class="ttdeci">virtual int getSpeakerVolume()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a3e49399c4a33e6cb6e472f00cab7f5f1"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a3e49399c4a33e6cb6e472f00cab7f5f1">nertc::wwiseplugin::IVoiceEngine::setAuth</a></div><div class="ttdeci">virtual int setAuth(uint64_t userID, const char *token, int size)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a3e8dda463366973b4ced7e4a8452bee8"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a3e8dda463366973b4ced7e4a8452bee8">nertc::wwiseplugin::IVoiceEngine::downloadRecordedFile</a></div><div class="ttdeci">virtual int downloadRecordedFile(const char *fileID, const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a45b2a95230ab1331739404585deff838"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a45b2a95230ab1331739404585deff838">nertc::wwiseplugin::IVoiceEngine::getFileSize</a></div><div class="ttdeci">virtual int getFileSize(const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a4896c3cffcb151966e0f159a620f155b"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a4896c3cffcb151966e0f159a620f155b">nertc::wwiseplugin::IVoiceEngine::stopPlayFile</a></div><div class="ttdeci">virtual int stopPlayFile()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a51faaf756402c50d9d5afbcd2ff27770"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a51faaf756402c50d9d5afbcd2ff27770">nertc::wwiseplugin::IVoiceEngine::setEvents</a></div><div class="ttdeci">virtual void setEvents(IVoiceEngineCallback *callbacks)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a57911a4dc265207fe37eecd032f0bc94"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a57911a4dc265207fe37eecd032f0bc94">nertc::wwiseplugin::IVoiceEngine::stopRecording</a></div><div class="ttdeci">virtual int stopRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a65bcf2f4ddf94308612af3d52fce3119"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a65bcf2f4ddf94308612af3d52fce3119">nertc::wwiseplugin::IVoiceEngine::setMaxMessageLength</a></div><div class="ttdeci">virtual int setMaxMessageLength(int timestamp)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a666d4740d4f564e4858b4eb10ff81961"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a666d4740d4f564e4858b4eb10ff81961">nertc::wwiseplugin::IVoiceEngine::resumeRecording</a></div><div class="ttdeci">virtual int resumeRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a810665cf2de128c06fc27ebae6a82110"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a810665cf2de128c06fc27ebae6a82110">nertc::wwiseplugin::IVoiceEngine::setMicVolume</a></div><div class="ttdeci">virtual int setMicVolume(int volume)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_a8bcb72a31164a302febfda17a41ea0b9"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#a8bcb72a31164a302febfda17a41ea0b9">nertc::wwiseplugin::IVoiceEngine::pauseRecording</a></div><div class="ttdeci">virtual int pauseRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_aaabc9454fb0b94ea5ad80fcfa5adf9f3"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#aaabc9454fb0b94ea5ad80fcfa5adf9f3">nertc::wwiseplugin::IVoiceEngine::startRecording</a></div><div class="ttdeci">virtual int startRecording(const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_aab6f77a1109537f8b6cd469e18d60753"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#aab6f77a1109537f8b6cd469e18d60753">nertc::wwiseplugin::IVoiceEngine::playRecordeFile</a></div><div class="ttdeci">virtual int playRecordeFile(const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_ab3257f44d476b362dd4e05f9a9d5f2d0"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ab3257f44d476b362dd4e05f9a9d5f2d0">nertc::wwiseplugin::IVoiceEngine::~IVoiceEngine</a></div><div class="ttdeci">virtual ~IVoiceEngine()=default</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_ab587e337b230accd5203cf3db95647ef"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ab587e337b230accd5203cf3db95647ef">nertc::wwiseplugin::IVoiceEngine::getVoiceFileDuration</a></div><div class="ttdeci">virtual int getVoiceFileDuration(const char *filePath)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_ad067b065d8e845718280cac3b3ff2a75"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ad067b065d8e845718280cac3b3ff2a75">nertc::wwiseplugin::IVoiceEngine::cancelRecording</a></div><div class="ttdeci">virtual int cancelRecording()=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_ad8746bc1f2f9a0a5fa9be40d2802a37b"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#ad8746bc1f2f9a0a5fa9be40d2802a37b">nertc::wwiseplugin::IVoiceEngine::speechToText</a></div><div class="ttdeci">virtual int speechToText(const char *fileID)=0</div></div>
+<div class="ttc" id="aclassnertc_1_1wwiseplugin_1_1_i_voice_engine_html_af4b3b9ceeb1362d6f626c0ebe848a59d"><div class="ttname"><a href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html#af4b3b9ceeb1362d6f626c0ebe848a59d">nertc::wwiseplugin::IVoiceEngine::uploadRecordedFile</a></div><div class="ttdeci">virtual int uploadRecordedFile(const char *filePath)=0</div></div>
+<div class="ttc" id="anamespacenertc_1_1wwiseplugin_html_a096932b4e09519b143f8aa9380e52b53"><div class="ttname"><a href="namespacenertc_1_1wwiseplugin.html#a096932b4e09519b143f8aa9380e52b53">nertc::wwiseplugin::RtcErrorCode</a></div><div class="ttdeci">RtcErrorCode</div><div class="ttdef"><b>定义</b> NertcBase.h:762</div></div>
+<div class="ttc" id="anamespacenertc_1_1wwiseplugin_html_a519511e201ae294c89b4eb2a27762d6a"><div class="ttname"><a href="namespacenertc_1_1wwiseplugin.html#a519511e201ae294c89b4eb2a27762d6a">nertc::wwiseplugin::RtcVoiceAuditStatus</a></div><div class="ttdeci">RtcVoiceAuditStatus</div><div class="ttdef"><b>定义</b> NertcBase.h:1415</div></div>
+<div class="ttc" id="anamespacenertc_html"><div class="ttname"><a href="namespacenertc.html">nertc</a></div><div class="ttdef"><b>定义</b> IAudioDeviceManager.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

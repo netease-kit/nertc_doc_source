@@ -1,0 +1,1990 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC Android SDK: com.netease.lava.nertc.sdk.NERtc类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC Android SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>netease</b></li><li class="navelem"><b>lava</b></li><li class="navelem"><b>nertc</b></li><li class="navelem"><a class="el" href="namespacecom_1_1netease_1_1lava_1_1nertc_1_1sdk.html">sdk</a></li><li class="navelem"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">com.netease.lava.nertc.sdk.NERtc类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 com.netease.lava.nertc.sdk.NERtc 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.png" usemap="#com.netease.lava.nertc.sdk.NERtc_map" alt=""/>
+  <map id="com.netease.lava.nertc.sdk.NERtc_map" name="com.netease.lava.nertc.sdk.NERtc_map">
+<area href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html" alt="com.netease.lava.nertc.sdk.NERtcEx" shape="rect" coords="0,56,220,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2198fb57cd127a8ae136e1f450236e57" id="r_a2198fb57cd127a8ae136e1f450236e57"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2198fb57cd127a8ae136e1f450236e57">init</a> (Context context, String appkey, <a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html">NERtcCallback</a> callback, <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option.html">NERtcOption</a> option)  throws Exception</td></tr>
+<tr class="separator:a2198fb57cd127a8ae136e1f450236e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adccc96746b013e42f18937482ed08ac5" id="r_adccc96746b013e42f18937482ed08ac5"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adccc96746b013e42f18937482ed08ac5">release</a> ()</td></tr>
+<tr class="separator:adccc96746b013e42f18937482ed08ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a44081baf4bd457749d1c48cd2def36" id="r_a2a44081baf4bd457749d1c48cd2def36"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a44081baf4bd457749d1c48cd2def36">joinChannel</a> (String token, String channelName, long uid)</td></tr>
+<tr class="separator:a2a44081baf4bd457749d1c48cd2def36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a91a0990a55753e319f1719761b599" id="r_a53a91a0990a55753e319f1719761b599"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53a91a0990a55753e319f1719761b599">joinChannel</a> (String token, String channelName, long uid, <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a> channelOptions)</td></tr>
+<tr class="separator:a53a91a0990a55753e319f1719761b599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d5b0020278cc81e69c8df81c862b4a" id="r_ac2d5b0020278cc81e69c8df81c862b4a"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2d5b0020278cc81e69c8df81c862b4a">updatePermissionKey</a> (String key)</td></tr>
+<tr class="separator:ac2d5b0020278cc81e69c8df81c862b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42a2d700d78e67022ea04345229fe94" id="r_af42a2d700d78e67022ea04345229fe94"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af42a2d700d78e67022ea04345229fe94">leaveChannel</a> ()</td></tr>
+<tr class="separator:af42a2d700d78e67022ea04345229fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509ef7ce4710036eb5d76d2c97f1a082" id="r_a509ef7ce4710036eb5d76d2c97f1a082"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a509ef7ce4710036eb5d76d2c97f1a082">enableLocalAudio</a> (boolean enable)</td></tr>
+<tr class="separator:a509ef7ce4710036eb5d76d2c97f1a082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2eb31b2e90fd558e9dc2685847aa44" id="r_aed2eb31b2e90fd558e9dc2685847aa44"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed2eb31b2e90fd558e9dc2685847aa44">subscribeRemoteAudioStream</a> (long uid, boolean subscribe)</td></tr>
+<tr class="separator:aed2eb31b2e90fd558e9dc2685847aa44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152d9d16a2d3525b0a1edf1c2b228231" id="r_a152d9d16a2d3525b0a1edf1c2b228231"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a152d9d16a2d3525b0a1edf1c2b228231">subscribeAllRemoteAudioStreams</a> (boolean subscribe)</td></tr>
+<tr class="separator:a152d9d16a2d3525b0a1edf1c2b228231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a577e39135f6388f4d02e4cb72f97a9f3" id="r_a577e39135f6388f4d02e4cb72f97a9f3"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a577e39135f6388f4d02e4cb72f97a9f3">setAudioProfile</a> (int profile, int scenario)</td></tr>
+<tr class="separator:a577e39135f6388f4d02e4cb72f97a9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5e0fdae26c2d6e2066d29df4bd4c59" id="r_a6e5e0fdae26c2d6e2066d29df4bd4c59"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e5e0fdae26c2d6e2066d29df4bd4c59">setAudioProfile</a> (int profile)</td></tr>
+<tr class="separator:a6e5e0fdae26c2d6e2066d29df4bd4c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b509c58dd72098f863acf82e922fc23" id="r_a3b509c58dd72098f863acf82e922fc23"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b509c58dd72098f863acf82e922fc23">setAudioScenario</a> (int scenario)</td></tr>
+<tr class="separator:a3b509c58dd72098f863acf82e922fc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a4f919dbc80cfe7a95cf631e886cf2" id="r_a20a4f919dbc80cfe7a95cf631e886cf2"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a4f919dbc80cfe7a95cf631e886cf2">setLocalVideoConfig</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a> videoConfig)</td></tr>
+<tr class="separator:a20a4f919dbc80cfe7a95cf631e886cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ae5d451a01fe2510d1c21e909c247a" id="r_ac0ae5d451a01fe2510d1c21e909c247a"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0ae5d451a01fe2510d1c21e909c247a">setLocalVideoConfig</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a> videoConfig, <a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a> streamType)</td></tr>
+<tr class="separator:ac0ae5d451a01fe2510d1c21e909c247a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa68f7f4c96b7a84a04e79941dc9015" id="r_a9aa68f7f4c96b7a84a04e79941dc9015"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa68f7f4c96b7a84a04e79941dc9015">setCameraCaptureConfig</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a> captureConfig)</td></tr>
+<tr class="separator:a9aa68f7f4c96b7a84a04e79941dc9015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5553b88fe5dd19572872fb59eee564" id="r_ada5553b88fe5dd19572872fb59eee564"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada5553b88fe5dd19572872fb59eee564">setCameraCaptureConfig</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a> captureConfig, <a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a> streamType)</td></tr>
+<tr class="separator:ada5553b88fe5dd19572872fb59eee564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ccea99f4d15400765bd682c9738292" id="r_a08ccea99f4d15400765bd682c9738292"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08ccea99f4d15400765bd682c9738292">startVideoPreview</a> ()</td></tr>
+<tr class="separator:a08ccea99f4d15400765bd682c9738292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf7f0de6fdd33a63d9f8bb60031e5f8" id="r_afbf7f0de6fdd33a63d9f8bb60031e5f8"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbf7f0de6fdd33a63d9f8bb60031e5f8">startVideoPreview</a> (<a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a> streamType)</td></tr>
+<tr class="separator:afbf7f0de6fdd33a63d9f8bb60031e5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46955a65822752a92e8c9d83f8a9d5a3" id="r_a46955a65822752a92e8c9d83f8a9d5a3"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46955a65822752a92e8c9d83f8a9d5a3">stopVideoPreview</a> ()</td></tr>
+<tr class="separator:a46955a65822752a92e8c9d83f8a9d5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f4d820a20c7be94ae4d793a81c8a0d" id="r_a23f4d820a20c7be94ae4d793a81c8a0d"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23f4d820a20c7be94ae4d793a81c8a0d">stopVideoPreview</a> (<a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a> streamType)</td></tr>
+<tr class="separator:a23f4d820a20c7be94ae4d793a81c8a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c008dfb1448f3bb09115d411bf21f27" id="r_a4c008dfb1448f3bb09115d411bf21f27"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c008dfb1448f3bb09115d411bf21f27">setupLocalVideoCanvas</a> (IVideoRender render)</td></tr>
+<tr class="separator:a4c008dfb1448f3bb09115d411bf21f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42244c0d7d497ab5d3a3390aeb619a3e" id="r_a42244c0d7d497ab5d3a3390aeb619a3e"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42244c0d7d497ab5d3a3390aeb619a3e">setupRemoteVideoCanvas</a> (IVideoRender render, long uid)</td></tr>
+<tr class="separator:a42244c0d7d497ab5d3a3390aeb619a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add16816a308b58c649f0fbfe011e0987" id="r_add16816a308b58c649f0fbfe011e0987"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a> (boolean enable)</td></tr>
+<tr class="separator:add16816a308b58c649f0fbfe011e0987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c6e217dacfc20546617d98e3b5ba9b" id="r_ad5c6e217dacfc20546617d98e3b5ba9b"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5c6e217dacfc20546617d98e3b5ba9b">enableLocalVideo</a> (<a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a> streamType, boolean enable)</td></tr>
+<tr class="separator:ad5c6e217dacfc20546617d98e3b5ba9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6ccb7d3481f5524abdc6e4dd38d51a" id="r_aeb6ccb7d3481f5524abdc6e4dd38d51a"><td class="memItemLeft" align="right" valign="top">abstract int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb6ccb7d3481f5524abdc6e4dd38d51a">subscribeRemoteVideoStream</a> (long uid, <a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html">NERtcRemoteVideoStreamType</a> streamType, boolean subscribe)</td></tr>
+<tr class="separator:aeb6ccb7d3481f5524abdc6e4dd38d51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9135f32ad0e10feb536944fd5a8ab2" id="r_a7a9135f32ad0e10feb536944fd5a8ab2"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a9135f32ad0e10feb536944fd5a8ab2">setParameters</a> (<a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a> params)  throws IllegalArgumentException</td></tr>
+<tr class="separator:a7a9135f32ad0e10feb536944fd5a8ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec235889b5af146dc8e8263e66c1ec9" id="r_a6ec235889b5af146dc8e8263e66c1ec9"><td class="memItemLeft" align="right" valign="top">abstract String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec235889b5af146dc8e8263e66c1ec9">getParameter</a> (String parameterKey, String extraInfo)</td></tr>
+<tr class="separator:a6ec235889b5af146dc8e8263e66c1ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ac4a35326abf518c7f25b3e81641f4f3a" id="r_ac4a35326abf518c7f25b3e81641f4f3a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a35326abf518c7f25b3e81641f4f3a">getInstance</a> ()</td></tr>
+<tr class="separator:ac4a35326abf518c7f25b3e81641f4f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea39e3412572e1c4799b3c469452cefd" id="r_aea39e3412572e1c4799b3c469452cefd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_version.html">NERtcVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea39e3412572e1c4799b3c469452cefd">version</a> ()</td></tr>
+<tr class="separator:aea39e3412572e1c4799b3c469452cefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71cce8bf5e6cb4e4acc5f8bd3af7713" id="r_ab71cce8bf5e6cb4e4acc5f8bd3af7713"><td class="memItemLeft" align="right" valign="top">static List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71cce8bf5e6cb4e4acc5f8bd3af7713">checkPermission</a> (Context context)</td></tr>
+<tr class="separator:ab71cce8bf5e6cb4e4acc5f8bd3af7713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ab71cce8bf5e6cb4e4acc5f8bd3af7713" name="ab71cce8bf5e6cb4e4acc5f8bd3af7713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab71cce8bf5e6cb4e4acc5f8bd3af7713">&#9670;&#160;</a></span>checkPermission()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt; String &gt; com.netease.lava.nertc.sdk.NERtc.checkPermission </td>
+          <td>(</td>
+          <td class="paramtype">Context</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>检查音视频相关的多媒体设备权限。 <br  />
+通过本接口可以实现在音视频通话前，检查多媒体设备的权限，如相机、麦克风、扬声器、磁盘读写、网络权限等。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>context </td><td>Context </td><td>设备上下文。需要从应用层获取。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">List&lt;String&gt; missed = <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a>.<a class="code hl_function" href="#ab71cce8bf5e6cb4e4acc5f8bd3af7713">checkPermission</a>(getApplicationContext());</div>
+<div class="line"><span class="keywordflow">if</span> (missed.size() != 0) {</div>
+<div class="line">   List&lt;String&gt; showRationale = <span class="keyword">new</span> ArrayList&lt;&gt;();</div>
+<div class="line">   <span class="keywordflow">for</span> (String permission : missed) {</div>
+<div class="line">       <span class="keywordflow">if</span> (ActivityCompat.shouldShowRequestPermissionRationale(<span class="keyword">this</span>, permission)) {</div>
+<div class="line">           showRationale.add(permission);</div>
+<div class="line">       }</div>
+<div class="line">   }</div>
+<div class="line">   <span class="keywordflow">if</span> (showRationale.size() &gt; 0) {</div>
+<div class="line">       <span class="keyword">new</span> AlertDialog.Builder(MainActivity.this)</div>
+<div class="line">               .setMessage(<span class="stringliteral">&quot;You need to allow some permission&quot;</span>)</div>
+<div class="line">               .setPositiveButton(<span class="stringliteral">&quot;OK&quot;</span>, (dialog, which) -&gt; ActivityCompat.requestPermissions(MainActivity.this, missed.toArray(<span class="keyword">new</span> String[0]),</div>
+<div class="line">                       PERMISSION_REQUEST_CODE))</div>
+<div class="line">               .setNegativeButton(<span class="stringliteral">&quot;Cancel&quot;</span>, <span class="keyword">null</span>)</div>
+<div class="line">               .create()</div>
+<div class="line">               .show();</div>
+<div class="line">   } <span class="keywordflow">else</span> {</div>
+<div class="line">       ActivityCompat.requestPermissions(<span class="keyword">this</span>, missed.toArray(<span class="keyword">new</span> String[0]), PERMISSION_REQUEST_CODE);</div>
+<div class="line">   }</div>
+<div class="line">}</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">com.netease.lava.nertc.sdk.NERtc</a></div><div class="ttdef"><b>定义</b> NERtc.java:23</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_ab71cce8bf5e6cb4e4acc5f8bd3af7713"><div class="ttname"><a href="#ab71cce8bf5e6cb4e4acc5f8bd3af7713">com.netease.lava.nertc.sdk.NERtc.checkPermission</a></div><div class="ttdeci">static List&lt; String &gt; checkPermission(Context context)</div><div class="ttdef"><b>定义</b> NERtc.java:1433</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>返回缺失的权限。  </dd></dl>
+
+</div>
+</div>
+<a id="a509ef7ce4710036eb5d76d2c97f1a082" name="a509ef7ce4710036eb5d76d2c97f1a082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a509ef7ce4710036eb5d76d2c97f1a082">&#9670;&#160;</a></span>enableLocalAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.enableLocalAudio </td>
+          <td>(</td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启或关闭本地音频的采集和发送。 <br  />
+通过本接口可以实现开启或关闭本地语音功能，进行本地音频采集及处理。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>加入房间后，语音功能默认为开启状态。</li>
+<li>该方法设置内部引擎为启用状态，在 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 后仍然有效。</li>
+<li>该方法不影响接收或播放远端音频流，enableLocalAudio(false) 适用于只下行不上行音频流的场景。</li>
+<li>自 V4.4.0 版本起，开启或关闭本地音频采集的操作不会影响伴音/音效接口的使用，比如 enableLocalAudio(false) 后仍可以调用 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a69df08ee03787f3f9fcc551ed7158e13">NERtcEx#startAudioMixing()</a></code> 方法播放音乐文件。</li>
+<li>该方法会操作音频硬件设备，建议避免频繁开关，否则可能导致设备异常。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>enable </td><td>boolean </td><td>是否启用本地音频的采集和发送：<ul>
+<li>
+true：开启本地音频采集。</li>
+<li>
+false：关闭本地音频采集。关闭后，远端用户会接收不到本地用户的音频流；但本地用户依然可以接收到远端用户的音频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//打开音频采集</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a509ef7ce4710036eb5d76d2c97f1a082">enableLocalAudio</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="comment">//关闭音频采集</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a509ef7ce4710036eb5d76d2c97f1a082">enableLocalAudio</a>(<span class="keyword">false</span>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">com.netease.lava.nertc.sdk.NERtcEx</a></div><div class="ttdef"><b>定义</b> NERtcEx.java:63</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex_html_a446e512f55b4a87817fa09a3b7888bb3"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">com.netease.lava.nertc.sdk.NERtcEx.getInstance</a></div><div class="ttdeci">static NERtcEx getInstance()</div><div class="ttdef"><b>定义</b> NERtcEx.java:74</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a509ef7ce4710036eb5d76d2c97f1a082"><div class="ttname"><a href="#a509ef7ce4710036eb5d76d2c97f1a082">com.netease.lava.nertc.sdk.NERtc.enableLocalAudio</a></div><div class="ttdeci">abstract int enableLocalAudio(boolean enable)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>开启音频采集后，远端会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a2e3166e1a5f2bcbc63e15b56202a383a">NERtcCallback#onUserAudioStart()</a></code> 回调。</li>
+<li>关闭音频采集后，远端会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#aa55ec6def0eb37dbae0c5434508cd63d">NERtcCallback#onUserAudioStop()</a></code> 回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aedd4b7563c5180bd6f799f4263bc7aae">NERtcEx#muteLocalAudioStream()</a></code>：两者的差异在于，enableLocalAudio 用于开启本地语音采集及处理，而 muteLocalAudioStream 用于停止或继续发送本地音频流。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="add16816a308b58c649f0fbfe011e0987" name="add16816a308b58c649f0fbfe011e0987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add16816a308b58c649f0fbfe011e0987">&#9670;&#160;</a></span>enableLocalVideo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.enableLocalVideo </td>
+          <td>(</td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启或关闭本地视频的采集与发送。 <br  />
+通过本接口可以实现开启或关闭本地视频，不影响接收远端视频。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>该方法设置内部引擎为开启或关闭状态, 在 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 后仍然有效。</li>
+<li>在您的应用切到后台或者其他应用占用摄像头时，可能会导致摄像头打开失败，需要注册 camera 动态权限，详细信息请参考 <a href="https://doc.yunxin.163.com/nertc/docs/DcyNDc0ODI?platform=android#%E6%B7%BB%E5%8A%A0%E6%9D%83" target="_blank">添加权限</a>。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>enable </td><td>boolean </td><td>是否开启本地视频采集与发送：<ul>
+<li>
+true：开启本地视频采集。</li>
+<li>
+false：关闭本地视频采集。关闭后，远端用户无法接收到本地用户的视频流；但本地用户仍然可以接收到远端用户的视频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//打开视频</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="comment">//关闭视频</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a>(<span class="keyword">false</span>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_add16816a308b58c649f0fbfe011e0987"><div class="ttname"><a href="#add16816a308b58c649f0fbfe011e0987">com.netease.lava.nertc.sdk.NERtc.enableLocalVideo</a></div><div class="ttdeci">abstract int enableLocalVideo(boolean enable)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>开启本地视频采集后，远端会收到 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_abs_n_e_rtc_callback_ex.html#ac2d586ba7209dfe32dce21ba9fd2175a">AbsNERtcCallbackEx#onUserVideoStart()</a></code> 回调。</li>
+<li>关闭本地视频采集后，远端会收到 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_abs_n_e_rtc_callback_ex.html#a6852cd74a3bb535d1125a4408c0213f2">AbsNERtcCallbackEx#onUserVideoStop()</a></code> 回调。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望开启辅流通道的视频采集，请调用 <code><a class="el" href="#ad5c6e217dacfc20546617d98e3b5ba9b">NERtc#enableLocalVideo(NERtcVideoStreamType streamType, boolean enable)</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：通用错误，一般表示引擎错误，尝试再次调用此接口即可。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如已开启外部视频采集。</li>
+<li>30011（ENGINE_ERROR_CREATE_DEVICE_SOURCE_FAIL）：创建设备源失败，未获取到操作系统的摄像头权限。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad5c6e217dacfc20546617d98e3b5ba9b" name="ad5c6e217dacfc20546617d98e3b5ba9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c6e217dacfc20546617d98e3b5ba9b">&#9670;&#160;</a></span>enableLocalVideo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.enableLocalVideo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>enable</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启或关闭本地视频的采集与发送。 <br  />
+通过主流或辅流视频通道进行本地视频流的采集与发送。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>该方法设置内部引擎为开启或关闭状态, 在 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 后仍然有效。</li>
+<li>在您的应用切到后台或者其他应用占用摄像头时，可能会导致摄像头打开失败，需要注册 camera 动态权限，详细信息请参考 <a href="https://doc.yunxin.163.com/nertc/docs/DcyNDc0ODI?platform=android#%E6%B7%BB%E5%8A%A0%E6%9D%83" target="_blank">添加权限</a>。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">video.NERtcVideoStreamType</a></code> </td><td>视频通道类型：<ul>
+<li>
+kNERtcVideoStreamTypeMain：主流。</li>
+<li>
+kNERtcVideoStreamTypeSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>enable </td><td>boolean </td><td>是否开启本地视频采集与发送：<ul>
+<li>
+true：开启本地视频采集。</li>
+<li>
+false：关闭本地视频采集。关闭后，远端用户无法接收到本地用户的视频流；但本地用户仍然可以接收到远端用户的视频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//打开视频主流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">kNERtcVideoStreamTypeMain</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="comment">//关闭视频主流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">kNERtcVideoStreamTypeMain</a>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="comment">//打开视频辅流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">kNERtcVideoStreamTypeSub</a>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="comment">//关闭视频辅流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#add16816a308b58c649f0fbfe011e0987">enableLocalVideo</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">kNERtcVideoStreamTypeSub</a>, <span class="keyword">false</span>);</div>
+<div class="ttc" id="aenumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type_html"><div class="ttname"><a href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">com.netease.lava.nertc.sdk.video.NERtcVideoStreamType</a></div><div class="ttdef"><b>定义</b> NERtcVideoStreamType.java:15</div></div>
+<div class="ttc" id="aenumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type_html_a0e52647f4dfb70d503d50f1506d2b694"><div class="ttname"><a href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">com.netease.lava.nertc.sdk.video.NERtcVideoStreamType.kNERtcVideoStreamTypeMain</a></div><div class="ttdeci">kNERtcVideoStreamTypeMain</div><div class="ttdef"><b>定义</b> NERtcVideoStreamType.java:25</div></div>
+<div class="ttc" id="aenumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type_html_a10faf373dc1ddb3722d1a1fe9ca218df"><div class="ttname"><a href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">com.netease.lava.nertc.sdk.video.NERtcVideoStreamType.kNERtcVideoStreamTypeSub</a></div><div class="ttdeci">kNERtcVideoStreamTypeSub</div><div class="ttdef"><b>定义</b> NERtcVideoStreamType.java:35</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd><ul>
+<li>streamType 为 kNERtcVideoStreamTypeMain（主流）时：<ul>
+<li>开启本地视频采集后，远端会收到 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_abs_n_e_rtc_callback_ex.html#ac2d586ba7209dfe32dce21ba9fd2175a">AbsNERtcCallbackEx#onUserVideoStart()</a></code> 回调。</li>
+<li>关闭本地视频采集后，远端会收到 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_abs_n_e_rtc_callback_ex.html#a6852cd74a3bb535d1125a4408c0213f2">AbsNERtcCallbackEx#onUserVideoStop()</a></code> 回调。</li>
+</ul>
+</li>
+<li>streamType 为 kNERtcVideoStreamTypeSub（辅流）时：<ul>
+<li>开启本地视频采集后，远端会收到 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#acbd2a5b0adf2c815271aa4a0934b0d4a">NERtcCallbackEx#onUserSubStreamVideoStart()</a></code> 回调。</li>
+<li>关闭本地视频采集后，远端会收到 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a07d214f7b396b43b1cbd44b142f932b9">NERtcCallbackEx#onUserSubStreamVideoStop()</a></code> 回调。 </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：通用错误，一般表示引擎错误，尝试再次调用此接口即可。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如已开启外部视频采集。</li>
+<li>30011（ENGINE_ERROR_CREATE_DEVICE_SOURCE_FAIL）：创建设备源失败，未获取到操作系统的摄像头权限。</li>
+<li>30027（ENGINE_ERROR_CAMERA_OCCUIPIED）: 所选设备已被占用。比如已通过主流通道开启了摄像头，无法再通过辅流通道开启摄像头。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ac4a35326abf518c7f25b3e81641f4f3a" name="ac4a35326abf518c7f25b3e81641f4f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4a35326abf518c7f25b3e81641f4f3a">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> com.netease.lava.nertc.sdk.NERtc.getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例。 </p><dl class="section return"><dt>返回</dt><dd><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例  </dd></dl>
+
+<p>被 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">com.netease.lava.nertc.sdk.NERtcEx</a> 重载.</p>
+
+</div>
+</div>
+<a id="a6ec235889b5af146dc8e8263e66c1ec9" name="a6ec235889b5af146dc8e8263e66c1ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec235889b5af146dc8e8263e66c1ec9">&#9670;&#160;</a></span>getParameter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract String com.netease.lava.nertc.sdk.NERtc.getParameter </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>parameterKey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>extraInfo</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>以 String 的形式获取一些内部参数，此接口为隐藏接口，需要特定参数及特定时机，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameterKey</td><td>参数 key </td></tr>
+    <tr><td class="paramname">extraInfo</td><td>额外的信息 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>如果查询到相关参数，以 String 形式返回，否则返回 null </dd></dl>
+
+</div>
+</div>
+<a id="a2198fb57cd127a8ae136e1f450236e57" name="a2198fb57cd127a8ae136e1f450236e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2198fb57cd127a8ae136e1f450236e57">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void com.netease.lava.nertc.sdk.NERtc.init </td>
+          <td>(</td>
+          <td class="paramtype">Context</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>appkey</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html">NERtcCallback</a></td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option.html">NERtcOption</a></td>          <td class="paramname"><span class="paramname"><em>option</em></span>&#160;) throws Exception</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>创建 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例。 <br  />
+ 通过本接口可以实现创建 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例并初始化 NERTC SDK 服务。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请确保在调用其他 API 前先调用该方法创建并初始化 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>使用同一个 App Key 的 App 才能进入同一个房间进行通话或直播。</li>
+<li>一个 App Key 只能用于创建一个 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例；若您需要更换 App Key，必须先调用 <code><a class="el" href="#adccc96746b013e42f18937482ed08ac5">NERtc#release()</a></code> 方法销毁当前实例，再调用本方法重新创建实例。</li>
+<li>创建实例时，如果参数设置错误，可能会出现 RuntimeException、UnsatisfiedLinkError 异常。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>context </td><td>Context </td><td>传入的 RTC engine context 对象。  </td></tr>
+<tr>
+<td>appkey </td><td>String </td><td>应用的 App Key。在 <a href="https://app.yunxin.163.com/global/home">网易云信控制台</a> 创建应用后，可以查看对应的 App Key。  </td></tr>
+<tr>
+<td>callback </td><td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html">NERtcCallback</a></code> </td><td>回调函数。所有接口均在主线程上回调，您可继承简易实现 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_abs_n_e_rtc_callback_ex.html">AbsNERtcCallbackEx</a></code> 类，或自行选择实现 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html">NERtcCallback</a></code>、<code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html">NERtcCallbackEx</a></code> 等类。  </td></tr>
+<tr>
+<td>option </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option.html">NERtcOption</a></code> </td><td>其他可选配置。可设置为 null。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option.html">NERtcOption</a> option = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option.html">NERtcOption</a>();</div>
+<div class="line"><span class="comment">//设置 detail_info 打印更详细日志</span></div>
+<div class="line">option.logLevel = <a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_log_level.html">LogLevel</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_log_level.html#a5094e0c4f202523ab660bfadb5232c3d">INFO</a>;</div>
+<div class="line">String appKey = <span class="stringliteral">&quot;...&quot;</span>;</div>
+<div class="line"><a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html">NERtcCallbackEx</a> callback = <span class="keyword">new</span> <a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html">NERtcCallbackEx</a>();</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a2198fb57cd127a8ae136e1f450236e57">init</a>(getApplicationContext(), appKey, callback, option);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a2198fb57cd127a8ae136e1f450236e57"><div class="ttname"><a href="#a2198fb57cd127a8ae136e1f450236e57">com.netease.lava.nertc.sdk.NERtc.init</a></div><div class="ttdeci">abstract void init(Context context, String appkey, NERtcCallback callback, NERtcOption option)</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_option.html">com.netease.lava.nertc.sdk.NERtcOption</a></div><div class="ttdef"><b>定义</b> NERtcOption.java:15</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html">com.netease.lava.nertc.sdk.NERtcCallbackEx</a></div><div class="ttdef"><b>定义</b> NERtcCallbackEx.java:19</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_log_level_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_log_level.html">com.netease.lava.nertc.sdk.NERtcConstants.LogLevel</a></div><div class="ttdef"><b>定义</b> NERtcConstants.java:2258</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_log_level_html_a5094e0c4f202523ab660bfadb5232c3d"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_log_level.html#a5094e0c4f202523ab660bfadb5232c3d">com.netease.lava.nertc.sdk.NERtcConstants.LogLevel.INFO</a></div><div class="ttdeci">int INFO</div><div class="ttdef"><b>定义</b> NERtcConstants.java:2295</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">com.netease.lava.nertc.sdk.NERtcConstants</a></div><div class="ttdef"><b>定义</b> NERtcConstants.java:20</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您不再使用 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例，需要调用 <code><a class="el" href="#adccc96746b013e42f18937482ed08ac5">NERtc#release()</a></code> 方法进行销毁。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+</div>
+</div>
+<a id="a2a44081baf4bd457749d1c48cd2def36" name="a2a44081baf4bd457749d1c48cd2def36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a44081baf4bd457749d1c48cd2def36">&#9670;&#160;</a></span>joinChannel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.joinChannel </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>调用 joinChannel 方法之后，NERTC SDK 会通过 Android 的 <a href="https://developer.android.com/reference/android/media/AudioManager#setMode(int)">AudioManager.setMode()</a> 方法调整音频模式（audio mode），此后请勿修改 SDK 调整过的音频模式，否则可能会导致音频路由错误等问题。</li>
+<li>加入音视频房间时，如果指定房间尚未创建，云信服务器内部会自动创建一个同名房间。</li>
+<li>传参中 uid 可选，若不指定则默认为 0，SDK 会自动分配一个随机 uid，并在 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a40dc60ee3aa4e010d5fe99603f063549">NERtcCallback#onJoinChannel()</a></code> 回调方法中返回；App 层必须记住该返回值并维护，SDK 不对该返回值进行维护。</li>
+<li>同一个房间内的用户可以互相通话，多个用户加入同一个房间，可以群聊。使用不同 App Key 的 App 之间不能互通。</li>
+<li>用户成功加入房间后，默认订阅房间内所有其他用户的音频流，可能会因此产生用量并影响计费；若您想取消自动订阅，可以在通话前通过调用 <code><a class="el" href="#a7a9135f32ad0e10feb536944fd5a8ab2">NERtc#setParameters()</a></code> 方法实现。</li>
+<li>网络测速过程中无法加入房间。</li>
+<li>若使用了云代理功能，uid 不允许传 0，请用真实的 uid。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>token </td><td>String </td><td>安全认证签名（NERTC Token），可以设置为：<ul>
+<li>
+null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在网易云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>
+已获取的 NERTC Token。安全模式下必须设置为获取到的 Token。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>channelName </td><td>String </td><td>房间名称，设置相同房间名称的用户会进入同一个通话房间。<ul>
+<li>
+字符串格式，长度为 1 ~ 64 字节。</li>
+<li>
+支持以下 89 个字符：a-z, A-Z, 0-9, space, !#$%&amp;()+-:;≤.,&gt;? @[]^_{|}~”  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uid </td><td>long </td><td>用户的唯一标识 ID。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">String serverToken = getTokenFromServer();</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a2a44081baf4bd457749d1c48cd2def36">joinChannel</a>(serverToken, <span class="stringliteral">&quot;roomName&quot;</span>, 3689);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a2a44081baf4bd457749d1c48cd2def36"><div class="ttname"><a href="#a2a44081baf4bd457749d1c48cd2def36">com.netease.lava.nertc.sdk.NERtc.joinChannel</a></div><div class="ttdeci">abstract int joinChannel(String token, String channelName, long uid)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><ul>
+<li>您可以调用 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 方法离开房间。</li>
+<li>直播场景中，观众角色可以通过 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8d0c8bcd317e240c113af10a14655cee">NERtcEx#switchChannel()</a></code> 接口切换房间。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用该方法加入房间后，本地会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a40dc60ee3aa4e010d5fe99603f063549">NERtcCallback#onJoinChannel()</a></code> 回调，远端会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#ae61dabff9747cbd455442eafb8dfe414">NERtcCallback#onUserJoined()</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：重复入会或获取房间信息失败。</li>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如传入的 channelName 不符合要求。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：状态错误，比如引擎尚未初始化或正在进行网络探测。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a53a91a0990a55753e319f1719761b599" name="a53a91a0990a55753e319f1719761b599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a91a0990a55753e319f1719761b599">&#9670;&#160;</a></span>joinChannel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.joinChannel </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a></td>          <td class="paramname"><span class="paramname"><em>channelOptions</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>加入音视频房间。 <br  />
+通过本接口可以实现加入音视频房间，加入房间后可以与房间内的其他用户进行音视频通话。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>调用 joinChannel 方法之后，NERTC SDK 会通过 Android 的 <a href="https://developer.android.com/reference/android/media/AudioManager#setMode(int)">AudioManager.setMode()</a> 方法调整音频模式（audio mode），此后请勿修改 SDK 调整过的音频模式，否则可能会导致音频路由错误等问题。</li>
+<li>加入音视频房间时，如果指定房间尚未创建，云信服务器内部会自动创建一个同名房间。</li>
+<li>传参中 uid 可选，若不指定则默认为 0，SDK 会自动分配一个随机 uid，并在 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a40dc60ee3aa4e010d5fe99603f063549">NERtcCallback#onJoinChannel()</a></code> 回调方法中返回；App 层必须记住该返回值并维护，SDK 不对该返回值进行维护。</li>
+<li>同一个房间内的用户可以互相通话，多个用户加入同一个房间，可以群聊。使用不同 App Key 的 App 之间不能互通。</li>
+<li>用户成功加入房间后，默认订阅房间内所有其他用户的音频流，可能会因此产生用量并影响计费；若您想取消自动订阅，可以在通话前通过调用 <code><a class="el" href="#a7a9135f32ad0e10feb536944fd5a8ab2">NERtc#setParameters()</a></code> 方法实现。</li>
+<li>网络测速过程中无法加入房间。</li>
+<li>若使用了云代理功能，uid 不允许传 0，请用真实的 uid。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>token </td><td>String </td><td>安全认证签名（NERTC Token），可以设置为：<ul>
+<li>
+null。调试模式下可设置为 null。安全性不高，建议在产品正式上线前在网易云信控制台中将鉴权方式恢复为默认的安全模式。</li>
+<li>
+已获取的 NERTC Token。安全模式下必须设置为获取到的 Token。若未传入正确的 Token 将无法进入房间。推荐使用安全模式。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>channelName </td><td>String </td><td>房间名称，设置相同房间名称的用户会进入同一个通话房间。<ul>
+<li>
+字符串格式，长度为 1 ~ 64 字节。</li>
+<li>
+支持以下 89 个字符：a-z, A-Z, 0-9, space, !#$%&amp;()+-:;≤.,&gt;? @[]^_{|}~”  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uid </td><td>long </td><td>用户的唯一标识 ID。  </td></tr>
+<tr>
+<td>channelOptions </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_join_channel_options.html">NERtcJoinChannelOptions</a></code> </td><td>加入房间时设置一些特定的房间参数。默认值为 null。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line">String serverToken = getTokenFromServer();</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a2a44081baf4bd457749d1c48cd2def36">joinChannel</a>(serverToken, <span class="stringliteral">&quot;roomName&quot;</span>, 3689);</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd><ul>
+<li>您可以调用 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 方法离开房间。</li>
+<li>直播场景中，观众角色可以通过 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8d0c8bcd317e240c113af10a14655cee">NERtcEx#switchChannel()</a></code> 接口切换房间。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用该方法加入房间后，本地会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a40dc60ee3aa4e010d5fe99603f063549">NERtcCallback#onJoinChannel()</a></code> 回调，远端会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#ae61dabff9747cbd455442eafb8dfe414">NERtcCallback#onUserJoined()</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：重复入会或获取房间信息失败。</li>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如传入的 channelName 不符合要求。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：状态错误，比如引擎尚未初始化或正在进行网络探测。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="af42a2d700d78e67022ea04345229fe94" name="af42a2d700d78e67022ea04345229fe94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af42a2d700d78e67022ea04345229fe94">&#9670;&#160;</a></span>leaveChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.leaveChannel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>离开音视频房间。 <br  />
+通过本接口可以实现挂断或退出通话，并释放本房间内的相关资源。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化并成功加入房间后调用该方法。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>结束通话时必须调用此方法离开房间，否则无法开始下一次通话。 </dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#af42a2d700d78e67022ea04345229fe94">leaveChannel</a>();</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_af42a2d700d78e67022ea04345229fe94"><div class="ttname"><a href="#af42a2d700d78e67022ea04345229fe94">com.netease.lava.nertc.sdk.NERtc.leaveChannel</a></div><div class="ttdeci">abstract int leaveChannel()</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>成功调用该方法离开房间后，本地会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a8c4cbc5219d80e3dedf66d0570d470a4">NERtcCallback#onLeaveChannel()</a></code> 回调，远端会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#aeb2604dfb4551fe537f61b67fd1cfa5b">NERtcCallback#onUserLeave()</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：状态错误，比如引擎尚未初始化或正在进行网络探测。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="adccc96746b013e42f18937482ed08ac5" name="adccc96746b013e42f18937482ed08ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adccc96746b013e42f18937482ed08ac5">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void com.netease.lava.nertc.sdk.NERtc.release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>销毁 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例，释放资源。 <br  />
+该方法释放 NERTC SDK 使用的所有资源。有些 App 只在用户需要时才进行实时音视频通信，完成音视频通话后，则将资源释放出来用于其他操作，该方法适用于此类情况。</p><ul>
+<li>该接口需要在调用 <code>leaveChannel</code>、并收到 <code>onUserLeave</code> 回调后调用。或收到 <code>onDisconnect</code> 回调、重连失败时调用此接口销毁实例，并释放资源。</li>
+<li>调用 <code>release</code> 方法后，您将无法再使用 SDK 的其它方法和回调。如需再次使用实时音视频通话功能，您必须等待 <code>release</code> 方法执行结束后，重新创建一个新的 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例。 <dl class="section note"><dt>注解</dt><dd></dd></dl>
+</li>
+<li><code><a class="el" href="#adccc96746b013e42f18937482ed08ac5">NERtc#release()</a></code> 方法需要和 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 方法在同一线程中，且需要在 leaveChannel 后执行。如果在不同线程中并发调用此接口可能会引起应用崩溃。</li>
+<li>如果 <code>init</code> 初始化引擎失败，需要等待 <code>release</code> 同步返回后再次初始化引擎，否则重复初始化引擎，SDK 会抛出 RuntimeException。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a6e5e0fdae26c2d6e2066d29df4bd4c59" name="a6e5e0fdae26c2d6e2066d29df4bd4c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5e0fdae26c2d6e2066d29df4bd4c59">&#9670;&#160;</a></span>setAudioProfile() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setAudioProfile </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>profile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等。 </p><dl class="section since"><dt>自从</dt><dd>V5.5.40 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>profile </td><td>int </td><td>设置采样率、码率、编码模式和声道数。详细信息请参考 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html">NERtcConstants.AudioProfile</a></code>。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 profile 为标准模式</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a577e39135f6388f4d02e4cb72f97a9f3">setAudioProfile</a>(<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html">AudioProfile</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html#a4b293a3811cfd6d084b3f8a7e0d9593a">STANDARD</a>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a577e39135f6388f4d02e4cb72f97a9f3"><div class="ttname"><a href="#a577e39135f6388f4d02e4cb72f97a9f3">com.netease.lava.nertc.sdk.NERtc.setAudioProfile</a></div><div class="ttdeci">abstract int setAudioProfile(int profile, int scenario)</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html">com.netease.lava.nertc.sdk.NERtcConstants.AudioProfile</a></div><div class="ttdef"><b>定义</b> NERtcConstants.java:2129</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile_html_a4b293a3811cfd6d084b3f8a7e0d9593a"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html#a4b293a3811cfd6d084b3f8a7e0d9593a">com.netease.lava.nertc.sdk.NERtcConstants.AudioProfile.STANDARD</a></div><div class="ttdeci">int STANDARD</div><div class="ttdef"><b>定义</b> NERtcConstants.java:2148</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：引擎内部错误。</li>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如 profile 设置的值有误。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a577e39135f6388f4d02e4cb72f97a9f3" name="a577e39135f6388f4d02e4cb72f97a9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a577e39135f6388f4d02e4cb72f97a9f3">&#9670;&#160;</a></span>setAudioProfile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setAudioProfile </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>profile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>scenario</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置音频编码属性。 <br  />
+通过此接口可以实现设置音频编码的采样率、码率、编码模式、声道数等，也可以设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景等。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>音乐场景下，建议将 profile 设置为 HIGH_QUALITY。 若您通过 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a9a299bfd254abbe461efbd60d5f9dcb3">NERtcEx#setChannelProfile()</a></code> 接口设置房间场景为直播模式，即 LIVE_BROADCASTING，但未调用此方法设置音频编码属性，或仅设置 profile 为 DEFAULT，则 SDK 会自动设置 profile 为 HIGH_QUALITY，且设置 scenario 为 MUSIC。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>profile </td><td>int </td><td>设置采样率、码率、编码模式和声道数。详细信息请参考 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html">NERtcConstants.AudioProfile</a></code>。  </td></tr>
+<tr>
+<td>scenario </td><td>int </td><td>设置音频应用场景。详细信息请参考 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html">NERtcConstants.AudioScenario</a></code>。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 profile 为标准模式，scenario 为语音场景</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a577e39135f6388f4d02e4cb72f97a9f3">setAudioProfile</a>(<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html">AudioProfile</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_profile.html#a4b293a3811cfd6d084b3f8a7e0d9593a">STANDARD</a>, <a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html">AudioScenario</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html#a5256f2750362cd822600c45b4731475b">SPEECH</a>);</div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html">com.netease.lava.nertc.sdk.NERtcConstants.AudioScenario</a></div><div class="ttdef"><b>定义</b> NERtcConstants.java:2206</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario_html_a5256f2750362cd822600c45b4731475b"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html#a5256f2750362cd822600c45b4731475b">com.netease.lava.nertc.sdk.NERtcConstants.AudioScenario.SPEECH</a></div><div class="ttdeci">int SPEECH</div><div class="ttdef"><b>定义</b> NERtcConstants.java:2224</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：引擎内部错误。</li>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如 profile、scenario 设置的值有误。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a3b509c58dd72098f863acf82e922fc23" name="a3b509c58dd72098f863acf82e922fc23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b509c58dd72098f863acf82e922fc23">&#9670;&#160;</a></span>setAudioScenario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setAudioScenario </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>scenario</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置音频应用场景 <br  />
+通过此接口可以实现设置音频属性的应用场景，包括聊天室场景、语音场景、音乐场景等。 </p><dl class="section since"><dt>自从</dt><dd>V5.5.40 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>scenario </td><td>int </td><td>设置音频应用场景。详细信息请参考 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html">NERtcConstants.AudioScenario</a></code>。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置 profile 为标准模式，scenario 为语音场景</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a3b509c58dd72098f863acf82e922fc23">setAudioScenario</a>(<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html">AudioScenario</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_scenario.html#a5256f2750362cd822600c45b4731475b">SPEECH</a>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a3b509c58dd72098f863acf82e922fc23"><div class="ttname"><a href="#a3b509c58dd72098f863acf82e922fc23">com.netease.lava.nertc.sdk.NERtc.setAudioScenario</a></div><div class="ttdeci">abstract int setAudioScenario(int scenario)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30001（ENGINE_ERROR_FATAL）：引擎内部错误。</li>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如 scenario 设置的值有误。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a9aa68f7f4c96b7a84a04e79941dc9015" name="a9aa68f7f4c96b7a84a04e79941dc9015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa68f7f4c96b7a84a04e79941dc9015">&#9670;&#160;</a></span>setCameraCaptureConfig() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setCameraCaptureConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a></td>          <td class="paramname"><span class="paramname"><em>captureConfig</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置本地摄像头的视频主流采集配置。 <br  />
+通过此接口可以设置本地摄像头采集的主流视频宽度、高度、旋转角度等。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>在视频通话或直播中，SDK 自动控制摄像头的输出参数。默认情况下，SDK 会根据用户该接口的配置匹配最合适的分辨率进行采集。但是在部分业务场景中，如果采集画面质量无法满足实际需求，可以调用该接口调整摄像头的采集配置。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>该方法仅适用于视频主流，若您希望为辅流通道设置摄像头的采集配置，请调用 <code><a class="el" href="#ada5553b88fe5dd19572872fb59eee564">NERtc#setCameraCaptureConfig(NERtcCameraCaptureConfig captureConfig, NERtcVideoStreamType streamType)</a></code> 方法。</li>
+<li>该方法支持在加入房间后动态调用，设置成功后，会自动重启摄像头采集模块。</li>
+<li>若系统相机不支持您设置的分辨率，会自动调整为最相近一档的分辨率，因此建议您设置为常规标准的分辨率。</li>
+<li>设置较高的采集分辨率会增加性能消耗，例如 CPU 和内存占用等，尤其是在开启视频前处理的场景下。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>captureConfig </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">video.NERtcCameraCaptureConfig</a></code> </td><td>本地摄像头采集配置。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a> capConfig = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a>();</div>
+<div class="line">capConfig.captureWidth = 1080;</div>
+<div class="line">capConfig.captureHeight = 720;</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a9aa68f7f4c96b7a84a04e79941dc9015">setCameraCaptureConfig</a>(capConfig);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a9aa68f7f4c96b7a84a04e79941dc9015"><div class="ttname"><a href="#a9aa68f7f4c96b7a84a04e79941dc9015">com.netease.lava.nertc.sdk.NERtc.setCameraCaptureConfig</a></div><div class="ttdeci">abstract int setCameraCaptureConfig(NERtcCameraCaptureConfig captureConfig)</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">com.netease.lava.nertc.sdk.video.NERtcCameraCaptureConfig</a></div><div class="ttdef"><b>定义</b> NERtcCameraCaptureConfig.java:16</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如 captureConfig 设置为空。</li>
+<li>30004（ENGINE_ERROR_NOT_SUPPORTED）：不支持的操作，比如当前使用的是纯音频 SDK。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ada5553b88fe5dd19572872fb59eee564" name="ada5553b88fe5dd19572872fb59eee564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5553b88fe5dd19572872fb59eee564">&#9670;&#160;</a></span>setCameraCaptureConfig() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setCameraCaptureConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a></td>          <td class="paramname"><span class="paramname"><em>captureConfig</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置本地摄像头的视频主流或辅流采集配置。 <br  />
+通过此接口可以设置本地摄像头采集的主流或辅流视频宽度、高度、旋转角度等。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>在视频通话或直播中，SDK 自动控制摄像头的输出参数。默认情况下，SDK 会根据用户该接口的配置匹配最合适的分辨率进行采集。但是在部分业务场景中，如果采集画面质量无法满足实际需求，可以调用该接口调整摄像头的采集配置。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>调用该接口设置成功后，会自动重启摄像头采集模块。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>captureConfig </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">video.NERtcCameraCaptureConfig</a></code> </td><td>本地摄像头采集配置。  </td></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">video.NERtcVideoStreamType</a></code> </td><td>视频通道类型：<ul>
+<li>
+kNERtcVideoStreamTypeMain：主流。</li>
+<li>
+kNERtcVideoStreamTypeSub：辅流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置本地摄像头主流采集配置</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a> capConfig = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a>();</div>
+<div class="line">capConfig.captureWidth = 1280;</div>
+<div class="line">capConfig.captureHeight = 720;</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a9aa68f7f4c96b7a84a04e79941dc9015">setCameraCaptureConfig</a>(capConfig, <a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">kNERtcVideoStreamTypeMain</a>);</div>
+<div class="line"><span class="comment">//设置本地摄像头辅流采集配置</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a> subCapConfig = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_camera_capture_config.html">NERtcCameraCaptureConfig</a>();</div>
+<div class="line">subCapConfig.captureWidth = 1280;</div>
+<div class="line">subCapConfig.captureHeight = 720;</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a9aa68f7f4c96b7a84a04e79941dc9015">setCameraCaptureConfig</a>(subCapConfig, <a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">kNERtcVideoStreamTypeSub</a>);</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如 captureConfig 设置为空。</li>
+<li>30004（ENGINE_ERROR_NOT_SUPPORTED）：不支持的操作，比如当前使用的是纯音频 SDK。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a20a4f919dbc80cfe7a95cf631e886cf2" name="a20a4f919dbc80cfe7a95cf631e886cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a4f919dbc80cfe7a95cf631e886cf2">&#9670;&#160;</a></span>setLocalVideoConfig() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setLocalVideoConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a></td>          <td class="paramname"><span class="paramname"><em>videoConfig</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置视频编码属性。 <br  />
+通过此接口可以设置视频主流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数，详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/jEzNTM2NDg">设置视频属性</a>。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>每个属性对应一套视频参数，例如分辨率、帧率、码率等。所有设置的参数均为理想情况下的最大值。当视频引擎因网络环境等原因无法达到设置的分辨率、帧率或码率的最大值时，会取最接近最大值的那个值。</li>
+<li>此接口为全量参数配置接口，重复调用此接口时，SDK 会刷新此前的所有参数配置，以最新的传参为准。所以每次修改配置时都需要设置所有参数，未设置的参数将取默认值。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>videoConfig </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">video.NERtcVideoConfig</a></code> </td><td>视频编码属性配置。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置本地视频主流编码参数</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a> config = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a>();</div>
+<div class="line">config.width = 640;  <span class="comment">//设置分辨率宽</span></div>
+<div class="line">config.height = 360; <span class="comment">//设置分辨率高</span></div>
+<div class="line">config.videoCropMode = <a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html">VideoCropMode</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html#af5ddd11ef24f9669c43b150f0cf528b6">CROP_16x9</a>;  <span class="comment">//设置裁剪格式 16:9</span></div>
+<div class="line">config.frameRate = NERtcEncodeConfig.NERtcVideoFrameRate.FRAME_RATE_FPS_30; <span class="comment">//视频帧率</span></div>
+<div class="line">config.minFramerate = minFrameRate;  <span class="comment">//视频最小帧率</span></div>
+<div class="line">config.minBitrate = minBitRate;  <span class="comment">//视频编码码率</span></div>
+<div class="line">config.degradationPrefer =  <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a>.NERtcDegradationPreference.DEGRADATION_DEFAULT;  <span class="comment">//带宽受限时的视频编码降级偏好</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a20a4f919dbc80cfe7a95cf631e886cf2">setLocalVideoConfig</a>(config);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a20a4f919dbc80cfe7a95cf631e886cf2"><div class="ttname"><a href="#a20a4f919dbc80cfe7a95cf631e886cf2">com.netease.lava.nertc.sdk.NERtc.setLocalVideoConfig</a></div><div class="ttdeci">abstract int setLocalVideoConfig(NERtcVideoConfig videoConfig)</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">com.netease.lava.nertc.sdk.video.NERtcVideoConfig</a></div><div class="ttdef"><b>定义</b> NERtcVideoConfig.java:18</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html">com.netease.lava.nertc.sdk.NERtcConstants.VideoCropMode</a></div><div class="ttdef"><b>定义</b> NERtcConstants.java:1871</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode_html_af5ddd11ef24f9669c43b150f0cf528b6"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html#af5ddd11ef24f9669c43b150f0cf528b6">com.netease.lava.nertc.sdk.NERtcConstants.VideoCropMode.CROP_16x9</a></div><div class="ttdeci">int CROP_16x9</div><div class="ttdef"><b>定义</b> NERtcConstants.java:1891</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望为视频辅流通道设置编码属性，请调用 <code><a class="el" href="#ac0ae5d451a01fe2510d1c21e909c247a">NERtc#setLocalVideoConfig(NERtcVideoConfig videoConfig, NERtcVideoStreamType streamType)</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ac0ae5d451a01fe2510d1c21e909c247a" name="ac0ae5d451a01fe2510d1c21e909c247a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ae5d451a01fe2510d1c21e909c247a">&#9670;&#160;</a></span>setLocalVideoConfig() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setLocalVideoConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a></td>          <td class="paramname"><span class="paramname"><em>videoConfig</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置视频编码属性。 <br  />
+通过此接口可以设置视频主流或辅流的编码分辨率、裁剪模式、码率、帧率、带宽受限时的视频编码降级偏好、编码的镜像模式、编码的方向模式参数，详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/jEzNTM2NDg">设置视频属性</a>。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>每个属性对应一套视频参数，例如分辨率、帧率、码率等。所有设置的参数均为理想情况下的最大值。当视频引擎因网络环境等原因无法达到设置的分辨率、帧率或码率的最大值时，会取最接近最大值的那个值。</li>
+<li>此接口为全量参数配置接口，重复调用此接口时，SDK 会刷新此前的所有参数配置，以最新的传参为准。所以每次修改配置时都需要设置所有参数，未设置的参数将取默认值。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>streamType </td><td>boolean </td><td>视频通道类型：<ul>
+<li>
+kNERtcVideoStreamTypeMain：主流。</li>
+<li>
+kNERtcVideoStreamTypeSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>videoConfig </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">video.NERtcVideoConfig</a></code> </td><td>视频编码属性配置。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//设置本地视频主流编码参数</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a> config = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a>();</div>
+<div class="line">config.width = 640;  <span class="comment">//设置分辨率宽</span></div>
+<div class="line">config.height = 360; <span class="comment">//设置分辨率高</span></div>
+<div class="line">config.videoCropMode = <a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html">VideoCropMode</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html#af5ddd11ef24f9669c43b150f0cf528b6">CROP_16x9</a>;  <span class="comment">//设置裁剪格式 16:9</span></div>
+<div class="line">config.frameRate = NERtcEncodeConfig.NERtcVideoFrameRate.FRAME_RATE_FPS_30; <span class="comment">//视频帧率</span></div>
+<div class="line">config.minFramerate = minFrameRate;  <span class="comment">//视频最小帧率</span></div>
+<div class="line">config.minBitrate = minBitRate;  <span class="comment">//视频编码码率</span></div>
+<div class="line">config.degradationPrefer =  <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a>.NERtcDegradationPreference.DEGRADATION_DEFAULT;  <span class="comment">//带宽受限时的视频编码降级偏好</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a20a4f919dbc80cfe7a95cf631e886cf2">setLocalVideoConfig</a>(config, <a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">kNERtcVideoStreamTypeMain</a>); </div>
+<div class="line"><span class="comment">//设置本地视频辅流编码参数</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a> subConfig = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a>();</div>
+<div class="line">subConfig.width = 640;  <span class="comment">//设置分辨率宽</span></div>
+<div class="line">subConfig.height = 360; <span class="comment">//设置分辨率高</span></div>
+<div class="line">subConfig.videoCropMode = <a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants.html">NERtcConstants</a>.<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html">VideoCropMode</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_video_crop_mode.html#af5ddd11ef24f9669c43b150f0cf528b6">CROP_16x9</a>;  </div>
+<div class="line">subConfig.frameRate = NERtcEncodeConfig.NERtcVideoFrameRate.FRAME_RATE_FPS_30;</div>
+<div class="line">subConfig.minFramerate = minFrameRate;  <span class="comment">//视频最小帧率</span></div>
+<div class="line">subConfig.minBitrate = minBitRate;  <span class="comment">//视频编码码率</span></div>
+<div class="line">subConfig.degradationPrefer =  <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_config.html">NERtcVideoConfig</a>.NERtcDegradationPreference.DEGRADATION_DEFAULT;  </div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a20a4f919dbc80cfe7a95cf631e886cf2">setLocalVideoConfig</a>(subConfig, <a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">kNERtcVideoStreamTypeSub</a>); </div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30003（ENGINE_ERROR_INVALID_PARAM）：参数错误，比如 videoConfig 设置为空。</li>
+<li>30004（ENGINE_ERROR_NOT_SUPPORTED）：不支持的操作，比如当前使用的是纯音频 SDK。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7a9135f32ad0e10feb536944fd5a8ab2" name="a7a9135f32ad0e10feb536944fd5a8ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9135f32ad0e10feb536944fd5a8ab2">&#9670;&#160;</a></span>setParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void com.netease.lava.nertc.sdk.NERtc.setParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a></td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> throws IllegalArgumentException</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置音视频通话的相关参数。 <br  />
+ 此接口提供技术预览或特别定制功能，详情请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>params </td><td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a></code> </td><td>音视频通话的参数集合。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a> rtrcParameters = <span class="keyword">new</span> <a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a>();</div>
+<div class="line">rtrcParameters.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a219a8535d0278ce445a243900f12961c">set</a>(<a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a>.<a class="code hl_variable" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a23e9e44441f62df3a224f8bf6f1c353f">KEY_AUTO_SUBSCRIBE_VIDEO</a>, <span class="keyword">true</span>)</div>
+<div class="line">rtrcParameters.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a219a8535d0278ce445a243900f12961c">set</a>(<a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">NERtcParameters</a>.<a class="code hl_variable" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a4f842e107db449edbb73ee889e092b67">KEY_VIDEO_ENCODE_MODE</a>,<a class="code hl_interface" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_media_codec_mode.html">MediaCodecMode</a>.<a class="code hl_variable" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_media_codec_mode.html#aae676751cd8a236ba61b67e818c256a0">MEDIA_CODEC_SOFTWARE</a>);</div>
+<div class="line">...</div>
+<div class="line">NERtcEx.getInstance().setParameters(rtrcParameters);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html">com.netease.lava.nertc.sdk.NERtcParameters</a></div><div class="ttdef"><b>定义</b> NERtcParameters.java:34</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters_html_a219a8535d0278ce445a243900f12961c"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a219a8535d0278ce445a243900f12961c">com.netease.lava.nertc.sdk.NERtcParameters.set</a></div><div class="ttdeci">final&lt; T &gt; void set(Key&lt; T &gt; key, T value)</div><div class="ttdef"><b>定义</b> NERtcParameters.java:734</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters_html_a23e9e44441f62df3a224f8bf6f1c353f"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a23e9e44441f62df3a224f8bf6f1c353f">com.netease.lava.nertc.sdk.NERtcParameters.KEY_AUTO_SUBSCRIBE_VIDEO</a></div><div class="ttdeci">static final Key&lt; Boolean &gt; KEY_AUTO_SUBSCRIBE_VIDEO</div><div class="ttdef"><b>定义</b> NERtcParameters.java:255</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters_html_a4f842e107db449edbb73ee889e092b67"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_parameters.html#a4f842e107db449edbb73ee889e092b67">com.netease.lava.nertc.sdk.NERtcParameters.KEY_VIDEO_ENCODE_MODE</a></div><div class="ttdeci">static final Key&lt; String &gt; KEY_VIDEO_ENCODE_MODE</div><div class="ttdef"><b>定义</b> NERtcParameters.java:351</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_media_codec_mode_html"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_media_codec_mode.html">com.netease.lava.nertc.sdk.NERtcConstants.MediaCodecMode</a></div><div class="ttdef"><b>定义</b> NERtcConstants.java:1143</div></div>
+<div class="ttc" id="ainterfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_media_codec_mode_html_aae676751cd8a236ba61b67e818c256a0"><div class="ttname"><a href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_media_codec_mode.html#aae676751cd8a236ba61b67e818c256a0">com.netease.lava.nertc.sdk.NERtcConstants.MediaCodecMode.MEDIA_CODEC_SOFTWARE</a></div><div class="ttdeci">String MEDIA_CODEC_SOFTWARE</div><div class="ttdef"><b>定义</b> NERtcConstants.java:1174</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+</div>
+</div>
+<a id="a4c008dfb1448f3bb09115d411bf21f27" name="a4c008dfb1448f3bb09115d411bf21f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c008dfb1448f3bb09115d411bf21f27">&#9670;&#160;</a></span>setupLocalVideoCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setupLocalVideoCanvas </td>
+          <td>(</td>
+          <td class="paramtype">IVideoRender</td>          <td class="paramname"><span class="paramname"><em>render</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置本地用户视图。 <br  />
+ 通过本接口可以实现绑定本地用户和显示视图，并设置本地用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>在实际业务中，通常建议在初始化后即调用该方法进行本地视图设置，然后再加入房间或开启预览。</li>
+<li>在无需使用画布时，建议及时释放之前的画布，否则可能会引起系统 EGL 资源耗尽而导致程序崩溃。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>render </td><td>IVideoRender </td><td>本地用户视频的画布。设置为 NULL 表示取消并释放已设置的画布，详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html">video.NERtcVideoView</a></code>。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html">NERtcVideoView</a> videoRender = xxx;</div>
+<div class="line"><span class="comment">//设置本地视频画布</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a95df7bba7cf909c258b823eb593dbcbc">setupLocalVideoCanvas</a>(videoRender);</div>
+<div class="line"><span class="comment">//不需要时用时释放画布</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a95df7bba7cf909c258b823eb593dbcbc">setupLocalVideoCanvas</a>(<span class="keyword">null</span>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex_html_a95df7bba7cf909c258b823eb593dbcbc"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a95df7bba7cf909c258b823eb593dbcbc">com.netease.lava.nertc.sdk.NERtcEx.setupLocalVideoCanvas</a></div><div class="ttdeci">abstract int setupLocalVideoCanvas(NERtcVideoStreamType streamType, IVideoRender render)</div></div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view_html"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html">com.netease.lava.nertc.sdk.video.NERtcVideoView</a></div><div class="ttdef"><b>定义</b> NERtcVideoView.java:35</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望在通话中更新本地用户视图的渲染或镜像模式，请使用 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html#abb81b7ac30f8b82a47b515051099b699">NERtcVideoView#setScalingType(int)</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎尚未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a42244c0d7d497ab5d3a3390aeb619a3e" name="a42244c0d7d497ab5d3a3390aeb619a3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42244c0d7d497ab5d3a3390aeb619a3e">&#9670;&#160;</a></span>setupRemoteVideoCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.setupRemoteVideoCanvas </td>
+          <td>(</td>
+          <td class="paramtype">IVideoRender</td>          <td class="paramname"><span class="paramname"><em>render</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置远端用户视图。 <br  />
+通过本接口可以实现绑定远端用户和显示视图，并设置远端用户视图在本地显示时的镜像模式和裁减比例，只影响本地用户看到的视频画面。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>您可以通过设置 render 参数为空以解除远端用户视图绑定；退出房间后，SDK 也会主动清除远端用户和视图的绑定关系。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>render </td><td>IVideoRender </td><td>远端用户视频的画布。详细信息请参考 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html">video.NERtcVideoView</a></code>。  </td></tr>
+<tr>
+<td>uid </td><td>long </td><td>远端用户的 ID。可以在 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#ae61dabff9747cbd455442eafb8dfe414">NERtcCallback#onUserJoined()</a></code> 回调中获取。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="keywordtype">int</span> remoteUID = 12345;</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html">NERtcVideoView</a> view = getRemoteRenderView();</div>
+<div class="line"><span class="comment">//绑定画布</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1c02abd4b962ee37e58d70b856d431b9">setupRemoteVideoCanvas</a>(view, remoteUID);</div>
+<div class="line"><span class="comment">//退出房间主动解绑</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1c02abd4b962ee37e58d70b856d431b9">setupRemoteVideoCanvas</a>(<span class="keyword">null</span>, remoteUID);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex_html_a1c02abd4b962ee37e58d70b856d431b9"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1c02abd4b962ee37e58d70b856d431b9">com.netease.lava.nertc.sdk.NERtcEx.setupRemoteVideoCanvas</a></div><div class="ttdeci">abstract int setupRemoteVideoCanvas(NERtcVideoStreamType streamType, IVideoRender render, long uid)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望在通话中更新远端用户视图的渲染模式，请调用 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html#abb81b7ac30f8b82a47b515051099b699">NERtcVideoView#setScalingType(int)</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（kNERtcErrInvalidState）：当前状态不支持的操作，比如引擎尚未初始化成功。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a08ccea99f4d15400765bd682c9738292" name="a08ccea99f4d15400765bd682c9738292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ccea99f4d15400765bd682c9738292">&#9670;&#160;</a></span>startVideoPreview() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.startVideoPreview </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启视频预览。 <br  />
+ 通过本接口可以实现在加入房间前启动本地视频预览，支持预览本地摄像头或外部输入视频。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在通过 <code><a class="el" href="#a4c008dfb1448f3bb09115d411bf21f27">NERtc#setupLocalVideoCanvas(IVideoRender render)</a></code> 接口设置视频画布后调用该方法。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法仅可当不在房间内时可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>适用于加入房间前检查设备状态是否可用、预览视频效果等场景。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>在加入房间前预览视频效果时设置的美颜、虚拟背景等视频效果在房间内仍然生效；在房间内设置的视频效果在退出房间后预览视频时也可生效。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//开启视频预览</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a08ccea99f4d15400765bd682c9738292">startVideoPreview</a>();</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a08ccea99f4d15400765bd682c9738292"><div class="ttname"><a href="#a08ccea99f4d15400765bd682c9738292">com.netease.lava.nertc.sdk.NERtc.startVideoPreview</a></div><div class="ttdeci">abstract int startVideoPreview()</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>该方法仅适用于视频主流，若您希望开启辅流通道的视频预览，请调用 <code><a class="el" href="#afbf7f0de6fdd33a63d9f8bb60031e5f8">NERtc#startVideoPreview(NERtcVideoStreamType streamType)</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30004（ENGINE_ERROR_NOT_SUPPORTED）：不支持的操作，比如已经加入房间。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化成功。</li>
+<li>30008（ENGINE_ERROR_DEVICE_NOT_FOUND）：未找到设备。</li>
+<li>30011（ENGINE_ERROR_CREATE_DEVICE_SOURCE_FAIL）：创建设备源失败。</li>
+<li>30027（ENGINE_ERROR_CAMERA_OCCUIPIED）: 所选设备已被占用，比如已通过主流通道开启了摄像头，无法再通过辅流通道开启摄像头预览。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="afbf7f0de6fdd33a63d9f8bb60031e5f8" name="afbf7f0de6fdd33a63d9f8bb60031e5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf7f0de6fdd33a63d9f8bb60031e5f8">&#9670;&#160;</a></span>startVideoPreview() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.startVideoPreview </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>streamType</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启视频预览。 <br  />
+ 通过本接口可以实现在加入房间前启动本地视频预览，支持预览本地摄像头或外部输入视频。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在通过 <code><a class="el" href="#a4c008dfb1448f3bb09115d411bf21f27">NERtc#setupLocalVideoCanvas(IVideoRender render)</a></code> 接口设置视频画布后调用该方法。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法仅可当不在房间内时可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>适用于加入房间前检查设备状态是否可用、预览视频效果等场景。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>在加入房间前预览视频效果时设置的美颜、虚拟背景等视频效果在房间内仍然生效；在房间内设置的视频效果在退出房间后预览视频时也可生效。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">video.NERtcVideoStreamType</a></code> </td><td>视频通道类型：<ul>
+<li>
+kNERtcVideoStreamTypeMain：主流。</li>
+<li>
+kNERtcVideoStreamTypeSub：辅流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//开启主流视频通道预览</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a08ccea99f4d15400765bd682c9738292">startVideoPreview</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">kNERtcVideoStreamTypeMain</a>);</div>
+<div class="line"><span class="comment">//开启辅流视频通道预览</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a08ccea99f4d15400765bd682c9738292">startVideoPreview</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">kNERtcVideoStreamTypeSub</a>);</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30004（ENGINE_ERROR_NOT_SUPPORTED）：不支持的操作，比如已经加入房间。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化成功。</li>
+<li>30008（ENGINE_ERROR_DEVICE_NOT_FOUND）：未找到设备。</li>
+<li>30011（ENGINE_ERROR_CREATE_DEVICE_SOURCE_FAIL）：创建设备源失败。</li>
+<li>30027（ENGINE_ERROR_CAMERA_OCCUIPIED）: 所选设备已被占用，比如已通过主流通道开启了摄像头，无法再通过辅流通道开启摄像头预览。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a46955a65822752a92e8c9d83f8a9d5a3" name="a46955a65822752a92e8c9d83f8a9d5a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46955a65822752a92e8c9d83f8a9d5a3">&#9670;&#160;</a></span>stopVideoPreview() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.stopVideoPreview </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>停止视频预览。 <br  />
+通过此接口可以实现在预览本地视频后关闭预览。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>建议在通过 <code><a class="el" href="#afbf7f0de6fdd33a63d9f8bb60031e5f8">NERtc#startVideoPreview(NERtcVideoStreamType streamType)</a></code> 接口开启视频预览后调用该方法。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法仅可当不在房间内时可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。</li>
+<li>该方法只适用于视频主流，若您希望停止辅流通道的视频预览，请调用 <code><a class="el" href="#a23f4d820a20c7be94ae4d793a81c8a0d">NERtc#stopVideoPreview(NERtcVideoStreamType streamType)</a></code> 方法。 </li>
+</ul>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a46955a65822752a92e8c9d83f8a9d5a3">stopVideoPreview</a>();</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a46955a65822752a92e8c9d83f8a9d5a3"><div class="ttname"><a href="#a46955a65822752a92e8c9d83f8a9d5a3">com.netease.lava.nertc.sdk.NERtc.stopVideoPreview</a></div><div class="ttdeci">abstract int stopVideoPreview()</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化或已经加入房间。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a23f4d820a20c7be94ae4d793a81c8a0d" name="a23f4d820a20c7be94ae4d793a81c8a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f4d820a20c7be94ae4d793a81c8a0d">&#9670;&#160;</a></span>stopVideoPreview() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.stopVideoPreview </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>streamType</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>停止视频预览。 <br  />
+通过本接口可以实现在预览本地视频后关闭预览。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>建议在通过 <code><a class="el" href="#afbf7f0de6fdd33a63d9f8bb60031e5f8">NERtc#startVideoPreview(NERtcVideoStreamType streamType)</a></code> 接口开启视频预览后调用该方法。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法仅可当不在房间内时可调用。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往<a href="https://doc.yunxin.163.com/nertc/sdk-download" target="_blank">云信官网</a>下载并替换成视频 SDK。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">video.NERtcVideoStreamType</a></code> </td><td>视频通道类型：<ul>
+<li>
+kNERtcVideoStreamTypeMain：主流。</li>
+<li>
+kNERtcVideoStreamTypeSub：辅流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//关闭主流视频通道预览</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a46955a65822752a92e8c9d83f8a9d5a3">stopVideoPreview</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a0e52647f4dfb70d503d50f1506d2b694">kNERtcVideoStreamTypeMain</a>);</div>
+<div class="line"><span class="comment">//关闭辅流视频通道预览</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a46955a65822752a92e8c9d83f8a9d5a3">stopVideoPreview</a>(<a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html">NERtcVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_stream_type.html#a10faf373dc1ddb3722d1a1fe9ca218df">kNERtcVideoStreamTypeSub</a>);</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE）：当前状态不支持的操作，比如引擎未初始化成功或已经加入房间。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a152d9d16a2d3525b0a1edf1c2b228231" name="a152d9d16a2d3525b0a1edf1c2b228231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152d9d16a2d3525b0a1edf1c2b228231">&#9670;&#160;</a></span>subscribeAllRemoteAudioStreams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.subscribeAllRemoteAudioStreams </td>
+          <td>(</td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>subscribe</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>取消或恢复订阅所有远端用户的音频主流。 <br  />
+加入房间时，默认订阅所有远端用户的音频主流，即 <code><a class="el" href="#a7a9135f32ad0e10feb536944fd5a8ab2">NERtc#setParameters()</a></code> 方法的 KEY_AUTO_SUBSCRIBE_AUDIO 参数默认设置为 true；只有当该参数的设置为 false 时，此接口的调用才会生效。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法在加入房间前后均可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>适用于重要会议需要一键全体静音的场景。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>设置该方法的 subscribe 参数为 true 后，对后续加入房间的用户同样生效。 在开启自动订阅（默认）时，设置该方法的 subscribe 参数为 false 可以实现取消订阅所有远端用户的音频流，但此时无法再调用 <code><a class="el" href="#aed2eb31b2e90fd558e9dc2685847aa44">NERtc#subscribeRemoteAudioStream()</a></code> 方法单独订阅指定远端用户的音频流。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>subscribe </td><td>boolean </td><td>是否订阅所有用户的音频主流：<ul>
+<li>
+true：订阅音频主流。</li>
+<li>
+false：取消订阅音频主流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//订阅所有远端用户的音频主流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a152d9d16a2d3525b0a1edf1c2b228231">subscribeAllRemoteAudioStreams</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="comment">//取消订阅所有远端用户的音频主流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#a152d9d16a2d3525b0a1edf1c2b228231">subscribeAllRemoteAudioStreams</a>(<span class="keyword">false</span>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_a152d9d16a2d3525b0a1edf1c2b228231"><div class="ttname"><a href="#a152d9d16a2d3525b0a1edf1c2b228231">com.netease.lava.nertc.sdk.NERtc.subscribeAllRemoteAudioStreams</a></div><div class="ttdeci">abstract int subscribeAllRemoteAudioStreams(boolean subscribe)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：引擎未初始化。</li>
+<li>30105（ENGINE_ERROR_USER_NOT_FOUND）：未找到指定用户。</li>
+<li>30106（ENGNE_ERROR_INVALID_USERID）：非法指定用户，比如订阅了本端。</li>
+<li>30107（ENGINE_ERROR_MEDIA_NOT_STARTED）：媒体会话未建立，比如对端未开启音频主流。</li>
+<li>30108（ENGINE_ERROR_SOURCE_NOT_FOUND）：媒体源未找到，比如对端未开启音频主流。</li>
+<li>30101（ENGINE_ERROR_ROOM_NOT_JOINED): 尚未加入房间。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aed2eb31b2e90fd558e9dc2685847aa44" name="aed2eb31b2e90fd558e9dc2685847aa44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2eb31b2e90fd558e9dc2685847aa44">&#9670;&#160;</a></span>subscribeRemoteAudioStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.subscribeRemoteAudioStream </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>subscribe</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>取消或恢复订阅指定远端用户的音频主流。 <br  />
+加入房间时，默认订阅所有远端用户的音频主流，您也可以通过此方法取消或恢复订阅指定远端用户的音频主流。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>该方法仅在加入房间后收到远端用户开启音频主流的回调 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_abs_n_e_rtc_callback_ex.html#a7ab0252484913254b3d9477bdd7954ef">AbsNERtcCallbackEx#onUserAudioStart()</a></code> 后可调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>适用于需要手动订阅指定用户音频流的场景。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>该方法设置内部引擎为启用状态，在 <code><a class="el" href="#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> 后设置失效，将恢复至默认。 在开启音频自动订阅且未打开服务端 ASL 自动选路的情况下，调用该接口无效。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>uid </td><td>long </td><td>指定用户的 ID。  </td></tr>
+<tr>
+<td>subscribe </td><td>boolean </td><td>是否订阅指定用户的音频主流：<ul>
+<li>
+true：订阅音频主流。</li>
+<li>
+false：取消订阅音频主流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//订阅对方 uid 为 12345 的音频主流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#aed2eb31b2e90fd558e9dc2685847aa44">subscribeRemoteAudioStream</a>(12345, <span class="keyword">true</span>);</div>
+<div class="line"><span class="comment">//取消订阅对方 uid 为 12345 的音频主流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#aed2eb31b2e90fd558e9dc2685847aa44">subscribeRemoteAudioStream</a>(12345, <span class="keyword">false</span>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_aed2eb31b2e90fd558e9dc2685847aa44"><div class="ttname"><a href="#aed2eb31b2e90fd558e9dc2685847aa44">com.netease.lava.nertc.sdk.NERtc.subscribeRemoteAudioStream</a></div><div class="ttdeci">abstract int subscribeRemoteAudioStream(long uid, boolean subscribe)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望订阅指定远端用户的音频辅流，请调用 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a2c6aeea4a21d9828f02e2ef3bdcd1748">NERtcEx#subscribeRemoteSubStreamAudio()</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30004（ENGINE_ERROR_NOT_SUPPORTED）：不支持该操作，由于开启了音频自动订阅且未打开服务端 ASL 自动选路。</li>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：引擎未初始化。</li>
+<li>30105（ENGINE_ERROR_USER_NOT_FOUND）：未找到指定用户。</li>
+<li>30106（ENGNE_ERROR_INVALID_USERID）：非法指定用户，比如订阅了本端。</li>
+<li>30107（ENGINE_ERROR_MEDIA_NOT_STARTED）：媒体会话未建立，比如对端未开启音频主流。</li>
+<li>30108（ENGINE_ERROR_SOURCE_NOT_FOUND）：媒体源未找到，比如对端未开启音频主流。</li>
+<li>30101（ENGINE_ERROR_ROOM_NOT_JOINED): 尚未加入房间。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aeb6ccb7d3481f5524abdc6e4dd38d51a" name="aeb6ccb7d3481f5524abdc6e4dd38d51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6ccb7d3481f5524abdc6e4dd38d51a">&#9670;&#160;</a></span>subscribeRemoteVideoStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.subscribeRemoteVideoStream </td>
+          <td>(</td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html">NERtcRemoteVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>streamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>subscribe</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>订阅或取消订阅指定远端用户的视频主流。 <br  />
+加入房间后，默认不订阅所有远端用户的视频主流；若您希望看到指定远端用户的视频，可以在监听到对方加入房间或发布视频流之后，通过此方法订阅该用户的视频主流。 </p><dl class="section since"><dt>自从</dt><dd>V3.5.0 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在初始化后调用该方法，且该方法仅可在加入房间后调用。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>uid </td><td>long </td><td>指定用户的 ID。  </td></tr>
+<tr>
+<td>streamType </td><td><code><a class="el" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html">video.NERtcRemoteVideoStreamType</a></code> </td><td>订阅的视频流类型：<ul>
+<li>
+kNERtcRemoteVideoStreamTypeHigh：高清画质的大流。</li>
+<li>
+kNERtcRemoteVideoStreamTypeLow：低清画质的小流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>subscribe </td><td>boolean </td><td>是否订阅远端用户的视频流：<ul>
+<li>
+true：订阅指定视频流。</li>
+<li>
+false：不订阅指定视频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//订阅对方 uid 为 12345 的大流</span></div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a60df991400a9225f643a70bfb9150720">subscribeRemoteVideoStream</a>(12345, <a class="code hl_class" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html">NERtcRemoteVideoStreamType</a>.<a class="code hl_variable" href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html#ac7cec9023b01f7554e0f10bc0aa57c13">kNERtcRemoteVideoStreamTypeHigh</a>,<span class="keyword">true</span>);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex_html_a60df991400a9225f643a70bfb9150720"><div class="ttname"><a href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a60df991400a9225f643a70bfb9150720">com.netease.lava.nertc.sdk.NERtcEx.subscribeRemoteVideoStream</a></div><div class="ttdeci">abstract int subscribeRemoteVideoStream(long uid, NERtcVideoStreamType subStreamType, NERtcRemoteVideoStreamType streamType, boolean subscribe)</div></div>
+<div class="ttc" id="aenumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type_html"><div class="ttname"><a href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html">com.netease.lava.nertc.sdk.video.NERtcRemoteVideoStreamType</a></div><div class="ttdef"><b>定义</b> NERtcRemoteVideoStreamType.java:8</div></div>
+<div class="ttc" id="aenumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type_html_ac7cec9023b01f7554e0f10bc0aa57c13"><div class="ttname"><a href="enumcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_remote_video_stream_type.html#ac7cec9023b01f7554e0f10bc0aa57c13">com.netease.lava.nertc.sdk.video.NERtcRemoteVideoStreamType.kNERtcRemoteVideoStreamTypeHigh</a></div><div class="ttdeci">kNERtcRemoteVideoStreamTypeHigh</div><div class="ttdef"><b>定义</b> NERtcRemoteVideoStreamType.java:18</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>若您希望订阅指定远端用户的视频辅流，请调用 <code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a81db18186e7a268e6db4714d5f0cf096">NERtcEx#subscribeRemoteSubStreamVideo()</a></code> 方法。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：状态错误，比如引擎未初始化或未加入房间。</li>
+<li>30009（ENGINE_ERROR_INVALID_DEVICE_SOURCEID）：设备 ID 非法。</li>
+<li>30105（ENGINE_ERROR_USER_NOT_FOUND）：未找到指定用户。</li>
+<li>30106（ENGNE_ERROR_INVALID_USERID）：非法指定用户，比如订阅了本端。</li>
+<li>30107（ENGINE_ERROR_MEDIA_NOT_STARTED）：媒体会话未建立，比如对端未开启视频主流。</li>
+<li>30108（ENGINE_ERROR_SOURCE_NOT_FOUND）：媒体源未找到，比如对端未开启视频主流。  </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ac2d5b0020278cc81e69c8df81c862b4a" name="ac2d5b0020278cc81e69c8df81c862b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d5b0020278cc81e69c8df81c862b4a">&#9670;&#160;</a></span>updatePermissionKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract int com.netease.lava.nertc.sdk.NERtc.updatePermissionKey </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>更新权限密钥。</p><ul>
+<li>通过此接口可以实现当用户权限被变更，或者收到权限密钥即将过期的回调 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a0e96d5648217e1f90c5e589cbf395b74">NERtcCallbackEx#onPermissionKeyWillExpire()</a></code> 时，更新权限密钥。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请确保已开通高级 Token 鉴权功能，具体请联系网易云信商务经理。 </dd></dl>
+<dl class="section user"><dt>调用时机</dt><dd>请在引擎初始化之后调用此接口，且该方法仅可在加入房间后调用。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>适用于变更指定用户加入、创建房间或上下麦时发布流相关权限的场景。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>key </td><td>String </td><td>新的权限密钥。  </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>示例代码</dt><dd><div class="fragment"><div class="line"><span class="comment">//getPermToken 为获取高级密钥方法，由您自行实现，具体请参考官方文档的高级 Token 鉴权章节。&lt;/a&gt;</span></div>
+<div class="line">String permToken = getPermToken();</div>
+<div class="line"><a class="code hl_class" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a>.<a class="code hl_function" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a446e512f55b4a87817fa09a3b7888bb3">getInstance</a>().<a class="code hl_function" href="#ac2d5b0020278cc81e69c8df81c862b4a">updatePermissionKey</a>(permToken);</div>
+<div class="ttc" id="aclasscom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_html_ac2d5b0020278cc81e69c8df81c862b4a"><div class="ttname"><a href="#ac2d5b0020278cc81e69c8df81c862b4a">com.netease.lava.nertc.sdk.NERtc.updatePermissionKey</a></div><div class="ttdeci">abstract int updatePermissionKey(String key)</div></div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>相关回调</dt><dd>调用此接口成功更新权限密钥后会触发 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#afb31b7cd35c95fb1b1aa4bd64346058e">NERtcCallbackEx#onUpdatePermissionKey()</a></code> 回调。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+</li>
+<li>0（OK）：方法调用成功。</li>
+<li>其他：方法调用失败。<ul>
+<li>30005（ENGINE_ERROR_INVALID_STATE)：状态错误，比如引擎尚未初始化。  </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aea39e3412572e1c4799b3c469452cefd" name="aea39e3412572e1c4799b3c469452cefd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea39e3412572e1c4799b3c469452cefd">&#9670;&#160;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_version.html">NERtcVersion</a> com.netease.lava.nertc.sdk.NERtc.version </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询 SDK 版本号。 <br  />
+该方法在加入房间前后都能调用。 </p><dl class="section return"><dt>返回</dt><dd><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_version.html">NERtcVersion</a></code> 版本号  </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><b>NERtc.java</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

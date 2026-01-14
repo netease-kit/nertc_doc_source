@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: &lt;NERtcEngineMediaStatsObserver&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">实例方法</a> &#124;
+<a href="protocol_n_e_rtc_engine_media_stats_observer-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;NERtcEngineMediaStatsObserver&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>统计信息回调   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_engine_statistics_8h_source.html">NERtcEngineStatistics.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;NERtcEngineMediaStatsObserver&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_n_e_rtc_engine_media_stats_observer-p.png" usemap="#_3CNERtcEngineMediaStatsObserver_3E_map" alt=""/>
+  <map id="_3CNERtcEngineMediaStatsObserver_3E_map" name="_3CNERtcEngineMediaStatsObserver_3E_map">
+<area href="protocol_n_e_rtc_channel_media_stats_observer-p.html" title="channel 统计信息回调。" alt="&lt;NERtcChannelMediaStatsObserver&gt;" shape="rect" coords="0,112,224,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+实例方法</h2></td></tr>
+<tr class="memitem:a97665f83f242d7f895f27616844b9f0a" id="r_a97665f83f242d7f895f27616844b9f0a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a97665f83f242d7f895f27616844b9f0a">onRtcStats:</a></td></tr>
+<tr class="memdesc:a97665f83f242d7f895f27616844b9f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前通话统计回调 <br  />
+SDK 定期向 App 报告当前通话的统计信息，每 2 秒触发一次。  <br /></td></tr>
+<tr class="separator:a97665f83f242d7f895f27616844b9f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19565a7b735c9b20ea9b02b75cae3065" id="r_a19565a7b735c9b20ea9b02b75cae3065"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a19565a7b735c9b20ea9b02b75cae3065">onLocalAudioStat:</a></td></tr>
+<tr class="memdesc:a19565a7b735c9b20ea9b02b75cae3065"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地音频流统计信息回调 <br  />
+该回调描述本地设备发送音频流的统计信息，每 2 秒触发一次。  <br /></td></tr>
+<tr class="separator:a19565a7b735c9b20ea9b02b75cae3065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac003c8aa725ca25390ba12ecde1a5526" id="r_ac003c8aa725ca25390ba12ecde1a5526"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac003c8aa725ca25390ba12ecde1a5526">onRemoteAudioStats:</a></td></tr>
+<tr class="memdesc:ac003c8aa725ca25390ba12ecde1a5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">通话中远端音频流的统计信息回调。 <br  />
+该回调描述远端用户在通话中端到端的音频流统计信息，每 2 秒触发一次。  <br /></td></tr>
+<tr class="separator:ac003c8aa725ca25390ba12ecde1a5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be5316ded6ad4c103112a603eb41766" id="r_a2be5316ded6ad4c103112a603eb41766"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a2be5316ded6ad4c103112a603eb41766">onLocalVideoStat:</a></td></tr>
+<tr class="memdesc:a2be5316ded6ad4c103112a603eb41766"><td class="mdescLeft">&#160;</td><td class="mdescRight">本地视频流统计信息回调 <br  />
+该回调描述本地设备发送视频流的统计信息，每 2 秒触发一次。  <br /></td></tr>
+<tr class="separator:a2be5316ded6ad4c103112a603eb41766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bdb1e9854da1c65e139bf2db9520d1" id="r_a16bdb1e9854da1c65e139bf2db9520d1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a16bdb1e9854da1c65e139bf2db9520d1">onRemoteVideoStats:</a></td></tr>
+<tr class="memdesc:a16bdb1e9854da1c65e139bf2db9520d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">通话中远端视频流的统计信息回调 <br  />
+该回调描述远端用户在通话中端到端的视频流统计信息，每 2 秒触发一次。  <br /></td></tr>
+<tr class="separator:a16bdb1e9854da1c65e139bf2db9520d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a05f151be5c68face4f695f002193a" id="r_ad7a05f151be5c68face4f695f002193a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ad7a05f151be5c68face4f695f002193a">onNetworkQuality:</a></td></tr>
+<tr class="memdesc:ad7a05f151be5c68face4f695f002193a"><td class="mdescLeft">&#160;</td><td class="mdescRight">通话中每个用户的网络上下行质量报告回调 <br  />
+该回调描述每个用户在通话中的网络状态，每 2 秒触发一次。  <br /></td></tr>
+<tr class="separator:ad7a05f151be5c68face4f695f002193a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>统计信息回调  </p>
+</div><h2 class="groupheader">成员函数文档</h2>
+<a id="a19565a7b735c9b20ea9b02b75cae3065" name="a19565a7b735c9b20ea9b02b75cae3065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19565a7b735c9b20ea9b02b75cae3065">&#9670;&#160;</a></span>onLocalAudioStat:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onLocalAudioStat: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_audio_send_stats.html">NERtcAudioSendStats</a> *)</td>          <td class="paramname"><span class="paramname"><em>stat</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地音频流统计信息回调 <br  />
+该回调描述本地设备发送音频流的统计信息，每 2 秒触发一次。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>本地音频流统计信息。参考 <a class="el" href="interface_n_e_rtc_audio_send_stats.html" title="本地音频流上传统计信息。">NERtcAudioSendStats</a>.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2be5316ded6ad4c103112a603eb41766" name="a2be5316ded6ad4c103112a603eb41766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be5316ded6ad4c103112a603eb41766">&#9670;&#160;</a></span>onLocalVideoStat:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onLocalVideoStat: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_video_send_stats.html">NERtcVideoSendStats</a> *)</td>          <td class="paramname"><span class="paramname"><em>stat</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>本地视频流统计信息回调 <br  />
+该回调描述本地设备发送视频流的统计信息，每 2 秒触发一次。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>本地视频流统计信息。参考 <a class="el" href="interface_n_e_rtc_video_send_stats.html" title="本地视频流上传统计信息">NERtcVideoSendStats</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK  </dd></dl>
+
+</div>
+</div>
+<a id="ad7a05f151be5c68face4f695f002193a" name="ad7a05f151be5c68face4f695f002193a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a05f151be5c68face4f695f002193a">&#9670;&#160;</a></span>onNetworkQuality:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onNetworkQuality: </td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; <a class="el" href="interface_n_e_rtc_network_quality_stats.html">NERtcNetworkQualityStats</a> * &gt; *)</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通话中每个用户的网络上下行质量报告回调 <br  />
+该回调描述每个用户在通话中的网络状态，每 2 秒触发一次。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>用户网络状态数组  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac003c8aa725ca25390ba12ecde1a5526" name="ac003c8aa725ca25390ba12ecde1a5526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac003c8aa725ca25390ba12ecde1a5526">&#9670;&#160;</a></span>onRemoteAudioStats:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onRemoteAudioStats: </td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; <a class="el" href="interface_n_e_rtc_audio_recv_stats.html">NERtcAudioRecvStats</a> * &gt; *)</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通话中远端音频流的统计信息回调。 <br  />
+该回调描述远端用户在通话中端到端的音频流统计信息，每 2 秒触发一次。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>每个远端用户音频统计信息的数组。参考 <a class="el" href="interface_n_e_rtc_audio_recv_stats.html" title="远端用户的音频统计。">NERtcAudioRecvStats</a>.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16bdb1e9854da1c65e139bf2db9520d1" name="a16bdb1e9854da1c65e139bf2db9520d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bdb1e9854da1c65e139bf2db9520d1">&#9670;&#160;</a></span>onRemoteVideoStats:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onRemoteVideoStats: </td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; <a class="el" href="interface_n_e_rtc_video_recv_stats.html">NERtcVideoRecvStats</a> * &gt; *)</td>          <td class="paramname"><span class="paramname"><em>stats</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通话中远端视频流的统计信息回调 <br  />
+该回调描述远端用户在通话中端到端的视频流统计信息，每 2 秒触发一次。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stats</td><td>远端用户视频统计信息的数组。参考 <a class="el" href="interface_n_e_rtc_video_recv_stats.html" title="远端视频流的统计信息">NERtcVideoRecvStats</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>纯音频 SDK 禁用该接口，如需使用请前往云信官网下载并替换成视频 SDK  </dd></dl>
+
+</div>
+</div>
+<a id="a97665f83f242d7f895f27616844b9f0a" name="a97665f83f242d7f895f27616844b9f0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97665f83f242d7f895f27616844b9f0a">&#9670;&#160;</a></span>onRtcStats:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onRtcStats: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_n_e_rtc_stats.html">NERtcStats</a> *)</td>          <td class="paramname"><span class="paramname"><em>stat</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前通话统计回调 <br  />
+SDK 定期向 App 报告当前通话的统计信息，每 2 秒触发一次。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>NERTC 引擎统计数据: <a class="el" href="interface_n_e_rtc_stats.html" title="通话相关的统计信息">NERtcStats</a>  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_engine_statistics_8h_source.html">NERtcEngineStatistics.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

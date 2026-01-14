@@ -1,0 +1,1407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unreal Engine: nertc::wwiseplugin::IRtcEngine类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unreal Engine<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.html">IRtcEngine</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1wwiseplugin_1_1_i_rtc_engine-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc::wwiseplugin::IRtcEngine类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_i_rtc_engine_8h_source.html">IRtcEngine.h</a>&gt;</code></p>
+<div class="dynheader">
+类 nertc::wwiseplugin::IRtcEngine 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnertc_1_1wwiseplugin_1_1_i_rtc_engine.png" usemap="#nertc::wwiseplugin::IRtcEngine_map" alt=""/>
+  <map id="nertc::wwiseplugin::IRtcEngine_map" name="nertc::wwiseplugin::IRtcEngine_map">
+<area href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html" alt="nertc::wwiseplugin::NertcEngine" shape="rect" coords="0,56,191,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aca3c8e8800310e97ea83fd7b980fb3f6" id="r_aca3c8e8800310e97ea83fd7b980fb3f6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca3c8e8800310e97ea83fd7b980fb3f6">~IRtcEngine</a> ()=default</td></tr>
+<tr class="separator:aca3c8e8800310e97ea83fd7b980fb3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7526289e46df816ebf72f85b7b3db4d" id="r_ac7526289e46df816ebf72f85b7b3db4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7526289e46df816ebf72f85b7b3db4d">SetCallbacks</a> (<a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">IRtcCallback</a> *callback)=0</td></tr>
+<tr class="separator:ac7526289e46df816ebf72f85b7b3db4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cc994bd5ba2bfe1372eaf37b81fe53" id="r_a67cc994bd5ba2bfe1372eaf37b81fe53"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager.html">IAudioDeviceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67cc994bd5ba2bfe1372eaf37b81fe53">GetAudioDeviceManager</a> ()=0</td></tr>
+<tr class="separator:a67cc994bd5ba2bfe1372eaf37b81fe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ac5721100bc3fd8a29c34ed62fc7fc" id="r_aa2ac5721100bc3fd8a29c34ed62fc7fc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">IVoiceEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2ac5721100bc3fd8a29c34ed62fc7fc">GetVoiceEngine</a> ()=0</td></tr>
+<tr class="separator:aa2ac5721100bc3fd8a29c34ed62fc7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fcc2dbc6caa218cd87ea36865200e6" id="r_aa9fcc2dbc6caa218cd87ea36865200e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9fcc2dbc6caa218cd87ea36865200e6">InitEngine</a> (<a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_engine_context.html">RtcEngineContext</a> context)=0</td></tr>
+<tr class="separator:aa9fcc2dbc6caa218cd87ea36865200e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88699076cebe9e0b05d6b3676244d8e" id="r_ad88699076cebe9e0b05d6b3676244d8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad88699076cebe9e0b05d6b3676244d8e">SetToken</a> (const char *token)=0</td></tr>
+<tr class="separator:ad88699076cebe9e0b05d6b3676244d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dee668c8a605bedaa510d5a99dcbcc1" id="r_a4dee668c8a605bedaa510d5a99dcbcc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dee668c8a605bedaa510d5a99dcbcc1">SetChannelName</a> (const char *channelName)=0</td></tr>
+<tr class="separator:a4dee668c8a605bedaa510d5a99dcbcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1fe5ae30e0d806073329e2b1494356" id="r_a2c1fe5ae30e0d806073329e2b1494356"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c1fe5ae30e0d806073329e2b1494356">SetUserID</a> (uint64_t userID)=0</td></tr>
+<tr class="separator:a2c1fe5ae30e0d806073329e2b1494356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45aca4e2a5a367bc5ed36e7f723028dd" id="r_a45aca4e2a5a367bc5ed36e7f723028dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45aca4e2a5a367bc5ed36e7f723028dd">SetParameters</a> (const char *parameters)=0</td></tr>
+<tr class="separator:a45aca4e2a5a367bc5ed36e7f723028dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed013a993fe2323e6a4953191b1535b" id="r_a3ed013a993fe2323e6a4953191b1535b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ed013a993fe2323e6a4953191b1535b">CheckMicphonePermision</a> (bool &amp;enabled)=0</td></tr>
+<tr class="separator:a3ed013a993fe2323e6a4953191b1535b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1b2c072dbd521979c1fe86308059a8" id="r_a3a1b2c072dbd521979c1fe86308059a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a1b2c072dbd521979c1fe86308059a8">SetSendAuthInfoWithGameObjectID</a> (uint64_t gameObjectID, const char *channelName, const char *token)=0</td></tr>
+<tr class="separator:a3a1b2c072dbd521979c1fe86308059a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f6cce5be24852be81f0fd87727d8c8" id="r_a29f6cce5be24852be81f0fd87727d8c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f6cce5be24852be81f0fd87727d8c8">SetReceiveAuthInfoWithGameObjectID</a> (uint64_t gameObjectID, const char *channelName, const char *token)=0</td></tr>
+<tr class="separator:a29f6cce5be24852be81f0fd87727d8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654cf9faf74779f96f3e4b3ada1066cc" id="r_a654cf9faf74779f96f3e4b3ada1066cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a654cf9faf74779f96f3e4b3ada1066cc">SetReceiveUserIDWithGameObjectID</a> (uint64_t gameObjectID, uint64_t userID)=0</td></tr>
+<tr class="separator:a654cf9faf74779f96f3e4b3ada1066cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7fba5160a1f8f17a90abd345a07bbf" id="r_a6e7fba5160a1f8f17a90abd345a07bbf"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e7fba5160a1f8f17a90abd345a07bbf">GetReceiveUserIDWithGameObjectID</a> (uint64_t gameObjectID)=0</td></tr>
+<tr class="separator:a6e7fba5160a1f8f17a90abd345a07bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9becc87131db9a0fec9fcc61768c2a03" id="r_a9becc87131db9a0fec9fcc61768c2a03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9becc87131db9a0fec9fcc61768c2a03">EnableLoopbackWithGameObjectID</a> (uint64_t gameObjectID, bool enableLoopback)=0</td></tr>
+<tr class="separator:a9becc87131db9a0fec9fcc61768c2a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6f9b365a3776fafce8e850f1ccbcd7" id="r_a9d6f9b365a3776fafce8e850f1ccbcd7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d6f9b365a3776fafce8e850f1ccbcd7">GetEnableLoopbackWithGameObjectID</a> (uint64_t gameObjectID)=0</td></tr>
+<tr class="separator:a9d6f9b365a3776fafce8e850f1ccbcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900e4e0105eb423eda668e8258df1b4f" id="r_a900e4e0105eb423eda668e8258df1b4f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a900e4e0105eb423eda668e8258df1b4f">SetRangeAudioMode</a> (const char *channelName, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a68dfa0341921db4979d1edb8c87ded77">RtcRangeAudioMode</a> mode)=0</td></tr>
+<tr class="separator:a900e4e0105eb423eda668e8258df1b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41cb08745b83f8bf612f49e98bac0f22" id="r_a41cb08745b83f8bf612f49e98bac0f22"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41cb08745b83f8bf612f49e98bac0f22">SetRangeAudioTeamID</a> (const char *channelName, int teamID)=0</td></tr>
+<tr class="separator:a41cb08745b83f8bf612f49e98bac0f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7919ccbc8d205022faab389f8f2e8baf" id="r_a7919ccbc8d205022faab389f8f2e8baf"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7919ccbc8d205022faab389f8f2e8baf">SetAudioRecvRange</a> (const char *channelName, int range)=0</td></tr>
+<tr class="separator:a7919ccbc8d205022faab389f8f2e8baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907ed85043a3867513438ac18c0535e5" id="r_a907ed85043a3867513438ac18c0535e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a907ed85043a3867513438ac18c0535e5">UpdateSelfPosition</a> (const char *channelName, int positionX, int positionY, int positionZ)=0</td></tr>
+<tr class="separator:a907ed85043a3867513438ac18c0535e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19eb4daf8f4a4326b714c629498db59d" id="r_a19eb4daf8f4a4326b714c629498db59d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19eb4daf8f4a4326b714c629498db59d">EnableAudioVolumeIndication</a> (const char *channelName, bool enable, uint64_t interval, bool enableVad)=0</td></tr>
+<tr class="separator:a19eb4daf8f4a4326b714c629498db59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4718cadbcde031b85f521875d38698e" id="r_ab4718cadbcde031b85f521875d38698e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4718cadbcde031b85f521875d38698e">SetPublishAudioAllowList</a> (const char *channelName, uint64_t *uids, int size)=0</td></tr>
+<tr class="separator:ab4718cadbcde031b85f521875d38698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01bb3aad4333f134c7d0531f82aa258d" id="r_a01bb3aad4333f134c7d0531f82aa258d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01bb3aad4333f134c7d0531f82aa258d">SetSubscribeAudioAllowList</a> (const char *channelName, uint64_t *uids, int size)=0</td></tr>
+<tr class="separator:a01bb3aad4333f134c7d0531f82aa258d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b25e2bcc927c5edf1f54c5d0993626" id="r_af5b25e2bcc927c5edf1f54c5d0993626"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b25e2bcc927c5edf1f54c5d0993626">SetSubscribeAudioBlockList</a> (const char *channelName, uint64_t *uids, int size)=0</td></tr>
+<tr class="separator:af5b25e2bcc927c5edf1f54c5d0993626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46081ef8a930c82b8c5ec041cea6e42" id="r_aa46081ef8a930c82b8c5ec041cea6e42"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa46081ef8a930c82b8c5ec041cea6e42">InChannel</a> (const char *channelName)=0</td></tr>
+<tr class="separator:aa46081ef8a930c82b8c5ec041cea6e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225a6b8c667b070c3241ea2b5695044e" id="r_a225a6b8c667b070c3241ea2b5695044e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225a6b8c667b070c3241ea2b5695044e">PauseAudio</a> ()=0</td></tr>
+<tr class="separator:a225a6b8c667b070c3241ea2b5695044e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669b44a35f29c0612609524b9f0bf08e" id="r_a669b44a35f29c0612609524b9f0bf08e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a669b44a35f29c0612609524b9f0bf08e">ResumeAudio</a> ()=0</td></tr>
+<tr class="separator:a669b44a35f29c0612609524b9f0bf08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf72cfec66cdb047d3399fe7db7ee38" id="r_aedf72cfec66cdb047d3399fe7db7ee38"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedf72cfec66cdb047d3399fe7db7ee38">GetVersion</a> ()=0</td></tr>
+<tr class="separator:aedf72cfec66cdb047d3399fe7db7ee38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f79068c0c8114703fcfe3fc5a8dffb2" id="r_a7f79068c0c8114703fcfe3fc5a8dffb2"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f79068c0c8114703fcfe3fc5a8dffb2">StartAudioDump</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a0d4c54e29281b43d776187707f6712be">RtcAudioDumpType</a> type)=0</td></tr>
+<tr class="separator:a7f79068c0c8114703fcfe3fc5a8dffb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b03df71f528aeffd69180397b7a6bb" id="r_a56b03df71f528aeffd69180397b7a6bb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56b03df71f528aeffd69180397b7a6bb">StopAudioDump</a> ()=0</td></tr>
+<tr class="separator:a56b03df71f528aeffd69180397b7a6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39af39387f6eb340c5dfd18b9e246af" id="r_af39af39387f6eb340c5dfd18b9e246af"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39af39387f6eb340c5dfd18b9e246af">Release</a> ()=0</td></tr>
+<tr class="separator:af39af39387f6eb340c5dfd18b9e246af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SDK功能接口类。 <br  />
+此接口类提供了 SDK 的初始化、参数设置、事件回调等功能。  </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aca3c8e8800310e97ea83fd7b980fb3f6" name="aca3c8e8800310e97ea83fd7b980fb3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3c8e8800310e97ea83fd7b980fb3f6">&#9670;&#160;</a></span>~IRtcEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual nertc::wwiseplugin::IRtcEngine::~IRtcEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a3ed013a993fe2323e6a4953191b1535b" name="a3ed013a993fe2323e6a4953191b1535b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed013a993fe2323e6a4953191b1535b">&#9670;&#160;</a></span>CheckMicphonePermision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::CheckMicphonePermision </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>检查平台麦克风权限（移动端） </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>麦克风是否有权限 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a309940396e7988b9d288481639dcd677">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a19eb4daf8f4a4326b714c629498db59d" name="a19eb4daf8f4a4326b714c629498db59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19eb4daf8f4a4326b714c629498db59d">&#9670;&#160;</a></span>EnableAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::EnableAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>interval</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enableVad</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>启用说话者音量提示。 <br  />
+该方法允许 SDK 定期向 App 反馈本地发流用户和瞬时音量最高的远端用户（最多 3 位）的音量相关信息，即当前谁在说话以及说话者的音量。 <br  />
+启用该方法后，只要房间内有发流用户，无论是否有人说话，SDK 都会在加入房间后根据预设的时间间隔触发<a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html#a1e0be887583234a8dac977fa51a7c194">OnRemoteAudioVolumeIndication</a>回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>是否启用说话者音量提示。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>指定音量提示的时间间隔，单位为毫秒。必须设置为 100 毫秒的整数倍值。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enableVad</td><td>是否启用本地采集人声监测。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a9c3c190583f3d948db69bb752be506e3">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a9becc87131db9a0fec9fcc61768c2a03" name="a9becc87131db9a0fec9fcc61768c2a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9becc87131db9a0fec9fcc61768c2a03">&#9670;&#160;</a></span>EnableLoopbackWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::EnableLoopbackWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enableLoopback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开启或关闭loopback。如果开启,则仅播放，不会发送到Rtc服务器，如果关闭，则仅发送到服务器，不被播放。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameObjectID</td><td>wwise gameobject对象唯一标识。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enableLoopback</td><td>是否开启loopback。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a9d452e1ecc3558dcd5467ffca60da47d">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a67cc994bd5ba2bfe1372eaf37b81fe53" name="a67cc994bd5ba2bfe1372eaf37b81fe53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67cc994bd5ba2bfe1372eaf37b81fe53">&#9670;&#160;</a></span>GetAudioDeviceManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_audio_device_manager.html">IAudioDeviceManager</a> * nertc::wwiseplugin::IRtcEngine::GetAudioDeviceManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取音频设备管理器 该方法在加入房间前后都能调用。  </p>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a183955dc870d74be57daa2bd816fd577">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a9d6f9b365a3776fafce8e850f1ccbcd7" name="a9d6f9b365a3776fafce8e850f1ccbcd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6f9b365a3776fafce8e850f1ccbcd7">&#9670;&#160;</a></span>GetEnableLoopbackWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool nertc::wwiseplugin::IRtcEngine::GetEnableLoopbackWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>是否开启或关闭loopback </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameObjectID</td><td>wwise gameobject对象唯一标识。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true: 开启Loopback</li>
+<li>false: 关闭Loopback  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#aaee13aee9372c0687aecf2ee029d0e58">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a6e7fba5160a1f8f17a90abd345a07bbf" name="a6e7fba5160a1f8f17a90abd345a07bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7fba5160a1f8f17a90abd345a07bbf">&#9670;&#160;</a></span>GetReceiveUserIDWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t nertc::wwiseplugin::IRtcEngine::GetReceiveUserIDWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取绑定的userID和gameobject对象 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameObjectID</td><td>wwise gameobject对象唯一标识。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>gameobject对象绑定的用户唯一ID。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a34feccdbd21fe77a3a0cacb2a8f7294c">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aedf72cfec66cdb047d3399fe7db7ee38" name="aedf72cfec66cdb047d3399fe7db7ee38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf72cfec66cdb047d3399fe7db7ee38">&#9670;&#160;</a></span>GetVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char * nertc::wwiseplugin::IRtcEngine::GetVersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取SDK版本号 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a3ab55a0ea82af7c59f81d60c3001eba8">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aa2ac5721100bc3fd8a29c34ed62fc7fc" name="aa2ac5721100bc3fd8a29c34ed62fc7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ac5721100bc3fd8a29c34ed62fc7fc">&#9670;&#160;</a></span>GetVoiceEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_voice_engine.html">IVoiceEngine</a> * nertc::wwiseplugin::IRtcEngine::GetVoiceEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取语音消息对象 该方法在加入房间前后都能调用。  </p>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a66e7ec2be60c4fd0d4a4e3f88372b8d2">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aa46081ef8a930c82b8c5ec041cea6e42" name="aa46081ef8a930c82b8c5ec041cea6e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46081ef8a930c82b8c5ec041cea6e42">&#9670;&#160;</a></span>InChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool nertc::wwiseplugin::IRtcEngine::InChannel </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>检查是否已经在房间内。只要触发了Send或Receive源插件的播放，不管是否在入会成功，都认为在房间内。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true: 在房间内；</li>
+<li>false: 不在房间内。 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a00965f7b498ca9008347d50bdebbd728">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aa9fcc2dbc6caa218cd87ea36865200e6" name="aa9fcc2dbc6caa218cd87ea36865200e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9fcc2dbc6caa218cd87ea36865200e6">&#9670;&#160;</a></span>InitEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::InitEngine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_engine_context.html">RtcEngineContext</a></td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>初始化 NERTC SDK 服务。 <br  />
+你必须先调用该方法进行初始化，才能使用其他方法。初始化成功后，默认处于音视频通话模式。 </p><dl class="section warning"><dt>警告</dt><dd><ul>
+<li>必须使用同一个 App Key 才能进行通话。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>传入的 <a class="el" href="structnertc_1_1wwiseplugin_1_1_rtc_engine_context.html">RtcEngineContext</a> 对象. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a3b6a23c54323b86fa003f3d2fba619e5">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a225a6b8c667b070c3241ea2b5695044e" name="a225a6b8c667b070c3241ea2b5695044e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225a6b8c667b070c3241ea2b5695044e">&#9670;&#160;</a></span>PauseAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::PauseAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>暂停音频输入与输出 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a88d0289f2763995b863d449eb269820a">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="af39af39387f6eb340c5dfd18b9e246af" name="af39af39387f6eb340c5dfd18b9e246af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39af39387f6eb340c5dfd18b9e246af">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::Release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>销毁资源，必须要在停止所有插件之后调用 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a90e4447334150b45ae23a222913fc29a">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a669b44a35f29c0612609524b9f0bf08e" name="a669b44a35f29c0612609524b9f0bf08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669b44a35f29c0612609524b9f0bf08e">&#9670;&#160;</a></span>ResumeAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::ResumeAudio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>恢复音频输入与输出 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#ac09f47f468841bac2aab34859f8c64fb">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a7919ccbc8d205022faab389f8f2e8baf" name="a7919ccbc8d205022faab389f8f2e8baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7919ccbc8d205022faab389f8f2e8baf">&#9670;&#160;</a></span>SetAudioRecvRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::SetAudioRecvRange </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置范围语音接收范围 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>监听器能够听到扬声器并接收其文本消息的距离扬声器的最大距离。无默认值, 有效范围[1, ∞)。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功</li>
+<li>其他: 调用失败 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#ab4f2303f1d6fbcf732c8fc1ee6f8b238">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ac7526289e46df816ebf72f85b7b3db4d" name="ac7526289e46df816ebf72f85b7b3db4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7526289e46df816ebf72f85b7b3db4d">&#9670;&#160;</a></span>SetCallbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetCallbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">IRtcCallback</a> *</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置事件回调 该方法在加入房间前后都能调用。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>传入的 <a class="el" href="classnertc_1_1wwiseplugin_1_1_i_rtc_callback.html">IRtcCallback</a> 对象.  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a2b35bb1a4ac0914005ffec3268d5d469">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a4dee668c8a605bedaa510d5a99dcbcc1" name="a4dee668c8a605bedaa510d5a99dcbcc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dee668c8a605bedaa510d5a99dcbcc1">&#9670;&#160;</a></span>SetChannelName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetChannelName </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置房间名 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间名，不能为空。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a44ba8ab77e504540dbbd5b9180e6b4ef">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a45aca4e2a5a367bc5ed36e7f723028dd" name="a45aca4e2a5a367bc5ed36e7f723028dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45aca4e2a5a367bc5ed36e7f723028dd">&#9670;&#160;</a></span>SetParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetParameters </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置音视频通话的相关参数。通过 JSON 配置 SDK 提供技术预览或特别定制功能。以标准化方式公开 JSON 选项。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parameters</td><td>音视频通话的相关参数。 JSON 字符串形式。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#ab158e4a2c7623cd83978f1664202fea0">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ab4718cadbcde031b85f521875d38698e" name="ab4718cadbcde031b85f521875d38698e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4718cadbcde031b85f521875d38698e">&#9670;&#160;</a></span>SetPublishAudioAllowList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::SetPublishAudioAllowList </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>uids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>你可以调用该方法指定音频流被谁订阅。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>此接口需要在加入房间成功后调用。</li>
+<li>对于调用接口时不在房间的 uid 不生效。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uids</td><td>可订阅自己音频的用户uid 列表 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>此列表为全量列表。如果列表为空或 null，取消订阅白名单。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>uids 的数组长度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0：方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a68847d3ecb2236b4ba27a9c4e4832c27">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a900e4e0105eb423eda668e8258df1b4f" name="a900e4e0105eb423eda668e8258df1b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900e4e0105eb423eda668e8258df1b4f">&#9670;&#160;</a></span>SetRangeAudioMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::SetRangeAudioMode </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a68dfa0341921db4979d1edb8c87ded77">RtcRangeAudioMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置范围语音模式 </p><dl class="section note"><dt>注解</dt><dd>此接口在加入房间前后均可调用。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>范围语音模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作返回值，成功则返回  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a21285f3af99852b93e42212c4b22114e">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a41cb08745b83f8bf612f49e98bac0f22" name="a41cb08745b83f8bf612f49e98bac0f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cb08745b83f8bf612f49e98bac0f22">&#9670;&#160;</a></span>SetRangeAudioTeamID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::SetRangeAudioTeamID </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>teamID</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置范围语音小队 </p><dl class="section note"><dt>注解</dt><dd>此接口在加入房间前后均可调用。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">teamID</td><td>小队ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回值，成功则返回 0 </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a390c478bda4f822b50caea64c145db5a">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a29f6cce5be24852be81f0fd87727d8c8" name="a29f6cce5be24852be81f0fd87727d8c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f6cce5be24852be81f0fd87727d8c8">&#9670;&#160;</a></span>SetReceiveAuthInfoWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetReceiveAuthInfoWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>绑定接收插件的房间信息和gameobject对象，channelName传入空解除绑定关系.不支持动态绑定，需要停止当前运行的插件后再行解绑或者换绑。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameObjectID</td><td>wwise gameobject对象唯一标识。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>传入的RTC token，调试模式下可以为null。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a2f9f03f8d531eb826487c505addee8e7">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a654cf9faf74779f96f3e4b3ada1066cc" name="a654cf9faf74779f96f3e4b3ada1066cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654cf9faf74779f96f3e4b3ada1066cc">&#9670;&#160;</a></span>SetReceiveUserIDWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetReceiveUserIDWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>userID</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>绑定userID和gameobject对象，userID传入0解出绑定关系 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameObjectID</td><td>wwise gameobject对象唯一标识。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userID</td><td>用户唯一ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a53c482f12a4acf8db1d08bfcede3ebbf">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a3a1b2c072dbd521979c1fe86308059a8" name="a3a1b2c072dbd521979c1fe86308059a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1b2c072dbd521979c1fe86308059a8">&#9670;&#160;</a></span>SetSendAuthInfoWithGameObjectID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetSendAuthInfoWithGameObjectID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>gameObjectID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>token</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>绑定采集插件的房间信息和gameobject对象，channelName传入空解除绑定关系.不支持动态绑定，需要停止当前运行的插件后再行解绑或者换绑。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gameObjectID</td><td>wwise gameobject对象唯一标识。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>传入的RTC token，调试模式下可以为null。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a793d03378310dde6a360a478ec61b913">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a01bb3aad4333f134c7d0531f82aa258d" name="a01bb3aad4333f134c7d0531f82aa258d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01bb3aad4333f134c7d0531f82aa258d">&#9670;&#160;</a></span>SetSubscribeAudioAllowList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::SetSubscribeAudioAllowList </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>uids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>你可以调用该方法指定只订阅的音频流。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>此接口需要在加入房间成功后调用。</li>
+<li>对于调用接口时不在房间的 uid 不生效。 </li>
+</ul>
+</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V5.4.101 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uids</td><td>只订阅此 用户uid列表 的音频。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>uids 的数组长度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>此列表为全量列表。如果列表为空或 null，取消订阅白名单。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0：方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a7193ce94d9a853e3875fd24959134882">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="af5b25e2bcc927c5edf1f54c5d0993626" name="af5b25e2bcc927c5edf1f54c5d0993626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b25e2bcc927c5edf1f54c5d0993626">&#9670;&#160;</a></span>SetSubscribeAudioBlockList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::SetSubscribeAudioBlockList </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>uids</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>你可以调用该方法指定不订阅的音频流。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>此接口需要在加入房间成功后调用。</li>
+<li>对于调用接口时不在房间的 uid 不生效。 </li>
+</ul>
+</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>V5.4.101 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uids</td><td>不订阅此 用户uid列表 的音频。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>uids 的数组长度。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>此列表为全量列表。如果列表为空或 null，取消订阅黑名单。 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0：方法调用成功。</li>
+<li>其他：方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a33a7b181a5ddc0dd6aeebc2b05f16128">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ad88699076cebe9e0b05d6b3676244d8e" name="ad88699076cebe9e0b05d6b3676244d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88699076cebe9e0b05d6b3676244d8e">&#9670;&#160;</a></span>SetToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetToken </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>token</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置Token。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">token</td><td>传入的RTC token，调试模式下可以为null。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#af5f7449bfc819b42135d307b2810f580">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a2c1fe5ae30e0d806073329e2b1494356" name="a2c1fe5ae30e0d806073329e2b1494356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1fe5ae30e0d806073329e2b1494356">&#9670;&#160;</a></span>SetUserID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::SetUserID </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>userID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>设置用户唯一标识 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userID</td><td>用户唯一ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>无返回值。  </dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#aa4e61348d9bc092c0c158a9d8ce4bf36">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a7f79068c0c8114703fcfe3fc5a8dffb2" name="a7f79068c0c8114703fcfe3fc5a8dffb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f79068c0c8114703fcfe3fc5a8dffb2">&#9670;&#160;</a></span>StartAudioDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::StartAudioDump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a0d4c54e29281b43d776187707f6712be">RtcAudioDumpType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>开始记录音频 dump。 音频 dump 可用于分析音频问题。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>音频dump类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a1bf23b2a2a2e2272429fab2d7a9e3b2f">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a56b03df71f528aeffd69180397b7a6bb" name="a56b03df71f528aeffd69180397b7a6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b03df71f528aeffd69180397b7a6bb">&#9670;&#160;</a></span>StopAudioDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int nertc::wwiseplugin::IRtcEngine::StopAudioDump </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>结束音频dump。 </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功；</li>
+<li>其他: 方法调用失败。  </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#a480c9a9d5d6fa251a8d089747baf661b">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a907ed85043a3867513438ac18c0535e5" name="a907ed85043a3867513438ac18c0535e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907ed85043a3867513438ac18c0535e5">&#9670;&#160;</a></span>UpdateSelfPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::wwiseplugin::IRtcEngine::UpdateSelfPosition </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channelName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>positionX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>positionY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>positionZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>引擎3D音效算法中本人坐标方位更新接口 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelName</td><td>房间号。如果channelName为空，则为默认房间。 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">positionX</td><td>当前玩家的X轴坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">positionY</td><td>当前玩家的Y轴坐标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">positionZ</td><td>当前玩家的Z轴坐标 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>0: 方法调用成功</li>
+<li>其他: 调用失败 </li>
+</ul>
+</dd></dl>
+
+<p>在 <a class="el" href="classnertc_1_1wwiseplugin_1_1_nertc_engine.html#ad8e8798a9434411e483d6d5e95509514">nertc::wwiseplugin::NertcEngine</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unreal/GMEWwiseDemo/Plugins/NertcPlugin/Source/NertcPlugin/Public/<a class="el" href="_i_rtc_engine_8h_source.html">IRtcEngine.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

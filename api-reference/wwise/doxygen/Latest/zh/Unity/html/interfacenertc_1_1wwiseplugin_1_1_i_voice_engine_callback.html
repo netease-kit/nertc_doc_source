@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Wwise SDK 适配 Unity: nertc.wwiseplugin.IVoiceEngineCallback接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Wwise SDK 适配 Unity<span id="projectnumber">&#160;V5.4.129</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="namespacenertc_1_1wwiseplugin.html">wwiseplugin</a></li><li class="navelem"><a class="el" href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback.html">IVoiceEngineCallback</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="interfacenertc_1_1wwiseplugin_1_1_i_voice_engine_callback-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc.wwiseplugin.IVoiceEngineCallback接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae053212abdd47387407c4649396cd087" id="r_ae053212abdd47387407c4649396cd087"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae053212abdd47387407c4649396cd087">OnAuth</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> errorCode)</td></tr>
+<tr class="separator:ae053212abdd47387407c4649396cd087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5957435587496daff330f9ea2a7466d" id="r_aa5957435587496daff330f9ea2a7466d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5957435587496daff330f9ea2a7466d">OnRecordCompleted</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> errorCode, string filePath)</td></tr>
+<tr class="separator:aa5957435587496daff330f9ea2a7466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0471caddca35f871d9722b9194b6eb7d" id="r_a0471caddca35f871d9722b9194b6eb7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0471caddca35f871d9722b9194b6eb7d">OnPlayCompleted</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> errorCode, string filePath)</td></tr>
+<tr class="separator:a0471caddca35f871d9722b9194b6eb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6a88b53c69dffc09cc63d844e839dd" id="r_aab6a88b53c69dffc09cc63d844e839dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab6a88b53c69dffc09cc63d844e839dd">OnUploadCompleted</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> errorCode, string filePath, string fileID)</td></tr>
+<tr class="separator:aab6a88b53c69dffc09cc63d844e839dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d7221bac5c93eafab8cc33b77311fe" id="r_a59d7221bac5c93eafab8cc33b77311fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59d7221bac5c93eafab8cc33b77311fe">OnDownloadCompleted</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> errorCode, string filePath, string fileID, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a980521f866dcfdc7336a1343f46d87f7">RtcVoiceAuditStatus</a> auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:a59d7221bac5c93eafab8cc33b77311fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a352868fce21501da61a86d1a91e7a" id="r_ae8a352868fce21501da61a86d1a91e7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8a352868fce21501da61a86d1a91e7a">OnSpeechToTextCompleted</a> (<a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a> errorCode, string fileID, string text, <a class="el" href="namespacenertc_1_1wwiseplugin.html#a980521f866dcfdc7336a1343f46d87f7">RtcVoiceAuditStatus</a> auditStatus, int auditResult, string auditDetail)</td></tr>
+<tr class="separator:ae8a352868fce21501da61a86d1a91e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3788bba08795dc238ea1f3c4c1bcad" id="r_a2f3788bba08795dc238ea1f3c4c1bcad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f3788bba08795dc238ea1f3c4c1bcad">OnRecordingVolume</a> (int volume)</td></tr>
+<tr class="separator:a2f3788bba08795dc238ea1f3c4c1bcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff5f073931dd077f95aca4af10f76f3" id="r_a6ff5f073931dd077f95aca4af10f76f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ff5f073931dd077f95aca4af10f76f3">OnPlayingVolume</a> (int volume)</td></tr>
+<tr class="separator:a6ff5f073931dd077f95aca4af10f76f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>语音消息事件接口。 <br  />
+此接口类监听语音消息相关接口的事件。  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ae053212abdd47387407c4649396cd087" name="ae053212abdd47387407c4649396cd087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae053212abdd47387407c4649396cd087">&#9670;&#160;</a></span>OnAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnAuth </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>鉴权回调。 <br  />
+该回调方法表示音频模块的鉴权结果，如果出现错误需要重新鉴权。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a59d7221bac5c93eafab8cc33b77311fe" name="a59d7221bac5c93eafab8cc33b77311fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d7221bac5c93eafab8cc33b77311fe">&#9670;&#160;</a></span>OnDownloadCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnDownloadCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a980521f866dcfdc7336a1343f46d87f7">RtcVoiceAuditStatus</a></td>          <td class="paramname"><span class="paramname"><em>auditStatus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>auditDetail</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>下载结果回调。 <br  />
+该回调方法表示音频模块下载文件结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+    <tr><td class="paramname">fileID</td><td>文件 ID。 </td></tr>
+    <tr><td class="paramname">auditStatus</td><td>语音转文字审核状态。参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a980521f866dcfdc7336a1343f46d87f7">RtcVoiceAuditStatus</a></code>。 </td></tr>
+    <tr><td class="paramname">auditResult</td><td>语音转文字审核结果，仅审核完成后有效。 </td></tr>
+    <tr><td class="paramname">auditDetail</td><td>语音转文字审核详情，参见审核服务说明。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0471caddca35f871d9722b9194b6eb7d" name="a0471caddca35f871d9722b9194b6eb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0471caddca35f871d9722b9194b6eb7d">&#9670;&#160;</a></span>OnPlayCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnPlayCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>播放结果回调。 <br  />
+该回调方法表示音频模块语音播放结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>播放文件路径。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ff5f073931dd077f95aca4af10f76f3" name="a6ff5f073931dd077f95aca4af10f76f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff5f073931dd077f95aca4af10f76f3">&#9670;&#160;</a></span>OnPlayingVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnPlayingVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>实时播放音量回调。 <br  />
+该回调方法返回当前正在播放的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音量值，范围 0-100。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa5957435587496daff330f9ea2a7466d" name="aa5957435587496daff330f9ea2a7466d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5957435587496daff330f9ea2a7466d">&#9670;&#160;</a></span>OnRecordCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnRecordCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>录制结果回调。 <br  />
+该回调方法表示音频模块语音录制结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>录制文件路径。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f3788bba08795dc238ea1f3c4c1bcad" name="a2f3788bba08795dc238ea1f3c4c1bcad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3788bba08795dc238ea1f3c4c1bcad">&#9670;&#160;</a></span>OnRecordingVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnRecordingVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>实时采集音量回调。 <br  />
+该回调方法返回当前正在录制的音量。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>音量值，范围 0-100。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8a352868fce21501da61a86d1a91e7a" name="ae8a352868fce21501da61a86d1a91e7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8a352868fce21501da61a86d1a91e7a">&#9670;&#160;</a></span>OnSpeechToTextCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnSpeechToTextCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>text</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a980521f866dcfdc7336a1343f46d87f7">RtcVoiceAuditStatus</a></td>          <td class="paramname"><span class="paramname"><em>auditStatus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>auditResult</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>auditDetail</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>语音转文字结果回调。 <br  />
+该回调方法表示音频模块语音转文字结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">fileID</td><td>文件 ID。 </td></tr>
+    <tr><td class="paramname">text</td><td>语音转文字结果。 </td></tr>
+    <tr><td class="paramname">auditStatus</td><td>语音转文字审核状态。参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a980521f866dcfdc7336a1343f46d87f7">RtcVoiceAuditStatus</a></code>。 </td></tr>
+    <tr><td class="paramname">auditResult</td><td>语音转文字审核结果，仅审核完成后有效。 </td></tr>
+    <tr><td class="paramname">auditDetail</td><td>语音转文字审核详情，参见审核服务说明。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab6a88b53c69dffc09cc63d844e839dd" name="aab6a88b53c69dffc09cc63d844e839dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6a88b53c69dffc09cc63d844e839dd">&#9670;&#160;</a></span>OnUploadCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nertc.wwiseplugin.IVoiceEngineCallback.OnUploadCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileID</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上传结果回调。 <br  />
+该回调方法表示音频模块上传文件结果。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorCode</td><td>错误码。详细信息请参考 <code><a class="el" href="namespacenertc_1_1wwiseplugin.html#a8a9846e27dd0b32558c4048521458482">RtcErrorCode</a></code>。 </td></tr>
+    <tr><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+    <tr><td class="paramname">fileID</td><td>上传成功后的文件 ID，用于下载和其他文件映射时使用。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>D:/Formatter/api-for-code/1-ToWarehouse/wwise-sdk/Integration/Unity/Gaming/Assets/GameSDK/nertc/Scripts/voice/<a class="el" href="_voice_engine_callback_8cs.html">VoiceEngineCallback.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

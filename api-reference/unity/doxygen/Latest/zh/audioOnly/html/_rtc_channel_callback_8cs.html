@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERtc Unity SDK: RtcChannelCallback.cs 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERtc Unity SDK<span id="projectnumber">&#160;V.5.4.128</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_891c75a0661ddb9d371604b8a02fc0ab.html">Gaming</a></li><li class="navelem"><a class="el" href="dir_1236680abdae7631fa3d6696d1d83681.html">Assets</a></li><li class="navelem"><a class="el" href="dir_b06bcffdad1451b673f074b4b2c1d2a8.html">GameSDK</a></li><li class="navelem"><a class="el" href="dir_1a1c7be77d9519e275fa84bdcba3b01a.html">nertc</a></li><li class="navelem"><a class="el" href="dir_0bafd07708bb69d84b5b6c645491782b.html">Runtime</a></li><li class="navelem"><a class="el" href="dir_01cda65185316522bb216a064e421271.html">Scripts</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">RtcChannelCallback.cs 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>nertc.RtcChannel</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html">nertc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1e724ad013a3b1dc20de0231a5e4bff4" id="r_a1e724ad013a3b1dc20de0231a5e4bff4"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a1e724ad013a3b1dc20de0231a5e4bff4">nertc.ChannelOnError</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, int errorCode, string msg)</td></tr>
+<tr class="separator:a1e724ad013a3b1dc20de0231a5e4bff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8b4e8df6d3fd134a858f0ef416a301" id="r_a5f8b4e8df6d3fd134a858f0ef416a301"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a5f8b4e8df6d3fd134a858f0ef416a301">nertc.ChannelOnWarning</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, int warnCode, string msg)</td></tr>
+<tr class="separator:a5f8b4e8df6d3fd134a858f0ef416a301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291d22b14163b69da1d96eca0b10e3e2" id="r_a291d22b14163b69da1d96eca0b10e3e2"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a291d22b14163b69da1d96eca0b10e3e2">nertc.ChannelOnAPICallExecuted</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, string apiName, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, string msg)</td></tr>
+<tr class="separator:a291d22b14163b69da1d96eca0b10e3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270472e4e8062f3d7741b25a339fe7d2" id="r_a270472e4e8062f3d7741b25a339fe7d2"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a270472e4e8062f3d7741b25a339fe7d2">nertc.ChannelOnJoinChannel</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong cid, ulong uid, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> result, ulong elapsed)</td></tr>
+<tr class="separator:a270472e4e8062f3d7741b25a339fe7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b32539837c2c3b4f40fdb721a5f9de4" id="r_a8b32539837c2c3b4f40fdb721a5f9de4"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a8b32539837c2c3b4f40fdb721a5f9de4">nertc.ChannelOnReconnectingStart</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong cid, ulong uid)</td></tr>
+<tr class="separator:a8b32539837c2c3b4f40fdb721a5f9de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163cb31b3349969851017f9c02b57d2d" id="r_a163cb31b3349969851017f9c02b57d2d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a163cb31b3349969851017f9c02b57d2d">nertc.ChannelOnConnectionStateChange</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a9b428d398585d9290b3f19bd0450c143">RtcConnectionStateType</a> state, <a class="el" href="namespacenertc.html#ab623170af915480d4039982d1936872c">RtcReasonConnectionChangedType</a> reason)</td></tr>
+<tr class="separator:a163cb31b3349969851017f9c02b57d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecafdb87232a60b3b2adb4f482c28ea6" id="r_aecafdb87232a60b3b2adb4f482c28ea6"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aecafdb87232a60b3b2adb4f482c28ea6">nertc.ChannelOnRejoinChannel</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong cid, ulong uid, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> result, ulong elapsed)</td></tr>
+<tr class="separator:aecafdb87232a60b3b2adb4f482c28ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf46d0073e6ed2642334d8a6d091c1b2" id="r_abf46d0073e6ed2642334d8a6d091c1b2"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#abf46d0073e6ed2642334d8a6d091c1b2">nertc.ChannelOnLeaveChannel</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> result)</td></tr>
+<tr class="separator:abf46d0073e6ed2642334d8a6d091c1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeef12ef123c67d97cc80d0f5a8dd223" id="r_abeef12ef123c67d97cc80d0f5a8dd223"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#abeef12ef123c67d97cc80d0f5a8dd223">nertc.ChannelOnDisconnect</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> reason)</td></tr>
+<tr class="separator:abeef12ef123c67d97cc80d0f5a8dd223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118e036ca09e99379ad2776469bf7fe7" id="r_a118e036ca09e99379ad2776469bf7fe7"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a118e036ca09e99379ad2776469bf7fe7">nertc.ChannelOnClientRoleChanged</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#ad83c77a6c52ab22f65448afdb17a3746">RtcClientRole</a> oldRole, <a class="el" href="namespacenertc.html#ad83c77a6c52ab22f65448afdb17a3746">RtcClientRole</a> newRole)</td></tr>
+<tr class="separator:a118e036ca09e99379ad2776469bf7fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169dbddf5132154a845050781a6c8682" id="r_a169dbddf5132154a845050781a6c8682"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a169dbddf5132154a845050781a6c8682">nertc.ChannelOnUserJoined</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong uid, string userName, <a class="el" href="structnertc_1_1_rtc_user_join_extra_info.html">RtcUserJoinExtraInfo</a> customInfo)</td></tr>
+<tr class="separator:a169dbddf5132154a845050781a6c8682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0991f6e73022137888baa1a81e04314a" id="r_a0991f6e73022137888baa1a81e04314a"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a0991f6e73022137888baa1a81e04314a">nertc.ChannelOnUserLeft</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong uid, <a class="el" href="namespacenertc.html#a3264d4b37673383d51eb4bc3995f5483">RtcSessionLeaveReason</a> reason, <a class="el" href="structnertc_1_1_rtc_user_join_extra_info.html">RtcUserJoinExtraInfo</a> customInfo)</td></tr>
+<tr class="separator:a0991f6e73022137888baa1a81e04314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be3b84ca1a082e6e60c5893c7f02543" id="r_a2be3b84ca1a082e6e60c5893c7f02543"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a2be3b84ca1a082e6e60c5893c7f02543">nertc.ChannelOnUserAudioStart</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48">RtcAudioStreamType</a> type, ulong uid)</td></tr>
+<tr class="separator:a2be3b84ca1a082e6e60c5893c7f02543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420a2f62900dda2ae872f38dc231a725" id="r_a420a2f62900dda2ae872f38dc231a725"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a420a2f62900dda2ae872f38dc231a725">nertc.ChannelOnUserAudioStop</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48">RtcAudioStreamType</a> type, ulong uid)</td></tr>
+<tr class="separator:a420a2f62900dda2ae872f38dc231a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a07d03373f35560bae32d7abd953ff" id="r_a45a07d03373f35560bae32d7abd953ff"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a45a07d03373f35560bae32d7abd953ff">nertc.ChannelOnUserAudioMute</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48">RtcAudioStreamType</a> type, ulong uid, bool mute)</td></tr>
+<tr class="separator:a45a07d03373f35560bae32d7abd953ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2cb42dce07fbc86308905bc9d40b57" id="r_abe2cb42dce07fbc86308905bc9d40b57"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#abe2cb42dce07fbc86308905bc9d40b57">nertc.ChannelOnUserVideoStart</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, ulong uid, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74">RtcVideoProfileType</a> maxProfile)</td></tr>
+<tr class="separator:abe2cb42dce07fbc86308905bc9d40b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6633862a102833ce6cba473e6cf7a5" id="r_a2a6633862a102833ce6cba473e6cf7a5"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a2a6633862a102833ce6cba473e6cf7a5">nertc.ChannelOnUserVideoStop</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, ulong uid)</td></tr>
+<tr class="separator:a2a6633862a102833ce6cba473e6cf7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b33b2e41f1dc8cd34a5a2de608b058" id="r_aa3b33b2e41f1dc8cd34a5a2de608b058"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aa3b33b2e41f1dc8cd34a5a2de608b058">nertc.ChannelOnUserVideoMute</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, ulong uid, bool mute)</td></tr>
+<tr class="separator:aa3b33b2e41f1dc8cd34a5a2de608b058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdc886f6f323850ab3c62286fda920d" id="r_aabdc886f6f323850ab3c62286fda920d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aabdc886f6f323850ab3c62286fda920d">nertc.ChannelOnScreenCaptureStatusChanged</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a22e7b141e1f201b52b9296263486e1b8">RtcScreenCaptureStatus</a> status)</td></tr>
+<tr class="separator:aabdc886f6f323850ab3c62286fda920d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db935ba5a7ddf03aa4095e183e2e0c7" id="r_a4db935ba5a7ddf03aa4095e183e2e0c7"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a4db935ba5a7ddf03aa4095e183e2e0c7">nertc.ChannelOnUserVideoProfileUpdate</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong uid, <a class="el" href="namespacenertc.html#af8428b05da263292a7388aa4d5e4be74">RtcVideoProfileType</a> maxProfile)</td></tr>
+<tr class="separator:a4db935ba5a7ddf03aa4095e183e2e0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ade9b7bf0a01e4bac496ed515222b90" id="r_a9ade9b7bf0a01e4bac496ed515222b90"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9ade9b7bf0a01e4bac496ed515222b90">nertc.ChannelOnFirstAudioDataReceived</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48">RtcAudioStreamType</a> type, ulong uid)</td></tr>
+<tr class="separator:a9ade9b7bf0a01e4bac496ed515222b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659f9c0a087ce4d0cc00111c7e801c5d" id="r_a659f9c0a087ce4d0cc00111c7e801c5d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a659f9c0a087ce4d0cc00111c7e801c5d">nertc.ChannelOnFirstVideoDataReceived</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, ulong uid)</td></tr>
+<tr class="separator:a659f9c0a087ce4d0cc00111c7e801c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fb47b8da5f76c9c0efea09d072071d" id="r_ad9fb47b8da5f76c9c0efea09d072071d"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ad9fb47b8da5f76c9c0efea09d072071d">nertc.ChannelOnRemoteVideoReceiveSizeChanged</a> (ulong uid, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, uint width, uint height)</td></tr>
+<tr class="separator:ad9fb47b8da5f76c9c0efea09d072071d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644c7f47bd388a40787478fc126be452" id="r_a644c7f47bd388a40787478fc126be452"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a644c7f47bd388a40787478fc126be452">nertc.ChannelOnLocalVideoRenderSizeChanged</a> (<a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, uint width, uint height)</td></tr>
+<tr class="separator:a644c7f47bd388a40787478fc126be452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad352205e8d29430cc04f7af4f9187db7" id="r_ad352205e8d29430cc04f7af4f9187db7"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ad352205e8d29430cc04f7af4f9187db7">nertc.ChannelOnFirstAudioFrameDecoded</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#ab719b40d3126510d848092c58db34a48">RtcAudioStreamType</a> type, ulong uid)</td></tr>
+<tr class="separator:ad352205e8d29430cc04f7af4f9187db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f315f9c23aaabf10bedf9025cb37722" id="r_a7f315f9c23aaabf10bedf9025cb37722"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a7f315f9c23aaabf10bedf9025cb37722">nertc.ChannelOnFirstVideoFrameDecoded</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> type, ulong uid, uint width, uint height)</td></tr>
+<tr class="separator:a7f315f9c23aaabf10bedf9025cb37722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cdb7286bb96d2f12168f8e8eaec6a9" id="r_a32cdb7286bb96d2f12168f8e8eaec6a9"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a32cdb7286bb96d2f12168f8e8eaec6a9">nertc.ChannelOnLocalAudioVolumeIndication</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, int volume, bool enableVad)</td></tr>
+<tr class="separator:a32cdb7286bb96d2f12168f8e8eaec6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131a61a19c430b88a936751493e727c5" id="r_a131a61a19c430b88a936751493e727c5"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a131a61a19c430b88a936751493e727c5">nertc.ChannelOnRemoteAudioVolumeIndication</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="structnertc_1_1_rtc_audio_volume_info.html">RtcAudioVolumeInfo</a>[] speakers, int totalVolume)</td></tr>
+<tr class="separator:a131a61a19c430b88a936751493e727c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9708f2e0f8d2c3c79a9d5667f0af3c9f" id="r_a9708f2e0f8d2c3c79a9d5667f0af3c9f"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a9708f2e0f8d2c3c79a9d5667f0af3c9f">nertc.ChannelOnAddLiveStreamTask</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, string taskId, string url, int errorCode)</td></tr>
+<tr class="separator:a9708f2e0f8d2c3c79a9d5667f0af3c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070ef6aaf0552ad2524e72bffe7b09ee" id="r_a070ef6aaf0552ad2524e72bffe7b09ee"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a070ef6aaf0552ad2524e72bffe7b09ee">nertc.ChannelOnUpdateLiveStreamTask</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, string taskId, string url, int errorCode)</td></tr>
+<tr class="separator:a070ef6aaf0552ad2524e72bffe7b09ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69de2e13c3e274fc5314edcee415dcf" id="r_ad69de2e13c3e274fc5314edcee415dcf"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ad69de2e13c3e274fc5314edcee415dcf">nertc.ChannelOnRemoveLiveStreamTask</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, string taskId, int errorCode)</td></tr>
+<tr class="separator:ad69de2e13c3e274fc5314edcee415dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584d57733f17d808543864a822d5eedd" id="r_a584d57733f17d808543864a822d5eedd"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a584d57733f17d808543864a822d5eedd">nertc.ChannelOnLiveStreamStateChanged</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, string taskId, string url, <a class="el" href="namespacenertc.html#a79e6ec3d9d3c517a2f50564833ef39fc">RtcLiveStreamStateCode</a> state)</td></tr>
+<tr class="separator:a584d57733f17d808543864a822d5eedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7858f9d4944c08f50e5c5493f6878c95" id="r_a7858f9d4944c08f50e5c5493f6878c95"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a7858f9d4944c08f50e5c5493f6878c95">nertc.ChannelOnRecvSEIMessage</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong uid, byte[] data, uint dataSize)</td></tr>
+<tr class="separator:a7858f9d4944c08f50e5c5493f6878c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c773c620402b791063843c8b567110" id="r_ab2c773c620402b791063843c8b567110"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ab2c773c620402b791063843c8b567110">nertc.ChannelOnMediaRelayStateChanged</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#af97cebfbab8b57c22d56b5f6980e6ca8">RtcChannelMediaRelayState</a> state, string channelName)</td></tr>
+<tr class="separator:ab2c773c620402b791063843c8b567110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c017596bb2d7a9bfdb398435757e06" id="r_ae3c017596bb2d7a9bfdb398435757e06"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#ae3c017596bb2d7a9bfdb398435757e06">nertc.ChannelOnMediaRelayEvent</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, <a class="el" href="namespacenertc.html#a96aaebf481daa00006a0c0b11d843414">RtcChannelMediaRelayEvent</a> evt, string channelName, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> error)</td></tr>
+<tr class="separator:ae3c017596bb2d7a9bfdb398435757e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4d64e8227935044e4372c47fc5ea4b" id="r_aac4d64e8227935044e4372c47fc5ea4b"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#aac4d64e8227935044e4372c47fc5ea4b">nertc.ChannelOnPublishFallbackToAudioOnly</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, bool isFallback, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> streamType)</td></tr>
+<tr class="separator:aac4d64e8227935044e4372c47fc5ea4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066e7c9a66e6524feec190e4e3c457ab" id="r_a066e7c9a66e6524feec190e4e3c457ab"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a066e7c9a66e6524feec190e4e3c457ab">nertc.ChannelOnSubscribeFallbackToAudioOnly</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, ulong uid, bool isFallback, <a class="el" href="namespacenertc.html#a5a58e4d51fb1f6e4f31edf43cc97d903">RtcVideoStreamType</a> streamType)</td></tr>
+<tr class="separator:a066e7c9a66e6524feec190e4e3c457ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51423e3bfd8cb544a7079095c0582f3e" id="r_a51423e3bfd8cb544a7079095c0582f3e"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a51423e3bfd8cb544a7079095c0582f3e">nertc.ChannelOnMediaRightChanged</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, bool audioBanned, bool videoBanned)</td></tr>
+<tr class="separator:a51423e3bfd8cb544a7079095c0582f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520e6fe383094c8d078052af2e273a21" id="r_a520e6fe383094c8d078052af2e273a21"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a520e6fe383094c8d078052af2e273a21">nertc.ChannelOnPermissionKeyWillExpire</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel)</td></tr>
+<tr class="separator:a520e6fe383094c8d078052af2e273a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5432ca92d9a5df0718479793a1c8ce" id="r_a4c5432ca92d9a5df0718479793a1c8ce"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenertc.html#a4c5432ca92d9a5df0718479793a1c8ce">nertc.ChannelOnUpdatePermissionKey</a> (<a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> channel, string key, <a class="el" href="namespacenertc.html#a3db838edfb8cde9d95ab5d9e4eb88cee">RtcErrorCode</a> errorCode, int timeout)</td></tr>
+<tr class="separator:a4c5432ca92d9a5df0718479793a1c8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

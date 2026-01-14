@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: &lt;NERtcLinkEngineDirectCallDelegate&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">实例方法</a> &#124;
+<a href="protocol_n_e_rtc_link_engine_direct_call_delegate-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;NERtcLinkEngineDirectCallDelegate&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="interface_n_e_rtc_link_engine.html" title="NERtcLinkEngine 类。">NERtcLinkEngine</a> 常用回调。   
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_n_e_rtc_link_engine_delegate_8h_source.html">NERtcLinkEngineDelegate.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;NERtcLinkEngineDirectCallDelegate&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_n_e_rtc_link_engine_direct_call_delegate-p.png" usemap="#_3CNERtcLinkEngineDirectCallDelegate_3E_map" alt=""/>
+  <map id="_3CNERtcLinkEngineDirectCallDelegate_3E_map" name="_3CNERtcLinkEngineDirectCallDelegate_3E_map">
+<area href="protocol_n_e_rtc_link_engine_delegate-p.html" alt="&lt;NERtcLinkEngineDelegate&gt;" shape="rect" coords="0,112,229,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+实例方法</h2></td></tr>
+<tr class="memitem:ac926dfc8b0f6954a30da96eec43879e1" id="r_ac926dfc8b0f6954a30da96eec43879e1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#ac926dfc8b0f6954a30da96eec43879e1">onDirectCallRing</a></td></tr>
+<tr class="memdesc:ac926dfc8b0f6954a30da96eec43879e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">直呼时，对端开始振铃回调。 <br  />
+主叫方发起直呼后，如果对端开始振铃，会触发此回调。   <br /></td></tr>
+<tr class="separator:ac926dfc8b0f6954a30da96eec43879e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa947921617d57be805d8a90108539ddd" id="r_aa947921617d57be805d8a90108539ddd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#aa947921617d57be805d8a90108539ddd">onDirectCallAccept</a></td></tr>
+<tr class="memdesc:aa947921617d57be805d8a90108539ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">直呼时，对端已接听回调。 <br  />
+主叫方发起直呼后，如果对端接听通话，会触发此回调。   <br /></td></tr>
+<tr class="separator:aa947921617d57be805d8a90108539ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe829ee8cca7133e9d97fd1c397b620c" id="r_abe829ee8cca7133e9d97fd1c397b620c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#abe829ee8cca7133e9d97fd1c397b620c">onDirectCallAcceptWithMediaType:</a></td></tr>
+<tr class="memdesc:abe829ee8cca7133e9d97fd1c397b620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">直呼时，对端已接听回调。 <br  />
+主叫方发起直呼后，如果对端接听通话，会触发此回调。  <br /></td></tr>
+<tr class="separator:abe829ee8cca7133e9d97fd1c397b620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71923eec66041d42d2b38cf8033f934b" id="r_a71923eec66041d42d2b38cf8033f934b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a71923eec66041d42d2b38cf8033f934b">onDirectCallHangupWithReason:error:isCallEstablished:</a></td></tr>
+<tr class="memdesc:a71923eec66041d42d2b38cf8033f934b"><td class="mdescLeft">&#160;</td><td class="mdescRight">直呼时，通话已挂断回调。 <br  />
+以下场景会触发此回调：  <br /></td></tr>
+<tr class="separator:a71923eec66041d42d2b38cf8033f934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20adc7d5576d3083f1f7f1c9c4cf7003" id="r_a20adc7d5576d3083f1f7f1c9c4cf7003"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="#a20adc7d5576d3083f1f7f1c9c4cf7003">onDirectCallDisconnectWithError:</a></td></tr>
+<tr class="memdesc:a20adc7d5576d3083f1f7f1c9c4cf7003"><td class="mdescLeft">&#160;</td><td class="mdescRight">直呼时，通话断开连接回调。 <br  />
+呼叫接通后，对方断开连接时会触发此回调。  <br /></td></tr>
+<tr class="separator:a20adc7d5576d3083f1f7f1c9c4cf7003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="interface_n_e_rtc_link_engine.html" title="NERtcLinkEngine 类。">NERtcLinkEngine</a> 常用回调。  </p>
+</div><h2 class="groupheader">成员函数文档</h2>
+<a id="aa947921617d57be805d8a90108539ddd" name="aa947921617d57be805d8a90108539ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa947921617d57be805d8a90108539ddd">&#9670;&#160;</a></span>onDirectCallAccept</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onDirectCallAccept </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直呼时，对端已接听回调。 <br  />
+主叫方发起直呼后，如果对端接听通话，会触发此回调。  </p>
+
+</div>
+</div>
+<a id="abe829ee8cca7133e9d97fd1c397b620c" name="abe829ee8cca7133e9d97fd1c397b620c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe829ee8cca7133e9d97fd1c397b620c">&#9670;&#160;</a></span>onDirectCallAcceptWithMediaType:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onDirectCallAcceptWithMediaType: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="_n_e_rtc_link_engine_enum_8h.html#a130b1aae59335bfa5394e9ba0e93c704">NERtcLinkMediaType</a>)</td>          <td class="paramname"><span class="paramname"><em>mediaType</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直呼时，对端已接听回调。 <br  />
+主叫方发起直呼后，如果对端接听通话，会触发此回调。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mediaType</td><td>对端接听的媒体类型(发起视频呼叫的情况下，对端可能仅接听语音)  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20adc7d5576d3083f1f7f1c9c4cf7003" name="a20adc7d5576d3083f1f7f1c9c4cf7003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20adc7d5576d3083f1f7f1c9c4cf7003">&#9670;&#160;</a></span>onDirectCallDisconnectWithError:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onDirectCallDisconnectWithError: </td>
+          <td></td>
+          <td class="paramtype">(NSError *)</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直呼时，通话断开连接回调。 <br  />
+呼叫接通后，对方断开连接时会触发此回调。 </p>
+<ul>
+<li>主叫方被 PSTN 服务端踢出通话。</li>
+<li>由于网络状态或其他原因导致的通话中断。 <br  />
+详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zg1MDI4MzE">融合呼叫状态码</a> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>断开原因。其中，99999（kNERtcLinkKickOffDisconnect） 表示被 PSTN 服务端踢出导致断开连接。 请通过 error 的 userInfo 字段中的 reason 来确认被踢原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a71923eec66041d42d2b38cf8033f934b" name="a71923eec66041d42d2b38cf8033f934b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71923eec66041d42d2b38cf8033f934b">&#9670;&#160;</a></span>onDirectCallHangupWithReason:error:isCallEstablished:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onDirectCallHangupWithReason: </td>
+          <td></td>
+          <td class="paramtype">(int)</td>          <td class="paramname"><span class="paramname"><em>reason</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(nullable NSError *)</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td>
+        </tr>
+        <tr>
+          <td class="paramkey">isCallEstablished:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)</td>          <td class="paramname"><span class="paramname"><em>isCallEstablished</em></span>&#160;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直呼时，通话已挂断回调。 <br  />
+以下场景会触发此回调： </p>
+<ul>
+<li>主叫方发起直呼后，取消呼叫。此时 reason 为 1000。</li>
+<li>主叫方发起直呼后，被叫方拒接。</li>
+<li>主叫方发起直呼，呼叫接通后，任意一方挂断通话。</li>
+<li>由于运营商信号或其他原因导致的通话中断。 <br  />
+详细信息请参考 <a href="https://doc.yunxin.163.com/docs/jcyOTA0ODM/zg1MDI4MzE">融合呼叫状态码</a> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>挂断原因。 <br  />
+ </td></tr>
+    <tr><td class="paramname">error</td><td>错误信息，若状态正常则不返回 errMsg。 <br  />
+ </td></tr>
+    <tr><td class="paramname">isCallEstablished</td><td>呼叫是否已接通。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ac926dfc8b0f6954a30da96eec43879e1" name="ac926dfc8b0f6954a30da96eec43879e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac926dfc8b0f6954a30da96eec43879e1">&#9670;&#160;</a></span>onDirectCallRing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) onDirectCallRing </td>
+          <td></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>直呼时，对端开始振铃回调。 <br  />
+主叫方发起直呼后，如果对端开始振铃，会触发此回调。  </p>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="_n_e_rtc_link_engine_delegate_8h_source.html">NERtcLinkEngineDelegate.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

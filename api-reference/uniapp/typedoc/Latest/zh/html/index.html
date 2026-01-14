@@ -1,0 +1,802 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NERTC V5.6.38</title>
+	<meta name="description" content="Documentation for NERTC V5.6.38">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">NERTC V5.6.38</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>NERTC V5.6.38</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#nertc-uniapp-sdk" id="nertc-uniapp-sdk" style="color: inherit; text-decoration: none;">
+					<h1><span id="NERtc Uniapp SDK">NERTC Uniapp SDK</span></h1>
+				</a>
+				<p>网易云信 NERTC SDK 提供完善的音视频通话开发框架，提供基于网络的点对点视频通话和语音通话功能，还提供多人视频和音频会议功能，支持通话中音视频设备控制和实时音视频模式切换，美颜等功能。</p>
+				<ul>
+					<li><a href="modules/nertc.nertc-1.html">NERTC</a> 是基础对象，包含应用程序调用的所有方法。</li>
+				</ul>
+				<p><strong>注意</strong>：错误码与安卓端相同。</p>
+				<!-- <style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+</style> -->
+				<a href="#房间管理" id="房间管理" style="color: inherit; text-decoration: none;">
+					<h2><span id="房间管理">房间管理</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#setupenginewithcontext">NERTC.setupEngineWithContext</a></td>
+							<td>创建 RTC 引擎对象。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#destroyengine">NERTC.destroyEngine</a></td>
+							<td>销毁NERtc实例，释放资源。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setchannelprofile">NERTC.setChannelProfile</a></td>
+							<td>获取可用的媒体输入/输出设备。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setclientrole">NERTC.setClientRole</a></td>
+							<td>设置用户角色。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setparameters">NERTC.setParameters</a></td>
+							<td>此接口提供技术预览或特别定制功能(如AI降噪)。</td>
+							<td>v5.5.21</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#joinchannel">NERTC.joinChannel</a></td>
+							<td>加入房间。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#leavechannel">NERTC.leaveChannel</a></td>
+							<td>离开房间。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getconnectionstate">NERTC.getConnectionState</a></td>
+							<td>获取房间连接状态。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#nertcprint">NERTC.nertcPrint</a></td>
+							<td>原生日志输出接口，可以输入到android Studio/xcode的控制台，以及写入手机日志文件中。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#uploadsdkinfo">NERTC.uploadSdkInfo</a></td>
+							<td>上传sdk日志到云信服务器。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#房间事件" id="房间事件" style="color: inherit; text-decoration: none;">
+					<h2><span id="房间事件">房间事件</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onclientrolechange">NERtcCallback.onClientRoleChange</a></td>
+							<td>用户角色已切换回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onjoinchannel">NERtcCallback.onJoinChannel</a></td>
+							<td>自己加入房间回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onrejoinchannel">NERtcCallback.onReJoinChannel</a></td>
+							<td>自己重新加入房间回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onleavechannel">NERtcCallback.onLeaveChannel</a></td>
+							<td>自己离开房间回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuserjoined">NERtcCallback.onUserJoined</a></td>
+							<td>远端用户加入当前房间回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuserleave">NERtcCallback.onUserLeave</a></td>
+							<td>远端用户离开当前房间回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#ondisconnect">NERtcCallback.onDisconnect</a></td>
+							<td>sdk服务器连接断开回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onconnectiontypechanged">NERtcCallback.onConnectionTypeChanged</a></td>
+							<td>本地网络类型已改变回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onconnectionstatechanged">NERtcCallback.onConnectionStateChanged</a></td>
+							<td>sdk房间连接状态已改变回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#音频管理" id="音频管理" style="color: inherit; text-decoration: none;">
+					<h2><span id="音频管理">音频管理</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#setaudioprofile">NERTC.setAudioProfile</a></td>
+							<td>设置音频编码配置。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#adjustrecordingsignalvolume">NERTC.adjustRecordingSignalVolume</a></td>
+							<td>调节录音音量。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#adjustuserplaybacksignalvolume">NERTC.adjustUserPlaybackSignalVolume</a></td>
+							<td>调节播放音量。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#adjustchannelplaybacksignalvolume">NERTC.adjustChannelPlaybackSignalVolume</a></td>
+							<td>调节本地播放的指定远端用户的信号音量。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#enablelocalaudio">NERTC.enableLocalAudio</a></td>
+							<td>开关本地音频采集。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#mutelocalaudio">NERTC.muteLocalAudio</a></td>
+							<td>开关本地音频发送。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#enableaudiovolumeindication">NERTC.enableAudioVolumeIndication</a></td>
+							<td>注册音频处理观测器，设置音频处理回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#enablemediapub">NERTC.enableMediaPub</a></td>
+							<td>发布或停止发布本地音频。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#视频管理" id="视频管理" style="color: inherit; text-decoration: none;">
+					<h2><span id="视频管理">视频管理</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#setlocalvideoconfig">NERTC.setLocalVideoConfig</a></td>
+							<td>设置视频编码配置。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#enablelocalvideo">NERTC.enableLocalVideo</a></td>
+							<td>开启/关闭本地视频的采集与发送。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setuplocalvideocanvas">NERTC.setupLocalVideoCanvas</a></td>
+							<td>设置本地用户视图。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setupremotevideocanvas">NERTC.setupRemoteVideoCanvas</a></td>
+							<td>设置远端用户视图。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#startpreview">NERTC.startPreview</a></td>
+							<td>开启视频预览。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#stoppreview">NERTC.stopPreview</a></td>
+							<td>停止视频预览。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#mutelocalvideo">NERTC.muteLocalVideo</a></td>
+							<td>取消/恢复发布本地视频。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#subscriberemotevideo">NERTC.subscribeRemoteVideo</a></td>
+							<td>订阅/取消订阅指定远端用户的视频流    。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#changevideocanvas">NERTC.changeVideoCanvas</a></td>
+							<td>交换本端和远端视频的视图    。</td>
+							<td>v5.6.0</td>
+						</tr>
+				</tbody></table>
+				<a href="#云信美颜" id="云信美颜" style="color: inherit; text-decoration: none;">
+					<h2><span id="云信美颜">云信美颜</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#startbeauty">NERTC.startBeauty</a></td>
+							<td>开启美颜。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#stopbeauty">NERTC.stopBeauty</a></td>
+							<td>关闭美颜。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setbeautyeffect">NERTC.setBeautyEffect</a></td>
+							<td>设置美颜效果。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setfilter">NERTC.setFilter</a></td>
+							<td>添加滤镜效果（H5专用）。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#addbeautyfilter">NERTC.addBeautyFilter</a></td>
+							<td>添加滤镜效果（APP专用）。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setbeautyfilterlevel">NERTC.setBeautyFilterLevel</a></td>
+							<td>设置滤镜强度（APP专用）。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#removebeautyfilter">NERTC.removeBeautyFilter</a></td>
+							<td>取消滤镜效果（APP专用）。</td>
+							<td>v5.6.33</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#enablebeauty">NERTC.enableBeauty</a></td>
+							<td>暂停或恢复美颜效果（APP专用）。</td>
+							<td>v5.6.33</td>
+						</tr>
+				</tbody></table>
+				<a href="#截图" id="截图" style="color: inherit; text-decoration: none;">
+					<h2><span id="截图">截图</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#takelocalsnapshot">NERTC.takeLocalSnapshot</a></td>
+							<td>本地视频画面截图。</td>
+							<td>v5.6.34</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#takeremotesnapshot">NERTC.takeRemoteSnapshot</a></td>
+							<td>远端视频画面截图。</td>
+							<td>v5.6.34</td>
+						</tr>
+				</tbody></table>
+				<a href="#本地媒体事件" id="本地媒体事件" style="color: inherit; text-decoration: none;">
+					<h2><span id="本地媒体事件">本地媒体事件</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onfirstaudioframedecoded">NERtcCallback.onFirstAudioFrameDecoded</a></td>
+							<td>已解码远端音频首帧的回调    。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onfirstvideoframedecoded">NERtcCallback.onFirstVideoFrameDecoded</a></td>
+							<td>已接收到远端视频首帧并完成解码的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onfirstvideodatareceived">NERtcCallback.onFirstVideoDataReceived</a></td>
+							<td>已显示远端视频首帧的回调    。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onfirstaudiodatareceived">NERtcCallback.onFirstAudioDataReceived</a></td>
+							<td>远端音频首帧回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#远端媒体事件" id="远端媒体事件" style="color: inherit; text-decoration: none;">
+					<h2><span id="远端媒体事件">远端媒体事件</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuservideomute">NERtcCallback.onUserVideoMute</a></td>
+							<td>远端用户暂停或恢复发送视频主流的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuseraudiomute">NERtcCallback.onUserAudioMute</a></td>
+							<td>远端用户暂停或恢复音频主流发送的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuseraudiostart">NERtcCallback.onUserAudioStart</a></td>
+							<td>远端用户开启音频主流的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuseraudiostop">NERtcCallback.onUserAudioStop</a></td>
+							<td>远端用户关闭音频主流的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuservideostart">NERtcCallback.onUserVideoStart</a></td>
+							<td>远端用户开启视频的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onuservideostop">NERtcCallback.onUserVideoStop</a></td>
+							<td>远端用户关闭视频的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#数据统计事件" id="数据统计事件" style="color: inherit; text-decoration: none;">
+					<h2><span id="数据统计事件">数据统计事件</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onrtcstats">NERtcCallback.onRtcStats</a></td>
+							<td>当前通话统计回调，每2秒触发一次。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onnetworkquality">NERtcCallback.onNetworkQuality</a></td>
+							<td>通话中每个用户的网络上下行质量报告回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onlocalaudiostats">NERtcCallback.onLocalAudioStats</a></td>
+							<td>本地音频流统计信息回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onlocalvideostats">NERtcCallback.onLocalVideoStats</a></td>
+							<td>本地视频流统计信息回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onremoteaudiostats">NERtcCallback.onRemoteAudioStats</a></td>
+							<td>通话中远端音频流的统计信息回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onremotevideostats">NERtcCallback.onRemoteVideoStats</a></td>
+							<td>通话中远端视频流的统计信息回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setstatsobserver">NERTC.setStatsObserver</a></td>
+							<td>设置统计信息回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#屏幕共享" id="屏幕共享" style="color: inherit; text-decoration: none;">
+					<h2><span id="屏幕共享">屏幕共享</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#setupsharekit">NERTC.setupShareKit</a></td>
+							<td>IOS屏幕共享配置。</td>
+							<td>v5.6.35</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setuplocalsubstreamvideocanvas">NERTC.setupLocalSubStreamVideoCanvas</a></td>
+							<td>设置本端的辅流视频回放画布。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setupremotesubstreamvideocanvas">NERTC.setupRemoteSubStreamVideoCanvas</a></td>
+							<td>设置远端的辅流视频回放画布。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#startscreencapture">NERTC.startScreenCapture</a></td>
+							<td>开启屏幕共享。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#stopscreencapture">NERTC.stopScreenCapture</a></td>
+							<td>停止屏幕共享。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#subscriberemotesubstreamvideo">NERTC.subscribeRemoteSubStreamVideo</a></td>
+							<td>订阅或取消订阅远端的屏幕共享辅流视频，订阅之后才能接收远端的辅流视频数据    。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#屏幕共享事件" id="屏幕共享事件" style="color: inherit; text-decoration: none;">
+					<h3><span id="屏幕共享事件">屏幕共享事件</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onusersubstreamvideostart">NERtcCallback.onUserSubStreamVideoStart</a></td>
+							<td>远端用户开启屏幕共享辅流通道的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onusersubstreamvideostop">NERtcCallback.onUserSubStreamVideoStop</a></td>
+							<td>远端用户停止屏幕共享辅流通道的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#音频共享" id="音频共享" style="color: inherit; text-decoration: none;">
+					<h2><span id="音频共享">音频共享</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#enableloopbackrecording">NERTC.enableLoopbackRecording</a></td>
+							<td>是否开启音频共享（即系统声音）。</td>
+							<td>v5.5.21</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#adjustloopbackrecordingsignalvolume">NERTC.adjustLoopBackRecordingSignalVolume</a></td>
+							<td>设置音频共享的音量。</td>
+							<td>v5.5.21</td>
+						</tr>
+				</tbody></table>
+				<a href="#音量提示" id="音量提示" style="color: inherit; text-decoration: none;">
+					<h2><span id="音量提示">音量提示</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#enableaudiovolumeindication">NERTC.enableAudioVolumeIndication</a></td>
+							<td>启用说话者音量提示    。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#音量提示事件" id="音量提示事件" style="color: inherit; text-decoration: none;">
+					<h3><span id="音量提示事件">音量提示事件</span></h3>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onremoteaudiovolumeindication">NERtcCallback.onRemoteAudioVolumeIndication</a></td>
+							<td>提示房间内谁正在说话及说话者音量的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onlocalaudiovolumeindication">NERtcCallback.onLocalAudioVolumeIndication</a></td>
+							<td>提示房间内本地用户瞬时音量及是否存在人声的回调。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#耳返" id="耳返" style="color: inherit; text-decoration: none;">
+					<h2><span id="耳返">耳返</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#enableearback">NERTC.enableEarback</a></td>
+							<td>开启耳返功能。</td>
+							<td>v5.3.7</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setearbackvolume">NERTC.setEarbackVolume</a></td>
+							<td>设置耳返音量。</td>
+							<td>v5.3.7</td>
+						</tr>
+				</tbody></table>
+				<a href="#h5平台自动播放受限" id="h5平台自动播放受限" style="color: inherit; text-decoration: none;">
+					<h2><span id="H5平台自动播放受限">H5平台自动播放受限</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#resume">NERTC.resume</a></td>
+							<td>监测到自动播放受限后，重新恢复音视频流。</td>
+							<td>v5.5.11</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#replayaudio">NERTC.rePlayAudio</a></td>
+							<td>监测到自动播放受限后，重新播放音视流。</td>
+							<td>v5.5.11</td>
+						</tr>
+				</tbody></table>
+				<a href="#伴音" id="伴音" style="color: inherit; text-decoration: none;">
+					<h2><span id="伴音">伴音</span></h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>方法</th>
+							<th>功能描述</th>
+							<th>版本</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="modules/nertc.nertc-1.html#startaudiomixing">NERTC.startAudioMixing</a></td>
+							<td>开启伴音。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#stopaudiomixing">NERTC.stopAudioMixing</a></td>
+							<td>停止伴音。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#pauseaudiomixing">NERTC.pauseAudioMixing</a></td>
+							<td>暂停伴音。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#resumeaudiomixing">NERTC.resumeAudioMixing</a></td>
+							<td>恢复伴音。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setaudiomixingplaybackvolume">NERTC.setAudioMixingPlaybackVolume</a></td>
+							<td>设置节伴奏播放音量。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setaudiomixingsendvolume">NERTC.setAudioMixingSendVolume</a></td>
+							<td>调节伴奏发送音量。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getaudiomixingplaybackvolume">NERTC.getAudioMixingPlaybackVolume</a></td>
+							<td>获取伴奏本地播放音量。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getaudiomixingsendvolume">NERTC.getAudioMixingSendVolume</a></td>
+							<td>获取伴奏发送音量。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getaudiomixingduration">NERTC.getAudioMixingDuration</a></td>
+							<td>获取伴奏时长。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setaudiomixingposition">NERTC.setAudioMixingPosition</a></td>
+							<td>设置音乐文件的播放位置。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getaudiomixingcurrentposition">NERTC.getAudioMixingCurrentPosition</a></td>
+							<td>获取音乐文件的播放进度。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#getaudiomixingpitch">NERTC.getAudioMixingPitch</a></td>
+							<td>获取当前伴音文件的音调。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="modules/nertc.nertc-1.html#setaudiomixingpitch">NERTC.setAudioMixingPitch</a></td>
+							<td>设置当前伴音文件的音调。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onaudiomixingstatechanged">NERtcCallback.onAudioMixingStateChanged</a></td>
+							<td>远端用户加入当前房间回调。</td>
+							<td>v5.6.0</td>
+						</tr>
+						<tr>
+							<td><a href="interfaces/nertccallback.nertccallback-1.html#onaudiomixingtimestampupdate">NERtcCallback.onAudioMixingTimestampUpdate</a></td>
+							<td>远端用户离开当前房间回调。</td>
+							<td>v5.6.0</td>
+						</tr>
+				</tbody></table>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/nertc.html">nertc</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/nertccallback.html">nertc<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/types.html">types</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

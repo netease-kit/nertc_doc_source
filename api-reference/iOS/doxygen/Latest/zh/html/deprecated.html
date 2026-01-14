@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC iOS SDK: 弃用列表</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC iOS SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+  <div class="headertitle"><div class="title">弃用列表</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="reflist">
+<dt>成员 <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a66673915d07935534c6bac6fbc086f2a">[INERtcEngineEx-p pushExternalVideoFrame:]</a>  </dt>
+<dd><a class="anchor" id="_deprecated000002"></a>此方法已废弃，请使用方法 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a0468916ef88b38b0dc1c00a0874a015a">INERtcEngineEx#pushExternalVideoFrame:streamType:</a></code> 代替。 推送外部视频帧。 <br  />
+该方法主动将视频帧数据用 <a class="el" href="interface_n_e_rtc_video_frame.html" title="视频帧信息。">NERtcVideoFrame</a> 类封装后传递给 SDK。  </dd>
+<dt>成员 <a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#a64ebb802c1d6e84430645026c402352f">[INERtcEngineEx-p setExternalVideoSource:isScreen:]</a>  </dt>
+<dd><a class="anchor" id="_deprecated000001"></a>该方法已经废弃，请使用 <code><a class="el" href="protocol_i_n_e_rtc_engine_ex-p.html#abec9a0d2e9018b2c5feee77eda3c54b6">INERtcEngineEx#setExternalVideoSource:streamType:</a></code> 方法代替。注意，如果已经调了此方法，将会导致再 <code><a class="el" href="">INERtcEngine#setExternalVideoSource:streamType:</a></code> 方法失效。 开启或关闭外部视频源数据输入。 <br  />
+ 通过本接口可以实现创建自定义的外部视频源，并通过主流通道传输该外部视频源的数据。  </dd>
+<dt>成员 <a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#a6e70fb2a067194a64c830bcc23b1d994">[NERtcEngineAudioFrameObserver-p onNERtcEnginePlaybackAudioFrameBeforeMixingWithUserID:frame:]</a>  </dt>
+<dd><a class="anchor" id="_deprecated000007"></a>即将废弃，请改用接口 <code><a class="el" href="protocol_n_e_rtc_engine_audio_frame_observer-p.html#aba6cf3b97efe66f4d712972e4c0c95e4">NERtcEngineAudioFrameObserver#onNERtcEnginePlaybackAudioFrameBeforeMixingWithUserID:frame:channelId:</a></code>。在多房间场景下，此接口可通过 channelId 识别不同房间。  </dd>
+<dt>成员 <a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html#a2bfeaf5f30dedce03012f5fae55a72be">[NERtcEngineDelegateEx-p onNERtcEngineAudioHasHowling]</a>  </dt>
+<dd><a class="anchor" id="_deprecated000006"></a>该回调将在未来版本中废弃，请使用<code>- (void)<a class="el" href="protocol_n_e_rtc_engine_delegate_ex-p.html#aee1b4200b7c146d55f9da3cd3a996dc1" title="检测啸叫回调, 调用 JoinChannel 成功后，会一直周期性触发该回调, 不建议在该回调里做频繁的 API 调用和耗时操作。 当声源与扩音设备之间因距离过近时，可能会产生啸叫。NERTC SDK ...">onNERtcEngineAudioHasHowling: (NERtcEngineDelegateEx-p)</a>flag</code>. 检测到啸叫回调。 当声源与扩音设备之间因距离过近时，可能会产生啸叫。NERTC SDK 支持啸叫检测，当检测到有啸叫信号产生的时候，自动触发该回调直至啸叫停止。App 应用层可以在收到啸叫回调时，提示用户静音麦克风，或直接静音麦克风。  </dd>
+<dt>成员 <a class="el" href="_n_e_rtc_engine_base_8h.html#a5f351837486445ec66a8031278a96b66">kNERtcKeyPublishSelfStreamEnabled</a>  </dt>
+<dd><a class="anchor" id="_deprecated000003"></a>该参数已废弃。   </dd>
+<dt>成员 <a class="el" href="interface_n_e_rtc_a_s_r_caption_config.html#a1bdf59a48d1a165367baecb2cfa5acdb">NERtcASRCaptionConfig::dstLanguage</a>  </dt>
+<dd><a class="anchor" id="_deprecated000005"></a>该参数已废弃。 </dd>
+<dt>成员 <a class="el" href="interface_n_e_rtc_server_addresses.html#a0b3216601bbe96ebc3a2d7b63999d693">NERtcServerAddresses::useIPv6</a>  </dt>
+<dd><a class="anchor" id="_deprecated000004"></a>该参数已废弃，请使用 <a class="el" href="interface_n_e_rtc_engine_context.html" title="初始化设置 NERtcEngine">NERtcEngineContext</a> 中的 ipAddrMode 字段替代。  </dd>
+</dl>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

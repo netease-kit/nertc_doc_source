@@ -1,0 +1,940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC Android SDK: 简介</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC Android SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">简介 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>网易云信 NERTC SDK 提供完善的音视频通话开发框架，提供基于网络的点对点视频通话和语音通话功能，还提供多人视频和音频会议功能，支持通话中音视频设备控制和实时音视频模式切换，支持视频采集数据回调以实现美颜等自定义功能。</p>
+<ul>
+<li><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 接口类包含应用程序调用的主要方法。</li>
+<li><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html">NERtcEx</a> 接口类包含应用程序调用的扩展方法。</li>
+<li><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html">NERtcCallback</a> 类用于向应用程序发送用户状态回调通知。</li>
+<li><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html">NERtcCallbackEx</a> 类用于向应用程序发送音视频信息回调通知。</li>
+<li><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1channel_1_1_n_e_rtc_channel.html">channel.NERtcChannel</a></code> 类在指定房间中实现实时音视频功能。通过创建多个 NERtcChannel 对象，用户可以同时加入多个房间。</li>
+<li><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1channel_1_1_n_e_rtc_channel_callback.html">channel.NERtcChannelCallback</a></code> 类监听和报告指定房间的事件和数据。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md0"></a>
+错误码</h2>
+<p>在调用 SDK API 的过程中，SDK 可能会返回错误码或状态码，您可以根据错误码或状态码判断当前 SDK 或任务的状态。如果遇到未知的错误码，请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师排查。</p>
+<p>当前 SDK API 的错误码如下：</p><ul>
+<li>通用错误码：<code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_error_code.html">NERtcConstants.ErrorCode</a></code></li>
+<li>伴音错误码：<code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_mixing_error.html">NERtcConstants.AudioMixingError</a></code></li>
+<li>客户端录音状态码：<code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_audio_recording_code.html">NERtcConstants.AudioRecordingCode</a></code></li>
+<li>视频水印状态码：<code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_constants_1_1_n_e_rtc_local_video_watermark_state.html">NERtcConstants.NERtcLocalVideoWatermarkState</a></code></li>
+</ul>
+<h2 id="房间管理">房间管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#ac4a35326abf518c7f25b3e81641f4f3a">NERtc#getInstance()</a></code> </td><td>创建 RTC 引擎对象。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a2198fb57cd127a8ae136e1f450236e57">NERtc#init()</a></code> </td><td>RTC 引擎对象初始化。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a125cf1bb27e87e23c9da7bd89f5d0cc7">NERtcEx#setNERtcCallback()</a></code> </td><td>设置事件通知回调。 </td><td>V4.6.40  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#adccc96746b013e42f18937482ed08ac5">NERtc#release()</a></code>  </td><td>销毁 <a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> 实例，释放资源。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a9a299bfd254abbe461efbd60d5f9dcb3">NERtcEx#setChannelProfile()</a></code> </td><td>设置房间场景。 </td><td>V3.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a4bcf93d5c765e8f19a62c45717f1704c">NERtcEx#setClientRole()</a></code> </td><td>设置用户角色。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a2a44081baf4bd457749d1c48cd2def36">NERtc#joinChannel()</a></code> </td><td>加入房间。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8d0c8bcd317e240c113af10a14655cee">NERtcEx#switchChannel()</a></code> </td><td>直播场景中快速切换房间。 </td><td>V4.1.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#af42a2d700d78e67022ea04345229fe94">NERtc#leaveChannel()</a></code> </td><td>离开房间。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a7a9135f32ad0e10feb536944fd5a8ab2">NERtc#setParameters()</a></code> </td><td>复杂参数设置接口。如果需要设置相关参数，请在调用 init 接口初始化之前调用此接口。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a5f4cf91e92f706484dd984ea89d86223">NERtcEx#getConnectionState()</a></code> </td><td>获取房间连接状态。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#ac2d5b0020278cc81e69c8df81c862b4a">NERtc#updatePermissionKey()</a></code> </td><td>更新权限密钥。 </td><td>V4.6.29  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md1"></a>
+房间事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#af075abb821d38a82de38aafacb86d7bb">NERtcCallback#onClientRoleChange()</a></code>  </td><td>用户角色已切换回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a40dc60ee3aa4e010d5fe99603f063549">NERtcCallback#onJoinChannel()</a></code>  </td><td>加入房间回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a3816a9ae9e92a316956e56ec43272d80">NERtcCallbackEx#onReJoinChannel()</a></code>  </td><td>重新加入房间回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a8c4cbc5219d80e3dedf66d0570d470a4">NERtcCallback#onLeaveChannel()</a></code>  </td><td>离开房间回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a85b045060d5f6f0d3611d6a2079115e1">NERtcCallbackEx#onReconnectingStart()</a></code>  </td><td>开始重连回调。 </td><td>V3.7.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#ae61dabff9747cbd455442eafb8dfe414">NERtcCallback#onUserJoined(long uid)</a></code>  </td><td>远端用户加入当前房间回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#ab45b16f9e05378c0e8b383f02aeb89a6">NERtcCallback#onUserJoined(long uid, NERtcUserJoinExtraInfo joinExtraInfo)</a></code>  </td><td>远端用户加入当前房间回调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#aeb2604dfb4551fe537f61b67fd1cfa5b">NERtcCallback#onUserLeave(long uid,int reason)</a></code>  </td><td>远端用户离开当前房间回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#af9b8bdecbdda52fcdfe092ef59cd2710">NERtcCallback#onUserLeave(long uid, int reason, NERtcUserLeaveExtraInfo leaveExtraInfo)</a></code>  </td><td>远端用户离开当前房间回调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#ac1502d885a8114de4532a7a84ac66cdb">NERtcCallback#onDisconnect()</a></code>  </td><td>服务器连接断开回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a5225935a3303ed16faff92449fcdc8b7">NERtcCallbackEx#onConnectionTypeChanged()</a></code>  </td><td>本地网络类型已改变回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ae3828816577fc2565eddf813976789c3">NERtcCallbackEx#onConnectionStateChanged()</a></code>  </td><td>房间连接状态已改变回调。 </td><td>V3.8.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a0e96d5648217e1f90c5e589cbf395b74">NERtcCallbackEx#onPermissionKeyWillExpire()</a></code>  </td><td>权限密钥即将过期事件回调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#afb31b7cd35c95fb1b1aa4bd64346058e">NERtcCallbackEx#onUpdatePermissionKey()</a></code>  </td><td>更新权限密钥事件回调。 </td><td>V4.6.29  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md2"></a>
+音频管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a577e39135f6388f4d02e4cb72f97a9f3">NERtc#setAudioProfile()</a></code>  </td><td>设置音频编码配置。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae4988d9c805907f6ef89bd076b5c3170">NERtcEx#adjustRecordingSignalVolume()</a></code>  </td><td>调节录音音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a00794c3892bdeb06badf73d062114104">NERtcEx#adjustPlaybackSignalVolume()</a></code>  </td><td>调节播放音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a878f1e81a4e89e89cc1fe9155a86faf6">NERtcEx#adjustUserPlaybackSignalVolume()</a></code>  </td><td>调节本地播放的指定远端用户的信号音量。 </td><td>V4.2.1  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a509ef7ce4710036eb5d76d2c97f1a082">NERtc#enableLocalAudio()</a></code>  </td><td>开关本地音频采集。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aedd4b7563c5180bd6f799f4263bc7aae">NERtcEx#muteLocalAudioStream()</a></code>  </td><td>开关本地音频发送。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#aed2eb31b2e90fd558e9dc2685847aa44">NERtc#subscribeRemoteAudioStream()</a></code>  </td><td>订阅／取消订阅指定音频流。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a152d9d16a2d3525b0a1edf1c2b228231">NERtc#subscribeAllRemoteAudioStreams()</a></code>  </td><td>订阅／取消订阅所有远端音频流。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1db018769ef4a04e1189eeeb25b3cefd">NERtcEx#setAudioProcessObserver()</a></code>  </td><td>注册音频处理观测器，设置音频处理回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae89c16ccd946828f5183b6608ed1d5b8">NERtcEx#setRemoteHighPriorityAudioStream()</a></code>  </td><td>设置音频订阅优先级。 </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ab58bf9505ec8005bf54affb13df84d74">NERtcEx#enableLoopbackRecording()</a></code>  </td><td>开启或关闭音频共享。 </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a95b92c66b776e9268dc451bb76ade940">NERtcEx#adjustLoopBackRecordingSignalVolume()</a></code>  </td><td>调整音频共享音量。 </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adee9c69ac723cd4161f384bc13928693">NERtcEx#enableLocalSubStreamAudio()</a></code>  </td><td>开启或关闭音频辅流。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a2c6aeea4a21d9828f02e2ef3bdcd1748">NERtcEx#subscribeRemoteSubStreamAudio()</a></code>  </td><td>订阅远端用户辅流。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a56b68924afac8dbcd269174bce6f3445">NERtcEx#muteLocalSubStreamAudio()</a></code>  </td><td>静音本地音频辅流。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#af788c31dde946e47e62a0cdd7b4246dd">NERtcEx#setAudioSubscribeOnlyBy()</a></code>  </td><td>设置本地用户音频只能被房间内其他指定用户订阅。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#afca8cc32d2022f79212bd665efa3da18">NERtcEx#enableMediaPub()</a></code>  </td><td>发布或停止发布本地音频。 </td><td>V4.6.10  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_process_observer.html#ab6c483608f6db4e7bd8d7d2ed68fa7b3">NERtcAudioProcessObserver#onAudioHasHowling()</a></code>  </td><td>检测到啸叫回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#aa480c1f114c2353c2ef81f001092cd57">NERtcAudioFrameObserver#onRecordSubStreamAudioFrame()</a></code>  </td><td>本地音频辅流数据回调。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#a356d35b9bec5ad8307c9cdd1ff3d3c7f">NERtcAudioFrameObserver#onPlaybackSubStreamAudioFrameBeforeMixingWithUserID()</a></code>  </td><td>获取开启音频辅流的远端用户的辅流数据。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md3"></a>
+视频管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#add16816a308b58c649f0fbfe011e0987">NERtc#enableLocalVideo(boolean enable)</a></code>  </td><td>开启/关闭本地视频的采集与发送。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#ad5c6e217dacfc20546617d98e3b5ba9b">NERtc#enableLocalVideo(NERtcVideoStreamType streamType, boolean enable)</a></code>  </td><td>开启/关闭本地视频的采集与发送。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a9aa68f7f4c96b7a84a04e79941dc9015">NERtc#setCameraCaptureConfig(NERtcCameraCaptureConfig captureConfig)</a></code>  </td><td>设置本地摄像头的采集偏好等配置。 </td><td>V4.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#ada5553b88fe5dd19572872fb59eee564">NERtc#setCameraCaptureConfig(NERtcCameraCaptureConfig captureConfig, NERtcVideoStreamType streamType)</a></code>  </td><td>设置本地摄像头的采集偏好等配置。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a20a4f919dbc80cfe7a95cf631e886cf2">NERtc#setLocalVideoConfig(NERtcVideoConfig videoConfig)</a></code>  </td><td>设置视频编码属性。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#ac0ae5d451a01fe2510d1c21e909c247a">NERtc#setLocalVideoConfig(NERtcVideoConfig videoConfig, NERtcVideoStreamType streamType)</a></code>  </td><td>设置视频编码属性。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a4c008dfb1448f3bb09115d411bf21f27">NERtc#setupLocalVideoCanvas()</a></code>  </td><td>设置本地用户视图。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a42244c0d7d497ab5d3a3390aeb619a3e">NERtc#setupRemoteVideoCanvas()</a></code>  </td><td>设置远端用户视图。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a08ccea99f4d15400765bd682c9738292">NERtc#startVideoPreview()</a></code>  </td><td>开启视频预览。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#afbf7f0de6fdd33a63d9f8bb60031e5f8">NERtc#startVideoPreview(NERtcVideoStreamType streamType)</a></code>  </td><td>开启视频预览。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a46955a65822752a92e8c9d83f8a9d5a3">NERtc#stopVideoPreview()</a></code>  </td><td>停止视频预览。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#a23f4d820a20c7be94ae4d793a81c8a0d">NERtc#stopVideoPreview(NERtcVideoStreamType streamType)</a></code>  </td><td>停止视频预览。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a46445d2a624bd9a99092d3276d1886e7">NERtcEx#muteLocalVideoStream(boolean mute)</a></code>  </td><td>取消/恢复发布本地视频。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a62d4b02f3f3c3b231f03a1da23f1b845">NERtcEx#muteLocalVideoStream(NERtcVideoStreamType streamType, boolean mute)</a></code>  </td><td>取消/恢复发布本地视频。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#aeb6ccb7d3481f5524abdc6e4dd38d51a">NERtc#subscribeRemoteVideoStream()</a></code>  </td><td>订阅/取消订阅指定远端用户的视频流。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_view.html#abb81b7ac30f8b82a47b515051099b699">NERtcVideoView#setScalingType()</a></code>  </td><td>设置显示模式。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a64c22c5539ca342cfb8e1d4848218f57">NERtcEx#postOnGLThread()</a></code>  </td><td>将操作设置到具有 GLContext 的线程中，如销毁第三方滤镜资源。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aac496904ddedb36e07c7e55f172ccf50">NERtcEx#enableSuperResolution()</a></code>  </td><td>启用或停止 AI 超分。 </td><td>V4.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adf5c48ab6329131938c1fd971c419204">NERtcEx#enableVideoCorrection()</a></code>  </td><td>启用或关闭视频图像畸变矫正。 </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a0a581e6bd0dc95c18fafd93c58f1cc40">NERtcEx#setVideoCorrectionConfig()</a></code>  </td><td>设置视频图像矫正参数。 </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad1b6de36f54e4c9c3ab04249c89c4906">NERtcEx#enableVirtualBackground()</a></code>  </td><td>开启虚拟背景。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8f1c7c7dc04414af6396aff3e96c4efa">NERtcEx#getFeatureSupportedType()</a></code>  </td><td>查询当前设备是否支持开启指定功能（例如虚拟背景功能）。 </td><td>V5.6.30  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md4"></a>
+RTMP 推拉流</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><div style="width:400px">方法</div>   </th><th class="markdownTableHeadNone"><div style="width:400px">功能</div>   </th><th class="markdownTableHeadCenter"><div style="width:200px">起始版本</div>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac6105aef79bc3cbcd5be568ad00edd03">NERtcEx#startPushStreaming(NERtcPushStreamingConfig config)</a></code> </td><td class="markdownTableBodyNone">将 RTMP 流推到指定的地址。   </td><td class="markdownTableBodyCenter">V4.6.420    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code><a class="el" href="#aadb99d2bd5950ca7cfb1b39b21d30ca0">NERtcEx#stopPushStreaming()</a></code> </td><td class="markdownTableBodyNone">停止当前正在进行的 RTMP 推流。   </td><td class="markdownTableBodyCenter">V4.6.420   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><div style="width:400px">事件</div>   </th><th class="markdownTableHeadNone"><div style="width:400px">描述</div>   </th><th class="markdownTableHeadCenter"><div style="width:200px">起始版本</div>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a4bfe88f634363ffb7cb58494a8651a40">NERtcCallbackEx#onStartPushStreaming(int result, long channelId)</a></code> </td><td class="markdownTableBodyNone">startPushStreaming 开始推流的结果回调。   </td><td class="markdownTableBodyCenter">V4.6.420    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a3f4dbef8d72e6d3b222108ab918a31e9">NERtcCallbackEx#onStopPushStreaming(int result)</a></code> </td><td class="markdownTableBodyNone">停止 RTMP 推流的结果回调。   </td><td class="markdownTableBodyCenter">V4.6.420    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a1806b650982aac752c1225bf93ae488e">NERtcCallbackEx#onPushStreamingReconnecting(int reason)</a></code> </td><td class="markdownTableBodyNone">推流过程中推流状态变为重连中的回调。   </td><td class="markdownTableBodyCenter">V4.6.420    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a6793656a53ceefbeb020844690ed925b">NERtcCallbackEx#onPushStreamingReconnectedSuccess()</a></code> </td><td class="markdownTableBodyNone">推流过程中重连成功的回调。   </td><td class="markdownTableBodyCenter">V4.6.420   </td></tr>
+</table>
+<h2 id="本地媒体事件">本地媒体事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a20ee6ef94ac45bbc03ae779d57d3f070">NERtcCallbackEx#onFirstAudioFrameDecoded()</a></code>  </td><td>已解码远端音频首帧的回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ad4907736f6bbee55b6eaf51b101846a2">NERtcCallbackEx#onFirstVideoFrameDecoded(long userID, int width, int height)</a></code>  </td><td>已接收到远端视频首帧并完成解码的回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a8dbc8636e3aa3473c48ffee043d47996">NERtcCallbackEx#onFirstVideoFrameDecoded(NERtcVideoStreamType streamType, long userID, int width, int height)</a></code>  </td><td>已接收到远端视频首帧并完成解码的回调。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a0184ea59b6fca02a2f9050005f5cd073">NERtcCallbackEx#onFirstVideoDataReceived(long uid)</a></code>  </td><td>已显示远端视频首帧的回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a5196530aff2a0518a1b9a4f3306219c9">NERtcCallbackEx#onFirstVideoDataReceived(NERtcVideoStreamType streamType, long uid)</a></code>  </td><td>已显示远端视频首帧的回调。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ad1283fd862765c97e605b32147526fbe">NERtcCallbackEx#onFirstAudioDataReceived()</a></code>  </td><td>远端音频首帧回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a0c55cc3bd60798320d72d5fd4c117b06">NERtcCallbackEx#onMediaRightChange()</a></code>  </td><td>服务端禁言音视频权限变化回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#aaa70fbf1467e098754e0f2290b779dc5">NERtcCallbackEx#onVirtualBackgroundSourceEnabled()</a></code>  </td><td>通知虚拟背景是否成功开启的回调。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2 id="远端媒体事件">远端媒体事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a9dc3491897198cb0f2eaf5dca29b7a71">NERtcCallbackEx#onUserVideoProfileUpdate()</a></code>  </td><td>远端用户更改视频分辨率类型的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a036bca1c8e591c5bc938703c1d5eba92">NERtcCallbackEx#onUserVideoMute(long uid, boolean muted)</a></code>  </td><td>远端用户暂停或恢复发送视频主流的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a33f0fa75d8a9bd31bc9dc6dd54de8f6b">NERtcCallbackEx#onUserVideoMute(NERtcVideoStreamType streamType, long uid, boolean muted)</a></code>  </td><td>远端用户暂停或恢复发送视频主流或辅流的回调。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a94765ced4bc430671e62b0c6c70dad65">NERtcCallbackEx#onUserAudioMute()</a></code>  </td><td>远端用户暂停或恢复音频主流发送的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a2ed24a9a55aae27ef5565f3f63d5e2a0">NERtcCallbackEx#onUserSubStreamAudioMute()</a></code>  </td><td>远端用户暂停或恢复音频辅流发送的回调。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a2e3166e1a5f2bcbc63e15b56202a383a">NERtcCallback#onUserAudioStart()</a></code>  </td><td>远端用户开启音频主流的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ae9a94ee4ba319ec013ee351a865571ef">NERtcCallbackEx#onUserSubStreamAudioStart()</a></code>  </td><td>远端用户开启音频辅流的回调。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#aa55ec6def0eb37dbae0c5434508cd63d">NERtcCallback#onUserAudioStop()</a></code>  </td><td>远端用户关闭音频主流的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ac92a2086d8e9e34dc1fd1a0d3473667c">NERtcCallbackEx#onUserSubStreamAudioStop()</a></code>  </td><td>远端用户关闭音频辅流的回调。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a3bb52968ab05a708cee947a0bec33873">NERtcCallback#onUserVideoStart()</a></code>  </td><td>远端用户开启视频的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback.html#a8760fd3f131541b619db31848b97d66c">NERtcCallback#onUserVideoStop()</a></code>  </td><td>远端用户关闭视频的回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="数据统计事件">数据统计事件</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1stats_1_1_n_e_rtc_stats_observer.html#ae8e3b98c1ed098420ca24ca05246ee9b">NERtcStatsObserver#onRtcStats()</a></code>  </td><td>当前通话统计回调，每 2 秒触发一次。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1stats_1_1_n_e_rtc_stats_observer.html#a1fa715c7c89399ab1c022ab881d62043">NERtcStatsObserver#onNetworkQuality()</a></code>  </td><td>通话中每个用户的网络上下行质量报告回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1stats_1_1_n_e_rtc_stats_observer.html#a863ad60c810a488e3bf0081f751c061d">NERtcStatsObserver#onLocalAudioStats()</a></code>  </td><td>本地音频流统计信息回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1stats_1_1_n_e_rtc_stats_observer.html#a4f862eef4f83362c623bd8946ae259b9">NERtcStatsObserver#onLocalVideoStats()</a></code>  </td><td>本地视频流统计信息回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1stats_1_1_n_e_rtc_stats_observer.html#a8653a1c70ebc5c899b68180a7704448f">NERtcStatsObserver#onRemoteAudioStats()</a></code>  </td><td>通话中远端音频流的统计信息回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1stats_1_1_n_e_rtc_stats_observer.html#a20d617715d2fc6454ae989ad33e52c36">NERtcStatsObserver#onRemoteVideoStats()</a></code>  </td><td>通话中远端视频流的统计信息回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac4b889a0fda28a78d7546ea4a7855162">NERtcEx#setStatsObserver()</a></code>  </td><td>设置统计信息回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md5"></a>
+多房间管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#afbb8cd6e77c35384e9c91a9ea4c3498e">NERtcEx#createChannel()</a></code>  </td><td>创建并获取一个 NERtcChannel 对象。通过创建多个对象，用户可以同时加入多个房间。 </td><td>V4.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1channel_1_1_n_e_rtc_channel.html">channel.NERtcChannel</a></code>  </td><td>该类提供在指定房间内实现实时音视频功能的方法。 </td><td>V4.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1channel_1_1_n_e_rtc_channel_callback.html">channel.NERtcChannelCallback</a></code>  </td><td>该类提供监听指定房间事件和数据的回调。 </td><td>V4.5.0  </td></tr>
+</table>
+<h2 id="屏幕共享">屏幕共享</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8a3fa528315d1acc2c55bd7470594b92">NERtcEx#setupLocalSubStreamVideoCanvas()</a></code>  </td><td>设置本端的辅流视频回放画布。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a2b956df8d6c39b941e3ca6d3e8a86784">NERtcEx#setupRemoteSubStreamVideoCanvas()</a></code>  </td><td>设置远端的辅流视频回放画布。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a39898aeaa3451d08e02466305a2e5a13">NERtcEx#startScreenCapture()</a></code>  </td><td>开启屏幕共享。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad9698fc72f1797655d9382e315132e3d">NERtcEx#stopScreenCapture()</a></code>  </td><td>停止屏幕共享。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a81db18186e7a268e6db4714d5f0cf096">NERtcEx#subscribeRemoteSubStreamVideo()</a></code> </td><td>订阅或取消订阅远端的屏幕共享辅流视频，订阅之后才能接收远端的辅流视频数据。 </td><td>V3.9.0  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#acbd2a5b0adf2c815271aa4a0934b0d4a">NERtcCallbackEx#onUserSubStreamVideoStart()</a></code>  </td><td>远端用户开启屏幕共享辅流通道的回调。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a07d214f7b396b43b1cbd44b142f932b9">NERtcCallbackEx#onUserSubStreamVideoStop()</a></code>  </td><td>远端用户停止屏幕共享辅流通道的回调。 </td><td>V3.9.0  </td></tr>
+</table>
+<h2 id="美颜">美颜</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac22e1e77ba106e1914fc730746419941">NERtcEx#startBeauty()</a></code>  </td><td>开启美颜功能模块。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a9d67ff2a3600cde7598c27e496ac4587">NERtcEx#stopBeauty()</a></code>  </td><td>结束美颜功能模块。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a49bc7e4b28dab2ce8d0e490b0a5da6b8">NERtcEx#enableBeauty()</a></code>  </td><td>暂停或恢复美颜效果。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aaef90028fe9cc598bf4bf1d5310bc71c">NERtcEx#setBeautyEffect()</a></code>  </td><td>设置美颜效果。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aa3fca3e7507b2b6e38f36e39cdec3f4e">NERtcEx#addBeautyFilter()</a></code> </td><td>添加滤镜效果。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a43c927780296d672d5585cd2c7d0bb9d">NERtcEx#removeBeautyFilter()</a></code> </td><td>移除滤镜。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a60eb78630d79d87a073c04336b758ba9">NERtcEx#setBeautyFilterLevel()</a></code> </td><td>设置滤镜强度。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2 id="视频大小流">视频大小流</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac9ee4b883d6cdecc2990a43527f8be86">NERtcEx#enableDualStreamMode()</a></code>  </td><td>设置是否开启视频大小流模式。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="音视频流回退">音视频流回退</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a582abbcc13e5cb74eed5781c2b097075">NERtcEx#setLocalPublishFallbackOption()</a></code>  </td><td>设置弱网条件下发布的音视频流回退选项。 </td><td>V4.3.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6e068099572e9485d944cf3cb81d7fd5">NERtcEx#setRemoteSubscribeFallbackOption()</a></code>  </td><td>设置弱网条件下订阅的音视频流回退选项。 </td><td>V4.3.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#acc8d4cf57cde35eb284506544ce9200f">NERtcEx#setLocalMediaPriority()</a></code>  </td><td>设置本地用户的媒体流优先级。 </td><td>V4.2.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a7fa844d7d2445d0954cc3037b9f1722d">NERtcCallbackEx#onLocalPublishFallbackToAudioOnly()</a></code>  </td><td>本地发布流已回退为音频流或恢复为音视频流回调。 </td><td>V4.3.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#aeeaa4a6882351694c0823862116e3406">NERtcCallbackEx#onRemoteSubscribeFallbackToAudioOnly()</a></code>  </td><td>远端订阅流已回退为音频流或恢复为音视频流回调。 </td><td>V4.3.0  </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md6"></a>
+通话前网络测试</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a04f88aceade968a815d0a6df6024d246">NERtcEx#startLastmileProbeTest()</a></code> </td><td>开始通话前网络质量探测。 </td><td>V4.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aa21aae237bdc8acc69c9808d7a9f7a1e">NERtcEx#stopLastmileProbeTest()</a></code> </td><td>停止通话前网络质量探测。 </td><td>V4.5.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ae4dc6a5628f33da01dbec21e039e642d">NERtcCallbackEx#onLastmileQuality()</a></code>  </td><td>报告本地用户的网络质量。 </td><td>V4.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#aac82c1f641ef99f2f0028fbef03a17fe">NERtcCallbackEx#onLastmileProbeResult()</a></code>  </td><td>报告通话前网络上下行 last mile 质量。 </td><td>V4.5.0  </td></tr>
+</table>
+<h2 id="音乐文件播放及混音">音乐文件播放及混音</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a69df08ee03787f3f9fcc551ed7158e13">NERtcEx#startAudioMixing()</a></code>  </td><td>开始播放音乐文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a39a57a372c6e5c385d868501753bdf83">NERtcEx#stopAudioMixing()</a></code>  </td><td>停止播放音乐文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8fed202b958cba6bcc149b9cc2e3a11b">NERtcEx#pauseAudioMixing()</a></code>  </td><td>暂停播放音乐文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a65f3dcf112d73776a6a6397887d4f825">NERtcEx#resumeAudioMixing()</a></code>  </td><td>恢复播放音乐文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a39587dfc9b3fc9a2de16293566dc313f">NERtcEx#setAudioMixingPlaybackVolume()</a></code>  </td><td>设置音乐文件播放音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8aa4f74f0f21772a9c3248fd4c1a42bc">NERtcEx#setAudioMixingSendVolume()</a></code>  </td><td>设置音乐文件的发送音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae84a7cfa051dfd315671f16fa2e11442">NERtcEx#getAudioMixingPlaybackVolume()</a></code>  </td><td>获取音乐文件的播放音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a9d68c4bb61ca9c6a59a34bebf40990f3">NERtcEx#getAudioMixingSendVolume()</a></code>  </td><td>获取音乐文件的发送音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6aa203077e0d9c1df6e5205d00a551c7">NERtcEx#setAudioMixingPitch()</a></code>  </td><td>设置音乐文件的音调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aaf80dd3bcf1590a689c6dc262cf2a418">NERtcEx#getAudioMixingPitch()</a></code>  </td><td>获取音乐文件的音调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a7e8c07091f03ad9abb0a5a6fe79c85eb">NERtcEx#getAudioMixingDuration()</a></code>  </td><td>获取音乐文件的总长度。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6f2b9a8bb716d373064e291b36b6264c">NERtcEx#setAudioMixingPosition()</a></code>  </td><td>设置音乐文件的播放进度。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a993f32e4b866217ba2085eb99b7bd445">NERtcEx#getAudioMixingCurrentPosition()</a></code>  </td><td>获取音乐文件的播放进度。 </td><td>V3.5.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a012c8093eaaf29da09a40779a2494468">NERtcCallbackEx#onAudioMixingStateChanged()</a></code>  </td><td>本地用户的音乐文件播放状态改变回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a4c5cb0eb4d6a4cc71169d5bd2e98daa0">NERtcCallbackEx#onAudioMixingTimestampUpdate()</a></code>  </td><td>本地用户的音乐文件播放进度回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="音效文件播放管理">音效文件播放管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ab9a8d96dbbdde1b4aff7c10712a38b4f">NERtcEx#getEffectPlaybackVolume()</a></code>  </td><td>获取音效文件播放音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a94e6b04ab692909dffef67da7dbf8c98">NERtcEx#setEffectPlaybackVolume()</a></code>  </td><td>设置音效文件播放音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aa1d2db8963a298822ae2781c206a209c">NERtcEx#playEffect()</a></code>  </td><td>播放指定音效文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a2791d928188980b75ee43547262415fd">NERtcEx#stopEffect()</a></code>  </td><td>停止播放指定音效文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#add33aaffe7d35b1fbe1d7ae5e0e12ead">NERtcEx#stopAllEffects()</a></code>  </td><td>停止播放所有音效文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a3e25ed858b22d34a0fb5e599ee6fd3ad">NERtcEx#pauseEffect()</a></code>  </td><td>暂停音效文件播放。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad7c110cf4395550400330316b6855232">NERtcEx#pauseAllEffects()</a></code>  </td><td>暂停所有音效文件播放。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a5649cd30d7d9d09f4a946022068e147d">NERtcEx#resumeEffect()</a></code>  </td><td>恢复播放指定音效文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad5be922f018bb39c5949c9c92aeeff8a">NERtcEx#resumeAllEffects()</a></code>  </td><td>恢复播放所有音效文件。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a10f95a93cf7bd49e41f4ad5074613853">NERtcEx#setEffectSendVolume()</a></code>  </td><td>调节音效文件发送音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6bda679ccdf18053c346f0c7955db236">NERtcEx#getEffectSendVolume()</a></code>  </td><td>获取音效文件发送音量。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a21714c1b3f02363756fae2b4faf3c749">NERtcEx#setEffectPitch()</a></code>  </td><td>设置音效文件音调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aecb034dfcbadb6e28c7a33821b30e947">NERtcEx#getEffectPitch()</a></code>  </td><td>获取音效文件音调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad017b8e4bc01310f71756f27f11f7366">NERtcEx#getEffectDuration()</a></code>  </td><td>获取音效文件时长。 </td><td>V4.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a57a974d0bf765b527058c7dac150699b">NERtcEx#setEffectPosition()</a></code>  </td><td>设置音效文件的播放进度。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad5c30ac6fd61ac73599cb83f5967fdd2">NERtcEx#getEffectCurrentPosition()</a></code>  </td><td>获取音效文件的播放进度。 </td><td>V4.4.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ac6029d9b8789a74208631389ae24a9f0">NERtcCallbackEx#onAudioEffectFinished()</a></code>  </td><td>本地音效文件播放已结束回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a62545c14cb5321e18c97eb8fa80cdd69">NERtcCallbackEx#onAudioEffectTimestampUpdate()</a></code>  </td><td>本地音效文件的播放进度信息回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="变声与混响">变声与混响</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac9e50866795b049608004cf7940c8c21">NERtcEx#setAudioEffectPreset()</a></code> </td><td>设置 SDK 预设的人声的变声音效。 </td><td>V4.1.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a49b534de15e973af1322908f741cf98e">NERtcEx#setVoiceBeautifierPreset()</a></code> </td><td>设置 SDK 预设的美声效果。 </td><td>V4.0.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a0623664274006e4eb2e36dad2b7a10fd">NERtcEx#setLocalVoiceEqualization()</a></code> </td><td>设置本地语音音效均衡，即自定义设置本地人声均衡波段的中心频率。 </td><td>V4.0.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ace5cca7ad63c1d7da4e3500040de9661">NERtcEx#setLocalVoicePitch()</a></code> </td><td>设置本地语音音调。 </td><td>V4.1.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a17eb244af334cf9b7b0802f58255da3a">NERtcEx#setLocalVoiceReverbParam()</a></code> </td><td>开启本地语音混响效果。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2 id="媒体增强信息">媒体增强信息</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adee87e71357d39a409e86b44c63b6e5c">NERtcEx#sendSEIMsg()</a></code>  </td><td>通过主流通道发送媒体补充增强信息。  </td><td>V4.0.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#adee87e71357d39a409e86b44c63b6e5c">NERtcEx#sendSEIMsg()</a></code>  </td><td>发送媒体补充增强信息。通过本接口可指定发送 SEI 时使用主流或辅流通道。  </td><td>V4.0.0  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a5a132b459b8f448a77983503fc8bde60">NERtcCallbackEx#onRecvSEIMsg()</a></code>  </td><td>收到远端流的 SEI 内容回调。 </td><td>V4.0.0  </td></tr>
+</table>
+<h2 id="旁路推流">旁路推流</h2>
+<p>注意：该组方法仅适用于互动直播 2.0。</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad2041ecad6d89313da6c52b34f1a36a3">NERtcEx#addLiveStreamTask()</a></code>  </td><td>添加房间推流任务。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a03076e65c0123a135780fd34d7c58321">NERtcEx#updateLiveStreamTask()</a></code>  </td><td>更新修改房间推流任务。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac72c0e04551af133cec49a1dc0b7aabc">NERtcEx#removeLiveStreamTask()</a></code>  </td><td>删除房间推流任务。 </td><td>V3.5.0  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#ad13e09d4aa726a04eb949e22b03d4b04">NERtcCallbackEx#onLiveStreamState()</a></code>  </td><td>直播推流状态回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="跨房间流媒体转发">跨房间流媒体转发</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aab6a2600bd3799a6a500610989f61c5a">NERtcEx#startChannelMediaRelay()</a></code>  </td><td>开始跨房间媒体流转发。 </td><td>V4.2.1  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae4f5b5827d6b23fe062d2b4726934844">NERtcEx#updateChannelMediaRelay()</a></code>  </td><td>更新媒体流转发的目标房间。 </td><td>V4.2.1  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aefe628b0f3b1aac7b9f9f61ee0c502c1">NERtcEx#stopChannelMediaRelay()</a></code>  </td><td>停止跨房间媒体流转发。 </td><td>V4.2.1  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a50b06dedbdb5840f45ba02803773f1f8">NERtcCallbackEx#onMediaRelayStatesChange()</a></code>  </td><td>跨房间媒体流转发状态发生改变回调。 </td><td>V4.2.1  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a2b64c4992afc0e759b729b92341c3191">NERtcCallbackEx#onMediaRelayReceiveEvent()</a></code>  </td><td>媒体流相关转发事件回调。 </td><td>V4.2.1  </td></tr>
+</table>
+<h2 id="音量提示">音量提示</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac045dde73488dc5c52447947155904dd">NERtcEx#enableAudioVolumeIndication(boolean enable,int interval)</a></code>  </td><td>启用说话者音量提示。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6140aa4e47851211c23db9e78d5e0ec0">NERtcEx#enableAudioVolumeIndication(boolean enable,int interval,boolean enableVad)</a></code>  </td><td>启用说话者音量及本地是否有人声提示。 </td><td>V4.6.10  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a79a2c28cf1b135ae0cbf9a4bba76b9f7">NERtcCallbackEx#onRemoteAudioVolumeIndication()</a></code>  </td><td>提示房间内谁正在说话及说话者音量的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a0060bf64170ec702af8cb1c0f0d2256e">NERtcCallbackEx#onLocalAudioVolumeIndication(int volume)</a></code>  </td><td>提示房间内本地用户瞬时音量的回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a05abb511a11f7512a4e553a5a7a489d6">NERtcCallbackEx#onLocalAudioVolumeIndication(int volume, boolean vadFlag)</a></code>  </td><td>提示房间内本地用户瞬时音量及是否存在人声的回调。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2 id="耳返">耳返</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae7930c0e8c9507ee7b2cdd84bbc6cc2c">NERtcEx#enableEarback()</a></code>  </td><td>开启耳返功能。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#acd692e03b116ff5ec4eafa2949379065">NERtcEx#setEarbackVolume()</a></code>  </td><td>设置耳返音量。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="音频播放路由">音频播放路由</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a8531f762d97822bfb2b99e07aef38e95">NERtcEx#setSpeakerphoneOn()</a></code>  </td><td>设置扬声器是否开启。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae5460012b115cade874131d2b31794d9">NERtcEx#isSpeakerphoneOn()</a></code>  </td><td>获取扬声器是否开启。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="视频大小流">视频大小流</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac9ee4b883d6cdecc2990a43527f8be86">NERtcEx#enableDualStreamMode()</a></code>  </td><td>设置是否开启视频大小流模式。 </td><td>V3.7.0  </td></tr>
+</table>
+<h2 id="自定义音频采集与渲染">自定义音频采集与渲染</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aed2eade285fb544f4bbb27b3f3af7915">NERtcEx#setExternalAudioSource()</a></code>  </td><td>启用外部自定义音频数据主流输入功能，并设置采集参数。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aac575f3161f150c8b2a151d9acd467fb">NERtcEx#setExternalSubStreamAudioSource()</a></code>  </td><td>启用外部自定义音频数据辅流输入功能，并设置采集参数。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1a7ac62dad8784d8a0273b029be782f5">NERtcEx#pushExternalAudioFrame()</a></code>  </td><td>将外部音频主流数据帧推送给内部引擎。 </td><td>V3.9.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a18829d74ec8ce20956cf508398a65dbf">NERtcEx#pushExternalSubStreamAudioFrame()</a></code>  </td><td>将外部音频辅流数据帧推送给内部引擎。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aaeaad17e53eacf77e2834fc720e77ae2">NERtcEx#setExternalAudioRender()</a></code>  </td><td>设置外部音频渲染。 </td><td>V4.0.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a38ebac377d16f741e104843a230bfe5b">NERtcEx#pullExternalAudioFrame()</a></code>  </td><td>拉取外部音频数据。 </td><td>V4.0.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a317655c26cf8dd6dc5504ba9720aed9a">NERtcEx#setStreamAlignmentProperty()</a></code>  </td><td>对齐本地系统时间与服务端时间。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a32137284c2c58f4ac55e812b148d4ffc">NERtcEx#getNtpTimeOffset()</a></code>  </td><td>获取本地系统时间与服务端时间的差值。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2 id="自定义视频采集">自定义视频采集</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a89de9edc63dd03f66d57fa891a9bfa2a">NERtcEx#setExternalVideoSource(boolean enable)</a></code>  </td><td>开启/关闭外部视频源数据输入。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a0b6f78498f4dfa59697af30679130f02">NERtcEx#setExternalVideoSource(NERtcVideoStreamType streamType, boolean enable)</a></code>  </td><td>开启/关闭外部视频源数据输入。 </td><td>V4.6.20  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#accc5b2972f6e71a8f27231ea230361e0">NERtcEx#pushExternalVideoFrame(NERtcVideoFrame frame)</a></code>  </td><td>推送外部视频帧。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a17b9103fc32185304dd742663620c2d5">NERtcEx#pushExternalVideoFrame(NERtcVideoStreamType streamType, NERtcVideoFrame frame)</a></code>  </td><td>推送外部视频帧。 </td><td>V4.6.20  </td></tr>
+</table>
+<h2 id="音视频裸流传输">音视频裸流传输</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a601f459db392590ba0edea86376a356b">NERtcEx#setPreDecodeObserver()</a></code>  </td><td>注册解码前媒体数据观测器。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac78574d45092ea560886d8d0cc5e1b6a">NERtcEx#pushExternalAudioEncodedFrame()</a></code>  </td><td>推送外部音频主流编码帧。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#abc15d2647292e4ef1c65bfb7a0a18836">NERtcEx#pushExternalSubStreamAudioEncodedFrame()</a></code>  </td><td>推送外部音频辅流编码帧。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a896d7d8df1451950f16f2ef305c73a39">NERtcEx#pushExternalVideoEncodedFrame()</a></code>  </td><td>推送外部视频编码帧。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1f2a45aba16f257292018b10e70b033d">NERtcEx#setVideoEncoderQosObserver()</a></code>  </td><td>注册视频编码 QoS 信息监听器。 </td><td>V4.6.29  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1predecoder_1_1_n_e_rtc_pre_decode_observer.html#a91a24226449d5e6ebb8434b0ad54c9a4">predecoder.NERtcPreDecodeObserver#onFrame()</a></code>  </td><td>解码前媒体数据回调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_encoder_qos_observer.html#a5a76bffbea1223336712ae89da38c12c">NERtcVideoEncoderQosObserver#onRequestSendKeyFrame()</a></code>  </td><td>I 帧请求事件回调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_encoder_qos_observer.html#aeb91f0ae2d07a9603b822e66d1bcfb21">NERtcVideoEncoderQosObserver#onVideoCodecUpdated()</a></code>  </td><td>视频编码器类型信息回调。 </td><td>V4.6.29  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_encoder_qos_observer.html#a7e865ad0746d5dd744075d6cd458b56f">NERtcVideoEncoderQosObserver#onBitrateUpdated()</a></code>  </td><td>码率信息回调。 </td><td>V4.6.29  </td></tr>
+</table>
+<h2 id="原始音频数据">原始音频数据</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a76f615a5af2439576915b13c666ba13a">NERtcEx#setRecordingAudioFrameParameters()</a></code> </td><td>设置录制的声音格式。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a97dd67a85b016e5d87a94e7e85ab432c">NERtcEx#setPlaybackAudioFrameParameters()</a></code>  </td><td>设置播放的声音格式。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aecd7e521e88fe84970a7ed0217ea5240">NERtcEx#setAudioFrameObserver()</a></code> </td><td>注册语音观测器对象。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a67d97a3490c7f1a8893bdc0146df38b9">NERtcEx#setMixedAudioFrameParameters()</a></code> </td><td>设置采集和播放后的混合后的采样率。需要在加入房间之前调用该接口。 </td><td>V3.9.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#ae33fb87300fb3664daa5e41929fd468f">NERtcAudioFrameObserver#onRecordFrame()</a></code> </td><td>采集音频数据回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#a1b8a08aa23814c0b4d42550d44dc05fe">NERtcAudioFrameObserver#onPlaybackFrame()</a></code> </td><td>播放音频数据回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#ae1b6429f555bf35d31683fadb9f820bf">NERtcAudioFrameObserver#onMixedAudioFrame()</a></code> </td><td>音频采集与播放混合后数据帧回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#adcabc16a28b2fb94e33f0be439fc87da">NERtcAudioFrameObserver#onPlaybackAudioFrameBeforeMixingWithUserID(long, NERtcAudioFrame)</a></code>  </td><td>某一远端用户的原始音频帧回调。<br  />
+该接口已废弃，请改用 <code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#a2fbdeb37e4e8f09f56d910467a400ac9">NERtcAudioFrameObserver#onPlaybackAudioFrameBeforeMixingWithUserID(long, NERtcAudioFrame, long)</a></code>。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1audio_1_1_n_e_rtc_audio_frame_observer.html#a2fbdeb37e4e8f09f56d910467a400ac9">NERtcAudioFrameObserver#onPlaybackAudioFrameBeforeMixingWithUserID(long, NERtcAudioFrame, long)</a></code>  </td><td>某一远端用户的原始音频帧回调。 </td><td>V4.5.0  </td></tr>
+</table>
+<h2 id="原始视频数据">原始视频数据</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1a0c675031d210f5521e5ad77619bb40">NERtcEx#setVideoCallback()</a></code> </td><td>采集视频数据回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_video_callback.html#a105c096704a36efec45eb97468ff258f">NERtcVideoCallback#onVideoCallback()</a></code> </td><td>本地视频数据采集回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="截图">截图</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#afc29ad8c9cd348258158363315ddaecf">NERtcEx#takeLocalSnapshot()</a></code> </td><td>本地视频画面截图。 </td><td>V4.2.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a2302b9bdcedb445e469bbc146e771b30">NERtcEx#takeRemoteSnapshot()</a></code> </td><td>远端视频画面截图。 </td><td>V4.2.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1video_1_1_n_e_rtc_take_snapshot_callback.html#af57dea2ab3242916fd7c1d1e3fe98b30">NERtcTakeSnapshotCallback#onTakeSnapshotResult()</a></code> </td><td>截图结果回调。 </td><td>V4.2.0  </td></tr>
+</table>
+<h2 id="水印">水印</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1f14d1727ef2a5d00a4b1b8170a3040c">NERtcEx#setLocalVideoWatermarkConfigs()</a></code> </td><td>添加本地视频水印。 </td><td>V4.6.10  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a5eb74e9f5f569f007d467e2b63d1221e">NERtcCallbackEx#onLocalVideoWatermarkState()</a></code> </td><td>水印结果回调。 </td><td>V4.6.10  </td></tr>
+</table>
+<h2 id="加密">加密</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a4debf8b1f096ce1314e8bc055b7dd0b3">NERtcEx#enableEncryption()</a></code> </td><td>开启或关闭媒体流加密。 </td><td>V4.4.0  </td></tr>
+</table>
+<h2 id="客户端音频录制">客户端音频录制</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a43a5efaa4fcde0dbaaecf4b450809784">NERtcEx#startAudioRecording()</a></code> </td><td>开始客户端录音。 </td><td>V4.2.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ac2012f7c4a5975221b6995052e12b791">NERtcEx#startAudioRecordingWithConfig()</a></code> </td><td>开始客户端录音。 </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ab4ff2d36cccec5c63e16595e043bb858">NERtcEx#stopAudioRecording()</a></code> </td><td>停止客户端录音。 </td><td>V4.2.0  </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a8bda9b434b1e886536629f6e066b979b">NERtcCallbackEx#onAudioRecording()</a></code> </td><td>音频录制状态回调。 </td><td>V4.2.0  </td></tr>
+</table>
+<h2 id="云代理">云代理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad75ea6108a06db64ed7d77e894810f0d">NERtcEx#setCloudProxy()</a></code> </td><td>开启并设置云代理服务。 </td><td>V4.6.0  </td></tr>
+</table>
+<h2 id="设备管理">设备管理</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#ab71cce8bf5e6cb4e4acc5f8bd3af7713">NERtc#checkPermission()</a></code>  </td><td>设备权限检查，比如麦克风、摄像头权限。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a838797a2fff34447efefc5694cacd9f4">NERtcEx#switchCamera()</a></code>  </td><td>切换前置/后置摄像头。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a2594628645064b7f87fa9da87c80778b">NERtcEx#switchCameraWithPosition()</a></code>  </td><td>指定前置/后置摄像头。 </td><td>V4.6.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad8dec7fc36c99bc06bb30447ecfcc002">NERtcEx#getCurrentCamera()</a></code>  </td><td>查看当前摄像头方向。 </td><td>V4.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ab91298d417a68719435a2ae0975a72df">NERtcEx#isCameraZoomSupported()</a></code>  </td><td>检测设备是否支持摄像头缩放功能。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#acacf0bc83b76dac28523d7b6df429296">NERtcEx#setCameraZoomFactor()</a></code>  </td><td>设置摄像头缩放比例。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a61177c0fb8a4521ce1fa0169066af60e">NERtcEx#getCameraCurrentZoom()</a></code>  </td><td>获取当前缩放比例。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#af70333b0d6d69f57e8809ec1cae16491">NERtcEx#getCameraMaxZoom()</a></code>  </td><td>获取摄像头支持的最大视频缩放比例。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ada9931b8cf5701f10c7c1fc6c16adb3e">NERtcEx#isCameraTorchSupported()</a></code>  </td><td>检测设备是否支持闪光灯常开。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ae01daa1ce08a7d6b1e4af1c9e33db46b">NERtcEx#isCameraFocusSupported()</a></code>  </td><td>检测设备是否支持手动对焦功能。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#abec3c93e8d2e37b539c74b6dc73e9bdb">NERtcEx#setCameraFocusPosition()</a></code>  </td><td>设置当前摄像头聚焦点位置。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a19fd9ce54d3f7eb14473d09afae6252f">NERtcEx#isCameraExposurePositionSupported()</a></code>  </td><td>检测设备是否支持手动曝光功能。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad3a34c52eede1b9d19429274c1d3a751">NERtcEx#setCameraExposurePosition()</a></code>  </td><td>设置手动曝光位置。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a13e6437185584c5ad0d58feeef9945ef">NERtcEx#setCameraTorchOn()</a></code>  </td><td>设置是否打开闪光灯。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a7023b6d9da4269b8441bcef3ec8c2964">NERtcEx#setPlayoutDeviceMute()</a></code>  </td><td>设置音频播放设备的状态。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a9dc5212f11ef3a66843fa5df62f1410c">NERtcEx#isPlayoutDeviceMute()</a></code>  </td><td>获取当前音频播放设备是否静音。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a310290f3cc73b558402c0d20ba7e3276">NERtcEx#setRecordDeviceMute()</a></code>  </td><td>设置录音设备的状态。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a3d86521a50eb233d052e09e6e14e078a">NERtcEx#isRecordDeviceMute()</a></code>  </td><td>获取当前音频采集设备是否静音。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html#aea39e3412572e1c4799b3c469452cefd">NERtc#version()</a></code>  </td><td><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc.html">NERtc</a> SDK 版本号。 </td><td>V3.5.0  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a5142f0ed83fdce1e4c3aa2645dccb320">NERtcCallbackEx#onAudioDeviceChanged()</a></code>  </td><td>音频设备状态更改回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#add7156939c569cb2ab68e13a6039f61f">NERtcCallbackEx#onAudioDeviceStateChange()</a></code>  </td><td>音频设备状态切换回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a71f4eb5829350903481df546234f2150">NERtcCallbackEx#onVideoDeviceStageChange()</a></code>  </td><td>视频设备状态切换回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#aa4ee98db838bbbe78511d448c2ad8fc8">NERtcCallbackEx#onCameraFocusChanged()</a></code>  </td><td>摄像头对焦区域已改变回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#a6a5df9d5f8a987ad479dbbb09dcaa922">NERtcCallbackEx#onCameraExposureChanged()</a></code>  </td><td>摄像头曝光区域已改变回调。 </td><td>V3.5.0  </td></tr>
+</table>
+<h2 id="设备管理">空间音效（3D 音效）和范围语音</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>   </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ab0277c0967bed1e1031a3d55603d62c3">NERtcEx#initSpatializer()</a></code>  </td><td>初始化空间音效。 </td><td>V5.5.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a759e040aed186b87f2f64dc7ad294bd8">NERtcEx#enableSpatializer()</a></code>  </td><td>开启/关闭空间音效。 </td><td>V5.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ace30c6aedef4078715af558b45a3446b">NERtcEx#setAudioRecvRange()</a></code>  </td><td>设置空间音效的距离衰减属性和语音范围。 </td><td>V5.5.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#aa2f6bd290b8e18adbc048b6819cd192b">NERtcEx#setSpatializerRoomProperty()</a></code>  </td><td>设置房间混响属性。 </td><td>V5.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a757a10b76e43bd46345168b1066c36ba">NERtcEx#enableSpatializerRoomEffects()</a></code>  </td><td>开启或关闭空间音效的房间混响效果。 </td><td>V5.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a7b8caec0727c1baef411459bb6a4c89f">NERtcEx#updateSelfPosition()</a></code>  </td><td>设置说话者和接收者的位置信息。 </td><td>V5.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a84b7e8fcefb7d1de913d59fdc2c689e8">NERtcEx#setSpatializerRenderMode()</a></code>  </td><td>设置渲染模式。 </td><td>V5.4.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6cc84541fc7270eb770eb6538d740c5a">NERtcEx#setRangeAudioTeamID()</a></code>  </td><td>设置范围语音的队伍号。 </td><td>V5.5.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a1aa3b69666e078536ded11aef122c527">NERtcEx#setRangeAudioMode()</a></code>  </td><td>设置范围语音的模式。 </td><td>V5.5.10    </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#ad910ef7de6dfc7a15563ac8e4db825d9">NERtcEx#setSubscribeAudioAllowlist()</a></code>  </td><td>设置只订阅指定用户的音频流。 </td><td>V5.5.10  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a6d5f5b4c4cb67314527dbc7d72b12a00">NERtcEx#setSubscribeAudioBlocklist()</a></code>  </td><td>设置不订阅指定用户的音频流。 </td><td>V5.5.10  </td></tr>
+</table>
+<h2 id="故障排查">故障排查</h2>
+<table class="doxtable">
+<tr>
+<th width="400"><b>方法</b> </th><th width="600"><b>功能</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a350ed9a10da589964a90d1dcd7079ea7">NERtcEx#uploadSdkInfo()</a></code>  </td><td>上传 SDK 日志信息。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="classcom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_ex.html#a56347231bed1861026b37c533a04b85f">NERtcEx#startAudioDumpWithType()</a></code>  </td><td>开始记录音频 dump </td><td>V4.6.0  </td></tr>
+<tr>
+<td><code><a class="el" href="">NERtcEx#stopAudioDumpWithType()</a></code>  </td><td>结束记录音频 dump </td><td>V4.6.0  </td></tr>
+</table>
+<p><br  />
+</p>
+<table class="doxtable">
+<tr>
+<th width="400"><b>事件</b> </th><th width="600"><b>描述</b> </th><th width="200"><b>起始版本</b>  </th></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#aaa15006697f35d4f8ee8f0f3b3815e69">NERtcCallbackEx#onWarning()</a></code>  </td><td>发生警告回调。 </td><td>V3.5.0  </td></tr>
+<tr>
+<td><code><a class="el" href="interfacecom_1_1netease_1_1lava_1_1nertc_1_1sdk_1_1_n_e_rtc_callback_ex.html#aeb1f937d026c64a7112746105d483579">NERtcCallbackEx#onError()</a></code>  </td><td>引擎发生了运行时的错误，需要用户干预。 </td><td>V3.5.0  </td></tr>
+</table>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

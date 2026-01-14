@@ -1,0 +1,2546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NERTC macOS/Windows SDK: nertc::IRtcChannelEventHandler类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NERTC macOS/Windows SDK<span id="projectnumber">&#160;V5.9.15</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacenertc.html">nertc</a></li><li class="navelem"><a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html">IRtcChannelEventHandler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classnertc_1_1_i_rtc_channel_event_handler-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">nertc::IRtcChannelEventHandler类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="nertc__channel__event__handler_8h_source.html">nertc_channel_event_handler.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9a42d8cb874157a88a57d4f705ca7fa8" id="r_a9a42d8cb874157a88a57d4f705ca7fa8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a42d8cb874157a88a57d4f705ca7fa8">onError</a> (int error_code, const char *msg)</td></tr>
+<tr class="separator:a9a42d8cb874157a88a57d4f705ca7fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08636aa700dda01168e704893451cafe" id="r_a08636aa700dda01168e704893451cafe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08636aa700dda01168e704893451cafe">onWarning</a> (int warn_code, const char *msg)</td></tr>
+<tr class="separator:a08636aa700dda01168e704893451cafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19f09ccb43fb5c5f2cc2062acdf0ce4" id="r_ac19f09ccb43fb5c5f2cc2062acdf0ce4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac19f09ccb43fb5c5f2cc2062acdf0ce4">onApiCallExecuted</a> (const char *api_name, <a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> error, const char *message)</td></tr>
+<tr class="separator:ac19f09ccb43fb5c5f2cc2062acdf0ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca207f68da68817501ad29a28d05128" id="r_afca207f68da68817501ad29a28d05128"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afca207f68da68817501ad29a28d05128">onJoinChannel</a> (<a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a> cid, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> result, uint64_t elapsed)</td></tr>
+<tr class="separator:afca207f68da68817501ad29a28d05128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c9cea0b6b7366d8c22c8f224681257" id="r_ab9c9cea0b6b7366d8c22c8f224681257"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c9cea0b6b7366d8c22c8f224681257">onReconnectingStart</a> (<a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a> cid, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:ab9c9cea0b6b7366d8c22c8f224681257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc677524a55bb00e26ea32416c87a0e" id="r_a6dc677524a55bb00e26ea32416c87a0e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dc677524a55bb00e26ea32416c87a0e">onConnectionStateChange</a> (<a class="el" href="namespacenertc.html#a63c54360dd23ac659013f1e5031bd1d5">NERtcConnectionStateType</a> state, <a class="el" href="namespacenertc.html#a2fcab3957a4f77ef956879e7fceb03f8">NERtcReasonConnectionChangedType</a> reason)</td></tr>
+<tr class="separator:a6dc677524a55bb00e26ea32416c87a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e71e5863700c2b91e5078e0c105b73" id="r_ac5e71e5863700c2b91e5078e0c105b73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5e71e5863700c2b91e5078e0c105b73">onRejoinChannel</a> (<a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a> cid, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> result, uint64_t elapsed)</td></tr>
+<tr class="separator:ac5e71e5863700c2b91e5078e0c105b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4f0be8008fced099e8173d0170179b" id="r_a4b4f0be8008fced099e8173d0170179b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b4f0be8008fced099e8173d0170179b">onLeaveChannel</a> (<a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> result)</td></tr>
+<tr class="separator:a4b4f0be8008fced099e8173d0170179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfb60be4a2906a11e1ed78c0f82ff58" id="r_acbfb60be4a2906a11e1ed78c0f82ff58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbfb60be4a2906a11e1ed78c0f82ff58">onDisconnect</a> (<a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> reason)</td></tr>
+<tr class="separator:acbfb60be4a2906a11e1ed78c0f82ff58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5301ed7eb92a964c72040aff3ef3f18" id="r_ab5301ed7eb92a964c72040aff3ef3f18"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5301ed7eb92a964c72040aff3ef3f18">onClientRoleChanged</a> (<a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a> oldRole, <a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a> newRole)</td></tr>
+<tr class="separator:ab5301ed7eb92a964c72040aff3ef3f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b402bf80af953058e39d3b69741fb58" id="r_a3b402bf80af953058e39d3b69741fb58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b402bf80af953058e39d3b69741fb58">onUserJoined</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, const char *user_name)</td></tr>
+<tr class="separator:a3b402bf80af953058e39d3b69741fb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58de12309ab73e4b364fd5212af3c93c" id="r_a58de12309ab73e4b364fd5212af3c93c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58de12309ab73e4b364fd5212af3c93c">onUserJoined</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, const char *user_name, <a class="el" href="structnertc_1_1_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a> join_extra_info)</td></tr>
+<tr class="separator:a58de12309ab73e4b364fd5212af3c93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeafb2c99e30fd6f2766ab23d4edee788" id="r_aeafb2c99e30fd6f2766ab23d4edee788"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeafb2c99e30fd6f2766ab23d4edee788">onUserLeft</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdb">NERtcSessionLeaveReason</a> reason)</td></tr>
+<tr class="separator:aeafb2c99e30fd6f2766ab23d4edee788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b379a9cda0b9dba9fcd7e0e0af4396" id="r_a71b379a9cda0b9dba9fcd7e0e0af4396"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71b379a9cda0b9dba9fcd7e0e0af4396">onUserLeft</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdb">NERtcSessionLeaveReason</a> reason, <a class="el" href="structnertc_1_1_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a> leave_extra_info)</td></tr>
+<tr class="separator:a71b379a9cda0b9dba9fcd7e0e0af4396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d733386e2e6b00ea33cce847112b67" id="r_a19d733386e2e6b00ea33cce847112b67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19d733386e2e6b00ea33cce847112b67">onUserAudioStart</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a19d733386e2e6b00ea33cce847112b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000eb885c3743c061f76ce3b03583a3d" id="r_a000eb885c3743c061f76ce3b03583a3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a000eb885c3743c061f76ce3b03583a3d">onUserAudioStop</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a000eb885c3743c061f76ce3b03583a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb90407d4da4a776b51c44c571ee18a" id="r_aedb90407d4da4a776b51c44c571ee18a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedb90407d4da4a776b51c44c571ee18a">onUserAudioMute</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, bool mute)</td></tr>
+<tr class="separator:aedb90407d4da4a776b51c44c571ee18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a40ccee6764c01482f5eab32db9e57" id="r_a69a40ccee6764c01482f5eab32db9e57"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69a40ccee6764c01482f5eab32db9e57">onUserSubStreamAudioStart</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a69a40ccee6764c01482f5eab32db9e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab695bf041e188504ff10a5cf4efb4329" id="r_ab695bf041e188504ff10a5cf4efb4329"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab695bf041e188504ff10a5cf4efb4329">onUserSubStreamAudioStop</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:ab695bf041e188504ff10a5cf4efb4329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ae8fea1367d860c7369ae957bce757" id="r_a78ae8fea1367d860c7369ae957bce757"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78ae8fea1367d860c7369ae957bce757">onUserSubStreamAudioMute</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, bool mute)</td></tr>
+<tr class="separator:a78ae8fea1367d860c7369ae957bce757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d4564ddd9364665ea6b5acd775b794" id="r_a79d4564ddd9364665ea6b5acd775b794"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d4564ddd9364665ea6b5acd775b794">onUserVideoStart</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a> max_profile)</td></tr>
+<tr class="separator:a79d4564ddd9364665ea6b5acd775b794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85560d0d2adc7718a5706a8a4362f7c9" id="r_a85560d0d2adc7718a5706a8a4362f7c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85560d0d2adc7718a5706a8a4362f7c9">onUserVideoStop</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a85560d0d2adc7718a5706a8a4362f7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05d02f91cc2d4dd8f640b015bea7315" id="r_ad05d02f91cc2d4dd8f640b015bea7315"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad05d02f91cc2d4dd8f640b015bea7315">onUserVideoMute</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, bool mute)</td></tr>
+<tr class="separator:ad05d02f91cc2d4dd8f640b015bea7315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dbc37796258af6b6d5d8b7f17b1840" id="r_a97dbc37796258af6b6d5d8b7f17b1840"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97dbc37796258af6b6d5d8b7f17b1840">onUserVideoMute</a> (<a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> videoStreamType, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, bool mute)</td></tr>
+<tr class="separator:a97dbc37796258af6b6d5d8b7f17b1840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10db6c8490799f3c1229265801faf477" id="r_a10db6c8490799f3c1229265801faf477"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10db6c8490799f3c1229265801faf477">onUserSubStreamVideoStart</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a> max_profile)</td></tr>
+<tr class="separator:a10db6c8490799f3c1229265801faf477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b9fd5c977fd42ca91f8625b08170d5" id="r_a42b9fd5c977fd42ca91f8625b08170d5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b9fd5c977fd42ca91f8625b08170d5">onUserSubStreamVideoStop</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a42b9fd5c977fd42ca91f8625b08170d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f99a2c5a8c4250737100550ae3a397c" id="r_a4f99a2c5a8c4250737100550ae3a397c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f99a2c5a8c4250737100550ae3a397c">onScreenCaptureStatus</a> (<a class="el" href="namespacenertc.html#ab64601b9bac6ae15cdd9684d6febaf7d">NERtcScreenCaptureStatus</a> status)</td></tr>
+<tr class="separator:a4f99a2c5a8c4250737100550ae3a397c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148a63ee934f3b10ab48e7149722fbaa" id="r_a148a63ee934f3b10ab48e7149722fbaa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a148a63ee934f3b10ab48e7149722fbaa">onScreenCaptureSourceDataUpdate</a> (<a class="el" href="structnertc_1_1_n_e_rtc_screen_capture_source_data.html">NERtcScreenCaptureSourceData</a> data)</td></tr>
+<tr class="separator:a148a63ee934f3b10ab48e7149722fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64fd8a59468457fff27a68ca30244c6" id="r_ae64fd8a59468457fff27a68ca30244c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae64fd8a59468457fff27a68ca30244c6">onFirstAudioDataReceived</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:ae64fd8a59468457fff27a68ca30244c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebb8f897e52b35dcbce1f7427b80b11" id="r_a8ebb8f897e52b35dcbce1f7427b80b11"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ebb8f897e52b35dcbce1f7427b80b11">onFirstVideoDataReceived</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a8ebb8f897e52b35dcbce1f7427b80b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4a457ffd684a88caedb8f50eeb6204" id="r_a7a4a457ffd684a88caedb8f50eeb6204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a4a457ffd684a88caedb8f50eeb6204">onFirstVideoDataReceived</a> (<a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a7a4a457ffd684a88caedb8f50eeb6204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f481ca54420d13f4cc2a5d2f756cbd" id="r_a43f481ca54420d13f4cc2a5d2f756cbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43f481ca54420d13f4cc2a5d2f756cbd">onRemoteVideoReceiveSizeChanged</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, <a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:a43f481ca54420d13f4cc2a5d2f756cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1059414adc3219d7d89f6663e7e423" id="r_a3e1059414adc3219d7d89f6663e7e423"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e1059414adc3219d7d89f6663e7e423">onLocalVideoRenderSizeChanged</a> (<a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:a3e1059414adc3219d7d89f6663e7e423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99829e2a742560bd1ec50052880c4633" id="r_a99829e2a742560bd1ec50052880c4633"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99829e2a742560bd1ec50052880c4633">onFirstAudioFrameDecoded</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid)</td></tr>
+<tr class="separator:a99829e2a742560bd1ec50052880c4633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84a32b2c1f330ee43ae795cc6fd7a0f" id="r_ab84a32b2c1f330ee43ae795cc6fd7a0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab84a32b2c1f330ee43ae795cc6fd7a0f">onFirstVideoFrameDecoded</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:ab84a32b2c1f330ee43ae795cc6fd7a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a001bd5261238ad280717c9f42ff3537e" id="r_a001bd5261238ad280717c9f42ff3537e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a001bd5261238ad280717c9f42ff3537e">onFirstVideoFrameDecoded</a> (<a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint32_t width, uint32_t height)</td></tr>
+<tr class="separator:a001bd5261238ad280717c9f42ff3537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065b0cbd8cef7c30eb85d8828b115640" id="r_a065b0cbd8cef7c30eb85d8828b115640"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a065b0cbd8cef7c30eb85d8828b115640">onFirstVideoFrameRender</a> (<a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> type, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, uint32_t width, uint32_t height, uint64_t elapsed)</td></tr>
+<tr class="separator:a065b0cbd8cef7c30eb85d8828b115640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac139e30a91c60a331b6e20a7b709312b" id="r_ac139e30a91c60a331b6e20a7b709312b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac139e30a91c60a331b6e20a7b709312b">onLocalAudioVolumeIndication</a> (int volume)</td></tr>
+<tr class="separator:ac139e30a91c60a331b6e20a7b709312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6efe76629030dea19442649a5670e5" id="r_aef6efe76629030dea19442649a5670e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6efe76629030dea19442649a5670e5">onLocalAudioVolumeIndication</a> (int volume, bool enable_vad)</td></tr>
+<tr class="separator:aef6efe76629030dea19442649a5670e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6927afbef8864e2859e14241c0209886" id="r_a6927afbef8864e2859e14241c0209886"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6927afbef8864e2859e14241c0209886">onRemoteAudioVolumeIndication</a> (const <a class="el" href="structnertc_1_1_n_e_rtc_audio_volume_info.html">NERtcAudioVolumeInfo</a> *speakers, unsigned int speaker_number, int total_volume)</td></tr>
+<tr class="separator:a6927afbef8864e2859e14241c0209886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0301ccc130b1714f39f7e86b89ab995f" id="r_a0301ccc130b1714f39f7e86b89ab995f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0301ccc130b1714f39f7e86b89ab995f">onAddLiveStreamTask</a> (const char *task_id, const char *url, int error_code)</td></tr>
+<tr class="separator:a0301ccc130b1714f39f7e86b89ab995f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a919dcba8cf248a22c583640b843012" id="r_a5a919dcba8cf248a22c583640b843012"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a919dcba8cf248a22c583640b843012">onUpdateLiveStreamTask</a> (const char *task_id, const char *url, int error_code)</td></tr>
+<tr class="separator:a5a919dcba8cf248a22c583640b843012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fac9cdf54d35089921c74a6ec91b4d7" id="r_a8fac9cdf54d35089921c74a6ec91b4d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fac9cdf54d35089921c74a6ec91b4d7">onRemoveLiveStreamTask</a> (const char *task_id, int error_code)</td></tr>
+<tr class="separator:a8fac9cdf54d35089921c74a6ec91b4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bf1ed05a44102458c587bc59cb140f" id="r_a16bf1ed05a44102458c587bc59cb140f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16bf1ed05a44102458c587bc59cb140f">onLiveStreamState</a> (const char *task_id, const char *url, <a class="el" href="namespacenertc.html#ade423c05860a21fe0186143d13aa4882">NERtcLiveStreamStateCode</a> state)</td></tr>
+<tr class="separator:a16bf1ed05a44102458c587bc59cb140f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b3ebf9b02a25fe45ecc92b7ceb4263" id="r_a67b3ebf9b02a25fe45ecc92b7ceb4263"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67b3ebf9b02a25fe45ecc92b7ceb4263">onRecvSEIMsg</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, const char *data, uint32_t dataSize)</td></tr>
+<tr class="separator:a67b3ebf9b02a25fe45ecc92b7ceb4263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed841228fb61d9de7eeb21a0a86b7ce" id="r_afed841228fb61d9de7eeb21a0a86b7ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afed841228fb61d9de7eeb21a0a86b7ce">onMediaRelayStateChanged</a> (<a class="el" href="namespacenertc.html#a270ec48c1ecb1976d061b9c41f1b94d1">NERtcChannelMediaRelayState</a> state, const char *channel_name)</td></tr>
+<tr class="separator:afed841228fb61d9de7eeb21a0a86b7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df6628b686f773f6ece082cbeefe6db" id="r_a3df6628b686f773f6ece082cbeefe6db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3df6628b686f773f6ece082cbeefe6db">onMediaRelayEvent</a> (<a class="el" href="namespacenertc.html#afa9cd00eec70185b8b6b861aa7f5d2a3">NERtcChannelMediaRelayEvent</a> event, const char *channel_name, <a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> error)</td></tr>
+<tr class="separator:a3df6628b686f773f6ece082cbeefe6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93202c2dba2a40f9df2716671cf89594" id="r_a93202c2dba2a40f9df2716671cf89594"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93202c2dba2a40f9df2716671cf89594">onLocalPublishFallbackToAudioOnly</a> (bool is_fallback, <a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> stream_type)</td></tr>
+<tr class="separator:a93202c2dba2a40f9df2716671cf89594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3850afbbbe7cf895594be397977ebf" id="r_aac3850afbbbe7cf895594be397977ebf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac3850afbbbe7cf895594be397977ebf">onRemoteSubscribeFallbackToAudioOnly</a> (<a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, bool is_fallback, <a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> stream_type)</td></tr>
+<tr class="separator:aac3850afbbbe7cf895594be397977ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d2ed4b2f756328bce0ab54097122b5" id="r_a46d2ed4b2f756328bce0ab54097122b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46d2ed4b2f756328bce0ab54097122b5">onMediaRightChange</a> (bool is_audio_banned, bool is_video_banned)</td></tr>
+<tr class="separator:a46d2ed4b2f756328bce0ab54097122b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b22cfbb8a3717db2dad821669bbaee4" id="r_a5b22cfbb8a3717db2dad821669bbaee4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b22cfbb8a3717db2dad821669bbaee4">onPermissionKeyWillExpire</a> ()</td></tr>
+<tr class="separator:a5b22cfbb8a3717db2dad821669bbaee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa93253548efdd63fffe13f60093477" id="r_aeaa93253548efdd63fffe13f60093477"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaa93253548efdd63fffe13f60093477">onUpdatePermissionKey</a> (const char *key, <a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a> error, int timeout)</td></tr>
+<tr class="separator:aeaa93253548efdd63fffe13f60093477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7329601ee3ae5f91e13739e858ed12c9" id="r_a7329601ee3ae5f91e13739e858ed12c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7329601ee3ae5f91e13739e858ed12c9">onLabFeatureCallback</a> (const char *key, const char *param)</td></tr>
+<tr class="separator:a7329601ee3ae5f91e13739e858ed12c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33b7acd9f95aa3e96f28b1bf694adfd" id="r_af33b7acd9f95aa3e96f28b1bf694adfd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af33b7acd9f95aa3e96f28b1bf694adfd">onRemoteVideoFrame</a> (<a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> videoStreamType, <a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a> uid, void *data, <a class="el" href="namespacenertc.html#acf948919b1f4d6c1b7b3e9508576eadc">NERtcVideoType</a> type, uint32_t width, uint32_t height, uint32_t count, uint32_t offset[<a class="el" href="nertc__engine__defines_8h.html#a76ef604eed659f0042b2f7814fee3500">kNERtcMaxPlaneCount</a>], uint32_t stride[<a class="el" href="nertc__engine__defines_8h.html#a76ef604eed659f0042b2f7814fee3500">kNERtcMaxPlaneCount</a>], <a class="el" href="namespacenertc.html#a7ffb459b161a5d4ca72e6916d8d832ea">NERtcVideoRotation</a> rotation)</td></tr>
+<tr class="separator:af33b7acd9f95aa3e96f28b1bf694adfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html">IRtcChannelEventHandler</a> 回调接口类用于 SDK 向 App 发送 <a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> 回调事件通知，App 通过继承该接口类的方法获取 SDK <a class="el" href="classnertc_1_1_i_rtc_channel.html">IRtcChannel</a> 的事件通知。 <br  />
+接口类的所有方法都有缺省（空）实现，App 可以根据需要只继承关心的事件。在回调方法中，App 不应该做耗时或者调用可能会引起阻塞的 API（如开启音频或视频等），否则可能影响 SDK 的运行。  </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a0301ccc130b1714f39f7e86b89ab995f" name="a0301ccc130b1714f39f7e86b89ab995f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0301ccc130b1714f39f7e86b89ab995f">&#9670;&#160;</a></span>onAddLiveStreamTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onAddLiveStreamTask </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>task_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>url</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>通知添加直播任务结果。 <br  />
+该回调异步返回 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ae53d9d69d13da31179e98c467b3788d5">addLiveStreamTask</a> 接口的调用结果；实际推流状态参考 <a class="el" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aba53fc5c94b82af9f477b463584c6f2f">onLiveStreamState</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task_id</td><td>任务 ID </td></tr>
+    <tr><td class="paramname">url</td><td>推流地址 </td></tr>
+    <tr><td class="paramname">error_code</td><td>结果<ul>
+<li>0: 调用成功；</li>
+<li>其他: 调用失败。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac19f09ccb43fb5c5f2cc2062acdf0ce4" name="ac19f09ccb43fb5c5f2cc2062acdf0ce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19f09ccb43fb5c5f2cc2062acdf0ce4">&#9670;&#160;</a></span>onApiCallExecuted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onApiCallExecuted </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>api_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>error</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>API 调用结束回调。 <br  />
+该回调方法表示 SDK 执行完了一个用户的 API 调用。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">api_name</td><td>API 名称 </td></tr>
+    <tr><td class="paramname">error</td><td>API 执行结果错误码。 </td></tr>
+    <tr><td class="paramname">message</td><td>API 执行结果描述。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5301ed7eb92a964c72040aff3ef3f18" name="ab5301ed7eb92a964c72040aff3ef3f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5301ed7eb92a964c72040aff3ef3f18">&#9670;&#160;</a></span>onClientRoleChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onClientRoleChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a></td>          <td class="paramname"><span class="paramname"><em>oldRole</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a></td>          <td class="paramname"><span class="paramname"><em>newRole</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>直播场景下用户角色已切换回调。 <br  />
+本地用户加入房间后，通过 <a class="el" href="classnertc_1_1_i_rtc_channel.html#a12b612e14b04eb8fc61b31484d536509">setClientRole</a> 切换用户角色后会触发此回调。例如主播切换为观众、从观众切换为主播。 </p><dl class="section note"><dt>注解</dt><dd>直播场景下，如果您在加入房间后调用该方法切换用户角色，调用成功后，会触发以下回调：<ul>
+<li>主播切观众，本端触发 onClientRoleChanged 回调，远端触发 <a class="el" href="classnertc_1_1_i_rtc_engine_event_handler.html#a05306dbb0e602ea608515b5e394202cf">onUserLeft</a> 回调。</li>
+<li>观众切主播，本端触发 onClientRoleChanged 回调，远端触发 <a class="el" href="#a3b402bf80af953058e39d3b69741fb58">onUserJoined</a> 回调。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oldRole</td><td>切换前的角色。详细信息请参考 <code><a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a></code>。 </td></tr>
+    <tr><td class="paramname">newRole</td><td>切换后的角色。详细信息请参考 <code><a class="el" href="namespacenertc.html#a1277b5498334b7efe3ad260d72350128">NERtcClientRole</a></code>。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6dc677524a55bb00e26ea32416c87a0e" name="a6dc677524a55bb00e26ea32416c87a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc677524a55bb00e26ea32416c87a0e">&#9670;&#160;</a></span>onConnectionStateChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onConnectionStateChange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a63c54360dd23ac659013f1e5031bd1d5">NERtcConnectionStateType</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a2fcab3957a4f77ef956879e7fceb03f8">NERtcReasonConnectionChangedType</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>房间连接状态已改变回调。 <br  />
+该回调在房间连接状态发生改变的时候触发，并告知用户当前的房间连接状态和引起房间状态改变的原因。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>当前的房间连接状态。 </td></tr>
+    <tr><td class="paramname">reason</td><td>引起当前房间连接状态发生改变的原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acbfb60be4a2906a11e1ed78c0f82ff58" name="acbfb60be4a2906a11e1ed78c0f82ff58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbfb60be4a2906a11e1ed78c0f82ff58">&#9670;&#160;</a></span>onDisconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onDisconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>与服务器连接中断，可能原因包括：网络连接失败、服务器关闭该房间、用户被踢出房间等。 </p><dl class="section note"><dt>注解</dt><dd><ul>
+<li>SDK 在调用 joinChannel 加入房间成功后，如果和服务器失去连接且连续 3 次重连失败，就会触发该回调。</li>
+<li>由于非网络原因，客户端可能会和服务器失去连接，此时 SDK 无需自动重连，直接触发此回调方法。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>连接中断原因。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a42d8cb874157a88a57d4f705ca7fa8" name="a9a42d8cb874157a88a57d4f705ca7fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a42d8cb874157a88a57d4f705ca7fa8">&#9670;&#160;</a></span>onError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onError </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>发生错误回调。 <br  />
+该回调方法表示 SDK 运行时出现了（网络或媒体相关的）错误。通常情况下，SDK 上报的错误意味着 SDK 无法自动恢复，需要 App 干预或提示用户。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error_code</td><td>错误码。详细信息请参考 NERtcDMErrorCode </td></tr>
+    <tr><td class="paramname">msg</td><td>错误信息。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae64fd8a59468457fff27a68ca30244c6" name="ae64fd8a59468457fff27a68ca30244c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64fd8a59468457fff27a68ca30244c6">&#9670;&#160;</a></span>onFirstAudioDataReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstAudioDataReceived </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已接收到远端音频首帧的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID，指定是哪个用户的音频流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a99829e2a742560bd1ec50052880c4633" name="a99829e2a742560bd1ec50052880c4633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99829e2a742560bd1ec50052880c4633">&#9670;&#160;</a></span>onFirstAudioFrameDecoded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstAudioFrameDecoded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已解码远端音频首帧的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID，指定是哪个用户的音频流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a4a457ffd684a88caedb8f50eeb6204" name="a7a4a457ffd684a88caedb8f50eeb6204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4a457ffd684a88caedb8f50eeb6204">&#9670;&#160;</a></span>onFirstVideoDataReceived() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstVideoDataReceived </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已显示首帧远端视频的回调。 <br  />
+当远端视频的第一帧画面显示在视窗上时，会触发此回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>type </td><td><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> </td><td>视频通道类型：<ul>
+<li>
+kNERTCVideoStreamMain：主流。</li>
+<li>
+kNERtcVideoStreamSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>用户 ID，提示是哪个用户的视频流。  </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<a id="a8ebb8f897e52b35dcbce1f7427b80b11" name="a8ebb8f897e52b35dcbce1f7427b80b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebb8f897e52b35dcbce1f7427b80b11">&#9670;&#160;</a></span>onFirstVideoDataReceived() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstVideoDataReceived </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已显示首帧远端视频的回调。 <br  />
+第一帧远端视频显示在视图上时，触发此调用。 </p><dl class="section note"><dt>注解</dt><dd>该回调仅在显示远端用户的主流视频首帧时会触发，若您希望同时接收到接收辅流的相关通知，请监听 <a class="el" href="#a7a4a457ffd684a88caedb8f50eeb6204">onFirstVideoDataReceived</a> 回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>用户 ID，指定是哪个用户的视频流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a001bd5261238ad280717c9f42ff3537e" name="a001bd5261238ad280717c9f42ff3537e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001bd5261238ad280717c9f42ff3537e">&#9670;&#160;</a></span>onFirstVideoFrameDecoded() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstVideoFrameDecoded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已接收到远端视频首帧并完成解码的回调。 <br  />
+当 SDK 收到远端视频并解码成功时，会触发该回调。应用层可在该回调中设置此用户的视频画布。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>type </td><td><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> </td><td>视频通道类型：<ul>
+<li>
+kNERTCVideoStreamMain：主流。</li>
+<li>
+kNERtcVideoStreamSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>用户 ID，提示是哪个用户的视频流。  </td></tr>
+<tr>
+<td>width </td><td>uint32_t </td><td>首帧视频的宽度，单位为 px。  </td></tr>
+<tr>
+<td>height </td><td>uint32_t </td><td>首帧视频的高度，单位为 px。  </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<a id="ab84a32b2c1f330ee43ae795cc6fd7a0f" name="ab84a32b2c1f330ee43ae795cc6fd7a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84a32b2c1f330ee43ae795cc6fd7a0f">&#9670;&#160;</a></span>onFirstVideoFrameDecoded() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstVideoFrameDecoded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已接收到远端视频并完成解码的回调。 <br  />
+引擎收到第一帧远端视频流并解码成功时，触发此调用。 </p><dl class="section note"><dt>注解</dt><dd>该回调仅在接收远端用户的主流视频首帧并完成解码时会触发，若您希望同时接收到接收辅流的相关通知，请监听 <a class="el" href="#a001bd5261238ad280717c9f42ff3537e">onFirstVideoFrameDecoded</a> 回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>用户 ID，指定是哪个用户的视频流。 </td></tr>
+    <tr><td class="paramname">width</td><td>视频流宽（px）。 </td></tr>
+    <tr><td class="paramname">height</td><td>视频流高（px）。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a065b0cbd8cef7c30eb85d8828b115640" name="a065b0cbd8cef7c30eb85d8828b115640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a065b0cbd8cef7c30eb85d8828b115640">&#9670;&#160;</a></span>onFirstVideoFrameRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onFirstVideoFrameRender </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>已接收到远端视频首帧并完成渲染的回调。 <br  />
+当 SDK 收到远端视频的第一帧并渲染成功时，会触发该回调。 </p><dl class="section since"><dt>自从</dt><dd>V5.5.10 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>type </td><td>see <a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> </td><td>视频通道类型：<ul>
+<li>
+kNERTCVideoStreamMain：主流。</li>
+<li>
+kNERtcVideoStreamSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>用户 ID，提示是哪个用户的视频流。  </td></tr>
+<tr>
+<td>width </td><td>uint32_t </td><td>首帧视频的宽度，单位为 px。  </td></tr>
+<tr>
+<td>height </td><td>uint32_t </td><td>首帧视频的高度，单位为 px。  </td></tr>
+<tr>
+<td>elapsed </td><td>uint64_t </td><td>从订阅动作开始到发生此事件过去的时间（毫秒)。  </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<a id="afca207f68da68817501ad29a28d05128" name="afca207f68da68817501ad29a28d05128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca207f68da68817501ad29a28d05128">&#9670;&#160;</a></span>onJoinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onJoinChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a></td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>加入房间回调，表示客户端已经登入服务器。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cid</td><td>客户端加入的房间 ID。 </td></tr>
+    <tr><td class="paramname">uid</td><td>用户 ID。 如果在 joinChannel 方法中指定了 uid，此处会返回指定的 ID; 如果未指定 uid（joinChannel 时 uid=0），此处将返回云信服务器自动分配的 ID。 </td></tr>
+    <tr><td class="paramname">result</td><td>返回结果。 </td></tr>
+    <tr><td class="paramname">elapsed</td><td>从 joinChannel 开始到发生此事件过去的时间，单位为毫秒。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7329601ee3ae5f91e13739e858ed12c9" name="a7329601ee3ae5f91e13739e858ed12c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7329601ee3ae5f91e13739e858ed12c9">&#9670;&#160;</a></span>onLabFeatureCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLabFeatureCallback </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>param</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>实验功能回调接口，用于回调一些非正式的事件及数据通知。 </p><dl class="section since"><dt>自从</dt><dd>V5.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>返回回调类型。 </td></tr>
+    <tr><td class="paramname">param</td><td>值内容。对应字符串的参数值，如果是结构体对象，需要转成 json 格式。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b4f0be8008fced099e8173d0170179b" name="a4b4f0be8008fced099e8173d0170179b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4f0be8008fced099e8173d0170179b">&#9670;&#160;</a></span>onLeaveChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLeaveChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>退出房间回调。 <br  />
+App 调用 leaveChannel 方法后，SDK 提示 App 退出房间是否成功。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>返回结果。错误码请参考 #NERtcErrorCode。在快速切换房间时 code 为 kNERtcErrChannelLeaveBySwitchAction。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16bf1ed05a44102458c587bc59cb140f" name="a16bf1ed05a44102458c587bc59cb140f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bf1ed05a44102458c587bc59cb140f">&#9670;&#160;</a></span>onLiveStreamState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLiveStreamState </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>task_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>url</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#ade423c05860a21fe0186143d13aa4882">NERtcLiveStreamStateCode</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>通知直播推流状态 </p><dl class="section note"><dt>注解</dt><dd>该回调在通话中有效。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task_id</td><td>任务 ID </td></tr>
+    <tr><td class="paramname">url</td><td>推流地址 </td></tr>
+    <tr><td class="paramname">state</td><td><a class="el" href="namespacenertc.html#ade423c05860a21fe0186143d13aa4882">NERtcLiveStreamStateCode</a>, 直播推流状态<ul>
+<li>505: 推流中；</li>
+<li>506: 推流失败；</li>
+<li>511: 推流结束；  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac139e30a91c60a331b6e20a7b709312b" name="ac139e30a91c60a331b6e20a7b709312b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac139e30a91c60a331b6e20a7b709312b">&#9670;&#160;</a></span>onLocalAudioVolumeIndication() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLocalAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">弃用</a></b></dt><dd>该回调方法已废弃。 提示房间内本地用户瞬时音量的回调。<ul>
+<li>该回调默认禁用。可以通过 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a81ed65dc33d5067ce739cf9ddd267694">enableAudioVolumeIndication</a> 方法开启。</li>
+<li>开启后，本地用户说话，SDK 会按 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a81ed65dc33d5067ce739cf9ddd267694">enableAudioVolumeIndication</a> 方法中设置的时间间隔触发该回调。</li>
+<li>如果本地用户将自己静音（调用了 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a440675d9c53376f2ed0b91b9b9a44623">muteLocalAudioStream</a>），SDK 将音量设置为 0 后回调给应用层。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>（混音后的）音量，取值范围为 [0,100]。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef6efe76629030dea19442649a5670e5" name="aef6efe76629030dea19442649a5670e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6efe76629030dea19442649a5670e5">&#9670;&#160;</a></span>onLocalAudioVolumeIndication() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLocalAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable_vad</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>提示房间内本地用户瞬时音量的回调。</p><ul>
+<li>该回调默认禁用。可以通过 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a81ed65dc33d5067ce739cf9ddd267694">enableAudioVolumeIndication</a> 方法开启。开启后，本地用户说话，SDK 会按 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a81ed65dc33d5067ce739cf9ddd267694">enableAudioVolumeIndication</a> 方法中设置的时间间隔触发该回调。</li>
+<li>如果本地用户将自己静音（调用了 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a440675d9c53376f2ed0b91b9b9a44623">muteLocalAudioStream</a>），SDK 将音量设置为 0 后回调给应用层。 <dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td>混音后的音量，取值范围为 0 ~ 100。 </td></tr>
+    <tr><td class="paramname">enable_vad</td><td>是否检测到人声。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a93202c2dba2a40f9df2716671cf89594" name="a93202c2dba2a40f9df2716671cf89594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93202c2dba2a40f9df2716671cf89594">&#9670;&#160;</a></span>onLocalPublishFallbackToAudioOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLocalPublishFallbackToAudioOnly </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_fallback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>本地发布流已回退为音频流、或已恢复为音视频流回调。 <br  />
+如果您调用了设置本地推流回退选项 setLocalPublishFallbackOption 接口，并将 option 设置为 <a class="el" href="namespacenertc.html#a1f81e05e0a5bbcd0807479d4b1c03d06a5f0d42ec453877c59369572e54ef479a">kNERtcStreamFallbackAudioOnly</a> 后，当上行网络环境不理想、本地发布的媒体流回退为音频流时，或当上行网络改善、媒体流恢复为音视频流时，会触发该回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_fallback</td><td>本地发布流已回退或已恢复。<ul>
+<li>true： 由于网络环境不理想，发布的媒体流已回退为音频流。</li>
+<li>false：由于网络环境改善，从音频流恢复为音视频流。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">stream_type</td><td>对应的视频流类型，即主流或辅流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e1059414adc3219d7d89f6663e7e423" name="a3e1059414adc3219d7d89f6663e7e423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1059414adc3219d7d89f6663e7e423">&#9670;&#160;</a></span>onLocalVideoRenderSizeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onLocalVideoRenderSizeChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>本地视频预览的分辨率变化回调, 与是否进入房间的状态无关，与硬件状态有关，也适用于预览 </p><dl class="section since"><dt>自从</dt><dd>V5.4.1 </dd></dl>
+<dl class="section user"><dt>触发时机</dt><dd><br  />
+当本地视频的分辨率发生变化，会触发此回调。当调用 SetCaptureConfig 设置采集分辨率或调用 SetVideoConfig 设置编码属性时可以触发该回调。回调的分辨率宽和高为本地预览的宽和高，和实际编码发送的分辨率不一定一致 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>开发者可以根据该回调的分辨率来动态调整预览视图的比例等。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>type </td><td>see <a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> </td><td>视频通道类型：<ul>
+<li>
+kNERTCVideoStreamMain：主流。</li>
+<li>
+kNERtcVideoStreamSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>width </td><td>uint32_t </td><td>视频采集的宽，单位为 px  </td></tr>
+<tr>
+<td>height </td><td>uint32_t </td><td>视频采集的高，单位为 px  </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<a id="a3df6628b686f773f6ece082cbeefe6db" name="a3df6628b686f773f6ece082cbeefe6db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df6628b686f773f6ece082cbeefe6db">&#9670;&#160;</a></span>onMediaRelayEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onMediaRelayEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#afa9cd00eec70185b8b6b861aa7f5d2a3">NERtcChannelMediaRelayEvent</a></td>          <td class="paramname"><span class="paramname"><em>event</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>媒体流相关转发事件回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>当前媒体流转发事件。详细信息请参考 #NERtcChannelMediaRelayEvent。 </td></tr>
+    <tr><td class="paramname">channel_name</td><td>转发的目标房间名。 </td></tr>
+    <tr><td class="paramname">error</td><td>相关错误码。详细信息请参考 #NERtcErrorCode。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afed841228fb61d9de7eeb21a0a86b7ce" name="afed841228fb61d9de7eeb21a0a86b7ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed841228fb61d9de7eeb21a0a86b7ce">&#9670;&#160;</a></span>onMediaRelayStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onMediaRelayStateChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a270ec48c1ecb1976d061b9c41f1b94d1">NERtcChannelMediaRelayState</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>channel_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>跨房间媒体流转发状态发生改变回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>当前跨房间媒体流转发状态。详细信息请参考 <a class="el" href="namespacenertc.html#a270ec48c1ecb1976d061b9c41f1b94d1">NERtcChannelMediaRelayState</a> </td></tr>
+    <tr><td class="paramname">channel_name</td><td>媒体流转发的目标房间名。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46d2ed4b2f756328bce0ab54097122b5" name="a46d2ed4b2f756328bce0ab54097122b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d2ed4b2f756328bce0ab54097122b5">&#9670;&#160;</a></span>onMediaRightChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onMediaRightChange </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_audio_banned</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_video_banned</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>服务端禁言音视频权限变化回调。 </p><dl class="section since"><dt>自从</dt><dd>v4.6.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_audio_banned</td><td>是否禁用音频。<ul>
+<li>true：禁用音频。</li>
+<li>false：取消禁用音频。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">is_video_banned</td><td>是否禁用视频。<ul>
+<li>true：禁用视频。</li>
+<li>false：取消禁用视频。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b22cfbb8a3717db2dad821669bbaee4" name="a5b22cfbb8a3717db2dad821669bbaee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b22cfbb8a3717db2dad821669bbaee4">&#9670;&#160;</a></span>onPermissionKeyWillExpire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onPermissionKeyWillExpire </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>权限密钥即将过期事件回调。</p><ul>
+<li>由于 PermissionKey 具有一定的时效，在通话过程中如果 PermissionKey 即将失效，SDK 会提前 30 秒触发该回调，提醒用户更新 PermissionKey。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在 <a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html">IRtcChannelEventHandler</a> 接口类中通过 <a class="el" href="classnertc_1_1_i_rtc_channel.html#a07f0853ba865a0d0568d0223b8a01b84">setChannelEventHandler</a> 接口设置回调监听。 </dd></dl>
+<dl class="section user"><dt>相关接口</dt><dd>在收到此回调后可以调用 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a75a8d89af8302e1c2ad9eb02e286174a">updatePermissionKey</a> 方法更新权限密钥。  </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ab9c9cea0b6b7366d8c22c8f224681257" name="ab9c9cea0b6b7366d8c22c8f224681257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c9cea0b6b7366d8c22c8f224681257">&#9670;&#160;</a></span>onReconnectingStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onReconnectingStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a></td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>触发重连。 <br  />
+有时候由于网络原因，客户端可能会和服务器失去连接，SDK 会进行自动重连，开始自动重连后触发此回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cid</td><td>房间 ID。 </td></tr>
+    <tr><td class="paramname">uid</td><td>用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a67b3ebf9b02a25fe45ecc92b7ceb4263" name="a67b3ebf9b02a25fe45ecc92b7ceb4263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b3ebf9b02a25fe45ecc92b7ceb4263">&#9670;&#160;</a></span>onRecvSEIMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRecvSEIMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>dataSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>收到远端流的 SEI 内容回调。 <br  />
+当远端成功发送 SEI 后，本端会收到此回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uid</td><td>发送该 sei 的用户 ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>接收到的 sei 数据 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>接收到 sei 数据的大小  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac5e71e5863700c2b91e5078e0c105b73" name="ac5e71e5863700c2b91e5078e0c105b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e71e5863700c2b91e5078e0c105b73">&#9670;&#160;</a></span>onRejoinChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRejoinChannel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#aaaa4beba87563ce6db3aa78ee2acd2b9">channel_id_t</a></td>          <td class="paramname"><span class="paramname"><em>cid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>result</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>elapsed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>重新加入房间回调。 <br  />
+在弱网环境下，若客户端和服务器失去连接，SDK 会自动重连。自动重连成功后触发此回调方法。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cid</td><td>客户端加入的房间 ID。 </td></tr>
+    <tr><td class="paramname">uid</td><td>用户 ID。 </td></tr>
+    <tr><td class="paramname">result</td><td>返回结果。 </td></tr>
+    <tr><td class="paramname">elapsed</td><td>从开始重连到发生此事件过去的时间，单位为毫秒。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6927afbef8864e2859e14241c0209886" name="a6927afbef8864e2859e14241c0209886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6927afbef8864e2859e14241c0209886">&#9670;&#160;</a></span>onRemoteAudioVolumeIndication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRemoteAudioVolumeIndication </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structnertc_1_1_n_e_rtc_audio_volume_info.html">NERtcAudioVolumeInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>speakers</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>speaker_number</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>total_volume</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>提示房间内谁正在说话及说话者瞬时音量的回调。 <br  />
+该回调默认为关闭状态。可以通过 enableAudioVolumeIndication 方法开启。开启后，无论房间内是否有人说话，SDK 都会按 enableAudioVolumeIndication 方法中设置的时间间隔触发该回调。 <br  />
+在返回的 speakers 数组中:</p><ul>
+<li>如果有 uid 出现在上次返回的数组中，但不在本次返回的数组中，则默认该 uid 对应的远端用户没有说话。</li>
+<li>如果 volume 为 0，表示该用户没有说话。<ul>
+<li>如果 speakers 数组为空，则表示此时远端没有人说话。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speakers</td><td>每个说话者的用户 ID 和音量信息的数组: <a class="el" href="structnertc_1_1_n_e_rtc_audio_volume_info.html">NERtcAudioVolumeInfo</a> </td></tr>
+    <tr><td class="paramname">speaker_number</td><td>speakers 数组的大小，即说话者的人数。 </td></tr>
+    <tr><td class="paramname">total_volume</td><td>（混音后的）总音量，取值范围为 [0,100]。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aac3850afbbbe7cf895594be397977ebf" name="aac3850afbbbe7cf895594be397977ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3850afbbbe7cf895594be397977ebf">&#9670;&#160;</a></span>onRemoteSubscribeFallbackToAudioOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRemoteSubscribeFallbackToAudioOnly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_fallback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>stream_type</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>订阅的远端流已回退为音频流、或已恢复为音视频流回调。 <br  />
+如果您调用了设置远端订阅流回退选项 setRemoteSubscribeFallbackOption 接口并将 option 设置 <a class="el" href="namespacenertc.html#a1f81e05e0a5bbcd0807479d4b1c03d06a5f0d42ec453877c59369572e54ef479a">kNERtcStreamFallbackAudioOnly</a> 后，当下行网络环境不理想、仅接收远端音频流时，或当下行网络改善、恢复订阅音视频流时，会触发该回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户的 ID。 </td></tr>
+    <tr><td class="paramname">is_fallback</td><td>远端订阅流已回退或恢复：<ul>
+<li>true： 由于网络环境不理想，订阅的远端流已回退为音频流。</li>
+<li>false：由于网络环境改善，订阅的远端流从音频流恢复为音视频流。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">stream_type</td><td>对应的视频流类型，即主流或辅流。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af33b7acd9f95aa3e96f28b1bf694adfd" name="af33b7acd9f95aa3e96f28b1bf694adfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33b7acd9f95aa3e96f28b1bf694adfd">&#9670;&#160;</a></span>onRemoteVideoFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRemoteVideoFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>videoStreamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#acf948919b1f4d6c1b7b3e9508576eadc">NERtcVideoType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>[kNERtcMaxPlaneCount], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>stride</em></span>[kNERtcMaxPlaneCount], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a7ffb459b161a5d4ca72e6916d8d832ea">NERtcVideoRotation</a></td>          <td class="paramname"><span class="paramname"><em>rotation</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端视频数据回调。 <br  />
+调用本接口采集视频数据回调之前，请先调用 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a4d39a81643f19979461ec0bb569f4a0d">setParameters</a>：接口，将 kNERtcKeyEnableVideoCaptureObserver 的值设置为 YES，开启摄像头采集数据的回调。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">videoStreamType</td><td>视频流类型。 </td></tr>
+    <tr><td class="paramname">uid</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">data</td><td>采集视频数据。 </td></tr>
+    <tr><td class="paramname">type</td><td>视频类型。 </td></tr>
+    <tr><td class="paramname">width</td><td>视频宽度。 </td></tr>
+    <tr><td class="paramname">height</td><td>视频高度。 </td></tr>
+    <tr><td class="paramname">count</td><td>视频 Plane Count。 </td></tr>
+    <tr><td class="paramname">offset</td><td>视频 offset。 </td></tr>
+    <tr><td class="paramname">stride</td><td>视频 stride。 </td></tr>
+    <tr><td class="paramname">rotation</td><td>视频旋转角度。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43f481ca54420d13f4cc2a5d2f756cbd" name="a43f481ca54420d13f4cc2a5d2f756cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f481ca54420d13f4cc2a5d2f756cbd">&#9670;&#160;</a></span>onRemoteVideoReceiveSizeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRemoteVideoReceiveSizeChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>接收的远端视频分辨率变化回调。 </p><dl class="section since"><dt>自从</dt><dd>V5.4.1 </dd></dl>
+<dl class="section user"><dt>触发时机</dt><dd><br  />
+当远端用户视频流的分辨率发生变化时，会触发此回调，例如推流端调用 SetVideoConfig 更改了编码分辨率设置，本地会收到该远端用户分辨率变化通知。 </dd></dl>
+<dl class="section user"><dt>业务场景</dt><dd>开发者可根据视频流的最新分辨率来更新 UI。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>远端用户 ID，指定是哪个用户的视频流。  </td></tr>
+<tr>
+<td>type </td><td>see <a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> </td><td>视频通道类型：<ul>
+<li>
+kNERTCVideoStreamMain：主流。</li>
+<li>
+kNERtcVideoStreamSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>width </td><td>uint32_t </td><td>视频采集的宽，单位为 px  </td></tr>
+<tr>
+<td>height </td><td>uint32_t </td><td>视频采集的高，单位为 px  </td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<a id="a8fac9cdf54d35089921c74a6ec91b4d7" name="a8fac9cdf54d35089921c74a6ec91b4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fac9cdf54d35089921c74a6ec91b4d7">&#9670;&#160;</a></span>onRemoveLiveStreamTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onRemoveLiveStreamTask </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>task_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>通知删除直播任务结果。 <br  />
+该回调异步返回 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#ae2764a62d1c421d4bec3e626eb6c3f83">removeLiveStreamTask</a> 接口的调用结果；实际推流状态参考 <a class="el" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aba53fc5c94b82af9f477b463584c6f2f">onLiveStreamState</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task_id</td><td>任务 ID </td></tr>
+    <tr><td class="paramname">error_code</td><td>结果<ul>
+<li>0: 调用成功；</li>
+<li>其他: 调用失败。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a148a63ee934f3b10ab48e7149722fbaa" name="a148a63ee934f3b10ab48e7149722fbaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148a63ee934f3b10ab48e7149722fbaa">&#9670;&#160;</a></span>onScreenCaptureSourceDataUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onScreenCaptureSourceDataUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_screen_capture_source_data.html">NERtcScreenCaptureSourceData</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>屏幕共享源采集范围等变化的回调。如果要 app 层实现屏幕分享高亮框实现的话，需要注意在调用#startScreenCaptureByWindowId, startScreenCaptureByDisplayId, startScreenCaptureByScreenRect 时，参数 <a class="el" href="structnertc_1_1_n_e_rtc_screen_capture_parameters.html">NERtcScreenCaptureParameters</a> 中 enable_high_light 设置 false，关闭 SDK 提供的高亮框，以免出现两个高亮框的情况。 enable_high_light 和 force_update_data 设置为 true 时，也会有变化回调。例如使用 SDK 高亮时，同时需要获取窗口区域，实现批注功能。 </p><dl class="section since"><dt>自从</dt><dd>V5.4.x </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>自 V5.4.x 支持此回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>屏幕共享源变化的信息。详细信息请参考 #NERtcScreenCaptureSourceData。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f99a2c5a8c4250737100550ae3a397c" name="a4f99a2c5a8c4250737100550ae3a397c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f99a2c5a8c4250737100550ae3a397c">&#9670;&#160;</a></span>onScreenCaptureStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onScreenCaptureStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#ab64601b9bac6ae15cdd9684d6febaf7d">NERtcScreenCaptureStatus</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>屏幕共享状态变化回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.5.0 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>macOS 平台自 V4.6.0 支持此回调。  </dd></dl>
+
+</div>
+</div>
+<a id="a5a919dcba8cf248a22c583640b843012" name="a5a919dcba8cf248a22c583640b843012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a919dcba8cf248a22c583640b843012">&#9670;&#160;</a></span>onUpdateLiveStreamTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUpdateLiveStreamTask </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>task_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>url</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>error_code</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>通知更新直播任务结果。 该回调异步返回 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#abba8d7c5094509960589e9b6e56c0ef6">updateLiveStreamTask</a> 接口的调用结果；实际推流状态参考 <a class="el" href="classnertc_1_1_i_rtc_engine_event_handler_ex.html#aba53fc5c94b82af9f477b463584c6f2f">onLiveStreamState</a> </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task_id</td><td>任务 ID </td></tr>
+    <tr><td class="paramname">url</td><td>推流地址 </td></tr>
+    <tr><td class="paramname">error_code</td><td>结果<ul>
+<li>0: 调用成功；</li>
+<li>其他: 调用失败。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeaa93253548efdd63fffe13f60093477" name="aeaa93253548efdd63fffe13f60093477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa93253548efdd63fffe13f60093477">&#9670;&#160;</a></span>onUpdatePermissionKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUpdatePermissionKey </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>error</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>更新权限密钥事件回调。</p><ul>
+<li>调用 <a class="el" href="classnertc_1_1_i_rtc_channel.html#ab75a680086ecade7d05f971e516409c4">updatePermissionKey</a> 方法主动更新权限密钥后，SDK 会触发该回调，返回权限密钥更新的结果。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在 <a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html">IRtcChannelEventHandler</a> 接口类中通过 <a class="el" href="classnertc_1_1_i_rtc_channel.html#a07f0853ba865a0d0568d0223b8a01b84">setChannelEventHandler</a> 接口设置回调监听。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>key </td><td>const char* </td><td>新的权限密钥。  </td></tr>
+<tr>
+<td>error </td><td><a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a>  </td><td>错误码。<ul>
+<li>
+kNERtcErrChannelPermissionKeyError（30901）：权限密钥错误。</li>
+<li>
+kNERtcErrChannelPermissionKeyTimeout（30902）：权限密钥超时。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>timeout </td><td>int </td><td>更新后的权限密钥剩余有效时间。单位为秒。  </td></tr>
+</table>
+</dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aedb90407d4da4a776b51c44c571ee18a" name="aedb90407d4da4a776b51c44c571ee18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb90407d4da4a776b51c44c571ee18a">&#9670;&#160;</a></span>onUserAudioMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserAudioMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户是否静音的回调。 </p><dl class="section note"><dt>注解</dt><dd>该回调由远端用户调用 muteLocalAudioStream 方法开启或关闭音频发送触发。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">mute</td><td>是否静音。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a19d733386e2e6b00ea33cce847112b67" name="a19d733386e2e6b00ea33cce847112b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d733386e2e6b00ea33cce847112b67">&#9670;&#160;</a></span>onUserAudioStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserAudioStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户开启音频的回调。 </p><dl class="section note"><dt>注解</dt><dd>该回调由远端用户调用 enableLocalAudio 方法开启音频采集和发送触发。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a000eb885c3743c061f76ce3b03583a3d" name="a000eb885c3743c061f76ce3b03583a3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000eb885c3743c061f76ce3b03583a3d">&#9670;&#160;</a></span>onUserAudioStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserAudioStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户停用音频的回调。 </p><dl class="section note"><dt>注解</dt><dd>该回调由远端用户调用 enableLocalAudio 方法关闭音频采集和发送触发。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b402bf80af953058e39d3b69741fb58" name="a3b402bf80af953058e39d3b69741fb58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b402bf80af953058e39d3b69741fb58">&#9670;&#160;</a></span>onUserJoined() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserJoined </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>user_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户（通信场景）/主播（直播场景）加入当前频道回调。</p><ul>
+<li>通信场景下，该回调提示有远端用户加入了频道，并返回新加入用户的 ID；如果加入之前，已经有其他用户在频道中了，新加入的用户也会收到这些已有用户加入频道的回调</li>
+<li>直播场景下，该回调提示有主播加入了频道，并返回该主播的用户 ID。如果在加入之前，已经有主播在频道中了，新加入的用户也会收到已有主播加入频道的回调。</li>
+</ul>
+<p>该回调在如下情况下会被触发：</p><ul>
+<li>远端用户调用 joinChannel 方法加入房间。</li>
+<li>远端用户网络中断后重新加入房间。 <dl class="section note"><dt>注解</dt><dd>直播场景下：<ul>
+<li>主播间能相互收到新主播加入频道的回调，并能获得该主播的用户 ID。</li>
+<li>观众也能收到新主播加入频道的回调，并能获得该主播的用户 ID。</li>
+<li>当 Web 端加入直播频道时，只要 Web 端有推流，SDK 会默认该 Web 端为主播，并触发该回调。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>新加入房间的远端用户 ID。 </td></tr>
+    <tr><td class="paramname">user_name</td><td>新加入房间的远端用户名。  </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a58de12309ab73e4b364fd5212af3c93c" name="a58de12309ab73e4b364fd5212af3c93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58de12309ab73e4b364fd5212af3c93c">&#9670;&#160;</a></span>onUserJoined() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserJoined </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>user_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a></td>          <td class="paramname"><span class="paramname"><em>join_extra_info</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户加入房间事件回调。 远端用户加入房间或断网重连后，SDK 会触发该回调，可以通过返回的用户 ID 订阅对应用户发布的音、视频流。</p><ul>
+<li>通信场景下，该回调通知有远端用户加入了房间，并返回新加入用户的 ID；若该用户加入之前，已有其他用户在房间中，该新加入的用户也会收到这些已有用户加入房间的回调。</li>
+<li>直播场景下，该回调通知有主播加入了房间，并返回该主播的用户 ID；若该用户加入之前，已经有主播在频道中了，新加入的用户也会收到已有主播加入房间的回调。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在 <a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html">IRtcChannelEventHandler</a> 接口类中通过 <a class="el" href="classnertc_1_1_i_rtc_channel.html#a07f0853ba865a0d0568d0223b8a01b84">setChannelEventHandler</a> 接口设置回调监听。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+</li>
+</ul>
+<p>同类型事件发生后，<a class="el" href="#a3b402bf80af953058e39d3b69741fb58">onUserJoined</a> 回调可能会与该回调同时触发，建议您仅注册此回调，不能同时处理两个回调。</p><ul>
+<li>当 Web 端用户加入直播场景的房间中，只要该用户发布了媒体流，SDK 会默认该用户为主播，并触发此回调。 <dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>新加入房间的远端用户 ID。  </td></tr>
+<tr>
+<td>join_extra_info </td><td><a class="el" href="structnertc_1_1_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a> </td><td>该远端用户加入的额外信息。  </td></tr>
+</table>
+</dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aeafb2c99e30fd6f2766ab23d4edee788" name="aeafb2c99e30fd6f2766ab23d4edee788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeafb2c99e30fd6f2766ab23d4edee788">&#9670;&#160;</a></span>onUserLeft() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserLeft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdb">NERtcSessionLeaveReason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户离开当前房间的回调。 <br  />
+提示有远端用户离开了房间（或掉线）。通常情况下，用户离开房间有两个原因，即正常离开和超时掉线：</p><ul>
+<li>正常离开的时候，远端用户会收到正常离开房间的回调提醒，判断用户离开房间。</li>
+<li>超时掉线的依据是，在一定时间内（40~50s），用户没有收到对方的任何数据包，则判定为对方掉线。 <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>离开房间的远端用户 ID。 </td></tr>
+    <tr><td class="paramname">reason</td><td>远端用户离开原因。</td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+<li><a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdba86dbf40423466c44b0846ac563ac9196">kNERtcSessionLeaveNormal(0)</a>：正常离开。</li>
+<li><a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdba7849d682a039aa40e7cbd367b1b29b30">kNERtcSessionLeaveForFailOver(1)</a>：用户断线导致离开房间。</li>
+<li>kNERTCSessionLeaveForUpdate(2)：用户因 Failover 导致离开房间，仅 SDK 内部使用。</li>
+<li><a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdba71a0f24f54f04b0aa887221212caf4fd">kNERtcSessionLeaveForKick(3)</a>：用户被踢导致离开房间。</li>
+<li>kNERtcSessionLeaveTimeout(4)：用户超时退出房间。  </li>
+</ul>
+
+</div>
+</div>
+<a id="a71b379a9cda0b9dba9fcd7e0e0af4396" name="a71b379a9cda0b9dba9fcd7e0e0af4396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b379a9cda0b9dba9fcd7e0e0af4396">&#9670;&#160;</a></span>onUserLeft() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserLeft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdb">NERtcSessionLeaveReason</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnertc_1_1_n_e_rtc_user_join_extra_info.html">NERtcUserJoinExtraInfo</a></td>          <td class="paramname"><span class="paramname"><em>leave_extra_info</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户离开房间事件回调。</p><ul>
+<li>远端用户离开房间或掉线（在 40 ~ 50 秒内本端用户未收到远端用户的任何数据包）后，SDK 会触发该回调。 <dl class="section since"><dt>自从</dt><dd>V4.6.29 </dd></dl>
+<dl class="section user"><dt>使用前提</dt><dd>请在 <a class="el" href="classnertc_1_1_i_rtc_channel_event_handler.html">IRtcChannelEventHandler</a> 接口类中通过 <a class="el" href="classnertc_1_1_i_rtc_channel.html#a07f0853ba865a0d0568d0223b8a01b84">nertc::IRtcChannel::setChannelEventHandler</a> "setChannelEventHandler" 接口设置回调监听。 </dd></dl>
+<dl class="section note"><dt>注解</dt><dd>同类型事件发生后，<a class="el" href="#aeafb2c99e30fd6f2766ab23d4edee788">onUserLeft</a> 回调可能会与该回调同时触发，建议您仅注册此回调，不能同时处理两个回调。 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>离开房间的远端用户 ID。  </td></tr>
+<tr>
+<td>reason </td><td>/ref <a class="el" href="namespacenertc.html#a5b9750357f02ed1ef67fdbdf2b5b1bdb">nertc::NERtcSessionLeaveReason</a> </td><td>该远端用户离开的原因，更多请参考 <a class="el" href="namespacenertc.html#af062cfe332d58922ac8c020d55f9bb17">NERtcErrorCode</a>。<ul>
+<li>
+kNERtcSessionLeaveNormal（0）：正常离开。</li>
+<li>
+kNERtcSessionLeaveForFailOver（1）：用户断线导致离开房间。</li>
+<li>
+kNERTCSessionLeaveForUpdate（2）：用户因 Failover 导致离开房间，仅 SDK 内部使用。</li>
+<li>
+kNERtcSessionLeaveForKick（3）：用户被踢导致离开房间。</li>
+<li>
+kNERtcSessionLeaveTimeout（4）：用户超时退出房间。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>leave_extra_info </td><td><a class="el" href="structnertc_1_1_n_e_rtc_user_join_extra_info.html">nertc::NERtcUserJoinExtraInfo</a> </td><td>该远端用户离开的额外信息。  </td></tr>
+</table>
+</dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a78ae8fea1367d860c7369ae957bce757" name="a78ae8fea1367d860c7369ae957bce757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ae8fea1367d860c7369ae957bce757">&#9670;&#160;</a></span>onUserSubStreamAudioMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserSubStreamAudioMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户暂停或恢复发送音频辅流的回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">mute</td><td>是否停止发送音频辅流。<ul>
+<li>true：该用户已暂停发送音频辅流。</li>
+<li>false：该用户已恢复发送音频辅流。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a69a40ccee6764c01482f5eab32db9e57" name="a69a40ccee6764c01482f5eab32db9e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a40ccee6764c01482f5eab32db9e57">&#9670;&#160;</a></span>onUserSubStreamAudioStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserSubStreamAudioStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户开启音频辅流回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab695bf041e188504ff10a5cf4efb4329" name="ab695bf041e188504ff10a5cf4efb4329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab695bf041e188504ff10a5cf4efb4329">&#9670;&#160;</a></span>onUserSubStreamAudioStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserSubStreamAudioStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户停用音频辅流回调。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.10 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10db6c8490799f3c1229265801faf477" name="a10db6c8490799f3c1229265801faf477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10db6c8490799f3c1229265801faf477">&#9670;&#160;</a></span>onUserSubStreamVideoStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserSubStreamVideoStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a></td>          <td class="paramname"><span class="paramname"><em>max_profile</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户开启屏幕共享辅流通道的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">max_profile</td><td>最大分辨率。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42b9fd5c977fd42ca91f8625b08170d5" name="a42b9fd5c977fd42ca91f8625b08170d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b9fd5c977fd42ca91f8625b08170d5">&#9670;&#160;</a></span>onUserSubStreamVideoStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserSubStreamVideoStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户停止屏幕共享辅流通道的回调。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97dbc37796258af6b6d5d8b7f17b1840" name="a97dbc37796258af6b6d5d8b7f17b1840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97dbc37796258af6b6d5d8b7f17b1840">&#9670;&#160;</a></span>onUserVideoMute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserVideoMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a></td>          <td class="paramname"><span class="paramname"><em>videoStreamType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户暂停或恢复发送视频回调。 <br  />
+当远端用户调用 <a class="el" href="classnertc_1_1_i_rtc_engine_ex.html#a861135de48ec1adc1e8a590089940665">muteLocalVideoStream</a> 方法取消或者恢复发布视频流时，SDK 会触发该回调向本地用户通知远端用户的发流情况。 </p><dl class="section since"><dt>自从</dt><dd>V4.6.20 </dd></dl>
+<dl class="section user"><dt>参数说明</dt><dd><table class="doxtable">
+<tr>
+<th><b>参数名称</b> </th><th><b>类型</b> </th><th><b>描述</b>  </th></tr>
+<tr>
+<td>videoStreamType </td><td><a class="el" href="namespacenertc.html#a41429a38d9c4e87dad27dcebc0322264">NERtcVideoStreamType</a> </td><td>视频通道类型：<ul>
+<li>
+kNERTCVideoStreamMain：主流。</li>
+<li>
+kNERtcVideoStreamSub：辅流。  </li>
+</ul>
+</td></tr>
+<tr>
+<td>uid </td><td>uid_t </td><td>用户 ID，提示是哪个用户的视频流。  </td></tr>
+<tr>
+<td>mute </td><td>bool </td><td>是否暂停发送视频流：<ul>
+<li>
+true：该用户已暂停发送视频流。</li>
+<li>
+false：该用户已恢复发送视频流。  </li>
+</ul>
+</td></tr>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<a id="ad05d02f91cc2d4dd8f640b015bea7315" name="ad05d02f91cc2d4dd8f640b015bea7315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05d02f91cc2d4dd8f640b015bea7315">&#9670;&#160;</a></span>onUserVideoMute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserVideoMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>mute</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户暂停或恢复发送视频流的回调。 <br  />
+当远端用户调用 muteLocalVideoStream 取消或者恢复发布视频流时，SDK 会触发该回调向本地用户报告远程用户的发流状况。 </p><dl class="section note"><dt>注解</dt><dd>该回调仅在远端用户的视频主流状态改变时会触发，若您希望同时接收到远端用户视频辅流状态变更的通知，请监听 <a class="el" href="#a97dbc37796258af6b6d5d8b7f17b1840">onUserVideoMute</a> 回调。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">mute</td><td>是否暂停发送视频流。<ul>
+<li>true：该用户已暂停发送视频流。 = false：该用户已恢复发送视频流。  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79d4564ddd9364665ea6b5acd775b794" name="a79d4564ddd9364665ea6b5acd775b794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d4564ddd9364665ea6b5acd775b794">&#9670;&#160;</a></span>onUserVideoStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserVideoStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a80b32c4c5cf6f4a36dbe6650ae859058">NERtcVideoProfileType</a></td>          <td class="paramname"><span class="paramname"><em>max_profile</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户开启视频的回调。 <br  />
+ 启用后，用户可以进行视频通话或直播。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。 </td></tr>
+    <tr><td class="paramname">max_profile</td><td>视频编码的分辨率，用于衡量编码质量。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a85560d0d2adc7718a5706a8a4362f7c9" name="a85560d0d2adc7718a5706a8a4362f7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85560d0d2adc7718a5706a8a4362f7c9">&#9670;&#160;</a></span>onUserVideoStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onUserVideoStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacenertc.html#a6af385d971f538ddd7b5ee227ca4a451">uid_t</a></td>          <td class="paramname"><span class="paramname"><em>uid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>远端用户停用视频的回调。 <br  />
+ 关闭后，用户只能进行语音通话或者直播。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uid</td><td>远端用户 ID。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08636aa700dda01168e704893451cafe" name="a08636aa700dda01168e704893451cafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08636aa700dda01168e704893451cafe">&#9670;&#160;</a></span>onWarning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void nertc::IRtcChannelEventHandler::onWarning </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>warn_code</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>发生警告回调。 <br  />
+该回调方法表示 SDK 运行时出现了（网络或媒体相关的）警告。通常情况下，SDK 上报的警告信息 App 可以忽略，SDK 会自动恢复。 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">warn_code</td><td>警告码。详细信息请参考 <code><a class="el" href="namespacenertc.html#a2240dbba3a585556d7ab54c9e305a5e8">NERtcWarnCode</a></code>。 </td></tr>
+    <tr><td class="paramname">msg</td><td>警告描述。  </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="nertc__channel__event__handler_8h_source.html">nertc_channel_event_handler.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

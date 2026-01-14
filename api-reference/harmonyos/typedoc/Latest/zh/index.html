@@ -1,0 +1,1089 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="."><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>NERtcSDK HarmonyOS</title><meta name="description" content="Documentation for NERtcSDK HarmonyOS"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script><script async src="assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search"><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">NERtcSDK HarmonyOS</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>NERtcSDK HarmonyOS</h1></div><div class="tsd-panel tsd-typography"><a id="sdk-介绍" class="tsd-anchor"></a><h2 class="tsd-anchor-link">SDK 介绍<a href="#sdk-介绍" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>网易云信音视频通话 NERTC SDK 为鸿蒙系统应用提供了完善的音视频通话开发框架。SDK 提供基于网络的点对点视频通话和语音通话功能，还提供多人视频和音频会议功能，支持通话中音视频设备控制和实时音视频模式切换。</p>
+<ul>
+<li><a href="modules/NERtc.html" class="tsd-kind-module"> NERtc </a> 接口类包含应用程序调用的所有方法。</li>
+<li><a href="modules/NERtcCallback.html" class="tsd-kind-module"> NERtcCallback </a> 类用于向应用程序发送用户状态回调通知。</li>
+<li><a href="classes/NERtcCallback.NERtcCallbackEx.html" class="tsd-kind-class">NERtcCallbackEx</a> 类用于向应用程序发送音视频信息回调通知。</li>
+</ul>
+<a id="错误码" class="tsd-anchor"></a><h2 class="tsd-anchor-link">错误码<a href="#错误码" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>在调用 API 的过程中，SDK 可能会返回错误码或状态码，您可以根据错误码或状态码判断当前 SDK或任务的状态。如果遇到未知的错误码，请 <a href="https://app.yunxin.163.com/global/service/ticket/create">提交工单</a> 联系网易云信技术支持工程师排查。</p>
+<p>当前 SDK API 的错误码如下：</p>
+<ul>
+<li>通用错误码: <a href="enums/NERtcConstants.NERtcConstants.ErrorCode.html" class="tsd-kind-enum">ErrorCode</a></li>
+<li>伴音错误码: <a href="enums/NERtcConstants.NERtcConstants.AudioMixingError.html" class="tsd-kind-enum">AudioMixingError</a></li>
+</ul>
+<a id="房间管理" class="tsd-anchor"></a><h2 class="tsd-anchor-link">房间管理<a href="#房间管理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 39%" />
+<col style="width: 27%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="functions/NERtc.NERtcSDK.getInstance.html" class="tsd-kind-function">NERtc#getInstance()</a></td>
+<td>创建 RTC 引擎对象。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#init" class="tsd-kind-method">NERtc#init()</a></td>
+<td>RTC 引擎对象初始化。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setnertccallback" class="tsd-kind-method">NERtc#setNERtcCallback()</a></td>
+<td>设置事件通知回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#release" class="tsd-kind-method">NERtc#release()</a></td>
+<td>销毁 NERtc 实例，释放资源。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setchannelprofile" class="tsd-kind-method">NERtc#setChannelProfile()</a></td>
+<td>设置房间场景。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setclientrole" class="tsd-kind-method">NERtc#setClientRole()</a></td>
+<td>设置用户角色。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#joinchannel" class="tsd-kind-method">NERtc#joinChannel()</a></td>
+<td>加入房间。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#switchchannel" class="tsd-kind-method">NERtc#switchChannel()</a></td>
+<td>直播场景中快速切换房间。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#leavechannel" class="tsd-kind-method">NERtc#leaveChannel()</a></td>
+<td>离开房间。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setparameters" class="tsd-kind-method">NERtc#setParameters()</a></td>
+<td>复杂参数设置接口，如果有需要设置相关参数，请在调用 init 接口之前调用此接口。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#getconnectionstate" class="tsd-kind-method">NERtc#getConnectionState()</a></td>
+<td>获取房间连接状态。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="房间事件" class="tsd-anchor"></a><h2 class="tsd-anchor-link">房间事件<a href="#房间事件" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 35%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcCallback.html#onclientrolechange" class="tsd-kind-method">NERtcCallback#onClientRoleChange()</a></td>
+<td>用户角色已切换回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcCallback.html#onjoinchannel" class="tsd-kind-method">NERtcCallback#onJoinChannel()</a></td>
+<td>加入房间回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcCallback.html#onleavechannel" class="tsd-kind-method">NERtcCallback#onLeaveChannel()</a></td>
+<td>离开房间回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcCallback.html#onuserjoined" class="tsd-kind-method">NERtcCallback#onUserJoined()</a></td>
+<td>远端用户加入房间回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcCallback.html#onuserleave" class="tsd-kind-method">NERtcCallback#onUserLeave()</a></td>
+<td>远端用户离开房间回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcCallback.html#ondisconnect" class="tsd-kind-method">NERtcCallback#onDisconnect()</a></td>
+<td>服务器连接断开回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="音频管理" class="tsd-anchor"></a><h2 class="tsd-anchor-link">音频管理<a href="#音频管理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 35%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setaudioprofile" class="tsd-kind-method">NERtc#setAudioProfile()</a></td>
+<td>设置音频编码配置。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#adjustrecordingsignalvolume" class="tsd-kind-method">NERtc#adjustRecordingSignalVolume()</a></td>
+<td>调节录音音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#adjustplaybacksignalvolume" class="tsd-kind-method">NERtc#adjustPlaybackSignalVolume()</a></td>
+<td>调节播放音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#adjustuserplaybacksignalvolume" class="tsd-kind-method">NERtc#adjustUserPlaybackSignalVolume()</a></td>
+<td>调节本地播放的指定远端用户的信号音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#enablelocalaudio" class="tsd-kind-method">NERtc#enableLocalAudio()</a></td>
+<td>开关本地音频采集。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#mutelocalaudiostream" class="tsd-kind-method">NERtc#muteLocalAudioStream()</a></td>
+<td>开关本地音频发送。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#subscriberemoteaudiostream" class="tsd-kind-method">NERtc#subscribeRemoteAudioStream()</a></td>
+<td>订阅/取消订阅指定音频流。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#enablelocalsubstreamaudio" class="tsd-kind-method">NERtc#enableLocalSubStreamAudio()</a></td>
+<td>开启或关闭音频辅流。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#subscriberemotesubstreamaudio" class="tsd-kind-method">NERtc#subscribeRemoteSubStreamAudio()</a></td>
+<td>订阅远端用户辅流。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#mutelocalsubstreamaudio" class="tsd-kind-method">NERtc#muteLocalSubStreamAudio()</a></td>
+<td>静音本地音频辅流。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setaudiosubscribeonlyby" class="tsd-kind-method">NERtc#setAudioSubscribeOnlyBy()</a></td>
+<td>设置本地用户音频只能被房间内其他指定用户订阅。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#enablemediapub" class="tsd-kind-method">NERtc#enableMediaPub()</a></td>
+<td>发布或停止发布本地音频。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="视频管理" class="tsd-anchor"></a><h2 class="tsd-anchor-link">视频管理<a href="#视频管理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 35%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#enablelocalvideo" class="tsd-kind-method">NERtc#enableLocalVideo()</a></td>
+<td>开启/关闭本地视频的采集和发送。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setlocalvideoconfig" class="tsd-kind-method">NERtc#setLocalVideoConfig()</a></td>
+<td>设置视频编码属性。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setuplocalvideocanvas" class="tsd-kind-method">NERtc#setupLocalVideoCanvas()</a></td>
+<td>设置本地用户视频。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setupremotevideocanvas" class="tsd-kind-method">NERtc#setupRemoteVideoCanvas()</a></td>
+<td>设置远端用户视图。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#startvideopreview" class="tsd-kind-method">NERtc#startVideoPreview()</a></td>
+<td>开启视频预览。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#stopvideopreview" class="tsd-kind-method">NERtc#stopVideoPreview()</a></td>
+<td>停止视频预览。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#mutelocalvideo" class="tsd-kind-method">NERtc#muteLocalVideoStream</a></td>
+<td>取消/恢复发布本地视频。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#subscriberemotevideo" class="tsd-kind-method">NERtc#subscribeRemoteVideo()</a></td>
+<td>订阅/取消订阅指定远端用户的视频流。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcConstants.NERtcConstants.NERtcVideoCanvas.html#scalingmode" class="tsd-kind-property">NERtcVideoCanvas#scalingMode</a></td>
+<td>设置显示模式。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcConstants.NERtcConstants.NERtcVideoCanvas.html#mirrormode" class="tsd-kind-property">NERtcVideoCanvas#mirrorMode</a></td>
+<td>设置画面镜像。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="本地媒体事件" class="tsd-anchor"></a><h2 class="tsd-anchor-link">本地媒体事件<a href="#本地媒体事件" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 34%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onfirstaudioframedecoded" class="tsd-kind-method">NERtcCallback#onFirstAudioFrameDecoded()</a></td>
+<td>已解码远端音频首帧回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onfirstvideoframedecoded" class="tsd-kind-method">NERtcCallback#onFirstVideoFrameDecoded()</a></td>
+<td>已解码远端视频首帧回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onfirstvideodatareceived" class="tsd-kind-method">NERtcCallback#onFirstVideoDataReceived()</a></td>
+<td>已接收远端视频首帧回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onfirstaudiodatareceived" class="tsd-kind-method">NERtcCallback#onFirstAudioDataReceived()</a></td>
+<td>已接收远端音频首帧回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="远端媒体事件" class="tsd-anchor"></a><h2 class="tsd-anchor-link">远端媒体事件<a href="#远端媒体事件" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 34%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onusersubstreamvideostart" class="tsd-kind-method">NERtcCallback#onUserSubStreamVideoStart()</a></td>
+<td>远端用户开启视频辅流的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onusersubstreamvideostop" class="tsd-kind-method">NERtcCallback#onUserSubStreamVideoStop()</a></td>
+<td>远端用户关闭视频辅流的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onuservideomute" class="tsd-kind-method">NERtcCallback#onUserVideoMute()</a></td>
+<td>远端用户暂停或恢复视频主流发送的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onusersubstreamvideomute" class="tsd-kind-method">NERtcCallback#onUserSubStreamVideoMute()</a></td>
+<td>远端用户暂停或恢复视频辅流发送的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onuseraudiomute" class="tsd-kind-method">NERtcCallback#onUserAudioMute()</a></td>
+<td>远端用户暂停或恢复音频主流发送的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onusersubstreamaudiomute" class="tsd-kind-method">NERtcCallback#onUserSubStreamAudioMute()</a></td>
+<td>远端用户暂停或恢复音频辅流发送的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onuseraudiostart" class="tsd-kind-method">NERtcCallback#onUserAudioStart()</a></td>
+<td>远端用户开启音频主流的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onusersubstreamaudiostart" class="tsd-kind-method">NERtcCallback#onUserSubStreamAudioStart()</a></td>
+<td>远端用户开启音频辅流的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onuseraudiostop" class="tsd-kind-method">NERtcCallback#onUserAudioStop()</a></td>
+<td>远端用户关闭音频主流的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onusersubstreamaudiostop" class="tsd-kind-method">NERtcCallback#onUserSubStreamAudioStop()</a></td>
+<td>远端用户关闭音频辅流的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onuservideostart" class="tsd-kind-method">NERtcCallback#onUserVideoStart()</a></td>
+<td>远端用户开启视频的回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onuservideostop" class="tsd-kind-method">NERtcCallback#onUserVideoStop()</a></td>
+<td>远端用户关闭视频的回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="数据统计事件" class="tsd-anchor"></a><h2 class="tsd-anchor-link">数据统计事件<a href="#数据统计事件" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 35%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setstatsobserver" class="tsd-kind-method">NERtc#setStatsObserver()</a></td>
+<td>设置统计信息回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcStatsObserver.html#onrtcstats" class="tsd-kind-method">NERtcStatsObserver#onRtcStats()</a></td>
+<td>当前通话统计回调，每 2 秒触发一次。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcStatsObserver.html#onnetworkquality" class="tsd-kind-method">NERtcStatsObserver#onNetworkQuality()</a></td>
+<td>通话中每个用户的网络上下行质量报告回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcStatsObserver.html#onlocalaudiostats" class="tsd-kind-method">NERtcStatsObserver#onLocalAudioStats()</a></td>
+<td>本地音频流统计信息回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcStatsObserver.html#onlocalvideostats" class="tsd-kind-method">NERtcStatsObserver#onLocalVideoStats()</a></td>
+<td>本地视频流统计信息回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcStatsObserver.html#onremoteaudiostats" class="tsd-kind-method">NERtcStatsObserver#onRemoteAudioStats()</a></td>
+<td>通话中远端音频流的统计信息回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcStatsObserver.html#onremotevideostats" class="tsd-kind-method">NERtcStatsObserver#onRemoteVideoStats()</a></td>
+<td>通话中远端视频流的统计信息回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="视频大小流" class="tsd-anchor"></a><h2 class="tsd-anchor-link">视频大小流<a href="#视频大小流" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 35%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#enabledualstreammode" class="tsd-kind-method">NERtc#enableDualStreamMode()</a></td>
+<td>设置是否开启视频大小流模式。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="伴音播放管理" class="tsd-anchor"></a><h2 class="tsd-anchor-link">伴音播放管理<a href="#伴音播放管理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 35%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#startaudiomixing" class="tsd-kind-method">NERtc#startAudioMixing()</a></td>
+<td>开始播放伴音文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#stopaudiomixing" class="tsd-kind-method">NERtc#stopAudioMixing()</a></td>
+<td>停止播放伴音文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#pauseaudiomixing" class="tsd-kind-method">NERtc#pauseAudioMixing()</a></td>
+<td>暂停播放伴音文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#resumeaudiomixing" class="tsd-kind-method">NERtc#resumeAudioMixing()</a></td>
+<td>恢复播放伴音文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setaudiomixingplaybackvolume" class="tsd-kind-method">NERtc#setAudioMixingPlaybackVolume()</a></td>
+<td>设置伴音文件播放音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setaudiomixingsendvolume" class="tsd-kind-method">NERtc#setAudioMixingSendVolume()</a></td>
+<td>设置伴音文件的发送音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#getaudiomixingplaybackvolume" class="tsd-kind-method">NERtc#getAudioMixingPlaybackVolume()</a></td>
+<td>获取伴音文件的播放音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#getaudiomixingsendvolume" class="tsd-kind-method">NERtc#getAudioMixingSendVolume()</a></td>
+<td>获取伴音文件的发送音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#getaudiomixingduration" class="tsd-kind-method">NERtc#getAudioMixingDuration()</a></td>
+<td>获取伴音文件的总长度。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setaudiomixingposition" class="tsd-kind-method">NERtc#setAudioMixingPosition()</a></td>
+<td>设置伴音文件的播放进度。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#getaudiomixingcurrentposition" class="tsd-kind-method">NERtc#getAudioMixingCurrentPosition()</a></td>
+<td>获取伴音文件的播放进度。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onaudiomixingstatechanged" class="tsd-kind-method">NERtcCallback#onAudioMixingStateChanged()</a></td>
+<td>本地用户的伴音文件播放状态改变回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onaudiomixingtimestampupdate" class="tsd-kind-method">NERtcCallback#onAudioMixingTimestampUpdate()</a></td>
+<td>本地用户的伴音文件播放进度回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="音效播放管理" class="tsd-anchor"></a><h2 class="tsd-anchor-link">音效播放管理<a href="#音效播放管理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#geteffectplaybackvolume" class="tsd-kind-method">NERtc#getEffectPlaybackVolume()</a></td>
+<td>获取音效文件播放音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#seteffectplaybackvolume" class="tsd-kind-method">NERtc#setEffectPlaybackVolume()</a></td>
+<td>设置音效文件播放音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#playeffect" class="tsd-kind-method">NERtc#playEffect()</a></td>
+<td>播放指定音效文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#stopeffect" class="tsd-kind-method">NERtc#stopEffect()</a></td>
+<td>停止播放指定音效文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#stopalleffects" class="tsd-kind-method">NERtc#stopAllEffects()</a></td>
+<td>停止播放所有音效文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#pauseeffect" class="tsd-kind-method">NERtc#pauseEffect()</a></td>
+<td>暂停音效文件播放。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#pausealleffects" class="tsd-kind-method">NERtc#pauseAllEffects()</a></td>
+<td>暂停所有音效文件播放。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#resumeeffect" class="tsd-kind-method">NERtc#resumeEffect()</a></td>
+<td>恢复播放指定音效文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#resumealleffects" class="tsd-kind-method">NERtc#resumeAllEffects()</a></td>
+<td>恢复播放所有的音效文件。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#seteffectsendvolume" class="tsd-kind-method">NERtc#setEffectSendVolume()</a></td>
+<td>调节音效文件的发送音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#geteffectsendvolume" class="tsd-kind-method">NERtc#getEffectSendVolume()</a></td>
+<td>获取音效文件的发送音量。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#geteffectduration" class="tsd-kind-method">NERtc#getEffectDuration()</a></td>
+<td>获取音效文件时长。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#seteffectposition" class="tsd-kind-method">NERtc#setEffectPosition()</a></td>
+<td>设置音效文件的播放进度。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#geteffectcurrentposition" class="tsd-kind-method">NERtc#getEffectCurrentPosition()</a></td>
+<td>获取音效文件的播放进度。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 32%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onaudioeffectfinished" class="tsd-kind-method">NERtcCallback#onAudioEffectFinished()</a></td>
+<td>本地音效文件播放已结束回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onaudioeffecttimestampupdate" class="tsd-kind-method">NERtcCallback#onAudioEffectTimestampUpdate()</a></td>
+<td>本地音效文件的播放进度信息回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="旁路推流" class="tsd-anchor"></a><h2 class="tsd-anchor-link">旁路推流<a href="#旁路推流" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#addlivestreamtask" class="tsd-kind-method">NERtc#addLiveStreamTask</a></td>
+<td>添加房间推流任务。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#updatelivestreamtask" class="tsd-kind-method">NERtc#updateLiveStreamTask</a></td>
+<td>更新修改房间推流任务。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#removelivestreamtask" class="tsd-kind-method">NERtc#removeLiveStreamTask</a></td>
+<td>删除房间推流任务。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onlivestreamstate" class="tsd-kind-method">NERtcCallback#onLiveStreamState()</a></td>
+<td>直播推流状态回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onaddlivestreamtask" class="tsd-kind-method">NERtcCallback#onAddLiveStreamTask()</a></td>
+<td>新增推流任务回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onupdatelivestreamtask" class="tsd-kind-method">NERtcCallback#onUpdateLiveStreamTask()</a></td>
+<td>更新推流任务回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onremovelivestreamtask" class="tsd-kind-method">NERtcCallback#onRemoveLiveStreamTask()</a></td>
+<td>删除推流任务回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="音频播放路由" class="tsd-anchor"></a><h2 class="tsd-anchor-link">音频播放路由<a href="#音频播放路由" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 34%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setspeakerphoneon" class="tsd-kind-method">NERtc#setSpeakerphoneOn()</a></td>
+<td>设置扬声器是否开启。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#isspeakerphoneon" class="tsd-kind-method">NERtc#isSpeakerphoneOn()</a></td>
+<td>获取扬声器是否开启。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="自定义音频采集" class="tsd-anchor"></a><h2 class="tsd-anchor-link">自定义音频采集<a href="#自定义音频采集" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 35%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setexternalaudiosource" class="tsd-kind-method">NERtc#setExternalAudioSource()</a></td>
+<td>启用外部自定义音频数据主流输入功能，并设置采集参数。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setexternalsubstreamaudiosource" class="tsd-kind-method">NERtc#setExternalSubStreamAudioSource()</a></td>
+<td>启用外部自定义音频数据辅流输入功能，并设置采集参数。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#pushexternalaudioframe" class="tsd-kind-method">NERtc#pushExternalAudioFrame()</a></td>
+<td>将外部音频主流数据帧推送给内部引擎。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#pushexternalsubstreamaudioframe" class="tsd-kind-method">NERtc#pushExternalSubStreamAudioFrame()</a></td>
+<td>将外部音频辅流数据帧推送给内部引擎。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setstreamalignmentproperty" class="tsd-kind-method">NERtc#setStreamAlignmentProperty()</a></td>
+<td>对齐本地系统时间与服务端时间。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#getntptimeoffset" class="tsd-kind-method">NERtc#getNtpTimeOffset()</a></td>
+<td>获取本地系统时间与服务端时间的差值。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="自定义视频采集" class="tsd-anchor"></a><h2 class="tsd-anchor-link">自定义视频采集<a href="#自定义视频采集" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 35%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setexternalvideosource" class="tsd-kind-method">NERtc#setExternalVideoSource()</a></td>
+<td>开启/关闭 外部视频数据源输入。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#pushexternalvideoframe" class="tsd-kind-method">NERtc#pushExternalVideoFrame()</a></td>
+<td>推送外部视频帧。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="视频截图" class="tsd-anchor"></a><h2 class="tsd-anchor-link">视频截图<a href="#视频截图" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 34%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#takelocalsnapshot" class="tsd-kind-method">NERtc#takeLocalSnapshot</a></td>
+<td>本地视频画面截图。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#takeremotesnapshot" class="tsd-kind-method">NERtc#takeRemoteSnapshot</a></td>
+<td>远端视频画面截图。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 33%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtcCallback.NERtcTakeSnapshotCallback.html#ontakesnapshotresult" class="tsd-kind-method">NERtcTakeSnapshotCallback#onTakeSnapshotResult()</a></td>
+<td>截图结果回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="设备管理" class="tsd-anchor"></a><h2 class="tsd-anchor-link">设备管理<a href="#设备管理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#switchcamera" class="tsd-kind-method">NERtc#switchCamera()</a></td>
+<td>切换前置/后置摄像头。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setplayoutdevicemute" class="tsd-kind-method">NERtc#setPlayoutDeviceMute()</a></td>
+<td>设置音频播放设备静音。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#isplayoutdevicemute" class="tsd-kind-method">NERtc#isPlayoutDeviceMute()</a></td>
+<td>获取当前音频播放设备是否静音。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#setrecorddevicemute" class="tsd-kind-method">NERtc#setRecordDeviceMute()</a></td>
+<td>设置音频采集设备静音。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#isrecorddevicemute" class="tsd-kind-method">NERtc#isRecordDeviceMute()</a></td>
+<td>获取当前音频采集设备是否静音。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onaudiodevicechanged" class="tsd-kind-method">NERtcCallback#onAudioDeviceChanged()</a></td>
+<td>音频设备状态更改回调。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<a id="故障排查" class="tsd-anchor"></a><h2 class="tsd-anchor-link">故障排查<a href="#故障排查" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 32%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="interfaces/NERtc.NERtc.html#uploadsdkinfo" class="tsd-kind-method">NERtc#uploadSdkInfo()</a></td>
+<td>上传 SDK 日志信息。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onwarning" class="tsd-kind-method">NERtcCallback#onWarning()</a></td>
+<td>发生警告回调。</td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td><a href="classes/NERtcCallback.NERtcCallbackEx.html#onerror" class="tsd-kind-method">NERtcCallback#onError()</a></td>
+<td>引起发生了运行时错误，需要用户干预。</td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<!--
+
+## 其他接口
+
+以上接口会单独呈现在一个网页 link 在官网上，作为最常用的接口以及回调
+提供给您查阅。
+
+以下接口已经通过自动化测试，会随着 v1.0.0 版本一起发布。
+
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 33%" />
+<col style="width: 24%" />
+</colgroup>
+<tbody>
+<tr>
+<td>方法</td>
+<td>功能</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.getParameter() | NERtc#getParameter() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.startAudioRecording() | NERtc#startAudioRecording() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.startAudioRecordingWithConfig() | NERtc#startAudioRecordingWithConfig() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.stopAudioRecording() | NERtc#stopAudioRecording() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.enableAudioVolumeIndication() | NERtc#enableAudioVolumeIndication() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.sendSEIMsg() | NERtc#sendSEIMsg() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.setupLocalSubStreamVideoCanvas() | NERtc#setupLocalSubStreamVideoCanvas() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.setupRemoteSubStreamVideoCanvas() | NERtc#setupRemoteSubStreamVideoCanvas() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtc.NERtcSDK.subscribeRemoteSubStreamVideo() | NERtc#subscribeRemoteSubStreamVideo() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 32%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr>
+<td>事件</td>
+<td>说明</td>
+<td>起始版本</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onApiCallExecuted() | NERtcCallback#onApiCallExecuted() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onClientRoleChange() | NERtcCallback#onClientRoleChange() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onRecvSEIMsg() | NERtcCallback#onRecvSEIMsg() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onLocalAudioVolumeIndication() | NERtcCallback#onLocalAudioVolumeIndication() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onRemoteAudioVolumeIndication() | NERtcCallback#onRemoteAudioVolumeIndication() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCalback.NERtcSDK.onRemoteVideoSizeChanged() | NERtcCalback#onRemoteVideoSizeChanged() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onLocalVideoRenderSizeChanged() | NERtcCallback#onLocalVideoRenderSizeChanged() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onAudioRecording() | NERtcCallback#onAudioRecording() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onAudioDeviceChanged() | NERtcCallback#onAudioDeviceChanged() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onAudioDeviceStateChanged() | NERtcCallback#onAudioDeviceStateChanged() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onMediaRightChange() | NERtcCallback#onMediaRightChange() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+<tr>
+<td> NERtcCallback.NERtcSDK.onFirstVideoFrameRender() | NERtcCallback#onFirstVideoFrameRender() </td>
+<td></td>
+<td>v1.0.0</td>
+</tr>
+</tbody>
+</table>
+
+--></div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#sdk-介绍"><span>SDK 介绍</span></a><a href="#错误码"><span>错误码</span></a><a href="#房间管理"><span>房间管理</span></a><a href="#房间事件"><span>房间事件</span></a><a href="#音频管理"><span>音频管理</span></a><a href="#视频管理"><span>视频管理</span></a><a href="#本地媒体事件"><span>本地媒体事件</span></a><a href="#远端媒体事件"><span>远端媒体事件</span></a><a href="#数据统计事件"><span>数据统计事件</span></a><a href="#视频大小流"><span>视频大小流</span></a><a href="#伴音播放管理"><span>伴音播放管理</span></a><a href="#音效播放管理"><span>音效播放管理</span></a><a href="#旁路推流"><span>旁路推流</span></a><a href="#音频播放路由"><span>音频播放路由</span></a><a href="#自定义音频采集"><span>自定义音频采集</span></a><a href="#自定义视频采集"><span>自定义视频采集</span></a><a href="#视频截图"><span>视频截图</span></a><a href="#设备管理"><span>设备管理</span></a><a href="#故障排查"><span>故障排查</span></a></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html">NERtcSDK HarmonyOS</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer></footer><div class="overlay"></div></body></html>

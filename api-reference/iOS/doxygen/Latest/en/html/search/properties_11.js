@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['samplerate_0',['sampleRate',['../interface_n_e_rtc_audio_recording_configuration.html#ab3e93f2fd5451f89c21a881d42d1c3ce',1,'NERtcAudioRecordingConfiguration::sampleRate()'],['../interface_n_e_rtc_live_config.html#a99f145d6ffbc45e72e6a50d653cfee7c',1,'NERtcLiveConfig::sampleRate()'],['../interface_n_e_rtc_audio_frame_request_format.html#af657ed907b1c5edb156830ce54412639',1,'NERtcAudioFrameRequestFormat::sampleRate()'],['../interface_n_e_rtc_audio_format.html#aacd24560a2d3931cb41b64be2d7b9f37',1,'NERtcAudioFormat::sampleRate()']]],
+  ['samplesperchannel_1',['samplesPerChannel',['../interface_n_e_rtc_audio_format.html#a06e51b2b0c3413c951dd3cc7fa753394',1,'NERtcAudioFormat']]],
+  ['sendbitrate_2',['sendBitrate',['../interface_n_e_rtc_video_layer_send_stats.html#aab98035167b51cb3bb40af30e9d77981',1,'NERtcVideoLayerSendStats']]],
+  ['sendenabled_3',['sendEnabled',['../interface_n_e_rtc_create_audio_mixing_option.html#a82ebd8784d90db702601f68eb1fd6c58',1,'NERtcCreateAudioMixingOption::sendEnabled()'],['../interface_n_e_rtc_create_audio_effect_option.html#a407865b7f7e7bb6b580fcbd15a66ffa2',1,'NERtcCreateAudioEffectOption::sendEnabled()']]],
+  ['sendvolume_4',['sendVolume',['../interface_n_e_rtc_create_audio_mixing_option.html#a9ae5bdb27507d3988b79996af4812d4d',1,'NERtcCreateAudioMixingOption::sendVolume()'],['../interface_n_e_rtc_create_audio_effect_option.html#ad105d2da6543ee09981d01e1109b1446',1,'NERtcCreateAudioEffectOption::sendVolume()']]],
+  ['sendwithaudiotype_5',['sendWithAudioType',['../interface_n_e_rtc_create_audio_mixing_option.html#ab755672742da9eeb087fd70ffe5292db',1,'NERtcCreateAudioMixingOption']]],
+  ['sentbitrate_6',['sentBitrate',['../interface_n_e_rtc_audio_layer_send_stats.html#ab5bf534d5f86b0d381c4ee3332bc5974',1,'NERtcAudioLayerSendStats']]],
+  ['sentframerate_7',['sentFrameRate',['../interface_n_e_rtc_video_layer_send_stats.html#a6cbb7ad0eb8212497ce80d83799a74af',1,'NERtcVideoLayerSendStats']]],
+  ['sentsamplerate_8',['sentSampleRate',['../interface_n_e_rtc_audio_layer_send_stats.html#af7b7ed6d9def0f819d3a750f08ac998c',1,'NERtcAudioLayerSendStats']]],
+  ['serveraddress_9',['serverAddress',['../interface_n_e_rtc_engine_context.html#a237effdc41ee88563bb02f9503c5389c',1,'NERtcEngineContext']]],
+  ['serverrecordenabled_10',['serverRecordEnabled',['../interface_n_e_rtc_live_stream_task_info.html#a64211e071d8188ba00e9fda6d80418cd',1,'NERtcLiveStreamTaskInfo']]],
+  ['singlevideopassthrough_11',['singleVideoPassthrough',['../interface_n_e_rtc_live_config.html#a5e63ac7e1bea07fd71e45f26f8d5fa5f',1,'NERtcLiveConfig']]],
+  ['smallface_12',['smallFace',['../interface_n_e_rtc_beauty.html#a77f3a3847b2613c3e230b7c1f47a7f78',1,'NERtcBeauty']]],
+  ['smallnose_13',['smallNose',['../interface_n_e_rtc_beauty.html#a8ee0772ae241e5db39c5b27ee599555f',1,'NERtcBeauty']]],
+  ['smoothskin_14',['smoothSkin',['../interface_n_e_rtc_beauty.html#ab0b602cc750fada8024ada7559ed0802',1,'NERtcBeauty']]],
+  ['source_15',['source',['../interface_n_e_rtc_virtual_background_source.html#ab257c565f5adb20cd887a0fb7f07fe3d',1,'NERtcVirtualBackgroundSource']]],
+  ['sourceinfo_16',['sourceInfo',['../interface_n_e_rtc_channel_media_relay_configuration.html#a5963412bfeaec4e4ac1bea932fcfc1b9',1,'NERtcChannelMediaRelayConfiguration']]],
+  ['starttimestamp_17',['startTimeStamp',['../interface_n_e_rtc_create_audio_mixing_option.html#a7991d98951e294c52638c223c1df21b1',1,'NERtcCreateAudioMixingOption']]],
+  ['state_18',['state',['../interface_n_e_rtc_lastmile_probe_result.html#a3d38213f495c1c97ca2dba60448567b4',1,'NERtcLastmileProbeResult']]],
+  ['statisticsserver_19',['statisticsServer',['../interface_n_e_rtc_server_addresses.html#aa872c28f3a58a290106446bfe31175f0',1,'NERtcServerAddresses']]],
+  ['streamtype_20',['streamType',['../interface_n_e_rtc_audio_layer_send_stats.html#a7bf4918457d3fe910b9cfbde5e5cd599',1,'NERtcAudioLayerSendStats::streamType()'],['../interface_n_e_rtc_audio_layer_recv_stats.html#a8e3e7ea599d3c31bbcdec3a8cc64cdb9',1,'NERtcAudioLayerRecvStats::streamType()']]],
+  ['streamurl_21',['streamURL',['../interface_n_e_rtc_live_stream_task_info.html#a6bf46f1e16ada187d0567362f07f93b5',1,'NERtcLiveStreamTaskInfo']]],
+  ['strides_22',['strides',['../interface_n_e_rtc_video_frame.html#aa430efd61ace1f955655faabaf5942b6',1,'NERtcVideoFrame']]],
+  ['synctimestamp_23',['syncTimestamp',['../interface_n_e_rtc_audio_frame.html#a9f596dd5ab9d5b2233e03cf63fc73f76',1,'NERtcAudioFrame']]]
+];
