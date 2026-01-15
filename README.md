@@ -14,17 +14,17 @@
 - **Windows** - Windows 桌面端集成
 - **macOS** - macOS 桌面端集成
 - **Linux** - Linux 平台集成
-- **Electron** - 跨平台桌面应用
-- **Flutter** - 跨平台移动开发
-- **Unity** - 游戏引擎集成
-- **Unreal Engine** - 游戏引擎集成
+- **Electron** - Electron 集成
+- **Flutter** - Flutter 集成
+- **Unity** - Unity 集成
+- **Unreal Engine** - Unreal Engine集成
 - **HarmonyOS** - 华为 HarmonyOS 集成
-- **小程序** - 微信及其他小程序
-- **uni-app** - 跨平台框架
-- **Wwise** - 音频中间件集成
+- **小程序** - 小程序 集成
+- **uni-app** - uni-app 集成
+- **Wwise** - Wwise 集成
 
 每个平台指南包含：
-- **快速开始** - 下载 SDK、运行示例、基础集成
+- **快速开始** - 下载 SDK、运行demo、基础集成
 - **基础功能** - 音视频配置、设备管理、质量监测
 - **进阶功能** - 自定义采集、特效、加密、录制
 - **AI 融合功能** - AI 降噪、超分、字幕、虚拟背景
@@ -65,16 +65,16 @@
 | 平台 | 快速开始 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
 | **Web** | [实现音视频通话](guides/Web/快速开始/实现音视频通话.md) | [集成 SDK](guides/Web/快速开始/集成%20SDK.md) | [下载 SDK](guides/Web/快速开始/下载%20SDK%20和示例代码.md) |
-| **Electron** | [实现音视频通话](guides/Electron/快速开始/实现音视频通话.md) | [集成 SDK](guides/Electron/快速开始/集成%20SDK.md) | [下载 SDK](guides/Electron/快速开始/下载%20SDK%20和%20示例代码.md) |
-| **Flutter** | [实现音视频通话](guides/Flutter/快速开始/实现音视频通话.md) | [集成 SDK](guides/Flutter/快速开始/集成%20SDK.md) | [下载 SDK](guides/Flutter/快速开始/下载%20SDK%20和%20示例代码.md) |
-| **uni-app** | [实现音视频通话](guides/uni-app/快速开始/实现音视频通话.md) | [集成 SDK](guides/uni-app/快速开始/集成%20SDK.md) | [下载 SDK](guides/uni-app/快速开始/下载%20SDK%20和%20示例代码.md) |
-| **小程序** | [实现音视频通话](guides/小程序/快速开始/实现音视频通话.md) | [集成 SDK](guides/小程序/快速开始/集成%20SDK.md) | [下载 SDK](guides/小程序/快速开始/下载%20SDK%20和%20示例代码.md) |
+| **Electron** | [实现音视频通话](guides/Electron/快速开始/实现音视频通话.md) | [集成 SDK](guides/Electron/快速开始/集成%20SDK.md) | [下载 SDK](guides/Electron/快速开始/下载%20SDK%20和示例代码.md) |
+| **Flutter** | [实现音视频通话](guides/Flutter/快速开始/实现音视频通话.md) | [集成 SDK](guides/Flutter/快速开始/集成%20SDK.md) | [下载 SDK](guides/Flutter/快速开始/下载%20SDK%20和示例代码.md) |
+| **uni-app** | [实现音视频通话](guides/uni-app/快速开始/实现音视频通话.md) | [集成 SDK](guides/uni-app/快速开始/集成%20SDK.md) | [下载 SDK](guides/uni-app/快速开始/下载%20SDK%20和示例代码.md) |
+| **小程序** | [实现音视频通话](guides/小程序/快速开始/实现音视频通话.md) | [集成 SDK](guides/小程序/快速开始/集成%20SDK.md) | [下载 SDK](guides/小程序/快速开始/下载%20SDK%20和示例代码.md) |
 
 ### 游戏引擎
 
 | 平台 | 快速开始 | 集成指南 | 下载 SDK |
 |----------|-------------|-------------|--------------|
-| **Unity** | [实现音视频通话](guides/Unity/快速开始/实现音视频通话.md) | [集成 SDK（音视频）](guides/Unity/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/Unity/快速开始/下载%20SDK%20和%20示例代码.md) |
+| **Unity** | [实现音视频通话](guides/Unity/快速开始/实现音视频通话.md) | [集成 SDK（音视频）](guides/Unity/快速开始/集成%20SDK（音视频）.md) | [下载 SDK](guides/Unity/快速开始/下载%20SDK%20和示例代码.md) |
 | **Unreal Engine** | [实现语音通话](guides/Unreal%20Engine/快速开始/实现语音通话.md) | [集成 SDK](guides/Unreal%20Engine/快速开始/集成%20SDK.md) | [下载 SDK](guides/Unreal%20Engine/快速开始/下载%20SDK&Demo.md) |
 | **Wwise** | [在 Wwise 中安装和使用](guides/Wwise/在%20Wwise%20中安装和使用.md) | [Unity 集成](guides/Wwise/Unity%20集成/集成%20Unity%20项目.md) | [Unreal 集成](guides/Wwise/Unreal%20Engine%20集成/集成%20Unreal%20项目.md) |
 
@@ -86,7 +86,7 @@
 - **高质量音视频** - 专业级实时通信，支持自适应码率和质量优化
 - **灵活架构** - 支持多种场景：
   - 一对一音视频通话
-  - 多人群体通话
+  - 多人通话
   - CDN 推流直播
   - 低延迟直播
   - 纯语音通信
@@ -104,7 +104,7 @@
   - 美颜滤镜和特效（支持多家厂商）
   - 屏幕共享和音频共享
   - 视频水印和截图
-  - 音效和混音
+  - 音效和伴音
 
 - **质量与监测**
   - 通话前网络质量检测
@@ -160,7 +160,7 @@
 
 ## 技术支持
 
-- **官方网站** - [网易七鱼](https://yunxin.163.com/)
+- **官方网站** - [网易云信](https://yunxin.163.com/)
 - **管理控制台** - [管理控制台](https://app.yunxin.163.com/)
 - **技术支持** - 访问官方网站获取支持
 
